@@ -1,0 +1,115 @@
+/* JTF News Lower Third Overlay
+   4K Resolution: 3840x2160
+   Dark Glassmorphism Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 3840px;
+    height: 2160px;
+    background: transparent;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+}
+
+#lower-third {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    max-width: 90%;
+
+    /* Dark glassmorphism */
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+    /* Subtle light border for definition */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+
+    /* Strong shadow for depth */
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    /* Animation */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#lower-third.hidden {
+    opacity: 0;
+    transform: translateX(-50px);
+    pointer-events: none;
+}
+
+#lower-third.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Brand tab - sticks up from top left */
+#brand-tab {
+    position: absolute;
+    top: -52px;
+    left: 0;
+    background: linear-gradient(135deg,
+        rgba(212, 175, 55, 0.95) 0%,
+        rgba(170, 135, 35, 0.9) 100%);
+    padding: 12px 28px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: 4px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: none;
+    box-shadow:
+        0 -4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Source bar - accent stripe */
+#source-bar {
+    background: linear-gradient(135deg,
+        rgba(30, 64, 175, 0.7) 0%,
+        rgba(23, 37, 84, 0.8) 100%);
+    padding: 18px 36px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Main fact text */
+#fact-text {
+    padding: 36px 44px;
+    font-size: 58px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.45;
+    letter-spacing: 0.3px;
+}
+
+/* Subtle top shine */
+#lower-third::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 100%);
+    pointer-events: none;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=3840, height=2160">
+  <title>JTF News Background Slideshow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <img id="slide1" class="slide active" alt="">
+  <img id="slide2" class="slide" alt="">
+
+  <script>
+    /**
+     * JTF News Background Slideshow
+     * Automatically loads images from the current season folder
+     * Crossfades between images every INTERVAL seconds
+     */
+
+    const INTERVAL = 50000;        // 50 seconds between images
+    const FADE_TIME = 2000;        // 2 second crossfade
+    const MAX_IMAGES = 2000;       // Max images to probe for
+    const BASE_PATH = '../media';  // Path to media folder
+
+    let currentSeason = null;
+    let images = [];           // Master list of all discovered images
+    let shuffledQueue = [];    // Shuffled queue - pop from this until empty, then reshuffle
+    let currentSlide = 1;
+
+    /**
+     * Fisher-Yates shuffle algorithm
+     */
+    function shuffleArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    /**
+     * Determine current season based on date
+     * Northern hemisphere meteorological seasons:
+     * - Winter: Dec 1 - Feb 28/29
+     * - Spring: Mar 1 - May 31
+     * - Summer: Jun 1 - Aug 31
+     * - Fall: Sep 1 - Nov 30
+     */
+    function getSeason() {
+      const month = new Date().getMonth() + 1; // 1-12
+
+      if (month >= 3 && month <= 5) return 'spring';
+      if (month >= 6 && month <= 8) return 'summer';
+      if (month >= 9 && month <= 11) return 'fall';
+      return 'winter'; // Dec, Jan, Feb
+    }
+
+    /**
+     * Probe for images in the season folder
+     * Images follow pattern: season_NNNNNN.png
+     */
+    async function discoverImages(season) {
+      const discovered = [];
+      let consecutiveFails = 0;
+      const maxConsecutiveFails = 10; // Stop after 10 consecutive 404s
+
+      console.log(`Discovering images for ${season}...`);
+
+      for (let i = 0; i < MAX_IMAGES && consecutiveFails < maxConsecutiveFails; i++) {
+        const filename = `${season}_${String(i).padStart(6, '0')}.png`;
+        const path = `${BASE_PATH}/${season}/${filename}`;
+
+        try {
+          const response = await fetch(path, { method: 'HEAD' });
+          if (response.ok) {
+            discovered.push(path);
+            consecutiveFails = 0;
+          } else {
+            consecutiveFails++;
+          }
+        } catch (e) {
+          consecutiveFails++;
+        }
+      }
+
+      console.log(`Found ${discovered.length} ${season} images`);
+      return discovered;
+    }
+
+    /**
+     * Get next image from shuffled queue
+     * No repeats until all images have been shown
+     * When queue empties, reshuffle and start fresh
+     */
+    function getNextImage() {
+      // If queue is empty, reshuffle all images
+      if (shuffledQueue.length === 0) {
+        if (images.length === 0) return null;
+        shuffledQueue = shuffleArray(images);
+        console.log(`Reshuffled ${shuffledQueue.length} images into queue`);
+      }
+
+      // Pop the next image from the queue
+      return shuffledQueue.shift();
+    }
+
+    /**
+     * Crossfade to next image
+     */
+    function showNextImage() {
+      const nextImage = getNextImage();
+      if (!nextImage) return;
+
+      const activeSlide = currentSlide === 1 ? 'slide1' : 'slide2';
+      const inactiveSlide = currentSlide === 1 ? 'slide2' : 'slide1';
+
+      const activeEl = document.getElementById(activeSlide);
+      const inactiveEl = document.getElementById(inactiveSlide);
+
+      // Preload next image
+      inactiveEl.src = nextImage;
+
+      // Wait for image to load before crossfading
+      inactiveEl.onload = () => {
+        // Crossfade
+        activeEl.classList.remove('active');
+        inactiveEl.classList.add('active');
+
+        // Swap current slide tracker
+        currentSlide = currentSlide === 1 ? 2 : 1;
+      };
+
+      inactiveEl.onerror = () => {
+        console.error('Failed to load:', nextImage);
+        // Remove bad image from both master list and queue
+        images = images.filter(img => img !== nextImage);
+        shuffledQueue = shuffledQueue.filter(img => img !== nextImage);
+        if (images.length > 0) {
+          showNextImage();
+        }
+      };
+    }
+
+    /**
+     * Check if season has changed
+     */
+    function checkSeasonChange() {
+      const newSeason = getSeason();
+      if (newSeason !== currentSeason) {
+        console.log(`Season changed: ${currentSeason} -> ${newSeason}`);
+        currentSeason = newSeason;
+        shuffledQueue = [];  // Clear queue so it reshuffles with new season's images
+        init();
+      }
+    }
+
+    /**
+     * Initialize slideshow
+     */
+    async function init() {
+      currentSeason = getSeason();
+      console.log(`Current season: ${currentSeason}`);
+
+      // Discover available images
+      images = await discoverImages(currentSeason);
+
+      if (images.length === 0) {
+        console.error(`No images found for ${currentSeason}`);
+        document.body.style.background = '#1a1a2e';
+        return;
+      }
+
+      // Show first image immediately
+      const firstImage = getNextImage();
+      document.getElementById('slide1').src = firstImage;
+
+      // Start slideshow
+      setInterval(showNextImage, INTERVAL);
+
+      // Check for season change every hour
+      setInterval(checkSeasonChange, 60 * 60 * 1000);
+    }
+
+    // Start when DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>
