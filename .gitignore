@@ -1,11 +1,5 @@
 # Build directories
 build/
-cmake/
-external/
-untracked/
-assets/
-build-ios-device/
-build-ios-sim/
 
 # Config directories
 .claude/
@@ -13,13 +7,8 @@ build-ios-sim/
 .cache/
 .github/
 
-# Work in progress
-docs/Older Docs/
 
 # Ralph runtime files
-bash/.last-branch
-bash/archive/
-bash/*.log
 prd.json
 progress.txt
 
