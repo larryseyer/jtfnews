@@ -1,0 +1,87 @@
+# Just the Facts News
+## Algorithmic Reporting for a Narrative-Free World
+
+*"If we stay boring enough, we might just change the world."*
+
+### 0. What is News?
+A verifiable event, within the last twenty-four hours, that affects five hundred people or more, costs at least one million US dollars, changes a law, or redraws a border. Nothing less. Nothing more.
+
+### 1. Core Principle
+We do not editorialise. We state what happened, where, when, and—when known—how many. Nothing more.
+
+### 2. Data Sourcing
+Public headlines and metadata from open websites. No login walls. No paid content. No APIs. No copyrighted imagery.
+
+### 3. Data Processing
+AI rewrites. Strips adjectives. Keeps facts. If it can’t be proven, it vanishes.
+
+### 4. Source Rating
+Live scores: accuracy, bias, speed, consensus. Numbers only. No labels.
+
+### 5. Verification
+Two unrelated sources minimum. Unrelated means different owners, different investors.
+
+### 6. Voice & Visuals
+Calm female voice, northern English. Slow, neutral background images—clouds, fields, water. Never the event. Never the news.
+
+### 7. Updates
+Every thirty minutes. Breaking news within five, but no urgency.
+
+### 8. Transparency
+Pseudocode on GitHub. Anyone can read. No one can change.
+
+### 9. Disclaimers
+This is not journalism. It is data.
+
+### 10. Ownership Disclosure
+Top three owners listed. Percentages. No spin.
+
+### 11. Funding & Community
+No ads. No tracking. Donations. Five-pound subscription for early code.
+
+### 12. Governance
+Non-profit. No dividends. We own nothing.
+
+### 13. Legal & Integrity
+Not liable for misuse. Corrections announced loud. Silence when nothing happens. English only. We die if we fail.
+
+### 14. Visuals
+Images rotate every forty-five seconds. Never match the story. They breathe.
+
+### 15. The Voice
+Custom. Female. Northern. Quiet. Trained on plain speech. Speaks. Stops.
+
+### 16. Sound Design
+Voice only. No music. No breath. When it stops, quiet.
+
+### 17. Ethics
+We do not store raw data longer than seven days.
+Daily summaries are archived on GitHub.
+Nothing hidden. Nothing sold.
+Just the record.
+No paywalls. No bots. Respect robots.txt. No logs.
+
+### 18. Licensing
+CC-BY-SA. Use it. Share it. Credit us. Don’t sell it.
+
+### 19. Enforcement
+We don’t chase. We list. Let the world notice.
+
+### 20. Launch
+When the code runs. When two sources speak. We start. No fanfare.
+
+### 21. Why
+Facts are dying. Silence is louder.
+
+### 22. Voice Assistants
+Alexa. Google Home. Say the name. Hear the fact.
+
+### 23. Social Media
+We tweet once. We never reply.
+
+### 24. YouTube
+Title: JTF News – Live.
+Description: Facts only. No chat. No hearts.
+
+### 25. The Loop
+Twenty-four hours. Midnight GMT. Each story once. Then back.

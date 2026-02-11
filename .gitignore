@@ -1,0 +1,67 @@
+# Build directories
+build/
+cmake/
+external/
+untracked/
+assets/
+build-ios-device/
+build-ios-sim/
+
+# Config directories
+.claude/
+.serena/
+.cache/
+.github/
+
+# Work in progress
+docs/Older Docs/
+
+# Ralph runtime files
+bash/.last-branch
+bash/archive/
+bash/*.log
+prd.json
+progress.txt
+
+# IDE/Editor
+.vscode/
+.idea/
+*.xcuserdata
+
+# Xcode/JUCE
+DerivedData/
+*.xcworkspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Compiled files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.app
+
+# Plugin artifacts
+*.vst3
+*.component
+*.aaxplugin
+
+# Debug files
+*.dSYM/
+*.pdb
+
+# Local config
+local.cmake
+
