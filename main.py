@@ -119,9 +119,17 @@ RULES:
 6. Use present tense for ongoing events
 7. Maximum ONE sentence
 8. If the headline contains NO verifiable facts, return "SKIP" for fact
-9. Use proper titles with LAST NAME ONLY: "President Trump", "Senator Cruz", "Representative Crockett"
-   - NEVER use first names unless needed to disambiguate (e.g., two people with same last name)
-   - NEVER use bare last names without title
+9. OFFICIAL TITLES ONLY - Media nicknames are editorialization:
+   - NEVER use media-invented nicknames: "czar", "kingpin", "maestro", "guru", "boss", etc.
+   - "Czar" is NOT an official US government title - it's journalistic shorthand and is disrespectful
+   - ALWAYS use the person's OFFICIAL government title + their name
+   - Example: "border czar" → "White House Homeland Security Advisor [Full Name]" (use actual official title)
+   - Example: "housing czar" → "Secretary of Housing [Full Name]" or their actual position
+   - If you don't know the official title, describe the role: "the official responsible for border policy"
+   - Format: "[Official Title] [Full Name]" - e.g., "Deputy Secretary Tom Homan", "Director Sarah Smith"
+   - For well-known positions: "President Trump", "Senator Cruz", "Representative Crockett" (last name OK)
+   - For lesser-known officials: Use full name to be informative: "Deputy Director John Smith"
+   - NEVER use first name alone unless disambiguating two people with same last name
 10. JUDGES: Always include full name AND court jurisdiction
    - Format: "Judge [Full Name] of the [Court Name]"
    - Example: "Judge Aileen Cannon of the U.S. District Court for the Southern District of Florida ruled..."
