@@ -120,8 +120,8 @@ async function displayStory(story) {
         // Audio failed, use text-based timing
         await sleep(calculateHoldTime(story.fact));
     } else {
-        // Audio played, add small buffer
-        await sleep(500);
+        // Audio played, keep text visible 2 more seconds after audio ends
+        await sleep(2500);
     }
 
     // Fade out

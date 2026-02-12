@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>JTF News Screen Saver</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      cursor: none; /* Hide cursor for screen saver */
+    }
+
+    /* ========== Background Slideshow Layer ========== */
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* ========== Lower Third Overlay ========== */
+    #lower-third {
+      position: absolute;
+      bottom: 8%;
+      left: 5%;
+      max-width: 90%;
+      z-index: 100;
+
+      /* Dark glassmorphism */
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(40px) saturate(180%);
+      -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+      /* Subtle light border */
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+
+      /* Shadow for depth */
+      box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+      /* Animation */
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    #lower-third.hidden {
+      opacity: 0;
+      transform: translateX(-50px);
+      pointer-events: none;
+    }
+
+    #lower-third.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    #brand-tab {
+      position: absolute;
+      top: -52px;
+      left: 0;
+      background: linear-gradient(135deg,
+        rgba(212, 175, 55, 0.95) 0%,
+        rgba(170, 135, 35, 0.9) 100%);
+      padding: 12px 28px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 4px;
+      border-radius: 10px 10px 0 0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: none;
+      box-shadow:
+        0 -4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    #source-bar {
+      background: linear-gradient(135deg,
+        rgba(30, 64, 175, 0.7) 0%,
+        rgba(23, 37, 84, 0.8) 100%);
+      padding: 18px 36px;
+      font-size: 28px;
+      font-weight: 600;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #fact-text {
+      padding: 36px 44px;
+      font-size: 58px;
+      font-weight: 400;
+      color: white;
+      line-height: 1.45;
+      letter-spacing: 0.3px;
+    }
+
+    /* Subtle top shine */
+    #lower-third::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 100%);
+      pointer-events: none;
+    }
+
+    /* ========== Audio Indicator ========== */
+    #audio-indicator {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 16px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      opacity: 1;
+      transition: opacity 2s ease-out;
+      z-index: 200;
+    }
+
+    #audio-indicator.fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background slideshow -->
+  <img id="slide1" class="slide active" alt="">
+  <img id="slide2" class="slide" alt="">
+
+  <!-- Lower third overlay -->
+  <div id="lower-third" class="hidden">
+    <div id="brand-tab">JTF NEWS</div>
+    <div id="source-bar"></div>
+    <div id="fact-text"></div>
+  </div>
+
+  <!-- Audio element (used only if audio=true) -->
+  <audio id="tts-audio" preload="none"></audio>
+
+  <!-- Startup indicator -->
+  <div id="audio-indicator"></div>
+
+  <script>
+    /**
+     * JTF News Screen Saver
+     * Combines background slideshow + lower-third news overlay
+     *
+     * URL Parameters:
+     *   ?audio=true   - Enable TTS audio (default: false/silent)
+     *   ?interval=50  - Seconds between slide changes (default: 50)
+     *   ?gap=45       - Seconds between stories (default: 45)
+     */
+
+    // ========== Configuration ==========
+    const params = new URLSearchParams(window.location.search);
+    const CONFIG = {
+      audioEnabled: params.get('audio') === 'true',
+      slideInterval: (parseInt(params.get('interval')) || 50) * 1000,
+      storyGap: (parseInt(params.get('gap')) || 45) * 1000,
+      fadeDuration: 2000,
+      basePath: '../media',
+      storiesUrl: '../data/stories.json',
+      pollInterval: 5000,
+      minRepeatGap: 2700000  // 45 minutes
+    };
+
+    // Show audio status briefly on startup
+    const indicator = document.getElementById('audio-indicator');
+    indicator.textContent = CONFIG.audioEnabled ? '🔊 Audio ON' : '🔇 Silent Mode';
+    setTimeout(() => indicator.classList.add('fade-out'), 3000);
+
+    // ========== Background Slideshow ==========
+    let currentSeason = null;
+    let images = [];
+    let shuffledQueue = [];
+    let currentSlide = 1;
+    let seedRng = null;
+
+    function getDailySeed() {
+      const now = new Date();
+      return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    }
+
+    function createSeededRng(seed) {
+      let hash = 0;
+      for (let i = 0; i < seed.length; i++) {
+        const char = seed.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+      }
+      return function() {
+        let t = hash += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      };
+    }
+
+    function shuffleArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(seedRng() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    function getSeason() {
+      const month = new Date().getMonth() + 1;
+      if (month >= 3 && month <= 5) return 'spring';
+      if (month >= 6 && month <= 8) return 'summer';
+      if (month >= 9 && month <= 11) return 'fall';
+      return 'winter';
+    }
+
+    async function discoverImages(season) {
+      const discovered = [];
+      let consecutiveFails = 0;
+      const maxConsecutiveFails = 10;
+
+      for (let i = 0; i < 2000 && consecutiveFails < maxConsecutiveFails; i++) {
+        const filename = `${season}_${String(i).padStart(6, '0')}.png`;
+        const path = `${CONFIG.basePath}/${season}/${filename}`;
+        try {
+          const response = await fetch(path, { method: 'HEAD' });
+          if (response.ok) {
+            discovered.push(path);
+            consecutiveFails = 0;
+          } else {
+            consecutiveFails++;
+          }
+        } catch (e) {
+          consecutiveFails++;
+        }
+      }
+      console.log(`[Slideshow] Found ${discovered.length} ${season} images`);
+      return discovered;
+    }
+
+    function getNextImage() {
+      if (shuffledQueue.length === 0) {
+        if (images.length === 0) return null;
+        const cycleSeed = getDailySeed() + '-' + Date.now();
+        seedRng = createSeededRng(cycleSeed);
+        shuffledQueue = shuffleArray(images);
+      }
+      return shuffledQueue.shift();
+    }
+
+    function showNextImage() {
+      const nextImage = getNextImage();
+      if (!nextImage) return;
+
+      const activeSlide = currentSlide === 1 ? 'slide1' : 'slide2';
+      const inactiveSlide = currentSlide === 1 ? 'slide2' : 'slide1';
+      const activeEl = document.getElementById(activeSlide);
+      const inactiveEl = document.getElementById(inactiveSlide);
+
+      inactiveEl.src = nextImage;
+      inactiveEl.onload = () => {
+        activeEl.classList.remove('active');
+        inactiveEl.classList.add('active');
+        currentSlide = currentSlide === 1 ? 2 : 1;
+      };
+      inactiveEl.onerror = () => {
+        images = images.filter(img => img !== nextImage);
+        shuffledQueue = shuffledQueue.filter(img => img !== nextImage);
+        if (images.length > 0) showNextImage();
+      };
+    }
+
+    async function initSlideshow() {
+      currentSeason = getSeason();
+      seedRng = createSeededRng(getDailySeed());
+      images = await discoverImages(currentSeason);
+
+      if (images.length === 0) {
+        document.body.style.background = '#1a1a2e';
+        return;
+      }
+
+      const firstImage = getNextImage();
+      document.getElementById('slide1').src = firstImage;
+      setInterval(showNextImage, CONFIG.slideInterval);
+      setInterval(() => {
+        const newSeason = getSeason();
+        if (newSeason !== currentSeason) {
+          currentSeason = newSeason;
+          shuffledQueue = [];
+          initSlideshow();
+        }
+      }, 60 * 60 * 1000);
+    }
+
+    // ========== Lower Third News ==========
+    let stories = [];
+    let storyPlayTimes = new Map();
+    let isDisplaying = false;
+    let audioElement = null;
+
+    async function loadStories() {
+      try {
+        const response = await fetch(CONFIG.storiesUrl + '?t=' + Date.now());
+        if (!response.ok) return;
+        const data = await response.json();
+        if (data.stories && data.stories.length > 0) {
+          stories = data.stories;
+          const currentFacts = new Set(stories.map(s => s.fact));
+          for (const fact of storyPlayTimes.keys()) {
+            if (!currentFacts.has(fact)) storyPlayTimes.delete(fact);
+          }
+        }
+      } catch (e) {
+        // No stories yet
+      }
+    }
+
+    function playAudio(audioPath) {
+      return new Promise((resolve) => {
+        if (!CONFIG.audioEnabled) {
+          resolve('disabled');
+          return;
+        }
+
+        if (!audioElement) {
+          audioElement = document.getElementById('tts-audio');
+        }
+
+        const onEnded = () => {
+          audioElement.removeEventListener('ended', onEnded);
+          audioElement.removeEventListener('error', onError);
+          resolve('ended');
+        };
+
+        const onError = () => {
+          audioElement.removeEventListener('ended', onEnded);
+          audioElement.removeEventListener('error', onError);
+          resolve('error');
+        };
+
+        audioElement.addEventListener('ended', onEnded);
+        audioElement.addEventListener('error', onError);
+        audioElement.src = audioPath + '?t=' + Date.now();
+        audioElement.load();
+        audioElement.play().catch(() => resolve('error'));
+      });
+    }
+
+    function calculateHoldTime(text) {
+      const baseTime = 5000;
+      const extraTime = Math.floor(text.length / 20) * 500;
+      return Math.min(baseTime + extraTime, 15000);
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function displayStory(story) {
+      if (isDisplaying) return;
+      isDisplaying = true;
+
+      const lowerThird = document.getElementById('lower-third');
+      const sourceBar = document.getElementById('source-bar');
+      const factText = document.getElementById('fact-text');
+
+      sourceBar.textContent = story.source || 'JTF News';
+      factText.textContent = story.fact;
+
+      lowerThird.classList.remove('hidden');
+      lowerThird.classList.add('visible');
+
+      const audioResult = await playAudio(story.audio);
+
+      if (audioResult === 'disabled' || audioResult === 'error') {
+        await sleep(calculateHoldTime(story.fact));
+      } else {
+        await sleep(500);
+      }
+
+      lowerThird.classList.remove('visible');
+      lowerThird.classList.add('hidden');
+
+      await sleep(1000 + CONFIG.storyGap);
+      isDisplaying = false;
+    }
+
+    function getEligibleStories() {
+      const now = Date.now();
+      return stories.filter(story => {
+        const lastPlayed = storyPlayTimes.get(story.fact) || 0;
+        return (now - lastPlayed) >= CONFIG.minRepeatGap;
+      });
+    }
+
+    async function runNewsLoop() {
+      while (true) {
+        if (stories.length === 0) {
+          await sleep(2000);
+          continue;
+        }
+
+        const eligible = getEligibleStories();
+        if (eligible.length === 0) {
+          await sleep(5000);
+          continue;
+        }
+
+        const story = eligible[0];
+        await displayStory(story);
+        storyPlayTimes.set(story.fact, Date.now());
+      }
+    }
+
+    function initNews() {
+      loadStories();
+      setInterval(loadStories, CONFIG.pollInterval);
+      runNewsLoop();
+    }
+
+    // ========== Screen Saver Behaviors ==========
+    function preventSleep() {
+      // Request wake lock if available (keeps screen on)
+      if ('wakeLock' in navigator) {
+        navigator.wakeLock.request('screen').catch(() => {});
+      }
+    }
+
+    // ========== Initialize ==========
+    function init() {
+      console.log('[JTF Screen Saver] Starting...');
+      console.log('[JTF Screen Saver] Audio:', CONFIG.audioEnabled ? 'ON' : 'OFF');
+
+      preventSleep();
+      initSlideshow();
+      initNews();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>
