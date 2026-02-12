@@ -4,7 +4,19 @@
 *"If we stay boring enough, we might just change the world."*
 
 ### 0. What is News?
-A verifiable event, within the last twenty-four hours, that affects five hundred people or more, costs at least one million US dollars, changes a law, or redraws a border. Nothing less. Nothing more.
+A verifiable event, within the last twenty-four hours, that meets at least one of these criteria:
+- Affects five hundred people or more
+- Costs or invests at least one million US dollars
+- Changes a law or regulation
+- Redraws a border
+- Involves death or violent crime
+- Major scientific or technological achievement
+- Humanitarian milestone
+- Official statement or action by a head of state or government
+- Major economic indicator (GDP, unemployment, inflation)
+- International agreement or diplomatic action
+
+Nothing less. Nothing more.
 
 This defines news for our global stream. Other communities define relevance for themselves. A local channel might report on fifty people. A school board channel might report on a single vote. The threshold changes. The methodology does not.
 

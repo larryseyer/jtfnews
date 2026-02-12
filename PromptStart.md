@@ -255,10 +255,10 @@ A story is ONLY published when:
 3. Claude has processed BOTH headlines
 4. BOTH have confidence ≥85%
 
-### The Three-Hour Rule
+### The Six-Hour Rule
 
 - First source reports → Story goes to `queue.json` with timestamp
-- No second source within 3 hours → Story is DROPPED
+- No second source within 6 hours → Story is DROPPED
 - No ghost stories. No "developing" placeholder.
 - Either verified or deleted.
 
@@ -565,7 +565,7 @@ Plus thresholds:
   "thresholds": {
     "min_confidence": 90,
     "min_sources": 2,
-    "queue_timeout_hours": 3,
+    "queue_timeout_hours": 6,
     "duplicate_window_hours": 24
   },
   "timing": {
@@ -581,7 +581,7 @@ Single Python script that:
 - Scrapes headlines from 20 sources (respecting robots.txt)
 - Sends each to Claude API for fact extraction
 - Verifies 2+ sources with different owners
-- Checks 3-hour queue expiry
+- Checks 6-hour queue expiry
 - Writes to data/current.txt and data/source.txt
 - Generates TTS via ElevenLabs → audio/current.wav
 - Updates daily_log.txt
@@ -775,7 +775,7 @@ After implementation, verify EVERY item:
 - [ ] Single-source stories are queued, not published
 - [ ] Two-source stories are published
 - [ ] Different-owner verification works
-- [ ] 3-hour queue expiry works
+- [ ] 6-hour queue expiry works
 
 ### Output Files
 - [ ] `data/current.txt` updates with new stories

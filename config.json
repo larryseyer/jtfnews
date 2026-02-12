@@ -463,6 +463,120 @@
         "consensus": 10.0
       },
       "notes": "Primary source for Supreme Court opinions; authoritative but infrequent"
+    },
+    {
+      "id": "afp",
+      "name": "Agence France-Presse",
+      "url": "https://www.afp.com/en",
+      "rss": "https://news.google.com/rss/search?q=site:afp.com&hl=en-US&gl=US&ceid=US:en",
+      "scrape_selector": "h3",
+      "tier": 1,
+      "control_type": "quasi-public",
+      "owner": "Agence France-Presse (French state-backed)",
+      "owner_display": "French Government (quasi-autonomous)",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.5,
+        "bias": 0.2,
+        "speed": 9.5,
+        "consensus": 9.4
+      },
+      "notes": "Major international wire service; direct site may block, using Google News RSS"
+    },
+    {
+      "id": "efe",
+      "name": "EFE News Agency",
+      "url": "https://efe.com/en/",
+      "rss": "https://news.google.com/rss/search?q=site:efe.com&hl=en-US&gl=US&ceid=US:en",
+      "scrape_selector": "h3",
+      "tier": 2,
+      "control_type": "state",
+      "owner": "SEPI (Spanish Government)",
+      "owner_display": "Spanish Government",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 8.8,
+        "bias": 0.3,
+        "speed": 8.5,
+        "consensus": 8.5
+      },
+      "notes": "Spanish wire service; strong Latin America/Spain coverage"
+    },
+    {
+      "id": "state_dept",
+      "name": "US State Department",
+      "url": "https://www.state.gov/press-releases/",
+      "rss": "https://www.state.gov/rss-feed/press-releases/feed/",
+      "scrape_selector": "h2.briefing-statement__title",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Executive Branch",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.5,
+        "bias": 0.5,
+        "speed": 8.0,
+        "consensus": 9.0
+      },
+      "notes": "Primary source for US foreign policy statements; authoritative"
+    },
+    {
+      "id": "pentagon",
+      "name": "US Department of Defense",
+      "url": "https://www.defense.gov/News/",
+      "rss": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?max=10&ContentType=1&Site=945",
+      "scrape_selector": "h3.title",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Executive Branch (DoD)",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.0,
+        "bias": 0.5,
+        "speed": 7.5,
+        "consensus": 8.5
+      },
+      "notes": "Primary source for US military statements; authoritative for defense matters"
+    },
+    {
+      "id": "uk_parliament",
+      "name": "UK Parliament",
+      "url": "https://www.parliament.uk/business/news/",
+      "rss": "https://www.parliament.uk/g/RSS/news/",
+      "scrape_selector": "h3.card-title",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "UK Government",
+      "owner_display": "UK Parliament",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.8,
+        "bias": 0.1,
+        "speed": 7.0,
+        "consensus": 9.5
+      },
+      "notes": "Primary source for UK parliamentary proceedings; authoritative"
+    },
+    {
+      "id": "eu_commission",
+      "name": "European Commission",
+      "url": "https://ec.europa.eu/commission/presscorner/home/en",
+      "rss": "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+      "scrape_selector": "h3.ecl-content-block__title",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "European Union",
+      "owner_display": "European Union",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.5,
+        "bias": 0.2,
+        "speed": 7.5,
+        "consensus": 9.0
+      },
+      "notes": "Primary source for EU policy and regulations; authoritative for EU matters"
     }
   ],
   "unrelated_rules": {
@@ -473,7 +587,7 @@
   "thresholds": {
     "min_confidence": 85,
     "min_sources": 2,
-    "queue_timeout_hours": 3,
+    "queue_timeout_hours": 6,
     "duplicate_window_hours": 24,
     "people_affected": 500,
     "cost_usd": 1000000
@@ -498,6 +612,6 @@
       "mature": "rating (successes/total)"
     },
     "success_definition": "Story from source A was verified by unrelated source B (both get +1)",
-    "failure_definition": "Story expired from queue after 3 hours without 2nd source verification"
+    "failure_definition": "Story expired from queue after 6 hours without 2nd source verification"
   }
 }
