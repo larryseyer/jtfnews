@@ -4,7 +4,7 @@
       "id": "ap",
       "name": "Associated Press",
       "url": "https://apnews.com/world-news",
-      "rss": null,
+      "rss": "https://news.google.com/rss/search?q=site:apnews.com&hl=en-US&gl=US&ceid=US:en",
       "scrape_selector": "h3",
       "tier": 1,
       "control_type": "cooperative",
@@ -16,7 +16,31 @@
         "bias": 0.1,
         "speed": 9.5,
         "consensus": 9.5
-      }
+      },
+      "notes": "Direct site blocks requests; using Google News RSS as delivery mechanism"
+    },
+    {
+      "id": "reuters",
+      "name": "Reuters",
+      "url": "https://www.reuters.com/world/",
+      "rss": "https://news.google.com/rss/search?q=site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+      "scrape_selector": "h3",
+      "tier": 1,
+      "control_type": "corporate",
+      "owner": "Thomson Reuters Corporation",
+      "owner_display": "Thomson Reuters (public)",
+      "institutional_holders": [
+        {"name": "Woodbridge Company", "percent": 69.0},
+        {"name": "Vanguard", "percent": 3.1},
+        {"name": "BlackRock", "percent": 2.8}
+      ],
+      "ratings": {
+        "accuracy": 9.8,
+        "bias": 0.1,
+        "speed": 9.8,
+        "consensus": 9.8
+      },
+      "notes": "Direct site blocks requests; using Google News RSS as delivery mechanism"
     },
     {
       "id": "bbc",
@@ -344,6 +368,101 @@
         "speed": 8.0,
         "consensus": 7.5
       }
+    },
+    {
+      "id": "cspan",
+      "name": "C-SPAN",
+      "url": "https://www.c-span.org/",
+      "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCb--64Gl51jIEVE-GLDAVTg",
+      "scrape_selector": null,
+      "tier": 1,
+      "control_type": "nonprofit",
+      "owner": "National Cable Satellite Corporation",
+      "owner_display": "Cable industry nonprofit (100%)",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 10.0,
+        "bias": 0.0,
+        "speed": 7.0,
+        "consensus": 9.5
+      },
+      "notes": "Unfiltered government proceedings; YouTube RSS for video titles/descriptions; primary source"
+    },
+    {
+      "id": "whitehouse",
+      "name": "White House",
+      "url": "https://www.whitehouse.gov/briefing-room/",
+      "rss": null,
+      "scrape_selector": ".wp-block-post-title",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Executive Branch",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.0,
+        "bias": 0.0,
+        "speed": 9.5,
+        "consensus": 9.0
+      },
+      "notes": "Primary source for executive branch statements and actions"
+    },
+    {
+      "id": "congress",
+      "name": "Congress.gov",
+      "url": "https://www.congress.gov/",
+      "rss": "https://www.congress.gov/rss/most-viewed-bills.xml",
+      "scrape_selector": null,
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Legislative Branch",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 10.0,
+        "bias": 0.0,
+        "speed": 8.0,
+        "consensus": 10.0
+      },
+      "notes": "Primary source for legislative actions, bills, votes"
+    },
+    {
+      "id": "federal_register",
+      "name": "Federal Register",
+      "url": "https://www.federalregister.gov/",
+      "rss": "https://www.federalregister.gov/api/v1/documents.rss",
+      "scrape_selector": null,
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Executive Branch (NARA)",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 10.0,
+        "bias": 0.0,
+        "speed": 8.5,
+        "consensus": 10.0
+      },
+      "notes": "Official daily journal of the US Government; regulatory actions, executive orders"
+    },
+    {
+      "id": "scotus",
+      "name": "Supreme Court",
+      "url": "https://www.supremecourt.gov/opinions/slipopinion/25",
+      "rss": null,
+      "scrape_selector": "table tr td",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Judicial Branch",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 10.0,
+        "bias": 0.0,
+        "speed": 6.0,
+        "consensus": 10.0
+      },
+      "notes": "Primary source for Supreme Court opinions; authoritative but infrequent"
     }
   ],
   "unrelated_rules": {

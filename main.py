@@ -14,6 +14,8 @@ This script runs continuously:
 - Archives daily to GitHub at midnight GMT
 """
 
+from __future__ import annotations
+
 import os
 import sys
 import json

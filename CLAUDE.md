@@ -36,10 +36,19 @@ Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 | Machine | Path | Purpose |
 |---------|------|---------|
 | Apple Silicon (dev) | `/Users/larryseyer/JTFNews` | Development |
-| Intel/Mojave (deploy) | `/Volumes/larryseyer/JTFNews` | Production streaming |
+| Intel/Mojave (deploy) | `/Volumes/MacLive/Users/larryseyer/JTFNews` | Production streaming |
 
 ### CRITICAL: Always Deploy After Making Changes
 After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to the production machine.
+
+### ⚠️ NEVER EDIT FILES ON THE DEPLOY MACHINE ⚠️
+**ALL code changes MUST happen on the DEV machine first, then deploy.**
+
+- The deploy path (`/Volumes/MacLive/...`) is for PRODUCTION ONLY
+- NEVER open or edit files at the deploy path directly
+- If you accidentally edit on deploy, STOP and copy changes back to dev first
+- The deploy.sh script will OVERWRITE deploy files with dev versions (no -u flag)
+- Dev is ALWAYS the source of truth
 
 **What gets deployed** (safe to copy):
 - Python source files (.py)
@@ -57,7 +66,7 @@ After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to
 
 ### Notes
 - `gh-pages-dist/` is for GitHub Pages web assets only, NOT deployment
-- Check if volume is mounted before deploying: `ls /Volumes/larryseyer/JTFNews`
+- Check if volume is mounted before deploying: `ls /Volumes/MacLive/Users/larryseyer/JTFNews`
 - If deploy machine venv breaks after copy, run `./fix-after-copy.sh` on the Intel machine
 
 ## Folder Structure

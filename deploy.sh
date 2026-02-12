@@ -2,7 +2,7 @@
 # deploy.sh - Copy source files from development to deployment
 #
 # Development (Apple Silicon): /Users/larryseyer/JTFNews
-# Deployment (Intel/Mojave):   /Volumes/larryseyer/JTFNews
+# Deployment (Intel/Mojave):   /Volumes/MacLive/Users/larryseyer/JTFNews
 #
 # IMPORTANT: This only copies SOURCE CODE, not the venv or runtime data.
 # After deploying, run fix-after-copy.sh on the deployment machine to:
@@ -10,7 +10,7 @@
 #   - Set up the gh-pages worktree
 
 DEV_DIR="/Users/larryseyer/JTFNews"
-DEPLOY_DIR="/Volumes/larryseyer/JTFNews"
+DEPLOY_DIR="/Volumes/MacLive/Users/larryseyer/JTFNews"
 
 # Check if deployment volume is mounted
 if [ ! -d "$DEPLOY_DIR" ]; then
@@ -29,10 +29,10 @@ echo ""
 # Use rsync to copy source files only
 # -a = archive mode (preserves permissions, timestamps)
 # -v = verbose
-# -u = skip files that are newer on the receiver
+# NOTE: No -u flag! Dev is ALWAYS authoritative - deploy is overwritten regardless of timestamps
 # --delete = remove files on deployment that don't exist in dev (within copied dirs)
 
-rsync -avu \
+rsync -av \
     --exclude='venv/' \
     --exclude='__pycache__/' \
     --exclude='*.pyc' \
