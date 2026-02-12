@@ -22,3 +22,6 @@ twilio>=8.0.0
 
 # Environment variables
 python-dotenv>=1.0.0
+
+jiter>=0.10.0
+
