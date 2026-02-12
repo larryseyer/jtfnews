@@ -92,6 +92,7 @@ class FlushingFileHandler(logging.FileHandler):
 
 log = logging.getLogger("jtf")
 log.setLevel(logging.INFO)
+log.propagate = False  # Prevent duplicate logging to root logger
 log_format = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 # Console handler
