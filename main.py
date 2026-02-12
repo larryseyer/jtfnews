@@ -178,8 +178,20 @@ Headline to process:
 """
 
 
-def extract_fact(headline: str) -> dict:
-    """Send headline to Claude for fact extraction."""
+def extract_fact(headline: str, use_cache: bool = True) -> dict:
+    """Send headline to Claude for fact extraction.
+
+    Uses cached result if available to reduce API costs.
+    """
+    headline_hash = get_story_hash(headline)
+
+    # Check cache first (saves ~$0.001 per cached hit)
+    if use_cache:
+        cached = _fact_extraction_cache.get(headline_hash)
+        if cached:
+            log.debug(f"Cache hit for headline: {headline[:50]}...")
+            return cached
+
     try:
         client = anthropic.Anthropic()
 
@@ -199,7 +211,9 @@ def extract_fact(headline: str) -> dict:
             start = text.find('{')
             end = text.rfind('}') + 1
             if start >= 0 and end > start:
-                return json.loads(text[start:end])
+                result = json.loads(text[start:end])
+                save_fact_extraction(headline_hash, result)
+                return result
         except json.JSONDecodeError:
             pass
 
@@ -210,7 +224,9 @@ def extract_fact(headline: str) -> dict:
         if fact_match:
             fact = fact_match.group(1).replace('\\"', '"')
             confidence = int(conf_match.group(1)) if conf_match else 85
-            return {"fact": fact, "confidence": confidence, "removed": []}
+            result = {"fact": fact, "confidence": confidence, "removed": []}
+            save_fact_extraction(headline_hash, result)
+            return result
 
         return {"fact": "SKIP", "confidence": 0, "removed": []}
 
@@ -989,6 +1005,49 @@ def is_headline_processed(headline_text: str, processed_cache: set) -> bool:
 
 
 # =============================================================================
+# FACT EXTRACTION CACHE (Cache Claude responses to avoid redundant API calls)
+# =============================================================================
+
+# In-memory cache for fact extractions (headline_hash -> extraction result)
+_fact_extraction_cache: dict = {}
+
+
+def load_fact_extraction_cache() -> dict:
+    """Load cached fact extractions from disk."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    cache_file = DATA_DIR / f"fact_cache_{today}.json"
+
+    if cache_file.exists():
+        try:
+            with open(cache_file) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            return {}
+    return {}
+
+
+def save_fact_extraction(headline_hash: str, result: dict):
+    """Save a fact extraction result to cache."""
+    global _fact_extraction_cache
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    cache_file = DATA_DIR / f"fact_cache_{today}.json"
+
+    _fact_extraction_cache[headline_hash] = result
+
+    try:
+        with open(cache_file, 'w') as f:
+            json.dump(_fact_extraction_cache, f)
+    except IOError as e:
+        log.warning(f"Could not save fact cache: {e}")
+
+
+def get_cached_fact_extraction(headline_text: str) -> dict | None:
+    """Get cached extraction result if available."""
+    headline_hash = get_story_hash(headline_text)
+    return _fact_extraction_cache.get(headline_hash)
+
+
+# =============================================================================
 # TEXT-TO-SPEECH
 # =============================================================================
 
@@ -1666,6 +1725,10 @@ def archive_daily_log():
     processed_file = DATA_DIR / f"processed_{yesterday_str}.txt"
     processed_file.unlink(missing_ok=True)
 
+    # Clean up fact extraction cache
+    fact_cache_file = DATA_DIR / f"fact_cache_{yesterday_str}.json"
+    fact_cache_file.unlink(missing_ok=True)
+
     # Commit and push to gh-pages
     try:
         subprocess.run(
@@ -1713,8 +1776,10 @@ def process_cycle():
     headlines = scrape_all_sources()
     log.info(f"Total headlines: {len(headlines)}")
 
-    # Load processed headlines cache
+    # Load caches (saves API costs by avoiding redundant calls)
     processed_cache = load_processed_headlines()
+    global _fact_extraction_cache
+    _fact_extraction_cache = load_fact_extraction_cache()
     skipped_count = 0
     published_count = 0
 

@@ -1,100 +1,82 @@
-2026-02-12 17:02:42 | INFO | JTF News starting...
-2026-02-12 17:02:42 | INFO | Facts only. No opinions.
-2026-02-12 17:02:42 | INFO | ----------------------------------------
-2026-02-12 17:02:42 | INFO | ============================================================
-2026-02-12 17:02:42 | INFO | Starting cycle
-2026-02-12 17:02:42 | INFO | Fetched 10 headlines from Associated Press (RSS)
-2026-02-12 17:02:44 | INFO | Fetched 10 headlines from Reuters (RSS)
-2026-02-12 17:02:45 | INFO | Fetched 10 headlines from BBC News (RSS)
-2026-02-12 17:02:46 | INFO | Fetched 10 headlines from NPR (RSS)
-2026-02-12 17:02:47 | INFO | Fetched 10 headlines from The Guardian (RSS)
-2026-02-12 17:02:48 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
-2026-02-12 17:02:49 | INFO | Fetched 10 headlines from France 24 (RSS)
-2026-02-12 17:02:51 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
-2026-02-12 17:02:52 | INFO | Fetched 10 headlines from CBC News (RSS)
-2026-02-12 17:02:53 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
-2026-02-12 17:02:55 | INFO | Fetched 5 headlines from The Independent (HTML)
-2026-02-12 17:02:56 | INFO | Fetched 10 headlines from Sky News (RSS)
-2026-02-12 17:02:57 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
-2026-02-12 17:02:58 | INFO | Fetched 10 headlines from Euronews (RSS)
-2026-02-12 17:02:59 | INFO | Fetched 10 headlines from Times of India (RSS)
-2026-02-12 17:03:01 | WARNING | robots.txt blocks: https://www.scmp.com/news
-2026-02-12 17:03:01 | INFO | Skipping South China Morning Post - robots.txt disallows
-2026-02-12 17:03:02 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
-2026-02-12 17:03:03 | INFO | Fetched 10 headlines from Irish Times (RSS)
-2026-02-12 17:03:04 | INFO | Fetched 10 headlines from The Straits Times (RSS)
-2026-02-12 17:03:06 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
-2026-02-12 17:03:07 | INFO | Fetched 10 headlines from C-SPAN (RSS)
-2026-02-12 17:03:08 | INFO | Fetched 10 headlines from White House (HTML)
-2026-02-12 17:03:09 | INFO | Fetched 1 headlines from Congress.gov (RSS)
-2026-02-12 17:03:10 | INFO | Fetched 10 headlines from Federal Register (RSS)
-2026-02-12 17:03:11 | INFO | Fetched 2 headlines from Supreme Court (HTML)
-2026-02-12 17:03:13 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
-2026-02-12 17:03:15 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
-2026-02-12 17:03:18 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
-2026-02-12 17:03:20 | INFO | Fetched 10 headlines from UK Parliament (RSS)
-2026-02-12 17:03:22 | INFO | Fetched 10 headlines from European Commission (RSS)
-2026-02-12 17:03:23 | INFO | Total headlines: 268
-2026-02-12 17:03:25 | INFO | Word overlap pre-filter: 2/32 candidates
-2026-02-12 17:03:29 | INFO | Generated TTS: Activists report more than 7,000 deaths during pro...
-2026-02-12 17:03:29 | INFO | Published: Activists report more than 7,000 deaths during pro...
-2026-02-12 17:03:29 | INFO | RSS feed updated: 2 items
-2026-02-12 17:03:30 | INFO | RSS feed pushed to gh-pages
-2026-02-12 17:03:30 | INFO | Alexa feed updated: 3 items
-2026-02-12 17:03:31 | INFO | Alexa feed pushed to gh-pages
-2026-02-12 17:03:31 | INFO | VERIFIED: Activists report more than 7,000 deaths during pro...
-2026-02-12 17:03:31 | INFO | Rating +1 success for ap: {'successes': 1, 'failures': 0}
-2026-02-12 17:03:31 | INFO | Rating +1 success for pbs: {'successes': 1, 'failures': 0}
-2026-02-12 17:03:32 | INFO | Cycle complete. Published: 1, Queue: 31, Skipped (cached): 266
-2026-02-12 17:03:32 | INFO | Sleeping 5 minutes...
-2026-02-12 17:08:32 | INFO | ============================================================
-2026-02-12 17:08:32 | INFO | Starting cycle
-2026-02-12 17:08:33 | INFO | Fetched 10 headlines from Associated Press (RSS)
-2026-02-12 17:08:35 | INFO | Fetched 10 headlines from Reuters (RSS)
-2026-02-12 17:08:36 | INFO | Fetched 10 headlines from BBC News (RSS)
-2026-02-12 17:08:37 | INFO | Fetched 10 headlines from NPR (RSS)
-2026-02-12 17:08:38 | INFO | Fetched 10 headlines from The Guardian (RSS)
-2026-02-12 17:08:40 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
-2026-02-12 17:08:41 | INFO | Fetched 10 headlines from France 24 (RSS)
-2026-02-12 17:08:43 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
-2026-02-12 17:08:44 | INFO | Fetched 10 headlines from CBC News (RSS)
-2026-02-12 17:08:45 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
-2026-02-12 17:08:47 | INFO | Fetched 5 headlines from The Independent (HTML)
-2026-02-12 17:08:48 | INFO | Fetched 10 headlines from Sky News (RSS)
-2026-02-12 17:08:49 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
-2026-02-12 17:08:50 | INFO | Fetched 10 headlines from Euronews (RSS)
-2026-02-12 17:08:51 | INFO | Fetched 10 headlines from Times of India (RSS)
-2026-02-12 17:08:52 | INFO | Skipping South China Morning Post - robots.txt disallows
-2026-02-12 17:08:54 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
-2026-02-12 17:08:55 | INFO | Fetched 10 headlines from Irish Times (RSS)
-2026-02-12 17:08:56 | INFO | Fetched 10 headlines from The Straits Times (RSS)
-2026-02-12 17:08:59 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
-2026-02-12 17:09:00 | INFO | Fetched 10 headlines from C-SPAN (RSS)
-2026-02-12 17:09:01 | INFO | Fetched 10 headlines from White House (HTML)
-2026-02-12 17:09:02 | INFO | Fetched 1 headlines from Congress.gov (RSS)
-2026-02-12 17:09:04 | INFO | Fetched 10 headlines from Federal Register (RSS)
-2026-02-12 17:09:05 | INFO | Fetched 2 headlines from Supreme Court (HTML)
-2026-02-12 17:09:07 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
-2026-02-12 17:09:08 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
-2026-02-12 17:09:11 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
-2026-02-12 17:09:13 | INFO | Fetched 10 headlines from UK Parliament (RSS)
-2026-02-12 17:09:16 | INFO | Fetched 10 headlines from European Commission (RSS)
-2026-02-12 17:09:17 | INFO | Total headlines: 268
-2026-02-12 17:09:19 | INFO | Not newsworthy (none): Australia won its first gold medal at th...
-2026-02-12 17:09:21 | INFO | Word overlap pre-filter: 1/31 candidates
-2026-02-12 17:09:27 | INFO | Queued: Britain's Cabinet Secretary resigned fro...
-2026-02-12 17:09:29 | INFO | Not newsworthy (none): Paul Kapur states the US seeks cooperati...
-2026-02-12 17:09:31 | INFO | Not newsworthy (none): HGTV removed Rehab Addict from programmi...
-2026-02-12 17:09:33 | INFO | Word overlap pre-filter: 5/32 candidates
-2026-02-12 17:09:39 | INFO | Generated TTS: President Trump repealed an EPA climate finding....
-2026-02-12 17:09:39 | INFO | Published: President Trump repealed an EPA climate finding....
-2026-02-12 17:09:39 | INFO | RSS feed updated: 3 items
-2026-02-12 17:09:40 | INFO | RSS feed pushed to gh-pages
-2026-02-12 17:09:40 | INFO | Alexa feed updated: 4 items
-2026-02-12 17:09:40 | INFO | Alexa feed pushed to gh-pages
-2026-02-12 17:09:40 | INFO | VERIFIED: President Trump repealed an EPA climate finding....
-2026-02-12 17:09:40 | INFO | Rating +1 success for cspan: {'successes': 1, 'failures': 0}
-2026-02-12 17:09:40 | INFO | Rating +1 success for france24: {'successes': 1, 'failures': 0}
-2026-02-12 17:09:40 | INFO | Cycle complete. Published: 1, Queue: 31, Skipped (cached): 262
-2026-02-12 17:09:40 | INFO | Sleeping 5 minutes...
-2026-02-12 17:13:46 | INFO | Shutting down...
+2026-02-12 17:23:02 | INFO | JTF News starting...
+2026-02-12 17:23:02 | INFO | Facts only. No opinions.
+2026-02-12 17:23:02 | INFO | ----------------------------------------
+2026-02-12 17:23:02 | INFO | ============================================================
+2026-02-12 17:23:02 | INFO | Starting cycle
+2026-02-12 17:23:02 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-12 17:23:04 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-12 17:23:06 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-12 17:23:07 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-12 17:23:08 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-12 17:23:09 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-12 17:23:10 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-12 17:23:12 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-12 17:23:13 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-12 17:23:15 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-12 17:23:16 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-12 17:23:18 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-12 17:23:19 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-12 17:23:20 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-12 17:23:22 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-12 17:23:23 | WARNING | robots.txt blocks: https://www.scmp.com/news
+2026-02-12 17:23:23 | INFO | Skipping South China Morning Post - robots.txt disallows
+2026-02-12 17:23:24 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-12 17:23:25 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-12 17:23:26 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-12 17:23:28 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-12 17:23:29 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-12 17:23:30 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-12 17:23:31 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-12 17:23:32 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-12 17:23:33 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-12 17:23:35 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-12 17:23:37 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-12 17:23:40 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-12 17:23:42 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-12 17:23:44 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-12 17:23:45 | INFO | Total headlines: 268
+2026-02-12 17:23:46 | INFO | Not newsworthy (none): Protesters march in Venezuela as Nationa...
+2026-02-12 17:23:50 | INFO | Word overlap pre-filter: 1/31 candidates
+2026-02-12 17:23:51 | INFO | Queued: Deputy Director Tom Homan states the Tru...
+2026-02-12 17:23:53 | INFO | Word overlap pre-filter: 1/32 candidates
+2026-02-12 17:23:54 | INFO | Queued: Ukrainian President Volodymyr Zelenskiy ...
+2026-02-12 17:23:56 | INFO | Word overlap pre-filter: 3/33 candidates
+2026-02-12 17:23:58 | INFO | Cycle complete. Published: 0, Queue: 33, Skipped (cached): 263
+2026-02-12 17:23:58 | INFO | Sleeping 5 minutes...
+2026-02-12 17:28:58 | INFO | ============================================================
+2026-02-12 17:28:58 | INFO | Starting cycle
+2026-02-12 17:28:58 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-12 17:29:00 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-12 17:29:01 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-12 17:29:02 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-12 17:29:03 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-12 17:29:05 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-12 17:29:06 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-12 17:29:07 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-12 17:29:09 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-12 17:29:10 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-12 17:29:11 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-12 17:29:13 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-12 17:29:15 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-12 17:29:16 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-12 17:29:17 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-12 17:29:18 | INFO | Skipping South China Morning Post - robots.txt disallows
+2026-02-12 17:29:20 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-12 17:29:21 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-12 17:29:22 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-12 17:29:23 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-12 17:29:25 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-12 17:29:26 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-12 17:29:27 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-12 17:29:28 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-12 17:29:29 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-12 17:29:31 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-12 17:29:32 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-12 17:29:36 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-12 17:29:37 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-12 17:29:39 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-12 17:29:40 | INFO | Total headlines: 268
+2026-02-12 17:29:46 | INFO | Not newsworthy (none): The Department of Defense and U.S. Depar...
+2026-02-12 17:29:46 | INFO | Cycle complete. Published: 0, Queue: 33, Skipped (cached): 264
+2026-02-12 17:29:46 | INFO | Sleeping 5 minutes...
+2026-02-12 17:34:39 | INFO | Shutting down...

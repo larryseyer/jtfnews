@@ -442,7 +442,7 @@ For each headline, Claude:
 
 ### 6.3 API Configuration
 
-**Model:** `claude-sonnet-4-20250514` (cost/quality balance)
+**Model:** `claude-3-5-haiku-latest` (optimized for cost; fact extraction doesn't require Sonnet)
 **Fallback:** If API fails, story queues for next cycle. **Never publish unprocessed text.**
 
 ### 6.4 The Prompt
@@ -545,7 +545,7 @@ Output: {"fact": "Judge [Full Name] of the U.S. District Court for [District] ru
 def process_with_claude(headline, source_id):
     try:
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-3-5-haiku-latest",  # Cost-optimized
             max_tokens=500,
             system=CLAUDE_SYSTEM_PROMPT,
             messages=[{"role": "user", "content": f"Process this headline: {headline}"}]
@@ -1354,7 +1354,7 @@ The first day will likely be quiet:
     "duplicate_window_hours": 24
   },
   "timing": {
-    "scrape_interval_minutes": 5,
+    "scrape_interval_minutes": 30,  // Cost optimized (was 5)
     "archive_hour_utc": 0
   },
   "display": {

@@ -372,6 +372,95 @@ This structure allows JTF News to pursue its mission of providing fact-based new
 
 ---
 
+## Operational Cost Analysis
+
+Understanding operating costs is critical for sustainability planning. This section documents the monthly expenses required to run JTF News.
+
+### Current Status (February 2026)
+
+JTF News is currently **self-funded by the founder**, who is retired. This informs our cost-optimization decisions.
+
+### Monthly Operating Costs
+
+| Service | Purpose | Low Estimate | High Estimate |
+|---------|---------|--------------|---------------|
+| **Claude API (Anthropic)** | Fact extraction, verification, matching | $10 | $30 |
+| **ElevenLabs TTS** | Voice generation for audio stream | $22 | $50 |
+| **Twilio SMS** | Stream health alerts | $1 | $5 |
+| **GitHub Pages** | RSS feed & archive hosting | $0 | $0 |
+| **News Sources (RSS)** | Content sourcing | $0 | $0 |
+| **TOTAL** | | **$33** | **$85** |
+
+### Cost Breakdown Details
+
+#### Claude API (~30% of costs)
+
+We use **Claude Haiku** with aggressive optimizations:
+
+| Factor | Value |
+|--------|-------|
+| Model | claude-3-5-haiku-latest |
+| Pricing | $0.80/MTok input, $4/MTok output |
+| Scrape interval | 30 minutes (not 5) |
+| Daily API calls | ~800-1,700 (with caching) |
+| Daily tokens | ~0.8-1.7M input, ~0.2-0.4M output |
+
+**Why this works:**
+1. **Haiku** — 90% cheaper than Sonnet; fact extraction doesn't need advanced reasoning
+2. **30-minute intervals** — 83% fewer API calls vs 5-minute intervals; news doesn't break that fast
+3. **Fact extraction caching** — Caches Claude responses; same headline = same result without API call
+
+#### ElevenLabs TTS
+
+| Factor | Value |
+|--------|-------|
+| Plan | Starter ($22/month) |
+| Included | 30,000 characters/month |
+| Usage | ~10-50 stories/day × 300-500 chars |
+
+#### Twilio SMS
+
+| Factor | Value |
+|--------|-------|
+| Per SMS | ~$0.0079 |
+| Usage | 0-5 alerts/day (stream offline, contradictions) |
+| Typical | $0-1/month when stream is healthy |
+
+### Cost Optimization Decisions Made
+
+1. **Claude Haiku over Sonnet** — 90% cost reduction, adequate for fact extraction
+2. **30-minute scrape intervals** — 83% reduction in API calls vs 5 minutes
+3. **Fact extraction caching** — Cache Claude responses to avoid redundant API calls
+4. **Headline deduplication cache** — Prevents re-processing same headlines
+5. **Word-overlap pre-filtering** — Reduces unnecessary Claude matching calls
+
+### Potential Further Reductions
+
+| Change | Savings | Trade-off |
+|--------|---------|-----------|
+| 60-minute intervals | ~50% more | Hour-old news at worst |
+| Local LLM (Llama/Mistral) | ~100% | Requires capable hardware, quality varies |
+
+### Sustainability Considerations
+
+At **$33-85/month**, JTF News is sustainable through:
+
+1. **Self-funding** — Current approach, very viable for retirement budget
+2. **Small donations** — Just 5-8 supporters at $10/month covers costs
+3. **Foundation grants** — Journalism/media literacy grants often start at $5-10K (covers 5+ years)
+4. **Commercial licensing** — Even one small business license ($500/year) covers annual costs
+
+### Cost vs. Revenue Projection
+
+| Scenario | Monthly Cost | Revenue Needed | Viable? |
+|----------|--------------|----------------|---------|
+| Self-funded | $50 | $0 | ✓ Yes (easily) |
+| 5 supporters | $50 | $50/mo | ✓ Yes |
+| 1 commercial license | $150 | $125/mo ($1,500/yr) | ✓ Yes |
+| Grant-funded | $150 | $1,800/yr grant | ✓ Yes |
+
+---
+
 ## Document Information
 
 | Field | Value |
@@ -379,6 +468,7 @@ This structure allows JTF News to pursue its mission of providing fact-based new
 | Document | 501C_approach.md |
 | Project | JTF News |
 | Created | February 2026 |
+| Updated | February 2026 (added cost analysis) |
 | Status | Planning Document |
 | Review | Requires legal counsel review before implementation |
 

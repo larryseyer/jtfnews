@@ -593,11 +593,11 @@
     "cost_usd": 1000000
   },
   "timing": {
-    "scrape_interval_minutes": 5,
+    "scrape_interval_minutes": 30,
     "archive_hour_utc": 0
   },
   "claude": {
-    "model": "claude-sonnet-4-20250514",
+    "model": "claude-3-5-haiku-latest",
     "max_tokens": 200
   },
   "ratings_methodology": {
