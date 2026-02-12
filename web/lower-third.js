@@ -2,18 +2,79 @@
  * JTF News - Lower Third Display
  * Loops through today's verified stories continuously
  * Each story displays with its cached audio, then moves to next
+ *
+ * Stories are evenly spread across each scrape cycle and randomized
+ * to provide varied viewing experience.
  */
 
 const FADE_TIME = 1000;       // Fade in/out duration (1 second)
-const GAP_TIME = 45000;       // Gap between stories (45 seconds)
+const MIN_GAP_TIME = 10000;   // Minimum gap between stories (10 seconds)
+const MAX_GAP_TIME = 120000;  // Maximum gap between stories (2 minutes)
 const POLL_INTERVAL = 5000;   // Check for new stories every 5 seconds
-const MIN_REPEAT_GAP = 2700000; // Minimum 45 minutes before repeating same story
+const SCRAPE_CYCLE_MS = 300000; // 5 minute scrape cycle (matches config)
 const STORIES_URL = '../data/stories.json';
 
 let stories = [];
-let storyPlayTimes = new Map();  // Track when each story was last played (by fact text)
+let shuffledQueue = [];       // Current cycle's shuffled story order
+let lastPlayedFact = null;    // Track last played story to avoid back-to-back
 let isDisplaying = false;
 let audioElement = null;
+let cycleStartTime = 0;       // When current cycle started
+
+/**
+ * Shuffle an array using Fisher-Yates algorithm with a fresh seed
+ */
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+/**
+ * Create a new shuffled queue for the cycle
+ * Ensures the last played story isn't first in the new queue
+ */
+function reshuffleForNewCycle() {
+    if (stories.length === 0) {
+        shuffledQueue = [];
+        return;
+    }
+
+    // Shuffle with a new random seed (Math.random uses current time)
+    shuffledQueue = shuffleArray(stories);
+
+    // If the first story in new shuffle matches last played, move it to the end
+    if (lastPlayedFact && shuffledQueue.length > 1 && shuffledQueue[0].fact === lastPlayedFact) {
+        const first = shuffledQueue.shift();
+        shuffledQueue.push(first);
+        console.log('Moved last-played story to end of queue to avoid back-to-back');
+    }
+
+    cycleStartTime = Date.now();
+    console.log(`New cycle started with ${shuffledQueue.length} stories shuffled`);
+}
+
+/**
+ * Calculate dynamic gap time based on number of stories
+ * Evenly spreads stories across the scrape cycle
+ */
+function calculateDynamicGap() {
+    if (shuffledQueue.length <= 1) {
+        return MAX_GAP_TIME;
+    }
+
+    // Calculate time per story to fill the cycle
+    // Account for approximate display time per story (audio ~10-15s + fade)
+    const estimatedDisplayTime = 15000; // Average story display time
+    const availableGapTime = SCRAPE_CYCLE_MS - (shuffledQueue.length * estimatedDisplayTime);
+    const gapTime = Math.floor(availableGapTime / shuffledQueue.length);
+
+    // Clamp to min/max bounds
+    return Math.max(MIN_GAP_TIME, Math.min(gapTime, MAX_GAP_TIME));
+}
 
 /**
  * Load stories from stories.json
@@ -25,18 +86,20 @@ async function loadStories() {
 
         const data = await response.json();
         if (data.stories && data.stories.length > 0) {
-            // Check if we have new stories
-            if (data.stories.length > stories.length) {
-                console.log(`Loaded ${data.stories.length} stories (${data.stories.length - stories.length} new)`);
-            }
-            stories = data.stories;
+            const oldCount = stories.length;
+            const newCount = data.stories.length;
 
-            // Clean up play times for stories no longer in the list
-            const currentFacts = new Set(stories.map(s => s.fact));
-            for (const fact of storyPlayTimes.keys()) {
-                if (!currentFacts.has(fact)) {
-                    storyPlayTimes.delete(fact);
+            // Check if stories changed
+            if (newCount !== oldCount) {
+                console.log(`Stories changed: ${oldCount} -> ${newCount}`);
+                stories = data.stories;
+
+                // If we have more stories and queue is empty or nearly done, reshuffle
+                if (shuffledQueue.length <= 1) {
+                    reshuffleForNewCycle();
                 }
+            } else {
+                stories = data.stories;
             }
         }
     } catch (error) {
@@ -96,6 +159,7 @@ function sleep(ms) {
 
 /**
  * Display a single story with fade and audio
+ * Uses dynamic gap time based on story count
  */
 async function displayStory(story) {
     if (isDisplaying) return;
@@ -128,27 +192,22 @@ async function displayStory(story) {
     lowerThird.classList.remove('visible');
     lowerThird.classList.add('hidden');
 
-    // Wait for fade + gap
-    await sleep(FADE_TIME + GAP_TIME);
+    // Track this as last played for back-to-back prevention
+    lastPlayedFact = story.fact;
+
+    // Calculate dynamic gap based on current story count
+    const dynamicGap = calculateDynamicGap();
+
+    // Wait for fade + dynamic gap
+    await sleep(FADE_TIME + dynamicGap);
 
     isDisplaying = false;
 }
 
 /**
- * Get stories eligible for playback (not played within MIN_REPEAT_GAP)
- */
-function getEligibleStories() {
-    const now = Date.now();
-    return stories.filter(story => {
-        const lastPlayed = storyPlayTimes.get(story.fact) || 0;
-        return (now - lastPlayed) >= MIN_REPEAT_GAP;
-    });
-}
-
-/**
  * Main loop - cycles through stories continuously
- * Stories won't repeat until MIN_REPEAT_GAP (45 min) has passed
- * If all stories are on cooldown, waits until one becomes eligible
+ * Stories are shuffled at the start of each cycle and evenly spaced
+ * New seed generated each cycle for varied playback order
  */
 async function runLoop() {
     while (true) {
@@ -158,21 +217,22 @@ async function runLoop() {
             continue;
         }
 
-        // Find stories eligible for playback
-        const eligible = getEligibleStories();
+        // Start a new cycle if queue is empty
+        if (shuffledQueue.length === 0) {
+            reshuffleForNewCycle();
 
-        if (eligible.length === 0) {
-            // All stories on cooldown, wait and check again
-            await sleep(5000);
-            continue;
+            // Still no stories after reshuffle? Wait and retry
+            if (shuffledQueue.length === 0) {
+                await sleep(2000);
+                continue;
+            }
         }
 
-        // Play the first eligible story
-        const story = eligible[0];
-        await displayStory(story);
+        // Get next story from shuffled queue
+        const story = shuffledQueue.shift();
 
-        // Track when this story was played
-        storyPlayTimes.set(story.fact, Date.now());
+        // Display the story
+        await displayStory(story);
     }
 }
 

@@ -323,10 +323,45 @@
     }
 
     // ========== Lower Third News ==========
+    const SCRAPE_CYCLE_MS = 300000;  // 5 minute scrape cycle
+    const MIN_GAP_TIME = 10000;      // Minimum 10 seconds between stories
+    const MAX_GAP_TIME = 120000;     // Maximum 2 minutes between stories
+
     let stories = [];
-    let storyPlayTimes = new Map();
+    let newsShuffledQueue = [];      // Shuffled story queue for current cycle
+    let lastPlayedFact = null;       // Track last played to avoid back-to-back
     let isDisplaying = false;
     let audioElement = null;
+
+    function shuffleStoriesArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    function reshuffleNewsForNewCycle() {
+      if (stories.length === 0) {
+        newsShuffledQueue = [];
+        return;
+      }
+      newsShuffledQueue = shuffleStoriesArray(stories);
+      // Avoid back-to-back: if first story matches last played, move it to end
+      if (lastPlayedFact && newsShuffledQueue.length > 1 && newsShuffledQueue[0].fact === lastPlayedFact) {
+        newsShuffledQueue.push(newsShuffledQueue.shift());
+      }
+      console.log(`[News] New cycle: ${newsShuffledQueue.length} stories shuffled`);
+    }
+
+    function calculateDynamicNewsGap() {
+      if (newsShuffledQueue.length <= 1) return MAX_GAP_TIME;
+      const estimatedDisplayTime = 15000;
+      const availableGapTime = SCRAPE_CYCLE_MS - (newsShuffledQueue.length * estimatedDisplayTime);
+      const gapTime = Math.floor(availableGapTime / newsShuffledQueue.length);
+      return Math.max(MIN_GAP_TIME, Math.min(gapTime, MAX_GAP_TIME));
+    }
 
     async function loadStories() {
       try {
@@ -334,10 +369,10 @@
         if (!response.ok) return;
         const data = await response.json();
         if (data.stories && data.stories.length > 0) {
+          const oldCount = stories.length;
           stories = data.stories;
-          const currentFacts = new Set(stories.map(s => s.fact));
-          for (const fact of storyPlayTimes.keys()) {
-            if (!currentFacts.has(fact)) storyPlayTimes.delete(fact);
+          if (stories.length !== oldCount && newsShuffledQueue.length <= 1) {
+            reshuffleNewsForNewCycle();
           }
         }
       } catch (e) {
@@ -405,22 +440,19 @@
       if (audioResult === 'disabled' || audioResult === 'error') {
         await sleep(calculateHoldTime(story.fact));
       } else {
-        await sleep(500);
+        await sleep(2500);
       }
 
       lowerThird.classList.remove('visible');
       lowerThird.classList.add('hidden');
 
-      await sleep(1000 + CONFIG.storyGap);
-      isDisplaying = false;
-    }
+      // Track last played for back-to-back prevention
+      lastPlayedFact = story.fact;
 
-    function getEligibleStories() {
-      const now = Date.now();
-      return stories.filter(story => {
-        const lastPlayed = storyPlayTimes.get(story.fact) || 0;
-        return (now - lastPlayed) >= CONFIG.minRepeatGap;
-      });
+      // Use dynamic gap based on story count
+      const dynamicGap = calculateDynamicNewsGap();
+      await sleep(1000 + dynamicGap);
+      isDisplaying = false;
     }
 
     async function runNewsLoop() {
@@ -430,15 +462,18 @@
           continue;
         }
 
-        const eligible = getEligibleStories();
-        if (eligible.length === 0) {
-          await sleep(5000);
-          continue;
+        // Start new cycle if queue is empty
+        if (newsShuffledQueue.length === 0) {
+          reshuffleNewsForNewCycle();
+          if (newsShuffledQueue.length === 0) {
+            await sleep(2000);
+            continue;
+          }
         }
 
-        const story = eligible[0];
+        // Get next story from shuffled queue
+        const story = newsShuffledQueue.shift();
         await displayStory(story);
-        storyPlayTimes.set(story.fact, Date.now());
       }
     }
 
