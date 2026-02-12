@@ -29,17 +29,36 @@ Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 3. Pushes to origin
 4. Creates a timestamped backup zip in Dropbox
 
-## IMPORTANT: Deploy Folder Location
-**The deploy folder is NOT `gh-pages-dist/`!**
+## IMPORTANT: Two-Machine Architecture (Apple Silicon → Intel)
+
+**We develop on Apple Silicon but deploy on Intel/Mojave.** These architectures are incompatible for compiled files.
 
 | Machine | Path | Purpose |
 |---------|------|---------|
 | Apple Silicon (dev) | `/Users/larryseyer/JTFNews` | Development |
 | Intel/Mojave (deploy) | `/Volumes/larryseyer/JTFNews` | Production streaming |
 
-- `gh-pages-dist/` is for GitHub Pages web assets only
-- When copying files to production, always use `/Volumes/larryseyer/JTFNews`
-- Check if volume is mounted first before copying
+### CRITICAL: Always Deploy After Making Changes
+After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to the production machine.
+
+**What gets deployed** (safe to copy):
+- Python source files (.py)
+- Config files (config.json, requirements.txt)
+- Web assets (HTML, CSS, JS)
+- Media files (images, videos)
+- Shell scripts
+
+**What NEVER gets deployed** (architecture-specific, will break on Intel):
+- `venv/` - Python virtual environment (ARM64 binaries)
+- `__pycache__/` - Compiled Python bytecode
+- `*.pyc` files - Compiled Python
+- `.git/` - Git internals
+- `data/` and `audio/` - Runtime data (generated on each machine)
+
+### Notes
+- `gh-pages-dist/` is for GitHub Pages web assets only, NOT deployment
+- Check if volume is mounted before deploying: `ls /Volumes/larryseyer/JTFNews`
+- If deploy machine venv breaks after copy, run `./fix-after-copy.sh` on the Intel machine
 
 ## Folder Structure
 - `media/` - Background images organized by season (fall/, spring/, summer/, winter/, generator/)
