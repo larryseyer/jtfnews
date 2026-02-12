@@ -15,6 +15,10 @@ echo ""
 
 # 1. Fix virtual environment
 echo "[1/2] Recreating virtual environment..."
+# Clear macOS metadata that can prevent deletion after copying
+find venv -name ".DS_Store" -delete 2>/dev/null || true
+find venv -name "._*" -delete 2>/dev/null || true
+xattr -cr venv 2>/dev/null || true
 rm -rf venv
 python3 -m venv venv
 source venv/bin/activate
@@ -24,6 +28,9 @@ echo ""
 
 # 2. Fix gh-pages worktree
 echo "[2/2] Recreating gh-pages worktree..."
+# Clear macOS metadata that can prevent deletion after copying
+find gh-pages-dist -name ".DS_Store" -delete 2>/dev/null || true
+xattr -cr gh-pages-dist 2>/dev/null || true
 rm -rf gh-pages-dist
 rm -rf .git/worktrees/gh-pages-dist 2>/dev/null || true
 git fetch origin gh-pages
