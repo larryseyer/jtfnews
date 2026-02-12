@@ -804,6 +804,23 @@ def get_learned_rating(source_id: str) -> float:
     return (stats["successes"] / total) * 10
 
 
+def get_reliability_score(source_id: str, confidence: int) -> float:
+    """Calculate reliability score for conflict resolution.
+
+    Formula: source_rating × (confidence / 100)
+
+    When two sources verify the same event but report different details,
+    the higher reliability score determines which version to publish.
+
+    Example:
+        Reuters (9.8 rating) at 95% confidence = 9.31 reliability
+        TOI (7.4 rating) at 90% confidence = 6.66 reliability
+        → Reuters' version wins
+    """
+    rating = get_learned_rating(source_id)
+    return rating * (confidence / 100)
+
+
 def get_display_rating(source_id: str) -> str:
     """Get rating with evidence indicator for display.
 
@@ -1753,34 +1770,57 @@ def process_cycle():
             for match in matches:
                 if are_sources_unrelated(headline["source_id"], match["source_id"]):
                     # VERIFIED! Two unrelated sources
+
+                    # Compare reliability scores to pick the best fact version
+                    # Formula: source_rating × (confidence / 100)
+                    new_reliability = get_reliability_score(headline["source_id"], confidence)
+                    queue_confidence = match.get("confidence", 85)  # Default 85% if missing
+                    queue_reliability = get_reliability_score(match["source_id"], queue_confidence)
+
+                    # Use fact from higher-reliability source
+                    if queue_reliability > new_reliability:
+                        best_fact = match["fact"]
+                        log.info(
+                            f"Preferring queued source ({match['source_name']}: {queue_reliability:.1f}) "
+                            f"over new ({headline['source_name']}: {new_reliability:.1f})"
+                        )
+                    else:
+                        best_fact = fact
+                        if queue_reliability < new_reliability:
+                            log.info(
+                                f"Preferring new source ({headline['source_name']}: {new_reliability:.1f}) "
+                                f"over queued ({match['source_name']}: {queue_reliability:.1f})"
+                            )
+                        # If equal, newer (new) wins silently
+
                     sources = [headline, match]
 
                     # Check for contradictions with recent facts
                     recent_facts = get_recent_facts()
-                    if check_contradiction(fact, recent_facts):
-                        log.warning(f"Contradiction blocked: {fact[:40]}...")
-                        send_alert(f"Contradiction: {fact[:50]}")
+                    if check_contradiction(best_fact, recent_facts):
+                        log.warning(f"Contradiction blocked: {best_fact[:40]}...")
+                        send_alert(f"Contradiction: {best_fact[:50]}")
                         continue
 
                     # Get audio index for caching
                     audio_index = get_next_audio_index()
 
                     # Generate TTS first (before JS sees the new story)
-                    audio_file = generate_tts(fact, audio_index)
+                    audio_file = generate_tts(best_fact, audio_index)
 
                     # Now write output (JS will detect and play)
-                    write_current_story(fact, sources)
-                    append_daily_log(fact, sources, audio_file)
-                    add_shown_hash(get_story_hash(fact))
+                    write_current_story(best_fact, sources)
+                    append_daily_log(best_fact, sources, audio_file)
+                    add_shown_hash(get_story_hash(best_fact))
 
                     # Remove from queue
                     queue = [q for q in queue if q["fact"] != match["fact"]]
 
                     published_count += 1
-                    log.info(f"VERIFIED: {fact[:50]}...")
+                    log.info(f"VERIFIED: {best_fact[:50]}...")
 
                     # Record verification success for BOTH sources (ratings learning)
-                    fact_hash = get_story_hash(fact)
+                    fact_hash = get_story_hash(best_fact)
                     record_verification_success(headline["source_id"], fact_hash)
                     record_verification_success(match["source_id"], fact_hash)
 

@@ -625,34 +625,52 @@ def check_queue():
     save_queue(queue)
 ```
 
-### 7.4 Merging Verified Stories
+### 7.4 Reliability-Based Conflict Resolution
 
-When two sources confirm, create merged fact:
-- Use the higher-confidence version as base
-- Add any additional verified details from second source
-- Attribute both sources
+When two sources verify the same event, they may report **different details** (e.g., different casualty counts, different dollar amounts). The system uses **reliability scores** to determine which version to publish.
+
+#### Reliability Score Formula
+
+```
+reliability = source_rating × (confidence / 100)
+```
+
+- **source_rating**: The learned accuracy rating (0-10 scale, from 7.5)
+- **confidence**: Claude's extraction confidence for this specific fact (0-100%)
+
+#### Example
+
+| Source | Rating | Confidence | Reliability |
+|--------|--------|------------|-------------|
+| Reuters | 9.8 | 95% | 9.31 |
+| Times of India | 7.4 | 90% | 6.66 |
+
+**Result:** Reuters' version is published (9.31 > 6.66)
+
+#### Implementation
 
 ```python
-def merge_stories(story1, story2):
-    """Merge two verified stories into one publishable fact."""
-    # Use higher confidence as base
-    if story1["confidence"] >= story2["confidence"]:
-        base, supplement = story1, story2
-    else:
-        base, supplement = story2, story1
+def get_reliability_score(source_id: str, confidence: int) -> float:
+    """Calculate reliability score for conflict resolution."""
+    rating = get_learned_rating(source_id)
+    return rating * (confidence / 100)
 
-    sources = [
-        f"{get_source_name(base['source_id'])} – {get_source_rating(base['source_id'])}",
-        f"{get_source_name(supplement['source_id'])} – {get_source_rating(supplement['source_id'])}"
-    ]
+# During verification:
+new_reliability = get_reliability_score(headline["source_id"], confidence)
+queue_reliability = get_reliability_score(match["source_id"], match["confidence"])
 
-    return {
-        "fact": base["fact"],
-        "sources": sources,
-        "confidence": min(base["confidence"], supplement["confidence"]),
-        "timestamp": time.time()
-    }
+if queue_reliability > new_reliability:
+    best_fact = match["fact"]  # Use queued (higher-rated) source's version
+else:
+    best_fact = fact  # Use new source's version (tiebreaker: newer wins)
 ```
+
+#### Key Points
+
+- **Both sources still credited** — attribution shows both sources regardless of which fact version is used
+- **Tiebreaker** — If reliability scores are equal, the newer source's version wins
+- **Logging** — When a queued source beats a newer source, it's logged:
+  `Preferring queued source (Reuters: 9.31) over new (TOI: 6.66)`
 
 ### 7.5 Source Rating Methodology
 
