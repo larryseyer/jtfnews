@@ -1607,6 +1607,13 @@ def check_midnight_archive():
         archive_daily_log()
         cleanup_old_data(days=7)  # Delete raw data older than 7 days
 
+        # Clear the log file for the new day
+        log_file = BASE_DIR / "jtf.log"
+        if log_file.exists():
+            log.info("Clearing jtf.log for new day")
+            with open(log_file, 'w') as f:
+                f.write(f"Log cleared at {now.isoformat()}\n")
+
 
 def main():
     """Main entry point."""
