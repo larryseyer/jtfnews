@@ -2,6 +2,8 @@
 
 24/7 live stream: only verifiable facts, no opinions, no adjectives, no interpretation.
 
+**[Live Demo](https://larryseyer.github.io/jtfnews/)** · **[RSS Feed](https://larryseyer.github.io/jtfnews/feed.xml)**
+
 ## Philosophy
 If we stay boring enough, we might just change the world.
 
