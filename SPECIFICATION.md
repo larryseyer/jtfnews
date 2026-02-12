@@ -23,6 +23,7 @@
 17. [File Specifications](#17-file-specifications)
 18. [Constraints and Ethics](#18-constraints-and-ethics)
 19. [Verification Checklist](#19-verification-checklist)
+20. [Future Directions](#20-future-directions)
 
 ---
 
@@ -1251,6 +1252,11 @@ The first day will likely be quiet:
 
 ```json
 {
+  "channel": {
+    "id": "global",
+    "name": "JTF News",
+    "tagline": "Facts only. No opinions."
+  },
   "sources": [
     // See Section 5 for full list
   ],
@@ -1863,6 +1869,84 @@ After implementation, verify each item:
 - [ ] Invalid headline = skipped cleanly
 - [ ] Duplicate story = not re-tweeted
 - [ ] Midnight = archive + reset works
+
+---
+
+## 20. Future Directions
+
+### 20.1 The Channel Concept
+
+JTF News Global is the first implementation of the JTF methodology. The architecture supports future community-specific channels without code changes.
+
+A **channel** is:
+- A distinct set of news sources
+- A relevance threshold appropriate to its community
+- Its own branding (JTF Local, JTF Sports, etc.)
+- Its own YouTube stream and Twitter account
+- The same verification methodology
+
+### 20.2 What Remains Universal
+
+All channels share:
+- Two-source verification from different owners
+- Claude AI editorialization stripping
+- Confidence threshold (≥85%)
+- No engagement policy
+- Calm presentation aesthetic
+- Public archiving
+- 501(c) non-profit operation
+
+### 20.3 What Varies by Channel
+
+| Element | Configured Per Channel |
+|---------|----------------------|
+| `sources[]` | Different news outlets per domain |
+| `thresholds.relevance` | Community-appropriate definition |
+| `branding.name` | "JTF Sports", "JTF [City]", etc. |
+| `branding.tagline` | Domain-specific version of mission |
+| `social.twitter_handle` | @JTFSports, @JTFLocal, etc. |
+| `social.youtube_channel` | Separate stream per channel |
+| `media/` folder | Domain-appropriate imagery |
+
+### 20.4 Architecture Readiness
+
+The current implementation already supports this through `config.json`:
+
+```json
+{
+  "channel": {
+    "id": "global",
+    "name": "JTF News",
+    "tagline": "Facts only. No opinions.",
+    "description": "Global news verification"
+  },
+  "sources": [...],
+  "thresholds": {...}
+}
+```
+
+Future channels would be separate `config.json` files or a multi-channel configuration structure. No core code changes required.
+
+### 20.5 Community Ownership
+
+Channels are public services, not products:
+- No licensing fees
+- No franchise model
+- Methodology is freely shared
+- Communities may fork and adapt
+- Attribution appreciated, not required
+- CC-BY-SA applies to methodology documentation
+
+### 20.6 Not Planned for MVP
+
+The following are documented for future consideration only:
+- Multi-channel orchestration
+- Shared source pools across channels
+- Cross-channel deduplication
+- Unified archive structure
+- Channel discovery/directory
+
+The MVP focuses solely on JTF News Global. This section exists to ensure architectural decisions do not preclude expansion.
 
 ---
 

@@ -6,6 +6,8 @@
 ### 0. What is News?
 A verifiable event, within the last twenty-four hours, that affects five hundred people or more, costs at least one million US dollars, changes a law, or redraws a border. Nothing less. Nothing more.
 
+This defines news for our global stream. Other communities define relevance for themselves. A local channel might report on fifty people. A school board channel might report on a single vote. The threshold changes. The methodology does not.
+
 ### 1. Core Principle
 We do not editorialise. We state what happened, where, when, and—when known—how many. Nothing more.
 
@@ -85,3 +87,34 @@ Description: Facts only. No chat. No hearts.
 
 ### 25. The Loop
 Twenty-four hours. Midnight GMT. Each story once. Then back.
+
+### 26. The Methodology
+JTF News is not a media company. It is a methodology.
+
+Two sources. Different owners. Strip the adjectives. State the facts. Stop.
+
+This methodology belongs to no one. It serves everyone. We apply it to global events because that is where we began. Others may apply it to their communities—their cities, their schools, their congregations. The principle travels. The mission stays the same.
+
+Facts without opinion. Wherever they are needed.
+
+### 27. Community Channels
+The global stream is our first application, not our only one.
+
+Communities deserve fact-based reporting:
+- Local news, free from partisan spin
+- Sports scores, free from hot takes
+- School boards, free from drama
+
+Each channel serves a community. Each follows the methodology. Each stands alone. We do not franchise. We do not license. We share.
+
+If a community needs facts, the methodology is theirs.
+
+### 28. What Stays the Same
+Across all channels, always:
+- Two unrelated sources minimum
+- AI strips all editorialization
+- No engagement. No replies. No likes.
+- Calm voice. Neutral visuals.
+- No ads. No tracking. No profit.
+- Public archives. Open methodology.
+- We serve. We do not sell.
