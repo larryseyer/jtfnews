@@ -185,6 +185,11 @@
       "fact": "The United Nations reports 6,000 deaths in a Sudanese city over three days.",
       "source": "BBC News - 9.7* (5/5) | Al Jazeera English - 9.4* (6/6)",
       "audio": "../audio/audio_36.mp3"
+    },
+    {
+      "fact": "Russia and Ukraine are scheduled to hold talks in Geneva next week.",
+      "source": "Al Jazeera English - 9.6* (7/7) | The Globe and Mail - 9.0* (4/4)",
+      "audio": "../audio/audio_37.mp3"
     }
   ]
 }
