@@ -1189,6 +1189,12 @@ def update_stories_json(fact: str, sources: list, audio_file: str = None):
     with open(stories_file, 'w') as f:
         json.dump(stories, f, indent=2)
 
+    # Also copy to gh-pages-dist for screensaver
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    if gh_pages_dir.exists():
+        import shutil
+        shutil.copy(stories_file, gh_pages_dir / "stories.json")
+
     # Update RSS feed
     update_rss_feed(fact, sources)
 
@@ -1280,7 +1286,7 @@ def update_rss_feed(fact: str, sources: list):
     # Commit and push to gh-pages
     try:
         subprocess.run(
-            ["git", "add", "feed.xml"],
+            ["git", "add", "feed.xml", "stories.json"],
             cwd=gh_pages_dir,
             check=True,
             capture_output=True
@@ -1297,7 +1303,7 @@ def update_rss_feed(fact: str, sources: list):
             check=True,
             capture_output=True
         )
-        log.info("RSS feed pushed to gh-pages")
+        log.info("RSS feed and stories.json pushed to gh-pages")
     except subprocess.CalledProcessError as e:
         log.warning(f"Failed to push RSS feed: {e}")
 
