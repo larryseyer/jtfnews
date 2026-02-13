@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b8ef4dd771be30c4634c80cd154a598e",
+    "updateDate": "2026-02-13T13:20:15.0Z",
+    "titleText": "JTF News: ABC News Australia, CBC News",
+    "mainText": "Police identified 8 people killed in a shooting in Tumbler Ridge, British Columbia.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "6920fbe86d89cea6485b9d5eeb355122",
     "updateDate": "2026-02-13T11:45:35.0Z",
     "titleText": "JTF News: The Globe and Mail, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T11:44:54.0Z",
     "titleText": "JTF News: Reuters, The Straits Times",
     "mainText": "Ukraine expects final International Monetary Fund deal approval in coming weeks.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "55d7cb5a542b2e500fc4c2d8894c014d",
-    "updateDate": "2026-02-13T10:41:46.0Z",
-    "titleText": "JTF News: France 24, NPR",
-    "mainText": "French astronaut Sophie Adenot and crew launched to the International Space Station.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
