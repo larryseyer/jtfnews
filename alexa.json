@@ -1,5 +1,12 @@
 [
   {
+    "uid": "00651823ac0029dce2f8a445b2bef84c",
+    "updateDate": "2026-02-13T06:48:14.0Z",
+    "titleText": "JTF News: Reuters, The Straits Times",
+    "mainText": "Ukrainian President Volodymyr Zelenskiy stated that Ukraine has backed US peace proposals.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "fb4dfae145191120fc89e2e42b839695",
     "updateDate": "2026-02-13T06:47:59.0Z",
     "titleText": "JTF News: Associated Press, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:46:17.0Z",
     "titleText": "JTF News: Sky News, Al Jazeera English",
     "mainText": "The U.S. government stated that European nations should take the lead on defense in NATO.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "0bd79d90226e2f361525ef6e5365e799",
-    "updateDate": "2026-02-13T06:44:09.0Z",
-    "titleText": "JTF News: Deutsche Welle, Al Jazeera English",
-    "mainText": "President Cyril Ramaphosa announced military deployment to address criminal activity in South Africa",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
