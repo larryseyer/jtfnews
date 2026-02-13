@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2781d2245daff680cc8e737b491954a5",
+    "updateDate": "2026-02-13T20:01:51.0Z",
+    "titleText": "JTF News: Al Jazeera English, The Globe and Mail",
+    "mainText": "Russia and Ukraine are scheduled to hold talks in Geneva next week.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "1b21e95d70110ac7a2a8bd8075667456",
     "updateDate": "2026-02-13T20:01:40.0Z",
     "titleText": "JTF News: BBC News, Al Jazeera English",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T15:28:49.0Z",
     "titleText": "JTF News: The Globe and Mail, Associated Press",
     "mainText": "German Chancellor called on the US and Europe to repair and revive trans-Atlantic trust.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "e0c2fb54b8e850f05cd655ff255f7b3b",
-    "updateDate": "2026-02-13T13:21:08.0Z",
-    "titleText": "JTF News: The Straits Times, France 24",
-    "mainText": "President Emmanuel Macron called for stronger measures against antisemitism in France.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
