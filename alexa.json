@@ -1,5 +1,12 @@
 [
   {
+    "uid": "22d7db5334303139b087014d1cbb4c16",
+    "updateDate": "2026-02-13T06:42:26.0Z",
+    "titleText": "JTF News: Al Jazeera English, BBC News",
+    "mainText": "Japan reported seizing a Chinese vessel.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "432267f71dbcb4ef21c4c49dc4a942f2",
     "updateDate": "2026-02-13T06:42:09.0Z",
     "titleText": "JTF News: Al Jazeera English, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:40:56.0Z",
     "titleText": "JTF News: NPR, Reuters",
     "mainText": "The U.S. Senate blocked Homeland Security funding legislation.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "90f8703731a2c353761d1e208deb1b6f",
-    "updateDate": "2026-02-13T06:40:30.0Z",
-    "titleText": "JTF News: NPR, Euronews",
-    "mainText": "Two individuals accused of using military secrets for financial trading",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
