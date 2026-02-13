@@ -2679,5 +2679,91 @@ def main():
             time.sleep(60)  # Wait 1 minute on error
 
 
+# =============================================================================
+# REBUILD STORIES FROM DAILY LOG
+# =============================================================================
+
+def rebuild_stories_from_log():
+    """Rebuild stories.json from today's daily log, matching to existing audio files.
+
+    Use this to recover after accidental --fresh clear.
+    Only includes stories that have corresponding audio files.
+    """
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    log_file = DATA_DIR / f"{today}.txt"
+    stories_file = DATA_DIR / "stories.json"
+
+    if not log_file.exists():
+        log.error(f"No daily log found: {log_file}")
+        return False
+
+    # Count existing audio files
+    existing_audio = set()
+    for f in AUDIO_DIR.glob("audio_*.mp3"):
+        existing_audio.add(f.name)
+
+    log.info(f"Found {len(existing_audio)} existing audio files")
+
+    # Parse daily log
+    stories = []
+    with open(log_file) as f:
+        for line in f:
+            # Skip headers and blank lines
+            if line.startswith("#") or not line.strip():
+                continue
+
+            parts = line.strip().split("|")
+            if len(parts) < 4:
+                continue
+
+            timestamp, source_names, source_scores, fact = parts[0], parts[1], parts[2], parts[3]
+
+            # Split sources and scores
+            names = source_names.split(",")
+            scores = source_scores.split(",")
+
+            # Format source attribution: "Source1 - Score1 | Source2 - Score2"
+            source_parts = []
+            for name, score in zip(names, scores):
+                source_parts.append(f"{name.strip()} - {score.strip()}")
+            source_text = " | ".join(source_parts)
+
+            # Check if audio file exists for this story index
+            audio_index = len(stories)
+            audio_filename = f"audio_{audio_index}.mp3"
+
+            if audio_filename in existing_audio:
+                stories.append({
+                    "fact": fact,
+                    "source": source_text,
+                    "audio": f"../audio/{audio_filename}"
+                })
+            else:
+                log.warning(f"Skipping story {audio_index}: no audio file ({audio_filename})")
+
+    # Write rebuilt stories.json
+    data = {"date": today, "stories": stories}
+    with open(stories_file, 'w') as f:
+        json.dump(data, f, indent=2)
+
+    log.info(f"Rebuilt stories.json: {len(stories)} stories (from {log_file.name})")
+    return True
+
+
 if __name__ == "__main__":
+    # Handle CLI arguments
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "--rebuild":
+            log.info("Rebuilding stories.json from daily log...")
+            if rebuild_stories_from_log():
+                log.info("Rebuild complete!")
+            else:
+                log.error("Rebuild failed!")
+                sys.exit(1)
+            sys.exit(0)
+        else:
+            print(f"Unknown argument: {sys.argv[1]}")
+            print("Usage: python main.py [--rebuild]")
+            sys.exit(1)
+
     main()

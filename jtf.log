@@ -578,3 +578,10 @@
 2026-02-13 16:13:48 | INFO | Cycle complete. Published: 1, Queue: 84, Skipped (cached): 252
 2026-02-13 16:13:48 | INFO | Sleeping 30 minutes...
 2026-02-13 16:17:31 | INFO | Shutting down...
+2026-02-13 16:29:01 | INFO | Rebuilding stories.json from daily log...
+2026-02-13 16:29:01 | INFO | Found 42 existing audio files
+2026-02-13 16:29:01 | WARNING | Skipping story 42: no audio file (audio_42.mp3)
+2026-02-13 16:29:01 | WARNING | Skipping story 42: no audio file (audio_42.mp3)
+2026-02-13 16:29:01 | WARNING | Skipping story 42: no audio file (audio_42.mp3)
+2026-02-13 16:29:01 | INFO | Rebuilt stories.json: 42 stories (from 2026-02-13.txt)
+2026-02-13 16:29:01 | INFO | Rebuild complete!
