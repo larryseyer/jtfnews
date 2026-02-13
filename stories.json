@@ -125,6 +125,11 @@
       "fact": "The FBI released a description of a suspect in the Nancy Guthrie kidnapping.",
       "source": "BBC News - 9.6* (4/4) | The Straits Times - 8.6* (4/4)",
       "audio": "../audio/audio_24.mp3"
+    },
+    {
+      "fact": "French astronaut Sophie Adenot and crew launched to the International Space Station.",
+      "source": "France 24 - 9.4* (6/6) | NPR - 9.4* (3/3)",
+      "audio": "../audio/audio_25.mp3"
     }
   ]
 }
