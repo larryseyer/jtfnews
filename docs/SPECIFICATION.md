@@ -933,6 +933,13 @@ Stories are prioritized by how recently they were verified. This ensures viewers
 - Stale stories have 1x probability
 - Combined with 30-minute minimum replay interval
 
+**Maximum Silence Duration:**
+- MAX_SILENCE_DURATION: 15 minutes
+- If no story has played for 15 minutes, the MIN_REPLAY_INTERVAL is bypassed
+- This prevents extended dead air while honoring the "silence is default" philosophy
+- A viewer will hear at least 4 stories per hour, even with a small verified story pool
+- Philosophy preserved: We still prefer silence over filler; we just cap it at 15 minutes
+
 **Timestamp Display:**
 - Source bar shows time since verification
 - Format: `Reuters – 9.8 · 2 hours ago`

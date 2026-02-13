@@ -341,10 +341,14 @@
     const SCRAPE_CYCLE_MS = 300000;  // 5 minute scrape cycle
     const MIN_GAP_TIME = 10000;      // Minimum 10 seconds between stories
     const MAX_GAP_TIME = 120000;     // Maximum 2 minutes between stories
+    const MIN_REPLAY_INTERVAL = 30 * 60 * 1000; // 30 minutes minimum between replays
+    const MAX_SILENCE_DURATION = 15 * 60 * 1000; // 15 minutes max silence before forcing replay
 
     let stories = [];
     let newsShuffledQueue = [];      // Shuffled story queue for current cycle
     let lastPlayedFact = null;       // Track last played to avoid back-to-back
+    let lastPlayedTimes = {};        // Track when each story was last played (fact -> timestamp)
+    let lastStoryEndTime = Date.now(); // Track when silence began (for max silence duration)
     let isDisplaying = false;
     let audioElement = null;
     let storyCountSinceSponsor = 0;  // Counter for sponsor message frequency
@@ -378,6 +382,39 @@
       const availableGapTime = SCRAPE_CYCLE_MS - (newsShuffledQueue.length * estimatedDisplayTime);
       const gapTime = Math.floor(availableGapTime / newsShuffledQueue.length);
       return Math.max(MIN_GAP_TIME, Math.min(gapTime, MAX_GAP_TIME));
+    }
+
+    /**
+     * Check if a story is eligible to play
+     * Normal: 30+ minutes since last play
+     * Emergency: 15+ minutes of silence allows early replay
+     */
+    function isEligibleToPlay(story) {
+      const lastPlayed = lastPlayedTimes[story.fact];
+      if (!lastPlayed) return true; // Never played before
+
+      const timeSincePlay = Date.now() - lastPlayed;
+      const silenceDuration = Date.now() - lastStoryEndTime;
+
+      // Normal case: 30-min replay interval
+      if (timeSincePlay >= MIN_REPLAY_INTERVAL) return true;
+
+      // Emergency case: silence has exceeded max duration
+      if (silenceDuration >= MAX_SILENCE_DURATION) return true;
+
+      return false;
+    }
+
+    /**
+     * Get next eligible story from queue
+     */
+    function getNextEligibleStory() {
+      for (let i = 0; i < newsShuffledQueue.length; i++) {
+        if (isEligibleToPlay(newsShuffledQueue[i])) {
+          return newsShuffledQueue.splice(i, 1)[0];
+        }
+      }
+      return null; // No eligible stories
     }
 
     async function loadStories() {
@@ -505,6 +542,12 @@
       // Track last played for back-to-back prevention
       lastPlayedFact = story.fact;
 
+      // Track when this story was played (for 30-minute minimum)
+      lastPlayedTimes[story.fact] = Date.now();
+
+      // Reset silence timer (a story just ended)
+      lastStoryEndTime = Date.now();
+
       // Use dynamic gap based on story count
       const dynamicGap = calculateDynamicNewsGap();
       await sleep(1000 + dynamicGap);
@@ -534,8 +577,16 @@
           continue;
         }
 
-        // Get next story from shuffled queue
-        const story = newsShuffledQueue.shift();
+        // Get next eligible story (30+ minutes since last play, or 15+ min silence)
+        const story = getNextEligibleStory();
+
+        if (!story) {
+          // All stories played recently, wait before checking again
+          console.log('[News] All stories played within last 30 minutes, waiting...');
+          await sleep(30000); // Wait 30 seconds before checking again
+          continue;
+        }
+
         await displayStory(story);
         storyCountSinceSponsor++;
       }

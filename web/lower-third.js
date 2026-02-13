@@ -18,6 +18,7 @@ let stories = [];
 let shuffledQueue = [];       // Current cycle's shuffled story order
 let lastPlayedFact = null;    // Track last played story to avoid back-to-back
 let lastPlayedTimes = {};     // Track when each story was last played (fact -> timestamp)
+let lastStoryEndTime = Date.now(); // Track when silence began (for max silence duration)
 let isDisplaying = false;
 let storyCountSinceSponsor = 0; // Counter for sponsor message frequency
 let currentMessageIndex = 0;    // Which sponsor message to show next (alternates)
@@ -43,6 +44,7 @@ let cycleStartTime = 0;       // When current cycle started
 let isFirstLoad = true;       // Track if this is initial page load
 
 const MIN_REPLAY_INTERVAL = 30 * 60 * 1000; // 30 minutes minimum between replays
+const MAX_SILENCE_DURATION = 15 * 60 * 1000; // 15 minutes max silence before forcing replay
 
 // Freshness thresholds for frequency weighting
 const FRESH_THRESHOLD = 6 * 60 * 60 * 1000;   // < 6 hours = fresh (3x weight)
@@ -304,6 +306,9 @@ async function displayStory(story) {
 
     // Track when this story was played (for 30-minute minimum)
     lastPlayedTimes[story.fact] = Date.now();
+
+    // Reset silence timer (a story just ended)
+    lastStoryEndTime = Date.now();
     console.log(`Played story, next eligible in 30 minutes: "${story.fact.substring(0, 40)}..."`);
 
     // Calculate dynamic gap based on current story count
@@ -355,14 +360,24 @@ async function displaySponsorMessage() {
 }
 
 /**
- * Check if a story is eligible to play (30+ minutes since last play)
+ * Check if a story is eligible to play
+ * Normal: 30+ minutes since last play
+ * Emergency: 15+ minutes of silence allows early replay
  */
 function isEligibleToPlay(story) {
     const lastPlayed = lastPlayedTimes[story.fact];
     if (!lastPlayed) return true; // Never played before
 
-    const elapsed = Date.now() - lastPlayed;
-    return elapsed >= MIN_REPLAY_INTERVAL;
+    const timeSincePlay = Date.now() - lastPlayed;
+    const silenceDuration = Date.now() - lastStoryEndTime;
+
+    // Normal case: 30-min replay interval
+    if (timeSincePlay >= MIN_REPLAY_INTERVAL) return true;
+
+    // Emergency case: silence has exceeded max duration
+    if (silenceDuration >= MAX_SILENCE_DURATION) return true;
+
+    return false;
 }
 
 /**

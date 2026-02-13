@@ -346,3 +346,62 @@
 2026-02-13 15:27:52 | INFO | Alert throttled (queue_backup): Queue backup: 93 items, oldest 23.7h
 2026-02-13 15:27:53 | INFO | Cycle complete. Published: 0, Queue: 93, Skipped (cached): 264
 2026-02-13 15:27:53 | INFO | Sleeping 30 minutes...
+2026-02-13 15:33:31 | INFO | Shutting down...
+2026-02-13 15:33:35 | INFO | JTF News starting...
+2026-02-13 15:33:35 | INFO | Facts only. No opinions.
+2026-02-13 15:33:35 | INFO | ----------------------------------------
+2026-02-13 15:33:35 | INFO | Validating services...
+2026-02-13 15:33:37 | INFO | Claude API: OK
+2026-02-13 15:33:37 | INFO | ElevenLabs API: OK (key present)
+2026-02-13 15:33:37 | INFO | All services validated successfully
+2026-02-13 15:33:37 | INFO | ============================================================
+2026-02-13 15:33:37 | INFO | Starting cycle #1
+2026-02-13 15:33:38 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 15:33:39 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 15:33:41 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 15:33:42 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 15:33:43 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 15:33:44 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 15:33:45 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 15:33:47 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 15:33:48 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 15:33:49 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 15:33:50 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 15:33:52 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 15:33:53 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 15:33:54 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 15:33:55 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 15:33:57 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 15:33:58 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 15:33:59 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 15:34:00 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 15:34:01 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 15:34:03 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 15:34:04 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 15:34:05 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 15:34:06 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 15:34:08 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 15:34:09 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 15:34:13 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 15:34:14 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 15:34:16 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 15:34:17 | INFO | Total headlines: 268
+2026-02-13 15:34:21 | INFO | Looking up judge info for: A federal judge ruled that the Trump administratio...
+2026-02-13 15:34:24 | INFO | Low confidence (45%): A federal judge ruled that the Trump adm...
+2026-02-13 15:34:26 | INFO | Word overlap pre-filter: 6/93 candidates
+2026-02-13 15:34:27 | INFO | Queued: Paris police fired on a man who attacked...
+2026-02-13 15:34:29 | INFO | Word overlap pre-filter: 13/94 candidates
+2026-02-13 15:34:29 | INFO | Preferring new source (CBC News: 8.2) over queued (Agence France-Presse: 6.5)
+2026-02-13 15:34:33 | INFO | Generated TTS: A shooting occurred at a school in Tumbler Ridge, ...
+2026-02-13 15:34:33 | INFO | Published: A shooting occurred at a school in Tumbler Ridge, ...
+2026-02-13 15:34:33 | INFO | RSS feed updated: 47 items
+2026-02-13 15:34:33 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-13 15:34:33 | INFO | Alexa feed updated: 5 items
+2026-02-13 15:34:34 | INFO | Alexa feed pushed to gh-pages
+2026-02-13 15:34:34 | INFO | VERIFIED: A shooting occurred at a school in Tumbler Ridge, ...
+2026-02-13 15:34:34 | INFO | Rating +1 success for cbc: {'successes': 4, 'failures': 0}
+2026-02-13 15:34:34 | INFO | Rating +1 success for afp: {'successes': 1, 'failures': 1}
+2026-02-13 15:34:34 | INFO | Alert throttled (queue_backup): Queue backup: 93 items, oldest 23.8h
+2026-02-13 15:34:35 | INFO | Cycle complete. Published: 1, Queue: 93, Skipped (cached): 265
+2026-02-13 15:34:35 | INFO | Sleeping 30 minutes...
+2026-02-13 15:42:37 | INFO | Shutting down...
