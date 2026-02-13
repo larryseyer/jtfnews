@@ -1,5 +1,12 @@
 [
   {
+    "uid": "472d89282957059f4d93c99fb6349d15",
+    "updateDate": "2026-02-13T06:39:43.0Z",
+    "titleText": "JTF News: BBC News, Associated Press",
+    "mainText": "White House Homeland Security Advisor discussed Minnesota immigration policy following two fatal shootings",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "9aacbc438067d6b8bee9cbd2b9c3d9ce",
     "updateDate": "2026-02-13T06:38:51.0Z",
     "titleText": "JTF News: Reuters, The Globe and Mail",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-12T22:56:46.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
     "mainText": "Trump administration removes legal basis for climate regulation in U.S.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "jtfnews-welcome-001",
-    "updateDate": "2026-02-11T00:00:00.0Z",
-    "titleText": "JTF News Flash Briefing",
-    "mainText": "Welcome to Just The Facts News. Verified facts from multiple sources. No opinions. No adjectives. No interpretation.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
