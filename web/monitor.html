@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTF News Operations Dashboard</title>
+    <link rel="stylesheet" href="monitor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <div class="header-left">
+                <h1>JTF NEWS</h1>
+                <span class="subtitle">Operations Dashboard</span>
+            </div>
+            <div class="header-right">
+                <span id="connection-status" class="status-badge status-unknown">Connecting...</span>
+                <span id="last-update"></span>
+            </div>
+        </header>
+
+        <main class="grid">
+            <!-- System Status Card -->
+            <div class="card status-card">
+                <div class="card-header">
+                    <h2>System Status</h2>
+                    <span id="system-state" class="status-badge status-running">Running</span>
+                </div>
+                <div class="card-body">
+                    <div class="stat-row">
+                        <span class="stat-label">Uptime</span>
+                        <span id="uptime" class="stat-value">--</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Stream Health</span>
+                        <span id="stream-health" class="stat-value">--</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Next Cycle</span>
+                        <span id="next-cycle" class="stat-value">--</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Stories Today</span>
+                        <span id="stories-today" class="stat-value">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API Costs Card -->
+            <div class="card costs-card">
+                <div class="card-header">
+                    <h2>API Costs</h2>
+                    <span id="total-cost" class="cost-badge">$0.00</span>
+                </div>
+                <div class="card-body">
+                    <div class="cost-breakdown">
+                        <div class="cost-item">
+                            <span class="cost-service">Claude</span>
+                            <span id="claude-calls" class="cost-calls">0 calls</span>
+                            <span id="claude-cost" class="cost-amount">$0.00</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-service">ElevenLabs</span>
+                            <span id="elevenlabs-calls" class="cost-calls">0 calls</span>
+                            <span id="elevenlabs-cost" class="cost-amount">$0.00</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-service">Twilio</span>
+                            <span id="twilio-calls" class="cost-calls">0 calls</span>
+                            <span id="twilio-cost" class="cost-amount">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="cost-projection">
+                        <span class="projection-label">Monthly Estimate</span>
+                        <span id="month-estimate" class="projection-value">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Cycle Card -->
+            <div class="card cycle-card">
+                <div class="card-header">
+                    <h2>Current Cycle</h2>
+                    <span id="cycle-number" class="cycle-badge">#0</span>
+                </div>
+                <div class="card-body">
+                    <div class="cycle-stats">
+                        <div class="cycle-stat">
+                            <span class="cycle-value" id="headlines-scraped">0</span>
+                            <span class="cycle-label">Headlines Scraped</span>
+                        </div>
+                        <div class="cycle-stat">
+                            <span class="cycle-value" id="headlines-processed">0</span>
+                            <span class="cycle-label">Processed</span>
+                        </div>
+                        <div class="cycle-stat">
+                            <span class="cycle-value" id="stories-published">0</span>
+                            <span class="cycle-label">Published</span>
+                        </div>
+                        <div class="cycle-stat">
+                            <span class="cycle-value" id="stories-queued">0</span>
+                            <span class="cycle-label">Queued</span>
+                        </div>
+                    </div>
+                    <div class="cycle-duration">
+                        <span class="duration-label">Cycle Duration</span>
+                        <span id="cycle-duration" class="duration-value">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queue Status Card -->
+            <div class="card queue-card">
+                <div class="card-header">
+                    <h2>Queue Status</h2>
+                </div>
+                <div class="card-body">
+                    <div class="queue-stat-large">
+                        <span id="queue-size" class="queue-number">0</span>
+                        <span class="queue-label">Stories Waiting</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Oldest Item</span>
+                        <span id="oldest-item" class="stat-value">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Source Health Card -->
+            <div class="card sources-card">
+                <div class="card-header">
+                    <h2>Source Health</h2>
+                    <span id="sources-status" class="status-badge status-ok">All OK</span>
+                </div>
+                <div class="card-body">
+                    <div class="sources-summary">
+                        <span id="sources-ok" class="sources-count ok">0</span>
+                        <span class="sources-divider">/</span>
+                        <span id="sources-total" class="sources-count total">0</span>
+                        <span class="sources-label">sources operational</span>
+                    </div>
+                    <div id="failed-sources" class="failed-sources"></div>
+                </div>
+            </div>
+
+            <!-- Errors Card -->
+            <div class="card errors-card">
+                <div class="card-header">
+                    <h2>Recent Errors</h2>
+                    <span id="error-count" class="error-badge">0</span>
+                </div>
+                <div class="card-body">
+                    <div id="error-list" class="error-list">
+                        <div class="no-errors">No recent errors</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="monitor.js"></script>
+</body>
+</html>

@@ -90,6 +90,34 @@ class FlushingFileHandler(logging.FileHandler):
         super().emit(record)
         self.flush()
 
+
+class ErrorCapturingHandler(logging.Handler):
+    """Captures recent warnings and errors for dashboard display."""
+
+    def __init__(self, max_records=50):
+        super().__init__(level=logging.WARNING)
+        self.max_records = max_records
+        self.records = []
+
+    def emit(self, record):
+        entry = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "level": record.levelname,
+            "message": record.getMessage()
+        }
+        self.records.append(entry)
+        # Keep only last N records
+        if len(self.records) > self.max_records:
+            self.records = self.records[-self.max_records:]
+
+    def get_recent(self, count=10):
+        """Get the most recent N error/warning records."""
+        return self.records[-count:]
+
+
+# Global error handler for dashboard
+error_handler = ErrorCapturingHandler(max_records=50)
+
 log = logging.getLogger("jtf")
 log.setLevel(logging.INFO)
 log.propagate = False  # Prevent duplicate logging to root logger
@@ -105,8 +133,113 @@ file_handler = FlushingFileHandler(BASE_DIR / "jtf.log")
 file_handler.setFormatter(log_format)
 log.addHandler(file_handler)
 
+# Error capturing handler for dashboard
+log.addHandler(error_handler)
+
 # Kill switch file
 KILL_SWITCH = Path("/tmp/jtf-stop")
+
+# =============================================================================
+# API COST TRACKING
+# =============================================================================
+
+# API costs per unit (updated February 2025)
+API_COSTS = {
+    "claude": {"input_per_1k": 0.00025, "output_per_1k": 0.00125},  # Haiku 4.5
+    "elevenlabs": {"per_character": 0.00003},  # ~$0.03 per 1k chars
+    "twilio": {"per_sms": 0.0079}
+}
+
+# Track when the app started
+STARTUP_TIME = datetime.now(timezone.utc)
+
+# In-memory cycle stats (reset each cycle)
+_cycle_stats = {
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
+    "stories_published": 0,
+    "stories_queued": 0,
+    "cycle_number": 0,
+    "cycle_start": None
+}
+
+
+def log_api_usage(service: str, usage: dict):
+    """Log API usage and costs to daily file.
+
+    Args:
+        service: "claude", "elevenlabs", or "twilio"
+        usage: Dict with service-specific usage data:
+            - claude: {"input_tokens": N, "output_tokens": N}
+            - elevenlabs: {"characters": N}
+            - twilio: {"sms_count": N}
+    """
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    usage_file = DATA_DIR / f"api_usage_{today}.json"
+
+    # Load existing usage
+    data = {"date": today, "services": {}, "total_cost_usd": 0.0}
+    if usage_file.exists():
+        try:
+            with open(usage_file) as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    # Initialize service if not present
+    if service not in data["services"]:
+        data["services"][service] = {"calls": 0, "cost_usd": 0.0, "details": {}}
+
+    svc = data["services"][service]
+    svc["calls"] += 1
+
+    # Calculate cost based on service type
+    cost = 0.0
+    if service == "claude":
+        input_tokens = usage.get("input_tokens", 0)
+        output_tokens = usage.get("output_tokens", 0)
+        cost = (input_tokens / 1000 * API_COSTS["claude"]["input_per_1k"] +
+                output_tokens / 1000 * API_COSTS["claude"]["output_per_1k"])
+        svc["details"]["input_tokens"] = svc["details"].get("input_tokens", 0) + input_tokens
+        svc["details"]["output_tokens"] = svc["details"].get("output_tokens", 0) + output_tokens
+
+    elif service == "elevenlabs":
+        chars = usage.get("characters", 0)
+        cost = chars * API_COSTS["elevenlabs"]["per_character"]
+        svc["details"]["characters"] = svc["details"].get("characters", 0) + chars
+
+    elif service == "twilio":
+        count = usage.get("sms_count", 1)
+        cost = count * API_COSTS["twilio"]["per_sms"]
+        svc["details"]["sms_count"] = svc["details"].get("sms_count", 0) + count
+
+    svc["cost_usd"] += cost
+
+    # Update total
+    data["total_cost_usd"] = sum(s["cost_usd"] for s in data["services"].values())
+
+    # Save back
+    try:
+        with open(usage_file, 'w') as f:
+            json.dump(data, f, indent=2)
+    except IOError as e:
+        log.warning(f"Could not save API usage: {e}")
+
+
+def get_api_costs_today() -> dict:
+    """Get today's API costs summary."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    usage_file = DATA_DIR / f"api_usage_{today}.json"
+
+    if usage_file.exists():
+        try:
+            with open(usage_file) as f:
+                return json.load(f)
+        except:
+            pass
+
+    return {"date": today, "services": {}, "total_cost_usd": 0.0}
+
 
 # =============================================================================
 # CLAUDE AI - FACT EXTRACTION
@@ -133,24 +266,27 @@ RULES:
 6. Use present tense for ongoing events
 7. Maximum ONE sentence
 8. If the headline contains NO verifiable facts, return "SKIP" for fact
-9. OFFICIAL TITLES ONLY - Media nicknames are editorialization:
-   - NEVER use media-invented nicknames: "czar", "kingpin", "maestro", "guru", "boss", etc.
-   - "Czar" is NOT an official US government title - it's journalistic shorthand and is disrespectful
-   - ALWAYS use the person's OFFICIAL government title + their name
-   - Example: "border czar" → "White House Homeland Security Advisor [Full Name]" (use actual official title)
-   - Example: "housing czar" → "Secretary of Housing [Full Name]" or their actual position
+9. OFFICIAL TITLES REQUIRED - Titles are facts. Omitting them is editorial.
+   - Never bare last names. Always include official titles for government officials.
+   - HEADS OF STATE/GOVERNMENT: "President Trump", "President Biden", "Prime Minister Starmer" - NEVER just "Trump" or "Biden" alone
+   - MEMBERS OF CONGRESS: "Senator Cruz", "Representative Crockett" - NEVER just last name alone
+   - CABINET/EXECUTIVES: "Secretary Rubio", "Director Smith" - include their role
+   - Format: "[Official Title] [Last Name]" for well-known figures, "[Official Title] [Full Name]" for lesser-known
+   - WRONG: "Trump stated...", "Biden announced...", "Cruz said..."
+   - CORRECT: "President Trump stated...", "President Biden announced...", "Senator Cruz said..."
+   - Media-invented nicknames are editorialization, not titles. "Border czar" is journalistic shorthand that carries implicit judgment - use official title instead
    - If you don't know the official title, describe the role: "the official responsible for border policy"
-   - Format: "[Official Title] [Full Name]" - e.g., "Deputy Secretary Tom Homan", "Director Sarah Smith"
-   - For well-known positions: "President Trump", "Senator Cruz", "Representative Crockett" (last name OK)
-   - For lesser-known officials: Use full name to be informative: "Deputy Director John Smith"
    - NEVER use first name alone unless disambiguating two people with same last name
-10. JUDGES: Always include full name AND court jurisdiction
+   - Former officials: "former President Obama", "former Secretary Clinton" (lowercase "former")
+10. JUDGES: Always include full name AND court jurisdiction - both are facts.
    - Format: "Judge [Full Name] of the [Court Name]"
    - Example: "Judge Aileen Cannon of the U.S. District Court for the Southern District of Florida ruled..."
    - Example: "Chief Justice John Roberts of the U.S. Supreme Court ruled..."
+   - The judge's NAME is a fact. The court is a fact. Omitting either is editorial.
    - Extract ALL judge information from the headline (name, court level, location, district)
-   - If headline says "federal judge in Texas" → "A federal judge in Texas ruled..." (use what's available)
-   - If headline has judge's name → Always include it with proper title
+   - If headline has judge's name → ALWAYS include it with proper title and court
+   - If headline lacks the name but has court info → Flag for lookup, use court info available
+   - ONLY use "A federal judge" if the name is truly unavailable after lookup
    - NEVER reduce specificity - if the source has the name/court, YOU must include it
 
 NEWSWORTHINESS THRESHOLD:
@@ -203,6 +339,12 @@ def extract_fact(headline: str, use_cache: bool = True) -> dict:
                 "content": FACT_EXTRACTION_PROMPT + headline
             }]
         )
+
+        # Log API usage for cost tracking
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
 
         text = response.content[0].text
 
@@ -338,6 +480,12 @@ If you cannot determine the specific judge, return {{"found": false}}"""
             max_tokens=200,
             messages=[{"role": "user", "content": prompt}]
         )
+
+        # Log API usage for cost tracking
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
 
         result_text = response.content[0].text
 
@@ -648,6 +796,12 @@ Reply with ONLY comma-separated numbers (e.g., "1,3,5") or "NONE" if no matches.
             messages=[{"role": "user", "content": prompt}]
         )
 
+        # Log API usage for cost tracking
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
+
         answer = response.content[0].text.strip().upper()
 
         if answer == "NONE" or not answer:
@@ -703,6 +857,12 @@ Reply with ONLY "YES" or "NO"."""
             max_tokens=10,
             messages=[{"role": "user", "content": prompt}]
         )
+
+        # Log API usage for cost tracking
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
 
         answer = response.content[0].text.strip().upper()
         if answer == "YES":
@@ -1088,6 +1248,9 @@ def generate_tts(text: str, audio_index: int = None) -> str:
         # Collect audio data
         audio_data = b''.join(chunk for chunk in audio_generator)
 
+        # Log API usage for cost tracking
+        log_api_usage("elevenlabs", {"characters": len(text)})
+
         # Save to indexed file for loop playback
         if audio_index is not None:
             indexed_path = AUDIO_DIR / f"audio_{audio_index}.mp3"
@@ -1400,6 +1563,9 @@ def send_alert(message: str):
             to=os.getenv("ALERT_PHONE_NUMBER")
         )
 
+        # Log API usage for cost tracking
+        log_api_usage("twilio", {"sms_count": 1})
+
         log.warning(f"Alert sent: {message}")
 
     except Exception as e:
@@ -1507,6 +1673,12 @@ Return JSON: {{"contradiction": true/false, "reason": "brief explanation if true
             messages=[{"role": "user", "content": prompt}]
         )
 
+        # Log API usage for cost tracking
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
+
         result = json.loads(response.content[0].text)
 
         if result.get("contradiction"):
@@ -1586,6 +1758,12 @@ Return JSON: {{"new_detail": "the new sentence" or "NO_NEW_INFO"}}"""
             max_tokens=100,
             messages=[{"role": "user", "content": prompt}]
         )
+
+        # Log API usage for cost tracking
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
 
         result = json.loads(response.content[0].text)
         new_detail = result.get("new_detail", "NO_NEW_INFO")
@@ -1686,6 +1864,215 @@ def cleanup_old_data(days: int = 7):
 
 
 # =============================================================================
+# MONITOR DATA
+# =============================================================================
+
+def get_source_health() -> dict:
+    """Get source health status from recent scrape attempts."""
+    # Track which sources succeeded or failed in this session
+    # This is a simplified version - in practice you'd track per-source status
+    sources = CONFIG.get("sources", [])
+    total = len(sources)
+
+    # For now, estimate based on log file errors (could be enhanced with proper tracking)
+    failed_sources = []
+    try:
+        log_file = BASE_DIR / "jtf.log"
+        if log_file.exists():
+            with open(log_file) as f:
+                # Check last 200 lines for recent failures
+                lines = f.readlines()[-200:]
+                for line in lines:
+                    if "Failed to fetch from" in line or "Skipping" in line:
+                        # Extract source name
+                        for source in sources:
+                            if source["name"] in line and source["name"] not in failed_sources:
+                                failed_sources.append(source["name"])
+    except:
+        pass
+
+    return {
+        "total": total,
+        "successful": total - len(failed_sources),
+        "failed": failed_sources
+    }
+
+
+def get_queue_stats() -> dict:
+    """Get queue statistics."""
+    queue = load_queue()
+    if not queue:
+        return {"size": 0, "oldest_item_age_hours": 0}
+
+    oldest_ts = None
+    for item in queue:
+        item_ts = datetime.fromisoformat(item["timestamp"])
+        if oldest_ts is None or item_ts < oldest_ts:
+            oldest_ts = item_ts
+
+    age_hours = 0
+    if oldest_ts:
+        now = datetime.now(timezone.utc)
+        age_hours = (now - oldest_ts).total_seconds() / 3600
+
+    return {
+        "size": len(queue),
+        "oldest_item_age_hours": round(age_hours, 1)
+    }
+
+
+def get_stories_today_count() -> int:
+    """Count stories published today."""
+    stories_file = DATA_DIR / "stories.json"
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    if stories_file.exists():
+        try:
+            with open(stories_file) as f:
+                data = json.load(f)
+            if data.get("date") == today:
+                return len(data.get("stories", []))
+        except:
+            pass
+    return 0
+
+
+def get_stream_health_status() -> str:
+    """Get stream health status."""
+    if not HEARTBEAT_FILE.exists():
+        return "unknown"
+
+    try:
+        with open(HEARTBEAT_FILE) as f:
+            last_beat = float(f.read().strip())
+
+        now = time.time()
+        if now - last_beat > STREAM_OFFLINE_THRESHOLD:
+            return "offline"
+        return "online"
+    except:
+        return "unknown"
+
+
+def write_monitor_data(cycle_stats: dict):
+    """Write monitoring data to JSON file for dashboard.
+
+    Args:
+        cycle_stats: Dict with cycle-specific stats:
+            - headlines_scraped: Total headlines fetched
+            - headlines_processed: Headlines sent to Claude
+            - stories_published: Stories verified and published
+            - stories_queued: Stories added to queue
+            - duration_seconds: How long the cycle took
+    """
+    monitor_file = DATA_DIR / "monitor.json"
+
+    # Calculate uptime
+    now = datetime.now(timezone.utc)
+    uptime_seconds = (now - STARTUP_TIME).total_seconds()
+
+    # Get API costs
+    api_costs = get_api_costs_today()
+
+    # Calculate monthly estimate (based on today's usage projected over 30 days)
+    # Adjust for how much of today has passed
+    hours_today = now.hour + now.minute / 60
+    if hours_today > 0:
+        daily_rate = api_costs.get("total_cost_usd", 0) / (hours_today / 24)
+        month_estimate = daily_rate * 30
+    else:
+        month_estimate = 0
+
+    # Get interval for next cycle calculation
+    interval_minutes = CONFIG.get("timing", {}).get("scrape_interval_minutes", 5)
+
+    data = {
+        "timestamp": now.isoformat(),
+        "uptime_start": STARTUP_TIME.isoformat(),
+        "uptime_seconds": round(uptime_seconds),
+        "cycle": {
+            "number": _cycle_stats.get("cycle_number", 0),
+            "duration_seconds": cycle_stats.get("duration_seconds", 0),
+            "headlines_scraped": cycle_stats.get("headlines_scraped", 0),
+            "headlines_processed": cycle_stats.get("headlines_processed", 0),
+            "stories_published": cycle_stats.get("stories_published", 0),
+            "stories_queued": cycle_stats.get("stories_queued", 0)
+        },
+        "api_costs": {
+            "today": api_costs.get("services", {}),
+            "total_usd": round(api_costs.get("total_cost_usd", 0), 4),
+            "month_estimate_usd": round(month_estimate, 2)
+        },
+        "queue": get_queue_stats(),
+        "stories_today": get_stories_today_count(),
+        "sources": get_source_health(),
+        "recent_errors": error_handler.get_recent(10),
+        "status": {
+            "state": "running",
+            "stream_health": get_stream_health_status(),
+            "next_cycle_minutes": interval_minutes
+        }
+    }
+
+    try:
+        with open(monitor_file, 'w') as f:
+            json.dump(data, f, indent=2)
+    except IOError as e:
+        log.warning(f"Could not write monitor data: {e}")
+        return
+
+    # Push to gh-pages for public dashboard
+    push_monitor_to_ghpages(monitor_file)
+
+
+def push_monitor_to_ghpages(monitor_file: Path):
+    """Copy monitor.json to gh-pages and push."""
+    import subprocess
+
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    if not gh_pages_dir.exists():
+        return  # gh-pages worktree not set up
+
+    try:
+        # Copy monitor.json to gh-pages
+        shutil.copy(monitor_file, gh_pages_dir / "monitor.json")
+
+        # Git add, commit, push (silently - don't spam logs)
+        subprocess.run(
+            ["git", "add", "monitor.json"],
+            cwd=gh_pages_dir,
+            check=True,
+            capture_output=True
+        )
+
+        # Check if there are changes to commit
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            cwd=gh_pages_dir,
+            capture_output=True
+        )
+
+        if result.returncode != 0:  # There are changes
+            subprocess.run(
+                ["git", "commit", "-m", "Update monitor data"],
+                cwd=gh_pages_dir,
+                check=True,
+                capture_output=True
+            )
+            subprocess.run(
+                ["git", "push"],
+                cwd=gh_pages_dir,
+                check=True,
+                capture_output=True
+            )
+
+    except subprocess.CalledProcessError:
+        pass  # Silently ignore push failures - not critical
+    except Exception:
+        pass  # Silently ignore any errors
+
+
+# =============================================================================
 # ARCHIVE
 # =============================================================================
 
@@ -1766,8 +2153,14 @@ def archive_daily_log():
 
 def process_cycle():
     """Run one processing cycle."""
+    cycle_start = time.time()
+
+    # Update cycle number
+    global _cycle_stats
+    _cycle_stats["cycle_number"] = _cycle_stats.get("cycle_number", 0) + 1
+
     log.info("=" * 60)
-    log.info("Starting cycle")
+    log.info(f"Starting cycle #{_cycle_stats['cycle_number']}")
 
     # Check kill switch
     if KILL_SWITCH.exists():
@@ -1788,6 +2181,8 @@ def process_cycle():
     _fact_extraction_cache = load_fact_extraction_cache()
     skipped_count = 0
     published_count = 0
+    processed_count = 0  # Headlines sent to Claude
+    queued_count = 0  # Stories added to queue this cycle
 
     for headline in headlines:
         # Skip if already processed (saves API costs)
@@ -1800,6 +2195,7 @@ def process_cycle():
 
         # Extract fact
         result = extract_fact(headline["text"])
+        processed_count += 1  # Count headlines sent to Claude
 
         # Skip if not a fact
         if result["fact"] == "SKIP":
@@ -1928,10 +2324,21 @@ def process_cycle():
                 "timestamp": headline["timestamp"],
                 "confidence": confidence
             })
+            queued_count += 1
             log.info(f"Queued: {fact[:40]}...")
 
     # Save queue
     save_queue(queue)
+
+    # Calculate cycle duration and write monitor data
+    cycle_duration = time.time() - cycle_start
+    write_monitor_data({
+        "headlines_scraped": len(headlines),
+        "headlines_processed": processed_count,
+        "stories_published": published_count,
+        "stories_queued": queued_count,
+        "duration_seconds": round(cycle_duration, 1)
+    })
 
     log.info(f"Cycle complete. Published: {published_count}, Queue: {len(queue)}, Skipped (cached): {skipped_count}")
 

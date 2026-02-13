@@ -469,23 +469,26 @@ RULES:
 6. Use present tense for ongoing events
 7. Maximum ONE sentence
 8. If the headline contains NO verifiable facts, return "SKIP"
-9. OFFICIAL TITLES ONLY - Media nicknames are editorialization:
-   - NEVER use media-invented nicknames: "czar", "kingpin", "maestro", "guru", "boss", etc.
-   - "Czar" is NOT an official US government title - it's journalistic shorthand and is disrespectful
-   - ALWAYS use the person's OFFICIAL government title + their name
-   - Example: "border czar" → "White House Homeland Security Advisor [Full Name]" (use actual official title)
-   - Example: "housing czar" → "Secretary of Housing [Full Name]" or their actual position
+9. OFFICIAL TITLES REQUIRED - Titles are facts. Omitting them is editorial.
+   - Never bare last names. Always include official titles for government officials.
+   - HEADS OF STATE/GOVERNMENT: "President Trump", "President Biden", "Prime Minister Starmer" - NEVER just "Trump" or "Biden" alone
+   - MEMBERS OF CONGRESS: "Senator Cruz", "Representative Crockett" - NEVER just last name alone
+   - CABINET/EXECUTIVES: "Secretary Rubio", "Director Smith" - include their role
+   - Format: "[Official Title] [Last Name]" for well-known figures, "[Official Title] [Full Name]" for lesser-known
+   - WRONG: "Trump stated...", "Biden announced...", "Cruz said..."
+   - CORRECT: "President Trump stated...", "President Biden announced...", "Senator Cruz said..."
+   - Media-invented nicknames are editorialization, not titles. "Border czar" is journalistic shorthand that carries implicit judgment - use official title instead
    - If you don't know the official title, describe the role: "the official responsible for border policy"
-   - Format: "[Official Title] [Full Name]" - e.g., "Deputy Secretary Tom Homan", "Director Sarah Smith"
-   - For well-known positions: "President Trump", "Senator Cruz", "Representative Crockett" (last name OK)
-   - For lesser-known officials: Use full name to be informative: "Deputy Director John Smith"
    - NEVER use first name alone unless disambiguating two people with same last name
-   - Former officials: "former President Obama" (lowercase "former")
-10. JUDGES: Always include full name AND court jurisdiction
+   - Former officials: "former President Obama", "former Secretary Clinton" (lowercase "former")
+10. JUDGES: Always include full name AND court jurisdiction - both are facts.
      - Format: "Judge [Full Name] of the [Court Name]"
      - Example: "Judge Aileen Cannon of the U.S. District Court for the Southern District of Florida ruled..."
      - Example: "Chief Justice John Roberts of the U.S. Supreme Court ruled..."
-     - Never just "a judge" or "Judge [LastName]" without court identification - the court is a verifiable fact
+     - The judge's NAME is a fact. The court is a fact. Omitting either is editorial.
+     - If headline has judge's name → ALWAYS include it with proper title and court
+     - ONLY use "A federal judge" if the name is truly unavailable after lookup
+     - Never just "Judge [LastName]" without court identification
 
 NEWSWORTHINESS THRESHOLD:
 A story is only newsworthy if it meets AT LEAST ONE of these criteria:
@@ -522,7 +525,7 @@ Input: "Historic peace deal signed between nations after brutal decade-long conf
 Output: {"fact": "Peace agreement signed between [nations].", "confidence": 92, "removed": ["historic", "brutal", "decade-long"]}
 
 Input: "Biden slams Republican lawmakers over controversial spending bill"
-Output: {"fact": "President Biden criticized Republican lawmakers regarding spending bill.", "confidence": 90, "removed": ["slams", "controversial"], "notes": ["Added proper title 'President'"]}
+Output: {"fact": "President Biden criticized Republican lawmakers regarding spending bill.", "confidence": 90, "removed": ["slams", "controversial"], "notes": ["Added required title 'President' - titles are facts, omitting them is editorial"]}
 
 Input: "Judge orders halt to immigration policy"
 Output: {"fact": "Judge [Full Name] of the [Court Name] ruled to halt immigration policy.", "confidence": 85, "removed": ["orders"], "notes": ["Replaced 'orders' with 'ruled'; requires full judge name and court jurisdiction before publishing"]}
