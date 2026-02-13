@@ -85,6 +85,11 @@
       "fact": "NATO leaders will gather for the Munich Security Conference.",
       "source": "PBS NewsHour - 9.2* (1/1) | France 24 - 9.2* (4/4)",
       "audio": "../audio/audio_16.mp3"
+    },
+    {
+      "fact": "Ongoing conflict between Russia and Ukraine continues into its 1,450th day.",
+      "source": "PBS NewsHour - 9.3* (2/2) | Al Jazeera English - 9.2* (5/5)",
+      "audio": "../audio/audio_17.mp3"
     }
   ]
 }
