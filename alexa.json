@@ -1,5 +1,12 @@
 [
   {
+    "uid": "0a48909426174492292c1321bc0475c6",
+    "updateDate": "2026-02-13T10:41:20.0Z",
+    "titleText": "JTF News: BBC News, The Straits Times",
+    "mainText": "The FBI released a description of a suspect in the Nancy Guthrie kidnapping.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "5209e79db0f21f9d7e69a2bc2ea1939f",
     "updateDate": "2026-02-13T10:10:03.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T08:34:50.0Z",
     "titleText": "JTF News: Euronews, The Straits Times",
     "mainText": "Portugal approved restrictions on social media access for children.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "00651823ac0029dce2f8a445b2bef84c",
-    "updateDate": "2026-02-13T06:48:14.0Z",
-    "titleText": "JTF News: Reuters, The Straits Times",
-    "mainText": "Ukrainian President Volodymyr Zelenskiy stated that Ukraine has backed US peace proposals.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
