@@ -1,5 +1,12 @@
 [
   {
+    "uid": "79a021ab52dea98adf035b8314e8e67f",
+    "updateDate": "2026-02-13T06:43:42.0Z",
+    "titleText": "JTF News: France 24, Associated Press",
+    "mainText": "Indian unions and farmers conducted a nationwide strike in response to an interim trade deal with the United States",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "bb51e2d4b684594b0b0fe801acb3f81d",
     "updateDate": "2026-02-13T06:43:32.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:42:26.0Z",
     "titleText": "JTF News: Al Jazeera English, BBC News",
     "mainText": "Japan reported seizing a Chinese vessel.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "432267f71dbcb4ef21c4c49dc4a942f2",
-    "updateDate": "2026-02-13T06:42:09.0Z",
-    "titleText": "JTF News: Al Jazeera English, Reuters",
-    "mainText": "General Counsel Karen Ruemmler resigned from Goldman Sachs.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
