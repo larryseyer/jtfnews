@@ -1,5 +1,12 @@
 [
   {
+    "uid": "8493ceae89a7c0cf1910848869ce1e9a",
+    "updateDate": "2026-02-13T06:46:48.0Z",
+    "titleText": "JTF News: Sky News, Associated Press",
+    "mainText": "Ukrainian athlete Vladyslav Heraskevych will not compete in the Winter Olympics",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "1ff2d691eff5528e05bcc117fdb5bf2e",
     "updateDate": "2026-02-13T06:46:17.0Z",
     "titleText": "JTF News: Sky News, Al Jazeera English",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:43:32.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "President Trump eliminated legal foundation for climate regulations",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "442151912de4d08e9e4167decd9c4633",
-    "updateDate": "2026-02-13T06:43:04.0Z",
-    "titleText": "JTF News: France 24, Associated Press",
-    "mainText": "France's Laurane Miradoli won silver medal in Women's Super-G at Milano-Cortina Winter Olympics",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
