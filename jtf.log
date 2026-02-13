@@ -37,3 +37,53 @@
 2026-02-13 14:10:18 | INFO | Total headlines: 268
 2026-02-13 14:10:21 | INFO | Cycle complete. Published: 0, Queue: 88, Skipped (cached): 267
 2026-02-13 14:10:21 | INFO | Sleeping 30 minutes...
+2026-02-13 14:22:15 | INFO | Shutting down...
+2026-02-13 14:22:26 | INFO | JTF News starting...
+2026-02-13 14:22:26 | INFO | Facts only. No opinions.
+2026-02-13 14:22:26 | INFO | ----------------------------------------
+2026-02-13 14:22:26 | INFO | ============================================================
+2026-02-13 14:22:26 | INFO | Starting cycle #1
+2026-02-13 14:22:27 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 14:22:28 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 14:22:30 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 14:22:31 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 14:22:32 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 14:22:33 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 14:22:35 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 14:22:36 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 14:22:37 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 14:22:39 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 14:22:40 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 14:22:41 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 14:22:43 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 14:22:44 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 14:22:45 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 14:22:46 | WARNING | robots.txt blocks: https://www.scmp.com/news
+2026-02-13 14:22:46 | INFO | Skipping South China Morning Post - robots.txt disallows
+2026-02-13 14:22:47 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 14:22:48 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 14:22:50 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 14:22:51 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 14:22:52 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 14:22:53 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 14:22:54 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 14:22:55 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 14:22:57 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 14:22:58 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 14:23:00 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 14:23:04 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 14:23:05 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 14:23:08 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 14:23:09 | INFO | Total headlines: 268
+2026-02-13 14:23:11 | INFO | Low confidence (45%): Friedrich Merz, Chancellor of Germany, c...
+2026-02-13 14:23:20 | INFO | Not newsworthy (none): Canada plays Switzerland in men's hockey...
+2026-02-13 14:23:23 | INFO | Low confidence (45%): Secretary of State Marco Rubio did not a...
+2026-02-13 14:23:25 | INFO | Word overlap pre-filter: 5/88 candidates
+2026-02-13 14:23:26 | INFO | Queued: Nikhil Gupta pleaded guilty to plotting ...
+2026-02-13 14:23:29 | INFO | Word overlap pre-filter: 7/89 candidates
+2026-02-13 14:23:29 | INFO | Queued: The U.S. House votes to end some of Pres...
+2026-02-13 14:23:32 | INFO | Low confidence (65%): Irish Rail attributes an embankment slip...
+2026-02-13 14:23:35 | INFO | Low confidence (75%): A fitness to practise committee made no ...
+2026-02-13 14:23:38 | INFO | Low confidence (45%): President Trump is sending a second U.S....
+2026-02-13 14:23:41 | INFO | Cycle complete. Published: 0, Queue: 90, Skipped (cached): 254
+2026-02-13 14:23:41 | INFO | Sleeping 30 minutes...
