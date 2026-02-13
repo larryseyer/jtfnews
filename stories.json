@@ -10,6 +10,11 @@
       "fact": "White House Homeland Security Advisor discussed Minnesota immigration policy following two fatal shootings",
       "source": "BBC News - 9.4* | Associated Press - 9.6* (1/1)",
       "audio": "../audio/audio_1.mp3"
+    },
+    {
+      "fact": "Police report previous interactions with a suspect in a mass shooting in Canada.",
+      "source": "BBC News - 9.5* (1/1) | The Guardian - 8.8*",
+      "audio": "../audio/audio_2.mp3"
     }
   ]
 }
