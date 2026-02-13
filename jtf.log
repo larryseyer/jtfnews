@@ -233,3 +233,69 @@
 2026-02-13 14:50:45 | INFO | Alert throttled (queue_backup): Queue backup: 89 items, oldest 23.6h
 2026-02-13 14:50:46 | INFO | Cycle complete. Published: 0, Queue: 89, Skipped (cached): 258
 2026-02-13 14:50:46 | INFO | Sleeping 30 minutes...
+2026-02-13 15:17:22 | INFO | Shutting down...
+2026-02-13 15:17:26 | INFO | JTF News starting...
+2026-02-13 15:17:26 | INFO | Facts only. No opinions.
+2026-02-13 15:17:26 | INFO | ----------------------------------------
+2026-02-13 15:17:26 | INFO | Validating services...
+2026-02-13 15:17:27 | INFO | Claude API: OK
+2026-02-13 15:17:27 | INFO | ElevenLabs API: OK (key present)
+2026-02-13 15:17:27 | INFO | All services validated successfully
+2026-02-13 15:17:27 | INFO | ============================================================
+2026-02-13 15:17:27 | INFO | Starting cycle #1
+2026-02-13 15:17:27 | INFO | Expired from queue: A court heard testimony that a husband blamed his ...
+2026-02-13 15:17:27 | INFO | Rating +1 failure for abc_au: {'successes': 2, 'failures': 1}
+2026-02-13 15:17:27 | INFO | Expired from queue: Western allies pledged $44 billion for Ukraine, ac...
+2026-02-13 15:17:27 | INFO | Rating +1 failure for straits: {'successes': 13, 'failures': 1}
+2026-02-13 15:17:28 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 15:17:29 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 15:17:31 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 15:17:32 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 15:17:33 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 15:17:34 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 15:17:35 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 15:17:37 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 15:17:38 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 15:17:40 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 15:17:41 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 15:17:43 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 15:17:44 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 15:17:45 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 15:17:46 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 15:17:47 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 15:17:48 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 15:17:49 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 15:17:51 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 15:17:52 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 15:17:53 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 15:17:54 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 15:17:55 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 15:17:57 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 15:17:58 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 15:18:00 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 15:18:03 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 15:18:05 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 15:18:07 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 15:18:08 | INFO | Total headlines: 268
+2026-02-13 15:18:09 | INFO | Queued: Wall Street indexes rose as technology s...
+2026-02-13 15:18:10 | INFO | Not newsworthy (none): Former CNN host Don Lemon pleaded not gu...
+2026-02-13 15:18:13 | INFO | Word overlap pre-filter: 8/88 candidates
+2026-02-13 15:18:13 | INFO | Queued: The FBI released a description of a susp...
+2026-02-13 15:18:17 | INFO | Word overlap pre-filter: 1/89 candidates
+2026-02-13 15:18:18 | INFO | Queued: Royal Canadian Mounted Police providing ...
+2026-02-13 15:18:20 | INFO | Not newsworthy (none): In men's hockey at the 2026 Olympic Game...
+2026-02-13 15:18:24 | INFO | Low confidence (75%): A watchdog found that former minister Fr...
+2026-02-13 15:18:29 | INFO | Low confidence (45%): New South Wales teachers report increase...
+2026-02-13 15:18:38 | INFO | Word overlap pre-filter: 2/90 candidates
+2026-02-13 15:18:39 | INFO | Queued: Team GB won a gold medal at the 2026 Win...
+2026-02-13 15:18:45 | INFO | Low confidence (75%): Former CNN anchor Don Lemon pleaded not ...
+2026-02-13 15:18:46 | INFO | Word overlap pre-filter: 5/91 candidates
+2026-02-13 15:18:47 | INFO | Queued: A murder charge was issued following the...
+2026-02-13 15:18:48 | INFO | Word overlap pre-filter: 10/92 candidates
+2026-02-13 15:18:49 | INFO | Queued: ICE plans to spend $38.3 billion on dete...
+2026-02-13 15:18:52 | INFO | Word overlap pre-filter: 12/93 candidates
+2026-02-13 15:18:53 | INFO | Queued: A shooting at South Carolina State Unive...
+2026-02-13 15:18:58 | INFO | Low confidence (75%): UK Parliament proposed a 50% reduction i...
+2026-02-13 15:18:58 | INFO | Alert throttled (queue_backup): Queue backup: 94 items, oldest 23.9h
+2026-02-13 15:18:59 | INFO | Cycle complete. Published: 0, Queue: 94, Skipped (cached): 244
+2026-02-13 15:18:59 | INFO | Sleeping 30 minutes...
