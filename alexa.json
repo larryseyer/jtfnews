@@ -1,5 +1,12 @@
 [
   {
+    "uid": "e0c2fb54b8e850f05cd655ff255f7b3b",
+    "updateDate": "2026-02-13T13:21:08.0Z",
+    "titleText": "JTF News: The Straits Times, France 24",
+    "mainText": "President Emmanuel Macron called for stronger measures against antisemitism in France.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "0dc8c8ec23aeaeb6948c744f14aa1a13",
     "updateDate": "2026-02-13T13:20:32.0Z",
     "titleText": "JTF News: Euronews, The Straits Times",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T11:45:09.0Z",
     "titleText": "JTF News: Al Jazeera English, The Straits Times",
     "mainText": "More than 5,000 ISIL detainees were transferred from Syria according to the Iraqi ministry.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "ca5bc2a08180b085209591e9ac568f1f",
-    "updateDate": "2026-02-13T11:44:59.0Z",
-    "titleText": "JTF News: NPR, France 24",
-    "mainText": "A court ruled the UK's decision to ban Palestine Action as a terrorist group was unlawful.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
