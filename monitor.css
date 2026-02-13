@@ -1,0 +1,490 @@
+/* JTF News Operations Dashboard
+   Dark Glassmorphism Design matching lower-third.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    min-height: 100vh;
+    color: #f8fafc;
+    line-height: 1.5;
+}
+
+.dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: linear-gradient(135deg, #D4AF37 0%, #aa8723 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#last-update {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-running, .status-ok, .status-online {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.status-warning {
+    background: rgba(234, 179, 8, 0.2);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.status-error, .status-offline {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-unknown {
+    background: rgba(100, 116, 139, 0.2);
+    color: #94a3b8;
+    border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards */
+.card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.card-header h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Stat Rows */
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.stat-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f8fafc;
+}
+
+/* Cost Card Specific */
+.cost-badge {
+    font-size: 18px;
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.cost-breakdown {
+    margin-bottom: 16px;
+}
+
+.cost-item {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cost-item:last-child {
+    border-bottom: none;
+}
+
+.cost-service {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f8fafc;
+}
+
+.cost-calls {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.cost-amount {
+    font-size: 14px;
+    font-weight: 600;
+    color: #22c55e;
+    min-width: 60px;
+    text-align: right;
+}
+
+.cost-projection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.projection-label {
+    font-size: 13px;
+    color: #D4AF37;
+}
+
+.projection-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+/* Cycle Card Specific */
+.cycle-badge {
+    font-size: 16px;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.cycle-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cycle-stat {
+    text-align: center;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.cycle-value {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 4px;
+}
+
+.cycle-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+}
+
+.cycle-duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(96, 165, 250, 0.1);
+    border-radius: 8px;
+}
+
+.duration-label {
+    font-size: 13px;
+    color: #60a5fa;
+}
+
+.duration-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #60a5fa;
+}
+
+/* Queue Card Specific */
+.queue-stat-large {
+    text-align: center;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.queue-number {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #f8fafc;
+    line-height: 1;
+}
+
+.queue-label {
+    display: block;
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* Sources Card Specific */
+.sources-summary {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.sources-count {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.sources-count.ok {
+    color: #22c55e;
+}
+
+.sources-count.total {
+    color: #64748b;
+}
+
+.sources-divider {
+    font-size: 20px;
+    color: #475569;
+}
+
+.sources-label {
+    font-size: 13px;
+    color: #64748b;
+    margin-left: 8px;
+}
+
+.failed-sources {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.failed-source {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: 6px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #f87171;
+}
+
+.failed-source::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ef4444;
+}
+
+/* Errors Card Specific */
+.error-badge {
+    min-width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border-radius: 12px;
+    padding: 0 8px;
+}
+
+.error-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.error-item {
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border-left: 3px solid #ef4444;
+}
+
+.error-item.warning {
+    border-left-color: #eab308;
+}
+
+.error-time {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.error-level {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.error-level.ERROR {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.error-level.WARNING {
+    background: rgba(234, 179, 8, 0.2);
+    color: #eab308;
+}
+
+.error-message {
+    font-size: 13px;
+    color: #e2e8f0;
+    word-break: break-word;
+}
+
+.no-errors {
+    text-align: center;
+    padding: 24px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Stale Data Indicator */
+.stale {
+    opacity: 0.6;
+}
+
+.stale::after {
+    content: ' (stale)';
+    font-size: 11px;
+    color: #ef4444;
+}
