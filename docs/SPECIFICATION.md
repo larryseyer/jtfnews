@@ -576,6 +576,17 @@ def process_with_claude(headline, source_id):
         return None  # Never publish unprocessed
 ```
 
+### 6.7 Safe JSON Parsing
+
+Claude may occasionally return malformed JSON. The `safe_parse_claude_json()` helper handles this gracefully:
+
+1. **Try standard JSON parsing** (extract `{...}` from response)
+2. **Try markdown code block extraction** (```json...```)
+3. **Regex field extraction** (fallback for malformed responses)
+4. **Return safe default** (e.g., `{"contradiction": false}`)
+
+This ensures parsing failures never crash the system or block stories.
+
 ---
 
 ## 7. Verification Rules
@@ -1207,11 +1218,28 @@ and never raise our voice.
 2. Contradiction detected between two published sentences
 3. Single-source story bypassed verification
 4. Stream offline > 5 minutes
+5. API costs exceed 80% of daily budget ($5)
+6. Queue backup > 200 items or oldest item > 20 hours
+7. 3 consecutive API failures (same service)
 
 **Warning (log only):**
 - API rate limit approaching
 - Source website unreachable
 - No new stories for 2 hours
+
+### 14.2.1 Alert Throttling
+
+To prevent SMS spam, alerts are throttled by type:
+
+| Alert Type | Cooldown |
+|------------|----------|
+| `api_failure` | 1 hour |
+| `credits_low` | 24 hours |
+| `queue_backup` | 6 hours |
+| `offline` | Until resolved |
+| `contradiction` | None |
+
+Implementation: `_alert_cooldowns` dict tracks last sent time per type.
 
 ### 14.3 SMS Implementation (Twilio)
 
@@ -1345,6 +1373,28 @@ def archive_daily():
 
     log(f"ARCHIVED: {zip_name}")
 ```
+
+### 15.5 Public Website (GitHub Pages)
+
+The `gh-pages` branch serves the public-facing website at https://larryseyer.github.io/jtfnews/
+
+**Files in `gh-pages-dist/`:**
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Landing page with live operational costs |
+| `how-it-works.html` | Interactive guide with live story demo |
+| `whitepaper.html` | Renders WhitePaper.md dynamically (single source of truth) |
+| `screensaver.html` | Standalone screen saver version |
+| `screensaver-setup.html` | Screen saver installation guide |
+| `monitor.html` | Full operations dashboard |
+| `feed.xml` | RSS feed of verified stories |
+| `stories.json` | Current day's verified stories (synced from data/) |
+| `monitor.json` | Live operational metrics (synced from data/) |
+
+**Key Principle:** The whitepaper page fetches `WhitePaper.md` from the main branch at runtime, ensuring the public page always reflects the canonical source.
+
+**Sync Mechanism:** `main.py` pushes `monitor.json` and `stories.json` to gh-pages after each cycle for live dashboard updates.
 
 ---
 

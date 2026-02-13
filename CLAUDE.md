@@ -13,9 +13,9 @@ JTF News (Just the Facts News) - Automated 24/7 news stream that reports only ve
 - **No Drama** - No emotional language, no "BREAKING" labels, just calm facts
 
 ## Key Files
-- `SPECIFICATION.md` - Complete technical spec (read this first for implementation)
+- `docs/SPECIFICATION.md` - Complete technical spec (read this first for implementation)
 - `docs/WhitePaper.md` - Project philosophy and methodology whitepaper
-- `PromptStart.md` - Initial prompt/context document
+- `docs/ResilienceSystem.md` - 24/7 uptime resilience design (retry logic, alerts, degradation)
 - `docs/implementation Ver 0.1.md` - Implementation notes
 - `docs/mediasetup.md` - Media/OBS setup instructions
 
@@ -78,16 +78,21 @@ After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to
 - If deploy machine venv breaks after copy, run `./fix-after-copy.sh` on the Intel machine
 
 ## Folder Structure
-- `media/` - Background images organized by season (fall/, spring/, summer/, winter/, generator/)
-- `docs/` - Documentation and implementation notes
+- `main.py` - Main application (~2000 lines with resilience system)
+- `web/` - OBS browser source overlays (lower-third.html, background-slideshow.html, screensaver.html, monitor.html)
+- `gh-pages-dist/` - Public website (GitHub Pages) - how-it-works, whitepaper, feed.xml, stories.json
+- `media/` - Background images organized by season (fall/, spring/, summer/, winter/)
+- `docs/` - Documentation (SPECIFICATION.md, WhitePaper.md, ResilienceSystem.md)
+- `data/` - Runtime data (stories.json, queue.json, api_usage, monitor.json) - NOT committed
 
-## Tech Stack (planned)
-- Python (~400 lines main script)
-- HTML/CSS/JS overlay for OBS browser source
-- Claude AI for fact extraction/rewriting
-- TTS for audio generation
+## Tech Stack
+- Python main script with resilience system (retry logic, alert throttling, graceful degradation)
+- HTML/CSS/JS overlays for OBS browser source
+- Claude AI (Haiku) for fact extraction/rewriting
+- ElevenLabs TTS for audio generation
+- Twilio for SMS alerts
 - OBS for streaming to YouTube
-- X/Twitter for posting stories
+- GitHub Pages for public website (how-it-works, whitepaper, operations dashboard)
 
 ## Constraints
 - No APIs, no paywalls, respect robots.txt

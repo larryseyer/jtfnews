@@ -185,3 +185,51 @@
 2026-02-13 14:36:16 | INFO | Not newsworthy (none): Pentagon Press Secretary attends Air For...
 2026-02-13 14:36:16 | INFO | Cycle complete. Published: 0, Queue: 89, Skipped (cached): 265
 2026-02-13 14:36:16 | INFO | Sleeping 30 minutes...
+2026-02-13 14:49:11 | INFO | Shutting down...
+2026-02-13 14:49:39 | INFO | JTF News starting...
+2026-02-13 14:49:39 | INFO | Facts only. No opinions.
+2026-02-13 14:49:39 | INFO | ----------------------------------------
+2026-02-13 14:49:39 | INFO | Validating services...
+2026-02-13 14:49:41 | INFO | Claude API: OK
+2026-02-13 14:49:41 | INFO | ElevenLabs API: OK (key present)
+2026-02-13 14:49:41 | INFO | All services validated successfully
+2026-02-13 14:49:41 | INFO | ============================================================
+2026-02-13 14:49:41 | INFO | Starting cycle #1
+2026-02-13 14:49:42 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 14:49:43 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 14:49:44 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 14:49:45 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 14:49:46 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 14:49:47 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 14:49:48 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 14:49:50 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 14:49:52 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 14:49:53 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 14:49:54 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 14:49:56 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 14:49:57 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 14:49:58 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 14:49:59 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 14:50:01 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 14:50:02 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 14:50:03 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 14:50:04 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 14:50:05 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 14:50:07 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 14:50:08 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 14:50:09 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 14:50:11 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 14:50:12 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 14:50:14 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 14:50:17 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 14:50:19 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 14:50:21 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 14:50:22 | INFO | Total headlines: 268
+2026-02-13 14:50:25 | INFO | Low confidence (75%): President Trump ruled that a second airc...
+2026-02-13 14:50:27 | INFO | Low confidence (45%): President Trump stated he is planning to...
+2026-02-13 14:50:32 | INFO | Not newsworthy (none): In men's hockey at the 2026 Olympic Game...
+2026-02-13 14:50:41 | INFO | Low confidence (45%): Senator Jon Husted of Ohio voted to bloc...
+2026-02-13 14:50:45 | INFO | Not newsworthy (none): Google joined the Mopria Alliance....
+2026-02-13 14:50:45 | INFO | Alert throttled (queue_backup): Queue backup: 89 items, oldest 23.6h
+2026-02-13 14:50:46 | INFO | Cycle complete. Published: 0, Queue: 89, Skipped (cached): 258
+2026-02-13 14:50:46 | INFO | Sleeping 30 minutes...
