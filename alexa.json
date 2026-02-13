@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b7fda7d1b7dda17cc0b9f90fc042988d",
+    "updateDate": "2026-02-13T10:09:25.0Z",
+    "titleText": "JTF News: Reuters, The Straits Times",
+    "mainText": "Turkey detained 16 individuals in connection with OnlyFans activity and seized $6.9 million in assets.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d5ab76f13444e3763c8ed93d8d611651",
     "updateDate": "2026-02-13T09:37:41.0Z",
     "titleText": "JTF News: Reuters, The Straits Times",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:47:59.0Z",
     "titleText": "JTF News: Associated Press, The Guardian",
     "mainText": "A shooting in Canada resulted in 9 deaths and 25 injuries at a school and home.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "5a3a409f55d12c1d6d489ad4dd4c8648",
-    "updateDate": "2026-02-13T06:46:57.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "NATO leaders will gather for the Munich Security Conference.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
