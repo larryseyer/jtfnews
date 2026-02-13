@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f1a08c168526cdc249fd425380ad2acc",
+    "updateDate": "2026-02-13T20:01:30.0Z",
+    "titleText": "JTF News: Reuters, The Globe and Mail",
+    "mainText": "The Trump administration filed a lawsuit against Harvard University regarding an admissions probe.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "bc8223d12a6453b9ef23d200c3e835e9",
     "updateDate": "2026-02-13T17:36:29.0Z",
     "titleText": "JTF News: Deutsche Welle, The Straits Times",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T13:20:32.0Z",
     "titleText": "JTF News: Euronews, The Straits Times",
     "mainText": "One person was killed and six were injured in a Russian air attack on a port in Ukraine's Odesa region, according to a deputy prime minister.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b8ef4dd771be30c4634c80cd154a598e",
-    "updateDate": "2026-02-13T13:20:15.0Z",
-    "titleText": "JTF News: ABC News Australia, CBC News",
-    "mainText": "Police identified 8 people killed in a shooting in Tumbler Ridge, British Columbia.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
