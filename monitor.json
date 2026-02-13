@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-02-13T20:33:30.297303+00:00",
-  "uptime_start": "2026-02-13T20:32:15.299026+00:00",
-  "uptime_seconds": 75,
+  "timestamp": "2026-02-13T20:36:16.275378+00:00",
+  "uptime_start": "2026-02-13T20:35:25.786022+00:00",
+  "uptime_seconds": 50,
   "cycle": {
     "number": 1,
-    "duration_seconds": 75.0,
+    "duration_seconds": 50.5,
     "headlines_scraped": 268,
-    "headlines_processed": 14,
-    "stories_published": 1,
+    "headlines_processed": 3,
+    "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 117,
-        "cost_usd": 0.03986025,
+        "calls": 120,
+        "cost_usd": 0.04132324999999999,
         "details": {
-          "input_tokens": 95741,
-          "output_tokens": 12740
+          "input_tokens": 99103,
+          "output_tokens": 13238
         }
       },
       "elevenlabs": {
@@ -28,8 +28,8 @@
         }
       }
     },
-    "total_usd": 0.0585,
-    "month_estimate_usd": 2.05
+    "total_usd": 0.06,
+    "month_estimate_usd": 2.1
   },
   "queue": {
     "size": 89,
@@ -37,24 +37,11 @@
   },
   "stories_today": 1,
   "sources": {
-    "total": 31,
+    "total": 30,
     "successful": 30,
-    "failed": [
-      "South China Morning Post"
-    ]
+    "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-13T20:32:34.567318+00:00",
-      "level": "WARNING",
-      "message": "robots.txt blocks: https://www.scmp.com/news"
-    },
-    {
-      "timestamp": "2026-02-13T20:33:13.179033+00:00",
-      "level": "ERROR",
-      "message": "Contradiction check failed: Expecting value: line 1 column 1 (char 0)"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
