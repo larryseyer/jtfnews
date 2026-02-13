@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ee76bb72df2667eb0777e7ac372f10d8",
+    "updateDate": "2026-02-13T06:40:56.0Z",
+    "titleText": "JTF News: NPR, Reuters",
+    "mainText": "The U.S. Senate blocked Homeland Security funding legislation.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "90f8703731a2c353761d1e208deb1b6f",
     "updateDate": "2026-02-13T06:40:30.0Z",
     "titleText": "JTF News: NPR, Euronews",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:38:51.0Z",
     "titleText": "JTF News: Reuters, The Globe and Mail",
     "mainText": "Bangladesh's BNP political party won a majority of parliamentary seats in national elections.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "c090625b9d2c77853a0dc514e2f79ac7",
-    "updateDate": "2026-02-12T23:09:40.0Z",
-    "titleText": "JTF News: C-SPAN, France 24",
-    "mainText": "President Trump repealed an EPA climate finding.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
