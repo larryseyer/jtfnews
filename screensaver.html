@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>JTF News Screen Saver</title>
+  <meta name="description" content="Just The Facts News - 24/7 verified facts screen saver">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      cursor: none;
+    }
+
+    /* ========== Background Slideshow ========== */
+    #background-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* Subtle vignette overlay */
+    #vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.4) 100%);
+      pointer-events: none;
+      z-index: 50;
+    }
+
+    /* ========== Lower Third ========== */
+    #lower-third {
+      position: absolute;
+      bottom: 8%;
+      left: 5%;
+      max-width: 90%;
+      z-index: 100;
+
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(40px) saturate(180%);
+      -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+
+      box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.5),
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    #lower-third.hidden {
+      opacity: 0;
+      transform: translateX(-50px);
+      pointer-events: none;
+    }
+
+    #lower-third.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    #brand-tab {
+      position: absolute;
+      top: -48px;
+      left: 0;
+      background: linear-gradient(135deg, #d4af37 0%, #aa8723 100%);
+      padding: 10px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 3px;
+      border-radius: 8px 8px 0 0;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #source-bar {
+      background: linear-gradient(135deg, rgba(30, 64, 175, 0.8) 0%, rgba(23, 37, 84, 0.9) 100%);
+      padding: 14px 28px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 16px 16px 0 0;
+    }
+
+    #fact-text {
+      padding: 28px 32px;
+      font-size: clamp(24px, 4vw, 48px);
+      font-weight: 400;
+      color: white;
+      line-height: 1.4;
+    }
+
+    /* ========== Status Indicator ========== */
+    #status {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 8px 14px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 6px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+      z-index: 200;
+      transition: opacity 3s ease-out;
+    }
+
+    #status.fade {
+      opacity: 0;
+    }
+
+    /* ========== Loading State ========== */
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      z-index: 300;
+    }
+
+    #loading h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #d4af37;
+      margin-bottom: 16px;
+    }
+
+    #loading.hidden {
+      display: none;
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 1024px) {
+      #lower-third { left: 3%; max-width: 94%; }
+      #brand-tab { font-size: 14px; padding: 8px 16px; top: -40px; }
+      #source-bar { font-size: 16px; padding: 12px 20px; }
+      #fact-text { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loading">
+    <h1>JTF NEWS</h1>
+    <p>Just The Facts</p>
+  </div>
+
+  <!-- Background -->
+  <div id="background-container">
+    <img id="slide1" class="slide" alt="">
+    <img id="slide2" class="slide" alt="">
+  </div>
+  <div id="vignette"></div>
+
+  <!-- News overlay -->
+  <div id="lower-third" class="hidden">
+    <div id="brand-tab">JTF NEWS</div>
+    <div id="source-bar"></div>
+    <div id="fact-text"></div>
+  </div>
+
+  <!-- Audio (when enabled) -->
+  <audio id="tts-audio" preload="none"></audio>
+
+  <!-- Status -->
+  <div id="status"></div>
+
+  <script>
+    /**
+     * JTF News Screen Saver - Hosted Version
+     * https://larryseyer.github.io/jtfnews/screensaver.html
+     *
+     * URL Parameters:
+     *   audio=true      Enable TTS audio (default: silent)
+     *   interval=50     Seconds between slides (default: 50)
+     *   gap=45          Seconds between stories (default: 45)
+     *   images=URL      Custom image manifest URL
+     *   stories=URL     Custom stories feed URL
+     */
+
+    // ========== Configuration ==========
+    const params = new URLSearchParams(window.location.search);
+
+    // Detect base URL for assets
+    const BASE_URL = new URL('.', window.location.href).href;
+
+    const CONFIG = {
+      audioEnabled: params.get('audio') === 'true',
+      slideInterval: (parseInt(params.get('interval')) || 50) * 1000,
+      storyGap: (parseInt(params.get('gap')) || 45) * 1000,
+      imagesManifest: params.get('images') || `${BASE_URL}images/manifest.json`,
+      storiesFeed: params.get('stories') || `${BASE_URL}stories.json`,
+      pollInterval: 30000,
+      minRepeatGap: 2700000
+    };
+
+    // ========== Utilities ==========
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+    const $ = id => document.getElementById(id);
+
+    function showStatus(msg) {
+      const el = $('status');
+      el.textContent = msg;
+      el.classList.remove('fade');
+      setTimeout(() => el.classList.add('fade'), 4000);
+    }
+
+    // ========== Image Management ==========
+    let images = [];
+    let imageQueue = [];
+    let currentSlide = 1;
+
+    function shuffleArray(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function getSeason() {
+      const m = new Date().getMonth() + 1;
+      if (m >= 3 && m <= 5) return 'spring';
+      if (m >= 6 && m <= 8) return 'summer';
+      if (m >= 9 && m <= 11) return 'fall';
+      return 'winter';
+    }
+
+    async function loadImages() {
+      try {
+        const res = await fetch(CONFIG.imagesManifest);
+        if (!res.ok) throw new Error('Manifest not found');
+
+        const manifest = await res.json();
+        const season = getSeason();
+
+        // Get images for current season, fallback to 'all' or any available
+        images = manifest[season] || manifest.all || Object.values(manifest).flat();
+
+        if (images.length === 0) throw new Error('No images in manifest');
+
+        // Resolve relative URLs
+        const manifestBase = new URL(CONFIG.imagesManifest, window.location.href).href;
+        const imageBase = manifestBase.substring(0, manifestBase.lastIndexOf('/') + 1);
+        images = images.map(img => img.startsWith('http') ? img : imageBase + img);
+
+        imageQueue = shuffleArray(images);
+        console.log(`[Images] Loaded ${images.length} for ${season}`);
+        return true;
+      } catch (e) {
+        console.error('[Images] Failed to load manifest:', e);
+        return false;
+      }
+    }
+
+    function getNextImage() {
+      if (imageQueue.length === 0) {
+        imageQueue = shuffleArray(images);
+      }
+      return imageQueue.shift();
+    }
+
+    function showNextImage() {
+      if (images.length === 0) return;
+
+      const nextImg = getNextImage();
+      const activeId = currentSlide === 1 ? 'slide1' : 'slide2';
+      const nextId = currentSlide === 1 ? 'slide2' : 'slide1';
+
+      const activeEl = $(activeId);
+      const nextEl = $(nextId);
+
+      nextEl.onload = () => {
+        activeEl.classList.remove('active');
+        nextEl.classList.add('active');
+        currentSlide = currentSlide === 1 ? 2 : 1;
+      };
+
+      nextEl.onerror = () => {
+        console.warn('[Images] Failed to load:', nextImg);
+        images = images.filter(i => i !== nextImg);
+        imageQueue = imageQueue.filter(i => i !== nextImg);
+        if (images.length > 0) showNextImage();
+      };
+
+      nextEl.src = nextImg;
+    }
+
+    async function initSlideshow() {
+      const loaded = await loadImages();
+      if (!loaded) {
+        // Fallback: solid color background
+        document.body.style.background = 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)';
+        return;
+      }
+
+      // Show first image
+      const first = getNextImage();
+      const firstEl = $('slide1');
+      firstEl.onload = () => {
+        firstEl.classList.add('active');
+        $('loading').classList.add('hidden');
+      };
+      firstEl.src = first;
+
+      // Start slideshow loop
+      setInterval(showNextImage, CONFIG.slideInterval);
+
+      // Check for season change hourly
+      let currentSeason = getSeason();
+      setInterval(() => {
+        if (getSeason() !== currentSeason) {
+          currentSeason = getSeason();
+          loadImages();
+        }
+      }, 3600000);
+    }
+
+    // ========== News Stories ==========
+    let stories = [];
+    let storyTimes = new Map();
+    let isDisplaying = false;
+
+    async function loadStories() {
+      try {
+        const res = await fetch(CONFIG.storiesFeed + '?t=' + Date.now());
+        if (!res.ok) return;
+
+        const data = await res.json();
+        if (data.stories?.length > 0) {
+          stories = data.stories;
+          // Clean up old tracking
+          const facts = new Set(stories.map(s => s.fact));
+          for (const f of storyTimes.keys()) {
+            if (!facts.has(f)) storyTimes.delete(f);
+          }
+        }
+      } catch (e) {
+        // Silently continue with existing stories
+      }
+    }
+
+    function playAudio(url) {
+      return new Promise(resolve => {
+        if (!CONFIG.audioEnabled || !url) {
+          resolve('skip');
+          return;
+        }
+
+        const audio = $('tts-audio');
+        const done = result => {
+          audio.onended = null;
+          audio.onerror = null;
+          resolve(result);
+        };
+
+        audio.onended = () => done('played');
+        audio.onerror = () => done('error');
+        audio.src = url;
+        audio.play().catch(() => done('error'));
+      });
+    }
+
+    function holdTime(text) {
+      // ~150 words per minute reading speed
+      const words = text.split(/\s+/).length;
+      const ms = (words / 150) * 60 * 1000;
+      return Math.max(4000, Math.min(ms + 2000, 20000));
+    }
+
+    async function displayStory(story) {
+      if (isDisplaying) return;
+      isDisplaying = true;
+
+      const el = $('lower-third');
+      $('source-bar').textContent = story.source || 'Verified Source';
+      $('fact-text').textContent = story.fact;
+
+      el.classList.remove('hidden');
+      el.classList.add('visible');
+
+      const audioResult = await playAudio(story.audio);
+
+      if (audioResult !== 'played') {
+        await sleep(holdTime(story.fact));
+      } else {
+        await sleep(500);
+      }
+
+      el.classList.remove('visible');
+      el.classList.add('hidden');
+
+      await sleep(1000 + CONFIG.storyGap);
+      isDisplaying = false;
+    }
+
+    async function newsLoop() {
+      while (true) {
+        if (stories.length === 0) {
+          await sleep(3000);
+          continue;
+        }
+
+        // Find eligible stories (not shown recently)
+        const now = Date.now();
+        const eligible = stories.filter(s =>
+          (now - (storyTimes.get(s.fact) || 0)) >= CONFIG.minRepeatGap
+        );
+
+        if (eligible.length === 0) {
+          await sleep(5000);
+          continue;
+        }
+
+        const story = eligible[0];
+        await displayStory(story);
+        storyTimes.set(story.fact, Date.now());
+      }
+    }
+
+    async function initNews() {
+      await loadStories();
+      setInterval(loadStories, CONFIG.pollInterval);
+      newsLoop();
+    }
+
+    // ========== Screen Saver Behaviors ==========
+    function preventSleep() {
+      if ('wakeLock' in navigator) {
+        navigator.wakeLock.request('screen').catch(() => {});
+      }
+    }
+
+    function preventContext(e) {
+      e.preventDefault();
+    }
+
+    // ========== Initialize ==========
+    async function init() {
+      console.log('[JTF Screen Saver] Starting...');
+      console.log('[JTF Screen Saver] Audio:', CONFIG.audioEnabled ? 'ON' : 'OFF');
+
+      showStatus(CONFIG.audioEnabled ? 'Audio ON' : 'Silent Mode');
+
+      document.addEventListener('contextmenu', preventContext);
+      preventSleep();
+
+      await initSlideshow();
+      await initNews();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>

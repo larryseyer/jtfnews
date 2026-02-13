@@ -1,0 +1,23 @@
+{
+  "fall": [
+    "fall/fall_000000.png"
+  ],
+  "spring": [
+    "spring/spring_000000.png"
+  ],
+  "summer": [
+    "summer/summer_000000.png"
+  ],
+  "winter": [
+    "winter/winter_000000.png",
+    "winter/winter_000001.png",
+    "winter/winter_000002.png",
+    "winter/winter_000003.png",
+    "winter/winter_000004.png",
+    "winter/winter_000005.png",
+    "winter/winter_000006.png",
+    "winter/winter_000007.png",
+    "winter/winter_000008.png",
+    "winter/winter_000009.png"
+  ]
+}
