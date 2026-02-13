@@ -1,5 +1,12 @@
 [
   {
+    "uid": "1b21e95d70110ac7a2a8bd8075667456",
+    "updateDate": "2026-02-13T20:01:40.0Z",
+    "titleText": "JTF News: BBC News, Al Jazeera English",
+    "mainText": "The United Nations reports 6,000 deaths in a Sudanese city over three days.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "f1a08c168526cdc249fd425380ad2acc",
     "updateDate": "2026-02-13T20:01:30.0Z",
     "titleText": "JTF News: Reuters, The Globe and Mail",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T13:21:08.0Z",
     "titleText": "JTF News: The Straits Times, France 24",
     "mainText": "President Emmanuel Macron called for stronger measures against antisemitism in France.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "0dc8c8ec23aeaeb6948c744f14aa1a13",
-    "updateDate": "2026-02-13T13:20:32.0Z",
-    "titleText": "JTF News: Euronews, The Straits Times",
-    "mainText": "One person was killed and six were injured in a Russian air attack on a port in Ukraine's Odesa region, according to a deputy prime minister.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
