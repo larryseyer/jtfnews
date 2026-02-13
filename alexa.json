@@ -1,5 +1,12 @@
 [
   {
+    "uid": "6920fbe86d89cea6485b9d5eeb355122",
+    "updateDate": "2026-02-13T11:45:35.0Z",
+    "titleText": "JTF News: The Globe and Mail, Reuters",
+    "mainText": "A second U.S. aircraft carrier is heading to the Middle East, according to U.S. media reports.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "c79a8e23f3c4cad3f9e9ca3d1e5d02c0",
     "updateDate": "2026-02-13T11:45:09.0Z",
     "titleText": "JTF News: Al Jazeera English, The Straits Times",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T10:41:46.0Z",
     "titleText": "JTF News: France 24, NPR",
     "mainText": "French astronaut Sophie Adenot and crew launched to the International Space Station.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "0a48909426174492292c1321bc0475c6",
-    "updateDate": "2026-02-13T10:41:20.0Z",
-    "titleText": "JTF News: BBC News, The Straits Times",
-    "mainText": "The FBI released a description of a suspect in the Nancy Guthrie kidnapping.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
