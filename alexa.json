@@ -1,5 +1,12 @@
 [
   {
+    "uid": "faac4128905249a8bc6ce7df5292d680",
+    "updateDate": "2026-02-13T20:03:25.0Z",
+    "titleText": "JTF News: Hindustan Times, The Straits Times",
+    "mainText": "Senators urged President Trump to eliminate social media vetting for foreign tourists.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d6f30a4a4c0ff74cb0bda5f5d45d87c0",
     "updateDate": "2026-02-13T20:03:15.0Z",
     "titleText": "JTF News: The Straits Times, EFE News Agency",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T20:01:51.0Z",
     "titleText": "JTF News: Al Jazeera English, The Globe and Mail",
     "mainText": "Russia and Ukraine are scheduled to hold talks in Geneva next week.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "1b21e95d70110ac7a2a8bd8075667456",
-    "updateDate": "2026-02-13T20:01:40.0Z",
-    "titleText": "JTF News: BBC News, Al Jazeera English",
-    "mainText": "The United Nations reports 6,000 deaths in a Sudanese city over three days.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
