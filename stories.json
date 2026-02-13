@@ -5,6 +5,11 @@
       "fact": "French President Emmanuel Macron stated that Europe should become a geopolitical power.",
       "source": "Euronews - 8.6* (3/3) | The Straits Times - 10.0 (12/12)",
       "audio": "../audio/audio_0.mp3"
+    },
+    {
+      "fact": "A shooting occurred at a school in Tumbler Ridge, British Columbia, and Royal Canadian Mounted Police stated the shooter did not target specific individuals.",
+      "source": "CBC News - 9.3* (3/3) | Agence France-Presse - 8.6* (0/1)",
+      "audio": "../audio/audio_1.mp3"
     }
   ]
 }
