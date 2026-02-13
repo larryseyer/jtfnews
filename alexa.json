@@ -1,5 +1,12 @@
 [
   {
+    "uid": "53dcb68a811b8beb15421aa7d44bb77e",
+    "updateDate": "2026-02-13T06:42:51.0Z",
+    "titleText": "JTF News: Al Jazeera English, Associated Press",
+    "mainText": "Environmental Protection Agency revokes scientific finding related to climate change policy",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "22d7db5334303139b087014d1cbb4c16",
     "updateDate": "2026-02-13T06:42:26.0Z",
     "titleText": "JTF News: Al Jazeera English, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:41:09.0Z",
     "titleText": "JTF News: NPR, Associated Press",
     "mainText": "Immigration and Customs Enforcement (ICE) agents were arrested in recent months.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "ee76bb72df2667eb0777e7ac372f10d8",
-    "updateDate": "2026-02-13T06:40:56.0Z",
-    "titleText": "JTF News: NPR, Reuters",
-    "mainText": "The U.S. Senate blocked Homeland Security funding legislation.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
