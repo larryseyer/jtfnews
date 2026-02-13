@@ -1,5 +1,12 @@
 [
   {
+    "uid": "432267f71dbcb4ef21c4c49dc4a942f2",
+    "updateDate": "2026-02-13T06:42:09.0Z",
+    "titleText": "JTF News: Al Jazeera English, Reuters",
+    "mainText": "General Counsel Karen Ruemmler resigned from Goldman Sachs.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "9ed9813dbc2f014017f45578e3a676b9",
     "updateDate": "2026-02-13T06:41:47.0Z",
     "titleText": "JTF News: The Guardian, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T06:40:30.0Z",
     "titleText": "JTF News: NPR, Euronews",
     "mainText": "Two individuals accused of using military secrets for financial trading",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "ac5b7f954208d52b2de79cc44b2ae2e4",
-    "updateDate": "2026-02-13T06:40:04.0Z",
-    "titleText": "JTF News: BBC News, The Guardian",
-    "mainText": "Police report previous interactions with a suspect in a mass shooting in Canada.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
