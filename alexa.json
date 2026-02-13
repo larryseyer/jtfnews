@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ca5bc2a08180b085209591e9ac568f1f",
+    "updateDate": "2026-02-13T11:44:59.0Z",
+    "titleText": "JTF News: NPR, France 24",
+    "mainText": "A court ruled the UK's decision to ban Palestine Action as a terrorist group was unlawful.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "39a576aa4af082f7202c48dc0684e41d",
     "updateDate": "2026-02-13T11:44:54.0Z",
     "titleText": "JTF News: Reuters, The Straits Times",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T10:10:03.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "One person died and hundreds of thousands lost power in France during Storm Nils.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b7fda7d1b7dda17cc0b9f90fc042988d",
-    "updateDate": "2026-02-13T10:09:25.0Z",
-    "titleText": "JTF News: Reuters, The Straits Times",
-    "mainText": "Turkey detained 16 individuals in connection with OnlyFans activity and seized $6.9 million in assets.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
