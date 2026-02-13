@@ -25,6 +25,11 @@
       "fact": "The U.S. Senate blocked Homeland Security funding legislation.",
       "source": "NPR - 9.3* (1/1) | Reuters - 9.8* (1/1)",
       "audio": "../audio/audio_4.mp3"
+    },
+    {
+      "fact": "Immigration and Customs Enforcement (ICE) agents were arrested in recent months.",
+      "source": "NPR - 9.4* (2/2) | Associated Press - 9.7* (2/2)",
+      "audio": "../audio/audio_5.mp3"
     }
   ]
 }
