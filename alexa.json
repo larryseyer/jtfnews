@@ -1,5 +1,12 @@
 [
   {
+    "uid": "a9be1b036ba3ac90e2b5ba2ad03aa441",
+    "updateDate": "2026-02-14T20:29:35.0Z",
+    "titleText": "JTF News: PBS NewsHour, The Guardian",
+    "mainText": "At least 30 people killed in north-west Nigerian villages according to residents.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "545d80c702568714f4fd2327cded7990",
     "updateDate": "2026-02-14T20:27:53.0Z",
     "titleText": "JTF News: Al Jazeera English, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T01:21:29.0Z",
     "titleText": "JTF News: The Globe and Mail, PBS NewsHour",
     "mainText": "Friedrich Merz, Chancellor of Germany, called on the U.S. and Europe to repair and revive trans-Atlantic trust.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "e97926b4e45f43996aa37c6f0a21ef8d",
-    "updateDate": "2026-02-14T01:20:32.0Z",
-    "titleText": "JTF News: Euronews, France 24",
-    "mainText": "President Emmanuel Macron stated at the Munich conference that Europe must become a geopolitical power in its own right.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
