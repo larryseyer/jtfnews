@@ -2,44 +2,9 @@
   "date": "2026-02-14",
   "stories": [
     {
-      "fact": "A knife-wielding individual dies after being shot by Paris police at the Arc de Triomphe.",
-      "source": "France 24 - 10.0 (11/11) | Reuters - 8.6 (12/14)",
+      "fact": "President Trump stated he will seek to require voter ID for midterm elections regardless of Congress.",
+      "source": "Al Jazeera English - 8.5* | Reuters - 9.8*",
       "audio": "../audio/audio_0.mp3"
-    },
-    {
-      "fact": "President Trump stated a second aircraft carrier is leaving shortly for the Middle East. Trump stated that a change in power in Iran would be 'best' following the aircraft carrier deployment.",
-      "source": "France 24 - 10.0 (12/12) | Al Jazeera English - 9.0 (9/10) | PBS NewsHour - 8.4* (2/3)",
-      "audio": "../audio/audio_1.mp3"
-    },
-    {
-      "fact": "Storm Nils caused two deaths in France and left hundreds of thousands without power.",
-      "source": "Sky News - 8.6* (2/2) | Hindustan Times - 5.4* (1/4)",
-      "audio": "../audio/audio_2.mp3"
-    },
-    {
-      "fact": "President Emmanuel Macron stated at the Munich Security Conference that Europe must become a geopolitical power independently.",
-      "source": "PBS NewsHour - 8.5* (3/4) | France 24 - 10.0 (13/13)",
-      "audio": "../audio/audio_3.mp3"
-    },
-    {
-      "fact": "An Indian man pleaded guilty to plotting to kill a Sikh separatist in New York.",
-      "source": "Times of India - 7.8* (1/1) | Reuters - 8.7 (13/15)",
-      "audio": "../audio/audio_4.mp3"
-    },
-    {
-      "fact": "Separate talks on Iran and Ukraine-Russia are scheduled for Tuesday in Geneva.",
-      "source": "The Straits Times - 7.8 (14/18) | The Globe and Mail - 7.5* (5/7)",
-      "audio": "../audio/audio_5.mp3"
-    },
-    {
-      "fact": "U.S. Immigration and Customs Enforcement plans to spend $38.3 billion on detention centers across the United States.",
-      "source": "The Straits Times - 7.9 (15/19) | Reuters - 8.8 (14/16)",
-      "audio": "../audio/audio_6.mp3"
-    },
-    {
-      "fact": "Royal Canadian Mounted Police providing update on shooting reported in Tumbler Ridge, British Columbia.",
-      "source": "Agence France-Presse - 8.6* (1/2) | CBC News - 8.5* (4/5)",
-      "audio": "../audio/audio_7.mp3"
     }
   ]
 }
