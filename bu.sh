@@ -25,16 +25,6 @@ cd "$SOURCE" || exit 1
 zip -r "$ZIP_FILE" . -x "media/*" "media/" "gh-pages-dist/*" "gh-pages-dist/" "audio/*" "audio/" "data/*" "data/" "venv/*" "venv/" "__pycache__/*" "__pycache__/" ".git/*" ".git/" ".env"
 
 # =============================================================================
-# BACKUP .env SEPARATELY (private, not in main backup for security)
-# =============================================================================
-ENV_BACKUP_DIR="/Users/larryseyer/Dropbox/Automagic Art/Source Backup/JTFNews Backups/env-secrets"
-mkdir -p "$ENV_BACKUP_DIR"
-if [ -f "$SOURCE/.env" ]; then
-    cp "$SOURCE/.env" "$ENV_BACKUP_DIR/.env.backup"
-    echo "Secrets backed up to private location"
-fi
-
-# =============================================================================
 # DEPLOY TO PRODUCTION
 # =============================================================================
 echo ""
