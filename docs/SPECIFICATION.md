@@ -172,7 +172,7 @@ Let OBS handle what OBS does best. We write minimal code.
 
 ## 5. News Sources
 
-### 5.1 The 20 Sources
+### 5.1 The 30 Sources
 
 Each source has:
 - `name`: Display name
@@ -429,31 +429,33 @@ For each story, source ownership is disclosed to show who funds the information.
 
 #### 5.3.1 Data Structure
 
-Each source includes an `ownership` array with up to 3 entries (top shareholders, majority first):
+Each source includes ownership fields matching config.json:
 
 ```json
 {
   "id": "reuters",
   "name": "Reuters",
-  "ownership": [
-    {"name": "Thomson Reuters Corporation", "percentage": 100}
-  ],
-  "type": "private"
+  "control_type": "corporate",
+  "owner": "Thomson Reuters Corporation",
+  "owner_display": "Thomson Reuters (public)",
+  "institutional_holders": [
+    {"name": "Woodbridge Company", "percent": 69.0},
+    {"name": "Vanguard", "percent": 3.1},
+    {"name": "BlackRock", "percent": 2.8}
+  ]
 }
 ```
 
-For publicly traded parent companies, include top institutional shareholders:
+For public broadcasters or nonprofits (no institutional shareholders):
 
 ```json
 {
-  "id": "sky",
-  "name": "Sky News",
-  "ownership": [
-    {"name": "Comcast Corporation", "percentage": 100, "note": "parent"},
-    {"name": "BlackRock", "percentage": 8.2, "note": "institutional"},
-    {"name": "Vanguard", "percentage": 7.1, "note": "institutional"}
-  ],
-  "type": "private"
+  "id": "bbc",
+  "name": "BBC News",
+  "control_type": "public_broadcaster",
+  "owner": "British Broadcasting Corporation",
+  "owner_display": "UK Public (100%)",
+  "institutional_holders": []
 }
 ```
 
@@ -480,31 +482,35 @@ Format: `Name Accuracy|Bias` — no ownership on stream (keeps it calm)
 Reuters
 ├─ Accuracy: 9.8
 ├─ Bias: 9.5
+├─ Speed: 9.8
+├─ Consensus: 9.8
 └─ Ownership:
-   • Thomson Reuters Corporation (100%)
-   • BlackRock (8.2%)
-   • Vanguard (7.1%)
+   • Woodbridge Company (69.0%)
+   • Vanguard (3.1%)
+   • BlackRock (2.8%)
 ```
 
 **RSS feed (machine-readable):**
 ```xml
-<source name="Reuters" accuracy="9.8" bias="9.5">
-  <owner name="Thomson Reuters Corporation" percentage="100"/>
-  <owner name="BlackRock" percentage="8.2"/>
-  <owner name="Vanguard" percentage="7.1"/>
+<source name="Reuters" accuracy="9.8" bias="9.5" speed="9.8" consensus="9.8">
+  <owner name="Woodbridge Company" percent="69.0"/>
+  <owner name="Vanguard" percent="3.1"/>
+  <owner name="BlackRock" percent="2.8"/>
 </source>
 ```
 
 ### 5.4 Source Scores
 
-Each source has two live scores, both on a 0-10 scale where **higher is better**:
+Each source has four live scores, all on a 0-10 scale where **higher is better**. Listed in order of importance:
 
-| Score | Meaning | Calculation |
-|-------|---------|-------------|
-| **Accuracy** | Verification success rate | `(verified_stories / total_stories) × 10` |
-| **Bias** | Editorial neutrality | `10 - (avg_text_removed_percentage × 10)` |
+| Priority | Score | Meaning | Calculation |
+|----------|-------|---------|-------------|
+| 1 | **Accuracy** | Verification success rate | `(verified_stories / total_stories) × 10` |
+| 2 | **Bias** | Editorial neutrality | `10 - (avg_text_removed_percentage × 10)` |
+| 3 | **Speed** | Time to first report | `10 - (avg_minutes_behind_first / 60)` capped at 0 |
+| 4 | **Consensus** | Agreement with other sources | `(matching_facts / total_facts) × 10` |
 
-#### 5.4.1 Accuracy Score
+#### 5.4.1 Accuracy Score (Priority 1)
 
 Measures how often a source's stories get verified by a second unrelated source.
 
@@ -513,7 +519,7 @@ Measures how often a source's stories get verified by a second unrelated source.
 
 See Section 7.5 for full rating methodology and audit trail.
 
-#### 5.4.2 Bias Score
+#### 5.4.2 Bias Score (Priority 2)
 
 Measures how much editorialization Claude strips from a source's headlines. Higher = more neutral (better).
 
@@ -534,11 +540,51 @@ bias_score = 10 - (average_percentage_of_text_removed * 10)
 - File: `data/bias_tracking.json`
 - Updated in real-time as headlines are processed
 
-#### 5.4.3 Score Display
+#### 5.4.3 Speed Score (Priority 3)
 
-**Lower-third:** `Reuters 9.8|9.5` (Accuracy|Bias, no labels)
+Measures how quickly a source reports news compared to the first source to report.
 
-**Website/RSS:** Full labels and ownership data
+**Calculation:**
+```python
+speed_score = max(0, 10 - (avg_minutes_behind_first_source / 60))
+```
+
+**Examples:**
+| Avg Minutes Behind | Speed Score | Interpretation |
+|--------------------|-------------|----------------|
+| 0 (first) | 10.0 | Often breaks news first |
+| 30 | 9.5 | Very fast |
+| 120 | 8.0 | Moderate |
+| 360+ | 4.0 | Slow but thorough |
+
+**Note:** Speed is less important than accuracy. A slow but accurate source is preferable to a fast but unreliable one.
+
+#### 5.4.4 Consensus Score (Priority 4)
+
+Measures how often a source's reported facts align with what other sources report.
+
+**Calculation:**
+```python
+consensus_score = (facts_matching_other_sources / total_facts_reported) × 10
+```
+
+A high consensus score means the source rarely reports things that other sources contradict or fail to corroborate.
+
+#### 5.4.5 Score Display
+
+**Lower-third (compact):** `Reuters 9.8|9.5` (Accuracy|Bias only — top 2 priorities)
+
+**Website (full):**
+```
+Reuters
+├─ Accuracy: 9.8
+├─ Bias: 9.5
+├─ Speed: 9.8
+├─ Consensus: 9.8
+└─ Ownership: Thomson Reuters (69%), Vanguard (3.1%), BlackRock (2.8%)
+```
+
+**RSS feed:** All 4 scores as XML attributes
 
 **Score explanation** is provided on the website and in the YouTube stream description (not on-stream, to maintain calm aesthetic).
 
@@ -1300,13 +1346,13 @@ and never raise our voice.
 ─────────────────────────────
 SOURCE SCORES (Higher = Better)
 
-Each source shows two scores: Accuracy | Bias
-• Accuracy: How often this source's stories get verified by a second unrelated source
-• Bias: How neutral the source's language is (10 = no editorialization removed)
+On-stream: Accuracy | Bias (top 2 priorities)
+• Accuracy: How often stories get verified by a second unrelated source
+• Bias: How neutral the language is (10 = no editorialization removed)
 
-Example: "Reuters 9.8|9.5" means Reuters has 9.8 accuracy and 9.5 bias score.
+Example: "Reuters 9.8|9.5" = 9.8 accuracy, 9.5 bias
 
-Full source ownership disclosure: jtfnews.com/sources
+Full scores (all 4) and ownership disclosure: jtfnews.com/sources
 ─────────────────────────────
 ```
 
@@ -1687,7 +1733,7 @@ JTF News - Just The Facts
 Automated news system that reports only verified facts.
 
 This is THE ONLY SCRIPT. It does everything:
-- Scrapes headlines from 20 sources
+- Scrapes headlines from 30 sources
 - Processes with Claude AI to strip editorialization
 - Verifies 2+ unrelated sources
 - Writes output files for OBS
@@ -2180,7 +2226,7 @@ After implementation, verify each item:
 ### 19.1 Core Functionality
 
 - [ ] `python main.py` starts without errors
-- [ ] Scrapes at least 15/20 sources successfully
+- [ ] Scrapes at least 25/30 sources successfully
 - [ ] Claude API processes headlines correctly
 - [ ] Stories with <85% confidence are rejected
 - [ ] Single-source stories are queued, not published

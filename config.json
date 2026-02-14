@@ -194,9 +194,13 @@
       "scrape_selector": "h3",
       "tier": 3,
       "control_type": "private",
-      "owner": "Lebedev family",
-      "owner_display": "Lebedev family (100%)",
-      "institutional_holders": [],
+      "owner": "Independent Digital News and Media",
+      "owner_display": "Lebedev 41%, Saudi investor 30%, Shaw 26%",
+      "institutional_holders": [
+        {"name": "Evgeny Lebedev", "percent": 41.0},
+        {"name": "Sultan Muhammad Abuljadayel (Saudi)", "percent": 30.0},
+        {"name": "Justin Byam Shaw", "percent": 26.0}
+      ],
       "ratings": {
         "accuracy": 7.8,
         "bias": -1.0,
@@ -215,8 +219,8 @@
       "owner": "Comcast (Sky Group)",
       "owner_display": "Comcast (100%)",
       "institutional_holders": [
-        {"name": "Vanguard", "percent": 8.2},
-        {"name": "BlackRock", "percent": 7.1}
+        {"name": "Vanguard", "percent": 9.8},
+        {"name": "BlackRock", "percent": 8.0}
       ],
       "ratings": {
         "accuracy": 8.2,
@@ -252,8 +256,10 @@
       "tier": 3,
       "control_type": "private",
       "owner": "Alpac Capital (Portugal)",
-      "owner_display": "Alpac Capital (88%)",
-      "institutional_holders": [],
+      "owner_display": "Alpac Capital (97.6%)",
+      "institutional_holders": [
+        {"name": "Alpac Capital", "percent": 97.6}
+      ],
       "ratings": {
         "accuracy": 8.0,
         "bias": 0.3,
@@ -270,8 +276,10 @@
       "tier": 3,
       "control_type": "corporate",
       "owner": "Bennett Coleman & Co. Ltd.",
-      "owner_display": "Jain family (100%)",
-      "institutional_holders": [],
+      "owner_display": "Jain family (86.17%)",
+      "institutional_holders": [
+        {"name": "Jain family (via subsidiaries)", "percent": 86.17}
+      ],
       "ratings": {
         "accuracy": 7.5,
         "bias": 0.5,

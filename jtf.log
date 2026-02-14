@@ -2260,3 +2260,25 @@
 2026-02-14 16:04:27 | INFO | Monitor data pushed to gh-pages
 2026-02-14 16:04:27 | INFO | Cycle complete. Published: 0, Queue: 32, Skipped (cached): 255
 2026-02-14 16:04:27 | INFO | Sleeping 30 minutes...
+2026-02-14 16:22:54 | INFO | Shutting down...
+2026-02-14 16:22:57 | INFO | JTF News starting...
+2026-02-14 16:22:57 | INFO | Facts only. No opinions.
+2026-02-14 16:22:57 | INFO | ----------------------------------------
+2026-02-14 16:22:57 | INFO | Validating services...
+2026-02-14 16:22:57 | INFO | Claude API: OK
+2026-02-14 16:22:57 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 16:22:57 | INFO | All services validated successfully
+2026-02-14 16:22:57 | INFO | ============================================================
+2026-02-14 16:22:57 | INFO | Starting cycle #1
+2026-02-14 16:22:58 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 16:22:59 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 16:23:00 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 16:23:01 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 16:23:03 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 16:23:04 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 16:23:05 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 16:23:06 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 16:23:08 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 16:23:10 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 16:23:11 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 16:23:12 | INFO | Shutting down...
