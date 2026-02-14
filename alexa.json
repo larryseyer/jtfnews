@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2262d38291a5249ceade281df4717470",
+    "updateDate": "2026-02-14T00:35:45.0Z",
+    "titleText": "JTF News: The Straits Times, The Globe and Mail",
+    "mainText": "Separate talks on Iran and Ukraine-Russia are scheduled for Tuesday in Geneva.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "3460c1368763c0a68b62d5ec0baccecc",
     "updateDate": "2026-02-14T00:34:36.0Z",
     "titleText": "JTF News: Times of India, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T00:31:43.0Z",
     "titleText": "JTF News: France 24, Al Jazeera English",
     "mainText": "President Trump stated a second aircraft carrier is leaving shortly for the Middle East.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "767e72e78a22e21ed3476c36ebf8e830",
-    "updateDate": "2026-02-14T00:31:34.0Z",
-    "titleText": "JTF News: France 24, Reuters",
-    "mainText": "A knife-wielding individual dies after being shot by Paris police at the Arc de Triomphe.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
