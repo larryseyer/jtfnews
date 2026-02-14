@@ -1,5 +1,12 @@
 [
   {
+    "uid": "714e3fad67c69aff24bc57356b6185ce",
+    "updateDate": "2026-02-14T21:33:15.0Z",
+    "titleText": "JTF News: The Straits Times, NPR",
+    "mainText": "Five European nations stated that Alexei Navalny was poisoned and attributed responsibility to the Kremlin.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "3e5e3c2115dabc5c1e4425e137cbae1e",
     "updateDate": "2026-02-14T20:31:28.0Z",
     "titleText": "JTF News: The Straits Times, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T20:27:53.0Z",
     "titleText": "JTF News: Al Jazeera English, BBC News",
     "mainText": "Secretary of State Marco Rubio stated that the United States and Europe 'belong together' despite tensions.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "d49ae2cdc54bc912722b192fd11b8dd0",
-    "updateDate": "2026-02-14T20:26:02.0Z",
-    "titleText": "JTF News: Associated Press, The Globe and Mail",
-    "mainText": "Federal authorities initiated a perjury investigation into Immigration and Customs Enforcement officers' testimony regarding a shooting involving a Venezuelan national.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
