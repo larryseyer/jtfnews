@@ -1,5 +1,12 @@
 [
   {
+    "uid": "6aa1c9f1a75ff05a72716a7b9c2954c1",
+    "updateDate": "2026-02-14T00:31:43.0Z",
+    "titleText": "JTF News: France 24, Al Jazeera English",
+    "mainText": "President Trump stated a second aircraft carrier is leaving shortly for the Middle East.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "767e72e78a22e21ed3476c36ebf8e830",
     "updateDate": "2026-02-14T00:31:34.0Z",
     "titleText": "JTF News: France 24, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-13T22:13:26.0Z",
     "titleText": "JTF News: France 24, Reuters",
     "mainText": "Paris police fired on a man who attacked them with a knife near the Arc de Triomphe.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "3d04ae2faf603c2271fcd3ea41daa534",
-    "updateDate": "2026-02-13T21:34:33.0Z",
-    "titleText": "JTF News: CBC News, Agence France-Presse",
-    "mainText": "A shooting occurred at a school in Tumbler Ridge, British Columbia, and Royal Canadian Mounted Police stated the shooter did not target specific individuals.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
