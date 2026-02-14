@@ -1004,7 +1004,7 @@ After update:   "Pennsylvania Avenue school, shooting reported. Police attending
 
 - Each story: ~10 seconds (read time) + 2 second pause
 - 10 stories = ~2 minute loop
-- 50 stories = ~10 minute loop
+- 100 stories = ~20 minute loop
 - Loop plays continuously until midnight
 
 ### 9.3 No Filler

@@ -1631,7 +1631,7 @@ def update_rss_feed(fact: str, sources: list):
 
     gh_pages_dir = BASE_DIR / "gh-pages-dist"
     feed_file = gh_pages_dir / "feed.xml"
-    max_items = 50  # Keep last 50 stories in feed
+    max_items = 100  # Keep last 100 stories in feed
 
     # Check if gh-pages worktree exists
     if not gh_pages_dir.exists():
