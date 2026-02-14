@@ -12,7 +12,7 @@ const MIN_GAP_TIME = 10000;   // Minimum gap between stories (10 seconds)
 const MAX_GAP_TIME = 120000;  // Maximum gap between stories (2 minutes)
 const POLL_INTERVAL = 5000;   // Check for new stories every 5 seconds
 const SCRAPE_CYCLE_MS = 300000; // 5 minute scrape cycle (matches config)
-const STORIES_URL = './stories.json';
+const STORIES_URL = '../data/stories.json';
 
 let stories = [];
 let shuffledQueue = [];       // Current cycle's shuffled story order

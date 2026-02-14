@@ -1,5 +1,5 @@
 /* JTF News Lower Third Overlay
-   4K Resolution: 3840x2160
+   HD Resolution: 1920x1080
    Dark Glassmorphism Design */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
@@ -11,8 +11,8 @@
 }
 
 body {
-    width: 3840px;
-    height: 2160px;
+    width: 1920px;
+    height: 1080px;
     background: transparent;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: hidden;

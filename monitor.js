@@ -5,7 +5,7 @@
 
 const POLL_INTERVAL = 10000; // 10 seconds
 const STALE_THRESHOLD = 600000; // 10 minutes in ms
-const MONITOR_URL = './monitor.json';
+const MONITOR_URL = '../data/monitor.json';
 
 let lastFetchTime = null;
 let pollTimer = null;
