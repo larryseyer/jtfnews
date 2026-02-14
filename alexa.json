@@ -1,5 +1,12 @@
 [
   {
+    "uid": "545d80c702568714f4fd2327cded7990",
+    "updateDate": "2026-02-14T20:27:53.0Z",
+    "titleText": "JTF News: Al Jazeera English, BBC News",
+    "mainText": "Secretary of State Marco Rubio stated that the United States and Europe 'belong together' despite tensions.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d49ae2cdc54bc912722b192fd11b8dd0",
     "updateDate": "2026-02-14T20:26:02.0Z",
     "titleText": "JTF News: Associated Press, The Globe and Mail",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T01:20:32.0Z",
     "titleText": "JTF News: Euronews, France 24",
     "mainText": "President Emmanuel Macron stated at the Munich conference that Europe must become a geopolitical power in its own right.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "fe901990ae741d6dc6c530fbfbc9db6b",
-    "updateDate": "2026-02-14T01:18:50.0Z",
-    "titleText": "JTF News: Deutsche Welle, Al Jazeera English",
-    "mainText": "President Trump stated the U.S. will send a second aircraft carrier to the Middle East.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
