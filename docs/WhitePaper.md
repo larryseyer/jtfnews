@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/larryseyer/jtfnews/main/logos/logo-stacked.svg" alt="JTF News" width="200">
+  <img src="https://raw.githubusercontent.com/larryseyer/jtfnews/main/logos/logo-stacked-dark.svg" alt="JTF News" width="200">
 </p>
 
 # Just the Facts News
