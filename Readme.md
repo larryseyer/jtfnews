@@ -1,6 +1,10 @@
-# JTF News
+<p align="center">
+  <img src="logos/logo-horizontal.svg" alt="JTF News" width="400">
+</p>
 
-**Just The Facts.** No opinions. No adjectives. No interpretation.
+<p align="center">
+  <strong>Just The Facts.</strong> No opinions. No adjectives. No interpretation.
+</p>
 
 [![Live Stream](https://img.shields.io/badge/YouTube-Live%2024%2F7-red)](https://www.youtube.com/@JTFNewsLive)
 [![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange)](https://larryseyer.github.io/jtfnews/feed.xml)

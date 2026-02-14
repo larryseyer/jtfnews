@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../logos/logo-stacked.svg" alt="JTF News" width="200">
+</p>
+
 # Just the Facts News
 ## Algorithmic Reporting for a Narrative-Free World
 
