@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logos/logo-horizontal.svg" alt="JTF News" width="400">
+  <img src="logos/logo-horizontal-dark.svg" alt="JTF News" width="400">
 </p>
 
 <p align="center">

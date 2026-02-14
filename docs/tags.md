@@ -1,6 +1,19 @@
 # JTF News - YouTube Tags
 
 ## Copy-Paste Ready (Primary Set)
+
+#### YouTube Description:
+
+Just The Facts News - Live 
+
+Facts only. No opinions. 
+
+Think of us as a very slow, very honest librarian. We read everything, say nothing unless two other librarians agree, and never raise our voice. 24/7 automated news. 
+
+Verified facts only. 
+
+"If we stay boring enough, we might just change the world."
+
 *Under 500 characters for YouTube's tag field:*
 
 ```
