@@ -1,5 +1,12 @@
 [
   {
+    "uid": "7a5ccef19ca30d6c39e490a350fa39e4",
+    "updateDate": "2026-02-14T01:17:55.0Z",
+    "titleText": "JTF News: Al Jazeera English, Reuters",
+    "mainText": "President Trump stated he will seek to require voter ID for midterm elections regardless of Congress.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "145cefecbbeb7febc1fb17f3422efa45",
     "updateDate": "2026-02-14T00:59:04.0Z",
     "titleText": "JTF News: Agence France-Presse, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T00:34:36.0Z",
     "titleText": "JTF News: Times of India, Reuters",
     "mainText": "An Indian man pleaded guilty to plotting to kill a Sikh separatist in New York.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "8580c9203aee8ef3149e4ff4e3b56b35",
-    "updateDate": "2026-02-14T00:33:54.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "President Emmanuel Macron stated at the Munich Security Conference that Europe must become a geopolitical power independently.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
