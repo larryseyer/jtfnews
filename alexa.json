@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ac20672a7558f16a16ffeb3a021bed42",
+    "updateDate": "2026-02-14T20:29:45.0Z",
+    "titleText": "JTF News: PBS NewsHour, NPR",
+    "mainText": "The U.S. military reported conducting airstrikes against Islamic State targets in Syria.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "a9be1b036ba3ac90e2b5ba2ad03aa441",
     "updateDate": "2026-02-14T20:29:35.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T01:22:10.0Z",
     "titleText": "JTF News: The Straits Times, The Globe and Mail",
     "mainText": "Russia and Ukraine are scheduled to hold talks in Geneva next week with U.S. involvement.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "527e635b526606366433a5d6d4d78ec3",
-    "updateDate": "2026-02-14T01:21:29.0Z",
-    "titleText": "JTF News: The Globe and Mail, PBS NewsHour",
-    "mainText": "Friedrich Merz, Chancellor of Germany, called on the U.S. and Europe to repair and revive trans-Atlantic trust.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
