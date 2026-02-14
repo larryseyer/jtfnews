@@ -20,6 +20,11 @@
       "fact": "President Emmanuel Macron stated at the Munich conference that Europe must become a geopolitical power in its own right.",
       "source": "Euronews - 8.0* | France 24 - 8.7* (1/1)",
       "audio": "../audio/audio_3.mp3"
+    },
+    {
+      "fact": "Friedrich Merz, Chancellor of Germany, called on the U.S. and Europe to repair and revive trans-Atlantic trust.",
+      "source": "The Globe and Mail - 8.4* | PBS NewsHour - 9.1*",
+      "audio": "../audio/audio_4.mp3"
     }
   ]
 }
