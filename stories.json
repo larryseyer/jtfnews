@@ -10,6 +10,11 @@
       "fact": "A man was shot dead after attacking police near the Arc de Triomphe in Paris.",
       "source": "France 24 - 8.6* | Reuters - 9.8* (1/1)",
       "audio": "../audio/audio_1.mp3"
+    },
+    {
+      "fact": "President Trump stated the U.S. will send a second aircraft carrier to the Middle East.",
+      "source": "Deutsche Welle - 8.7* | Al Jazeera English - 8.7* (1/1)",
+      "audio": "../audio/audio_2.mp3"
     }
   ]
 }
