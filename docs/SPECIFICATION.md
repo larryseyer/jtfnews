@@ -423,6 +423,125 @@ Two sources must have **different owners** to verify a story.
 - BBC (public UK) + CBC (public Canada) = 2 sources ✓
 - Guardian (Scott Trust) + Independent (Lebedev) = 2 sources ✓
 
+### 5.3 Source Ownership Disclosure
+
+For each story, source ownership is disclosed to show who funds the information.
+
+#### 5.3.1 Data Structure
+
+Each source includes an `ownership` array with up to 3 entries (top shareholders, majority first):
+
+```json
+{
+  "id": "reuters",
+  "name": "Reuters",
+  "ownership": [
+    {"name": "Thomson Reuters Corporation", "percentage": 100}
+  ],
+  "type": "private"
+}
+```
+
+For publicly traded parent companies, include top institutional shareholders:
+
+```json
+{
+  "id": "sky",
+  "name": "Sky News",
+  "ownership": [
+    {"name": "Comcast Corporation", "percentage": 100, "note": "parent"},
+    {"name": "BlackRock", "percentage": 8.2, "note": "institutional"},
+    {"name": "Vanguard", "percentage": 7.1, "note": "institutional"}
+  ],
+  "type": "private"
+}
+```
+
+#### 5.3.2 Ownership Types
+
+| Type | Example | Ownership Display |
+|------|---------|-------------------|
+| `private` | Reuters | Parent company + institutional shareholders if public |
+| `public` | BBC, NPR | Government/public entity at 100% |
+| `cooperative` | AP | "Member newspapers (cooperative) 100%" |
+| `trust` | Guardian | Trust name at 100% |
+| `state` | Al Jazeera | State/government entity at 100% |
+
+#### 5.3.3 Display Formats
+
+**Lower-third source bar (compact):**
+```
+Reuters 9.8|9.5 · AP 9.6|9.2
+```
+Format: `Name Accuracy|Bias` — no ownership on stream (keeps it calm)
+
+**Website (full disclosure):**
+```
+Reuters
+├─ Accuracy: 9.8
+├─ Bias: 9.5
+└─ Ownership:
+   • Thomson Reuters Corporation (100%)
+   • BlackRock (8.2%)
+   • Vanguard (7.1%)
+```
+
+**RSS feed (machine-readable):**
+```xml
+<source name="Reuters" accuracy="9.8" bias="9.5">
+  <owner name="Thomson Reuters Corporation" percentage="100"/>
+  <owner name="BlackRock" percentage="8.2"/>
+  <owner name="Vanguard" percentage="7.1"/>
+</source>
+```
+
+### 5.4 Source Scores
+
+Each source has two live scores, both on a 0-10 scale where **higher is better**:
+
+| Score | Meaning | Calculation |
+|-------|---------|-------------|
+| **Accuracy** | Verification success rate | `(verified_stories / total_stories) × 10` |
+| **Bias** | Editorial neutrality | `10 - (avg_text_removed_percentage × 10)` |
+
+#### 5.4.1 Accuracy Score
+
+Measures how often a source's stories get verified by a second unrelated source.
+
+- **Verification Success:** Story verified by second source → +1 success for both sources
+- **Verification Failure:** Story expires from queue without verification → +1 failure
+
+See Section 7.5 for full rating methodology and audit trail.
+
+#### 5.4.2 Bias Score
+
+Measures how much editorialization Claude strips from a source's headlines. Higher = more neutral (better).
+
+**Calculation:**
+```python
+bias_score = 10 - (average_percentage_of_text_removed * 10)
+```
+
+**Examples:**
+| Avg Text Removed | Bias Score | Interpretation |
+|------------------|------------|----------------|
+| 5% | 9.5 | Excellent - minimal editorialization |
+| 25% | 7.5 | Moderate - some loaded language |
+| 50% | 5.0 | Poor - heavily editorialized |
+
+**Tracking:**
+- For each headline processed, log: `original_length`, `fact_length`, `removed_count`
+- File: `data/bias_tracking.json`
+- Updated in real-time as headlines are processed
+
+#### 5.4.3 Score Display
+
+**Lower-third:** `Reuters 9.8|9.5` (Accuracy|Bias, no labels)
+
+**Website/RSS:** Full labels and ownership data
+
+**Score explanation** is provided on the website and in the YouTube stream description (not on-stream, to maintain calm aesthetic).
+
 ---
 
 ## 6. Claude AI Integration
@@ -1177,6 +1296,18 @@ We read everything, say nothing unless two other librarians agree,
 and never raise our voice.
 
 24/7 automated news. Verified facts only.
+
+─────────────────────────────
+SOURCE SCORES (Higher = Better)
+
+Each source shows two scores: Accuracy | Bias
+• Accuracy: How often this source's stories get verified by a second unrelated source
+• Bias: How neutral the source's language is (10 = no editorialization removed)
+
+Example: "Reuters 9.8|9.5" means Reuters has 9.8 accuracy and 9.5 bias score.
+
+Full source ownership disclosure: jtfnews.com/sources
+─────────────────────────────
 ```
 
 **Category:** News & Politics

@@ -2153,3 +2153,110 @@
 2026-02-14 15:03:51 | INFO | Monitor data pushed to gh-pages
 2026-02-14 15:03:51 | INFO | Cycle complete. Published: 0, Queue: 29, Skipped (cached): 254
 2026-02-14 15:03:51 | INFO | Sleeping 30 minutes...
+2026-02-14 15:31:57 | INFO | Shutting down...
+2026-02-14 15:32:00 | INFO | JTF News starting...
+2026-02-14 15:32:00 | INFO | Facts only. No opinions.
+2026-02-14 15:32:00 | INFO | ----------------------------------------
+2026-02-14 15:32:00 | INFO | Validating services...
+2026-02-14 15:32:02 | INFO | Claude API: OK
+2026-02-14 15:32:02 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 15:32:02 | INFO | All services validated successfully
+2026-02-14 15:32:02 | INFO | ============================================================
+2026-02-14 15:32:02 | INFO | Starting cycle #1
+2026-02-14 15:32:03 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 15:32:04 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 15:32:06 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 15:32:07 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 15:32:08 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 15:32:09 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 15:32:10 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 15:32:13 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 15:32:15 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 15:32:16 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 15:32:17 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 15:32:19 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 15:32:20 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 15:32:21 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 15:32:22 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 15:32:23 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 15:32:25 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 15:32:26 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 15:32:27 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 15:32:28 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 15:32:29 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 15:32:31 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 15:32:32 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 15:32:33 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 15:32:35 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 15:32:36 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 15:32:40 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 15:32:41 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 15:32:43 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 15:32:44 | INFO | Total headlines: 268
+2026-02-14 15:32:45 | INFO | Word overlap pre-filter: 2/29 candidates
+2026-02-14 15:32:45 | INFO | Queued: Four crew members arrived at the Interna...
+2026-02-14 15:32:50 | INFO | Low confidence (45%): A law establishes up to two years' jail ...
+2026-02-14 15:33:02 | INFO | Not newsworthy (none): African Union summit begins....
+2026-02-14 15:33:05 | INFO | Low confidence (68%): President Emmanuel Macron of France comm...
+2026-02-14 15:33:08 | INFO | Word overlap pre-filter: 3/30 candidates
+2026-02-14 15:33:08 | INFO | Queued: One in four people worldwide identify as...
+2026-02-14 15:33:12 | INFO | Word overlap pre-filter: 2/31 candidates
+2026-02-14 15:33:12 | INFO | Preferring queued source (NPR: 8.0) over new (The Straits Times: 7.3)
+2026-02-14 15:33:14 | INFO | Generated TTS: Five European nations stated that Alexei Navalny w...
+2026-02-14 15:33:14 | INFO | Published: Five European nations stated that Alexei Navalny w...
+2026-02-14 15:33:14 | INFO | RSS feed updated: 50 items
+2026-02-14 15:33:15 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-14 15:33:15 | INFO | Alexa feed updated: 5 items
+2026-02-14 15:33:16 | INFO | Alexa feed pushed to gh-pages
+2026-02-14 15:33:16 | INFO | VERIFIED: Five European nations stated that Alexei Navalny w...
+2026-02-14 15:33:16 | INFO | Rating +1 success for straits: {'successes': 3, 'failures': 0}
+2026-02-14 15:33:16 | INFO | Rating +1 success for npr: {'successes': 2, 'failures': 0}
+2026-02-14 15:33:18 | INFO | Low confidence (78%): Prime Minister Mette Frederiksen of Denm...
+2026-02-14 15:33:18 | INFO | Alert throttled (queue_backup): Queue backup: 30 items, oldest 20.1h
+2026-02-14 15:33:19 | INFO | Monitor data pushed to gh-pages
+2026-02-14 15:33:19 | INFO | Cycle complete. Published: 1, Queue: 30, Skipped (cached): 255
+2026-02-14 15:33:19 | INFO | Sleeping 30 minutes...
+2026-02-14 16:03:19 | INFO | ============================================================
+2026-02-14 16:03:19 | INFO | Starting cycle #2
+2026-02-14 16:03:20 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 16:03:21 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 16:03:22 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 16:03:23 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 16:03:25 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 16:03:26 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 16:03:27 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 16:03:28 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 16:03:30 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 16:03:31 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 16:03:32 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 16:03:33 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 16:03:35 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 16:03:36 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 16:03:37 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 16:03:38 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 16:03:40 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 16:03:41 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 16:03:42 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 16:03:43 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 16:03:44 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 16:03:46 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 16:03:47 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 16:03:48 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 16:03:50 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 16:03:51 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 16:03:54 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 16:03:56 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 16:03:58 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 16:03:59 | INFO | Total headlines: 268
+2026-02-14 16:04:02 | INFO | Low confidence (75%): President Macron of France called for re...
+2026-02-14 16:04:06 | INFO | Duplicate (Claude batch): 'French prosecutors announced formation o...'
+2026-02-14 16:04:06 | INFO | Duplicate: French prosecutors announced formation o...
+2026-02-14 16:04:08 | INFO | Low confidence (45%): Canada's Dandjinou competed in the men's...
+2026-02-14 16:04:16 | INFO | Word overlap pre-filter: 1/30 candidates
+2026-02-14 16:04:16 | INFO | Queued: More than 200,000 people gathered in Mun...
+2026-02-14 16:04:18 | INFO | Word overlap pre-filter: 2/31 candidates
+2026-02-14 16:04:18 | INFO | Queued: A young man died following an attack in ...
+2026-02-14 16:04:22 | INFO | Low confidence (75%): President Trump and Prime Minister Benja...
+2026-02-14 16:04:27 | INFO | Monitor data pushed to gh-pages
+2026-02-14 16:04:27 | INFO | Cycle complete. Published: 0, Queue: 32, Skipped (cached): 255
+2026-02-14 16:04:27 | INFO | Sleeping 30 minutes...
