@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JTF News Screen Saver - Setup Guide</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg">
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Turn JTF News into your desktop screen saver. Setup guides for macOS, Windows, and Linux. Calm, fact-only news on your idle screen.">
   <meta name="keywords" content="news screen saver, calm news screensaver, fact news desktop, JTF News screensaver, web screensaver">
@@ -17,11 +23,15 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://larryseyer.github.io/jtfnews/screensaver-setup.html">
   <meta property="og:site_name" content="JTF News">
+  <meta property="og:image" content="https://larryseyer.github.io/jtfnews/assets/png/banner-twitter-1500x500.png">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="500">
 
   <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="JTF News Screen Saver">
   <meta name="twitter:description" content="Turn your idle screen into a calm, fact-only news display.">
+  <meta name="twitter:image" content="https://larryseyer.github.io/jtfnews/assets/png/banner-twitter-1500x500.png">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,6 +60,9 @@
       font-size: 2.5rem;
       margin-bottom: 8px;
     }
+
+    .logo { height: 56px; margin-bottom: 12px; }
+    .logo img { height: 100%; width: auto; }
 
     .tagline {
       color: #94a3b8;
@@ -218,7 +231,10 @@
 <body>
   <div class="container">
     <header>
-      <h1>JTF News Screen Saver</h1>
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo-horizontal-dark.svg" alt="JTF News"></a>
+      </div>
+      <h1>Screen Saver</h1>
       <p class="tagline">Just The Facts. No opinions. No adjectives. No interpretation.</p>
       <a href="screensaver.html" class="preview-link" target="_blank">Preview Screen Saver</a>
     </header>

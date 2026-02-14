@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JTF News - Just The Facts</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg">
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="24/7 automated news reporting only verified facts. No opinions, no adjectives, no interpretation. Every fact confirmed by 2+ independent sources.">
     <meta name="keywords" content="unbiased news, facts only news, news without opinion, verified news, fact-based reporting, no commentary news">
@@ -17,11 +23,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://larryseyer.github.io/jtfnews/">
     <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://larryseyer.github.io/jtfnews/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
 
     <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="JTF News - Just The Facts">
     <meta name="twitter:description" content="24/7 automated news reporting only verified facts. No opinions, no adjectives, no interpretation.">
+    <meta name="twitter:image" content="https://larryseyer.github.io/jtfnews/assets/png/banner-twitter-1500x500.png">
 
     <style>
         body {
@@ -33,6 +43,8 @@
             color: #e2e8f0;
         }
         h1 { color: #d4af37; }
+        .logo { height: 48px; margin-bottom: 15px; }
+        .logo img { height: 100%; width: auto; }
         h2 { color: #94a3b8; margin-top: 30px; }
         a { color: #60a5fa; }
         .feed-link {
@@ -167,7 +179,9 @@
     </style>
 </head>
 <body>
-    <h1>JTF News</h1>
+    <div class="logo">
+        <a href="index.html"><img src="assets/logo-horizontal-dark.svg" alt="JTF News"></a>
+    </div>
     <p><strong>Just The Facts.</strong> No opinions. No adjectives. No interpretation.</p>
     <p>Verified facts from multiple independent sources.</p>
     <p style="margin-top: 15px;"><a href="how-it-works.html">Learn how it works</a> &middot; <a href="whitepaper.html">Read the whitepaper</a></p>
