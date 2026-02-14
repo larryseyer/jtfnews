@@ -1085,3 +1085,46 @@
 2026-02-13 18:36:29 | INFO | Word overlap pre-filter: 12/80 candidates
 2026-02-13 18:36:50 | INFO | Low confidence (75%): Attorney General Pam Bondi is scheduled ...
 2026-02-13 18:36:51 | INFO | Shutting down...
+2026-02-13 19:11:31 | INFO | JTF News starting...
+2026-02-13 19:11:31 | INFO | Facts only. No opinions.
+2026-02-13 19:11:31 | INFO | ----------------------------------------
+2026-02-13 19:11:31 | INFO | Validating services...
+2026-02-13 19:11:31 | CRITICAL | Missing required environment variable: ANTHROPIC_API_KEY
+2026-02-13 19:11:31 | CRITICAL | Service validation failed - cannot start
+2026-02-13 19:12:33 | INFO | JTF News starting...
+2026-02-13 19:12:33 | INFO | Facts only. No opinions.
+2026-02-13 19:12:33 | INFO | ----------------------------------------
+2026-02-13 19:12:33 | INFO | Validating services...
+2026-02-13 19:12:33 | CRITICAL | Missing required environment variable: ANTHROPIC_API_KEY
+2026-02-13 19:12:33 | CRITICAL | Service validation failed - cannot start
+2026-02-13 19:15:21 | INFO | JTF News starting...
+2026-02-13 19:15:21 | INFO | Facts only. No opinions.
+2026-02-13 19:15:21 | INFO | ----------------------------------------
+2026-02-13 19:15:21 | INFO | Validating services...
+2026-02-13 19:15:22 | INFO | Claude API: OK
+2026-02-13 19:15:22 | INFO | ElevenLabs API: OK (key present)
+2026-02-13 19:15:22 | INFO | All services validated successfully
+2026-02-13 19:15:22 | INFO | ============================================================
+2026-02-13 19:15:22 | INFO | Starting cycle #1
+2026-02-13 19:15:22 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 19:15:24 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 19:15:25 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 19:15:26 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 19:15:28 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 19:15:29 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 19:15:30 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 19:15:32 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 19:15:33 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 19:15:34 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 19:15:35 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 19:15:37 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 19:15:38 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 19:15:39 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 19:15:40 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 19:15:41 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 19:15:43 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 19:15:44 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 19:15:45 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 19:15:46 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 19:15:48 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 19:15:49 | INFO | Fetched 1 headlines from Congress.gov (RSS)
