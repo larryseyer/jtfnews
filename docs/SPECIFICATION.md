@@ -502,6 +502,7 @@ A story is only newsworthy if it meets AT LEAST ONE of these criteria:
 - Official statements or actions by heads of state/government (Presidents, Prime Ministers, etc.)
 - Major economic indicators (GDP, unemployment rates, inflation data, housing market reports)
 - International agreements, treaties, or diplomatic actions between nations
+- Major natural disaster, pandemic, or public health emergency
 If the story does NOT meet any threshold, return newsworthy: false.
 
 OUTPUT FORMAT:
@@ -2021,6 +2022,23 @@ Anyone can use, share, adapt our output with attribution.
 - All archives are public
 - All sources are disclosed
 - All ownership data is visible
+
+### 18.5 Corrections & Retractions
+
+When a fact passes the two-source test but is later proven false:
+
+1. **Correction Timing**: A correction is issued within the next update cycle
+2. **No Silent Deletion**: The original item is marked as corrected in the archive, never silently deleted
+3. **Full Retractions**: If the error is fundamental, a full retraction is issued with explanation
+4. **Equal Prominence**: Corrections are given the same prominence as the original item
+5. **Public Log**: A running corrections log is maintained publicly on GitHub
+
+We do not bury mistakes. We name them.
+
+**Implementation:**
+- Corrections file: `data/corrections.json` (local) and `gh-pages-dist/corrections.json` (public)
+- Archive entries marked with `[CORRECTED]` prefix when applicable
+- Correction tweets reference the original story
 
 ---
 

@@ -526,6 +526,7 @@ A story is only newsworthy if it meets AT LEAST ONE of these criteria:
 - Official statements or actions by heads of state/government (Presidents, Prime Ministers, etc.)
 - Major economic indicators (GDP, unemployment rates, inflation data, housing market reports)
 - International agreements, treaties, or diplomatic actions between nations
+- Major natural disaster, pandemic, or public health emergency
 If the story does NOT meet any threshold, set newsworthy to false.
 
 OUTPUT FORMAT:
@@ -533,7 +534,7 @@ Return a JSON object with:
 - "fact": The clean, factual sentence (or "SKIP" if no verifiable facts)
 - "confidence": Your confidence percentage (0-100) that this is purely factual
 - "newsworthy": true or false based on the threshold criteria above
-- "threshold_met": Which threshold it meets (e.g., "death/violence", "500+ affected", "$1M+ cost/investment", "law change", "border change", "scientific achievement", "humanitarian milestone", "head of state", "economic indicator", "international diplomacy") or "none"
+- "threshold_met": Which threshold it meets (e.g., "death/violence", "500+ affected", "$1M+ cost/investment", "law change", "border change", "scientific achievement", "humanitarian milestone", "head of state", "economic indicator", "international diplomacy", "disaster/pandemic/health emergency") or "none"
 
 Headline to process:
 """
