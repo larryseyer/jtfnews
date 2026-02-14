@@ -1,5 +1,12 @@
 [
   {
+    "uid": "fe901990ae741d6dc6c530fbfbc9db6b",
+    "updateDate": "2026-02-14T01:18:50.0Z",
+    "titleText": "JTF News: Deutsche Welle, Al Jazeera English",
+    "mainText": "President Trump stated the U.S. will send a second aircraft carrier to the Middle East.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "194a48d53553d756e0902e14a2074d41",
     "updateDate": "2026-02-14T01:18:25.0Z",
     "titleText": "JTF News: France 24, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T00:36:07.0Z",
     "titleText": "JTF News: The Straits Times, Reuters",
     "mainText": "U.S. Immigration and Customs Enforcement plans to spend $38.3 billion on detention centers across the United States.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "2262d38291a5249ceade281df4717470",
-    "updateDate": "2026-02-14T00:35:45.0Z",
-    "titleText": "JTF News: The Straits Times, The Globe and Mail",
-    "mainText": "Separate talks on Iran and Ukraine-Russia are scheduled for Tuesday in Geneva.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
