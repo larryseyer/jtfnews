@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-02-14T22:38:19.874126+00:00",
-  "uptime_start": "2026-02-14T22:33:25.568393+00:00",
-  "uptime_seconds": 294,
+  "timestamp": "2026-02-14T22:41:04.211019+00:00",
+  "uptime_start": "2026-02-14T22:40:20.752369+00:00",
+  "uptime_seconds": 43,
   "cycle": {
     "number": 1,
-    "duration_seconds": 68.0,
+    "duration_seconds": 43.0,
     "headlines_scraped": 268,
-    "headlines_processed": 13,
+    "headlines_processed": 1,
     "stories_published": 0,
-    "stories_queued": 3
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 732,
-        "cost_usd": 0.2833715000000002,
+        "calls": 734,
+        "cost_usd": 0.2838837500000002,
         "details": {
-          "input_tokens": 674966,
-          "output_tokens": 91704
+          "input_tokens": 676120,
+          "output_tokens": 91883
         }
       },
       "elevenlabs": {
@@ -28,7 +28,7 @@
         }
       }
     },
-    "total_usd": 0.3238,
+    "total_usd": 0.3243,
     "month_estimate_usd": 0.32,
     "daily_budget": 5.0,
     "budget_pct": 6.5
@@ -43,48 +43,7 @@
     "successful": 30,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-14T22:33:25.568808+00:00",
-      "level": "WARNING",
-      "message": "============================================================"
-    },
-    {
-      "timestamp": "2026-02-14T22:33:25.568831+00:00",
-      "level": "WARNING",
-      "message": "OWNERSHIP AUDIT REQUIRED - Q1 2026"
-    },
-    {
-      "timestamp": "2026-02-14T22:33:25.568856+00:00",
-      "level": "WARNING",
-      "message": "============================================================"
-    },
-    {
-      "timestamp": "2026-02-14T22:33:25.568875+00:00",
-      "level": "WARNING",
-      "message": "Quarterly ownership verification has not been completed."
-    },
-    {
-      "timestamp": "2026-02-14T22:33:25.568893+00:00",
-      "level": "WARNING",
-      "message": "This is required by the JTF whitepaper for transparency."
-    },
-    {
-      "timestamp": "2026-02-14T22:33:25.568908+00:00",
-      "level": "WARNING",
-      "message": ""
-    },
-    {
-      "timestamp": "2026-02-14T22:33:25.568923+00:00",
-      "level": "WARNING",
-      "message": "Could not send SMS alert: name 'send_sms_alert' is not defined"
-    },
-    {
-      "timestamp": "2026-02-14T22:34:37.228049+00:00",
-      "level": "WARNING",
-      "message": "Could not send SMS alert: name 'send_sms_alert' is not defined"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
