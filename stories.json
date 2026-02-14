@@ -5,6 +5,11 @@
       "fact": "A knife-wielding individual dies after being shot by Paris police at the Arc de Triomphe.",
       "source": "France 24 - 10.0 (11/11) | Reuters - 8.6 (12/14)",
       "audio": "../audio/audio_0.mp3"
+    },
+    {
+      "fact": "President Trump stated a second aircraft carrier is leaving shortly for the Middle East.",
+      "source": "France 24 - 10.0 (12/12) | Al Jazeera English - 9.0 (9/10)",
+      "audio": "../audio/audio_1.mp3"
     }
   ]
 }
