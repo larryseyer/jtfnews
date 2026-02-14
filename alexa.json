@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d49ae2cdc54bc912722b192fd11b8dd0",
+    "updateDate": "2026-02-14T20:26:02.0Z",
+    "titleText": "JTF News: Associated Press, The Globe and Mail",
+    "mainText": "Federal authorities initiated a perjury investigation into Immigration and Customs Enforcement officers' testimony regarding a shooting involving a Venezuelan national.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "516e132a35ea7711ca70ee06c31599f1",
     "updateDate": "2026-02-14T01:22:10.0Z",
     "titleText": "JTF News: The Straits Times, The Globe and Mail",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T01:18:50.0Z",
     "titleText": "JTF News: Deutsche Welle, Al Jazeera English",
     "mainText": "President Trump stated the U.S. will send a second aircraft carrier to the Middle East.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "194a48d53553d756e0902e14a2074d41",
-    "updateDate": "2026-02-14T01:18:25.0Z",
-    "titleText": "JTF News: France 24, Reuters",
-    "mainText": "A man was shot dead after attacking police near the Arc de Triomphe in Paris.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
