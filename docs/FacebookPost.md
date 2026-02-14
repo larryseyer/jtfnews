@@ -8,28 +8,28 @@ Facebook suppresses posts with external links. Post the main content first, then
 
 Two sources. Different owners. Strip the adjectives. State the facts. Stop.
 
-JTF News is 24/7 automated news that reports only verified facts. No opinions. No adjectives. No interpretation.
+JTF News is 24/7 automated reporting of verified facts. No opinions. No adjectives. No interpretation.
 
 This is not journalism. It is data.
 
 The methodology belongs to no one. It serves everyone.
 
-Links in the comments below.
+Links in the comments.
 
 ---
 
 ## Follow-up Comment (post immediately after, then pin it)
 
-How It Works (interactive demo)
+How It Works
 https://larryseyer.github.io/jtfnews/how-it-works.html
 
 The Whitepaper
 https://larryseyer.github.io/jtfnews/whitepaper.html
 
-Screensaver (turn any screen into a JTF News display)
+Screensaver
 https://larryseyer.github.io/jtfnews/screensaver-setup.html
 
-Live Costs & Source Health
+Transparency
 https://larryseyer.github.io/jtfnews/
 
 RSS Feed
@@ -38,9 +38,8 @@ https://larryseyer.github.io/jtfnews/feed.xml
 Source Code
 https://github.com/larryseyer/jtfnews
 
-Support (ad-free, viewer-supported)
+Support
 https://github.com/sponsors/larryseyer
 
 ---
-
 Licensed CC-BY-SA. Use it. Share it. Credit us.

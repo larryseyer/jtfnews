@@ -10,7 +10,7 @@ Instagram links in captions are NOT clickable. Use "link in bio" strategy.
 
 Two sources. Different owners. Strip the adjectives. State the facts. Stop.
 
-JTF News is 24/7 automated news reporting only verified facts.
+JTF News is 24/7 automated reporting of verified facts.
 
 No opinions. No adjectives. No interpretation.
 
@@ -24,29 +24,18 @@ THE METHODOLOGY:
 
 The methodology belongs to no one. It serves everyone.
 
-Link in bio for:
-• Interactive demo
-• Full whitepaper
-• Live operational costs
-• Screensaver for any display
-• Source code
+Link in bio.
 
 Licensed CC-BY-SA. Use it. Share it. Credit us.
-
-#news #journalism #facts #nobiased #justthefacts #opensource #transparency #AI #automation #media #nonews #datajournalism #factsonly
 
 ---
 
 ## Bio Link
 
-Use a link-in-bio service (Linktree, etc.) or point directly to:
 https://larryseyer.github.io/jtfnews/
-
-This hub page already has all the key links.
 
 ---
 
 ## Suggested Image
 
-Use the JTF News logo or a screenshot of the livestream with the tagline:
-"Two sources. Different owners. Strip the adjectives. State the facts. Stop."
+Use the JTF News logo or a screenshot of the livestream.
