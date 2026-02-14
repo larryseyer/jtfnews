@@ -7,14 +7,19 @@
       "audio": "../audio/audio_0.mp3"
     },
     {
-      "fact": "President Trump stated a second aircraft carrier is leaving shortly for the Middle East.",
-      "source": "France 24 - 10.0 (12/12) | Al Jazeera English - 9.0 (9/10)",
+      "fact": "President Trump stated a second aircraft carrier is leaving shortly for the Middle East. Trump stated that a change in power in Iran would be 'best' following the aircraft carrier deployment.",
+      "source": "France 24 - 10.0 (12/12) | Al Jazeera English - 9.0 (9/10) | PBS NewsHour - 8.4* (2/3)",
       "audio": "../audio/audio_1.mp3"
     },
     {
       "fact": "Storm Nils caused two deaths in France and left hundreds of thousands without power.",
       "source": "Sky News - 8.6* (2/2) | Hindustan Times - 5.4* (1/4)",
       "audio": "../audio/audio_2.mp3"
+    },
+    {
+      "fact": "President Emmanuel Macron stated at the Munich Security Conference that Europe must become a geopolitical power independently.",
+      "source": "PBS NewsHour - 8.5* (3/4) | France 24 - 10.0 (13/13)",
+      "audio": "../audio/audio_3.mp3"
     }
   ]
 }
