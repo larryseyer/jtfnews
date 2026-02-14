@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Concept 2: Two Sources - Two elements converging to form truth -->
+
+  <!-- Two converging lines forming a point -->
+  <g transform="translate(25, 20)">
+    <!-- Left source line -->
+    <line x1="0" y1="0" x2="35" y2="40" stroke="#1e3a5f" stroke-width="4" stroke-linecap="round"/>
+    <!-- Right source line -->
+    <line x1="70" y1="0" x2="35" y2="40" stroke="#1e3a5f" stroke-width="4" stroke-linecap="round"/>
+    <!-- Convergence point (the verified fact) -->
+    <circle cx="35" cy="40" r="6" fill="#1e3a5f"/>
+    <!-- Downward line (the output) -->
+    <line x1="35" y1="46" x2="35" y2="70" stroke="#1e3a5f" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="120" y="55" font-family="Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="600" fill="#1e3a5f">JTF NEWS</text>
+
+  <!-- Tagline with "2" emphasized -->
+  <text x="120" y="82" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    <tspan font-weight="600" fill="#1e3a5f">2</tspan> sources. <tspan font-weight="600" fill="#1e3a5f">0</tspan> opinions.
+  </text>
+</svg>

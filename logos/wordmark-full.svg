@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60">
+  <!-- Full Wordmark - "Just the Facts News" spelled out -->
+
+  <text x="10" y="42"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="32"
+        font-weight="300"
+        fill="#000000">JUST THE FACTS</text>
+
+  <text x="295" y="42"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="32"
+        font-weight="600"
+        fill="#000000">NEWS</text>
+</svg>

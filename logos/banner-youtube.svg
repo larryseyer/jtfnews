@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440">
+  <!-- YouTube Banner (2560x1440) - "JTF News - Live" as per whitepaper -->
+
+  <!-- Background -->
+  <rect width="2560" height="1440" fill="#ffffff"/>
+
+  <!-- Centered logo block -->
+  <g transform="translate(880, 520)">
+    <!-- Icon box -->
+    <rect x="0" y="0" width="200" height="200" fill="#000000"/>
+    <text x="100" y="135"
+          font-family="Helvetica Neue, Arial, sans-serif"
+          font-size="96"
+          font-weight="700"
+          text-anchor="middle"
+          fill="#ffffff">JTF</text>
+
+    <!-- Text to the right -->
+    <text x="240" y="75"
+          font-family="Helvetica Neue, Arial, sans-serif"
+          font-size="48"
+          font-weight="300"
+          fill="#000000">JUST THE FACTS</text>
+
+    <text x="240" y="145"
+          font-family="Helvetica Neue, Arial, sans-serif"
+          font-size="64"
+          font-weight="600"
+          letter-spacing="10"
+          fill="#000000">NEWS</text>
+
+    <!-- "LIVE" indicator -->
+    <text x="240" y="190"
+          font-family="Helvetica Neue, Arial, sans-serif"
+          font-size="24"
+          font-weight="400"
+          letter-spacing="8"
+          fill="#666666">LIVE</text>
+  </g>
+
+  <!-- Tagline at bottom -->
+  <text x="1280" y="1100"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="28"
+        font-weight="300"
+        text-anchor="middle"
+        fill="#999999">Facts only. No chat. No hearts.</text>
+
+  <!-- Border -->
+  <rect x="20" y="20" width="2520" height="1400" fill="none" stroke="#e0e0e0" stroke-width="2"/>
+</svg>

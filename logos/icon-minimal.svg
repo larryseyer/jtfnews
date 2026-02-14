@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Minimal Icon - no border, just letters -->
+  <!-- For very small sizes or watermarks -->
+
+  <text x="256" y="340"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="280"
+        font-weight="800"
+        text-anchor="middle"
+        fill="#000000">JTF</text>
+</svg>

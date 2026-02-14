@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80">
+  <!-- Wordmark Only - text only, no icon -->
+
+  <text x="10" y="55"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="42"
+        font-weight="600"
+        fill="#000000">JTF</text>
+
+  <text x="115" y="55"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="42"
+        font-weight="300"
+        fill="#000000">NEWS</text>
+
+  <!-- Subtle underline -->
+  <line x1="10" y1="65" x2="220" y2="65" stroke="#000000" stroke-width="1"/>
+</svg>

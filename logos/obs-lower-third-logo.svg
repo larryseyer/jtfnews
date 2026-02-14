@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- OBS Lower Third Logo - pairs with lower-third.html -->
+  <!-- Square format for the left side of lower third -->
+
+  <rect width="120" height="120" fill="#000000"/>
+  <text x="60" y="78"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="52"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#ffffff">JTF</text>
+</svg>

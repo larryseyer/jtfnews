@@ -707,3 +707,136 @@
 2026-02-13 16:48:51 | INFO | Cycle complete. Published: 0, Queue: 73, Skipped (cached): 256
 2026-02-13 16:48:51 | INFO | Sleeping 30 minutes...
 2026-02-13 17:11:48 | INFO | Shutting down...
+2026-02-13 17:25:34 | INFO | JTF News starting...
+2026-02-13 17:25:34 | INFO | Facts only. No opinions.
+2026-02-13 17:25:34 | INFO | ----------------------------------------
+2026-02-13 17:25:34 | INFO | Validating services...
+2026-02-13 17:25:34 | INFO | Claude API: OK
+2026-02-13 17:25:34 | INFO | ElevenLabs API: OK (key present)
+2026-02-13 17:25:34 | INFO | All services validated successfully
+2026-02-13 17:25:34 | INFO | ============================================================
+2026-02-13 17:25:34 | INFO | Starting cycle #1
+2026-02-13 17:25:34 | INFO | Expired from queue: President Trump stated Netanyahu should be pardone...
+2026-02-13 17:25:34 | INFO | Rating +1 failure for straits: {'successes': 13, 'failures': 3}
+2026-02-13 17:25:34 | INFO | Expired from queue: Secretary Kristi Noem stated the Department of Hom...
+2026-02-13 17:25:34 | INFO | Rating +1 failure for cspan: {'successes': 1, 'failures': 1}
+2026-02-13 17:25:34 | INFO | Expired from queue: Britain's Cabinet Secretary resigned from their po...
+2026-02-13 17:25:34 | INFO | Rating +1 failure for straits: {'successes': 13, 'failures': 4}
+2026-02-13 17:25:34 | INFO | Expired from queue: Deputy Director Tom Homan states the Trump adminis...
+2026-02-13 17:25:34 | INFO | Rating +1 failure for globe: {'successes': 5, 'failures': 2}
+2026-02-13 17:25:35 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 17:25:36 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 17:25:37 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 17:25:38 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 17:25:39 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 17:25:40 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 17:25:42 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 17:25:45 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 17:25:46 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 17:25:47 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 17:25:49 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 17:25:50 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 17:25:51 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 17:25:52 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 17:25:54 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 17:25:55 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 17:25:56 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 17:25:58 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 17:25:59 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 17:26:00 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 17:26:01 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 17:26:02 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 17:26:03 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 17:26:06 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 17:26:08 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 17:26:09 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 17:26:13 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 17:26:14 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 17:26:17 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 17:26:18 | INFO | Total headlines: 268
+2026-02-13 17:26:19 | INFO | Duplicate (Claude batch): 'A man was shot dead after attacking poli...'
+2026-02-13 17:26:19 | INFO | Duplicate: A man was shot dead after attacking poli...
+2026-02-13 17:26:21 | INFO | Word overlap pre-filter: 17/69 candidates
+2026-02-13 17:26:22 | INFO | Preferring new source (Reuters: 7.1) over queued (The Straits Times: 6.5)
+2026-02-13 17:26:25 | INFO | Generated TTS: U.S. Immigration and Customs Enforcement is alloca...
+2026-02-13 17:26:25 | INFO | Published: U.S. Immigration and Customs Enforcement is alloca...
+2026-02-13 17:26:25 | INFO | RSS feed updated: 49 items
+2026-02-13 17:26:25 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-13 17:26:25 | INFO | Alexa feed updated: 5 items
+2026-02-13 17:26:26 | INFO | Alexa feed pushed to gh-pages
+2026-02-13 17:26:26 | INFO | VERIFIED: U.S. Immigration and Customs Enforcement is alloca...
+2026-02-13 17:26:26 | INFO | Rating +1 success for reuters: {'successes': 11, 'failures': 2}
+2026-02-13 17:26:26 | INFO | Rating +1 success for straits: {'successes': 14, 'failures': 4}
+2026-02-13 17:26:29 | INFO | Queued: A Pennsylvania jury found Johnson & John...
+2026-02-13 17:26:31 | INFO | Not newsworthy (none): Figure skater Ilia Malinin finished 8th....
+2026-02-13 17:26:33 | INFO | Duplicate (Claude batch): 'President Trump stated the United States...'
+2026-02-13 17:26:33 | INFO | Duplicate: President Trump stated the United States...
+2026-02-13 17:26:36 | INFO | Duplicate (Claude batch): 'The U.S. Department of Homeland Security...'
+2026-02-13 17:26:36 | INFO | Duplicate: The U.S. Department of Homeland Security...
+2026-02-13 17:26:38 | INFO | Not newsworthy (none): Canada won men's hockey and curling comp...
+2026-02-13 17:26:41 | INFO | Low confidence (35%): Canada and Denmark announced enhanced de...
+2026-02-13 17:26:43 | INFO | Not newsworthy (none): Seasonique and Seasonale birth control p...
+2026-02-13 17:26:47 | INFO | Low confidence (45%): Heavy rainfall occurred in the south-eas...
+2026-02-13 17:26:53 | INFO | Low confidence (78%): President Trump stated a change in power...
+2026-02-13 17:26:55 | INFO | Low confidence (45%): Singapore ranks highest in religious div...
+2026-02-13 17:26:58 | INFO | Low confidence (45%): ICE Director says federal officers appea...
+2026-02-13 17:27:00 | INFO | Not newsworthy (none): Nurses suspended industrial action at Na...
+2026-02-13 17:27:02 | INFO | Low confidence (45%): The U.S. military is preparing for poten...
+2026-02-13 17:27:04 | INFO | Word overlap pre-filter: 7/69 candidates
+2026-02-13 17:27:04 | INFO | Queued: Prime Minister Jonas Gahr Støre stated t...
+2026-02-13 17:27:07 | INFO | Low confidence (45%): Pima County Sheriff Chris Nanos made a s...
+2026-02-13 17:27:11 | INFO | Cycle complete. Published: 1, Queue: 70, Skipped (cached): 246
+2026-02-13 17:27:11 | INFO | Sleeping 30 minutes...
+2026-02-13 17:57:11 | INFO | ============================================================
+2026-02-13 17:57:11 | INFO | Starting cycle #2
+2026-02-13 17:57:11 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 17:57:13 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 17:57:14 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 17:57:15 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 17:57:16 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 17:57:18 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 17:57:19 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 17:57:20 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 17:57:22 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 17:57:23 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 17:57:25 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 17:57:26 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 17:57:27 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 17:57:28 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 17:57:30 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 17:57:31 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 17:57:32 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 17:57:33 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 17:57:35 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 17:57:36 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 17:57:37 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 17:57:38 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 17:57:39 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 17:57:41 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 17:57:42 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 17:57:44 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 17:57:47 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 17:57:49 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 17:57:51 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 17:57:52 | INFO | Total headlines: 268
+2026-02-13 17:57:53 | INFO | Word overlap pre-filter: 2/70 candidates
+2026-02-13 17:57:53 | INFO | Preferring new source (Reuters: 7.2) over queued (Times of India: 6.4)
+2026-02-13 17:57:55 | INFO | Generated TTS: An Indian man pleaded guilty to plotting to kill a...
+2026-02-13 17:57:55 | INFO | Published: An Indian man pleaded guilty to plotting to kill a...
+2026-02-13 17:57:55 | INFO | RSS feed updated: 50 items
+2026-02-13 17:57:56 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-13 17:57:56 | INFO | Alexa feed updated: 5 items
+2026-02-13 17:57:57 | INFO | Alexa feed pushed to gh-pages
+2026-02-13 17:57:57 | INFO | VERIFIED: An Indian man pleaded guilty to plotting to kill a...
+2026-02-13 17:57:57 | INFO | Rating +1 success for reuters: {'successes': 12, 'failures': 2}
+2026-02-13 17:57:57 | INFO | Rating +1 success for toi: {'successes': 1, 'failures': 0}
+2026-02-13 17:57:58 | INFO | Word overlap pre-filter: 9/69 candidates
+2026-02-13 17:58:00 | INFO | Queued: A man in British Columbia was sentenced ...
+2026-02-13 17:58:02 | INFO | Low confidence (45%): Oscar Piastri raised safety concerns reg...
+2026-02-13 17:58:12 | INFO | Low confidence (35%): An Olympic skeleton racer's appeal regar...
+2026-02-13 17:58:15 | INFO | Low confidence (75%): Sudan faces a humanitarian crisis after ...
+2026-02-13 17:58:20 | INFO | Low confidence (45%): An Albanian actor filed a lawsuit agains...
+2026-02-13 17:58:22 | INFO | Low confidence (45%): A body was found in Pima County during a...
+2026-02-13 17:58:27 | INFO | Low confidence (35%): Department of Homeland Security shutdown...
+2026-02-13 17:58:28 | INFO | Cycle complete. Published: 1, Queue: 70, Skipped (cached): 255
+2026-02-13 17:58:28 | INFO | Sleeping 30 minutes...

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTF News Logo Concepts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            padding: 40px;
+            color: #1e293b;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 300;
+            color: #1e3a5f;
+        }
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .card h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a5f;
+        }
+        .card p {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .logo-container {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .logo-container img {
+            width: 100%;
+            height: auto;
+        }
+        .dark-bg {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        .toggle {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .toggle button {
+            padding: 6px 12px;
+            border: 1px solid #e2e8f0;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #64748b;
+        }
+        .toggle button:hover {
+            background: #f1f5f9;
+        }
+        .toggle button.active {
+            background: #1e3a5f;
+            color: white;
+            border-color: #1e3a5f;
+        }
+        .instructions {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #e2e8f0;
+            border-radius: 8px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .instructions p {
+            color: #475569;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JTF News Logo Concepts</h1>
+    <p class="subtitle">Based on the whitepaper: "If we stay boring enough, we might just change the world."</p>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Concept 1: The Filter</h2>
+            <p>Facts being distilled down - represents stripping away adjectives and keeping only verified facts. The funnel narrows from noise to truth.</p>
+            <div class="logo-container" id="container1">
+                <img src="concept1-filter.svg" alt="The Filter concept">
+            </div>
+            <div class="toggle">
+                <button class="active" onclick="toggleBg('container1', 'light', this)">Light</button>
+                <button onclick="toggleBg('container1', 'dark', this)">Dark</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Concept 2: Two Sources</h2>
+            <p>Two lines converging to a single point of truth - represents the core methodology of requiring two unrelated sources for verification.</p>
+            <div class="logo-container" id="container2">
+                <img src="concept2-two-sources.svg" alt="Two Sources concept">
+            </div>
+            <div class="toggle">
+                <button class="active" onclick="toggleBg('container2', 'light', this)">Light</button>
+                <button onclick="toggleBg('container2', 'dark', this)">Dark</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Concept 3: The Checkpoint</h2>
+            <p>A minimal verification mark - represents fact-checking and verification. Uses monospace font for a data/technical feel.</p>
+            <div class="logo-container" id="container3">
+                <img src="concept3-checkpoint.svg" alt="The Checkpoint concept">
+            </div>
+            <div class="toggle">
+                <button class="active" onclick="toggleBg('container3', 'light', this)">Light</button>
+                <button onclick="toggleBg('container3', 'dark', this)">Dark</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Concept 4: Clean Typography</h2>
+            <p>Ultra-minimal wordmark - embodies "boring enough to change the world." No symbol, just stark typography. Maximum restraint.</p>
+            <div class="logo-container" id="container4">
+                <img src="concept4-typography.svg" alt="Clean Typography concept">
+            </div>
+            <div class="toggle">
+                <button class="active" onclick="toggleBg('container4', 'light', this)">Light</button>
+                <button onclick="toggleBg('container4', 'dark', this)">Dark</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Concept 5: The Balance</h2>
+            <p>Abstracted scales representing objectivity and fairness. Classic symbol of justice/balance, reflecting "Fair. Balanced. Factual."</p>
+            <div class="logo-container" id="container5">
+                <img src="concept5-balance.svg" alt="The Balance concept">
+            </div>
+            <div class="toggle">
+                <button class="active" onclick="toggleBg('container5', 'light', this)">Light</button>
+                <button onclick="toggleBg('container5', 'dark', this)">Dark</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <p><strong>Next steps:</strong> Pick a concept (or elements from multiple concepts) and I can refine it further - adjust colors, typography, proportions, or combine ideas.</p>
+    </div>
+
+    <script>
+        function toggleBg(containerId, mode, btn) {
+            const container = document.getElementById(containerId);
+            const buttons = btn.parentElement.querySelectorAll('button');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            if (mode === 'dark') {
+                container.classList.add('dark-bg');
+            } else {
+                container.classList.remove('dark-bg');
+            }
+        }
+    </script>
+</body>
+</html>

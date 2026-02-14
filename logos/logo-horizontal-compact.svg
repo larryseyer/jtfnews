@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80">
+  <!-- Compact Horizontal Logo - smaller header uses -->
+
+  <!-- Icon box -->
+  <rect x="5" y="5" width="70" height="70" fill="#000000"/>
+  <text x="40" y="52"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="32"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#ffffff">JTF</text>
+
+  <!-- Text -->
+  <text x="90" y="38"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="24"
+        font-weight="300"
+        fill="#000000">JUST THE FACTS</text>
+
+  <text x="90" y="62"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="18"
+        font-weight="600"
+        letter-spacing="4"
+        fill="#000000">NEWS</text>
+</svg>

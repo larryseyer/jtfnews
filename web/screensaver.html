@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1920, height=1080">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>JTF News Screen Saver</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
   <style>
@@ -40,19 +40,20 @@
     /* ========== Lower Third Overlay ========== */
     #lower-third {
       position: absolute;
-      bottom: 8%;
-      left: 5%;
-      max-width: 90%;
+      bottom: 5%;
+      left: 3%;
+      right: 3%;
+      max-width: 94%;
       z-index: 100;
 
       /* Dark glassmorphism */
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(15, 23, 42, 0.85);
       backdrop-filter: blur(40px) saturate(180%);
       -webkit-backdrop-filter: blur(40px) saturate(180%);
 
       /* Subtle light border */
       border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 16px;
+      border-radius: clamp(8px, 1.5vw, 16px);
 
       /* Shadow for depth */
       box-shadow:
@@ -62,6 +63,75 @@
 
       /* Animation */
       transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    /* ========== Mobile Portrait ========== */
+    @media (max-width: 600px) and (orientation: portrait) {
+      #lower-third {
+        bottom: 10%;
+        left: 2%;
+        right: 2%;
+        max-width: 96%;
+      }
+      #fact-text {
+        font-size: clamp(14px, 5vw, 24px);
+        line-height: 1.5;
+      }
+      #source-bar {
+        font-size: clamp(10px, 3vw, 14px);
+        letter-spacing: 1px;
+      }
+      #brand-tab {
+        font-size: clamp(10px, 3vw, 14px);
+        padding: 4px 10px;
+        top: -28px;
+        letter-spacing: 2px;
+      }
+    }
+
+    /* ========== Mobile Landscape ========== */
+    @media (max-height: 500px) and (orientation: landscape) {
+      #lower-third {
+        bottom: 5%;
+        left: 2%;
+        right: 2%;
+      }
+      #fact-text {
+        font-size: clamp(14px, 3vh, 28px);
+        padding: clamp(10px, 2vh, 20px) clamp(12px, 2vw, 24px);
+      }
+      #source-bar {
+        font-size: clamp(10px, 2vh, 16px);
+        padding: clamp(6px, 1vh, 12px) clamp(12px, 2vw, 24px);
+      }
+      #brand-tab {
+        font-size: clamp(10px, 2vh, 14px);
+        top: clamp(-24px, -3vh, -32px);
+      }
+    }
+
+    /* ========== Tablet Portrait ========== */
+    @media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+      #fact-text {
+        font-size: clamp(20px, 4vw, 36px);
+      }
+      #source-bar {
+        font-size: clamp(14px, 2.5vw, 20px);
+      }
+      #brand-tab {
+        font-size: clamp(12px, 2vw, 18px);
+        top: -38px;
+      }
+    }
+
+    /* ========== Tablet Landscape ========== */
+    @media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+      #fact-text {
+        font-size: clamp(18px, 3.5vw, 32px);
+      }
+      #source-bar {
+        font-size: clamp(12px, 2vw, 18px);
+      }
     }
 
     #lower-third.hidden {
@@ -77,17 +147,17 @@
 
     #brand-tab {
       position: absolute;
-      top: -52px;
+      top: clamp(-36px, -4.5vw, -52px);
       left: 0;
       background: linear-gradient(135deg,
         rgba(212, 175, 55, 0.95) 0%,
         rgba(170, 135, 35, 0.9) 100%);
-      padding: 12px 28px;
-      font-size: 22px;
+      padding: clamp(6px, 1vw, 12px) clamp(12px, 2vw, 28px);
+      font-size: clamp(12px, 1.5vw, 22px);
       font-weight: 600;
       color: #1a1a1a;
-      letter-spacing: 4px;
-      border-radius: 10px 10px 0 0;
+      letter-spacing: clamp(1px, 0.3vw, 4px);
+      border-radius: clamp(6px, 0.8vw, 10px) clamp(6px, 0.8vw, 10px) 0 0;
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-bottom: none;
       box-shadow:
@@ -99,18 +169,18 @@
       background: linear-gradient(135deg,
         rgba(30, 64, 175, 0.7) 0%,
         rgba(23, 37, 84, 0.8) 100%);
-      padding: 18px 36px;
-      font-size: 28px;
+      padding: clamp(8px, 1.5vw, 18px) clamp(16px, 3vw, 36px);
+      font-size: clamp(12px, 2vw, 28px);
       font-weight: 600;
       color: white;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: clamp(1px, 0.25vw, 3px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     #fact-text {
-      padding: 36px 44px;
-      font-size: 58px;
+      padding: clamp(16px, 3vw, 36px) clamp(20px, 3.5vw, 44px);
+      font-size: clamp(16px, 4vw, 58px);
       font-weight: 400;
       color: white;
       line-height: 1.45;
@@ -135,13 +205,13 @@
     /* ========== Audio Indicator ========== */
     #audio-indicator {
       position: absolute;
-      top: 20px;
-      right: 20px;
-      padding: 8px 16px;
+      top: clamp(10px, 2vw, 20px);
+      right: clamp(10px, 2vw, 20px);
+      padding: clamp(4px, 1vw, 8px) clamp(8px, 1.5vw, 16px);
       background: rgba(0, 0, 0, 0.5);
-      border-radius: 8px;
+      border-radius: clamp(4px, 0.8vw, 8px);
       color: rgba(255, 255, 255, 0.6);
-      font-size: 14px;
+      font-size: clamp(10px, 1.2vw, 14px);
       opacity: 1;
       transition: opacity 2s ease-out;
       z-index: 200;

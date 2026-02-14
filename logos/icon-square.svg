@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Square Icon - for favicons, app icons, profile pictures -->
+  <!-- Simple "JTF" monogram in a clean square -->
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#ffffff"/>
+
+  <!-- Border -->
+  <rect x="8" y="8" width="496" height="496" fill="none" stroke="#000000" stroke-width="8"/>
+
+  <!-- JTF Letters - bold, geometric -->
+  <text x="256" y="320"
+        font-family="Helvetica Neue, Arial, sans-serif"
+        font-size="220"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#000000">JTF</text>
+</svg>
