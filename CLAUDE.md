@@ -3,8 +3,30 @@
 ## Project Overview
 JTF News (Just the Facts News) - Automated 24/7 news stream that reports only verified facts. No opinions, no adjectives, no interpretation.
 
+## The JTF Methodology (from WhitePaper.md)
+**Two sources. Different owners. Strip the adjectives. State the facts. Stop.**
+
+This is not journalism. It is data. The methodology belongs to no one. It serves everyone.
+
+### What Qualifies as News
+A verifiable event, within the last 24 hours, that meets at least one criteria:
+- Affects 500+ people
+- Costs/invests $1M+ USD
+- Changes a law or regulation
+- Involves death or violent crime
+- Major scientific/technological achievement
+- Official statement by head of state/government
+- Major economic indicator (GDP, unemployment, inflation)
+
+### Content Rules
+- **Two unrelated sources minimum** - Different owners, different investors
+- **No adjectives** - AI strips all editorialization
+- **Official titles only** - "President Biden" not "Biden"; "White House Homeland Security Advisor" not "Border czar"
+- **No engagement** - We tweet once, never reply
+- **Calm delivery** - Female voice, northern English, slow neutral background images
+
 ## Current State
-**Live and running** - Implementation complete with main.py (~1700 lines). SPECIFICATION.md is the design reference.
+**Live and running** - Implementation complete with main.py (~2000 lines). SPECIFICATION.md is the design reference.
 
 ## Key Architecture Principles (from spec)
 - **Simplicity = Stability** - Always choose the simplest solution; code must run forever
@@ -42,8 +64,27 @@ JTF News (Just the Facts News) - Automated 24/7 news stream that reports only ve
 Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 1. Stages all changes
 2. Commits with your message
-3. Pushes to origin
+3. Pushes to origin (main branch)
 4. Creates a timestamped backup zip in Dropbox
+5. Runs `./deploy.sh` to sync to production machine
+6. Deploys web assets to GitHub Pages (gh-pages branch)
+
+## Two-Branch Git Workflow
+| Branch | Purpose | Location |
+|--------|---------|----------|
+| `main` | Source code | `/Users/larryseyer/JTFNews` |
+| `gh-pages` | Public website | `/Users/larryseyer/JTFNews/gh-pages-dist` (worktree) |
+
+- `gh-pages-dist/` is a **git worktree** linked to the `gh-pages` branch
+- `bu.sh` handles both branches automatically - commits main, then deploys gh-pages
+- Public site: https://larryseyer.github.io/jtfnews/
+- **Do NOT manually push to gh-pages** - let bu.sh handle it
+
+## Testing Workflow
+**All testing is done on the DEVELOP machine until bugs are fixed.**
+- Deploy machine receives code via `./deploy.sh` but does NOT run the service during testing
+- Only switch to deploy machine once develop is working properly
+- The `.env` file with API keys stays on each machine separately (never synced)
 
 ## IMPORTANT: Two-Machine Architecture (Apple Silicon → Intel)
 

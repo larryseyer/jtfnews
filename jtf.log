@@ -1474,3 +1474,52 @@
 2026-02-13 19:28:09 | INFO | Monitor data pushed to gh-pages
 2026-02-13 19:28:09 | INFO | Cycle complete. Published: 0, Queue: 6, Skipped (cached): 222
 2026-02-13 19:28:09 | INFO | Sleeping 30 minutes...
+2026-02-13 19:37:02 | INFO | Shutting down...
+2026-02-13 19:37:05 | INFO | JTF News starting...
+2026-02-13 19:37:05 | INFO | Facts only. No opinions.
+2026-02-13 19:37:05 | INFO | ----------------------------------------
+2026-02-13 19:37:05 | INFO | Validating services...
+2026-02-13 19:37:06 | INFO | Claude API: OK
+2026-02-13 19:37:06 | INFO | ElevenLabs API: OK (key present)
+2026-02-13 19:37:06 | INFO | All services validated successfully
+2026-02-13 19:37:06 | INFO | ============================================================
+2026-02-13 19:37:06 | INFO | Starting cycle #1
+2026-02-13 19:37:06 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-13 19:37:08 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-13 19:37:09 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-13 19:37:10 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-13 19:37:11 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-13 19:37:12 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-13 19:37:14 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-13 19:37:15 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-13 19:37:16 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-13 19:37:18 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-13 19:37:19 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-13 19:37:20 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-13 19:37:23 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-13 19:37:24 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-13 19:37:25 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-13 19:37:27 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-13 19:37:28 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-13 19:37:29 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-13 19:37:30 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-13 19:37:31 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-13 19:37:33 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-13 19:37:34 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-13 19:37:35 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-13 19:37:36 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-13 19:37:38 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-13 19:37:39 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-13 19:37:42 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-13 19:37:44 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-13 19:37:46 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-13 19:37:47 | INFO | Total headlines: 268
+2026-02-13 19:37:49 | INFO | Low confidence (78%): The United States eased sanctions to per...
+2026-02-13 19:37:51 | INFO | Not newsworthy (none): Ilia Malinin, a U.S. figure skater, fini...
+2026-02-13 19:37:51 | INFO | Queued: African leaders gather in Ethiopia for t...
+2026-02-13 19:37:58 | INFO | Low confidence (78%): The United States withdrew a newly updat...
+2026-02-13 19:38:00 | INFO | Low confidence (45%): SWAT teams deployed in Marana amid repor...
+2026-02-13 19:38:06 | INFO | Not newsworthy (none): Interactive Brokers expanded its crypto ...
+2026-02-13 19:38:07 | INFO | Monitor data pushed to gh-pages
+2026-02-13 19:38:07 | INFO | Cycle complete. Published: 0, Queue: 7, Skipped (cached): 258
+2026-02-13 19:38:07 | INFO | Sleeping 30 minutes...
