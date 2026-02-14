@@ -1,5 +1,12 @@
 [
   {
+    "uid": "516e132a35ea7711ca70ee06c31599f1",
+    "updateDate": "2026-02-14T01:22:10.0Z",
+    "titleText": "JTF News: The Straits Times, The Globe and Mail",
+    "mainText": "Russia and Ukraine are scheduled to hold talks in Geneva next week with U.S. involvement.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "527e635b526606366433a5d6d4d78ec3",
     "updateDate": "2026-02-14T01:21:29.0Z",
     "titleText": "JTF News: The Globe and Mail, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T01:18:25.0Z",
     "titleText": "JTF News: France 24, Reuters",
     "mainText": "A man was shot dead after attacking police near the Arc de Triomphe in Paris.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "7a5ccef19ca30d6c39e490a350fa39e4",
-    "updateDate": "2026-02-14T01:17:55.0Z",
-    "titleText": "JTF News: Al Jazeera English, Reuters",
-    "mainText": "President Trump stated he will seek to require voter ID for midterm elections regardless of Congress.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
