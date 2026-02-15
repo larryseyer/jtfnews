@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-02-15T08:31:03.254273+00:00",
-  "web_refresh_at": "2026-02-15T08:31:03.254273+00:00",
-  "uptime_start": "2026-02-15T06:30:28.645435+00:00",
-  "uptime_seconds": 7235,
-  "availability_pct": 68.6,
+  "timestamp": "2026-02-15T08:34:33.921549+00:00",
+  "web_refresh_at": "2026-02-15T08:34:33.921549+00:00",
+  "uptime_start": "2026-02-15T08:33:49.580307+00:00",
+  "uptime_seconds": 44,
+  "availability_pct": 63.5,
   "cycle": {
-    "number": 5,
-    "duration_seconds": 59.3,
+    "number": 1,
+    "duration_seconds": 43.8,
     "headlines_scraped": 268,
-    "headlines_processed": 8,
+    "headlines_processed": 2,
     "stories_published": 0,
-    "stories_queued": 1
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 546,
-        "cost_usd": 0.20313600000000032,
+        "calls": 549,
+        "cost_usd": 0.20410900000000032,
         "details": {
-          "input_tokens": 495434,
-          "output_tokens": 63422
+          "input_tokens": 497766,
+          "output_tokens": 63734
         }
       },
       "elevenlabs": {
@@ -30,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.248,
+    "total_usd": 0.249,
     "month_estimate_usd": 9.44,
     "daily_budget": 1.79,
     "budget_pct": 13.9
   },
   "queue": {
     "size": 45,
-    "oldest_item_age_hours": 12.1
+    "oldest_item_age_hours": 12.2
   },
   "stories_today": 11,
   "sources": {
@@ -45,22 +45,11 @@
     "successful": 30,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-15T06:30:51.884250+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from C-SPAN: 'NoneType' object has no attribute 'replace'"
-    },
-    {
-      "timestamp": "2026-02-15T07:00:28.536945+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from C-SPAN: 'NoneType' object has no attribute 'replace'"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 28,
+    "next_cycle_minutes": 25,
     "degraded_services": []
   }
 }
