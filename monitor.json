@@ -1,23 +1,24 @@
 {
-  "timestamp": "2026-02-15T05:06:23.226067+00:00",
-  "uptime_start": "2026-02-15T04:52:08.394919+00:00",
-  "uptime_seconds": 855,
+  "timestamp": "2026-02-15T05:12:09.381058+00:00",
+  "uptime_start": "2026-02-15T05:11:26.220310+00:00",
+  "uptime_seconds": 43,
+  "availability_pct": 100.0,
   "cycle": {
-    "number": 2,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 1,
+    "duration_seconds": 42.6,
+    "headlines_scraped": 268,
+    "headlines_processed": 1,
     "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 461,
-        "cost_usd": 0.17311575000000015,
+        "calls": 463,
+        "cost_usd": 0.17362975000000017,
         "details": {
-          "input_tokens": 423878,
-          "output_tokens": 53717
+          "input_tokens": 425029,
+          "output_tokens": 53898
         }
       },
       "elevenlabs": {
@@ -28,14 +29,14 @@
         }
       }
     },
-    "total_usd": 0.2076,
-    "month_estimate_usd": 0.21,
-    "daily_budget": 5.0,
-    "budget_pct": 4.2
+    "total_usd": 0.2081,
+    "month_estimate_usd": 9.44,
+    "daily_budget": 1.79,
+    "budget_pct": 11.7
   },
   "queue": {
     "size": 44,
-    "oldest_item_age_hours": 23.6
+    "oldest_item_age_hours": 23.7
   },
   "stories_today": 10,
   "sources": {
@@ -45,17 +46,11 @@
       "US Department of Defense"
     ]
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-15T05:01:10.641546+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from US Department of Defense: 403 Client Error: Forbidden for url: https://www.defense.gov/News/"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 23,
+    "next_cycle_minutes": 17,
     "degraded_services": []
   }
 }
