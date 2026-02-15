@@ -1,5 +1,12 @@
 [
   {
+    "uid": "26bf7f7194792f094b43878d9e24ae04",
+    "updateDate": "2026-02-15T18:31:35.0Z",
+    "titleText": "JTF News: The Straits Times, BBC News",
+    "mainText": "Iran's foreign minister stated to BBC in Tehran that Iran is ready to discuss compromises to reach a nuclear deal.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d4a67f59cf9725fca9978c3d98ce903c",
     "updateDate": "2026-02-15T18:31:19.0Z",
     "titleText": "JTF News: The Globe and Mail, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T16:01:27.0Z",
     "titleText": "JTF News: The Straits Times, Al Jazeera English",
     "mainText": "The Israeli cabinet approved West Bank land registration.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b1cf2c84e3cf850e9bd3c6c56a216818",
-    "updateDate": "2026-02-15T15:31:19.0Z",
-    "titleText": "JTF News: Hindustan Times, The Straits Times",
-    "mainText": "Secretary of State Marco Rubio stated there is no reason to dispute reports of Alexei Navalny's death.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
