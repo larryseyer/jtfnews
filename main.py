@@ -26,7 +26,7 @@ import hashlib
 import logging
 import re
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from functools import wraps
 from pathlib import Path
 from urllib.parse import urlparse
