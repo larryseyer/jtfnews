@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b3e2c90801d9de4214bab276a0bc2df3",
+    "updateDate": "2026-02-15T00:09:26.0Z",
+    "titleText": "JTF News: Al Jazeera English, NPR",
+    "mainText": "The U.S. military conducted airstrikes against Islamic State targets in Syria.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "828f7f571fdf7f2f623aa33fe6824941",
     "updateDate": "2026-02-15T00:08:15.0Z",
     "titleText": "JTF News: BBC News, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T20:29:45.0Z",
     "titleText": "JTF News: PBS NewsHour, NPR",
     "mainText": "The U.S. military reported conducting airstrikes against Islamic State targets in Syria.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "a9be1b036ba3ac90e2b5ba2ad03aa441",
-    "updateDate": "2026-02-14T20:29:35.0Z",
-    "titleText": "JTF News: PBS NewsHour, The Guardian",
-    "mainText": "At least 30 people killed in north-west Nigerian villages according to residents.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
