@@ -2408,28 +2408,36 @@ def get_next_aligned_time() -> datetime:
 
 
 def get_source_health() -> dict:
-    """Get source health status from recent scrape attempts."""
-    # Track which sources succeeded or failed in this session
-    # This is a simplified version - in practice you'd track per-source status
+    """Get source health status from recent scrape attempts.
+
+    Only marks a source as failed if its most recent log entry is a failure.
+    If a source has succeeded after failing, it's considered healthy.
+    """
     sources = CONFIG.get("sources", [])
     total = len(sources)
 
-    # For now, estimate based on log file errors (could be enhanced with proper tracking)
-    failed_sources = []
+    # Track last status per source: True = success, False = failure
+    source_status = {}
+
     try:
         log_file = BASE_DIR / "jtf.log"
         if log_file.exists():
             with open(log_file) as f:
-                # Check last 200 lines for recent failures
+                # Check last 200 lines for recent activity
                 lines = f.readlines()[-200:]
                 for line in lines:
-                    if "Failed to fetch from" in line or "Skipping" in line:
-                        # Extract source name
-                        for source in sources:
-                            if source["name"] in line and source["name"] not in failed_sources:
-                                failed_sources.append(source["name"])
+                    for source in sources:
+                        name = source["name"]
+                        if name in line:
+                            if "Failed to fetch from" in line or "Skipping" in line:
+                                source_status[name] = False
+                            elif "Fetched" in line and "headlines from" in line:
+                                source_status[name] = True
     except:
         pass
+
+    # Only sources whose LAST entry was a failure are considered failed
+    failed_sources = [name for name, status in source_status.items() if status is False]
 
     return {
         "total": total,
