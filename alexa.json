@@ -1,5 +1,12 @@
 [
   {
+    "uid": "46776e20fa914680e25b745aa025752d",
+    "updateDate": "2026-02-15T15:01:23.0Z",
+    "titleText": "JTF News: Times of India, PBS NewsHour",
+    "mainText": "U.S. forces boarded an oil tanker in the Indian Ocean.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "330989770cbdadcd6d24828d56d3a965",
     "updateDate": "2026-02-15T13:30:53.0Z",
     "titleText": "JTF News: NPR, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T10:00:49.0Z",
     "titleText": "JTF News: Reuters, The Straits Times",
     "mainText": "Israeli airstrikes killed 9 people in Gaza, including in a tent camp, according to Palestinian officials.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "02e240d4d2e55bd7824dc5fd1adc175c",
-    "updateDate": "2026-02-15T07:30:51.0Z",
-    "titleText": "JTF News: Reuters, ABC News Australia",
-    "mainText": "Australia pledges $2.7 billion for nuclear submarine shipyard construction.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
