@@ -1,1 +1,41 @@
-{"date":"2026-02-15","stories":[]}
+{
+  "date": "2026-02-15",
+  "stories": [
+    {
+      "id": "2026-02-15-000",
+      "hash": "8500f2cd8314",
+      "fact": "US forces boarded a second Venezuela-linked oil tanker in the Indian Ocean.",
+      "source": "France 24 8.6*|9.0 \u00b7 The Guardian 8.8*|2.5",
+      "audio": "../audio/audio_0.mp3",
+      "published_at": "2026-02-15T22:40:42.276271+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-15-001",
+      "hash": "c1b197cf2966",
+      "fact": "Eleven people killed in Israeli strikes on Gaza according to rescuers.",
+      "source": "France 24 8.7*|9.0 \u00b7 BBC News 9.4*|9.0",
+      "audio": "../audio/audio_1.mp3",
+      "published_at": "2026-02-15T22:40:55.596806+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-15-002",
+      "hash": "a774c93f5436",
+      "fact": "Iran's state media reports the foreign minister will attend indirect talks with the United States.",
+      "source": "PBS NewsHour 9.2*|9.0 \u00b7 France 24 8.9*|9.0",
+      "audio": "../audio/audio_2.mp3",
+      "published_at": "2026-02-15T22:42:16.069990+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-15-003",
+      "hash": "774e316bb15e",
+      "fact": "The FBI states that DNA from a glove may link a suspect to the Nancy Guthrie abduction.",
+      "source": "France 24 9.0*|9.0 \u00b7 CBC News 9.0*|9.0",
+      "audio": "../audio/audio_3.mp3",
+      "published_at": "2026-02-15T23:00:28.251277+00:00",
+      "status": "published"
+    }
+  ]
+}
