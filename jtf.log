@@ -5307,3 +5307,71 @@
 2026-02-14 23:30:16 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
 2026-02-14 23:30:17 | INFO | Fetched 10 headlines from Euronews (RSS)
 2026-02-14 23:30:18 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 23:30:19 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 23:30:20 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 23:30:22 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 23:30:23 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 23:30:24 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 23:30:25 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 23:30:26 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 23:30:27 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 23:30:28 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 23:30:30 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 23:30:32 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 23:30:35 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 23:30:36 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 23:30:39 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 23:30:40 | INFO | Total headlines: 268
+2026-02-14 23:30:42 | INFO | Not newsworthy (none): A man was charged after Egyptian artifac...
+2026-02-14 23:30:43 | INFO | Monitor data pushed to gh-pages
+2026-02-14 23:30:43 | INFO | Cycle complete. Published: 0, Queue: 44, Skipped (cached): 267
+2026-02-14 23:30:43 | INFO | Sleeping until 00:00 (29 minutes)...
+2026-02-14 23:30:46 | INFO | Shutting down...
+2026-02-14 23:30:55 | INFO | JTF News starting...
+2026-02-14 23:30:55 | INFO | Facts only. No opinions.
+2026-02-14 23:30:55 | INFO | ----------------------------------------
+2026-02-14 23:30:55 | INFO | Resuming uptime tracking - 13s downtime recorded
+2026-02-14 23:30:55 | INFO | Validating services...
+2026-02-14 23:30:55 | INFO | Claude API: OK
+2026-02-14 23:30:55 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 23:30:55 | INFO | All services validated successfully
+2026-02-14 23:30:55 | INFO | ============================================================
+2026-02-14 23:30:55 | INFO | Starting cycle #1
+2026-02-14 23:30:56 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 23:30:57 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 23:30:58 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 23:30:59 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 23:31:00 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 23:31:01 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 23:31:02 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 23:31:04 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 23:31:05 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 23:31:06 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 23:31:08 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 23:31:09 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 23:31:10 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 23:31:11 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 23:31:13 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 23:31:14 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 23:31:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 23:31:16 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 23:31:17 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 23:31:18 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 23:31:20 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 23:31:21 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 23:31:22 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 23:31:23 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 23:31:24 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 23:31:26 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 23:31:29 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 23:31:31 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 23:31:33 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 23:31:34 | INFO | Total headlines: 268
+2026-02-14 23:31:36 | INFO | Low confidence (45%): President Trump and Prime Minister Netan...
+2026-02-14 23:31:39 | INFO | Alert throttled (queue_backup): Queue backup: 44 items, oldest 23.5h
+2026-02-14 23:31:40 | INFO | Monitor data pushed to gh-pages
+2026-02-14 23:31:40 | INFO | Cycle complete. Published: 0, Queue: 44, Skipped (cached): 266
+2026-02-14 23:31:40 | INFO | Sleeping until 00:00 (28 minutes)...
+2026-02-14 23:36:40 | INFO | Monitor data pushed to gh-pages
+2026-02-14 23:41:41 | INFO | Monitor data pushed to gh-pages
+2026-02-14 23:46:42 | INFO | Monitor data pushed to gh-pages

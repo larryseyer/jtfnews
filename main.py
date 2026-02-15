@@ -1819,10 +1819,16 @@ def append_daily_log(fact: str, sources: list, audio_file: str = None):
     update_stories_json(fact, sources, audio_file)
 
 
+def generate_story_id(date: str, index: int) -> str:
+    """Generate a unique story ID like '2026-02-15-001'."""
+    return f"{date}-{index:03d}"
+
+
 def update_stories_json(fact: str, sources: list, audio_file: str = None):
     """Update stories.json for the JS loop display."""
     stories_file = DATA_DIR / "stories.json"
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    now_iso = datetime.now(timezone.utc).isoformat()
 
     # Load existing stories
     stories = {"date": today, "stories": []}
@@ -1839,11 +1845,20 @@ def update_stories_json(fact: str, sources: list, audio_file: str = None):
     # Format source info with evidence-based ratings (shows "+N more" if 3+ sources)
     source_text = format_source_attribution(sources)
 
-    # Add new story with cached audio file
+    # Generate story ID and hash
+    story_index = len(stories["stories"])
+    story_id = generate_story_id(today, story_index)
+    story_hash = hashlib.md5(fact.encode()).hexdigest()[:12]
+
+    # Add new story with expanded structure for corrections support
     stories["stories"].append({
+        "id": story_id,
+        "hash": story_hash,
         "fact": fact,
         "source": source_text,
-        "audio": f"../audio/{audio_file}" if audio_file else "../audio/current.mp3"
+        "audio": f"../audio/{audio_file}" if audio_file else "../audio/current.mp3",
+        "published_at": now_iso,
+        "status": "published"
     })
 
     # Write back
@@ -1967,6 +1982,114 @@ def update_rss_feed(fact: str, sources: list):
         log.info("RSS feed and stories.json pushed to gh-pages")
     except subprocess.CalledProcessError as e:
         log.warning(f"Failed to push RSS feed: {e}")
+
+
+def add_correction_to_rss(correction_type: str, original_fact: str,
+                          corrected_fact: str, sources: list, story_id: str):
+    """Add a correction/retraction item to the RSS feed."""
+    import subprocess
+
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    feed_file = gh_pages_dir / "feed.xml"
+    max_items = 100
+
+    if not gh_pages_dir.exists():
+        log.warning("gh-pages-dist worktree not found, skipping RSS correction")
+        return
+
+    # Format source attribution
+    source_text = ", ".join(sources[:2]) if sources else "verified sources"
+
+    # Create title with correction prefix
+    if correction_type == "retraction":
+        title = f"[RETRACTION] {original_fact[:60]}..."
+        description = f"RETRACTION: Earlier we reported that {original_fact}. This report was incorrect and has been retracted."
+    else:
+        title = f"[CORRECTION] {original_fact[:60]}..."
+        description = f"CORRECTION: Earlier we reported that {original_fact}. {source_text} now report that {corrected_fact}."
+
+    pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    guid = hashlib.md5(f"correction-{story_id}-{pub_date}".encode()).hexdigest()[:12]
+
+    new_item = {
+        "title": title,
+        "description": description,
+        "source": source_text,
+        "pubDate": pub_date,
+        "guid": guid
+    }
+
+    # Load existing items
+    items = []
+    if feed_file.exists():
+        try:
+            tree = ET.parse(feed_file)
+            root = tree.getroot()
+            channel = root.find("channel")
+            for item in channel.findall("item"):
+                items.append({
+                    "title": item.find("title").text or "",
+                    "description": item.find("description").text or "",
+                    "source": item.find("source").text if item.find("source") is not None else "",
+                    "pubDate": item.find("pubDate").text or "",
+                    "guid": item.find("guid").text or ""
+                })
+        except:
+            pass
+
+    # Add correction at beginning (same prominence as regular stories)
+    items.insert(0, new_item)
+    items = items[:max_items]
+
+    # Build RSS XML
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
+    ET.SubElement(channel, "link").text = "https://larryseyer.github.io/jtfnews/"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
+    ET.SubElement(channel, "language").text = "en-us"
+    ET.SubElement(channel, "lastBuildDate").text = pub_date
+
+    for item_data in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = item_data["title"]
+        ET.SubElement(item, "description").text = item_data["description"]
+        ET.SubElement(item, "source").text = item_data["source"]
+        ET.SubElement(item, "pubDate").text = item_data["pubDate"]
+        ET.SubElement(item, "guid", isPermaLink="false").text = item_data["guid"]
+
+    # Write with XML declaration
+    indent_xml(rss, space="  ")
+    tree = ET.ElementTree(rss)
+    with open(feed_file, 'wb') as f:
+        tree.write(f, encoding="utf-8", xml_declaration=True)
+
+    log.info(f"RSS feed updated with {correction_type}: {title[:50]}")
+
+    # Commit and push to gh-pages
+    try:
+        subprocess.run(
+            ["git", "add", "feed.xml", "corrections.json"],
+            cwd=gh_pages_dir,
+            check=True,
+            capture_output=True
+        )
+        subprocess.run(
+            ["git", "commit", "-m", f"{correction_type.upper()}: {story_id}"],
+            cwd=gh_pages_dir,
+            check=True,
+            capture_output=True
+        )
+        subprocess.run(
+            ["git", "push"],
+            cwd=gh_pages_dir,
+            check=True,
+            capture_output=True
+        )
+        log.info(f"Correction RSS update pushed to gh-pages")
+    except subprocess.CalledProcessError as e:
+        log.warning(f"Failed to push correction RSS: {e}")
 
 
 def update_alexa_feed(fact: str, sources: list):
@@ -2212,6 +2335,348 @@ Return JSON: {{"contradiction": true/false, "reason": "brief explanation if true
         log.error(f"Contradiction check failed: {e}")
         track_api_failure("claude", False)
         return False  # Don't block on error
+
+
+# =============================================================================
+# CORRECTIONS SYSTEM
+# =============================================================================
+
+CORRECTIONS_FILE = DATA_DIR / "corrections.json"
+
+
+def load_corrections() -> dict:
+    """Load corrections log from disk."""
+    if CORRECTIONS_FILE.exists():
+        try:
+            with open(CORRECTIONS_FILE) as f:
+                return json.load(f)
+        except:
+            pass
+    return {"last_updated": None, "corrections": []}
+
+
+def save_corrections(corrections: dict):
+    """Save corrections log to disk and sync to gh-pages."""
+    corrections["last_updated"] = datetime.now(timezone.utc).isoformat()
+
+    with open(CORRECTIONS_FILE, 'w') as f:
+        json.dump(corrections, f, indent=2)
+
+    # Sync to gh-pages-dist for public access
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    if gh_pages_dir.exists():
+        import shutil
+        shutil.copy(CORRECTIONS_FILE, gh_pages_dir / "corrections.json")
+        log.info("Corrections synced to gh-pages-dist")
+
+
+def get_recent_stories_for_correction(days: int = 7) -> list:
+    """Get recent stories with full metadata for correction checking."""
+    stories_file = DATA_DIR / "stories.json"
+    all_stories = []
+
+    # Get today's stories
+    if stories_file.exists():
+        try:
+            with open(stories_file) as f:
+                data = json.load(f)
+                for i, story in enumerate(data.get("stories", [])):
+                    # Add index for reference
+                    story["_index"] = i
+                    story["_date"] = data.get("date", "")
+                    all_stories.append(story)
+        except:
+            pass
+
+    # Also check archived daily logs for recent days
+    today = datetime.now(timezone.utc)
+    for day_offset in range(1, days):
+        check_date = (today - timedelta(days=day_offset)).strftime("%Y-%m-%d")
+        log_file = DATA_DIR / f"{check_date}.txt"
+        if log_file.exists():
+            try:
+                with open(log_file) as f:
+                    for line_num, line in enumerate(f):
+                        if line.startswith("#") or not line.strip():
+                            continue
+                        parts = line.strip().split("|")
+                        if len(parts) >= 4:
+                            fact = parts[3].strip()
+                            story_id = generate_story_id(check_date, line_num)
+                            all_stories.append({
+                                "id": story_id,
+                                "hash": hashlib.md5(fact.encode()).hexdigest()[:12],
+                                "fact": fact,
+                                "source": parts[1] if len(parts) > 1 else "",
+                                "published_at": f"{check_date}T{parts[0]}:00Z",
+                                "status": "published",
+                                "_date": check_date,
+                                "_from_archive": True
+                            })
+            except:
+                pass
+
+    return all_stories
+
+
+def detect_correction_needed(new_fact: str, new_sources: list, recent_stories: list) -> dict | None:
+    """
+    Check if a newly verified fact contradicts a previously published story.
+
+    Unlike check_contradiction() which BLOCKS new facts, this DETECTS when we need
+    to issue a correction for an OLD story based on NEW verified information.
+
+    Returns: dict with correction details or None if no correction needed.
+    """
+    if not recent_stories:
+        return None
+
+    # Only check recent published stories (last 20 max)
+    check_stories = [s for s in recent_stories if s.get("status") == "published"][-20:]
+
+    if not check_stories:
+        return None
+
+    # Build facts list for Claude prompt
+    stories_text = "\n".join([
+        f"[{s.get('id', 'unknown')}] {s.get('fact', '')}"
+        for s in check_stories
+    ])
+
+    source_names = ", ".join([s.get("source_name", "") for s in new_sources[:2]])
+
+    prompt = f"""You are checking if NEW VERIFIED INFORMATION contradicts any previously published story.
+
+NEW VERIFIED FACT (confirmed by 2+ unrelated sources: {source_names}):
+{new_fact}
+
+PREVIOUSLY PUBLISHED STORIES:
+{stories_text}
+
+Check if the new verified fact CONTRADICTS any published story. A correction is needed when:
+- The new fact directly contradicts a specific claim in a published story
+- The new information makes a published story factually incorrect
+- Numbers, names, or key details in the new fact conflict with what was published
+
+A correction is NOT needed for:
+- Additional details that supplement but don't contradict
+- Updates that extend a story with new developments
+- Related but separate events
+
+If a correction IS needed, return JSON:
+{{"needs_correction": true, "story_id": "ID of story to correct", "original_fact": "the incorrect fact", "reason": "brief explanation of contradiction", "correction_type": "correction" or "retraction"}}
+
+If NO correction needed, return:
+{{"needs_correction": false}}"""
+
+    try:
+        client = anthropic.Anthropic()
+        response = client.messages.create(
+            model=CONFIG["claude"]["model"],
+            max_tokens=200,
+            messages=[{"role": "user", "content": prompt}]
+        )
+
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
+
+        result = safe_parse_claude_json(
+            response.content[0].text,
+            {"needs_correction": False}
+        )
+
+        if result.get("needs_correction"):
+            return result
+
+        return None
+
+    except Exception as e:
+        log.error(f"Correction detection failed: {e}")
+        return None
+
+
+def issue_correction(story_id: str, original_fact: str, corrected_fact: str,
+                     reason: str, correcting_sources: list, correction_type: str = "correction"):
+    """
+    Issue a correction for a previously published story.
+
+    - Marks the original story as "corrected" in stories.json
+    - Preserves original_fact for transparency
+    - Logs to corrections.json
+    - Generates correction audio announcement
+    """
+    stories_file = DATA_DIR / "stories.json"
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    # Load current stories
+    stories = {"date": "", "stories": []}
+    if stories_file.exists():
+        try:
+            with open(stories_file) as f:
+                stories = json.load(f)
+        except:
+            pass
+
+    # Find and update the story
+    story_updated = False
+    for story in stories.get("stories", []):
+        if story.get("id") == story_id:
+            story["status"] = "corrected"
+            story["original_fact"] = original_fact
+            story["fact"] = corrected_fact
+            story["correction"] = {
+                "corrected_at": now_iso,
+                "type": correction_type,
+                "reason": reason,
+                "correcting_sources": [s.get("source_name", "") for s in correcting_sources[:2]]
+            }
+            story_updated = True
+            break
+
+    if story_updated:
+        with open(stories_file, 'w') as f:
+            json.dump(stories, f, indent=2)
+        log.info(f"Story {story_id} marked as corrected")
+
+    # Add to corrections log
+    corrections = load_corrections()
+    source_names = [s.get("source_name", "") for s in correcting_sources[:2]]
+
+    corrections["corrections"].append({
+        "story_id": story_id,
+        "corrected_at": now_iso,
+        "type": correction_type,
+        "original_fact": original_fact,
+        "corrected_fact": corrected_fact,
+        "reason": reason,
+        "correcting_sources": source_names
+    })
+
+    save_corrections(corrections)
+    log.info(f"Correction logged: {story_id} ({correction_type})")
+
+    # Generate correction audio announcement
+    generate_correction_audio(
+        correction_type=correction_type,
+        original_fact=original_fact,
+        corrected_fact=corrected_fact,
+        sources=source_names
+    )
+
+    # Send alert about correction
+    send_alert(f"CORRECTION issued for {story_id}: {reason[:50]}")
+
+    # Add to RSS feed with same prominence as regular stories
+    add_correction_to_rss(
+        correction_type=correction_type,
+        original_fact=original_fact,
+        corrected_fact=corrected_fact,
+        sources=source_names,
+        story_id=story_id
+    )
+
+    return True
+
+
+def issue_retraction(story_id: str, original_fact: str, reason: str, sources: list):
+    """Issue a full retraction when a story is completely false."""
+    stories_file = DATA_DIR / "stories.json"
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    # Load and update story
+    stories = {"date": "", "stories": []}
+    if stories_file.exists():
+        try:
+            with open(stories_file) as f:
+                stories = json.load(f)
+        except:
+            pass
+
+    for story in stories.get("stories", []):
+        if story.get("id") == story_id:
+            story["status"] = "retracted"
+            story["original_fact"] = original_fact
+            story["fact"] = f"[RETRACTED] {original_fact}"
+            story["retraction"] = {
+                "retracted_at": now_iso,
+                "reason": reason,
+                "retracting_sources": [s.get("source_name", "") for s in sources[:2]]
+            }
+            break
+
+    with open(stories_file, 'w') as f:
+        json.dump(stories, f, indent=2)
+
+    # Add to corrections log
+    corrections = load_corrections()
+    source_names = [s.get("source_name", "") for s in sources[:2]]
+
+    corrections["corrections"].append({
+        "story_id": story_id,
+        "corrected_at": now_iso,
+        "type": "retraction",
+        "original_fact": original_fact,
+        "corrected_fact": None,
+        "reason": reason,
+        "correcting_sources": source_names
+    })
+
+    save_corrections(corrections)
+    log.info(f"Retraction issued: {story_id}")
+
+    # Generate retraction audio
+    generate_retraction_audio(original_fact, reason, source_names)
+
+    # Send alert
+    send_alert(f"RETRACTION: {story_id} - {reason[:50]}")
+
+    # Add to RSS feed with same prominence as regular stories
+    add_correction_to_rss(
+        correction_type="retraction",
+        original_fact=original_fact,
+        corrected_fact=None,
+        sources=source_names,
+        story_id=story_id
+    )
+
+    return True
+
+
+def generate_correction_audio(correction_type: str, original_fact: str,
+                               corrected_fact: str, sources: list):
+    """Generate TTS announcement for a correction."""
+    source_text = " and ".join(sources) if sources else "new sources"
+
+    # Truncate facts if too long for audio
+    orig_short = original_fact[:150] + "..." if len(original_fact) > 150 else original_fact
+    corr_short = corrected_fact[:150] + "..." if len(corrected_fact) > 150 else corrected_fact
+
+    announcement = f"Correction. Earlier we reported that {orig_short}. {source_text} now report that {corr_short}."
+
+    # Generate as a one-time announcement (not added to rotation)
+    try:
+        generate_tts(announcement)
+        log.info(f"Correction audio generated: {announcement[:60]}...")
+    except Exception as e:
+        log.error(f"Failed to generate correction audio: {e}")
+
+
+def generate_retraction_audio(original_fact: str, reason: str, sources: list):
+    """Generate TTS announcement for a retraction."""
+    source_text = " and ".join(sources) if sources else "new information"
+
+    orig_short = original_fact[:150] + "..." if len(original_fact) > 150 else original_fact
+    reason_short = reason[:100] if len(reason) > 100 else reason
+
+    announcement = f"Retraction. Earlier we reported that {orig_short}. This report was incorrect. {reason_short}. We retract this story."
+
+    try:
+        generate_tts(announcement)
+        log.info(f"Retraction audio generated: {announcement[:60]}...")
+    except Exception as e:
+        log.error(f"Failed to generate retraction audio: {e}")
 
 
 # =============================================================================
@@ -2715,6 +3180,56 @@ def push_monitor_to_ghpages(monitor_file: Path):
 # ARCHIVE
 # =============================================================================
 
+def mark_corrected_stories_in_log(log_file: Path, date_str: str):
+    """Mark any corrected stories in the daily log before archiving."""
+    # Load corrections for this date
+    corrections = load_corrections()
+    corrected_ids = set()
+
+    for c in corrections.get("corrections", []):
+        story_id = c.get("story_id", "")
+        # Story IDs are like "2026-02-15-001" - check if date matches
+        if story_id.startswith(date_str):
+            corrected_ids.add(story_id)
+
+    if not corrected_ids:
+        return  # No corrections for this day
+
+    # Read and update log lines
+    try:
+        with open(log_file, 'r') as f:
+            lines = f.readlines()
+
+        updated_lines = []
+        story_index = 0
+
+        for line in lines:
+            # Skip headers
+            if line.startswith("#") or not line.strip():
+                updated_lines.append(line)
+                continue
+
+            # Check if this story was corrected
+            story_id = generate_story_id(date_str, story_index)
+            if story_id in corrected_ids:
+                # Prepend [CORRECTED] to the fact (4th field after |)
+                parts = line.strip().split("|")
+                if len(parts) >= 4:
+                    parts[3] = f"[CORRECTED] {parts[3]}"
+                    line = "|".join(parts) + "\n"
+                    log.info(f"Marked {story_id} as corrected in archive")
+
+            updated_lines.append(line)
+            story_index += 1
+
+        # Write back
+        with open(log_file, 'w') as f:
+            f.writelines(updated_lines)
+
+    except Exception as e:
+        log.error(f"Failed to mark corrected stories: {e}")
+
+
 def archive_daily_log():
     """Archive yesterday's log to gh-pages."""
     import subprocess
@@ -2730,6 +3245,9 @@ def archive_daily_log():
     if not log_file.exists():
         log.info("No log to archive")
         return
+
+    # Mark any corrected stories before archiving
+    mark_corrected_stories_in_log(log_file, yesterday_str)
 
     # Archive to gh-pages-dist
     gh_pages_dir = BASE_DIR / "gh-pages-dist"
@@ -2929,6 +3447,29 @@ def process_cycle():
                     fact_hash = get_story_hash(best_fact)
                     record_verification_success(headline["source_id"], fact_hash)
                     record_verification_success(match["source_id"], fact_hash)
+
+                    # CORRECTIONS SYSTEM: Check if this verified fact contradicts any
+                    # previously published story - if so, issue a correction
+                    recent_stories = get_recent_stories_for_correction(days=7)
+                    correction_info = detect_correction_needed(best_fact, sources, recent_stories)
+                    if correction_info:
+                        log.warning(f"Correction needed: {correction_info.get('reason', '')[:50]}")
+                        correction_type = correction_info.get("correction_type", "correction")
+                        story_id = correction_info.get("story_id", "")
+                        original = correction_info.get("original_fact", "")
+                        reason = correction_info.get("reason", "")
+
+                        if correction_type == "retraction":
+                            issue_retraction(story_id, original, reason, sources)
+                        else:
+                            issue_correction(
+                                story_id=story_id,
+                                original_fact=original,
+                                corrected_fact=best_fact,
+                                reason=reason,
+                                correcting_sources=sources,
+                                correction_type=correction_type
+                            )
 
                     break
         else:
@@ -3384,10 +3925,16 @@ def rebuild_stories_from_log():
             audio_filename = f"audio_{audio_index}.mp3"
 
             if audio_filename in existing_audio:
+                story_id = generate_story_id(today, audio_index)
+                story_hash = hashlib.md5(fact.encode()).hexdigest()[:12]
                 stories.append({
+                    "id": story_id,
+                    "hash": story_hash,
                     "fact": fact,
                     "source": source_text,
-                    "audio": f"../audio/{audio_filename}"
+                    "audio": f"../audio/{audio_filename}",
+                    "published_at": f"{today}T{timestamp}:00Z",  # Approximate from log timestamp
+                    "status": "published"
                 })
             else:
                 log.warning(f"Skipping story {audio_index}: no audio file ({audio_filename})")
