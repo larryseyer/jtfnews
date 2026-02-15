@@ -2,8 +2,8 @@
   "date": "2026-02-15",
   "stories": [
     {
-      "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies. Iran and the United States are scheduled to hold nuclear talks in Geneva, according to a Swiss government official.",
-      "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5 \u00b7 PBS NewsHour 9.4*|9.0",
+      "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies. Iran and the United States are scheduled to hold nuclear talks in Geneva, according to a Swiss government official. Secretary of State Marco Rubio plans to visit eastern Europe.",
+      "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5 \u00b7 PBS NewsHour 9.4*|9.0 \u00b7 The Straits Times 7.0*|7.5",
       "audio": "../audio/audio_0.mp3"
     },
     {
@@ -50,6 +50,15 @@
       "fact": "Israeli forces killed eight Palestinians in Gaza and conducted military operations in southern Lebanon.",
       "source": "Al Jazeera English 7.6*|7.5 \u00b7 EFE News Agency 6.2*|8.5",
       "audio": "../audio/audio_9.mp3"
+    },
+    {
+      "id": "2026-02-15-010",
+      "hash": "1380fd72c51f",
+      "fact": "Australia pledges $2.7 billion for nuclear submarine shipyard construction.",
+      "source": "Reuters 9.9*|9.5 \u00b7 ABC News Australia 7.2*|9.0",
+      "audio": "../audio/audio_10.mp3",
+      "published_at": "2026-02-15T07:30:50.916268+00:00",
+      "status": "published"
     }
   ]
 }
