@@ -1534,13 +1534,30 @@ def generate_tts(text: str, audio_index: int = None) -> str:
 # OUTPUT FILES
 # =============================================================================
 
-def write_current_story(fact: str, sources: list):
-    """Write the current story to output files."""
-    # Format source attribution with evidence-based ratings
+def format_source_attribution(sources: list) -> str:
+    """Format source attribution showing 2 sources + count if more verified.
+
+    Shows first 2 sources with ratings. If 3+ sources verified the fact,
+    appends "(+N more)" to indicate additional verification strength.
+    """
+    # Build text for first 2 sources
     source_text = " · ".join([
         f"{s['source_name']} {get_compact_scores(s['source_id'])}"
         for s in sources[:2]
     ])
+
+    # Add "+N more" indicator if additional sources verified
+    if len(sources) > 2:
+        extra_count = len(sources) - 2
+        source_text += f" (+{extra_count} more)"
+
+    return source_text
+
+
+def write_current_story(fact: str, sources: list):
+    """Write the current story to output files."""
+    # Format source attribution with evidence-based ratings
+    source_text = format_source_attribution(sources)
 
     # Write current story
     with open(DATA_DIR / "current.txt", 'w') as f:
@@ -1560,6 +1577,8 @@ def append_daily_log(fact: str, sources: list, audio_file: str = None):
 
     timestamp = datetime.now(timezone.utc).isoformat()
     source_names = ",".join([s["source_name"] for s in sources[:2]])
+    if len(sources) > 2:
+        source_names += f" (+{len(sources) - 2} more)"
     source_scores = ",".join([get_display_rating(s["source_id"]) for s in sources[:2]])
 
     line = f"{timestamp}|{source_names}|{source_scores}|{fact}\n"
@@ -1595,11 +1614,8 @@ def update_stories_json(fact: str, sources: list, audio_file: str = None):
         except:
             pass
 
-    # Format source info with evidence-based ratings
-    source_text = " · ".join([
-        f"{s['source_name']} {get_compact_scores(s['source_id'])}"
-        for s in sources[:2]
-    ])
+    # Format source info with evidence-based ratings (shows "+N more" if 3+ sources)
+    source_text = format_source_attribution(sources)
 
     # Add new story with cached audio file
     stories["stories"].append({
