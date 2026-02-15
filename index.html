@@ -252,6 +252,9 @@
     <iframe src="https://github.com/sponsors/larryseyer/card" title="Sponsor larryseyer" height="225" width="100%" style="border: 0; max-width: 600px; margin-top: 15px;"></iframe>
 
     <script>
+        // Cycle-sync refresh state
+        let lastKnownRefreshAt = null;
+
         function formatCurrency(amount) {
             if (typeof amount !== 'number') return '$0.00';
             return '$' + amount.toFixed(2);
@@ -265,11 +268,30 @@
             return minutes + 'm uptime';
         }
 
+        function checkForCycleRefresh(data) {
+            const currentRefreshAt = data.web_refresh_at;
+            if (!currentRefreshAt) return;
+
+            if (lastKnownRefreshAt === null) {
+                lastKnownRefreshAt = currentRefreshAt;
+                console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
+                return;
+            }
+
+            if (currentRefreshAt !== lastKnownRefreshAt) {
+                console.log('[Cycle Refresh] New cycle detected, refreshing...');
+                location.reload();
+            }
+        }
+
         async function loadCosts() {
             try {
                 const response = await fetch('./monitor.json?t=' + Date.now());
                 if (!response.ok) throw new Error('Not found');
                 const data = await response.json();
+
+                // Check for cycle-sync refresh
+                checkForCycleRefresh(data);
 
                 // Check if data is stale (>15 min old)
                 const dataTime = new Date(data.timestamp);

@@ -693,6 +693,36 @@
     <script>
         // Fetch live story for demo
         const STORIES_URL = './stories.json';
+        const MONITOR_URL = './monitor.json';
+        let lastKnownRefreshAt = null;
+
+        // Cycle-sync refresh: check for new cycle and refresh page
+        async function checkForCycleRefresh() {
+            try {
+                const response = await fetch(MONITOR_URL + '?t=' + Date.now());
+                if (!response.ok) return;
+
+                const data = await response.json();
+                const currentRefreshAt = data.web_refresh_at;
+
+                if (lastKnownRefreshAt === null) {
+                    lastKnownRefreshAt = currentRefreshAt;
+                    console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
+                    return;
+                }
+
+                if (currentRefreshAt !== lastKnownRefreshAt) {
+                    console.log('[Cycle Refresh] New cycle detected, refreshing...');
+                    location.reload();
+                }
+            } catch (e) {
+                // Silently fail
+            }
+        }
+
+        // Start cycle refresh monitoring
+        setInterval(checkForCycleRefresh, 30000);
+        checkForCycleRefresh();
 
         function getTimeAgo(timestamp) {
             if (!timestamp) return '';

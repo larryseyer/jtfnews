@@ -184,6 +184,39 @@
       }
     }
 
+    // ========== Cycle-Sync Refresh ==========
+    const MONITOR_URL = './monitor.json';
+    const CYCLE_REFRESH_INTERVAL = 30000;
+    let lastKnownRefreshAt = null;
+
+    async function checkForCycleRefresh() {
+      try {
+        const response = await fetch(MONITOR_URL + '?t=' + Date.now());
+        if (!response.ok) return;
+
+        const data = await response.json();
+        const currentRefreshAt = data.web_refresh_at;
+
+        if (lastKnownRefreshAt === null) {
+          lastKnownRefreshAt = currentRefreshAt;
+          console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
+          return;
+        }
+
+        if (currentRefreshAt !== lastKnownRefreshAt) {
+          console.log('[Cycle Refresh] New cycle detected, refreshing...');
+          location.reload();
+        }
+      } catch (e) {
+        // Silently fail
+      }
+    }
+
+    function startCycleRefreshMonitor() {
+      checkForCycleRefresh();
+      setInterval(checkForCycleRefresh, CYCLE_REFRESH_INTERVAL);
+    }
+
     /**
      * Initialize slideshow
      */
@@ -209,6 +242,9 @@
 
       // Check for season change every hour
       setInterval(checkSeasonChange, 60 * 60 * 1000);
+
+      // Start cycle-sync refresh monitoring
+      startCycleRefreshMonitor();
     }
 
     // Start when DOM ready

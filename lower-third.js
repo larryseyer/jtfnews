@@ -473,6 +473,63 @@ function start() {
 
     // Start the display loop
     runLoop();
+
+    // Start cycle-sync refresh monitoring
+    startCycleRefreshMonitor();
+}
+
+// ========== Cycle-Sync Refresh ==========
+// Refreshes page when Python script completes a cycle (on the hour/half hour)
+const MONITOR_URL = './monitor.json';
+const CYCLE_REFRESH_INTERVAL = 30000;  // Check every 30 seconds
+let lastKnownRefreshAt = null;
+
+/**
+ * Check if a new cycle has completed and refresh when appropriate
+ */
+async function checkForCycleRefresh() {
+    try {
+        const response = await fetch(MONITOR_URL + '?t=' + Date.now());
+        if (!response.ok) return;
+
+        const data = await response.json();
+        const currentRefreshAt = data.web_refresh_at;
+
+        // First load - just record the timestamp
+        if (lastKnownRefreshAt === null) {
+            lastKnownRefreshAt = currentRefreshAt;
+            console.log(`[Cycle Refresh] Initial timestamp: ${currentRefreshAt}`);
+            return;
+        }
+
+        // Cycle completed - refresh when not displaying a story
+        if (currentRefreshAt !== lastKnownRefreshAt) {
+            console.log(`[Cycle Refresh] New cycle detected: ${currentRefreshAt}`);
+
+            // Wait until not displaying a story
+            if (isDisplaying) {
+                console.log('[Cycle Refresh] Waiting for story to finish...');
+                setTimeout(checkForCycleRefresh, 5000);
+                return;
+            }
+
+            console.log('[Cycle Refresh] Refreshing page now...');
+            location.reload();
+        }
+    } catch (e) {
+        // Silently fail - will retry next interval
+    }
+}
+
+/**
+ * Start monitoring for cycle completion
+ */
+function startCycleRefreshMonitor() {
+    // Initial check
+    checkForCycleRefresh();
+
+    // Continue checking every 30 seconds
+    setInterval(checkForCycleRefresh, CYCLE_REFRESH_INTERVAL);
 }
 
 // Start when DOM is ready

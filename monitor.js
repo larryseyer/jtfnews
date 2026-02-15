@@ -9,6 +9,7 @@ const MONITOR_URL = './monitor.json';
 
 let lastFetchTime = null;
 let pollTimer = null;
+let lastKnownRefreshAt = null;  // For cycle-sync refresh
 
 /**
  * Format seconds into human-readable uptime string
@@ -287,6 +288,9 @@ async function fetchAndUpdate() {
         const data = await response.json();
         lastFetchTime = new Date();
 
+        // Check for cycle-sync refresh
+        checkForCycleRefresh(data);
+
         updateDashboard(data);
 
     } catch (error) {
@@ -298,6 +302,27 @@ async function fetchAndUpdate() {
             document.getElementById('last-update').textContent =
                 `Last update: ${formatTimestamp(lastFetchTime.toISOString())} (fetch failed)`;
         }
+    }
+}
+
+/**
+ * Check if a new cycle has completed and refresh the page
+ */
+function checkForCycleRefresh(data) {
+    const currentRefreshAt = data.web_refresh_at;
+    if (!currentRefreshAt) return;
+
+    // First load - just record the timestamp
+    if (lastKnownRefreshAt === null) {
+        lastKnownRefreshAt = currentRefreshAt;
+        console.log(`[Cycle Refresh] Initial timestamp: ${currentRefreshAt}`);
+        return;
+    }
+
+    // Cycle completed - refresh immediately (monitor dashboard has no display state)
+    if (currentRefreshAt !== lastKnownRefreshAt) {
+        console.log(`[Cycle Refresh] New cycle detected, refreshing...`);
+        location.reload();
     }
 }
 

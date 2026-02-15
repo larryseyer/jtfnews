@@ -686,6 +686,45 @@
       }
     }
 
+    // ========== Cycle-Sync Refresh ==========
+    const MONITOR_URL = './monitor.json';
+    const CYCLE_REFRESH_INTERVAL = 30000;
+    let lastKnownRefreshAt = null;
+
+    async function checkForCycleRefresh() {
+      try {
+        const response = await fetch(MONITOR_URL + '?t=' + Date.now());
+        if (!response.ok) return;
+
+        const data = await response.json();
+        const currentRefreshAt = data.web_refresh_at;
+
+        if (lastKnownRefreshAt === null) {
+          lastKnownRefreshAt = currentRefreshAt;
+          console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
+          return;
+        }
+
+        if (currentRefreshAt !== lastKnownRefreshAt) {
+          console.log('[Cycle Refresh] New cycle detected');
+          if (isDisplaying) {
+            console.log('[Cycle Refresh] Waiting for story to finish...');
+            setTimeout(checkForCycleRefresh, 5000);
+            return;
+          }
+          console.log('[Cycle Refresh] Refreshing page...');
+          location.reload();
+        }
+      } catch (e) {
+        // Silently fail
+      }
+    }
+
+    function startCycleRefreshMonitor() {
+      checkForCycleRefresh();
+      setInterval(checkForCycleRefresh, CYCLE_REFRESH_INTERVAL);
+    }
+
     // ========== Initialize ==========
     function init() {
       console.log('[JTF Screen Saver] Starting...');
@@ -694,6 +733,7 @@
       preventSleep();
       initSlideshow();
       initNews();
+      startCycleRefreshMonitor();
     }
 
     if (document.readyState === 'loading') {
