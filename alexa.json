@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d4a67f59cf9725fca9978c3d98ce903c",
+    "updateDate": "2026-02-15T18:31:19.0Z",
+    "titleText": "JTF News: The Globe and Mail, Reuters",
+    "mainText": "President Trump and Prime Minister Benjamin Netanyahu agreed the United States should press Iran to reduce oil sales to China, according to reporting by Axios.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "23b30058f8a3765850f3615a4e07d8c3",
     "updateDate": "2026-02-15T18:31:02.0Z",
     "titleText": "JTF News: Deutsche Welle, European Commission",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T15:31:19.0Z",
     "titleText": "JTF News: Hindustan Times, The Straits Times",
     "mainText": "Secretary of State Marco Rubio stated there is no reason to dispute reports of Alexei Navalny's death.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "46776e20fa914680e25b745aa025752d",
-    "updateDate": "2026-02-15T15:01:23.0Z",
-    "titleText": "JTF News: Times of India, PBS NewsHour",
-    "mainText": "U.S. forces boarded an oil tanker in the Indian Ocean.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
