@@ -2157,6 +2157,18 @@ def cleanup_old_data(days: int = 7):
 # MONITOR DATA
 # =============================================================================
 
+def get_next_aligned_time() -> datetime:
+    """Calculate next :00 or :30 aligned time for consistent scheduling."""
+    now = datetime.now()
+    if now.minute < 30:
+        # Next slot is :30 of current hour
+        next_time = now.replace(minute=30, second=0, microsecond=0)
+    else:
+        # Next slot is :00 of next hour
+        next_time = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+    return next_time
+
+
 def get_source_health() -> dict:
     """Get source health status from recent scrape attempts."""
     # Track which sources succeeded or failed in this session
@@ -2292,8 +2304,9 @@ def write_monitor_data(cycle_stats: dict):
         # Not enough data for projection - show today's cost as minimum floor
         month_estimate = today_cost
 
-    # Get interval for next cycle calculation
-    interval_minutes = CONFIG.get("timing", {}).get("scrape_interval_minutes", 5)
+    # Calculate minutes until next clock-aligned cycle (:00 or :30)
+    next_run = get_next_aligned_time()
+    next_cycle_minutes = int((next_run - datetime.now()).total_seconds() // 60)
 
     data = {
         "timestamp": now.isoformat(),
@@ -2321,7 +2334,7 @@ def write_monitor_data(cycle_stats: dict):
         "status": {
             "state": "running",
             "stream_health": get_stream_health_status(),
-            "next_cycle_minutes": interval_minutes,
+            "next_cycle_minutes": next_cycle_minutes,
             "degraded_services": list(_degraded_services)
         }
     }
@@ -3018,9 +3031,6 @@ def main():
     if _degraded_services:
         log.info(f"Starting in degraded mode: {_degraded_services}")
 
-    interval_minutes = CONFIG["timing"]["scrape_interval_minutes"]
-    interval_seconds = interval_minutes * 60
-
     while True:
         try:
             # Write heartbeat to indicate we're alive
@@ -3035,11 +3045,14 @@ def main():
             # Run cycle
             process_cycle()
 
-            # Sleep until next cycle with periodic heartbeats
+            # Sleep until next :00 or :30 (clock-aligned for consistency)
             # Heartbeat every 5 minutes keeps dashboard from showing "stale"
-            log.info(f"Sleeping {interval_minutes} minutes...")
+            next_run = get_next_aligned_time()
+            sleep_seconds = (next_run - datetime.now()).total_seconds()
+            sleep_minutes = int(sleep_seconds // 60)
+            log.info(f"Sleeping until {next_run.strftime('%H:%M')} ({sleep_minutes} minutes)...")
             heartbeat_interval = 5 * 60  # 5 minutes in seconds
-            remaining = interval_seconds
+            remaining = sleep_seconds
             while remaining > 0:
                 sleep_time = min(heartbeat_interval, remaining)
                 time.sleep(sleep_time)
@@ -3047,7 +3060,7 @@ def main():
                 if remaining > 0:
                     # Update heartbeat and monitor during sleep
                     write_heartbeat()
-                    write_sleeping_heartbeat(remaining // 60)
+                    write_sleeping_heartbeat(int(remaining // 60))
 
         except KeyboardInterrupt:
             log.info("Shutting down...")
