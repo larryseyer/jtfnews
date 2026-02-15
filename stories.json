@@ -5,6 +5,11 @@
       "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies.",
       "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5",
       "audio": "../audio/audio_0.mp3"
+    },
+    {
+      "fact": "The U.S. military conducted airstrikes against Islamic State targets in Syria.",
+      "source": "Al Jazeera English 8.9*|7.5 \u00b7 NPR 9.4*|8.5",
+      "audio": "../audio/audio_1.mp3"
     }
   ]
 }
