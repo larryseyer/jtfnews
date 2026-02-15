@@ -1,5 +1,12 @@
 [
   {
+    "uid": "34588d41491999028b1e15b2aebc68f0",
+    "updateDate": "2026-02-15T00:13:24.0Z",
+    "titleText": "JTF News: The Globe and Mail, Reuters",
+    "mainText": "Canada increased sanctions against Iran and stated it wants government change in Iran.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "5ddd1c895059aba869b9531b858d5df1",
     "updateDate": "2026-02-15T00:11:37.0Z",
     "titleText": "JTF News: Sky News, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T00:09:26.0Z",
     "titleText": "JTF News: Al Jazeera English, NPR",
     "mainText": "The U.S. military conducted airstrikes against Islamic State targets in Syria.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "828f7f571fdf7f2f623aa33fe6824941",
-    "updateDate": "2026-02-15T00:08:15.0Z",
-    "titleText": "JTF News: BBC News, Reuters",
-    "mainText": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
