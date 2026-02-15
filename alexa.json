@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f7bb408bd80c4fdb4dea03328a85a7de",
+    "updateDate": "2026-02-15T02:06:28.0Z",
+    "titleText": "JTF News: Associated Press, The Globe and Mail",
+    "mainText": "Federal authorities opened a perjury investigation into testimony by ICE officers regarding a shooting involving a Venezuelan man.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "76a766bd47f421b18aabe0da57d83335",
     "updateDate": "2026-02-15T01:16:27.0Z",
     "titleText": "JTF News: PBS NewsHour, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T00:11:37.0Z",
     "titleText": "JTF News: Sky News, The Guardian",
     "mainText": "At least 30 people killed in north-west Nigerian villages.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "f43bc059fb0980f0faece5b6c209508a",
-    "updateDate": "2026-02-15T00:10:12.0Z",
-    "titleText": "JTF News: France 24, NPR",
-    "mainText": "Five European nations stated that Alexei Navalny was poisoned and attributed responsibility to the Kremlin.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
