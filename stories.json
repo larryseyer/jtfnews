@@ -104,6 +104,15 @@
       "audio": "../audio/audio_15.mp3",
       "published_at": "2026-02-15T15:01:23.165885+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-15-016",
+      "hash": "10fa1435029e",
+      "fact": "Secretary of State Marco Rubio stated there is no reason to dispute reports of Alexei Navalny's death.",
+      "source": "Hindustan Times 7.9*|7.5 \u00b7 The Straits Times 7.8*|7.5",
+      "audio": "../audio/audio_16.mp3",
+      "published_at": "2026-02-15T15:31:18.853588+00:00",
+      "status": "published"
     }
   ]
 }
