@@ -99,8 +99,8 @@
     {
       "id": "2026-02-15-015",
       "hash": "05387b3363bd",
-      "fact": "U.S. forces boarded an oil tanker in the Indian Ocean.",
-      "source": "Times of India 7.5*|7.5 \u00b7 PBS NewsHour 9.6*|9.0",
+      "fact": "U.S. forces boarded an oil tanker in the Indian Ocean. this was the second sanctioned oil tanker boarded",
+      "source": "Times of India 7.5*|7.5 \u00b7 PBS NewsHour 9.6*|9.0 \u00b7 The Straits Times 8.2|7.5",
       "audio": "../audio/audio_15.mp3",
       "published_at": "2026-02-15T15:01:23.165885+00:00",
       "status": "published"
@@ -130,6 +130,15 @@
       "source": "BBC News 9.5*|9.0 \u00b7 Euronews 8.6*|8.5",
       "audio": "../audio/audio_18.mp3",
       "published_at": "2026-02-15T17:00:53.422258+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-15-019",
+      "hash": "5a7e67bc4d53",
+      "fact": "EU leaders at the Munich Security Conference stated that NATO remains important and Europe needs a new defense strategy.",
+      "source": "Deutsche Welle 9.0*|9.5 \u00b7 European Commission 7.6*|9.0",
+      "audio": "../audio/audio_19.mp3",
+      "published_at": "2026-02-15T18:31:01.769349+00:00",
       "status": "published"
     }
   ]
