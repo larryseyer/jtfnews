@@ -20,6 +20,11 @@
       "fact": "Five European nations stated that Alexei Navalny was poisoned and attributed responsibility to the Kremlin.",
       "source": "France 24 9.0*|9.0 \u00b7 NPR 9.4*|8.5",
       "audio": "../audio/audio_3.mp3"
+    },
+    {
+      "fact": "At least 30 people killed in north-west Nigerian villages.",
+      "source": "Sky News 8.2*|7.5 \u00b7 The Guardian 8.9*|2.5",
+      "audio": "../audio/audio_4.mp3"
     }
   ]
 }
