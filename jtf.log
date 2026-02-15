@@ -3169,3 +3169,187 @@
 2026-02-14 18:17:27 | INFO | Sleeping 30 minutes...
 2026-02-14 18:22:28 | INFO | Monitor data pushed to gh-pages
 2026-02-14 18:27:28 | INFO | Monitor data pushed to gh-pages
+2026-02-14 18:32:29 | INFO | Monitor data pushed to gh-pages
+2026-02-14 18:37:30 | INFO | Monitor data pushed to gh-pages
+2026-02-14 18:42:31 | INFO | Monitor data pushed to gh-pages
+2026-02-14 18:44:12 | INFO | Shutting down...
+2026-02-14 18:44:14 | INFO | JTF News starting...
+2026-02-14 18:44:14 | INFO | Facts only. No opinions.
+2026-02-14 18:44:14 | INFO | ----------------------------------------
+2026-02-14 18:44:14 | INFO | Validating services...
+2026-02-14 18:44:14 | INFO | Claude API: OK
+2026-02-14 18:44:14 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 18:44:14 | INFO | All services validated successfully
+2026-02-14 18:44:14 | INFO | ============================================================
+2026-02-14 18:44:14 | INFO | Starting cycle #1
+2026-02-14 18:44:14 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 18:44:16 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 18:44:17 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 18:44:19 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 18:44:20 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 18:44:21 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 18:44:22 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 18:44:24 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 18:44:26 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 18:44:27 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 18:44:28 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 18:44:30 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 18:44:31 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 18:44:32 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 18:44:33 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 18:44:35 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 18:44:36 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 18:44:37 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 18:44:38 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 18:44:39 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 18:44:41 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 18:44:42 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 18:44:43 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 18:44:45 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 18:44:47 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 18:44:48 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 18:44:52 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 18:44:53 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 18:44:55 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 18:44:56 | INFO | Total headlines: 268
+2026-02-14 18:44:59 | INFO | Low confidence (75%): President Trump stated that a change in ...
+2026-02-14 18:45:02 | INFO | Not newsworthy (none): Nigeria's Argungu Fishing Festival resum...
+2026-02-14 18:45:09 | INFO | Low confidence (45%): Premier of New South Wales announces add...
+2026-02-14 18:45:12 | INFO | Low confidence (45%): Bangladesh's Prime Minister-elect made a...
+2026-02-14 18:45:14 | INFO | Low confidence (75%): President Emmanuel Macron of France urge...
+2026-02-14 18:45:21 | INFO | Word overlap pre-filter: 2/49 candidates
+2026-02-14 18:45:21 | INFO | Queued: Four people died in an Epic E1000 aircra...
+2026-02-14 18:45:25 | INFO | Low confidence (65%): UpScrolled tops downloads in the United ...
+2026-02-14 18:45:27 | INFO | Alert throttled (queue_backup): Queue backup: 50 items, oldest 23.3h
+2026-02-14 18:45:28 | INFO | Monitor data pushed to gh-pages
+2026-02-14 18:45:28 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 253
+2026-02-14 18:45:28 | INFO | Sleeping 30 minutes...
+2026-02-14 18:50:28 | INFO | Monitor data pushed to gh-pages
+2026-02-14 18:55:29 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:00:30 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:05:31 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:10:32 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:15:32 | INFO | ============================================================
+2026-02-14 19:15:32 | INFO | Starting cycle #2
+2026-02-14 19:15:32 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 19:15:34 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 19:15:35 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 19:15:36 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 19:15:37 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 19:15:38 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 19:15:40 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 19:15:42 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 19:15:43 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 19:15:44 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 19:15:46 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 19:15:47 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 19:15:48 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 19:15:50 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 19:15:51 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 19:15:52 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 19:15:53 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 19:15:54 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 19:15:56 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 19:15:57 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 19:15:58 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 19:15:59 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 19:16:01 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 19:16:02 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 19:16:04 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 19:16:05 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 19:16:08 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 19:16:10 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 19:16:12 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 19:16:13 | INFO | Total headlines: 268
+2026-02-14 19:16:15 | INFO | Not newsworthy (none): Nigeria's Argungu Fishing Festival resum...
+2026-02-14 19:16:17 | INFO | Low confidence (45%): Canada joined the European Union's loans...
+2026-02-14 19:16:19 | INFO | Low confidence (45%): A specialized program teaches children w...
+2026-02-14 19:16:21 | INFO | Not newsworthy (none): Gisèle Pelicot intends to visit her ex-h...
+2026-02-14 19:16:23 | INFO | Word overlap pre-filter: 3/50 candidates
+2026-02-14 19:16:24 | INFO | Preferring queued source (NPR: 9.3) over new (PBS NewsHour: 8.3)
+2026-02-14 19:16:27 | INFO | Generated TTS: Four crew members arrived at the International Spa...
+2026-02-14 19:16:27 | INFO | Published: Four crew members arrived at the International Spa...
+2026-02-14 19:16:27 | INFO | RSS feed updated: 58 items
+2026-02-14 19:16:27 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-14 19:16:27 | INFO | Alexa feed updated: 5 items
+2026-02-14 19:16:28 | INFO | Alexa feed pushed to gh-pages
+2026-02-14 19:16:28 | INFO | VERIFIED: Four crew members arrived at the International Spa...
+2026-02-14 19:16:28 | INFO | Rating +1 success for pbs: {'successes': 5, 'failures': 0}
+2026-02-14 19:16:28 | INFO | Rating +1 success for npr: {'successes': 5, 'failures': 0}
+2026-02-14 19:16:31 | INFO | Not newsworthy (none): The U.S. Justice Department sent a lette...
+2026-02-14 19:16:34 | INFO | Low confidence (45%): Iran's internet service is disrupted....
+2026-02-14 19:16:38 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:16:38 | INFO | Cycle complete. Published: 1, Queue: 49, Skipped (cached): 258
+2026-02-14 19:16:38 | INFO | Sleeping 30 minutes...
+2026-02-14 19:21:39 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:26:39 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:31:40 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:36:41 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:41:42 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:42:49 | INFO | Shutting down...
+2026-02-14 19:42:51 | INFO | JTF News starting...
+2026-02-14 19:42:51 | INFO | Facts only. No opinions.
+2026-02-14 19:42:51 | INFO | ----------------------------------------
+2026-02-14 19:42:51 | INFO | Validating services...
+2026-02-14 19:42:51 | INFO | Claude API: OK
+2026-02-14 19:42:51 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 19:42:51 | INFO | All services validated successfully
+2026-02-14 19:42:51 | INFO | ============================================================
+2026-02-14 19:42:51 | INFO | Starting cycle #1
+2026-02-14 19:42:51 | INFO | Expired from queue: AFP Fact Check determined that images of pre-elect...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for afp: {'successes': 0, 'failures': 1}
+2026-02-14 19:42:51 | INFO | Expired from queue: The U.S. trade deficit reached $56.8 billion in No...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for efe: {'successes': 0, 'failures': 1}
+2026-02-14 19:42:51 | INFO | Expired from queue: Laura Dogu arrived in Caracas to reopen the U.S. d...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for efe: {'successes': 0, 'failures': 2}
+2026-02-14 19:42:51 | INFO | Expired from queue: President Trump announced reopening of air connect...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for efe: {'successes': 0, 'failures': 3}
+2026-02-14 19:42:51 | INFO | Expired from queue: President Ursula von der Leyen stated that urgency...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for eu_commission: {'successes': 0, 'failures': 1}
+2026-02-14 19:42:51 | INFO | Expired from queue: A commission approved a €1.04 billion Danish state...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for eu_commission: {'successes': 0, 'failures': 2}
+2026-02-14 19:42:51 | INFO | Expired from queue: African leaders gather in Ethiopia for the 39th Af...
+2026-02-14 19:42:51 | INFO | Rating +1 failure for france24: {'successes': 5, 'failures': 1}
+2026-02-14 19:42:52 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 19:42:54 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 19:42:55 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 19:42:56 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 19:42:57 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 19:42:58 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 19:42:59 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 19:43:01 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 19:43:02 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 19:43:04 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 19:43:05 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 19:43:06 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 19:43:07 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 19:43:08 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 19:43:10 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 19:43:11 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 19:43:12 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 19:43:14 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 19:43:15 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 19:43:16 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 19:43:17 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 19:43:18 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 19:43:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 19:43:21 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 19:43:22 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 19:43:24 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 19:43:27 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 19:43:29 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 19:43:31 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 19:43:32 | INFO | Total headlines: 268
+2026-02-14 19:43:34 | INFO | Not newsworthy (none): Nvidia Chief Executive Officer Jensen Hu...
+2026-02-14 19:43:36 | INFO | Duplicate (Claude batch): 'Motorbike raids on villages in Nigeria r...'
+2026-02-14 19:43:36 | INFO | Duplicate: Motorbike raids on villages in Nigeria r...
+2026-02-14 19:43:37 | INFO | Word overlap pre-filter: 5/42 candidates
+2026-02-14 19:43:38 | INFO | Queued: A 19-year-old was arrested in connection...
+2026-02-14 19:43:40 | INFO | Low confidence (45%): Victorian opposition announces intention...
+2026-02-14 19:43:42 | INFO | Duplicate (Claude batch): 'A new crew arrived at the International ...'
+2026-02-14 19:43:42 | INFO | Duplicate: A new crew arrived at the International ...
+2026-02-14 19:43:44 | INFO | Low confidence (45%): Rallies supporting Iran regime change ta...
+2026-02-14 19:43:50 | INFO | Alert throttled (queue_backup): Queue backup: 43 items, oldest 23.6h
+2026-02-14 19:43:50 | INFO | Monitor data pushed to gh-pages
+2026-02-14 19:43:50 | INFO | Cycle complete. Published: 0, Queue: 43, Skipped (cached): 259
+2026-02-14 19:43:50 | INFO | Sleeping 30 minutes...

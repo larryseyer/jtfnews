@@ -15,7 +15,7 @@ const SCRAPE_CYCLE_MS = 300000; // 5 minute scrape cycle (matches config)
 const STORIES_URL = '../data/stories.json';
 
 let stories = [];
-let shuffledQueue = [];       // Current cycle's shuffled story order
+let shuffledQueue = [];       // Current cycle's shuffled indices (not objects!) into stories array
 let lastPlayedFact = null;    // Track last played story to avoid back-to-back
 let lastPlayedTimes = {};     // Track when each story was last played (fact -> timestamp)
 let lastStoryEndTime = Date.now(); // Track when silence began (for max silence duration)
@@ -123,12 +123,13 @@ function reshuffleForNewCycle() {
     const seedIndicator = Math.random().toString(36).substring(2, 8);
     console.log(`Generating new queue with seed indicator: ${seedIndicator}`);
 
-    // True random shuffle of ALL stories (no freshness sorting)
-    // Freshness weighting is applied at selection time via getNextEligibleStory()
-    shuffledQueue = shuffleArray([...stories]);
+    // Create array of indices [0, 1, 2, ...] and shuffle them
+    // We store INDICES not objects, so we always reference current story data
+    const indices = stories.map((_, i) => i);
+    shuffledQueue = shuffleArray(indices);
 
     // If the first story in new queue matches last played, move it to end
-    if (lastPlayedFact && shuffledQueue.length > 1 && shuffledQueue[0].fact === lastPlayedFact) {
+    if (lastPlayedFact && shuffledQueue.length > 1 && stories[shuffledQueue[0]].fact === lastPlayedFact) {
         shuffledQueue.push(shuffledQueue.shift());
         console.log('Moved last-played story to end to avoid back-to-back');
     }
@@ -136,9 +137,9 @@ function reshuffleForNewCycle() {
     cycleStartTime = Date.now();
 
     // Count freshness tiers for logging
-    const fresh = shuffledQueue.filter(s => getStoryAge(s) < FRESH_THRESHOLD).length;
-    const medium = shuffledQueue.filter(s => getStoryAge(s) >= FRESH_THRESHOLD && getStoryAge(s) < MEDIUM_THRESHOLD).length;
-    const stale = shuffledQueue.filter(s => getStoryAge(s) >= MEDIUM_THRESHOLD).length;
+    const fresh = shuffledQueue.filter(i => getStoryAge(stories[i]) < FRESH_THRESHOLD).length;
+    const medium = shuffledQueue.filter(i => getStoryAge(stories[i]) >= FRESH_THRESHOLD && getStoryAge(stories[i]) < MEDIUM_THRESHOLD).length;
+    const stale = shuffledQueue.filter(i => getStoryAge(stories[i]) >= MEDIUM_THRESHOLD).length;
     console.log(`New cycle: ${fresh} fresh, ${medium} medium, ${stale} stale stories (randomly ordered)`);
 }
 
@@ -365,16 +366,22 @@ function isEligibleToPlay(story) {
  * Get next eligible story using weighted random selection
  * Option 3: Frequency weighting - fresh stories are more likely to be selected
  * Fresh (< 6 hrs): 3x weight, Medium (6-12 hrs): 2x weight, Stale (> 12 hrs): 1x weight
+ *
+ * Note: shuffledQueue contains INDICES into stories array, not story objects.
+ * This ensures we always use current story data (handles story updates).
  */
 function getNextEligibleStory() {
     // Get all eligible stories with their weights
     const eligible = [];
     for (let i = 0; i < shuffledQueue.length; i++) {
-        if (isEligibleToPlay(shuffledQueue[i])) {
+        const storyIndex = shuffledQueue[i];
+        const story = stories[storyIndex];
+        if (story && isEligibleToPlay(story)) {
             eligible.push({
-                index: i,
-                story: shuffledQueue[i],
-                weight: getFreshnessWeight(shuffledQueue[i])
+                queuePosition: i,      // Position in shuffledQueue
+                storyIndex: storyIndex, // Index in stories array
+                story: story,
+                weight: getFreshnessWeight(story)
             });
         }
     }
@@ -390,15 +397,18 @@ function getNextEligibleStory() {
     for (const entry of eligible) {
         random -= entry.weight;
         if (random <= 0) {
-            // Remove and return this story
+            // Remove index from queue and return the CURRENT story object
             const timeAgo = getTimeAgo(entry.story.timestamp);
             console.log(`Selected story (weight ${entry.weight}, ${timeAgo}): "${entry.story.fact.substring(0, 40)}..."`);
-            return shuffledQueue.splice(entry.index, 1)[0];
+            shuffledQueue.splice(entry.queuePosition, 1);
+            // Return fresh lookup from stories array to get latest data
+            return stories[entry.storyIndex];
         }
     }
 
     // Fallback to first eligible (shouldn't reach here)
-    return shuffledQueue.splice(eligible[0].index, 1)[0];
+    shuffledQueue.splice(eligible[0].queuePosition, 1);
+    return stories[eligible[0].storyIndex];
 }
 
 /**
