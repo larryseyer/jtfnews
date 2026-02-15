@@ -1,53 +1,61 @@
 {
-  "timestamp": "2026-02-15T04:57:50.330652+00:00",
+  "timestamp": "2026-02-15T05:01:22.580751+00:00",
   "uptime_start": "2026-02-15T04:52:08.394919+00:00",
-  "uptime_seconds": 342,
+  "uptime_seconds": 554,
   "cycle": {
-    "number": 1,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
+    "number": 2,
+    "duration_seconds": 81.9,
+    "headlines_scraped": 258,
+    "headlines_processed": 2,
+    "stories_published": 1,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 456,
-        "cost_usd": 0.17206925000000015,
+        "calls": 461,
+        "cost_usd": 0.17311575000000015,
         "details": {
-          "input_tokens": 421087,
-          "output_tokens": 53438
+          "input_tokens": 423878,
+          "output_tokens": 53717
         }
       },
       "elevenlabs": {
-        "calls": 10,
-        "cost_usd": 0.03135,
+        "calls": 11,
+        "cost_usd": 0.034440000000000005,
         "details": {
-          "characters": 1045
+          "characters": 1148
         }
       }
     },
-    "total_usd": 0.2034,
-    "month_estimate_usd": 0.2,
+    "total_usd": 0.2076,
+    "month_estimate_usd": 0.21,
     "daily_budget": 5.0,
-    "budget_pct": 4.1
+    "budget_pct": 4.2
   },
   "queue": {
-    "size": 47,
-    "oldest_item_age_hours": 24.0
+    "size": 44,
+    "oldest_item_age_hours": 23.6
   },
-  "stories_today": 9,
+  "stories_today": 10,
   "sources": {
     "total": 30,
-    "successful": 30,
-    "failed": []
+    "successful": 29,
+    "failed": [
+      "US Department of Defense"
+    ]
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-02-15T05:01:10.641546+00:00",
+      "level": "WARNING",
+      "message": "Failed to fetch from US Department of Defense: 403 Client Error: Forbidden for url: https://www.defense.gov/News/"
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 2,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   }
 }
