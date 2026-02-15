@@ -1,5 +1,12 @@
 [
   {
+    "uid": "828f7f571fdf7f2f623aa33fe6824941",
+    "updateDate": "2026-02-15T00:08:15.0Z",
+    "titleText": "JTF News: BBC News, Reuters",
+    "mainText": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "714e3fad67c69aff24bc57356b6185ce",
     "updateDate": "2026-02-14T21:33:15.0Z",
     "titleText": "JTF News: The Straits Times, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-14T20:29:35.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
     "mainText": "At least 30 people killed in north-west Nigerian villages according to residents.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "545d80c702568714f4fd2327cded7990",
-    "updateDate": "2026-02-14T20:27:53.0Z",
-    "titleText": "JTF News: Al Jazeera English, BBC News",
-    "mainText": "Secretary of State Marco Rubio stated that the United States and Europe 'belong together' despite tensions.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
