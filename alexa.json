@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f3fa31fcdeb256c062b53c2169ee684a",
+    "updateDate": "2026-02-15T00:14:05.0Z",
+    "titleText": "JTF News: The Straits Times, France 24",
+    "mainText": "French prosecutors announced a special team to analyze Epstein files.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "34588d41491999028b1e15b2aebc68f0",
     "updateDate": "2026-02-15T00:13:24.0Z",
     "titleText": "JTF News: The Globe and Mail, Reuters",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T00:09:40.0Z",
     "titleText": "JTF News: Al Jazeera English, Deutsche Welle",
     "mainText": "Prime Minister Viktor Orban of Hungary stated that the EU poses a greater threat than Russia ahead of April elections.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b3e2c90801d9de4214bab276a0bc2df3",
-    "updateDate": "2026-02-15T00:09:26.0Z",
-    "titleText": "JTF News: Al Jazeera English, NPR",
-    "mainText": "The U.S. military conducted airstrikes against Islamic State targets in Syria.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
