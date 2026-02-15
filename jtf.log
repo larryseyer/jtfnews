@@ -3357,3 +3357,60 @@
 2026-02-14 19:53:52 | INFO | Monitor data pushed to gh-pages
 2026-02-14 19:58:52 | INFO | Monitor data pushed to gh-pages
 2026-02-14 20:03:53 | INFO | Monitor data pushed to gh-pages
+2026-02-14 20:05:37 | INFO | Shutting down...
+2026-02-14 20:05:42 | INFO | JTF News starting...
+2026-02-14 20:05:42 | INFO | Facts only. No opinions.
+2026-02-14 20:05:42 | INFO | ----------------------------------------
+2026-02-14 20:05:42 | INFO | Validating services...
+2026-02-14 20:05:43 | INFO | Claude API: OK
+2026-02-14 20:05:43 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 20:05:43 | INFO | All services validated successfully
+2026-02-14 20:05:43 | INFO | ============================================================
+2026-02-14 20:05:43 | INFO | Starting cycle #1
+2026-02-14 20:05:44 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 20:05:45 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 20:05:46 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 20:05:47 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 20:05:48 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 20:05:50 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 20:05:51 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 20:05:52 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 20:05:54 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 20:05:55 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 20:05:57 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 20:05:58 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 20:05:59 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 20:06:00 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 20:06:01 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 20:06:03 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 20:06:04 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 20:06:05 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 20:06:06 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 20:06:08 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 20:06:09 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 20:06:10 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 20:06:11 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 20:06:13 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 20:06:14 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 20:06:16 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 20:06:19 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 20:06:20 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 20:06:23 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 20:06:24 | INFO | Total headlines: 268
+2026-02-14 20:06:25 | INFO | Word overlap pre-filter: 1/43 candidates
+2026-02-14 20:06:28 | INFO | Generated TTS: Federal authorities opened a perjury investigation...
+2026-02-14 20:06:28 | INFO | Published: Federal authorities opened a perjury investigation...
+2026-02-14 20:06:28 | INFO | RSS feed updated: 59 items
+2026-02-14 20:06:28 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-14 20:06:28 | INFO | Alexa feed updated: 5 items
+2026-02-14 20:06:29 | INFO | Alexa feed pushed to gh-pages
+2026-02-14 20:06:29 | INFO | VERIFIED: Federal authorities opened a perjury investigation...
+2026-02-14 20:06:29 | INFO | Rating +1 success for ap: {'successes': 2, 'failures': 0}
+2026-02-14 20:06:29 | INFO | Rating +1 success for globe: {'successes': 5, 'failures': 0}
+2026-02-14 20:06:33 | INFO | Word overlap pre-filter: 3/42 candidates
+2026-02-14 20:06:34 | INFO | Queued: Prime Minister announces $3.9 billion in...
+2026-02-14 20:06:44 | INFO | Low confidence (65%): Fitch Solutions made credit data availab...
+2026-02-14 20:06:44 | INFO | Alert throttled (queue_backup): Queue backup: 43 items, oldest 24.0h
+2026-02-14 20:06:44 | INFO | Monitor data pushed to gh-pages
+2026-02-14 20:06:44 | INFO | Cycle complete. Published: 1, Queue: 43, Skipped (cached): 261
+2026-02-14 20:06:44 | INFO | Sleeping until 20:30 (23 minutes)...
