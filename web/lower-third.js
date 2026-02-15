@@ -130,7 +130,18 @@ function parseFirstSource(sourceStr) {
  * Stories sorted oldest first for chronological flow
  */
 function buildTickerContent() {
-    if (stories.length === 0) return '';
+    if (stories.length === 0) {
+        // Display fallback messages when no stories are available
+        const fallbackMessages = [
+            "JTF News is supported by viewers like you · Support at github.com/sponsors/larryseyer",
+            "Run JTF News as your screen saver · Free at jtfnews.com/screensaver",
+            "Gathering verified facts from around the world...",
+            "Two sources. Strip the adjectives. State the facts."
+        ];
+        return fallbackMessages.map(msg =>
+            `<span class="ticker-story"><span class="ticker-fact">${msg}</span></span>`
+        ).join('<span class="ticker-spacer"></span>');
+    }
 
     // Sort stories by timestamp (oldest first)
     const sortedStories = [...stories].sort((a, b) => {
