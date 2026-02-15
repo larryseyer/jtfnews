@@ -3,12 +3,41 @@
 ## Project Overview
 JTF News (Just the Facts News) - Automated 24/7 news stream that reports only verified facts. No opinions, no adjectives, no interpretation.
 
-## The JTF Methodology (from WhitePaper.md)
+---
+
+# THE JTF METHODOLOGY
+
+## Philosophy
+
 **Two sources. Different owners. Strip the adjectives. State the facts. Stop.**
 
 This is not journalism. It is data. The methodology belongs to no one. It serves everyone.
 
-### What Qualifies as News
+**Facts without opinion. Wherever they are needed.**
+
+We do not interpret events.
+We do not speculate.
+We do not persuade.
+
+We record.
+
+---
+
+## Core Principle
+
+We do not editorialise. We state what happened, where, when, and—when known—how many. Nothing more.
+
+Each item states:
+- What occurred
+- Where it occurred
+- When it occurred
+- Who was formally involved
+- Quantifiable outcomes when available
+
+---
+
+## What Qualifies as News
+
 A verifiable event, within the last 24 hours, that meets at least one criteria:
 - Affects 500+ people
 - Costs/invests $1M+ USD
@@ -22,12 +51,184 @@ A verifiable event, within the last 24 hours, that meets at least one criteria:
 - International agreement or diplomatic action
 - Major natural disaster, pandemic, or public health emergency
 
-### Content Rules
-- **Two unrelated sources minimum** - Different owners, different investors
-- **No adjectives** - AI strips all editorialization
-- **Official titles only** - "President Biden" not "Biden"; "White House Homeland Security Advisor" not "Border czar"
-- **No engagement** - We tweet once, never reply
-- **Calm delivery** - Female voice, northern English, slow neutral background images
+Nothing less. Nothing more.
+
+These thresholds define the global stream. Other communities define relevance for themselves.
+
+---
+
+## Verification Standard
+
+Two unrelated sources minimum. Unrelated means different owners, different investors. Where cross-ownership makes full independence difficult to confirm, no common majority shareholder is the minimum threshold.
+
+Where ownership independence cannot be reasonably confirmed, publication is deferred.
+
+---
+
+## Content Rules
+
+### Data Processing
+AI rewrites. Strips adjectives. Keeps facts. If it can't be proven, it vanishes.
+
+The system:
+- Removes descriptive and evaluative language
+- Removes speculation and predictions
+- Standardizes titles and naming conventions
+- Extracts quantifiable facts
+- Excludes unsupported claims
+
+**The system does not add facts not present in source material.**
+
+### Official Titles
+People are addressed by their official titles and names. President [surname]. Senator [surname]. Representative [surname]. Judge [surname] of the [district or circuit]. Never bare last names. Titles are facts. Omitting them is editorial. For judges, the court is also a fact.
+
+**Media-invented nicknames are editorialization, not titles.** A journalistic shorthand like "border czar" is not an official government position—it carries implicit judgment. We use official titles only. The title a person holds is a fact. The nickname a reporter invents is opinion.
+
+### Data Sourcing
+Public headlines and metadata from open websites. No login walls. No paid content. No APIs. No copyrighted imagery.
+
+---
+
+## AI Transparency & Bias Mitigation
+
+The AI rewriting step is not neutral by default. Language models carry inherited biases from training data. We mitigate this through:
+
+- Public pseudocode and processing logic on GitHub
+- Periodic human audits of output against source material
+- Community reporting of detected bias or distortion
+- Logging of all editorial decisions the algorithm makes (what was stripped, what was kept)
+
+**No algorithm is perfect. Ours is visible.**
+
+---
+
+## Source Ownership Disclosure
+
+For each story, the top three owners of each cited source are listed. Percentages. No spin. This lets the audience see who funds the information they are receiving.
+
+Live source scores: accuracy, bias, speed, consensus. Numbers only. No labels.
+
+### Ownership Data Maintenance
+Ownership structures change. Acquisitions happen. Shareholders shift. We review and verify all source ownership data quarterly. Updates are logged publicly on GitHub.
+
+**Stale data is dishonest data. We do not let it drift.**
+
+---
+
+## Voice & Visuals
+
+Calm female voice, northern English. Slow, neutral background images—clouds, fields, water. **Never the event. Never the news.**
+
+Images rotate every 50 seconds. Never match the story. **They breathe.**
+
+Voice only. No music. No breath. When it stops, quiet.
+
+---
+
+## Updates & Corrections
+
+### Update Cadence
+Every 30 minutes. Breaking news within 5, but no urgency.
+
+### Corrections & Retractions
+When a fact passes the two-source test but is later proven false:
+
+- A correction is issued within the next update cycle
+- The original item is marked as corrected in the archive, **never silently deleted**
+- If the error is fundamental, a full retraction is issued with explanation
+- Corrections are given the same prominence as the original item
+- A running corrections log is maintained publicly on GitHub
+
+**We do not bury mistakes. We name them.**
+
+---
+
+## Social Media Policy
+
+We post once per platform. We do not reply. No engagement. No likes. **Corrections are the sole exception**—corrections are posted with the same reach as the original.
+
+---
+
+## Ethics & Data Retention
+
+We do not store raw data longer than 7 days.
+Daily summaries are archived on GitHub.
+**Nothing hidden. Nothing sold. Just the record.**
+
+No paywalls. No bots. Respect robots.txt. No logs.
+
+---
+
+## Transparency & Governance
+
+- Independent nonprofit oversight
+- **No dividends. We own nothing.**
+- Public documentation of methodology
+- **Pseudocode on GitHub. Anyone can read. No one can change.**
+- Version-controlled changes
+- Public corrections log
+- No advertising or sale of user data
+
+---
+
+## Limits of the Model
+
+JTF News does not provide:
+- Opinion
+- Analysis
+- Forecasts
+- Policy advocacy
+
+Disagreements between sources are reported as disagreements of record. The system mitigates bias through **transparency and defined rules, not claims of perfect neutrality.**
+
+---
+
+## Mission
+
+**To provide a structured factual reference layer beneath public discourse.**
+
+When narrative is removed, the record remains.
+
+Because the world needs a place where facts stand alone.
+
+---
+
+## The Loop
+
+24 hours. Midnight GMT. Each story once. Then back.
+
+---
+
+## Community Channels
+
+The global stream is our first application, not our only one.
+
+Communities deserve fact-based reporting:
+- Local news, free from partisan spin
+- Sports scores, free from hot takes
+- School boards, free from drama
+
+Each channel serves a community. Each follows the methodology. Each stands alone.
+
+**If a community needs facts, the methodology is theirs.**
+
+---
+
+## Universal Principles
+
+Across all channels, always:
+- Two or more unrelated sources minimum
+- AI strips all editorialization
+- No engagement. No replies. No likes.
+- Calm voice. Neutral visuals.
+- No ads. No tracking. No profit.
+- Public archives. Open methodology.
+
+**We serve. We do not sell.**
+
+---
+
+# IMPLEMENTATION
 
 ## Current State
 **Live and running** - Implementation complete with main.py (~2000 lines). SPECIFICATION.md is the design reference.
@@ -40,7 +241,7 @@ A verifiable event, within the last 24 hours, that meets at least one criteria:
 
 ## Key Files
 - `docs/SPECIFICATION.md` - Complete technical spec (read this first for implementation)
-- `docs/WhitePaper.md` - Project philosophy and methodology whitepaper
+- `docs/WhitePaper Ver 1.3 CURRENT.md` - Project philosophy and methodology whitepaper
 - `docs/ResilienceSystem.md` - 24/7 uptime resilience design (retry logic, alerts, degradation)
 - `docs/implementation Ver 0.1.md` - Implementation notes
 - `docs/mediasetup.md` - Media/OBS setup instructions
@@ -98,7 +299,7 @@ Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 
 ## Testing Workflow
 
-### ⚠️ CRITICAL: DEPLOY MACHINE DOES NOT EXIST ⚠️
+### CRITICAL: DEPLOY MACHINE DOES NOT EXIST
 
 **Claude: The deploy machine DOES NOT EXIST for you until the user explicitly says otherwise.**
 
@@ -114,7 +315,7 @@ Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 - Only switch to deploy machine once the user explicitly confirms testing is complete
 - The `.env` file with API keys stays on each machine separately (never synced)
 
-## IMPORTANT: Two-Machine Architecture (Apple Silicon → Intel)
+## IMPORTANT: Two-Machine Architecture (Apple Silicon to Intel)
 
 **We develop on Apple Silicon but deploy on Intel/Mojave.** These architectures are incompatible for compiled files.
 
@@ -126,7 +327,7 @@ Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 ### CRITICAL: Always Deploy After Making Changes
 After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to the production machine.
 
-### ⚠️ NEVER EDIT FILES ON THE DEPLOY MACHINE ⚠️
+### NEVER EDIT FILES ON THE DEPLOY MACHINE
 **ALL code changes MUST happen on the DEV machine first, then deploy.**
 
 - The deploy path (`/Volumes/MacLive/...`) is for PRODUCTION ONLY
@@ -159,7 +360,7 @@ After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to
 - `web/` - OBS browser source overlays (lower-third.html, background-slideshow.html, screensaver.html, monitor.html)
 - `gh-pages-dist/` - Public website (GitHub Pages) - how-it-works, whitepaper, feed.xml, stories.json
 - `media/` - Background images organized by season (fall/, spring/, summer/, winter/)
-- `docs/` - Documentation (SPECIFICATION.md, WhitePaper.md, ResilienceSystem.md)
+- `docs/` - Documentation (SPECIFICATION.md, WhitePaper Ver 1.3 CURRENT.md, ResilienceSystem.md)
 - `data/` - Runtime data (stories.json, queue.json, api_usage, monitor.json) - NOT committed
 
 ## Tech Stack
