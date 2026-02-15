@@ -1,5 +1,12 @@
 [
   {
+    "uid": "23b30058f8a3765850f3615a4e07d8c3",
+    "updateDate": "2026-02-15T18:31:02.0Z",
+    "titleText": "JTF News: Deutsche Welle, European Commission",
+    "mainText": "EU leaders at the Munich Security Conference stated that NATO remains important and Europe needs a new defense strategy.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "73009de0488f52381a12603878f1709f",
     "updateDate": "2026-02-15T17:00:54.0Z",
     "titleText": "JTF News: BBC News, Euronews",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T15:01:23.0Z",
     "titleText": "JTF News: Times of India, PBS NewsHour",
     "mainText": "U.S. forces boarded an oil tanker in the Indian Ocean.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "330989770cbdadcd6d24828d56d3a965",
-    "updateDate": "2026-02-15T13:30:53.0Z",
-    "titleText": "JTF News: NPR, The Guardian",
-    "mainText": "Pinheiro Braathen of Brazil won a gold medal at the Winter Olympics, earning South America's first Winter Olympics medal.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
