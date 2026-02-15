@@ -1520,6 +1520,71 @@ def get_compact_scores(source_id: str) -> str:
     return f"{accuracy_part}|{bias_score:.1f}"
 
 
+def get_source_id_by_name(source_name: str) -> str:
+    """Look up source ID from source name. Returns empty string if not found."""
+    name_lower = source_name.lower().strip()
+    for source in CONFIG["sources"]:
+        if source["name"].lower() == name_lower:
+            return source["id"]
+    return ""
+
+
+def get_source_for_rss(source_id: str) -> dict:
+    """Build rich source data for RSS feed per SPECIFICATION.md Section 5.3.3.
+
+    Returns dict with name, all 4 scores, control_type, and top 3 owners.
+    Format matches spec: accuracy, bias, speed, consensus as attributes,
+    owners as nested elements with name and percent.
+    """
+    # Find source in config
+    source_config = None
+    for source in CONFIG["sources"]:
+        if source["id"] == source_id:
+            source_config = source
+            break
+
+    if not source_config:
+        return {"name": source_id, "accuracy": "0.0", "bias": "0.0",
+                "speed": "0.0", "consensus": "0.0", "control_type": "unknown", "owners": []}
+
+    # Get learned accuracy (or baseline with asterisk indicator)
+    accuracy_display = get_display_rating(source_id)
+    accuracy_part = accuracy_display.split()[0]  # "9.4" or "8.5*"
+
+    # Get bias score (convert from -2/+2 scale to 0-10 where 10 = neutral)
+    raw_bias = source_config["ratings"].get("bias", 0.0)
+    bias_score = max(0.0, min(10.0, 10.0 - (abs(raw_bias) * 5)))
+
+    # Get speed and consensus from config
+    speed = source_config["ratings"].get("speed", 5.0)
+    consensus = source_config["ratings"].get("consensus", 5.0)
+
+    # Get ownership data (top 3)
+    owners = []
+    for holder in source_config.get("institutional_holders", [])[:3]:
+        owners.append({
+            "name": holder["name"],
+            "percent": f"{holder['percent']:.1f}"
+        })
+
+    # If no institutional holders, use owner field
+    if not owners and source_config.get("owner"):
+        owners.append({
+            "name": source_config["owner"],
+            "percent": "100.0"
+        })
+
+    return {
+        "name": source_config["name"],
+        "accuracy": accuracy_part,
+        "bias": f"{bias_score:.1f}",
+        "speed": f"{speed:.1f}",
+        "consensus": f"{consensus:.1f}",
+        "control_type": source_config.get("control_type", "unknown"),
+        "owners": owners
+    }
+
+
 # =============================================================================
 # QUEUE MANAGEMENT
 # =============================================================================
@@ -1879,7 +1944,12 @@ def update_stories_json(fact: str, sources: list, audio_file: str = None):
 
 
 def update_rss_feed(fact: str, sources: list):
-    """Update RSS feed with new story and push to gh-pages."""
+    """Update RSS feed with new story and push to gh-pages.
+
+    Per SPECIFICATION.md Section 5.3.3, each source element includes:
+    - name, accuracy, bias, speed, consensus as attributes
+    - owner elements with name and percent
+    """
     import subprocess
 
     gh_pages_dir = BASE_DIR / "gh-pages-dist"
@@ -1891,8 +1961,11 @@ def update_rss_feed(fact: str, sources: list):
         log.warning("gh-pages-dist worktree not found, skipping RSS update")
         return
 
-    # Format source attribution
-    source_text = ", ".join([s['source_name'] for s in sources[:2]])
+    # Build rich source data for each source (top 2)
+    rich_sources = []
+    for s in sources[:2]:
+        source_data = get_source_for_rss(s['source_id'])
+        rich_sources.append(source_data)
 
     # Create new item
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
@@ -1904,7 +1977,7 @@ def update_rss_feed(fact: str, sources: list):
     new_item = {
         "title": title,
         "description": fact,
-        "source": source_text,
+        "sources": rich_sources,
         "pubDate": pub_date,
         "guid": guid
     }
@@ -1917,15 +1990,45 @@ def update_rss_feed(fact: str, sources: list):
             root = tree.getroot()
             channel = root.find("channel")
             for item in channel.findall("item"):
+                # Parse rich source structure if present
+                item_sources = []
+                for source_el in item.findall("source"):
+                    if source_el.get("name"):
+                        # Rich format with attributes
+                        source_data = {
+                            "name": source_el.get("name", ""),
+                            "accuracy": source_el.get("accuracy", "0.0"),
+                            "bias": source_el.get("bias", "0.0"),
+                            "speed": source_el.get("speed", "0.0"),
+                            "consensus": source_el.get("consensus", "0.0"),
+                            "control_type": source_el.get("control_type", "unknown"),
+                            "owners": []
+                        }
+                        for owner_el in source_el.findall("owner"):
+                            source_data["owners"].append({
+                                "name": owner_el.get("name", ""),
+                                "percent": owner_el.get("percent", "0.0")
+                            })
+                        item_sources.append(source_data)
+                    elif source_el.text:
+                        # Legacy format: plain text (will be converted on next update)
+                        for name in source_el.text.split(", "):
+                            item_sources.append({
+                                "name": name.strip(),
+                                "accuracy": "0.0", "bias": "0.0",
+                                "speed": "0.0", "consensus": "0.0",
+                                "control_type": "unknown", "owners": []
+                            })
+
                 items.append({
                     "title": item.find("title").text or "",
                     "description": item.find("description").text or "",
-                    "source": item.find("source").text if item.find("source") is not None else "",
+                    "sources": item_sources,
                     "pubDate": item.find("pubDate").text or "",
                     "guid": item.find("guid").text or ""
                 })
-        except:
-            pass
+        except Exception as e:
+            log.warning(f"Error parsing existing RSS feed: {e}")
 
     # Add new item at beginning
     items.insert(0, new_item)
@@ -1947,7 +2050,23 @@ def update_rss_feed(fact: str, sources: list):
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = item_data["title"]
         ET.SubElement(item, "description").text = item_data["description"]
-        ET.SubElement(item, "source").text = item_data["source"]
+
+        # Write rich source elements per SPECIFICATION.md
+        for source_data in item_data.get("sources", []):
+            source_el = ET.SubElement(item, "source",
+                name=source_data["name"],
+                accuracy=source_data["accuracy"],
+                bias=source_data["bias"],
+                speed=source_data["speed"],
+                consensus=source_data["consensus"],
+                control_type=source_data["control_type"]
+            )
+            for owner in source_data.get("owners", []):
+                ET.SubElement(source_el, "owner",
+                    name=owner["name"],
+                    percent=owner["percent"]
+                )
+
         ET.SubElement(item, "pubDate").text = item_data["pubDate"]
         ET.SubElement(item, "guid", isPermaLink="false").text = item_data["guid"]
 
@@ -1986,7 +2105,11 @@ def update_rss_feed(fact: str, sources: list):
 
 def add_correction_to_rss(correction_type: str, original_fact: str,
                           corrected_fact: str, sources: list, story_id: str):
-    """Add a correction/retraction item to the RSS feed."""
+    """Add a correction/retraction item to the RSS feed.
+
+    Uses same rich source format as update_rss_feed for consistency.
+    Corrections only have source names (not IDs), so ratings are omitted.
+    """
     import subprocess
 
     gh_pages_dir = BASE_DIR / "gh-pages-dist"
@@ -1997,7 +2120,7 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
         log.warning("gh-pages-dist worktree not found, skipping RSS correction")
         return
 
-    # Format source attribution
+    # Format source text for description
     source_text = ", ".join(sources[:2]) if sources else "verified sources"
 
     # Create title with correction prefix
@@ -2011,15 +2134,24 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = hashlib.md5(f"correction-{story_id}-{pub_date}".encode()).hexdigest()[:12]
 
+    # Build source data (corrections only have names, not full ratings)
+    rich_sources = []
+    for name in sources[:2]:
+        rich_sources.append({
+            "name": name,
+            "accuracy": "—", "bias": "—", "speed": "—", "consensus": "—",
+            "control_type": "correction", "owners": []
+        })
+
     new_item = {
         "title": title,
         "description": description,
-        "source": source_text,
+        "sources": rich_sources,
         "pubDate": pub_date,
         "guid": guid
     }
 
-    # Load existing items
+    # Load existing items (same parsing logic as update_rss_feed)
     items = []
     if feed_file.exists():
         try:
@@ -2027,15 +2159,42 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
             root = tree.getroot()
             channel = root.find("channel")
             for item in channel.findall("item"):
+                item_sources = []
+                for source_el in item.findall("source"):
+                    if source_el.get("name"):
+                        source_data = {
+                            "name": source_el.get("name", ""),
+                            "accuracy": source_el.get("accuracy", "0.0"),
+                            "bias": source_el.get("bias", "0.0"),
+                            "speed": source_el.get("speed", "0.0"),
+                            "consensus": source_el.get("consensus", "0.0"),
+                            "control_type": source_el.get("control_type", "unknown"),
+                            "owners": []
+                        }
+                        for owner_el in source_el.findall("owner"):
+                            source_data["owners"].append({
+                                "name": owner_el.get("name", ""),
+                                "percent": owner_el.get("percent", "0.0")
+                            })
+                        item_sources.append(source_data)
+                    elif source_el.text:
+                        for name in source_el.text.split(", "):
+                            item_sources.append({
+                                "name": name.strip(),
+                                "accuracy": "0.0", "bias": "0.0",
+                                "speed": "0.0", "consensus": "0.0",
+                                "control_type": "unknown", "owners": []
+                            })
+
                 items.append({
                     "title": item.find("title").text or "",
                     "description": item.find("description").text or "",
-                    "source": item.find("source").text if item.find("source") is not None else "",
+                    "sources": item_sources,
                     "pubDate": item.find("pubDate").text or "",
                     "guid": item.find("guid").text or ""
                 })
-        except:
-            pass
+        except Exception as e:
+            log.warning(f"Error parsing existing RSS feed: {e}")
 
     # Add correction at beginning (same prominence as regular stories)
     items.insert(0, new_item)
@@ -2055,7 +2214,23 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = item_data["title"]
         ET.SubElement(item, "description").text = item_data["description"]
-        ET.SubElement(item, "source").text = item_data["source"]
+
+        # Write rich source elements
+        for source_data in item_data.get("sources", []):
+            source_el = ET.SubElement(item, "source",
+                name=source_data["name"],
+                accuracy=source_data["accuracy"],
+                bias=source_data["bias"],
+                speed=source_data["speed"],
+                consensus=source_data["consensus"],
+                control_type=source_data["control_type"]
+            )
+            for owner in source_data.get("owners", []):
+                ET.SubElement(source_el, "owner",
+                    name=owner["name"],
+                    percent=owner["percent"]
+                )
+
         ET.SubElement(item, "pubDate").text = item_data["pubDate"]
         ET.SubElement(item, "guid", isPermaLink="false").text = item_data["guid"]
 
@@ -2090,6 +2265,179 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
         log.info(f"Correction RSS update pushed to gh-pages")
     except subprocess.CalledProcessError as e:
         log.warning(f"Failed to push correction RSS: {e}")
+
+
+def regenerate_rss_feed():
+    """Regenerate RSS feed with rich source data from existing stories.json.
+
+    Parses source names from stories.json, looks up full source data,
+    and rebuilds the feed in the new format per SPECIFICATION.md Section 5.3.3.
+    """
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    feed_file = gh_pages_dir / "feed.xml"
+    stories_file = gh_pages_dir / "stories.json"
+
+    if not stories_file.exists():
+        log.error("stories.json not found in gh-pages-dist")
+        return False
+
+    # Load stories
+    with open(stories_file) as f:
+        data = json.load(f)
+
+    stories = data.get("stories", [])
+    if not stories:
+        log.warning("No stories found in stories.json")
+        return False
+
+    # Build items from stories
+    items = []
+    for story in stories:
+        fact = story.get("fact", "")
+        source_str = story.get("source", "")
+
+        # Parse source string: "BBC News 9.5*|9.0 · Reuters 9.9*|9.5"
+        rich_sources = []
+        for part in source_str.split(" · "):
+            # Extract source name (everything before the first digit or asterisk)
+            import re
+            match = re.match(r'^([A-Za-z\s\-\.]+)', part.strip())
+            if match:
+                source_name = match.group(1).strip()
+                source_id = get_source_id_by_name(source_name)
+                if source_id:
+                    rich_sources.append(get_source_for_rss(source_id))
+                else:
+                    # Source not in config, use minimal data
+                    rich_sources.append({
+                        "name": source_name,
+                        "accuracy": "—", "bias": "—", "speed": "—", "consensus": "—",
+                        "control_type": "unknown", "owners": []
+                    })
+
+        # Use published_at if available, otherwise generate from story order
+        pub_date = story.get("published_at", "")
+        if pub_date:
+            try:
+                dt = datetime.fromisoformat(pub_date.replace("Z", "+00:00"))
+                pub_date = dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
+            except:
+                pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+        else:
+            pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+        guid = story.get("hash", hashlib.md5(f"{fact}{pub_date}".encode()).hexdigest()[:12])
+        title = fact[:80] + "..." if len(fact) > 80 else fact
+
+        items.append({
+            "title": title,
+            "description": fact,
+            "sources": rich_sources[:2],  # Top 2 sources
+            "pubDate": pub_date,
+            "guid": guid
+        })
+
+    # Reverse so newest is first
+    items = items[::-1]
+
+    # Also preserve any existing items not in stories.json (e.g., from previous days)
+    if feed_file.exists():
+        try:
+            tree = ET.parse(feed_file)
+            root = tree.getroot()
+            channel = root.find("channel")
+            existing_guids = {item["guid"] for item in items}
+            for item in channel.findall("item"):
+                guid = item.find("guid").text or ""
+                if guid not in existing_guids:
+                    # Parse and preserve existing items
+                    item_sources = []
+                    for source_el in item.findall("source"):
+                        if source_el.get("name"):
+                            source_data = {
+                                "name": source_el.get("name", ""),
+                                "accuracy": source_el.get("accuracy", "0.0"),
+                                "bias": source_el.get("bias", "0.0"),
+                                "speed": source_el.get("speed", "0.0"),
+                                "consensus": source_el.get("consensus", "0.0"),
+                                "control_type": source_el.get("control_type", "unknown"),
+                                "owners": []
+                            }
+                            for owner_el in source_el.findall("owner"):
+                                source_data["owners"].append({
+                                    "name": owner_el.get("name", ""),
+                                    "percent": owner_el.get("percent", "0.0")
+                                })
+                            item_sources.append(source_data)
+                        elif source_el.text:
+                            # Legacy format - try to convert
+                            for name in source_el.text.split(", "):
+                                name = name.strip()
+                                source_id = get_source_id_by_name(name)
+                                if source_id:
+                                    item_sources.append(get_source_for_rss(source_id))
+                                else:
+                                    item_sources.append({
+                                        "name": name,
+                                        "accuracy": "—", "bias": "—", "speed": "—", "consensus": "—",
+                                        "control_type": "unknown", "owners": []
+                                    })
+
+                    items.append({
+                        "title": item.find("title").text or "",
+                        "description": item.find("description").text or "",
+                        "sources": item_sources,
+                        "pubDate": item.find("pubDate").text or "",
+                        "guid": guid
+                    })
+        except Exception as e:
+            log.warning(f"Error parsing existing feed during regeneration: {e}")
+
+    # Trim to max 100 items
+    items = items[:100]
+
+    # Build RSS XML
+    pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
+    ET.SubElement(channel, "link").text = "https://larryseyer.github.io/jtfnews/"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
+    ET.SubElement(channel, "language").text = "en-us"
+    ET.SubElement(channel, "lastBuildDate").text = pub_date
+
+    for item_data in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = item_data["title"]
+        ET.SubElement(item, "description").text = item_data["description"]
+
+        for source_data in item_data.get("sources", []):
+            source_el = ET.SubElement(item, "source",
+                name=source_data["name"],
+                accuracy=source_data["accuracy"],
+                bias=source_data["bias"],
+                speed=source_data["speed"],
+                consensus=source_data["consensus"],
+                control_type=source_data["control_type"]
+            )
+            for owner in source_data.get("owners", []):
+                ET.SubElement(source_el, "owner",
+                    name=owner["name"],
+                    percent=owner["percent"]
+                )
+
+        ET.SubElement(item, "pubDate").text = item_data["pubDate"]
+        ET.SubElement(item, "guid", isPermaLink="false").text = item_data["guid"]
+
+    # Write with XML declaration
+    indent_xml(rss, space="  ")
+    tree = ET.ElementTree(rss)
+    with open(feed_file, 'wb') as f:
+        tree.write(f, encoding="utf-8", xml_declaration=True)
+
+    log.info(f"RSS feed regenerated: {len(items)} items with rich source data")
+    return True
 
 
 def update_alexa_feed(fact: str, sources: list):
@@ -4020,9 +4368,18 @@ if __name__ == "__main__":
             log.info("Audit applied successfully!")
             sys.exit(0)
 
+        elif sys.argv[1] == "--regenerate-rss":
+            log.info("Regenerating RSS feed with rich source data...")
+            if regenerate_rss_feed():
+                log.info("RSS feed regeneration complete!")
+                print("\nFeed regenerated. Run bu.sh to commit and push.")
+            else:
+                log.error("RSS feed regeneration failed")
+            sys.exit(0)
+
         else:
             print(f"Unknown argument: {sys.argv[1]}")
-            print("Usage: python main.py [--rebuild | --audit | --apply-audit]")
+            print("Usage: python main.py [--rebuild | --audit | --apply-audit | --regenerate-rss]")
             sys.exit(1)
 
     main()
