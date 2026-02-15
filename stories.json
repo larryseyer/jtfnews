@@ -2,8 +2,8 @@
   "date": "2026-02-15",
   "stories": [
     {
-      "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies. Iran and the United States are scheduled to hold nuclear talks in Geneva, according to a Swiss government official. Secretary of State Marco Rubio plans to visit eastern Europe.",
-      "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5 \u00b7 PBS NewsHour 9.4*|9.0 \u00b7 The Straits Times 7.0*|7.5",
+      "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies. Iran and the United States are scheduled to hold nuclear talks in Geneva, according to a Swiss government official. Secretary of State Marco Rubio plans to visit eastern Europe. Russia claims to have captured a dozen Ukrainian villages ahead of the talks.",
+      "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5 \u00b7 PBS NewsHour 9.4*|9.0 \u00b7 The Straits Times 7.0*|7.5 \u00b7 Hindustan Times 7.4*|7.5",
       "audio": "../audio/audio_0.mp3"
     },
     {
@@ -58,6 +58,15 @@
       "source": "Reuters 9.9*|9.5 \u00b7 ABC News Australia 7.2*|9.0",
       "audio": "../audio/audio_10.mp3",
       "published_at": "2026-02-15T07:30:50.916268+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-15-011",
+      "hash": "c10726cfcbd0",
+      "fact": "Israeli airstrikes killed 9 people in Gaza, including in a tent camp, according to Palestinian officials.",
+      "source": "Reuters 9.9*|9.5 \u00b7 The Straits Times 7.3*|7.5",
+      "audio": "../audio/audio_11.mp3",
+      "published_at": "2026-02-15T10:00:49.097789+00:00",
       "status": "published"
     }
   ]
