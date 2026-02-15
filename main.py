@@ -26,6 +26,7 @@ import hashlib
 import logging
 import re
 import xml.etree.ElementTree as ET
+import calendar
 from datetime import datetime, timezone, timedelta
 from functools import wraps
 from pathlib import Path
@@ -215,7 +216,18 @@ ALERT_COOLDOWNS = {
 }
 
 # Budget monitoring
-DAILY_BUDGET = 5.00  # $5/day budget threshold
+MONTHLY_BUDGET = 50.00  # $50/month donation goal
+
+
+def get_daily_budget() -> float:
+    """Calculate daily budget based on days in current month.
+
+    February: $50/28 = $1.79/day
+    March: $50/31 = $1.61/day
+    """
+    today = datetime.now(timezone.utc)
+    days_in_month = calendar.monthrange(today.year, today.month)[1]
+    return MONTHLY_BUDGET / days_in_month
 
 # Degraded service tracking
 _degraded_services = set()  # {"elevenlabs", "twilio"} when degraded
@@ -383,10 +395,11 @@ def track_api_failure(service: str, success: bool):
 
 def check_budget_alert(total_cost: float):
     """Send alert if costs exceed 80% of daily budget."""
-    if total_cost > DAILY_BUDGET * 0.8:
+    daily_budget = get_daily_budget()
+    if total_cost > daily_budget * 0.8:
         if should_send_alert("credits_low"):
-            pct = (total_cost / DAILY_BUDGET) * 100
-            send_alert(f"API costs at ${total_cost:.2f} ({pct:.0f}% of ${DAILY_BUDGET} budget)", "credits_low")
+            pct = (total_cost / daily_budget) * 100
+            send_alert(f"API costs at ${total_cost:.2f} ({pct:.0f}% of ${daily_budget:.2f} budget)", "credits_low")
 
 
 def log_api_usage(service: str, usage: dict):
@@ -464,6 +477,215 @@ def get_api_costs_today() -> dict:
             pass
 
     return {"date": today, "services": {}, "total_cost_usd": 0.0}
+
+
+# =============================================================================
+# ROLLING COST & UPTIME TRACKING
+# =============================================================================
+
+DAILY_COSTS_FILE = DATA_DIR / "daily_costs.json"
+UPTIME_STATS_FILE = DATA_DIR / "uptime_stats.json"
+
+
+def load_daily_costs() -> dict:
+    """Load rolling 30-day cost history."""
+    if DAILY_COSTS_FILE.exists():
+        try:
+            with open(DAILY_COSTS_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+    return {"days": [], "last_updated": None}
+
+
+def save_daily_costs(data: dict):
+    """Save rolling cost history, keeping only last 30 days."""
+    # Prune to 30 days
+    if len(data["days"]) > 30:
+        data["days"] = data["days"][-30:]
+
+    data["last_updated"] = datetime.now(timezone.utc).isoformat()
+
+    try:
+        with open(DAILY_COSTS_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+    except IOError as e:
+        log.warning(f"Could not save daily costs: {e}")
+
+
+def archive_yesterday_cost():
+    """Archive yesterday's cost to rolling history.
+
+    Called on startup or at midnight to record completed day's cost.
+    """
+    yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
+    yesterday_file = DATA_DIR / f"api_usage_{yesterday}.json"
+
+    if not yesterday_file.exists():
+        return  # No data for yesterday
+
+    # Load yesterday's total
+    try:
+        with open(yesterday_file) as f:
+            yesterday_data = json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return
+
+    cost = yesterday_data.get("total_cost_usd", 0)
+
+    # Load existing history
+    history = load_daily_costs()
+
+    # Check if already recorded
+    for day in history["days"]:
+        if day["date"] == yesterday:
+            return  # Already archived
+
+    # Add yesterday's cost
+    history["days"].append({
+        "date": yesterday,
+        "cost_usd": round(cost, 4)
+    })
+
+    save_daily_costs(history)
+    log.info(f"Archived {yesterday} cost: ${cost:.4f}")
+
+
+def get_month_estimate() -> float:
+    """Calculate monthly cost estimate from rolling 30-day history.
+
+    Uses average daily cost from history, falls back to today's cost if
+    no history available.
+    """
+    history = load_daily_costs()
+
+    # Get today's cost
+    today_data = get_api_costs_today()
+    today_cost = today_data.get("total_cost_usd", 0)
+
+    # Calculate days in current month
+    now = datetime.now(timezone.utc)
+    days_in_month = calendar.monthrange(now.year, now.month)[1]
+
+    if not history["days"]:
+        # No history - use today's cost as floor
+        return today_cost
+
+    # Calculate average daily cost from history
+    total_cost = sum(day["cost_usd"] for day in history["days"])
+    avg_daily = total_cost / len(history["days"])
+
+    # Weight recent days more heavily (optional: could add exponential decay)
+    # For now, simple average * days in month
+    return avg_daily * days_in_month
+
+
+def load_uptime_stats() -> dict:
+    """Load monthly uptime tracking stats."""
+    if UPTIME_STATS_FILE.exists():
+        try:
+            with open(UPTIME_STATS_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+    return {
+        "month": None,
+        "total_running_seconds": 0,
+        "total_elapsed_seconds": 0,
+        "availability_pct": 0,
+        "last_heartbeat": None,
+        "session_start": None
+    }
+
+
+def save_uptime_stats(stats: dict):
+    """Save uptime stats to file."""
+    try:
+        with open(UPTIME_STATS_FILE, 'w') as f:
+            json.dump(stats, f, indent=2)
+    except IOError as e:
+        log.warning(f"Could not save uptime stats: {e}")
+
+
+def init_uptime_tracking():
+    """Initialize uptime tracking on startup.
+
+    - If same month: add downtime since last_heartbeat
+    - If new month: reset all counters
+    """
+    now = datetime.now(timezone.utc)
+    current_month = now.strftime("%Y-%m")
+
+    stats = load_uptime_stats()
+
+    if stats["month"] != current_month:
+        # New month - reset counters
+        log.info(f"New month {current_month} - resetting uptime stats")
+        stats = {
+            "month": current_month,
+            "total_running_seconds": 0,
+            "total_elapsed_seconds": 0,
+            "availability_pct": 0,
+            "last_heartbeat": now.isoformat(),
+            "session_start": now.isoformat()
+        }
+    else:
+        # Same month - account for downtime
+        if stats["last_heartbeat"]:
+            try:
+                last_hb = datetime.fromisoformat(stats["last_heartbeat"].replace('Z', '+00:00'))
+                downtime = (now - last_hb).total_seconds()
+                stats["total_elapsed_seconds"] += downtime
+                log.info(f"Resuming uptime tracking - {downtime:.0f}s downtime recorded")
+            except (ValueError, TypeError):
+                pass
+
+        stats["session_start"] = now.isoformat()
+        stats["last_heartbeat"] = now.isoformat()
+
+    save_uptime_stats(stats)
+    return stats
+
+
+def update_uptime_tracking() -> dict:
+    """Update uptime tracking on each heartbeat.
+
+    Adds time since last heartbeat to running totals.
+    Returns current stats for display.
+    """
+    now = datetime.now(timezone.utc)
+    current_month = now.strftime("%Y-%m")
+
+    stats = load_uptime_stats()
+
+    # Check for month rollover
+    if stats["month"] != current_month:
+        stats = init_uptime_tracking()
+        return stats
+
+    # Calculate time since last heartbeat
+    if stats["last_heartbeat"]:
+        try:
+            last_hb = datetime.fromisoformat(stats["last_heartbeat"].replace('Z', '+00:00'))
+            elapsed = (now - last_hb).total_seconds()
+
+            # Cap at 5 minutes - anything longer suggests a restart (handled by init)
+            if elapsed <= 300:
+                stats["total_running_seconds"] += elapsed
+                stats["total_elapsed_seconds"] += elapsed
+        except (ValueError, TypeError):
+            pass
+
+    stats["last_heartbeat"] = now.isoformat()
+
+    # Calculate availability
+    if stats["total_elapsed_seconds"] > 0:
+        stats["availability_pct"] = round(
+            (stats["total_running_seconds"] / stats["total_elapsed_seconds"]) * 100, 1
+        )
+
+    save_uptime_stats(stats)
+    return stats
 
 
 # =============================================================================
@@ -2305,20 +2527,14 @@ def write_monitor_data(cycle_stats: dict):
                 "queue_backup"
             )
 
-    # Calculate monthly estimate based on actual runtime, not time of day
-    # Need minimum runtime for meaningful projection (avoids wild extrapolation at startup)
-    uptime_hours = uptime_seconds / 3600
-    min_hours_for_estimate = 1.0  # Need at least 1 hour of data
+    # Update uptime tracking and get availability
+    uptime_stats = update_uptime_tracking()
 
-    today_cost = api_costs.get("total_cost_usd", 0)
+    # Get monthly estimate from rolling history (persists across restarts)
+    month_estimate = get_month_estimate()
 
-    if uptime_hours >= min_hours_for_estimate:
-        # Project based on actual runtime
-        daily_rate = today_cost / (uptime_hours / 24)
-        month_estimate = daily_rate * 30
-    else:
-        # Not enough data for projection - show today's cost as minimum floor
-        month_estimate = today_cost
+    # Get dynamic daily budget based on days in month
+    daily_budget = get_daily_budget()
 
     # Calculate minutes until next clock-aligned cycle (:00 or :30)
     next_run = get_next_aligned_time()
@@ -2328,6 +2544,7 @@ def write_monitor_data(cycle_stats: dict):
         "timestamp": now.isoformat(),
         "uptime_start": STARTUP_TIME.isoformat(),
         "uptime_seconds": round(uptime_seconds),
+        "availability_pct": uptime_stats.get("availability_pct", 0),
         "cycle": {
             "number": _cycle_stats.get("cycle_number", 0),
             "duration_seconds": cycle_stats.get("duration_seconds", 0),
@@ -2340,8 +2557,8 @@ def write_monitor_data(cycle_stats: dict):
             "today": api_costs.get("services", {}),
             "total_usd": round(api_costs.get("total_cost_usd", 0), 4),
             "month_estimate_usd": round(month_estimate, 2),
-            "daily_budget": DAILY_BUDGET,
-            "budget_pct": round((total_cost / DAILY_BUDGET) * 100, 1) if DAILY_BUDGET > 0 else 0
+            "daily_budget": round(daily_budget, 2),
+            "budget_pct": round((total_cost / daily_budget) * 100, 1) if daily_budget > 0 else 0
         },
         "queue": queue_stats,
         "stories_today": get_stories_today_count(),
@@ -2381,14 +2598,14 @@ def write_sleeping_heartbeat(minutes_remaining: int, last_cycle_stats: dict = No
     total_cost = api_costs.get("total_cost_usd", 0)
     queue_stats = get_queue_stats()
 
-    # Calculate monthly estimate
-    uptime_hours = uptime_seconds / 3600
-    today_cost = api_costs.get("total_cost_usd", 0)
-    if uptime_hours >= 1.0:
-        daily_rate = today_cost / (uptime_hours / 24)
-        month_estimate = daily_rate * 30
-    else:
-        month_estimate = today_cost
+    # Update uptime tracking and get availability
+    uptime_stats = update_uptime_tracking()
+
+    # Get monthly estimate from rolling history (persists across restarts)
+    month_estimate = get_month_estimate()
+
+    # Get dynamic daily budget based on days in month
+    daily_budget = get_daily_budget()
 
     # Use last cycle stats or defaults
     cycle_stats = last_cycle_stats or {}
@@ -2397,6 +2614,7 @@ def write_sleeping_heartbeat(minutes_remaining: int, last_cycle_stats: dict = No
         "timestamp": now.isoformat(),
         "uptime_start": STARTUP_TIME.isoformat(),
         "uptime_seconds": round(uptime_seconds),
+        "availability_pct": uptime_stats.get("availability_pct", 0),
         "cycle": {
             "number": _cycle_stats.get("cycle_number", 0),
             "duration_seconds": cycle_stats.get("duration_seconds", 0),
@@ -2409,8 +2627,8 @@ def write_sleeping_heartbeat(minutes_remaining: int, last_cycle_stats: dict = No
             "today": api_costs.get("services", {}),
             "total_usd": round(api_costs.get("total_cost_usd", 0), 4),
             "month_estimate_usd": round(month_estimate, 2),
-            "daily_budget": DAILY_BUDGET,
-            "budget_pct": round((total_cost / DAILY_BUDGET) * 100, 1) if DAILY_BUDGET > 0 else 0
+            "daily_budget": round(daily_budget, 2),
+            "budget_pct": round((total_cost / daily_budget) * 100, 1) if daily_budget > 0 else 0
         },
         "queue": queue_stats,
         "stories_today": get_stories_today_count(),
@@ -3013,6 +3231,12 @@ def main():
     log.info("JTF News starting...")
     log.info("Facts only. No opinions.")
     log.info("-" * 40)
+
+    # Initialize uptime tracking (handles month rollover and downtime accounting)
+    init_uptime_tracking()
+
+    # Archive yesterday's cost to rolling history
+    archive_yesterday_cost()
 
     # Check quarterly ownership audit
     if check_ownership_audit_needed():

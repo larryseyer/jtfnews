@@ -5049,3 +5049,99 @@
 2026-02-14 22:49:47 | INFO | Monitor data pushed to gh-pages
 2026-02-14 22:49:47 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 265
 2026-02-14 22:49:47 | INFO | Sleeping until 23:00 (10 minutes)...
+2026-02-14 22:52:04 | INFO | Shutting down...
+2026-02-14 22:52:08 | INFO | JTF News starting...
+2026-02-14 22:52:08 | INFO | Facts only. No opinions.
+2026-02-14 22:52:08 | INFO | ----------------------------------------
+2026-02-14 22:52:08 | INFO | Validating services...
+2026-02-14 22:52:08 | INFO | Claude API: OK
+2026-02-14 22:52:08 | INFO | ElevenLabs API: OK (key present)
+2026-02-14 22:52:08 | INFO | All services validated successfully
+2026-02-14 22:52:08 | INFO | ============================================================
+2026-02-14 22:52:08 | INFO | Starting cycle #1
+2026-02-14 22:52:09 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 22:52:11 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 22:52:12 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 22:52:13 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 22:52:14 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 22:52:15 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 22:52:16 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 22:52:18 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 22:52:19 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 22:52:20 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 22:52:22 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 22:52:23 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 22:52:24 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 22:52:25 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 22:52:26 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 22:52:28 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 22:52:29 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 22:52:30 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 22:52:31 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 22:52:33 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 22:52:34 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 22:52:35 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 22:52:36 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 22:52:37 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 22:52:39 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 22:52:40 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 22:52:43 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-14 22:52:45 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 22:52:48 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 22:52:49 | INFO | Total headlines: 268
+2026-02-14 22:52:49 | INFO | Alert throttled (queue_backup): Queue backup: 47 items, oldest 23.9h
+2026-02-14 22:52:50 | INFO | Monitor data pushed to gh-pages
+2026-02-14 22:52:50 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 268
+2026-02-14 22:52:50 | INFO | Sleeping until 23:00 (7 minutes)...
+2026-02-14 22:57:50 | INFO | Monitor data pushed to gh-pages
+2026-02-14 23:00:00 | INFO | ============================================================
+2026-02-14 23:00:00 | INFO | Starting cycle #2
+2026-02-14 23:00:00 | INFO | Expired from queue: Prime Minister of Denmark stated that additional t...
+2026-02-14 23:00:00 | INFO | Rating +1 failure for aljazeera: {'successes': 5, 'failures': 2}
+2026-02-14 23:00:00 | INFO | Expired from queue: Colombia resumes spraying drug crops with drones....
+2026-02-14 23:00:00 | INFO | Rating +1 failure for straits: {'successes': 4, 'failures': 1}
+2026-02-14 23:00:01 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-14 23:00:03 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-14 23:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-14 23:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-14 23:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-14 23:00:07 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-14 23:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-14 23:00:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-14 23:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-14 23:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-14 23:00:14 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-14 23:00:15 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-14 23:00:16 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-14 23:00:17 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-14 23:00:18 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-14 23:00:20 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-14 23:00:21 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-14 23:00:22 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-14 23:00:25 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-14 23:00:26 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-14 23:00:27 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-14 23:00:28 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-14 23:00:29 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-14 23:00:31 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-14 23:00:32 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-14 23:00:34 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-14 23:01:10 | WARNING | Failed to fetch from US Department of Defense: 403 Client Error: Forbidden for url: https://www.defense.gov/News/
+2026-02-14 23:01:12 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-14 23:01:14 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-14 23:01:15 | INFO | Total headlines: 258
+2026-02-14 23:01:16 | INFO | Word overlap pre-filter: 3/45 candidates
+2026-02-14 23:01:17 | INFO | Preferring new source (Al Jazeera English: 6.1) over queued (EFE News Agency: 3.0)
+2026-02-14 23:01:19 | INFO | Generated TTS: Israeli forces killed eight Palestinians in Gaza a...
+2026-02-14 23:01:19 | INFO | Published: Israeli forces killed eight Palestinians in Gaza a...
+2026-02-14 23:01:19 | INFO | RSS feed updated: 60 items
+2026-02-14 23:01:20 | INFO | RSS feed and stories.json pushed to gh-pages
+2026-02-14 23:01:20 | INFO | Alexa feed updated: 5 items
+2026-02-14 23:01:20 | INFO | Alexa feed pushed to gh-pages
+2026-02-14 23:01:20 | INFO | VERIFIED: Israeli forces killed eight Palestinians in Gaza a...
+2026-02-14 23:01:20 | INFO | Rating +1 success for aljazeera: {'successes': 6, 'failures': 2}
+2026-02-14 23:01:20 | INFO | Rating +1 success for efe: {'successes': 1, 'failures': 3}
+2026-02-14 23:01:23 | INFO | Monitor data pushed to gh-pages
+2026-02-14 23:01:23 | INFO | Cycle complete. Published: 1, Queue: 44, Skipped (cached): 256
+2026-02-14 23:01:23 | INFO | Sleeping until 23:30 (28 minutes)...
+2026-02-14 23:06:23 | INFO | Monitor data pushed to gh-pages
