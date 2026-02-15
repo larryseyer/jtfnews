@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-02-15T21:23:28.657596+00:00",
-  "web_refresh_at": "2026-02-15T21:23:28.657596+00:00",
+  "timestamp": "2026-02-15T21:28:29.518364+00:00",
   "uptime_start": "2026-02-15T21:22:36.650928+00:00",
-  "uptime_seconds": 52,
+  "uptime_seconds": 353,
   "availability_pct": 62.6,
   "cycle": {
     "number": 1,
-    "duration_seconds": 51.4,
-    "headlines_scraped": 143,
-    "headlines_processed": 10,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
-    "stories_queued": 2
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
@@ -49,7 +48,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 6,
+    "next_cycle_minutes": 1,
     "degraded_services": []
   }
 }
