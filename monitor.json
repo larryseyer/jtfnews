@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-15T00:37:29.627969+00:00",
+  "timestamp": "2026-02-15T00:42:30.347324+00:00",
   "uptime_start": "2026-02-14T23:35:51.890657+00:00",
-  "uptime_seconds": 3698,
+  "uptime_seconds": 3998,
   "cycle": {
     "number": 2,
     "duration_seconds": 0,
@@ -29,13 +29,13 @@
       }
     },
     "total_usd": 0.1548,
-    "month_estimate_usd": 108.48,
+    "month_estimate_usd": 100.32,
     "daily_budget": 5.0,
     "budget_pct": 3.1
   },
   "queue": {
     "size": 49,
-    "oldest_item_age_hours": 23.2
+    "oldest_item_age_hours": 23.3
   },
   "stories_today": 7,
   "sources": {
@@ -47,7 +47,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 10,
+    "next_cycle_minutes": 5,
     "degraded_services": []
   }
 }
