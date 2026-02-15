@@ -1,65 +1,30 @@
-2026-02-15 15:22:36 | INFO | JTF News starting...
-2026-02-15 15:22:36 | INFO | Facts only. No opinions.
-2026-02-15 15:22:36 | INFO | ----------------------------------------
-2026-02-15 15:22:36 | INFO | Resuming uptime tracking - 27s downtime recorded
-2026-02-15 15:22:36 | INFO | Validating services...
-2026-02-15 15:22:37 | INFO | Claude API: OK
-2026-02-15 15:22:37 | INFO | ElevenLabs API: OK (key present)
-2026-02-15 15:22:37 | INFO | All services validated successfully
-2026-02-15 15:22:37 | INFO | ============================================================
-2026-02-15 15:22:37 | INFO | Starting cycle #1
-2026-02-15 15:22:37 | INFO | Expired from queue: President Zelenskyy stated that questions remain r...
-2026-02-15 15:22:37 | INFO | Rating +1 failure for pbs: {'successes': 6, 'failures': 2}
-2026-02-15 15:22:37 | INFO | Fetched 10 headlines from BBC News (RSS)
-2026-02-15 15:22:38 | INFO | Fetched 10 headlines from NPR (RSS)
-2026-02-15 15:22:39 | INFO | Fetched 10 headlines from The Guardian (RSS)
-2026-02-15 15:22:41 | INFO | Fetched 10 headlines from France 24 (RSS)
-2026-02-15 15:22:42 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
-2026-02-15 15:22:44 | INFO | Fetched 10 headlines from CBC News (RSS)
-2026-02-15 15:22:45 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
-2026-02-15 15:22:46 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
-2026-02-15 15:22:48 | INFO | Fetched 10 headlines from Irish Times (RSS)
-2026-02-15 15:22:49 | INFO | Fetched 10 headlines from White House (HTML)
-2026-02-15 15:22:50 | INFO | Fetched 1 headlines from Congress.gov (RSS)
-2026-02-15 15:22:51 | INFO | Fetched 10 headlines from Federal Register (RSS)
-2026-02-15 15:22:53 | INFO | Fetched 2 headlines from Supreme Court (HTML)
-2026-02-15 15:22:57 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
-2026-02-15 15:22:58 | INFO | Fetched 10 headlines from UK Parliament (RSS)
-2026-02-15 15:23:00 | INFO | Fetched 10 headlines from European Commission (RSS)
-2026-02-15 15:23:01 | INFO | Total headlines: 143
-2026-02-15 15:23:04 | INFO | Low confidence (45%): DNA found on a glove appears to match DN...
-2026-02-15 15:23:06 | INFO | Word overlap pre-filter: 13/60 candidates
-2026-02-15 15:23:07 | INFO | Queued: Iranian Foreign Minister travels to Gene...
-2026-02-15 15:23:07 | INFO | Word overlap pre-filter: 8/61 candidates
-2026-02-15 15:23:08 | INFO | Queued: A 12-year-old was killed in a shooting i...
-2026-02-15 15:23:12 | INFO | Low confidence (75%): NSW Police will pay $1.89 million in leg...
-2026-02-15 15:23:22 | INFO | Not newsworthy (none): A search continues for a whale entangled...
-2026-02-15 15:23:23 | INFO | Word overlap pre-filter: 5/62 candidates
-2026-02-15 15:23:28 | INFO | Low confidence (75%): Senator Angus Taylor demands Prime Minis...
-2026-02-15 15:23:28 | INFO | Alert throttled (queue_backup): Queue backup: 62 items, oldest 23.9h
-2026-02-15 15:23:29 | INFO | Monitor data pushed to gh-pages
-2026-02-15 15:23:29 | INFO | Cycle complete. Published: 0, Queue: 62, Skipped (cached): 133
-2026-02-15 15:23:29 | INFO | Sleeping until 15:30 (6 minutes)...
-2026-02-15 15:28:30 | INFO | Monitor data pushed to gh-pages
-2026-02-15 15:30:01 | INFO | ============================================================
-2026-02-15 15:30:01 | INFO | Starting cycle #2
-2026-02-15 15:30:01 | INFO | Fetched 10 headlines from BBC News (RSS)
-2026-02-15 15:30:02 | INFO | Fetched 10 headlines from NPR (RSS)
-2026-02-15 15:30:03 | INFO | Fetched 10 headlines from The Guardian (RSS)
-2026-02-15 15:30:04 | INFO | Fetched 10 headlines from France 24 (RSS)
-2026-02-15 15:30:06 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
-2026-02-15 15:30:07 | INFO | Fetched 10 headlines from CBC News (RSS)
-2026-02-15 15:30:08 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
-2026-02-15 15:30:10 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
-2026-02-15 15:30:11 | INFO | Fetched 10 headlines from Irish Times (RSS)
-2026-02-15 15:30:12 | INFO | Fetched 10 headlines from White House (HTML)
-2026-02-15 15:30:13 | INFO | Fetched 1 headlines from Congress.gov (RSS)
-2026-02-15 15:30:14 | INFO | Fetched 10 headlines from Federal Register (RSS)
-2026-02-15 15:30:15 | INFO | Fetched 2 headlines from Supreme Court (HTML)
-2026-02-15 15:30:18 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
-2026-02-15 15:30:20 | INFO | Fetched 10 headlines from UK Parliament (RSS)
-2026-02-15 15:30:22 | INFO | Fetched 10 headlines from European Commission (RSS)
-2026-02-15 15:30:23 | INFO | Total headlines: 143
-2026-02-15 15:30:24 | INFO | Monitor data pushed to gh-pages
-2026-02-15 15:30:24 | INFO | Cycle complete. Published: 0, Queue: 62, Skipped (cached): 143
-2026-02-15 15:30:24 | INFO | Sleeping until 16:00 (29 minutes)...
+2026-02-15 15:32:44 | INFO | JTF News starting...
+2026-02-15 15:32:44 | INFO | Facts only. No opinions.
+2026-02-15 15:32:44 | INFO | ----------------------------------------
+2026-02-15 15:32:44 | INFO | Resuming uptime tracking - 141s downtime recorded
+2026-02-15 15:32:44 | INFO | Validating services...
+2026-02-15 15:32:44 | INFO | Claude API: OK
+2026-02-15 15:32:44 | INFO | ElevenLabs API: OK (key present)
+2026-02-15 15:32:44 | INFO | All services validated successfully
+2026-02-15 15:32:44 | INFO | ============================================================
+2026-02-15 15:32:44 | INFO | Starting cycle #1
+2026-02-15 15:32:44 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-15 15:32:45 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-15 15:32:46 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-15 15:32:48 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-15 15:32:49 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-15 15:32:51 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-15 15:32:52 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-15 15:32:53 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-15 15:32:54 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-15 15:32:56 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-15 15:32:57 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-15 15:32:58 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-15 15:32:59 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-15 15:33:02 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-15 15:33:04 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-15 15:33:06 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-15 15:33:07 | INFO | Total headlines: 143
+2026-02-15 15:33:08 | INFO | Monitor data pushed to gh-pages
+2026-02-15 15:33:08 | INFO | Cycle complete. Published: 0, Queue: 0, Skipped (cached): 143
+2026-02-15 15:33:08 | INFO | Sleeping until 16:00 (26 minutes)...
