@@ -1,24 +1,24 @@
 {
-  "timestamp": "2026-02-15T05:21:34.253083+00:00",
-  "uptime_start": "2026-02-15T05:15:51.856472+00:00",
-  "uptime_seconds": 342,
-  "availability_pct": 27.6,
+  "timestamp": "2026-02-15T05:22:35.426067+00:00",
+  "uptime_start": "2026-02-15T05:21:50.578115+00:00",
+  "uptime_seconds": 45,
+  "availability_pct": 35.2,
   "cycle": {
     "number": 1,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "duration_seconds": 43.7,
+    "headlines_scraped": 268,
+    "headlines_processed": 2,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 466,
-        "cost_usd": 0.17403375000000018,
+        "calls": 470,
+        "cost_usd": 0.17493000000000017,
         "details": {
-          "input_tokens": 426300,
-          "output_tokens": 53967
+          "input_tokens": 428830,
+          "output_tokens": 54178
         }
       },
       "elevenlabs": {
@@ -29,28 +29,26 @@
         }
       }
     },
-    "total_usd": 0.2085,
+    "total_usd": 0.2094,
     "month_estimate_usd": 9.44,
     "daily_budget": 1.79,
     "budget_pct": 11.7
   },
   "queue": {
-    "size": 44,
+    "size": 45,
     "oldest_item_age_hours": 23.9
   },
   "stories_today": 10,
   "sources": {
     "total": 30,
-    "successful": 29,
-    "failed": [
-      "US Department of Defense"
-    ]
+    "successful": 30,
+    "failed": []
   },
   "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 8,
+    "next_cycle_minutes": 7,
     "degraded_services": []
   }
 }
