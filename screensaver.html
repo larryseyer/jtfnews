@@ -732,9 +732,13 @@
             // Update ticker with new stories
             updateTickerAnimation();
           }
+        } else {
+          // File exists but no stories - show fallback
+          if (stories.length === 0) updateTickerAnimation();
         }
       } catch (e) {
-        // No stories yet
+        // No stories yet - show fallback
+        if (stories.length === 0) updateTickerAnimation();
       }
     }
 
