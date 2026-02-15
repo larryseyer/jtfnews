@@ -25,11 +25,11 @@ cd "$SOURCE" || exit 1
 zip -r "$ZIP_FILE" . -x "media/*" "media/" "gh-pages-dist/*" "gh-pages-dist/" "audio/*" "audio/" "data/*" "data/" "venv/*" "venv/" "__pycache__/*" "__pycache__/" ".git/*" ".git/" ".env"
 
 # =============================================================================
-# DEPLOY TO PRODUCTION (disabled during testing phase)
+# DEPLOY TO PRODUCTION
 # =============================================================================
-# echo ""
-# echo "=== Deploying to production ==="
-# ./deploy.sh
+echo ""
+echo "=== Deploying to production ==="
+./deploy.sh
 
 # =============================================================================
 # DEPLOY TO GITHUB PAGES (using worktree)

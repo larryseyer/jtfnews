@@ -249,8 +249,12 @@ Across all channels, always:
 ## Commands
 
 ### Development Machine
-- **`./bu.sh "commit message"`** - ALWAYS use this for commits. Does git commit+push AND creates timestamped backup zip to Dropbox (excludes media/)
-- `./deploy.sh` - Rsync source files to deploy machine
+- **`./bu.sh "commit message"`** - ALWAYS use this for commits. Does git commit+push AND creates timestamped backup zip to Dropbox (excludes media/). Also deploys to production automatically.
+- `./deploy.sh` - Deploy code + web only (fast, daily use)
+- `./deploy.sh --media` - Include media sync (only copies newer files)
+- `./deploy.sh --data` - Sync data folder (requires confirmation)
+- `./deploy.sh --full` - Code + web + media
+- `./deploy.sh --dry-run` - Preview what would be copied (combinable with other flags)
 
 ### Deploy Machine (run these ON the deploy machine)
 - `./start.sh` - Start the JTF News service (normal operation)
@@ -313,23 +317,26 @@ When modifying overlay files that exist in BOTH locations, you MUST update BOTH:
 
 **Files that exist ONLY in gh-pages-dist/:** index.html, how-it-works.html, whitepaper.html, screensaver-setup.html, feed.xml
 
-## Testing Workflow
+## Testing & Deployment Workflow
 
-### CRITICAL: DEPLOY MACHINE DOES NOT EXIST
+### Deploy Machine is ACTIVE
 
-**Claude: The deploy machine DOES NOT EXIST for you until the user explicitly says otherwise.**
+The deploy machine is now in use at `/Volumes/MacLive/Users/larryseyer/JTFNews`.
 
-- DO NOT mention "restart on deploy machine"
-- DO NOT reference the deploy machine in any instructions
-- DO NOT suggest testing on deploy
-- The ONLY machine that exists is DEVELOP (`/Users/larryseyer/JTFNews`)
-- `bu.sh` still syncs files to deploy (for backup), but IGNORE that - it's invisible to you
-- When code changes are made, say "restart the service" - NOT "restart on deploy"
+**Deployment scenarios:**
+| Scenario | Command |
+|----------|---------|
+| Daily code changes | `./deploy.sh` |
+| Preview what would deploy | `./deploy.sh --dry-run` |
+| Added spring images | `./deploy.sh --media` |
+| Preview media sync | `./deploy.sh --media --dry-run` |
+| Stories format changed | `./deploy.sh --data` |
+| Full refresh (rare) | `./deploy.sh --full` |
 
-**All testing is done on the DEVELOP machine until ALL bugs are fixed.**
-- Deploy machine receives code via `./deploy.sh` but the service does NOT run there during testing
-- Only switch to deploy machine once the user explicitly confirms testing is complete
-- The `.env` file with API keys stays on each machine separately (never synced)
+**Notes:**
+- `bu.sh` automatically runs `./deploy.sh` (code-only) after each commit
+- The `.env` file with API keys is synced from dev to deploy
+- After deploying code changes, restart the service on the deploy machine with `./start.sh`
 
 ## IMPORTANT: Two-Machine Architecture (Apple Silicon to Intel)
 
