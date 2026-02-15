@@ -2,8 +2,8 @@
   "date": "2026-02-15",
   "stories": [
     {
-      "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies. Iran and the United States are scheduled to hold nuclear talks in Geneva, according to a Swiss government official. Secretary of State Marco Rubio plans to visit eastern Europe. Russia claims to have captured a dozen Ukrainian villages ahead of the talks.",
-      "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5 \u00b7 PBS NewsHour 9.4*|9.0 \u00b7 The Straits Times 7.0*|7.5 \u00b7 Hindustan Times 7.4*|7.5",
+      "fact": "Secretary of State Marco Rubio characterized the United States as a critical friend to allies. Iran and the United States are scheduled to hold nuclear talks in Geneva, according to a Swiss government official. Secretary of State Marco Rubio plans to visit eastern Europe. Russia claims to have captured a dozen Ukrainian villages ahead of the talks. stated that Washington does not need vassals but strong partners.",
+      "source": "BBC News 9.5*|9.0 \u00b7 Reuters 9.9*|9.5 \u00b7 PBS NewsHour 9.4*|9.0 \u00b7 The Straits Times 7.0*|7.5 \u00b7 Hindustan Times 7.4*|7.5 \u00b7 Euronews 8.4*|8.5",
       "audio": "../audio/audio_0.mp3"
     },
     {
@@ -112,6 +112,15 @@
       "source": "Hindustan Times 7.9*|7.5 \u00b7 The Straits Times 7.8*|7.5",
       "audio": "../audio/audio_16.mp3",
       "published_at": "2026-02-15T15:31:18.853588+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-15-017",
+      "hash": "ac94f191402d",
+      "fact": "The Israeli cabinet approved West Bank land registration.",
+      "source": "The Straits Times 8.0|7.5 \u00b7 Al Jazeera English 7.7*|7.5",
+      "audio": "../audio/audio_17.mp3",
+      "published_at": "2026-02-15T16:01:26.606318+00:00",
       "status": "published"
     }
   ]
