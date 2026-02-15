@@ -20,7 +20,7 @@ body {
 
 #lower-third {
     position: absolute;
-    bottom: 8%;
+    bottom: 12%;  /* Raised to make room for ticker */
     left: 5%;
     max-width: 90%;
 
@@ -112,4 +112,113 @@ body {
         rgba(255, 255, 255, 0.2) 50%,
         transparent 100%);
     pointer-events: none;
+}
+
+/* ========== News Ticker ========== */
+/* Scrolling ticker for past stories - viewers joining mid-stream */
+
+#news-ticker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    overflow: hidden;
+
+    /* Very dark background for small text readability */
+    background: rgba(10, 15, 30, 0.92);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+    /* Subtle top border for definition */
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* Strong shadow for depth */
+    box-shadow:
+        0 -4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    /* Center content vertically */
+    display: flex;
+    align-items: center;
+}
+
+#ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 1920px;  /* Start off-screen right (OBS canvas width) */
+    animation: scroll-ticker linear infinite;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.3px;
+
+    /* Animation distance set by JavaScript via custom property */
+    --scroll-distance: 0px;
+}
+
+/* Ticker story text */
+#ticker-content .ticker-story {
+    display: inline;
+}
+
+/* Time ago prefix */
+#ticker-content .ticker-time {
+    color: rgba(212, 175, 55, 0.95);
+    font-weight: 500;
+    margin-right: 12px;
+}
+
+/* Story fact text */
+#ticker-content .ticker-fact {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Source attribution */
+#ticker-content .ticker-source {
+    color: rgba(147, 197, 253, 0.8);  /* Soft blue */
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+/* Spacer between stories - screen-width gap for breathing room */
+#ticker-content .ticker-spacer {
+    display: inline-block;
+    width: 1920px;
+}
+
+/* Continuous scroll animation - distance set via JS custom property */
+@keyframes scroll-ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(var(--scroll-distance, -4000px));
+    }
+}
+
+/* Edge fade effect for smooth entry/exit */
+#news-ticker::before,
+#news-ticker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#news-ticker::before {
+    left: 0;
+    background: linear-gradient(90deg,
+        rgba(10, 15, 30, 1) 0%,
+        rgba(10, 15, 30, 0) 100%);
+}
+
+#news-ticker::after {
+    right: 0;
+    background: linear-gradient(90deg,
+        rgba(10, 15, 30, 0) 0%,
+        rgba(10, 15, 30, 1) 100%);
 }

@@ -50,7 +50,7 @@
     /* ========== Lower Third Overlay ========== */
     #lower-third {
       position: absolute;
-      bottom: 5%;
+      bottom: 12%;  /* Raised to make room for ticker */
       left: 3%;
       right: 3%;
       max-width: 94%;
@@ -212,6 +212,125 @@
       pointer-events: none;
     }
 
+    /* ========== News Ticker ========== */
+    #news-ticker {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: clamp(50px, 8vh, 90px);
+      overflow: hidden;
+      z-index: 50;
+
+      /* Very dark background for small text readability */
+      background: rgba(10, 15, 30, 0.92);
+      backdrop-filter: blur(40px) saturate(180%);
+      -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+      /* Subtle top border */
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+      /* Shadow for depth */
+      box-shadow:
+        0 -4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+      /* Center content vertically */
+      display: flex;
+      align-items: center;
+    }
+
+    #ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100vw;
+      animation: scroll-ticker linear infinite;
+      font-size: clamp(16px, 2.5vw, 32px);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: 0.3px;
+      --scroll-distance: 0px;
+    }
+
+    #ticker-content .ticker-story {
+      display: inline;
+    }
+
+    #ticker-content .ticker-time {
+      color: rgba(212, 175, 55, 0.95);
+      font-weight: 500;
+      margin-right: clamp(6px, 1vw, 12px);
+    }
+
+    #ticker-content .ticker-fact {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    #ticker-content .ticker-source {
+      color: rgba(147, 197, 253, 0.8);
+      font-size: clamp(14px, 2vw, 28px);
+      margin-left: clamp(6px, 1vw, 12px);
+    }
+
+    #ticker-content .ticker-spacer {
+      display: inline-block;
+      width: 100vw;
+    }
+
+    @keyframes scroll-ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(var(--scroll-distance, -4000px)); }
+    }
+
+    /* Edge fade effect */
+    #news-ticker::before,
+    #news-ticker::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: clamp(50px, 8vw, 100px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    #news-ticker::before {
+      left: 0;
+      background: linear-gradient(90deg,
+        rgba(10, 15, 30, 1) 0%,
+        rgba(10, 15, 30, 0) 100%);
+    }
+
+    #news-ticker::after {
+      right: 0;
+      background: linear-gradient(90deg,
+        rgba(10, 15, 30, 0) 0%,
+        rgba(10, 15, 30, 1) 100%);
+    }
+
+    /* Mobile portrait - smaller ticker */
+    @media (max-width: 600px) and (orientation: portrait) {
+      #news-ticker {
+        height: clamp(40px, 7vh, 60px);
+      }
+      #ticker-content {
+        font-size: clamp(12px, 3.5vw, 18px);
+      }
+      #ticker-content .ticker-source {
+        font-size: clamp(10px, 3vw, 16px);
+      }
+    }
+
+    /* Mobile landscape - compact ticker */
+    @media (max-height: 500px) and (orientation: landscape) {
+      #news-ticker {
+        height: clamp(35px, 8vh, 50px);
+      }
+      #ticker-content {
+        font-size: clamp(12px, 2.5vh, 20px);
+      }
+    }
+
     /* ========== Audio Indicator ========== */
     #audio-indicator {
       position: absolute;
@@ -242,6 +361,11 @@
     <div id="brand-tab">JTF NEWS</div>
     <div id="source-bar"></div>
     <div id="fact-text"></div>
+  </div>
+
+  <!-- Scrolling news ticker for viewers joining mid-stream -->
+  <div id="news-ticker">
+    <div id="ticker-content"></div>
   </div>
 
   <!-- Audio element (used only if audio=true) -->
@@ -423,6 +547,7 @@
     const MAX_GAP_TIME = 120000;     // Maximum 2 minutes between stories
     const MIN_REPLAY_INTERVAL = 30 * 60 * 1000; // 30 minutes minimum between replays
     const MAX_SILENCE_DURATION = 15 * 60 * 1000; // 15 minutes max silence before forcing replay
+    const TICKER_SPEED = 100;        // Pixels per second for ticker scroll
 
     let stories = [];
     let newsShuffledQueue = [];      // Shuffled story queue for current cycle
@@ -441,6 +566,86 @@
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
       }
       return shuffled;
+    }
+
+    // ========== News Ticker ==========
+
+    /**
+     * Calculate how long ago a story was verified
+     */
+    function getTimeAgo(timestamp) {
+      if (!timestamp) return '';
+      const now = Date.now();
+      const storyTime = new Date(timestamp).getTime();
+      const diffMs = now - storyTime;
+      const diffMinutes = Math.floor(diffMs / (1000 * 60));
+      const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+
+      if (diffMinutes < 5) return 'Just now';
+      if (diffMinutes < 60) return `${diffMinutes} min ago`;
+      if (diffHours === 1) return '1 hour ago';
+      if (diffHours < 12) return `${diffHours} hours ago`;
+      return 'Earlier today';
+    }
+
+    /**
+     * Parse source string to extract first source name and scores
+     * Input: "Reuters 9.9*|9.5 · AP 9.6|8.5"
+     */
+    function parseFirstSource(sourceStr) {
+      if (!sourceStr) return null;
+      const firstSource = sourceStr.split('·')[0].trim();
+      if (!firstSource) return null;
+      const match = firstSource.match(/^(.+?)\s+([\d.]+)\*?\|([\d.]+)$/);
+      if (!match) return null;
+      return { name: match[1].trim(), reliability: match[2], bias: match[3] };
+    }
+
+    /**
+     * Build ticker content HTML from stories array
+     */
+    function buildTickerContent() {
+      if (stories.length === 0) return '';
+
+      const sortedStories = [...stories].sort((a, b) => {
+        const timeA = a.timestamp || a.published_at || 0;
+        const timeB = b.timestamp || b.published_at || 0;
+        return new Date(timeA) - new Date(timeB);
+      });
+
+      const items = sortedStories.map(story => {
+        const timeAgo = getTimeAgo(story.timestamp || story.published_at);
+        const source = parseFirstSource(story.source);
+        let attribution = '';
+        if (source) {
+          attribution = `(${source.name} · R:${source.reliability}, B:${source.bias})`;
+        }
+        return `<span class="ticker-story">` +
+          `<span class="ticker-time">${timeAgo}:</span>` +
+          `<span class="ticker-fact">${story.fact}</span>` +
+          `<span class="ticker-source">${attribution}</span>` +
+          `</span>`;
+      });
+
+      return items.join('<span class="ticker-spacer"></span>');
+    }
+
+    /**
+     * Update ticker animation based on content width
+     */
+    function updateTickerAnimation() {
+      const tickerContent = document.getElementById('ticker-content');
+      if (!tickerContent) return;
+
+      tickerContent.innerHTML = buildTickerContent();
+
+      requestAnimationFrame(() => {
+        const contentWidth = tickerContent.scrollWidth;
+        const duration = contentWidth / TICKER_SPEED;
+        tickerContent.style.setProperty('--scroll-distance', `-${contentWidth}px`);
+        tickerContent.style.animationDuration = `${duration}s`;
+        console.log(`[Ticker] Updated: ${stories.length} stories, duration: ${duration.toFixed(1)}s`);
+      });
     }
 
     function reshuffleNewsForNewCycle() {
@@ -505,8 +710,12 @@
         if (data.stories && data.stories.length > 0) {
           const oldCount = stories.length;
           stories = data.stories;
-          if (stories.length !== oldCount && newsShuffledQueue.length <= 1) {
-            reshuffleNewsForNewCycle();
+          if (stories.length !== oldCount) {
+            if (newsShuffledQueue.length <= 1) {
+              reshuffleNewsForNewCycle();
+            }
+            // Update ticker with new stories
+            updateTickerAnimation();
           }
         }
       } catch (e) {

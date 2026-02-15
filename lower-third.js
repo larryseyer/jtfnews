@@ -51,6 +51,9 @@ const FRESH_THRESHOLD = 6 * 60 * 60 * 1000;   // < 6 hours = fresh (3x weight)
 const MEDIUM_THRESHOLD = 12 * 60 * 60 * 1000; // 6-12 hours = medium (2x weight)
 // > 12 hours = stale (1x weight)
 
+// Ticker configuration
+const TICKER_SPEED = 100;  // Pixels per second
+
 /**
  * Calculate how long ago a story was verified
  * Returns human-readable string like "2 hours ago" or "Earlier today"
@@ -94,6 +97,96 @@ function getFreshnessWeight(story) {
     if (age < FRESH_THRESHOLD) return 3;
     if (age < MEDIUM_THRESHOLD) return 2;
     return 1;
+}
+
+// ========== News Ticker ==========
+
+/**
+ * Parse source string to extract first source name and scores
+ * Input format: "Reuters 9.9*|9.5 · AP 9.6|8.5"
+ * Returns: { name: "Reuters", reliability: "9.9", bias: "9.5" }
+ */
+function parseFirstSource(sourceStr) {
+    if (!sourceStr) return null;
+
+    // Get first source (before the first ·)
+    const firstSource = sourceStr.split('·')[0].trim();
+    if (!firstSource) return null;
+
+    // Parse: "SourceName Score*|BiasScore" or "SourceName Score|BiasScore"
+    // The * may or may not be present
+    const match = firstSource.match(/^(.+?)\s+([\d.]+)\*?\|([\d.]+)$/);
+    if (!match) return null;
+
+    return {
+        name: match[1].trim(),
+        reliability: match[2],
+        bias: match[3]
+    };
+}
+
+/**
+ * Build ticker content HTML from stories array
+ * Stories sorted oldest first for chronological flow
+ */
+function buildTickerContent() {
+    if (stories.length === 0) return '';
+
+    // Sort stories by timestamp (oldest first)
+    const sortedStories = [...stories].sort((a, b) => {
+        const timeA = a.timestamp || a.published_at || 0;
+        const timeB = b.timestamp || b.published_at || 0;
+        return new Date(timeA) - new Date(timeB);
+    });
+
+    const items = sortedStories.map(story => {
+        const timeAgo = getTimeAgo(story.timestamp || story.published_at);
+        const source = parseFirstSource(story.source);
+
+        // Build attribution string: (Source · R:9.8, B:9.5)
+        let attribution = '';
+        if (source) {
+            attribution = `(${source.name} · R:${source.reliability}, B:${source.bias})`;
+        }
+
+        return `<span class="ticker-story">` +
+            `<span class="ticker-time">${timeAgo}:</span>` +
+            `<span class="ticker-fact">${story.fact}</span>` +
+            `<span class="ticker-source">${attribution}</span>` +
+            `</span>`;
+    });
+
+    // Join with spacers
+    return items.join('<span class="ticker-spacer"></span>');
+}
+
+/**
+ * Update ticker animation based on content width
+ * Speed: ~100px/second
+ */
+function updateTickerAnimation() {
+    const tickerContent = document.getElementById('ticker-content');
+    if (!tickerContent) return;
+
+    // Build and set content
+    tickerContent.innerHTML = buildTickerContent();
+
+    // Calculate animation duration based on content width
+    // Need to wait for render to get accurate width
+    requestAnimationFrame(() => {
+        const contentWidth = tickerContent.scrollWidth;
+        const screenWidth = 1920;  // OBS canvas width
+        const totalDistance = contentWidth;  // scrollWidth includes the 1920px padding
+
+        // Calculate duration: distance / speed
+        const duration = totalDistance / TICKER_SPEED;
+
+        // Set animation properties
+        tickerContent.style.setProperty('--scroll-distance', `-${totalDistance}px`);
+        tickerContent.style.animationDuration = `${duration}s`;
+
+        console.log(`[Ticker] Updated: ${stories.length} stories, width: ${contentWidth}px, duration: ${duration.toFixed(1)}s`);
+    });
 }
 
 /**
@@ -184,6 +277,9 @@ async function loadStories() {
                     reshuffleForNewCycle();
                     isFirstLoad = false;
                 }
+
+                // Update ticker with new stories
+                updateTickerAnimation();
             } else {
                 stories = data.stories;
             }
@@ -274,8 +370,8 @@ async function displayStory(story) {
         // Audio failed, use text-based timing
         await sleep(calculateHoldTime(story.fact));
     } else {
-        // Audio played, keep text visible 2 more seconds after audio ends
-        await sleep(2500);
+        // Audio played, keep text visible 6 seconds after audio ends for readability
+        await sleep(6000);
     }
 
     // Fade out
