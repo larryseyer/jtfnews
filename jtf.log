@@ -7320,3 +7320,119 @@
 2026-02-15 14:17:54 | INFO | Cycle complete. Published: 0, Queue: 68, Skipped (cached): 264
 2026-02-15 14:17:54 | INFO | Sleeping until 14:30 (12 minutes)...
 2026-02-15 14:22:54 | INFO | Monitor data pushed to gh-pages
+2026-02-15 14:27:55 | INFO | Monitor data pushed to gh-pages
+2026-02-15 14:29:24 | INFO | Shutting down...
+2026-02-15 14:29:41 | INFO | JTF News starting...
+2026-02-15 14:29:41 | INFO | Facts only. No opinions.
+2026-02-15 14:29:41 | INFO | ----------------------------------------
+2026-02-15 14:29:41 | INFO | Resuming uptime tracking - 107s downtime recorded
+2026-02-15 14:29:41 | INFO | Validating services...
+2026-02-15 14:29:42 | INFO | Claude API: OK
+2026-02-15 14:29:42 | INFO | ElevenLabs API: OK (key present)
+2026-02-15 14:29:42 | INFO | All services validated successfully
+2026-02-15 14:29:42 | INFO | ============================================================
+2026-02-15 14:29:42 | INFO | Starting cycle #1
+2026-02-15 14:29:42 | INFO | Expired from queue: The son of Iran's last shah urges U.S. military in...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for reuters: {'successes': 9, 'failures': 1}
+2026-02-15 14:29:42 | INFO | Expired from queue: President Volodymyr Zelenskiy stated that the Unit...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for reuters: {'successes': 9, 'failures': 2}
+2026-02-15 14:29:42 | INFO | Expired from queue: American speedskater Jordan Stolz won gold in the ...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for npr: {'successes': 7, 'failures': 2}
+2026-02-15 14:29:42 | INFO | Expired from queue: Nine people are under investigation in connection ...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for euronews: {'successes': 4, 'failures': 1}
+2026-02-15 14:29:42 | INFO | Expired from queue: A driver fled the scene of a three-car crash in Li...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for irish: {'successes': 0, 'failures': 1}
+2026-02-15 14:29:42 | INFO | Expired from queue: A memorial was held 45 years after the Stardust fi...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for irish: {'successes': 0, 'failures': 2}
+2026-02-15 14:29:42 | INFO | Expired from queue: The Taoiseach stated the government is open to ban...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for irish: {'successes': 0, 'failures': 3}
+2026-02-15 14:29:42 | INFO | Expired from queue: A man appeared in court charged with murder in Bel...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for irish: {'successes': 0, 'failures': 4}
+2026-02-15 14:29:42 | INFO | Expired from queue: Venezuela released 17 political prisoners, accordi...
+2026-02-15 14:29:42 | INFO | Rating +1 failure for straits: {'successes': 11, 'failures': 3}
+2026-02-15 14:29:42 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-15 14:29:44 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-15 14:29:45 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-15 14:29:46 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-15 14:29:47 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-15 14:29:48 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-15 14:29:50 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-15 14:29:51 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-15 14:29:53 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-15 14:29:54 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-15 14:29:59 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-15 14:30:00 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-15 14:30:01 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-15 14:30:03 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-15 14:30:04 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-15 14:30:05 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-15 14:30:06 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-15 14:30:08 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-15 14:30:09 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-15 14:30:10 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-15 14:30:11 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-15 14:30:12 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-15 14:30:13 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-15 14:30:15 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-15 14:30:16 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-15 14:30:18 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-15 14:30:21 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-15 14:30:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-15 14:30:24 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-15 14:30:25 | INFO | Total headlines: 268
+2026-02-15 14:30:28 | INFO | Duplicate: The Israeli cabinet approved West Bank l...
+2026-02-15 14:30:31 | INFO | Low confidence (75%): Board of Peace members have pledged more...
+2026-02-15 14:30:33 | INFO | Low confidence (75%): The U.S. boarded a second tanker in the ...
+2026-02-15 14:30:39 | INFO | Word overlap pre-filter: 4/59 candidates
+2026-02-15 14:30:40 | INFO | Queued: DNA was recovered from a glove found nea...
+2026-02-15 14:30:42 | INFO | Word overlap pre-filter: 5/60 candidates
+2026-02-15 14:30:43 | INFO | Queued: Flood warnings issued for parts of Queen...
+2026-02-15 14:30:48 | INFO | Alert throttled (queue_backup): Queue backup: 61 items, oldest 23.5h
+2026-02-15 14:30:49 | INFO | Monitor data pushed to gh-pages
+2026-02-15 14:30:49 | INFO | Cycle complete. Published: 0, Queue: 61, Skipped (cached): 259
+2026-02-15 14:30:49 | INFO | Sleeping until 15:00 (29 minutes)...
+2026-02-15 14:32:26 | INFO | Shutting down...
+2026-02-15 14:32:29 | INFO | JTF News starting...
+2026-02-15 14:32:29 | INFO | Facts only. No opinions.
+2026-02-15 14:32:29 | INFO | ----------------------------------------
+2026-02-15 14:32:29 | INFO | Resuming uptime tracking - 101s downtime recorded
+2026-02-15 14:32:29 | INFO | Validating services...
+2026-02-15 14:32:29 | INFO | Claude API: OK
+2026-02-15 14:32:29 | INFO | ElevenLabs API: OK (key present)
+2026-02-15 14:32:29 | INFO | All services validated successfully
+2026-02-15 14:32:29 | INFO | ============================================================
+2026-02-15 14:32:29 | INFO | Starting cycle #1
+2026-02-15 14:32:30 | INFO | Fetched 10 headlines from Associated Press (RSS)
+2026-02-15 14:32:32 | INFO | Fetched 10 headlines from Reuters (RSS)
+2026-02-15 14:32:33 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-15 14:32:34 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-15 14:32:35 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-15 14:32:36 | INFO | Fetched 10 headlines from Al Jazeera English (RSS)
+2026-02-15 14:32:37 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-15 14:32:39 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-15 14:32:40 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-15 14:32:41 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-15 14:32:43 | INFO | Fetched 5 headlines from The Independent (HTML)
+2026-02-15 14:32:44 | INFO | Fetched 10 headlines from Sky News (RSS)
+2026-02-15 14:32:45 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-15 14:32:46 | INFO | Fetched 10 headlines from Euronews (RSS)
+2026-02-15 14:32:47 | INFO | Fetched 10 headlines from Times of India (RSS)
+2026-02-15 14:32:49 | INFO | Fetched 10 headlines from The Globe and Mail (RSS)
+2026-02-15 14:32:50 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-15 14:32:51 | INFO | Fetched 10 headlines from The Straits Times (RSS)
+2026-02-15 14:32:52 | INFO | Fetched 10 headlines from Hindustan Times (RSS)
+2026-02-15 14:32:53 | INFO | Fetched 10 headlines from C-SPAN (RSS)
+2026-02-15 14:32:55 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-15 14:32:56 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-15 14:32:57 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-15 14:32:58 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-15 14:33:00 | INFO | Fetched 10 headlines from Agence France-Presse (RSS)
+2026-02-15 14:33:01 | INFO | Fetched 10 headlines from EFE News Agency (RSS)
+2026-02-15 14:33:04 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-15 14:33:06 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-15 14:33:08 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-15 14:33:09 | INFO | Total headlines: 268
+2026-02-15 14:33:09 | INFO | Alert throttled (queue_backup): Queue backup: 61 items, oldest 23.5h
+2026-02-15 14:33:10 | INFO | Monitor data pushed to gh-pages
+2026-02-15 14:33:10 | INFO | Cycle complete. Published: 0, Queue: 61, Skipped (cached): 268
+2026-02-15 14:33:10 | INFO | Sleeping until 15:00 (26 minutes)...

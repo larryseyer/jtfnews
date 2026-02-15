@@ -613,7 +613,8 @@
       if (audioResult === 'disabled' || audioResult === 'error') {
         await sleep(calculateHoldTime(story.fact));
       } else {
-        await sleep(2500);
+        // Keep text visible 6 seconds after audio ends for readability
+        await sleep(6000);
       }
 
       lowerThird.classList.remove('visible');
