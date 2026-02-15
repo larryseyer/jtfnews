@@ -122,6 +122,15 @@
       "audio": "../audio/audio_17.mp3",
       "published_at": "2026-02-15T16:01:26.606318+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-15-018",
+      "hash": "52d1c3acfd60",
+      "fact": "Ukraine's former energy minister was arrested while attempting to leave the country.",
+      "source": "BBC News 9.5*|9.0 \u00b7 Euronews 8.6*|8.5",
+      "audio": "../audio/audio_18.mp3",
+      "published_at": "2026-02-15T17:00:53.422258+00:00",
+      "status": "published"
     }
   ]
 }
