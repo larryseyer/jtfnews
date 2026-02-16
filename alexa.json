@@ -1,5 +1,12 @@
 [
   {
+    "uid": "1d529002e5a75b6cb7730faca151e6d3",
+    "updateDate": "2026-02-16T09:00:45.0Z",
+    "titleText": "JTF News: BBC News, ABC News Australia",
+    "mainText": "Sydney police appeal for the return of an 85-year-old man reported kidnapped.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "53a86dcc0a40e3b20cda9e17467b4742",
     "updateDate": "2026-02-15T19:30:56.0Z",
     "titleText": "JTF News: NPR, Sky News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T18:31:19.0Z",
     "titleText": "JTF News: The Globe and Mail, Reuters",
     "mainText": "President Trump and Prime Minister Benjamin Netanyahu agreed the United States should press Iran to reduce oil sales to China, according to reporting by Axios.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "23b30058f8a3765850f3615a4e07d8c3",
-    "updateDate": "2026-02-15T18:31:02.0Z",
-    "titleText": "JTF News: Deutsche Welle, European Commission",
-    "mainText": "EU leaders at the Munich Security Conference stated that NATO remains important and Europe needs a new defense strategy.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
