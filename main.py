@@ -796,7 +796,7 @@ Headline to process:
 @retry_with_backoff(max_retries=3, base_delay=1.0, retryable_exceptions=(
     ConnectionError, TimeoutError, OSError,
     anthropic.APITimeoutError, anthropic.APIConnectionError,
-    anthropic.RateLimitError, anthropic.OverloadedError
+    anthropic.RateLimitError, anthropic.InternalServerError
 ))
 def extract_fact(headline: str, use_cache: bool = True) -> dict:
     """Send headline to Claude for fact extraction.
