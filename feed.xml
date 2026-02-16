@@ -3,10 +3,22 @@
   <channel>
     <title>JTF News - Just The Facts</title>
     <link>https://larryseyer.github.io/jtfnews/</link>
-    <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation.</description>
+    <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Feb 2026 23:35:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 09:00:43 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sydney police appeal for the return of an 85-year-old man reported kidnapped.</title>
+      <description>Sydney police appeal for the return of an 85-year-old man reported kidnapped.</description>
+      <jtf:source name="BBC News" accuracy="9.5*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" accuracy="9.0*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 16 Feb 2026 09:00:43 +0000</pubDate>
+      <guid isPermaLink="false">6ea502ffd141</guid>
+    </item>
     <item>
       <title>US forces boarded a second Venezuela-linked oil tanker in the Indian Ocean.</title>
       <description>US forces boarded a second Venezuela-linked oil tanker in the Indian Ocean. Sources: France 24 8.6*|9.0 · The Guardian 8.8*|2.5</description>
