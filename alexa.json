@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ad9a31827604a771905b73f9da34da50",
+    "updateDate": "2026-02-16T22:00:55.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "US troops arrived in Nigeria for a training mission.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "66257f5d9770eb977645eca3817597df",
     "updateDate": "2026-02-16T20:00:49.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T19:30:56.0Z",
     "titleText": "JTF News: NPR, Sky News",
     "mainText": "Over 6,000 people killed in a Sudanese city during a three-day period, according to the United Nations.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b753ea6d695bcddfc52e6e21a2173ac9",
-    "updateDate": "2026-02-15T19:00:50.0Z",
-    "titleText": "JTF News: CBC News, BBC News",
-    "mainText": "China confirmed visa-free travel for United Kingdom and Canadian nationals.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
