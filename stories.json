@@ -1,40 +1,31 @@
 {
-  "date": "2026-02-15",
+  "date": "2026-02-16",
   "stories": [
     {
-      "id": "2026-02-15-000",
-      "hash": "8500f2cd8314",
-      "fact": "US forces boarded a second Venezuela-linked oil tanker in the Indian Ocean.",
-      "source": "France 24 8.6*|9.0 \u00b7 The Guardian 8.8*|2.5",
+      "id": "2026-02-16-000",
+      "hash": "0054f4ef5c77",
+      "fact": "Israeli strikes reported in Gaza with at least 12 deaths reported.",
+      "source": "France 24 9.2*|9.0 \u00b7 BBC News 9.5*|9.0",
       "audio": "../audio/audio_0.mp3",
-      "published_at": "2026-02-15T22:40:42.276271+00:00",
+      "published_at": "2026-02-16T00:02:51.583731+00:00",
       "status": "published"
     },
     {
-      "id": "2026-02-15-001",
-      "hash": "c1b197cf2966",
-      "fact": "Eleven people killed in Israeli strikes on Gaza according to rescuers.",
-      "source": "France 24 8.7*|9.0 \u00b7 BBC News 9.4*|9.0",
+      "id": "2026-02-16-001",
+      "hash": "305fbae65bf4",
+      "fact": "A person accused of a killing at Bondi beach appeared in a Sydney court for an initial hearing.",
+      "source": "France 24 9.2*|9.0 \u00b7 ABC News Australia 9.0*|9.0",
       "audio": "../audio/audio_1.mp3",
-      "published_at": "2026-02-15T22:40:55.596806+00:00",
+      "published_at": "2026-02-16T02:00:33.069353+00:00",
       "status": "published"
     },
     {
-      "id": "2026-02-15-002",
-      "hash": "a774c93f5436",
-      "fact": "Iran's state media reports the foreign minister will attend indirect talks with the United States.",
-      "source": "PBS NewsHour 9.2*|9.0 \u00b7 France 24 8.9*|9.0",
+      "id": "2026-02-16-002",
+      "hash": "1e0a038b4572",
+      "fact": "Sydney police appeal for the return of an 85-year-old man reported kidnapped.",
+      "source": "BBC News 9.5*|9.0 \u00b7 ABC News Australia 9.0*|9.0",
       "audio": "../audio/audio_2.mp3",
-      "published_at": "2026-02-15T22:42:16.069990+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-15-003",
-      "hash": "774e316bb15e",
-      "fact": "The FBI states that DNA from a glove may link a suspect to the Nancy Guthrie abduction.",
-      "source": "France 24 9.0*|9.0 \u00b7 CBC News 9.0*|9.0",
-      "audio": "../audio/audio_3.mp3",
-      "published_at": "2026-02-15T23:00:28.251277+00:00",
+      "published_at": "2026-02-16T09:00:43.135421+00:00",
       "status": "published"
     }
   ]
