@@ -3703,7 +3703,9 @@ def push_to_ghpages(files: list, commit_message: str):
         for local_path, gh_path in files:
             dest = gh_pages_dir / gh_path
             dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy(local_path, dest)
+            # Skip copy if source and destination are the same file
+            if Path(local_path).resolve() != dest.resolve():
+                shutil.copy(local_path, dest)
 
     owner = "larryseyer"
     repo = "jtfnews"
