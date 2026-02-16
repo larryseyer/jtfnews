@@ -218,7 +218,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: clamp(50px, 8vh, 90px);
+      height: clamp(100px, 16vh, 180px);
       overflow: hidden;
       z-index: 50;
 
@@ -245,7 +245,7 @@
       white-space: nowrap;
       padding-left: 100vw;
       animation: scroll-ticker linear infinite;
-      font-size: clamp(16px, 2.5vw, 32px);
+      font-size: clamp(12px, 1.875vw, 24px);
       font-weight: 400;
       color: rgba(255, 255, 255, 0.9);
       letter-spacing: 0.3px;
@@ -268,7 +268,7 @@
 
     #ticker-content .ticker-source {
       color: rgba(147, 197, 253, 0.8);
-      font-size: clamp(14px, 2vw, 28px);
+      font-size: clamp(11px, 1.5vw, 21px);
       margin-left: clamp(6px, 1vw, 12px);
     }
 
@@ -311,23 +311,23 @@
     /* Mobile portrait - smaller ticker */
     @media (max-width: 600px) and (orientation: portrait) {
       #news-ticker {
-        height: clamp(40px, 7vh, 60px);
+        height: clamp(80px, 14vh, 120px);
       }
       #ticker-content {
-        font-size: clamp(12px, 3.5vw, 18px);
+        font-size: clamp(9px, 2.625vw, 14px);
       }
       #ticker-content .ticker-source {
-        font-size: clamp(10px, 3vw, 16px);
+        font-size: clamp(8px, 2.25vw, 12px);
       }
     }
 
     /* Mobile landscape - compact ticker */
     @media (max-height: 500px) and (orientation: landscape) {
       #news-ticker {
-        height: clamp(35px, 8vh, 50px);
+        height: clamp(70px, 16vh, 100px);
       }
       #ticker-content {
-        font-size: clamp(12px, 2.5vh, 20px);
+        font-size: clamp(9px, 1.875vh, 15px);
       }
     }
 

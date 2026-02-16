@@ -122,7 +122,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 90px;
+    height: 180px;
     overflow: hidden;
 
     /* Very dark background for small text readability */
@@ -148,7 +148,7 @@ body {
     white-space: nowrap;
     padding-left: 1920px;  /* Start off-screen right (OBS canvas width) */
     animation: scroll-ticker linear infinite;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 0.3px;
@@ -177,7 +177,7 @@ body {
 /* Source attribution */
 #ticker-content .ticker-source {
     color: rgba(147, 197, 253, 0.8);  /* Soft blue */
-    font-size: 28px;
+    font-size: 21px;
     margin-left: 12px;
 }
 
