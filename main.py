@@ -176,9 +176,11 @@ class ErrorCapturingHandler(logging.Handler):
         if len(self.records) > self.max_records:
             self.records = self.records[-self.max_records:]
 
-    def get_recent(self, count=10):
-        """Get the most recent N error/warning records."""
-        return self.records[-count:]
+    def get_recent(self, count=10, max_age_hours=1):
+        """Get recent errors, filtering out those older than max_age_hours."""
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
+        recent = [r for r in self.records if datetime.fromisoformat(r['timestamp'].replace('Z', '+00:00')) > cutoff]
+        return recent[-count:]
 
 
 # Global error handler for dashboard
@@ -793,7 +795,8 @@ Headline to process:
 
 @retry_with_backoff(max_retries=3, base_delay=1.0, retryable_exceptions=(
     ConnectionError, TimeoutError, OSError,
-    anthropic.APITimeoutError, anthropic.APIConnectionError, anthropic.RateLimitError
+    anthropic.APITimeoutError, anthropic.APIConnectionError,
+    anthropic.RateLimitError, anthropic.OverloadedError
 ))
 def extract_fact(headline: str, use_cache: bool = True) -> dict:
     """Send headline to Claude for fact extraction.
