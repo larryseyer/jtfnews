@@ -119,10 +119,10 @@ body {
 
 #news-ticker {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 0;
     right: 0;
-    height: 180px;
+    height: 200px;
     overflow: hidden;
 
     /* Very dark background for small text readability */
