@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2c361db29714c2fd724164203eb4debf",
+    "updateDate": "2026-02-16T18:31:11.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "Iran met with the International Atomic Energy Agency ahead of discussions with the United States.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "854c2cc688aba3963cb43d698044be47",
     "updateDate": "2026-02-16T18:30:48.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T18:31:35.0Z",
     "titleText": "JTF News: The Straits Times, BBC News",
     "mainText": "Iran's foreign minister stated to BBC in Tehran that Iran is ready to discuss compromises to reach a nuclear deal.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "d4a67f59cf9725fca9978c3d98ce903c",
-    "updateDate": "2026-02-15T18:31:19.0Z",
-    "titleText": "JTF News: The Globe and Mail, Reuters",
-    "mainText": "President Trump and Prime Minister Benjamin Netanyahu agreed the United States should press Iran to reduce oil sales to China, according to reporting by Axios.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
