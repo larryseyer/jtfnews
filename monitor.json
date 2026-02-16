@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-16T22:45:42.633317+00:00",
-  "uptime_start": "2026-02-16T16:07:15.824527+00:00",
-  "uptime_seconds": 23907,
-  "availability_pct": 86.4,
+  "timestamp": "2026-02-16T22:49:15.520963+00:00",
+  "web_refresh_at": "2026-02-16T22:49:15.520963+00:00",
+  "uptime_start": "2026-02-16T22:48:37.492254+00:00",
+  "uptime_seconds": 38,
+  "availability_pct": 85.0,
   "cycle": {
-    "number": 14,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 1,
+    "duration_seconds": 37.5,
+    "headlines_scraped": 143,
+    "headlines_processed": 6,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 573,
-        "cost_usd": 0.2373057499999999,
+        "calls": 583,
+        "cost_usd": 0.2403954999999999,
         "details": {
-          "input_tokens": 572503,
-          "output_tokens": 75344
+          "input_tokens": 579942,
+          "output_tokens": 76328
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.2588,
+    "total_usd": 0.2619,
     "month_estimate_usd": 2.46,
     "daily_budget": 1.79,
-    "budget_pct": 14.5
+    "budget_pct": 14.7
   },
   "queue": {
-    "size": 47,
-    "oldest_item_age_hours": 24.1
+    "size": 32,
+    "oldest_item_age_hours": 22.8
   },
   "stories_today": 7,
   "sources": {
@@ -44,17 +45,11 @@
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-16T21:00:56.193626+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYCRR4wDuHfcPkyENJrfr'}"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 14,
+    "next_cycle_minutes": 10,
     "degraded_services": []
   }
 }
