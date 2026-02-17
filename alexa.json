@@ -1,5 +1,12 @@
 [
   {
+    "uid": "9580c06624bbee061276b58dfb32beda",
+    "updateDate": "2026-02-17T07:30:36.0Z",
+    "titleText": "JTF News: NPR, Deutsche Welle",
+    "mainText": "Australia rules out repatriating citizens from Syrian camp.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "2e082d6726248d13d7e840af7dc80931",
     "updateDate": "2026-02-17T06:30:32.0Z",
     "titleText": "JTF News: BBC News, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T00:03:18.0Z",
     "titleText": "JTF News: ABC News Australia, Deutsche Welle",
     "mainText": "Austria filed terror charges related to an alleged plot targeting Taylor Swift concerts.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "18ccd08adbf8ad693eaf27f68205396f",
-    "updateDate": "2026-02-17T00:02:17.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Actor Robert Duvall died at age 95.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
