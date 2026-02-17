@@ -246,6 +246,19 @@
       "audio": "../audio/audio_18.mp3",
       "published_at": "2026-02-17T21:30:35.994434+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-17-019",
+      "hash": "ac0ff7965f84",
+      "fact": "Peru's Congress removed interim President Jos\u00e9 Jer\u00ed, who faces a corruption probe.",
+      "source": "PBS NewsHour 6.7|9.0 \u00b7 The Guardian 6.3*|2.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "The Guardian": "https://www.theguardian.com/world"
+      },
+      "audio": "../audio/audio_19.mp3",
+      "published_at": "2026-02-17T23:30:56.207858+00:00",
+      "status": "published"
     }
   ]
 }
