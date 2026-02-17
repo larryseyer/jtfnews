@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d2f819cfa33927e55eaef3764a92832e",
+    "updateDate": "2026-02-17T23:30:58.0Z",
+    "titleText": "JTF News: PBS NewsHour, The Guardian",
+    "mainText": "Peru's Congress removed interim President Jos\u00e9 Jer\u00ed, who faces a corruption probe.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "2d01805e96ecf83208d8b43c6cb7bd06",
     "updateDate": "2026-02-17T21:30:38.0Z",
     "titleText": "JTF News: BBC News, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T16:30:55.0Z",
     "titleText": "JTF News: European Commission, White House",
     "mainText": "Secretary Rubio spoke in Munich.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "a83dd4f55eccf9ae9ea22bdea271b69f",
-    "updateDate": "2026-02-17T16:01:18.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "Russian and Ukrainian negotiators meet for talks brokered by the United States.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
