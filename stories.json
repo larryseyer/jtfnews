@@ -18,6 +18,15 @@
       "audio": "../audio/audio_1.mp3",
       "published_at": "2026-02-17T00:02:15.400975+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-17-002",
+      "hash": "e43259cdf24f",
+      "fact": "Austria filed terror charges related to an alleged plot targeting Taylor Swift concerts.",
+      "source": "ABC News Australia 9.2*|9.0 \u00b7 Deutsche Welle 9.5*|9.5",
+      "audio": "../audio/audio_2.mp3",
+      "published_at": "2026-02-17T00:03:16.918981+00:00",
+      "status": "published"
     }
   ]
 }
