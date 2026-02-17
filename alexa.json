@@ -1,5 +1,12 @@
 [
   {
+    "uid": "55358c37d4296788c2510ae2d20deedc",
+    "updateDate": "2026-02-17T10:31:01.0Z",
+    "titleText": "JTF News: France 24, PBS NewsHour",
+    "mainText": "Russia conducts missile and drone strikes as peace talks with Ukraine are scheduled.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "125c09500a603c0f2d2dc9c34d3c6cb6",
     "updateDate": "2026-02-17T10:01:05.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T08:00:45.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
     "mainText": "The United States and Iran held high-level talks regarding Tehran's nuclear program.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "9580c06624bbee061276b58dfb32beda",
-    "updateDate": "2026-02-17T07:30:36.0Z",
-    "titleText": "JTF News: NPR, Deutsche Welle",
-    "mainText": "Australia rules out repatriating citizens from Syrian camp.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
