@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 10:01:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 10:30:59 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Russia conducts missile and drone strikes as peace talks with Ukraine are schedu...</title>
+      <description>Russia conducts missile and drone strikes as peace talks with Ukraine are scheduled.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="6.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.9*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 10:30:59 +0000</pubDate>
+      <guid isPermaLink="false">82eebb28e049</guid>
+    </item>
     <item>
       <title>At least five people died in a building fire in Catalonia, Spain.</title>
       <description>At least five people died in a building fire in Catalonia, Spain.</description>
