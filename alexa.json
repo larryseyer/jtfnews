@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b16321945c2b13cafcc2ed1aa71b8abe",
+    "updateDate": "2026-02-17T16:30:55.0Z",
+    "titleText": "JTF News: European Commission, White House",
+    "mainText": "Secretary Rubio spoke in Munich.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "a83dd4f55eccf9ae9ea22bdea271b69f",
     "updateDate": "2026-02-17T16:01:18.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T10:31:01.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
     "mainText": "Russia conducts missile and drone strikes as peace talks with Ukraine are scheduled.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "125c09500a603c0f2d2dc9c34d3c6cb6",
-    "updateDate": "2026-02-17T10:01:05.0Z",
-    "titleText": "JTF News: Deutsche Welle, BBC News",
-    "mainText": "At least five people died in a building fire in Catalonia, Spain.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
