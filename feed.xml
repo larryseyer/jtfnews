@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 04:00:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 06:30:31 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump stated he will be indirectly involved in Iran nuclear talks.</title>
+      <description>President Trump stated he will be indirectly involved in Iran nuclear talks.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="7.7*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 06:30:31 +0000</pubDate>
+      <guid isPermaLink="false">6b8c32ac4df6</guid>
+    </item>
     <item>
       <title>The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with d...</title>
       <description>The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with dart frog toxin.</description>
