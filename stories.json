@@ -103,6 +103,19 @@
       "audio": "../audio/audio_7.mp3",
       "published_at": "2026-02-17T08:00:44.166461+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-17-008",
+      "hash": "d562e61b5154",
+      "fact": "President Emmanuel Macron of France is in India to discuss Rafale aircraft sales and artificial intelligence cooperation.",
+      "source": "Deutsche Welle 9.1|9.5 \u00b7 France 24 6.2|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": ""
+      },
+      "audio": "../audio/audio_8.mp3",
+      "published_at": "2026-02-17T08:00:53.484068+00:00",
+      "status": "published"
     }
   ]
 }
