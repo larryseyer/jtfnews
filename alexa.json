@@ -1,5 +1,12 @@
 [
   {
+    "uid": "7ba720763f6459f4e446aa06f8c7441e",
+    "updateDate": "2026-02-17T00:03:18.0Z",
+    "titleText": "JTF News: ABC News Australia, Deutsche Welle",
+    "mainText": "Austria filed terror charges related to an alleged plot targeting Taylor Swift concerts.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "18ccd08adbf8ad693eaf27f68205396f",
     "updateDate": "2026-02-17T00:02:17.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-15T19:30:56.0Z",
     "titleText": "JTF News: NPR, Sky News",
     "mainText": "Over 6,000 people killed in a Sudanese city during a three-day period, according to the United Nations.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b753ea6d695bcddfc52e6e21a2173ac9",
-    "updateDate": "2026-02-15T19:00:50.0Z",
-    "titleText": "JTF News: CBC News, BBC News",
-    "mainText": "China confirmed visa-free travel for United Kingdom and Canadian nationals.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
