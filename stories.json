@@ -129,6 +129,19 @@
       "audio": "../audio/audio_9.mp3",
       "published_at": "2026-02-17T10:00:55.391702+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-17-010",
+      "hash": "36996cdd2f4e",
+      "fact": "At least five people died in a building fire in Catalonia, Spain.",
+      "source": "Deutsche Welle 9.2|9.5 \u00b7 BBC News 7.8*|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_10.mp3",
+      "published_at": "2026-02-17T10:01:03.491516+00:00",
+      "status": "published"
     }
   ]
 }
