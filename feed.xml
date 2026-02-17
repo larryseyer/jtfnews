@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 10:00:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 10:01:03 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>At least five people died in a building fire in Catalonia, Spain.</title>
+      <description>At least five people died in a building fire in Catalonia, Spain.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="9.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="7.8*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 10:01:03 +0000</pubDate>
+      <guid isPermaLink="false">1173a527dded</guid>
+    </item>
     <item>
       <title>Jesse Jackson, a civil rights leader and two-time presidential candidate, died a...</title>
       <description>Jesse Jackson, a civil rights leader and two-time presidential candidate, died at age 84.</description>
