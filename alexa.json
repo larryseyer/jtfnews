@@ -1,5 +1,12 @@
 [
   {
+    "uid": "bddbcddf7d6b243b28a6797cc4dc8a11",
+    "updateDate": "2026-02-17T04:01:01.0Z",
+    "titleText": "JTF News: Irish Times, ABC News Australia",
+    "mainText": "The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with dart frog toxin.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d36c7408fd75fe5d3e9c1864ab258038",
     "updateDate": "2026-02-17T00:03:34.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T00:00:53.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
     "mainText": "Naveed Akram fronted court for the first time in connection with a shooting at Bondi Beach.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "1d529002e5a75b6cb7730faca151e6d3",
-    "updateDate": "2026-02-16T09:00:45.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "Sydney police appeal for the return of an 85-year-old man reported kidnapped.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
