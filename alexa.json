@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d36c7408fd75fe5d3e9c1864ab258038",
+    "updateDate": "2026-02-17T00:03:34.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "US troops arrive in Nigeria on training mission.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "7ba720763f6459f4e446aa06f8c7441e",
     "updateDate": "2026-02-17T00:03:18.0Z",
     "titleText": "JTF News: ABC News Australia, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-16T09:00:45.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
     "mainText": "Sydney police appeal for the return of an 85-year-old man reported kidnapped.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "53a86dcc0a40e3b20cda9e17467b4742",
-    "updateDate": "2026-02-15T19:30:56.0Z",
-    "titleText": "JTF News: NPR, Sky News",
-    "mainText": "Over 6,000 people killed in a Sudanese city during a three-day period, according to the United Nations.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
