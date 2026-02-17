@@ -1,69 +1,81 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="https://jtfnews.com/rss" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:jtf="https://jtfnews.com/rss" version="2.0">
   <channel>
     <title>JTF News - Just The Facts</title>
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 00:03:32 +0000</lastBuildDate>
-    <ns0:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Feb 2026 04:00:59 +0000</lastBuildDate>
+    <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with d...</title>
+      <description>The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with dart frog toxin.</description>
+      <jtf:source name="Irish Times" url="https://www.irishtimes.com/world/" accuracy="7.8*" bias="9.0" speed="7.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Irish Times Trust" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="7.5*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 04:00:59 +0000</pubDate>
+      <guid isPermaLink="false">f864c12eb985</guid>
+    </item>
     <item>
       <title>US troops arrive in Nigeria on training mission.</title>
       <description>US troops arrive in Nigeria on training mission.</description>
-      <ns1:source name="PBS NewsHour" accuracy="7.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit" url="https://www.pbs.org/newshour/world">
-        <ns1:owner name="Public Broadcasting Service" percent="100.0" />
-      </ns1:source>
-      <ns1:source name="Deutsche Welle" accuracy="9.6*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster" url="https://www.dw.com/en/top-stories/s-9097">
-        <ns1:owner name="German Federal Government" percent="100.0" />
-      </ns1:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="9.6*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:03:32 +0000</pubDate>
       <guid isPermaLink="false">b0fd8c00ddfc</guid>
     </item>
     <item>
       <title>Austria filed terror charges related to an alleged plot targeting Taylor Swift c...</title>
       <description>Austria filed terror charges related to an alleged plot targeting Taylor Swift concerts.</description>
-      <ns1:source name="ABC News Australia" accuracy="9.2*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster" url="https://www.abc.net.au/news/">
-        <ns1:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </ns1:source>
-      <ns1:source name="Deutsche Welle" accuracy="9.5*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster" url="https://www.dw.com/en/top-stories/s-9097">
-        <ns1:owner name="German Federal Government" percent="100.0" />
-      </ns1:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="9.2*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="9.5*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:03:16 +0000</pubDate>
       <guid isPermaLink="false">761e1e4c0ec4</guid>
     </item>
     <item>
       <title>Actor Robert Duvall died at age 95.</title>
       <description>Actor Robert Duvall died at age 95.</description>
-      <ns1:source name="Deutsche Welle" accuracy="9.3*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster" url="https://www.dw.com/en/top-stories/s-9097">
-        <ns1:owner name="German Federal Government" percent="100.0" />
-      </ns1:source>
-      <ns1:source name="France 24" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster" url="https://www.france24.com/en/">
-        <ns1:owner name="France Médias Monde" percent="100.0" />
-      </ns1:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="9.3*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:02:15 +0000</pubDate>
       <guid isPermaLink="false">901c211c27de</guid>
     </item>
     <item>
       <title>Naveed Akram fronted court for the first time in connection with a shooting at B...</title>
       <description>Naveed Akram fronted court for the first time in connection with a shooting at Bondi Beach.</description>
-      <ns1:source name="BBC News" accuracy="8.6*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster" url="https://www.bbc.com/news/world">
-        <ns1:owner name="British Broadcasting Corporation" percent="100.0" />
-      </ns1:source>
-      <ns1:source name="ABC News Australia" accuracy="9.1*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster" url="https://www.abc.net.au/news/">
-        <ns1:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </ns1:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="8.6*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="9.1*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:00:51 +0000</pubDate>
       <guid isPermaLink="false">fd6cde29b83a</guid>
     </item>
     <item>
       <title>Sydney police appeal for the return of an 85-year-old man reported kidnapped.</title>
       <description>Sydney police appeal for the return of an 85-year-old man reported kidnapped.</description>
-      <ns1:source name="BBC News" accuracy="9.5*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster" url="https://www.bbc.com/news/world">
-        <ns1:owner name="British Broadcasting Corporation" percent="100.0" />
-      </ns1:source>
-      <ns1:source name="ABC News Australia" accuracy="9.0*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster" url="https://www.abc.net.au/news/">
-        <ns1:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </ns1:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="9.5*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="9.0*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
       <pubDate>Mon, 16 Feb 2026 09:00:43 +0000</pubDate>
       <guid isPermaLink="false">6ea502ffd141</guid>
     </item>
