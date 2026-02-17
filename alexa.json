@@ -1,5 +1,12 @@
 [
   {
+    "uid": "125c09500a603c0f2d2dc9c34d3c6cb6",
+    "updateDate": "2026-02-17T10:01:05.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "At least five people died in a building fire in Catalonia, Spain.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "ae01f27ca751a91c35fbffd33d9552f2",
     "updateDate": "2026-02-17T10:00:57.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T07:30:36.0Z",
     "titleText": "JTF News: NPR, Deutsche Welle",
     "mainText": "Australia rules out repatriating citizens from Syrian camp.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "2e082d6726248d13d7e840af7dc80931",
-    "updateDate": "2026-02-17T06:30:32.0Z",
-    "titleText": "JTF News: BBC News, France 24",
-    "mainText": "President Trump stated he will be indirectly involved in Iran nuclear talks.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
