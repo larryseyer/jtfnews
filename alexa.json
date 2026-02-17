@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ae01f27ca751a91c35fbffd33d9552f2",
+    "updateDate": "2026-02-17T10:00:57.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Jesse Jackson, a civil rights leader and two-time presidential candidate, died at age 84.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "609ccca391c5ec2c15e3d470f8f7db91",
     "updateDate": "2026-02-17T08:00:55.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T06:30:32.0Z",
     "titleText": "JTF News: BBC News, France 24",
     "mainText": "President Trump stated he will be indirectly involved in Iran nuclear talks.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "bddbcddf7d6b243b28a6797cc4dc8a11",
-    "updateDate": "2026-02-17T04:01:01.0Z",
-    "titleText": "JTF News: Irish Times, ABC News Australia",
-    "mainText": "The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with dart frog toxin.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
