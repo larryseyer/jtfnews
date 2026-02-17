@@ -1,5 +1,12 @@
 [
   {
+    "uid": "9dcff879bb047f308768570027affb1e",
+    "updateDate": "2026-02-17T18:00:35.0Z",
+    "titleText": "JTF News: BBC News, ABC News Australia",
+    "mainText": "Eleven people killed in multiple strikes on alleged drug boats according to US military statement.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "b16321945c2b13cafcc2ed1aa71b8abe",
     "updateDate": "2026-02-17T16:30:55.0Z",
     "titleText": "JTF News: European Commission, White House",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T12:30:51.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
     "mainText": "Iran conducted military drills in the Strait of Hormuz ahead of US talks.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "55358c37d4296788c2510ae2d20deedc",
-    "updateDate": "2026-02-17T10:31:01.0Z",
-    "titleText": "JTF News: France 24, PBS NewsHour",
-    "mainText": "Russia conducts missile and drone strikes as peace talks with Ukraine are scheduled.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
