@@ -1902,8 +1902,10 @@ def append_daily_log(fact: str, sources: list, audio_file: str = None):
     if len(sources) > 2:
         source_names += f" (+{len(sources) - 2} more)"
     source_scores = ",".join([get_display_rating(s["source_id"]) for s in sources[:2]])
+    source_urls = ",".join([s.get("source_url", "") for s in sources[:2]])
 
-    line = f"{timestamp}|{source_names}|{source_scores}|{fact}\n"
+    # Format: timestamp|names|scores|urls|fact (5 fields)
+    line = f"{timestamp}|{source_names}|{source_scores}|{source_urls}|{fact}\n"
 
     # Create header if new file
     if not log_file.exists():
@@ -4516,26 +4518,40 @@ def rebuild_stories_from_log():
             if len(parts) < 4:
                 continue
 
-            timestamp, source_names, source_scores, fact = parts[0], parts[1], parts[2], parts[3]
+            # Parse both old (4-field) and new (5-field) formats
+            # Old: timestamp|names|scores|fact
+            # New: timestamp|names|scores|urls|fact
+            if len(parts) == 4:
+                timestamp, source_names, source_scores, fact = parts
+                source_urls_str = ""
+            else:
+                timestamp, source_names, source_scores, source_urls_str, fact = parts[0], parts[1], parts[2], parts[3], "|".join(parts[4:])
 
             # Split sources and look up IDs for current format
             names = source_names.split(",")
+            urls = source_urls_str.split(",") if source_urls_str else []
 
             # Format source attribution using current get_compact_scores()
             source_parts = []
-            for name in names:
+            source_urls_map = {}
+            for i, name in enumerate(names):
                 name = name.strip()
-                # Look up source ID by name
+                # Look up source ID and URL by name
                 source_id = None
+                source_url = urls[i].strip() if i < len(urls) else ""
                 for src in CONFIG["sources"]:
                     if src["name"] == name:
                         source_id = src["id"]
+                        if not source_url:
+                            source_url = src.get("url", "")
                         break
                 if source_id:
                     source_parts.append(f"{name} {get_compact_scores(source_id)}")
                 else:
                     # Fallback if source not found
                     source_parts.append(name)
+                if source_url:
+                    source_urls_map[name] = source_url
             source_text = " · ".join(source_parts)
 
             # Check if audio file exists for this story index
@@ -4550,6 +4566,7 @@ def rebuild_stories_from_log():
                     "hash": story_hash,
                     "fact": fact,
                     "source": source_text,
+                    "source_urls": source_urls_map,
                     "audio": f"../audio/{audio_filename}",
                     "published_at": f"{today}T{timestamp}:00Z",  # Approximate from log timestamp
                     "status": "published"
@@ -4563,6 +4580,241 @@ def rebuild_stories_from_log():
         json.dump(data, f, indent=2)
 
     log.info(f"Rebuilt stories.json: {len(stories)} stories (from {log_file.name})")
+    return True
+
+
+def get_source_url_by_name(name: str) -> str:
+    """Look up source URL by name from config."""
+    name = name.strip()
+    # Remove "(+N more)" suffix if present
+    if " (+" in name:
+        name = name.split(" (+")[0]
+    for src in CONFIG["sources"]:
+        if src["name"] == name:
+            return src.get("url", "")
+    return ""
+
+
+def rebuild_archives_with_urls():
+    """Rebuild all archives and daily logs to include source URLs.
+
+    Converts old format (timestamp|names|scores|fact) to
+    new format (timestamp|names|scores|urls|fact).
+    """
+    import gzip
+
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    archive_dir = gh_pages_dir / "archive"
+
+    files_updated = 0
+
+    # Process archived .txt.gz files
+    for year_dir in archive_dir.glob("*"):
+        if not year_dir.is_dir():
+            continue
+        for gz_file in year_dir.glob("*.txt.gz"):
+            try:
+                # Read and decompress
+                with gzip.open(gz_file, 'rt', encoding='utf-8') as f:
+                    content = f.read()
+
+                # Process lines
+                new_lines = []
+                needs_update = False
+                for line in content.split('\n'):
+                    if line.startswith('#') or not line.strip():
+                        new_lines.append(line)
+                        continue
+
+                    parts = line.split('|')
+                    if len(parts) == 4:
+                        # Old format - add URLs
+                        timestamp, names, scores, fact = parts
+                        name_list = names.split(',')
+                        urls = ','.join([get_source_url_by_name(n) for n in name_list])
+                        new_lines.append(f"{timestamp}|{names}|{scores}|{urls}|{fact}")
+                        needs_update = True
+                    elif len(parts) >= 5:
+                        # Already has URLs or new format
+                        new_lines.append(line)
+                    else:
+                        new_lines.append(line)
+
+                if needs_update:
+                    # Write back compressed
+                    with gzip.open(gz_file, 'wt', encoding='utf-8') as f:
+                        f.write('\n'.join(new_lines))
+                    files_updated += 1
+                    log.info(f"Updated archive: {gz_file.name}")
+
+            except Exception as e:
+                log.warning(f"Error processing {gz_file}: {e}")
+
+    # Process current daily log files in data/
+    for log_file in DATA_DIR.glob("????-??-??.txt"):
+        try:
+            with open(log_file, 'r') as f:
+                content = f.read()
+
+            new_lines = []
+            needs_update = False
+            for line in content.split('\n'):
+                if line.startswith('#') or not line.strip():
+                    new_lines.append(line)
+                    continue
+
+                parts = line.split('|')
+                if len(parts) == 4:
+                    # Old format - add URLs
+                    timestamp, names, scores, fact = parts
+                    name_list = names.split(',')
+                    urls = ','.join([get_source_url_by_name(n) for n in name_list])
+                    new_lines.append(f"{timestamp}|{names}|{scores}|{urls}|{fact}")
+                    needs_update = True
+                elif len(parts) >= 5:
+                    # Already has URLs
+                    new_lines.append(line)
+                else:
+                    new_lines.append(line)
+
+            if needs_update:
+                with open(log_file, 'w') as f:
+                    f.write('\n'.join(new_lines))
+                files_updated += 1
+                log.info(f"Updated daily log: {log_file.name}")
+
+        except Exception as e:
+            log.warning(f"Error processing {log_file}: {e}")
+
+    return files_updated
+
+
+def rebuild_feed_with_urls():
+    """Rebuild feed.xml to include source URLs in all items."""
+    JTF_NS = "https://jtfnews.com/rss"
+    ATOM_NS = "http://www.w3.org/2005/Atom"
+
+    gh_pages_dir = BASE_DIR / "gh-pages-dist"
+    feed_file = gh_pages_dir / "feed.xml"
+
+    if not feed_file.exists():
+        log.warning("No feed.xml found")
+        return False
+
+    try:
+        tree = ET.parse(feed_file)
+        root = tree.getroot()
+        channel = root.find("channel")
+
+        items_updated = 0
+        for item in channel.findall("item"):
+            # Find source elements (try namespaced first, then non-namespaced)
+            for source_el in item.findall(f"{{{JTF_NS}}}source"):
+                name = source_el.get("name", "")
+                if name and not source_el.get("url"):
+                    url = get_source_url_by_name(name)
+                    if url:
+                        source_el.set("url", url)
+                        items_updated += 1
+
+            # Also check non-namespaced (legacy)
+            for source_el in item.findall("source"):
+                name = source_el.get("name", "")
+                if name and not source_el.get("url"):
+                    url = get_source_url_by_name(name)
+                    if url:
+                        source_el.set("url", url)
+                        items_updated += 1
+
+        # Write back
+        indent_xml(root, space="  ")
+        with open(feed_file, 'wb') as f:
+            tree.write(f, encoding="utf-8", xml_declaration=True)
+        clean_duplicate_namespaces(feed_file)
+
+        log.info(f"Updated feed.xml: {items_updated} source elements updated")
+        return True
+
+    except Exception as e:
+        log.error(f"Error rebuilding feed.xml: {e}")
+        return False
+
+
+def rebuild_stories_json_with_urls():
+    """Rebuild stories.json to include source_urls for all stories."""
+    stories_file = DATA_DIR / "stories.json"
+
+    if not stories_file.exists():
+        log.warning("No stories.json found")
+        return False
+
+    try:
+        with open(stories_file) as f:
+            data = json.load(f)
+
+        stories_updated = 0
+        for story in data.get("stories", []):
+            if "source_urls" not in story or not story["source_urls"]:
+                # Parse source names from source string
+                source_str = story.get("source", "")
+                source_urls = {}
+
+                # Source format: "Name1 score1 . Name2 score2" or "Name1 score1|score2 . Name2 ..."
+                for part in source_str.split(" · "):
+                    part = part.strip()
+                    if not part:
+                        continue
+                    # Extract name (everything before the first digit or score)
+                    name = part
+                    for i, c in enumerate(part):
+                        if c.isdigit():
+                            name = part[:i].strip()
+                            break
+                    if name:
+                        url = get_source_url_by_name(name)
+                        if url:
+                            source_urls[name] = url
+
+                if source_urls:
+                    story["source_urls"] = source_urls
+                    stories_updated += 1
+
+        # Write back
+        with open(stories_file, 'w') as f:
+            json.dump(data, f, indent=2)
+
+        # Also copy to gh-pages-dist
+        gh_pages_dir = BASE_DIR / "gh-pages-dist"
+        if gh_pages_dir.exists():
+            import shutil
+            shutil.copy(stories_file, gh_pages_dir / "stories.json")
+
+        log.info(f"Updated stories.json: {stories_updated} stories updated")
+        return True
+
+    except Exception as e:
+        log.error(f"Error rebuilding stories.json: {e}")
+        return False
+
+
+def rebuild_all_with_urls():
+    """Rebuild all archives, feed.xml, and stories.json with source URLs."""
+    log.info("=== Rebuilding all data with source URLs ===")
+
+    # 1. Rebuild archives
+    log.info("1. Rebuilding archives...")
+    archive_count = rebuild_archives_with_urls()
+    log.info(f"   Updated {archive_count} archive files")
+
+    # 2. Rebuild feed.xml
+    log.info("2. Rebuilding feed.xml...")
+    rebuild_feed_with_urls()
+
+    # 3. Rebuild stories.json
+    log.info("3. Rebuilding stories.json...")
+    rebuild_stories_json_with_urls()
+
+    log.info("=== Rebuild complete ===")
     return True
 
 
@@ -4637,9 +4889,18 @@ if __name__ == "__main__":
                 log.error("RSS feed regeneration failed")
             sys.exit(0)
 
+        elif sys.argv[1] == "--rebuild-urls":
+            log.info("Rebuilding all data with source URLs...")
+            if rebuild_all_with_urls():
+                log.info("Rebuild complete!")
+                print("\nAll data rebuilt with source URLs. Run bu.sh to commit and push.")
+            else:
+                log.error("Rebuild failed")
+            sys.exit(0)
+
         else:
             print(f"Unknown argument: {sys.argv[1]}")
-            print("Usage: python main.py [--rebuild | --audit | --apply-audit | --regenerate-rss]")
+            print("Usage: python main.py [--rebuild | --audit | --apply-audit | --regenerate-rss | --rebuild-urls]")
             sys.exit(1)
 
     main()
