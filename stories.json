@@ -233,6 +233,19 @@
       "audio": "../audio/audio_17.mp3",
       "published_at": "2026-02-17T20:00:47.262597+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-17-018",
+      "hash": "7e3bcc6f9dd9",
+      "fact": "Nine people arrested in France in connection with the death of a student.",
+      "source": "BBC News 7.9*|9.0 \u00b7 France 24 6.4|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/audio_18.mp3",
+      "published_at": "2026-02-17T21:30:35.994434+00:00",
+      "status": "published"
     }
   ]
 }
