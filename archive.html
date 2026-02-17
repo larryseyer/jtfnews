@@ -433,9 +433,10 @@
         }
 
         function parseSourceString(sourceStr) {
-            // Parse source string like "BBC News 9.5*|9.0 . Reuters 9.9*|9.5"
+            // Parse source string like "BBC News 9.5*|9.0 · Reuters 9.9*|9.5"
             if (!sourceStr) return [];
-            return sourceStr.split(' . ').map(s => {
+            // Split by middle dot (·) or regular dot (.) for compatibility
+            return sourceStr.split(/ [·.] /).map(s => {
                 const match = s.match(/^(.+?)\s+([\d.]+\*?\|[\d.]+)$/);
                 if (match) {
                     return { name: match[1].trim(), rating: match[2] };
