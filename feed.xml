@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 21:30:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 23:30:56 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Peru's Congress removed interim President José Jerí, who faces a corruption prob...</title>
+      <description>Peru's Congress removed interim President José Jerí, who faces a corruption probe.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.7" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="6.3*" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 23:30:56 +0000</pubDate>
+      <guid isPermaLink="false">57215f85537c</guid>
+    </item>
     <item>
       <title>Nine people arrested in France in connection with the death of a student.</title>
       <description>Nine people arrested in France in connection with the death of a student.</description>
