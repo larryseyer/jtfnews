@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2e082d6726248d13d7e840af7dc80931",
+    "updateDate": "2026-02-17T06:30:32.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "President Trump stated he will be indirectly involved in Iran nuclear talks.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "bddbcddf7d6b243b28a6797cc4dc8a11",
     "updateDate": "2026-02-17T04:01:01.0Z",
     "titleText": "JTF News: Irish Times, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T00:02:17.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Actor Robert Duvall died at age 95.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "6579068ca9677fb7c37debe320ef2a2d",
-    "updateDate": "2026-02-17T00:00:53.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "Naveed Akram fronted court for the first time in connection with a shooting at Bondi Beach.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
