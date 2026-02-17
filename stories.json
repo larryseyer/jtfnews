@@ -207,6 +207,19 @@
       "audio": "../audio/audio_15.mp3",
       "published_at": "2026-02-17T16:30:53.421817+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-17-016",
+      "hash": "c0e295f91f6b",
+      "fact": "Eleven people killed in multiple strikes on alleged drug boats according to US military statement.",
+      "source": "BBC News 7.9*|9.0 \u00b7 ABC News Australia 5.8*|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/audio_16.mp3",
+      "published_at": "2026-02-17T18:00:33.784251+00:00",
+      "status": "published"
     }
   ]
 }
