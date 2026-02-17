@@ -1,5 +1,12 @@
 [
   {
+    "uid": "4e0d89b0188997af0bc0505d2ebb71e6",
+    "updateDate": "2026-02-17T16:00:38.0Z",
+    "titleText": "JTF News: BBC News, CBC News",
+    "mainText": "Police identified a suspect in a shooting at an ice rink in Rhode Island.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "b67fb3c4c98d62c5e84509ffe5aa0ada",
     "updateDate": "2026-02-17T12:30:51.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T10:00:57.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Jesse Jackson, a civil rights leader and two-time presidential candidate, died at age 84.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "609ccca391c5ec2c15e3d470f8f7db91",
-    "updateDate": "2026-02-17T08:00:55.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "President Emmanuel Macron of France is in India to discuss Rafale aircraft sales and artificial intelligence cooperation.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
