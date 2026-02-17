@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 00:02:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 00:03:16 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Austria filed terror charges related to an alleged plot targeting Taylor Swift c...</title>
+      <description>Austria filed terror charges related to an alleged plot targeting Taylor Swift concerts.</description>
+      <jtf:source name="ABC News Australia" accuracy="9.2*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" accuracy="9.5*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 00:03:16 +0000</pubDate>
+      <guid isPermaLink="false">761e1e4c0ec4</guid>
+    </item>
     <item>
       <title>Actor Robert Duvall died at age 95.</title>
       <description>Actor Robert Duvall died at age 95.</description>
