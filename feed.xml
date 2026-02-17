@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 08:00:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 08:00:53 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Emmanuel Macron of France is in India to discuss Rafale aircraft sales...</title>
+      <description>President Emmanuel Macron of France is in India to discuss Rafale aircraft sales and artificial intelligence cooperation.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="9.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="6.2" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 17 Feb 2026 08:00:53 +0000</pubDate>
+      <guid isPermaLink="false">e3a5884d20af</guid>
+    </item>
     <item>
       <title>The United States and Iran held high-level talks regarding Tehran's nuclear prog...</title>
       <description>The United States and Iran held high-level talks regarding Tehran's nuclear program.</description>
