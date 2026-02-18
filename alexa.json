@@ -1,5 +1,12 @@
 [
   {
+    "uid": "1c540d3c7bf6514c2133ea841fb84a4e",
+    "updateDate": "2026-02-18T10:00:41.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Peru's President was impeached four months into the term.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "87cb00d240a3120b56c49d32631b03cc",
     "updateDate": "2026-02-18T07:00:45.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-18T01:00:34.0Z",
     "titleText": "JTF News: CBC News, BBC News",
     "mainText": "Police identified a suspect in a shooting at an ice rink in Rhode Island.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "3c5b13b96e8742c784708d2bd5001cbc",
-    "updateDate": "2026-02-18T00:03:59.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "Russian and Ukrainian officials meet in Geneva for talks brokered by the United States.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
