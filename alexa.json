@@ -1,5 +1,12 @@
 [
   {
+    "uid": "545f7e19d39ed774d90b9005310629a5",
+    "updateDate": "2026-02-18T17:30:35.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "Mark Zuckerberg arrives to testify in social media addiction trial.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "1c540d3c7bf6514c2133ea841fb84a4e",
     "updateDate": "2026-02-18T10:00:41.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-18T01:30:44.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
     "mainText": "Peru's Congress removed interim President Jos\u00e9 Jer\u00ed as he faces a corruption probe.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "fe883d8372c1fac355db4f96587b4d15",
-    "updateDate": "2026-02-18T01:00:34.0Z",
-    "titleText": "JTF News: CBC News, BBC News",
-    "mainText": "Police identified a suspect in a shooting at an ice rink in Rhode Island.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
