@@ -1,5 +1,12 @@
 [
   {
+    "uid": "fe883d8372c1fac355db4f96587b4d15",
+    "updateDate": "2026-02-18T01:00:34.0Z",
+    "titleText": "JTF News: CBC News, BBC News",
+    "mainText": "Police identified a suspect in a shooting at an ice rink in Rhode Island.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "3c5b13b96e8742c784708d2bd5001cbc",
     "updateDate": "2026-02-18T00:03:59.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T21:30:38.0Z",
     "titleText": "JTF News: BBC News, France 24",
     "mainText": "Nine people arrested in France in connection with the death of a student.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "e5fa0512bb296ecdc9bb870a59f7b1b0",
-    "updateDate": "2026-02-17T20:00:49.0Z",
-    "titleText": "JTF News: Deutsche Welle, European Commission",
-    "mainText": "Shein faces an investigation by the European Union regarding products and design features.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
