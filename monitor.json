@@ -1,54 +1,73 @@
 {
-  "timestamp": "2026-02-18T20:58:28.482207+00:00",
+  "timestamp": "2026-02-18T21:01:06.661073+00:00",
+  "web_refresh_at": "2026-02-18T21:01:06.661073+00:00",
   "uptime_start": "2026-02-17T00:46:52.223211+00:00",
-  "uptime_seconds": 159096,
+  "uptime_seconds": 159254,
   "availability_pct": 93.6,
   "cycle": {
-    "number": 89,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
+    "number": 90,
+    "duration_seconds": 62.3,
+    "headlines_scraped": 142,
+    "headlines_processed": 10,
+    "stories_published": 1,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 606,
-        "cost_usd": 0.24588449999999998,
+        "calls": 621,
+        "cost_usd": 0.2515015,
         "details": {
-          "input_tokens": 594243,
-          "output_tokens": 77859
+          "input_tokens": 607036,
+          "output_tokens": 79794
         }
       },
       "elevenlabs": {
-        "calls": 9,
-        "cost_usd": 0.01929,
+        "calls": 11,
+        "cost_usd": 0.02619,
         "details": {
-          "characters": 643
+          "characters": 873
+        }
+      },
+      "twilio": {
+        "calls": 1,
+        "cost_usd": 0.0079,
+        "details": {
+          "sms_count": 1
         }
       }
     },
-    "total_usd": 0.2652,
+    "total_usd": 0.2856,
     "month_estimate_usd": 5.0,
     "daily_budget": 1.79,
-    "budget_pct": 14.8
+    "budget_pct": 16.0
   },
   "queue": {
-    "size": 43,
-    "oldest_item_age_hours": 24.5
+    "size": 41,
+    "oldest_item_age_hours": 23.5
   },
-  "stories_today": 9,
+  "stories_today": 10,
   "sources": {
     "total": 17,
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-02-18T21:00:49.089948+00:00",
+      "level": "WARNING",
+      "message": "Correction needed: The new verified fact states that 8 skiers died in"
+    },
+    {
+      "timestamp": "2026-02-18T21:00:51.420421+00:00",
+      "level": "WARNING",
+      "message": "Alert sent: CORRECTION issued for [2026-02-18-004]: The new verified fact states that 8 skiers died in"
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 1,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   }
 }
