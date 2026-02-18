@@ -1,5 +1,12 @@
 [
   {
+    "uid": "397bee4d766a7ad9b212957663542da4",
+    "updateDate": "2026-02-18T00:01:19.0Z",
+    "titleText": "JTF News: NPR, BBC News",
+    "mainText": "Jesse Jackson, a U.S. civil rights leader, died at age 84.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d2f819cfa33927e55eaef3764a92832e",
     "updateDate": "2026-02-17T23:30:58.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T18:00:35.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
     "mainText": "Eleven people killed in multiple strikes on alleged drug boats according to US military statement.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b16321945c2b13cafcc2ed1aa71b8abe",
-    "updateDate": "2026-02-17T16:30:55.0Z",
-    "titleText": "JTF News: European Commission, White House",
-    "mainText": "Secretary Rubio spoke in Munich.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
