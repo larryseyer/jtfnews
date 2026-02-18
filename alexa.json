@@ -1,5 +1,12 @@
 [
   {
+    "uid": "3c5b13b96e8742c784708d2bd5001cbc",
+    "updateDate": "2026-02-18T00:03:59.0Z",
+    "titleText": "JTF News: PBS NewsHour, France 24",
+    "mainText": "Russian and Ukrainian officials meet in Geneva for talks brokered by the United States.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "397bee4d766a7ad9b212957663542da4",
     "updateDate": "2026-02-18T00:01:19.0Z",
     "titleText": "JTF News: NPR, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-17T20:00:49.0Z",
     "titleText": "JTF News: Deutsche Welle, European Commission",
     "mainText": "Shein faces an investigation by the European Union regarding products and design features.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "9dcff879bb047f308768570027affb1e",
-    "updateDate": "2026-02-17T18:00:35.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "Eleven people killed in multiple strikes on alleged drug boats according to US military statement.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
