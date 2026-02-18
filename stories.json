@@ -26,6 +26,19 @@
       "audio": "../audio/audio_1.mp3",
       "published_at": "2026-02-18T00:03:57.653517+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-18-002",
+      "hash": "58a8dc073f69",
+      "fact": "Police identified a suspect in a shooting at an ice rink in Rhode Island.",
+      "source": "CBC News 3.0|9.0 \u00b7 BBC News 8.2|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_2.mp3",
+      "published_at": "2026-02-18T01:00:32.338544+00:00",
+      "status": "published"
     }
   ]
 }
