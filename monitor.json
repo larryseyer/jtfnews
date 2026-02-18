@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-18T11:55:54.462012+00:00",
+  "timestamp": "2026-02-18T12:00:43.432913+00:00",
+  "web_refresh_at": "2026-02-18T12:00:43.432913+00:00",
   "uptime_start": "2026-02-17T00:46:52.223211+00:00",
-  "uptime_seconds": 126542,
-  "availability_pct": 92.7,
+  "uptime_seconds": 126831,
+  "availability_pct": 92.8,
   "cycle": {
-    "number": 71,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 72,
+    "duration_seconds": 39.0,
+    "headlines_scraped": 142,
+    "headlines_processed": 5,
     "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 409,
-        "cost_usd": 0.165999,
+        "calls": 414,
+        "cost_usd": 0.16852499999999998,
         "details": {
-          "input_tokens": 401916,
-          "output_tokens": 52416
+          "input_tokens": 407625,
+          "output_tokens": 53295
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1808,
+    "total_usd": 0.1833,
     "month_estimate_usd": 5.0,
     "daily_budget": 1.79,
-    "budget_pct": 10.1
+    "budget_pct": 10.3
   },
   "queue": {
     "size": 44,
-    "oldest_item_age_hours": 22.4
+    "oldest_item_age_hours": 22.5
   },
   "stories_today": 7,
   "sources": {
@@ -48,7 +49,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   }
 }
