@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Feb 2026 03:30:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 07:00:43 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vice President Sara Duterte announced a presidential run in 2028.</title>
+      <description>Vice President Sara Duterte announced a presidential run in 2028.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="8.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="8.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 18 Feb 2026 07:00:43 +0000</pubDate>
+      <guid isPermaLink="false">178b1e6021f2</guid>
+    </item>
     <item>
       <title>Rescuers search for 10 missing skiers after an avalanche in California.</title>
       <description>Rescuers search for 10 missing skiers after an avalanche in California.</description>
