@@ -117,6 +117,19 @@
       "audio": "../audio/audio_8.mp3",
       "published_at": "2026-02-18T19:00:47.514375+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-18-009",
+      "hash": "a77448153538",
+      "fact": "Eight skiers died in an avalanche in California.",
+      "source": "Deutsche Welle 7.3|9.5 \u00b7 BBC News 7.8|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_9.mp3",
+      "published_at": "2026-02-18T21:00:44.857948+00:00",
+      "status": "published"
     }
   ]
 }
