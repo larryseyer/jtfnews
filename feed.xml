@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Feb 2026 07:30:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 11:01:01 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UK police arrested Andrew Mountbatten-Windsor on suspicion of misconduct in publ...</title>
+      <description>UK police arrested Andrew Mountbatten-Windsor on suspicion of misconduct in public office.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 19 Feb 2026 11:01:01 +0000</pubDate>
+      <guid isPermaLink="false">10395a6fd34d</guid>
+    </item>
     <item>
       <title>A South Korean court sentenced former President Yoon to life imprisonment.</title>
       <description>A South Korean court sentenced former President Yoon to life imprisonment.</description>
