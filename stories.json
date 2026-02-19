@@ -91,6 +91,19 @@
       "audio": "../audio/audio_6.mp3",
       "published_at": "2026-02-19T21:52:43.211885+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-19-007",
+      "hash": "7d45acc82db9",
+      "fact": "President Trump stated that the world has 10 days to determine if Iran agrees to a deal.",
+      "source": "BBC News 6.8|9.0 \u00b7 ABC News Australia 1.6|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/audio_7.mp3",
+      "published_at": "2026-02-19T23:30:33.785370+00:00",
+      "status": "published"
     }
   ]
 }
