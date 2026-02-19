@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b9adb23eb4ada0bde119ad5b4f19df93",
+    "updateDate": "2026-02-19T11:01:03.0Z",
+    "titleText": "JTF News: CBC News, France 24",
+    "mainText": "UK police arrested Andrew Mountbatten-Windsor on suspicion of misconduct in public office.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "93b2cfb457bb51cad69e38e88413a982",
     "updateDate": "2026-02-19T07:30:48.0Z",
     "titleText": "JTF News: ABC News Australia, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-19T00:00:59.0Z",
     "titleText": "JTF News: NPR, BBC News",
     "mainText": "Eight skiers were found dead following an avalanche in California.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "cae37aea1c24b7ae099fc5fabdc522b5",
-    "updateDate": "2026-02-18T21:00:46.0Z",
-    "titleText": "JTF News: Deutsche Welle, BBC News",
-    "mainText": "Eight skiers died in an avalanche in California.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
