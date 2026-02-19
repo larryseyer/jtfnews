@@ -13,6 +13,19 @@
       "audio": "../audio/audio_0.mp3",
       "published_at": "2026-02-19T00:00:57.304950+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-19-001",
+      "hash": "a5b628c21c4d",
+      "fact": "The United States and Iran are at an impasse following nuclear talks in Geneva.",
+      "source": "Deutsche Welle 7.4|9.5 \u00b7 France 24 6.1|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/audio_1.mp3",
+      "published_at": "2026-02-19T00:02:22.126299+00:00",
+      "status": "published"
     }
   ]
 }
