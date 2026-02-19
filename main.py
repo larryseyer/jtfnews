@@ -2686,6 +2686,7 @@ def send_alert(message: str, alert_type: str = "general"):
 HEARTBEAT_FILE = DATA_DIR / "heartbeat.txt"
 STREAM_OFFLINE_THRESHOLD = 300  # 5 minutes in seconds
 _offline_alert_sent = False  # Only ONE alert per offline event
+_midnight_archive_done_for = None  # Idempotency guard: prevents multiple runs in 00:00-00:05 window
 
 
 def write_heartbeat():
@@ -5392,25 +5393,33 @@ def apply_ownership_changes(changes: list):
 
 def check_midnight_archive():
     """Check if it's time to archive and cleanup (midnight GMT)."""
+    global _midnight_archive_done_for
     now = datetime.now(timezone.utc)
+    today = now.date().isoformat()
+
     if now.hour == 0 and now.minute < 5:
+        # Idempotency guard: only run once per day
+        if _midnight_archive_done_for == today:
+            return  # Already done today
+        _midnight_archive_done_for = today
+
         # Get yesterday's date for archiving
         yesterday = (now.date() - timedelta(days=1)).strftime("%Y-%m-%d")
 
-        # 1. Archive daily log (existing)
-        archive_daily_log()
-
-        # 2. Archive audio files BEFORE cleanup (NEW)
-        # This preserves audio for video generation
+        # 1. Archive audio files FIRST (preserves for video generation)
         archived_audio = archive_audio_files(yesterday)
 
-        # 3. Generate and upload daily summary video (NEW)
+        # 2. Generate and upload daily summary video BEFORE archiving log
+        # (needs data/YYYY-MM-DD.txt which archive_daily_log deletes)
         if archived_audio:
             try:
                 generate_and_upload_daily_summary(yesterday)
             except Exception as e:
                 log.error(f"Daily video generation failed: {e}")
                 send_alert(f"Daily video generation failed for {yesterday}: {e}")
+
+        # 3. Archive daily log AFTER digest is done (deletes the .txt file)
+        archive_daily_log()
 
         # 4. Cleanup old data
         cleanup_old_data(days=7)  # Delete raw data older than 7 days
