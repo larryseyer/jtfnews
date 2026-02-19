@@ -1,5 +1,12 @@
 [
   {
+    "uid": "a803c189fd43cff5d7d4d024ce41935e",
+    "updateDate": "2026-02-19T23:30:35.0Z",
+    "titleText": "JTF News: BBC News, ABC News Australia",
+    "mainText": "President Trump stated that the world has 10 days to determine if Iran agrees to a deal.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "e6dc87e61332da05ee9f9cb92ffe62e9",
     "updateDate": "2026-02-19T21:52:45.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-19T00:00:59.0Z",
     "titleText": "JTF News: NPR, BBC News",
     "mainText": "Eight skiers were found dead following an avalanche in California.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "cae37aea1c24b7ae099fc5fabdc522b5",
-    "updateDate": "2026-02-18T21:00:46.0Z",
-    "titleText": "JTF News: Deutsche Welle, BBC News",
-    "mainText": "Eight skiers died in an avalanche in California.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
