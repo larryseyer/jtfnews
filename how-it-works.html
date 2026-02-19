@@ -81,18 +81,6 @@
             color: #60a5fa;
         }
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #64748b;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .back-link:hover {
-            color: #94a3b8;
-        }
-
         /* ========== Demo Display Section ========== */
         .demo-section {
             background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%);
@@ -470,13 +458,22 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to JTF News</a>
-
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo-horizontal-dark.svg" alt="JTF News"></a>
+    <!-- Navigation prevents Safari Reader Mode auto-detection -->
+    <nav role="navigation" aria-label="Main navigation" style="background: rgba(15, 23, 42, 0.95); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 12px 20px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+        <div style="max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="assets/logo-horizontal-dark.svg" alt="JTF News" style="height: 28px;">
+            </a>
+            <div style="display: flex; gap: 20px; font-size: 14px;">
+                <a href="index.html" style="color: #94a3b8; text-decoration: none;">Home</a>
+                <a href="how-it-works.html" style="color: #d4af37; text-decoration: none;">How It Works</a>
+                <a href="whitepaper.html" style="color: #94a3b8; text-decoration: none;">Whitepaper</a>
+                <a href="screensaver.html" style="color: #94a3b8; text-decoration: none;">Screensaver</a>
+            </div>
         </div>
+    </nav>
 
+    <div class="container" style="padding-top: 20px;">
         <h1>How JTF News Works</h1>
         <p>Understanding what you see on screen and why it matters.</p>
 
