@@ -1,134 +1,17 @@
 {
-  "date": "2026-02-18",
+  "date": "2026-02-19",
   "stories": [
     {
-      "id": "2026-02-18-000",
-      "hash": "543ab26d5582",
-      "fact": "Jesse Jackson, a U.S. civil rights leader, died at age 84.",
-      "source": "NPR 4.8*|8.5 \u00b7 BBC News 8.0|9.0",
+      "id": "2026-02-19-000",
+      "hash": "592a680d6bbd",
+      "fact": "Eight skiers were found dead following an avalanche in California.",
+      "source": "NPR 3.9*|8.5 \u00b7 BBC News 7.9|9.0",
       "source_urls": {
         "NPR": "https://www.npr.org/sections/news/",
         "BBC News": "https://www.bbc.com/news/world"
       },
       "audio": "../audio/audio_0.mp3",
-      "published_at": "2026-02-18T00:01:17.490030+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-001",
-      "hash": "226cbb983f4a",
-      "fact": "Russian and Ukrainian officials meet in Geneva for talks brokered by the United States.",
-      "source": "PBS NewsHour 6.9|9.0 \u00b7 France 24 6.5|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_1.mp3",
-      "published_at": "2026-02-18T00:03:57.653517+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-002",
-      "hash": "58a8dc073f69",
-      "fact": "Police identified a suspect in a shooting at an ice rink in Rhode Island.",
-      "source": "CBC News 3.0|9.0 \u00b7 BBC News 8.2|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_2.mp3",
-      "published_at": "2026-02-18T01:00:32.338544+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-003",
-      "hash": "02f547948eb2",
-      "fact": "Peru's Congress removed interim President Jos\u00e9 Jer\u00ed as he faces a corruption probe.",
-      "source": "France 24 6.7|9.0 \u00b7 PBS NewsHour 7.1|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
-      },
-      "audio": "../audio/audio_3.mp3",
-      "published_at": "2026-02-18T01:30:42.457962+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-004",
-      "hash": "3a565ca39ea5",
-      "fact": "Rescuers search for 10 missing skiers after an avalanche in California.",
-      "source": "CBC News 3.3|9.0 \u00b7 BBC News 8.3|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_4.mp3",
-      "published_at": "2026-02-18T03:30:44.655733+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-005",
-      "hash": "d316990d30a1",
-      "fact": "Vice President Sara Duterte announced a presidential run in 2028.",
-      "source": "Deutsche Welle 8.2|9.5 \u00b7 BBC News 8.5|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_5.mp3",
-      "published_at": "2026-02-18T07:00:43.824916+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-006",
-      "hash": "3d2f6aaecde2",
-      "fact": "Peru's President was impeached four months into the term.",
-      "source": "France 24 6.5|9.0 \u00b7 BBC News 8.6|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_6.mp3",
-      "published_at": "2026-02-18T10:00:39.354770+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-007",
-      "hash": "6d43eee93358",
-      "fact": "Mark Zuckerberg arrives to testify in social media addiction trial.",
-      "source": "BBC News 8.1|9.0 \u00b7 France 24 6.0|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_7.mp3",
-      "published_at": "2026-02-18T17:30:33.903996+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-008",
-      "hash": "d1135c31d463",
-      "fact": "The United States and Iran remain at an impasse following nuclear talks in Geneva.",
-      "source": "Deutsche Welle 7.1|9.5 \u00b7 PBS NewsHour 6.9|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
-      },
-      "audio": "../audio/audio_8.mp3",
-      "published_at": "2026-02-18T19:00:47.514375+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-18-009",
-      "hash": "a77448153538",
-      "fact": "Eight skiers died in an avalanche in California.",
-      "source": "Deutsche Welle 7.3|9.5 \u00b7 BBC News 7.8|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_9.mp3",
-      "published_at": "2026-02-18T21:00:44.857948+00:00",
+      "published_at": "2026-02-19T00:00:57.304950+00:00",
       "status": "published"
     }
   ]
