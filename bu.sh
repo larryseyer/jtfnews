@@ -37,6 +37,10 @@ echo "=== Deploying to production ==="
 echo ""
 echo "=== Deploying to GitHub Pages ==="
 cd "$SOURCE/gh-pages-dist"
+
+# Pull any remote changes first (e.g., from automated monitor.json updates)
+git pull --rebase origin gh-pages
+
 git add -A
 # Only commit and push if there are changes
 if ! git diff --cached --quiet; then
