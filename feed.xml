@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Feb 2026 00:02:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 00:03:46 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Peru's Congress removed interim President José Jerí as he faces a corruption pro...</title>
+      <description>Peru's Congress removed interim President José Jerí as he faces a corruption probe.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="4.6*" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 19 Feb 2026 00:03:46 +0000</pubDate>
+      <guid isPermaLink="false">18405db177a8</guid>
+    </item>
     <item>
       <title>The United States and Iran are at an impasse following nuclear talks in Geneva.</title>
       <description>The United States and Iran are at an impasse following nuclear talks in Geneva.</description>
