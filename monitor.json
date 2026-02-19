@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-19T12:56:10.137927+00:00",
+  "timestamp": "2026-02-19T13:00:59.988635+00:00",
+  "web_refresh_at": "2026-02-19T13:00:59.988635+00:00",
   "uptime_start": "2026-02-19T03:18:33.971495+00:00",
-  "uptime_seconds": 34656,
+  "uptime_seconds": 34946,
   "availability_pct": 92.8,
   "cycle": {
-    "number": 20,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 21,
+    "duration_seconds": 55.4,
+    "headlines_scraped": 141,
+    "headlines_processed": 8,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 396,
-        "cost_usd": 0.16340149999999998,
+        "calls": 404,
+        "cost_usd": 0.16659224999999997,
         "details": {
-          "input_tokens": 390691,
-          "output_tokens": 52583
+          "input_tokens": 398824,
+          "output_tokens": 53509
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1795,
+    "total_usd": 0.1827,
     "month_estimate_usd": 6.2,
     "daily_budget": 1.79,
-    "budget_pct": 10.1
+    "budget_pct": 10.2
   },
   "queue": {
     "size": 37,
-    "oldest_item_age_hours": 24.4
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 5,
   "sources": {
@@ -44,11 +45,17 @@
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-02-19T13:00:46.616204+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYHUEDJpY5ywTL8re3eue'}"
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   }
 }
