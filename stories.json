@@ -78,6 +78,19 @@
       "audio": "../audio/audio_5.mp3",
       "published_at": "2026-02-19T21:30:40.080485+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-19-006",
+      "hash": "4b0372eb2a41",
+      "fact": "The White House stated Iran would be 'wise' to make a deal as the United States increases military presence.",
+      "source": "PBS NewsHour 6.7|9.0 \u00b7 BBC News 7.0|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_6.mp3",
+      "published_at": "2026-02-19T21:52:43.211885+00:00",
+      "status": "published"
     }
   ]
 }
