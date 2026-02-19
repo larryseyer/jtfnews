@@ -222,16 +222,19 @@
 
     /* ========== News Ticker ========== */
     #news-ticker {
-      position: absolute;
+      position: fixed;  /* fixed instead of absolute for iOS */
       bottom: 0;
       left: 0;
       right: 0;
-      height: clamp(60px, 10vh, 120px);
+      /* Fixed height with iOS-safe units fallback */
+      height: 70px;
+      height: clamp(60px, 10svh, 120px);  /* svh = small viewport height, safer for iOS */
+      min-height: 50px;  /* Ensure ticker is always visible */
       overflow: hidden;
       z-index: 50;
 
       /* Very dark background for small text readability */
-      background: rgba(10, 15, 30, 0.92);
+      background: rgba(10, 15, 30, 0.95);  /* Slightly more opaque for visibility */
       backdrop-filter: blur(40px) saturate(180%);
       -webkit-backdrop-filter: blur(40px) saturate(180%);
 
@@ -247,8 +250,8 @@
       display: flex;
       align-items: center;
 
-      /* iOS safe area support */
-      padding-bottom: var(--safe-bottom);
+      /* iOS safe area support - use margin instead of padding */
+      margin-bottom: var(--safe-bottom);
       padding-left: var(--safe-left);
       padding-right: var(--safe-right);
 
@@ -260,18 +263,26 @@
     #ticker-content {
       display: inline-block;
       white-space: nowrap;
-      padding-left: var(--viewport-width-px, 100vw);
+      /* Start visible, animation handles scroll */
+      padding-left: 0;
       animation: scroll-ticker linear infinite;
+      animation-play-state: paused;  /* Start paused, JS will play */
       font-size: clamp(24px, 4vw, 48px);
       font-weight: 400;
       color: rgba(255, 255, 255, 0.9);
       letter-spacing: 0.3px;
       --scroll-distance: 0px;
+      --start-offset: 100vw;
 
       /* iOS GPU acceleration for smooth animation */
       will-change: transform;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
+      -webkit-transform: translateZ(0) translateX(var(--start-offset, 100vw));
+      transform: translateZ(0) translateX(var(--start-offset, 100vw));
+    }
+
+    /* When animation is ready, start playing */
+    #ticker-content.animating {
+      animation-play-state: running;
     }
 
     #ticker-content .ticker-story {
@@ -300,8 +311,8 @@
     }
 
     @keyframes scroll-ticker {
-      from { transform: translateX(0); }
-      to { transform: translateX(var(--scroll-distance, -4000px)); }
+      from { transform: translateZ(0) translateX(var(--start-offset, 100vw)); }
+      to { transform: translateZ(0) translateX(var(--scroll-distance, -4000px)); }
     }
 
     /* Edge fade effect */
@@ -333,23 +344,27 @@
     /* Mobile portrait - smaller ticker with safe area */
     @media (max-width: 600px) and (orientation: portrait) {
       #news-ticker {
-        height: calc(clamp(50px, 10vh, 80px) + var(--safe-bottom));
+        height: 60px;
+        height: clamp(50px, 10svh, 80px);
+        min-height: 45px;
       }
       #ticker-content {
-        font-size: clamp(18px, 5vw, 36px);
+        font-size: clamp(16px, 4.5vw, 28px);
       }
       #ticker-content .ticker-source {
-        font-size: clamp(15px, 4.5vw, 32px);
+        font-size: clamp(14px, 4vw, 24px);
       }
     }
 
     /* Mobile landscape - compact ticker with safe area */
     @media (max-height: 500px) and (orientation: landscape) {
       #news-ticker {
-        height: calc(clamp(40px, 10vh, 70px) + var(--safe-bottom));
+        height: 50px;
+        height: clamp(40px, 10svh, 70px);
+        min-height: 40px;
       }
       #ticker-content {
-        font-size: clamp(18px, 4vh, 30px);
+        font-size: clamp(16px, 3.5svh, 26px);
       }
     }
 
@@ -670,14 +685,27 @@
       const tickerContent = document.getElementById('ticker-content');
       if (!tickerContent) return;
 
+      // Stop animation while updating
+      tickerContent.classList.remove('animating');
+
       tickerContent.innerHTML = buildTickerContent();
 
       requestAnimationFrame(() => {
+        const viewportWidth = document.documentElement.clientWidth;
         const contentWidth = tickerContent.scrollWidth;
-        const duration = contentWidth / TICKER_SPEED;
+        const totalDistance = viewportWidth + contentWidth;
+        const duration = totalDistance / TICKER_SPEED;
+
+        // Set animation properties
+        tickerContent.style.setProperty('--start-offset', viewportWidth + 'px');
         tickerContent.style.setProperty('--scroll-distance', `-${contentWidth}px`);
         tickerContent.style.animationDuration = `${duration}s`;
-        console.log(`[Ticker] Updated: ${stories.length} stories, duration: ${duration.toFixed(1)}s`);
+
+        // Start animation after a small delay to ensure CSS is applied
+        setTimeout(() => {
+          tickerContent.classList.add('animating');
+          console.log(`[Ticker] Started: ${stories.length} stories, duration: ${duration.toFixed(1)}s, width: ${contentWidth}px`);
+        }, 50);
       });
     }
 
