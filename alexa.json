@@ -1,5 +1,12 @@
 [
   {
+    "uid": "1fec3bd543bfcdb6bd209c54d267bd80",
+    "updateDate": "2026-02-20T18:00:02.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "A French soldier died after being shot in the head during an incident with other soldiers.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "351e7a2850ce6036a3cce97fe763d4b6",
     "updateDate": "2026-02-20T09:30:34.0Z",
     "titleText": "JTF News: NPR, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-20T03:00:48.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
     "mainText": "Eric Dane, actor known for 'Grey's Anatomy', died at age 53.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "953c7d35450eaec318085e4fc39c773d",
-    "updateDate": "2026-02-20T03:00:38.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Venezuela passes amnesty law for political prisoners.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
