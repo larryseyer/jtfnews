@@ -1,5 +1,12 @@
 [
   {
+    "uid": "297cf5418f3d15627b6ffe4e2a6a95b3",
+    "updateDate": "2026-02-20T00:03:52.0Z",
+    "titleText": "JTF News: PBS NewsHour, BBC News",
+    "mainText": "former President Yoon Suk Yeol of South Korea received a life sentence for imposing martial law.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "093c827ff1f93fecf17fd39ab22f8a4f",
     "updateDate": "2026-02-20T00:02:48.0Z",
     "titleText": "JTF News: CBC News, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-19T00:03:48.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
     "mainText": "Peru's Congress removed interim President Jos\u00e9 Jer\u00ed as he faces a corruption probe.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "69adc2482fa66d153ab83af506fa6155",
-    "updateDate": "2026-02-19T00:02:24.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "The United States and Iran are at an impasse following nuclear talks in Geneva.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
