@@ -1,5 +1,12 @@
 [
   {
+    "uid": "3c8bf2acc4b972f3e864316617ac0e55",
+    "updateDate": "2026-02-20T02:00:50.0Z",
+    "titleText": "JTF News: BBC News, Deutsche Welle",
+    "mainText": "An Austrian climber was found guilty after his girlfriend died on a mountain.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "5b4fae39d1302a1a392428585c23e15a",
     "updateDate": "2026-02-20T00:04:04.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-19T23:30:35.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
     "mainText": "President Trump stated that the world has 10 days to determine if Iran agrees to a deal.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "e6dc87e61332da05ee9f9cb92ffe62e9",
-    "updateDate": "2026-02-19T21:52:45.0Z",
-    "titleText": "JTF News: PBS NewsHour, BBC News",
-    "mainText": "The White House stated Iran would be 'wise' to make a deal as the United States increases military presence.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
