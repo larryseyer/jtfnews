@@ -26,6 +26,19 @@
       "audio": "../audio/audio_1.mp3",
       "published_at": "2026-02-20T00:03:50.873415+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-20-002",
+      "hash": "160afc2216d9",
+      "fact": "President Trump stated the world has 10 days to determine if Iran agrees to a deal.",
+      "source": "PBS NewsHour 7.0|9.0 \u00b7 BBC News 7.0|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_2.mp3",
+      "published_at": "2026-02-20T00:04:02.466883+00:00",
+      "status": "published"
     }
   ]
 }
