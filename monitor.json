@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-20T11:00:59.287678+00:00",
-  "web_refresh_at": "2026-02-20T11:00:59.287678+00:00",
+  "timestamp": "2026-02-20T11:06:00.188836+00:00",
   "uptime_start": "2026-02-19T23:47:53.642297+00:00",
-  "uptime_seconds": 40386,
+  "uptime_seconds": 40687,
   "availability_pct": 92.6,
   "cycle": {
     "number": 24,
-    "duration_seconds": 55.0,
-    "headlines_scraped": 142,
-    "headlines_processed": 15,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -44,7 +43,7 @@
   },
   "queue": {
     "size": 39,
-    "oldest_item_age_hours": 24.0
+    "oldest_item_age_hours": 24.1
   },
   "stories_today": 9,
   "sources": {
@@ -62,7 +61,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 23,
     "degraded_services": []
   },
   "daily_digest": {
