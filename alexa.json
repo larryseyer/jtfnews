@@ -1,5 +1,12 @@
 [
   {
+    "uid": "5be9ccf06a4a900807788451bbbacb82",
+    "updateDate": "2026-02-20T18:30:34.0Z",
+    "titleText": "JTF News: NPR, CBC News",
+    "mainText": "NASA plans to launch four astronauts to the moon on March 6 on the Artemis II mission.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "1fec3bd543bfcdb6bd209c54d267bd80",
     "updateDate": "2026-02-20T18:00:02.0Z",
     "titleText": "JTF News: BBC News, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-20T04:00:55.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
     "mainText": "President Trump issued a directive to the Pentagon to release files on unidentified flying objects and extraterrestrial life.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "dffca95f9f622530229b7bf92eff9a79",
-    "updateDate": "2026-02-20T03:00:48.0Z",
-    "titleText": "JTF News: ABC News Australia, France 24",
-    "mainText": "Eric Dane, actor known for 'Grey's Anatomy', died at age 53.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
