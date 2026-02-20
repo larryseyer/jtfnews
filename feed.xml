@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Feb 2026 00:04:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 02:00:48 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Austrian climber was found guilty after his girlfriend died on a mountain.</title>
+      <description>An Austrian climber was found guilty after his girlfriend died on a mountain.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="7.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 20 Feb 2026 02:00:48 +0000</pubDate>
+      <guid isPermaLink="false">f2be2fac610f</guid>
+    </item>
     <item>
       <title>President Trump stated the world has 10 days to determine if Iran agrees to a de...</title>
       <description>President Trump stated the world has 10 days to determine if Iran agrees to a deal.</description>
