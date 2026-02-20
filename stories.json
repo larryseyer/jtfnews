@@ -130,6 +130,19 @@
       "audio": "../audio/audio_9.mp3",
       "published_at": "2026-02-20T18:00:00.623138+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-20-010",
+      "hash": "89c00078cab8",
+      "fact": "NASA plans to launch four astronauts to the moon on March 6 on the Artemis II mission.",
+      "source": "NPR 4.7|8.5 \u00b7 CBC News 3.1|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/audio_10.mp3",
+      "published_at": "2026-02-20T18:30:32.265737+00:00",
+      "status": "published"
     }
   ]
 }
