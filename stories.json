@@ -104,6 +104,19 @@
       "audio": "../audio/audio_7.mp3",
       "published_at": "2026-02-20T04:30:40.853860+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-20-008",
+      "hash": "0ac870364147",
+      "fact": "A Palestinian-American was killed by settlers in the occupied West Bank, according to officials.",
+      "source": "NPR 4.3|8.5 \u00b7 PBS NewsHour 7.1|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/audio_8.mp3",
+      "published_at": "2026-02-20T09:30:32.433656+00:00",
+      "status": "published"
     }
   ]
 }
