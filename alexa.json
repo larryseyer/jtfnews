@@ -1,5 +1,12 @@
 [
   {
+    "uid": "093c827ff1f93fecf17fd39ab22f8a4f",
+    "updateDate": "2026-02-20T00:02:48.0Z",
+    "titleText": "JTF News: CBC News, NPR",
+    "mainText": "The U.S. women's ice hockey team won Olympic gold against Canada.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "a803c189fd43cff5d7d4d024ce41935e",
     "updateDate": "2026-02-19T23:30:35.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-19T00:02:24.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "The United States and Iran are at an impasse following nuclear talks in Geneva.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "48dffa5a7cb6cef1bc36bcab9c3c2beb",
-    "updateDate": "2026-02-19T00:00:59.0Z",
-    "titleText": "JTF News: NPR, BBC News",
-    "mainText": "Eight skiers were found dead following an avalanche in California.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
