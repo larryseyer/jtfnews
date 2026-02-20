@@ -273,6 +273,7 @@ function updateDashboard(data) {
     const statusMap = {
         'success': { text: 'Success', class: 'status-success' },
         'failed': { text: 'Failed', class: 'status-failed' },
+        'skipped': { text: 'Skipped', class: 'status-skipped' },
         'in_progress': { text: 'In Progress', class: 'status-in_progress' },
         'no_stories': { text: 'No Stories', class: 'status-no_stories' },
         'unknown': { text: '--', class: 'status-unknown' }
