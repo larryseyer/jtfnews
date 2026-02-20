@@ -78,6 +78,19 @@
       "audio": "../audio/audio_5.mp3",
       "published_at": "2026-02-20T03:00:47.084297+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-20-006",
+      "hash": "a26cb0c828e6",
+      "fact": "President Trump issued a directive to the Pentagon to release files on unidentified flying objects and extraterrestrial life.",
+      "source": "CBC News 3.0|9.0 \u00b7 Deutsche Welle 6.3|9.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/audio_6.mp3",
+      "published_at": "2026-02-20T04:00:53.985674+00:00",
+      "status": "published"
     }
   ]
 }
