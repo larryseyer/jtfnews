@@ -535,6 +535,12 @@ body {
     border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
+.status-skipped {
+    background: rgba(251, 146, 60, 0.2);
+    color: #fb923c;
+    border: 1px solid rgba(251, 146, 60, 0.3);
+}
+
 .digest-youtube-link {
     color: #a855f7;
     text-decoration: none;
