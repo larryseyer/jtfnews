@@ -1,5 +1,12 @@
 [
   {
+    "uid": "5b4fae39d1302a1a392428585c23e15a",
+    "updateDate": "2026-02-20T00:04:04.0Z",
+    "titleText": "JTF News: PBS NewsHour, BBC News",
+    "mainText": "President Trump stated the world has 10 days to determine if Iran agrees to a deal.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "297cf5418f3d15627b6ffe4e2a6a95b3",
     "updateDate": "2026-02-20T00:03:52.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-19T21:52:45.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
     "mainText": "The White House stated Iran would be 'wise' to make a deal as the United States increases military presence.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "4a94d1d6c9a3223def0a596c957b2106",
-    "updateDate": "2026-02-19T00:03:48.0Z",
-    "titleText": "JTF News: PBS NewsHour, The Guardian",
-    "mainText": "Peru's Congress removed interim President Jos\u00e9 Jer\u00ed as he faces a corruption probe.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
