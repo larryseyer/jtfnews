@@ -65,6 +65,19 @@
       "audio": "../audio/audio_4.mp3",
       "published_at": "2026-02-20T03:00:36.456931+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-20-005",
+      "hash": "afbb91cf7b2c",
+      "fact": "Eric Dane, actor known for 'Grey's Anatomy', died at age 53.",
+      "source": "ABC News Australia 1.8|9.0 \u00b7 France 24 4.9|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/audio_5.mp3",
+      "published_at": "2026-02-20T03:00:47.084297+00:00",
+      "status": "published"
     }
   ]
 }
