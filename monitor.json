@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-02-20T02:26:14.661837+00:00",
+  "timestamp": "2026-02-20T02:30:35.970615+00:00",
+  "web_refresh_at": "2026-02-20T02:30:35.970615+00:00",
   "uptime_start": "2026-02-19T23:47:53.642297+00:00",
-  "uptime_seconds": 9501,
-  "availability_pct": 91.9,
+  "uptime_seconds": 9762,
+  "availability_pct": 92.0,
   "cycle": {
-    "number": 6,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 7,
+    "duration_seconds": 31.5,
+    "headlines_scraped": 142,
+    "headlines_processed": 4,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -21,11 +22,11 @@
         }
       },
       "claude": {
-        "calls": 205,
-        "cost_usd": 0.08437650000000003,
+        "calls": 209,
+        "cost_usd": 0.08627600000000002,
         "details": {
-          "input_tokens": 202836,
-          "output_tokens": 26934
+          "input_tokens": 207399,
+          "output_tokens": 27541
         }
       },
       "elevenlabs": {
@@ -36,22 +37,20 @@
         }
       }
     },
-    "total_usd": 0.1061,
+    "total_usd": 0.108,
     "month_estimate_usd": 6.2,
     "daily_budget": 1.79,
-    "budget_pct": 5.9
+    "budget_pct": 6.0
   },
   "queue": {
     "size": 33,
-    "oldest_item_age_hours": 23.9
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 4,
   "sources": {
     "total": 17,
-    "successful": 16,
-    "failed": [
-      "Congress.gov"
-    ]
+    "successful": 17,
+    "failed": []
   },
   "recent_errors": [
     {
@@ -63,7 +62,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
