@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-02-20T00:55:53.611089+00:00",
+  "timestamp": "2026-02-20T01:00:43.584494+00:00",
+  "web_refresh_at": "2026-02-20T01:00:43.584494+00:00",
   "uptime_start": "2026-02-19T23:47:53.642297+00:00",
-  "uptime_seconds": 4080,
-  "availability_pct": 91.8,
+  "uptime_seconds": 4370,
+  "availability_pct": 91.9,
   "cycle": {
-    "number": 3,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 4,
+    "duration_seconds": 39.3,
+    "headlines_scraped": 142,
+    "headlines_processed": 6,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 2
   },
   "api_costs": {
     "today": {
@@ -21,11 +22,11 @@
         }
       },
       "claude": {
-        "calls": 178,
-        "cost_usd": 0.07382825000000003,
+        "calls": 187,
+        "cost_usd": 0.07683750000000002,
         "details": {
-          "input_tokens": 177523,
-          "output_tokens": 23558
+          "input_tokens": 184950,
+          "output_tokens": 24480
         }
       },
       "elevenlabs": {
@@ -36,14 +37,14 @@
         }
       }
     },
-    "total_usd": 0.0932,
+    "total_usd": 0.0962,
     "month_estimate_usd": 6.2,
     "daily_budget": 1.79,
-    "budget_pct": 5.2
+    "budget_pct": 5.4
   },
   "queue": {
-    "size": 31,
-    "oldest_item_age_hours": 23.9
+    "size": 33,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 3,
   "sources": {
@@ -51,62 +52,11 @@
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-20T00:00:01.962322+00:00",
-      "level": "WARNING",
-      "message": "Using fallback duration for /Users/larryseyer/JTFNews/audio/archive/2026-02-19/audio_4.mp3"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:01.967013+00:00",
-      "level": "ERROR",
-      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:01.967206+00:00",
-      "level": "WARNING",
-      "message": "Using fallback duration for /Users/larryseyer/JTFNews/audio/archive/2026-02-19/audio_5.mp3"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:01.973206+00:00",
-      "level": "ERROR",
-      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:01.973423+00:00",
-      "level": "WARNING",
-      "message": "Using fallback duration for /Users/larryseyer/JTFNews/audio/archive/2026-02-19/audio_6.mp3"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:01.979982+00:00",
-      "level": "ERROR",
-      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:01.980214+00:00",
-      "level": "WARNING",
-      "message": "Using fallback duration for /Users/larryseyer/JTFNews/audio/archive/2026-02-19/audio_7.mp3"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:02.018054+00:00",
-      "level": "ERROR",
-      "message": "Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:02.019933+00:00",
-      "level": "ERROR",
-      "message": "Fallback video generation failed: Failed to generate silence file"
-    },
-    {
-      "timestamp": "2026-02-20T00:00:02.485821+00:00",
-      "level": "WARNING",
-      "message": "Alert sent: Daily digest failed for 2026-02-19: Failed to generate silence file"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
