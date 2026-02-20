@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-02-20T11:26:03.693133+00:00",
+  "timestamp": "2026-02-20T11:30:45.357655+00:00",
+  "web_refresh_at": "2026-02-20T11:30:45.357655+00:00",
   "uptime_start": "2026-02-19T23:47:53.642297+00:00",
-  "uptime_seconds": 41890,
-  "availability_pct": 92.6,
+  "uptime_seconds": 42172,
+  "availability_pct": 92.7,
   "cycle": {
-    "number": 24,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 25,
+    "duration_seconds": 41.0,
+    "headlines_scraped": 142,
+    "headlines_processed": 8,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
@@ -21,11 +22,11 @@
         }
       },
       "claude": {
-        "calls": 404,
-        "cost_usd": 0.15881125,
+        "calls": 412,
+        "cost_usd": 0.162507,
         "details": {
-          "input_tokens": 384005,
-          "output_tokens": 50248
+          "input_tokens": 393128,
+          "output_tokens": 51380
         }
       },
       "elevenlabs": {
@@ -36,14 +37,14 @@
         }
       }
     },
-    "total_usd": 0.192,
+    "total_usd": 0.1957,
     "month_estimate_usd": 6.2,
     "daily_budget": 1.79,
-    "budget_pct": 10.8
+    "budget_pct": 11.0
   },
   "queue": {
-    "size": 39,
-    "oldest_item_age_hours": 24.4
+    "size": 37,
+    "oldest_item_age_hours": 23.0
   },
   "stories_today": 9,
   "sources": {
@@ -51,17 +52,11 @@
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-20T10:30:18.914036+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from Federal Register: 503 Server Error: Service Temporarily Unavailable for url: https://unblock.federalregister.gov"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
