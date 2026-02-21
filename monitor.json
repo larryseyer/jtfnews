@@ -1,69 +1,107 @@
 {
-  "timestamp": "2026-02-20T23:55:49.008753+00:00",
+  "timestamp": "2026-02-21T00:05:46.710890+00:00",
+  "web_refresh_at": "2026-02-21T00:05:46.710890+00:00",
   "uptime_start": "2026-02-20T17:59:30.763350+00:00",
-  "uptime_seconds": 21378,
+  "uptime_seconds": 21976,
   "availability_pct": 93.0,
   "cycle": {
-    "number": 12,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 13,
+    "duration_seconds": 341.8,
+    "headlines_scraped": 144,
+    "headlines_processed": 144,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 9
   },
   "api_costs": {
     "today": {
-      "twilio": {
-        "calls": 1,
-        "cost_usd": 0.0079,
-        "details": {
-          "sms_count": 1
-        }
-      },
       "claude": {
-        "calls": 667,
-        "cost_usd": 0.2634492500000001,
+        "calls": 162,
+        "cost_usd": 0.06930775,
         "details": {
-          "input_tokens": 636197,
-          "output_tokens": 83520
-        }
-      },
-      "elevenlabs": {
-        "calls": 12,
-        "cost_usd": 0.030600000000000002,
-        "details": {
-          "characters": 1020
+          "input_tokens": 168471,
+          "output_tokens": 21752
         }
       }
     },
-    "total_usd": 0.3019,
+    "total_usd": 0.0693,
     "month_estimate_usd": 6.72,
     "daily_budget": 1.79,
-    "budget_pct": 16.9
+    "budget_pct": 3.9
   },
   "queue": {
-    "size": 44,
-    "oldest_item_age_hours": 23.9
+    "size": 53,
+    "oldest_item_age_hours": 24.1
   },
-  "stories_today": 11,
+  "stories_today": 0,
   "sources": {
     "total": 17,
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-02-21T00:00:04.036748+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.042960+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.050477+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.057359+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.062739+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.068596+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.074945+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.081447+00:00",
+      "level": "ERROR",
+      "message": "ffprobe not found - install FFmpeg: brew install ffmpeg"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.083328+00:00",
+      "level": "ERROR",
+      "message": "obs-websocket-py not installed. Run: pip install obs-websocket-py"
+    },
+    {
+      "timestamp": "2026-02-21T00:00:04.083594+00:00",
+      "level": "ERROR",
+      "message": "Cannot connect to OBS WebSocket - skipping daily digest"
+    }
+  ],
   "status": {
     "state": "running",
-    "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "stream_health": "offline",
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
-    "last_date": "2026-02-19",
-    "next_digest_at": "2026-02-21T00:00:00+00:00",
-    "status": "failed",
+    "last_date": "2026-02-20",
+    "next_digest_at": "2026-02-22T00:00:00+00:00",
+    "status": "skipped",
     "upload_status": "pending",
-    "error_message": "Failed to generate silence file",
+    "error_message": "Cannot connect to OBS WebSocket - skipping daily digest",
     "last_completed_at": "2026-02-20T00:00:02.486193+00:00"
   }
 }
