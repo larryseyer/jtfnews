@@ -4321,10 +4321,15 @@ def update_digest_status(date: str, **kwargs):
     """
     current = load_digest_status()
 
-    # Calculate next digest (midnight GMT tomorrow)
+    # Calculate next digest (midnight CST = 06:00 UTC)
     now = datetime.now(timezone.utc)
-    tomorrow = now.date() + timedelta(days=1)
-    next_digest = datetime(tomorrow.year, tomorrow.month, tomorrow.day, tzinfo=timezone.utc)
+    # Midnight CST is 06:00 UTC. Find the next 06:00 UTC.
+    today_6am_utc = datetime(now.year, now.month, now.day, 6, tzinfo=timezone.utc)
+    if now >= today_6am_utc:
+        # Already past today's midnight CST, next one is tomorrow
+        next_digest = today_6am_utc + timedelta(days=1)
+    else:
+        next_digest = today_6am_utc
 
     current["last_date"] = date
     current["next_digest_at"] = next_digest.isoformat()
@@ -5293,12 +5298,12 @@ def apply_ownership_changes(changes: list):
 
 
 def check_midnight_archive():
-    """Check if it's time to archive and cleanup (midnight GMT)."""
+    """Check if it's time to archive and cleanup (midnight CST = 06:00 UTC)."""
     global _midnight_archive_done_for
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
 
-    if now.hour == 0 and now.minute < 5:
+    if now.hour == 6 and now.minute < 5:
         # Idempotency guard: only run once per day
         if _midnight_archive_done_for == today:
             return  # Already done today
