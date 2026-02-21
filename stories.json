@@ -1,147 +1,17 @@
 {
-  "date": "2026-02-20",
+  "date": "2026-02-21",
   "stories": [
     {
-      "id": "2026-02-20-000",
-      "hash": "d6672540bced",
-      "fact": "The U.S. women's ice hockey team won Olympic gold against Canada.",
-      "source": "CBC News 2.7|9.0 \u00b7 NPR 3.8|8.5",
+      "id": "2026-02-21-000",
+      "hash": "50c7ddda47aa",
+      "fact": "President Trump imposed a temporary import duty.",
+      "source": "CBC News 3.2|9.0 \u00b7 White House 9.1*|10.0",
       "source_urls": {
         "CBC News": "https://www.cbc.ca/news/world",
-        "NPR": "https://www.npr.org/sections/news/"
+        "White House": "https://www.whitehouse.gov/briefing-room/"
       },
       "audio": "../audio/audio_0.mp3",
-      "published_at": "2026-02-20T00:02:46.521868+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-001",
-      "hash": "d124204dfcbc",
-      "fact": "former President Yoon Suk Yeol of South Korea received a life sentence for imposing martial law.",
-      "source": "PBS NewsHour 6.8|9.0 \u00b7 BBC News 6.9|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_1.mp3",
-      "published_at": "2026-02-20T00:03:50.873415+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-002",
-      "hash": "160afc2216d9",
-      "fact": "President Trump stated the world has 10 days to determine if Iran agrees to a deal. with the timeframe extended to 15 days at the upper end",
-      "source": "PBS NewsHour 7.0|9.0 \u00b7 BBC News 7.0|9.0 \u00b7 Deutsche Welle 6.1|9.5",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_2.mp3",
-      "published_at": "2026-02-20T00:04:02.466883+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-003",
-      "hash": "bb536168f3f4",
-      "fact": "An Austrian climber was found guilty after his girlfriend died on a mountain.",
-      "source": "BBC News 7.1|9.0 \u00b7 Deutsche Welle 6.2|9.5",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_3.mp3",
-      "published_at": "2026-02-20T02:00:48.502477+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-004",
-      "hash": "9e67bb170fa3",
-      "fact": "Venezuela passes amnesty law for political prisoners.",
-      "source": "Deutsche Welle 6.2|9.5 \u00b7 France 24 4.8|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_4.mp3",
-      "published_at": "2026-02-20T03:00:36.456931+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-005",
-      "hash": "afbb91cf7b2c",
-      "fact": "Eric Dane, actor known for 'Grey's Anatomy', died at age 53.",
-      "source": "ABC News Australia 1.8|9.0 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_5.mp3",
-      "published_at": "2026-02-20T03:00:47.084297+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-006",
-      "hash": "a26cb0c828e6",
-      "fact": "President Trump issued a directive to the Pentagon to release files on unidentified flying objects and extraterrestrial life.",
-      "source": "CBC News 3.0|9.0 \u00b7 Deutsche Welle 6.3|9.5",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_6.mp3",
-      "published_at": "2026-02-20T04:00:53.985674+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-007",
-      "hash": "82979054a690",
-      "fact": "North Korea's Kim Jong Un opened a party congress.",
-      "source": "Deutsche Welle 6.4|9.5 \u00b7 France 24 5.0|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_7.mp3",
-      "published_at": "2026-02-20T04:30:40.853860+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-008",
-      "hash": "0ac870364147",
-      "fact": "A Palestinian-American was killed by settlers in the occupied West Bank, according to officials.",
-      "source": "NPR 4.3|8.5 \u00b7 PBS NewsHour 7.1|9.0",
-      "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
-      },
-      "audio": "../audio/audio_8.mp3",
-      "published_at": "2026-02-20T09:30:32.433656+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-009",
-      "hash": "fcc496464e76",
-      "fact": "A French soldier died after being shot in the head during an incident with other soldiers.",
-      "source": "BBC News 7.2|9.0 \u00b7 France 24 4.6|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_9.mp3",
-      "published_at": "2026-02-20T18:00:00.623138+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-20-010",
-      "hash": "89c00078cab8",
-      "fact": "NASA plans to launch four astronauts to the moon on March 6 on the Artemis II mission.",
-      "source": "NPR 4.7|8.5 \u00b7 CBC News 3.1|9.0",
-      "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
-        "CBC News": "https://www.cbc.ca/news/world"
-      },
-      "audio": "../audio/audio_10.mp3",
-      "published_at": "2026-02-20T18:30:32.265737+00:00",
+      "published_at": "2026-02-21T01:00:32.145098+00:00",
       "status": "published"
     }
   ]
