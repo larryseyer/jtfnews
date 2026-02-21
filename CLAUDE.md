@@ -359,6 +359,14 @@ After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to
 - The deploy.sh script will OVERWRITE deploy files with dev versions (no -u flag)
 - Dev is ALWAYS the source of truth
 
+### NEVER RUN SCRIPTS THROUGH THE MOUNTED VOLUME
+**Running scripts via `/Volumes/MacLive/...` creates ARM64 binaries that BREAK on Intel.**
+
+- `fix-after-copy.sh` and `start.sh` must be run **directly on the deploy machine**
+- The mounted volume is for FILE COPYING ONLY, not script execution
+- If venv needs rebuilding, the user must run it on the Intel machine (SSH or physical)
+- Claude cannot fix venv issues - only the user can, by running commands on the actual hardware
+
 **What gets deployed** (safe to copy):
 - Python source files (.py)
 - Config files (config.json, requirements.txt)

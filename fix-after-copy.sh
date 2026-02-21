@@ -1,9 +1,23 @@
 #!/bin/bash
 # Run this script on the DEPLOY machine after copying or when venv breaks
+# WARNING: Must be run DIRECTLY on the deploy machine, NOT through mounted volume
 
 set -e
 
 echo "=== JTFNews Post-Copy Fix ==="
+echo ""
+
+# Architecture check - abort if running on wrong architecture
+ARCH=$(uname -m)
+if [[ "$ARCH" == "arm64" ]]; then
+    echo "ERROR: This script is running on ARM64 (Apple Silicon)."
+    echo "The deploy machine is Intel (x86_64)."
+    echo ""
+    echo "You CANNOT run this through the mounted volume!"
+    echo "Run it DIRECTLY on the deploy machine (SSH or physical access)."
+    exit 1
+fi
+echo "Architecture: $ARCH (correct for deploy machine)"
 echo ""
 
 # Get the directory where this script is located
