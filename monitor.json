@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-21T07:50:40.037106+00:00",
+  "timestamp": "2026-02-21T07:55:40.992186+00:00",
   "uptime_start": "2026-02-21T00:34:19.916021+00:00",
-  "uptime_seconds": 26180,
+  "uptime_seconds": 26481,
   "availability_pct": 92.4,
   "cycle": {
     "number": 15,
@@ -36,7 +36,7 @@
   },
   "queue": {
     "size": 44,
-    "oldest_item_age_hours": 24.3
+    "oldest_item_age_hours": 24.4
   },
   "stories_today": 2,
   "sources": {
@@ -48,7 +48,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 9,
+    "next_cycle_minutes": 4,
     "degraded_services": []
   },
   "daily_digest": {
