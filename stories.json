@@ -13,6 +13,19 @@
       "audio": "../audio/audio_0.mp3",
       "published_at": "2026-02-21T01:00:32.145098+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-21-001",
+      "hash": "9bbc67ea6e03",
+      "fact": "President Trump criticized Supreme Court justices regarding a tariffs ruling.",
+      "source": "BBC News 7.1|9.0 \u00b7 CBC News 3.4|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/audio_1.mp3",
+      "published_at": "2026-02-21T01:30:33.829642+00:00",
+      "status": "published"
     }
   ]
 }
