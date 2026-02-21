@@ -4298,13 +4298,24 @@ def _upload_video_to_youtube(video_path: str, date: str):
 
 def load_digest_status() -> dict:
     """Load digest status from persistent file."""
+    status = {}
     if DIGEST_STATUS_FILE.exists():
         try:
             with open(DIGEST_STATUS_FILE) as f:
-                return json.load(f)
+                status = json.load(f)
         except Exception:
             pass
-    return {}
+
+    # Always calculate next_digest_at dynamically (midnight CST = 06:00 UTC)
+    now = datetime.now(timezone.utc)
+    today_6am_utc = datetime(now.year, now.month, now.day, 6, tzinfo=timezone.utc)
+    if now >= today_6am_utc:
+        next_digest = today_6am_utc + timedelta(days=1)
+    else:
+        next_digest = today_6am_utc
+    status["next_digest_at"] = next_digest.isoformat()
+
+    return status
 
 
 def save_digest_status(status: dict):
