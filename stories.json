@@ -52,6 +52,19 @@
       "audio": "../audio/audio_3.mp3",
       "published_at": "2026-02-21T19:00:32.835409+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-21-004",
+      "hash": "53e154f0cf03",
+      "fact": "Venezuela approved an amnesty bill.",
+      "source": "France 24 4.3|9.0 \u00b7 PBS NewsHour 7.2|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/audio_4.mp3",
+      "published_at": "2026-02-21T21:30:33.324192+00:00",
+      "status": "published"
     }
   ]
 }
