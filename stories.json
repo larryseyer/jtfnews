@@ -39,6 +39,19 @@
       "audio": "../audio/audio_2.mp3",
       "published_at": "2026-02-21T18:30:32.173318+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-21-003",
+      "hash": "1164dcc0f380",
+      "fact": "Giant tortoises return to Gal\u00e1pagos island after nearly 200 years.",
+      "source": "BBC News 6.7|9.0 \u00b7 The Guardian 2.1|2.5",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "The Guardian": "https://www.theguardian.com/world"
+      },
+      "audio": "../audio/audio_3.mp3",
+      "published_at": "2026-02-21T19:00:32.835409+00:00",
+      "status": "published"
     }
   ]
 }
