@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Feb 2026 00:02:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 00:02:33 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump raised tariffs to 15% from 10%.</title>
+      <description>President Trump raised tariffs to 15% from 10%.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 22 Feb 2026 00:02:33 +0000</pubDate>
+      <guid isPermaLink="false">dc7df2de7b27</guid>
+    </item>
     <item>
       <title>NASA astronauts' moon mission delayed due to rocket issue.</title>
       <description>NASA astronauts' moon mission delayed due to rocket issue.</description>
