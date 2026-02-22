@@ -1,5 +1,12 @@
 [
   {
+    "uid": "56adf8c035ab5b1b14bf70c33666fc6a",
+    "updateDate": "2026-02-22T18:00:45.0Z",
+    "titleText": "JTF News: PBS NewsHour, NPR",
+    "mainText": "The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold medal.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "b18c18b3c28d5315e5900b232325ccdd",
     "updateDate": "2026-02-22T14:30:39.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-22T03:00:34.0Z",
     "titleText": "JTF News: NPR, ABC News Australia",
     "mainText": "Crews recovered the bodies of 9 skiers killed in an avalanche in California.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "fd056947d978eda6a50585bcec4307f9",
-    "updateDate": "2026-02-22T00:02:35.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "President Trump raised tariffs to 15% from 10%.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
