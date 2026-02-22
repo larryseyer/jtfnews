@@ -1,5 +1,12 @@
 [
   {
+    "uid": "1e491c1e01e9021f8f82046765277e9b",
+    "updateDate": "2026-02-22T00:02:22.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "NASA astronauts' moon mission delayed due to rocket issue.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "5adec5abd8774fdf13ca42bde97d24a7",
     "updateDate": "2026-02-22T00:01:58.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-21T19:00:34.0Z",
     "titleText": "JTF News: BBC News, The Guardian",
     "mainText": "Giant tortoises return to Gal\u00e1pagos island after nearly 200 years.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "0127e766e3a9f70e76987b5b71aa0c29",
-    "updateDate": "2026-02-21T18:30:33.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "NASA astronauts' moon mission is likely to be delayed due to a rocket issue.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
