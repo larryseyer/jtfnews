@@ -52,6 +52,19 @@
       "audio": "../audio/audio_3.mp3",
       "published_at": "2026-02-22T00:02:33.919140+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-22-004",
+      "hash": "13e5603632e0",
+      "fact": "Crews recovered the bodies of 9 skiers killed in an avalanche in California.",
+      "source": "NPR 4.2|8.5 \u00b7 ABC News Australia 1.4|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/audio_4.mp3",
+      "published_at": "2026-02-22T03:00:32.565398+00:00",
+      "status": "published"
     }
   ]
 }
