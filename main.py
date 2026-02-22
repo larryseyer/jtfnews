@@ -3632,38 +3632,18 @@ def archive_audio_files(date: str) -> list:
 
 
 def get_audio_duration(path: str) -> float:
-    """Get audio duration in seconds using ffprobe.
+    """Estimate audio duration in seconds.
+
+    Returns a fixed estimate since OBS handles the actual recording timing.
+    Per spec: "OBS Does Heavy Lifting" - we don't need precise duration.
 
     Args:
-        path: Path to audio file
+        path: Path to audio file (unused, kept for API compatibility)
 
     Returns:
-        Duration in seconds, or 0.0 on error
+        Estimated duration of 15 seconds per story
     """
-    import subprocess
-
-    try:
-        result = subprocess.run([
-            "ffprobe", "-v", "error",
-            "-show_entries", "format=duration",
-            "-of", "default=noprint_wrappers=1:nokey=1",
-            path
-        ], capture_output=True, text=True, timeout=30)
-
-        if result.returncode == 0 and result.stdout.strip():
-            return float(result.stdout.strip())
-        else:
-            log.warning(f"ffprobe failed for {path}: {result.stderr}")
-            return 0.0
-    except FileNotFoundError:
-        log.error("ffprobe not found - install FFmpeg: brew install ffmpeg")
-        return 0.0
-    except subprocess.TimeoutExpired:
-        log.error(f"ffprobe timed out for {path}")
-        return 0.0
-    except Exception as e:
-        log.error(f"Error getting duration for {path}: {e}")
-        return 0.0
+    return 15.0
 
 
 def get_current_season() -> str:
@@ -3953,7 +3933,7 @@ def get_obs_connection():
 
     try:
         from obswebsocket import obsws, requests as obs_requests
-        ws = obsws(obs_host, obs_port, obs_password)
+        ws = obsws(obs_host, obs_port, obs_password, legacy=True)
         ws.connect()
         log.info(f"Connected to OBS WebSocket at {obs_host}:{obs_port}")
         return ws
@@ -4218,18 +4198,9 @@ def generate_and_upload_daily_summary(date: str):
         log.info(f"Digest recorded: {recording_path}")
 
         # Copy to our video folder with standard name
+        # OBS is configured to output MP4 directly (Settings → Output → Recording Format → mp4)
         video_path = VIDEO_DIR / f"{date}-daily-digest.mp4"
-        if Path(recording_path).suffix.lower() != '.mp4':
-            # OBS might save as .mkv, convert to mp4
-            import subprocess
-            subprocess.run([
-                "ffmpeg", "-y",
-                "-i", recording_path,
-                "-c", "copy",
-                str(video_path)
-            ], capture_output=True, timeout=300)
-        else:
-            shutil.copy(recording_path, video_path)
+        shutil.copy(recording_path, video_path)
 
         log.info(f"Video saved to: {video_path}")
 
