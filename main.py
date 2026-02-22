@@ -3637,18 +3637,26 @@ def archive_audio_files(date: str) -> list:
 
 
 def get_audio_duration(path: str) -> float:
-    """Estimate audio duration in seconds.
-
-    Returns a fixed estimate since OBS handles the actual recording timing.
-    Per spec: "OBS Does Heavy Lifting" - we don't need precise duration.
+    """Get actual audio duration in seconds using mutagen.
 
     Args:
-        path: Path to audio file (unused, kept for API compatibility)
+        path: Path to audio file
 
     Returns:
-        Estimated duration of 15 seconds per story
+        Duration in seconds, or 15.0 as fallback
     """
-    return 15.0
+    try:
+        from mutagen.mp3 import MP3
+        audio = MP3(path)
+        duration = audio.info.length
+        log.debug(f"Audio duration for {path}: {duration:.1f}s")
+        return duration
+    except ImportError:
+        log.warning("mutagen not installed, using fallback duration")
+        return 15.0
+    except Exception as e:
+        log.warning(f"Could not read duration for {path}: {e}")
+        return 15.0
 
 
 def get_current_season() -> str:
@@ -4089,7 +4097,9 @@ def obs_refresh_browser_source(ws, source_name: str, url: str = None) -> bool:
 
 
 def estimate_digest_duration(stories: list, audio_files: list) -> float:
-    """Estimate total duration of daily digest in seconds.
+    """Calculate precise duration of daily digest in seconds.
+
+    Uses actual audio file durations for accuracy.
 
     Args:
         stories: List of stories
@@ -4099,25 +4109,21 @@ def estimate_digest_duration(stories: list, audio_files: list) -> float:
         Estimated duration in seconds
     """
     total_duration = 0.0
-    gap_time = 2.0  # Gap between stories
+    gap_time = 2.0  # Gap between stories (matches HTML GAP_BETWEEN_STORIES)
 
     for audio_file in audio_files:
         duration = get_audio_duration(audio_file)
-        if duration > 0:
-            total_duration += duration
-        else:
-            # Fallback estimate based on average audio length
-            total_duration += 15.0
+        total_duration += duration
+        log.debug(f"Audio {audio_file}: {duration:.1f}s")
 
     # Add gaps between stories
     if len(stories) > 1:
         total_duration += gap_time * (len(stories) - 1)
 
-    # Add 2 second intro delay + 10 second completion screen
-    total_duration += 12.0
+    # Add intro delay (3s) + completion screen (10s)
+    total_duration += 13.0
 
-    # Add 20% buffer for safety
-    total_duration *= 1.2
+    log.info(f"Total audio: {total_duration:.1f}s ({len(audio_files)} files)")
 
     return total_duration
 
@@ -4216,12 +4222,13 @@ def generate_and_upload_daily_summary(date: str):
         if not obs_start_recording(ws):
             raise Exception("Failed to start OBS recording")
 
-        # Wait for digest to complete (with timeout)
-        max_wait = int(estimated_duration) + 60  # Extra minute buffer
+        # Wait for digest to complete
+        # Using precise audio duration + small buffer (10s safety margin)
+        max_wait = int(estimated_duration) + 10
         elapsed = 0
-        poll_interval = 10
+        poll_interval = 5  # Poll more frequently for responsiveness
 
-        log.info(f"Recording digest... (max wait: {max_wait}s)")
+        log.info(f"Recording digest for {estimated_duration:.0f}s (max wait: {max_wait}s)")
 
         while elapsed < max_wait:
             time.sleep(poll_interval)
@@ -4232,9 +4239,10 @@ def generate_and_upload_daily_summary(date: str):
                 log.info("Recording stopped externally")
                 break
 
-            # Log progress every minute
-            if elapsed % 60 == 0:
-                log.info(f"Recording in progress... {elapsed}s elapsed")
+            # Log progress every 30 seconds
+            if elapsed % 30 == 0:
+                remaining = max_wait - elapsed
+                log.info(f"Recording... {elapsed}s elapsed, ~{remaining}s remaining")
 
         # Stop recording
         recording_path = obs_stop_recording(ws)

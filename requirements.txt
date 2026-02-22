@@ -32,3 +32,6 @@ google-auth-oauthlib>=1.0.0
 # OBS WebSocket - Daily digest recording control
 obs-websocket-py>=1.0.0
 
+# Audio duration detection - Precise digest recording timing
+mutagen>=1.45.0
+
