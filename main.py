@@ -1905,8 +1905,13 @@ def append_daily_log(fact: str, sources: list, audio_file: str = None):
     source_scores = ",".join([get_display_rating(s["source_id"]) for s in sources[:2]])
     source_urls = ",".join([s.get("source_url", "") for s in sources[:2]])
 
-    # Format: timestamp|names|scores|urls|fact (5 fields)
-    line = f"{timestamp}|{source_names}|{source_scores}|{source_urls}|{fact}\n"
+    # Extract audio filename (e.g., "audio_0.mp3" from "../audio/audio_0.mp3")
+    audio_name = ""
+    if audio_file:
+        audio_name = audio_file.split("/")[-1] if "/" in audio_file else audio_file
+
+    # Format: timestamp|names|scores|urls|audio|fact (6 fields)
+    line = f"{timestamp}|{source_names}|{source_scores}|{source_urls}|{audio_name}|{fact}\n"
 
     # Create header if new file
     if not log_file.exists():
@@ -3714,9 +3719,10 @@ def load_stories_for_date(date: str) -> list:
             lines = f.readlines()
 
         # Parse daily log format (pipe-delimited):
-        # timestamp|Source1,Source2|ratings|urls|fact text
+        # Old (5 fields): timestamp|sources|ratings|urls|fact
+        # New (6 fields): timestamp|sources|ratings|urls|audio|fact
         # Example:
-        # 2026-02-15T00:08:14+00:00|BBC News,Reuters|9.5*,9.9*|url1,url2|The fact here.
+        # 2026-02-15T00:08:14+00:00|BBC News,Reuters|9.5*,9.9*|url1,url2|audio_0.mp3|The fact here.
 
         for line in lines:
             line = line.strip()
@@ -3727,17 +3733,28 @@ def load_stories_for_date(date: str) -> list:
 
             # Parse pipe-delimited format
             parts = line.split('|')
-            if len(parts) >= 5:
+            if len(parts) >= 6:
+                # New format with audio field
                 timestamp = parts[0]
                 sources = parts[1]
-                # ratings = parts[2]  # Not needed for video
-                # urls = parts[3]  # Not needed for video
-                fact = parts[4]
-
+                audio = parts[4]  # e.g., "audio_0.mp3"
+                fact = parts[5]
                 stories.append({
                     'fact': fact,
                     'source': sources,
-                    'timestamp': timestamp
+                    'timestamp': timestamp,
+                    'audio': audio
+                })
+            elif len(parts) >= 5:
+                # Old format without audio - use index-based fallback
+                timestamp = parts[0]
+                sources = parts[1]
+                fact = parts[4]
+                stories.append({
+                    'fact': fact,
+                    'source': sources,
+                    'timestamp': timestamp,
+                    'audio': None
                 })
 
         log.info(f"Loaded {len(stories)} stories from {date}")
@@ -4152,11 +4169,13 @@ def generate_and_upload_daily_summary(date: str):
     stories_js_file = DATA_DIR / "digest-stories.js"
     stories_data = []
     for i, story in enumerate(stories):
+        # Use audio filename from log if available, otherwise fall back to index
+        audio_filename = story.get("audio") or f"audio_{i}.mp3"
         stories_data.append({
             "fact": story.get("fact", ""),
             "source": story.get("source", ""),
             "timestamp": story.get("timestamp", ""),
-            "audioPath": str(AUDIO_DIR / "archive" / date / f"audio_{i}.mp3")
+            "audioPath": str(AUDIO_DIR / "archive" / date / audio_filename)
         })
     with open(stories_js_file, 'w') as f:
         f.write(f"// Auto-generated digest stories for {date}\n")
