@@ -1,5 +1,12 @@
 [
   {
+    "uid": "116ffc31785f94e4da0b7af05a5ce738",
+    "updateDate": "2026-02-22T20:00:42.0Z",
+    "titleText": "JTF News: Deutsche Welle, NPR",
+    "mainText": "The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mencho'.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "56adf8c035ab5b1b14bf70c33666fc6a",
     "updateDate": "2026-02-22T18:00:45.0Z",
     "titleText": "JTF News: PBS NewsHour, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-22T05:30:32.0Z",
     "titleText": "JTF News: BBC News, France 24",
     "mainText": "More than 1,500 Venezuelan political prisoners apply for amnesty.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "e9cf38c7f8f0e05450c4998113cc4838",
-    "updateDate": "2026-02-22T03:00:34.0Z",
-    "titleText": "JTF News: NPR, ABC News Australia",
-    "mainText": "Crews recovered the bodies of 9 skiers killed in an avalanche in California.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
