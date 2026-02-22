@@ -1,5 +1,12 @@
 [
   {
+    "uid": "fd056947d978eda6a50585bcec4307f9",
+    "updateDate": "2026-02-22T00:02:35.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "President Trump raised tariffs to 15% from 10%.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "1e491c1e01e9021f8f82046765277e9b",
     "updateDate": "2026-02-22T00:02:22.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-21T21:30:35.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
     "mainText": "Venezuela approved an amnesty bill.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "7bc174d2e4d7d23978a4f2d972869317",
-    "updateDate": "2026-02-21T19:00:34.0Z",
-    "titleText": "JTF News: BBC News, The Guardian",
-    "mainText": "Giant tortoises return to Gal\u00e1pagos island after nearly 200 years.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
