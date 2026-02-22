@@ -108,14 +108,6 @@
             background: rgba(96, 165, 250, 0.2);
             color: #60a5fa;
         }
-        .category-risk {
-            font-size: 12px;
-            color: #64748b;
-            margin-bottom: 15px;
-        }
-        .risk-none { color: #22c55e; }
-        .risk-low { color: #60a5fa; }
-
         /* Source Grid */
         .source-grid {
             display: grid;
@@ -141,36 +133,6 @@
             font-size: 11px;
             color: #64748b;
             margin-top: 5px;
-        }
-
-        /* Excluded Section */
-        .excluded-box {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 25px 0;
-        }
-        .excluded-box h3 {
-            color: #ef4444;
-            margin-top: 0;
-        }
-        .excluded-list {
-            list-style: none;
-            padding: 0;
-            margin: 15px 0;
-        }
-        .excluded-list li {
-            padding: 6px 0;
-            padding-left: 25px;
-            position: relative;
-            color: #94a3b8;
-        }
-        .excluded-list li::before {
-            content: "\2717";
-            position: absolute;
-            left: 0;
-            color: #ef4444;
         }
 
         /* Links */
@@ -215,9 +177,8 @@
         <p>Every source must meet ALL of these requirements:</p>
         <ul class="criteria-list">
             <li><strong>RSS Feed Provided</strong> &mdash; Official RSS feed available (not scraped from HTML)</li>
-            <li><strong>ToS Compliant</strong> &mdash; Terms of service permit aggregation or low legal risk</li>
+            <li><strong>ToS Compliant</strong> &mdash; Terms of service permit aggregation</li>
             <li><strong>Ownership Verifiable</strong> &mdash; Corporate structure is documented</li>
-            <li><strong>Low Litigation Risk</strong> &mdash; Not known plaintiffs in aggregation lawsuits</li>
         </ul>
     </div>
 
@@ -229,7 +190,6 @@
             <span class="category-title">Government / Primary Sources</span>
             <span class="category-count">8 sources</span>
         </div>
-        <p class="category-risk">Risk Level: <span class="risk-none">None</span> &mdash; Government information is public record</p>
         <div class="source-grid">
             <div class="source-item">
                 <div class="source-name">White House</div>
@@ -280,7 +240,6 @@
             <span class="category-title">Public Broadcasters</span>
             <span class="category-count">7 sources</span>
         </div>
-        <p class="category-risk">Risk Level: <span class="risk-low">Low</span> &mdash; Public service mission, RSS feeds provided for aggregation</p>
         <div class="source-grid">
             <div class="source-item">
                 <div class="source-name">BBC News</div>
@@ -326,7 +285,6 @@
             <span class="category-title">Trusts / Nonprofits</span>
             <span class="category-count">2 sources</span>
         </div>
-        <p class="category-risk">Risk Level: <span class="risk-low">Low</span> &mdash; Trust ownership, public interest mission, RSS feeds provided</p>
         <div class="source-grid">
             <div class="source-item">
                 <div class="source-name">The Guardian</div>
@@ -339,21 +297,6 @@
                 <div class="source-country">Ireland</div>
             </div>
         </div>
-    </div>
-
-    <!-- Excluded Sources -->
-    <div class="excluded-box">
-        <h3>Excluded Categories</h3>
-        <p>We do not use sources from these categories:</p>
-        <ul class="excluded-list">
-            <li><strong>Wire Services</strong> (AP, Reuters, AFP) &mdash; Licensing models and litigation history against aggregators</li>
-            <li><strong>Commercial Media</strong> with unreviewed Terms of Service</li>
-            <li><strong>YouTube / Third-party RSS</strong> &mdash; Platform ToS complexity</li>
-        </ul>
-        <p style="font-size: 13px; color: #64748b; margin-bottom: 0;">
-            Note: AP was the plaintiff in <em>AP v. Meltwater (2013)</em>, a landmark case ruling news aggregation was not fair use.
-            We avoid sources with demonstrated willingness to litigate against aggregators.
-        </p>
     </div>
 
     <!-- Transparency Note -->
