@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Feb 2026 18:00:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 20:00:40 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mench...</title>
+      <description>The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mencho'.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.2" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 22 Feb 2026 20:00:40 +0000</pubDate>
+      <guid isPermaLink="false">9f3f005ef8d3</guid>
+    </item>
     <item>
       <title>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold me...</title>
       <description>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold medal.</description>
