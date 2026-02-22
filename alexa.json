@@ -1,5 +1,12 @@
 [
   {
+    "uid": "dac6a3cbc8abbfed21f56a25fd99f780",
+    "updateDate": "2026-02-22T00:01:32.0Z",
+    "titleText": "JTF News: The Guardian, BBC News",
+    "mainText": "Giant tortoises return to Gal\u00e1pagos island after nearly 200 years.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "5298afeb61dd9995f792627a04222dfe",
     "updateDate": "2026-02-21T21:30:35.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-21T01:30:35.0Z",
     "titleText": "JTF News: BBC News, CBC News",
     "mainText": "President Trump criticized Supreme Court justices regarding a tariffs ruling.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "328e7af65bfb0dc497487e0f245cdbfb",
-    "updateDate": "2026-02-21T01:00:34.0Z",
-    "titleText": "JTF News: CBC News, White House",
-    "mainText": "President Trump imposed a temporary import duty.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
