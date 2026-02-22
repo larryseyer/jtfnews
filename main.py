@@ -4026,14 +4026,17 @@ def obs_get_recording_status(ws) -> dict:
         from obswebsocket import requests as obs_requests
         # v4 protocol: GetRecordingStatus with different field names
         response = ws.call(obs_requests.GetRecordingStatus())
+        is_recording = response.datain.get('isRecording', False)
+        log.debug(f"Recording status: isRecording={is_recording}")
         return {
-            'active': response.datain.get('isRecording', False),
+            'active': is_recording,
             'paused': response.datain.get('isRecordingPaused', False),
             'duration': response.datain.get('recordTimecode', '00:00:00'),
             'bytes': response.datain.get('recordingBytes', 0)
         }
     except Exception as e:
         log.error(f"Failed to get recording status: {e}")
+        # On error, assume recording stopped to avoid infinite loop
         return {'active': False}
 
 
@@ -4144,7 +4147,22 @@ def generate_and_upload_daily_summary(date: str):
     config_file = DATA_DIR / "digest-config.json"
     with open(config_file, 'w') as f:
         json.dump({"date": date}, f)
-    log.info(f"Wrote digest config for {date}")
+
+    # Write stories to JS file (avoids CORS issues with file:// URLs)
+    stories_js_file = DATA_DIR / "digest-stories.js"
+    stories_data = []
+    for i, story in enumerate(stories):
+        stories_data.append({
+            "fact": story.get("fact", ""),
+            "source": story.get("source", ""),
+            "timestamp": story.get("timestamp", ""),
+            "audioPath": str(AUDIO_DIR / "archive" / date / f"audio_{i}.mp3")
+        })
+    with open(stories_js_file, 'w') as f:
+        f.write(f"// Auto-generated digest stories for {date}\n")
+        f.write(f"window.DIGEST_DATE = '{date}';\n")
+        f.write(f"window.DIGEST_STORIES = {json.dumps(stories_data, indent=2)};\n")
+    log.info(f"Wrote digest config and stories for {date}")
 
     # Estimate duration for recording timeout
     estimated_duration = estimate_digest_duration(stories, audio_files)

@@ -6,6 +6,8 @@
     <title>JTF News - Daily Digest</title>
     <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg">
     <link rel="stylesheet" href="lower-third.css">
+    <!-- Load pre-generated stories data (avoids CORS issues with file:// URLs) -->
+    <script src="../data/digest-stories.js" onerror="console.log('No pre-generated stories file')"></script>
     <style>
         /* Background slideshow styles */
         .slide {
@@ -265,7 +267,14 @@
         // ========== Story Loading ==========
 
         async function loadArchivedStories() {
-            // Try loading from archived audio directory
+            // First check for pre-loaded stories (from digest-stories.js)
+            // This avoids CORS issues with file:// URLs
+            if (window.DIGEST_STORIES && window.DIGEST_STORIES.length > 0) {
+                console.log(`Using ${window.DIGEST_STORIES.length} pre-loaded stories`);
+                return window.DIGEST_STORIES;
+            }
+
+            // Fallback: Try loading from archived audio directory
             // Stories are stored in data/YYYY-MM-DD.txt
             const archiveUrl = `${PATHS.data}/${digestDate}.txt`;
 
@@ -323,8 +332,9 @@
                     audioElement = document.getElementById('tts-audio');
                 }
 
-                // Audio files are in archive: audio/archive/YYYY-MM-DD/audio_N.mp3
-                const audioPath = `${PATHS.audio}/archive/${digestDate}/audio_${storyIndex}.mp3`;
+                // Use pre-loaded audio path if available, otherwise construct it
+                const story = stories[storyIndex];
+                const audioPath = story.audioPath || `${PATHS.audio}/archive/${digestDate}/audio_${storyIndex}.mp3`;
 
                 const onEnded = () => {
                     audioElement.removeEventListener('ended', onEnded);
@@ -473,7 +483,13 @@
         // Allow overriding the digest date via URL parameter or config file
         // Priority: 1) URL param, 2) config file, 3) auto-calculate yesterday
         async function getDigestDate() {
-            // Check URL parameter first
+            // Check for pre-loaded date first (from digest-stories.js)
+            if (window.DIGEST_DATE) {
+                console.log(`Using date from pre-loaded JS: ${window.DIGEST_DATE}`);
+                return window.DIGEST_DATE;
+            }
+
+            // Check URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('date')) {
                 console.log(`Using date from URL: ${urlParams.get('date')}`);
