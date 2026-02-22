@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Feb 2026 21:30:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 00:01:30 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giant tortoises return to Galápagos island after nearly 200 years.</title>
+      <description>Giant tortoises return to Galápagos island after nearly 200 years.</description>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.7" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="6.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 22 Feb 2026 00:01:30 +0000</pubDate>
+      <guid isPermaLink="false">56f0c7236fc6</guid>
+    </item>
     <item>
       <title>Venezuela approved an amnesty bill.</title>
       <description>Venezuela approved an amnesty bill.</description>
