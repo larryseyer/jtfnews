@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-02-22T07:18:25.047273+00:00",
-  "web_refresh_at": "2026-02-22T07:18:25.047273+00:00",
+  "timestamp": "2026-02-22T07:23:25.826147+00:00",
   "uptime_start": "2026-02-22T07:17:58.905954+00:00",
-  "uptime_seconds": 26,
+  "uptime_seconds": 327,
   "availability_pct": 87.6,
   "cycle": {
     "number": 1,
-    "duration_seconds": 25.4,
-    "headlines_scraped": 144,
-    "headlines_processed": 1,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
-    "stories_queued": 1
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 28,
-    "oldest_item_age_hours": 22.3
+    "oldest_item_age_hours": 22.4
   },
   "stories_today": 6,
   "sources": {
@@ -49,15 +48,16 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 11,
+    "next_cycle_minutes": 6,
     "degraded_services": []
   },
   "daily_digest": {
-    "last_date": "2026-02-21",
+    "last_date": "2026-02-20",
     "next_digest_at": "2026-02-23T06:00:00+00:00",
-    "status": "in_progress",
+    "status": "no_stories",
     "upload_status": "pending",
     "error_message": "Cannot connect to OBS WebSocket - skipping daily digest",
-    "last_completed_at": "2026-02-20T00:00:02.486193+00:00"
+    "last_completed_at": "2026-02-22T07:23:18.624165+00:00",
+    "story_count": 0
   }
 }
