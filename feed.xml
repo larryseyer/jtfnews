@@ -5,163 +5,19 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 14:00:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 18:30:41 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Robert Mugabe's son has been charged with attempted murder in South Africa.</title>
-      <description>Robert Mugabe's son has been charged with attempted murder in South Africa.</description>
-      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.8" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 14:00:55 +0000</pubDate>
-      <guid isPermaLink="false">93a452259a96</guid>
-    </item>
-    <item>
-      <title>New York implemented a citywide travel ban as a major blizzard affected the east...</title>
-      <description>New York implemented a citywide travel ban as a major blizzard affected the eastern United States.</description>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 12:00:55 +0000</pubDate>
-      <guid isPermaLink="false">13e70021f367</guid>
-    </item>
-    <item>
-      <title>The United States and Iran are scheduled to hold nuclear talks in Geneva on Thur...</title>
-      <description>The United States and Iran are scheduled to hold nuclear talks in Geneva on Thursday.</description>
-      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 01:00:35 +0000</pubDate>
-      <guid isPermaLink="false">27185d6232ad</guid>
-    </item>
-    <item>
-      <title>North Korea's ruling party reelected Kim Jong Un as general secretary.</title>
-      <description>North Korea's ruling party reelected Kim Jong Un as general secretary.</description>
-      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 00:30:33 +0000</pubDate>
-      <guid isPermaLink="false">cba90459be07</guid>
-    </item>
-    <item>
-      <title>President Trump imposes a temporary import duty.</title>
-      <description>President Trump imposes a temporary import duty.</description>
-      <jtf:source name="White House" url="https://www.whitehouse.gov/briefing-room/" accuracy="8.3*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
-        <jtf:owner name="US Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 00:04:35 +0000</pubDate>
-      <guid isPermaLink="false">d1ea76b26000</guid>
-    </item>
-    <item>
-      <title>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the ...</title>
-      <description>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the conclusion of the 2026 Winter Olympics.</description>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 00:03:32 +0000</pubDate>
-      <guid isPermaLink="false">3c77c28c5673</guid>
-    </item>
-    <item>
-      <title>Mexican army reports death of drug trafficking organization leader Ismael Osegue...</title>
-      <description>Mexican army reports death of drug trafficking organization leader Ismael Oseguera Cervantes.</description>
-      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 00:02:21 +0000</pubDate>
-      <guid isPermaLink="false">17b6064f1f49</guid>
-    </item>
-    <item>
-      <title>An armed man was killed after entering a secure perimeter of President Trump's r...</title>
-      <description>An armed man was killed after entering a secure perimeter of President Trump's residence, according to the Secret Service.</description>
-      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="3.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 00:01:08 +0000</pubDate>
-      <guid isPermaLink="false">9f22ed3b74e4</guid>
-    </item>
-    <item>
-      <title>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, signaling th...</title>
-      <description>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, signaling the end of the 2026 Winter Olympics.</description>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 23:00:45 +0000</pubDate>
-      <guid isPermaLink="false">d9de76856c50</guid>
-    </item>
-    <item>
-      <title>The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mench...</title>
-      <description>The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mencho'.</description>
-      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
+      <title>British police arrested Peter Mandelson, a former ambassador to the United State...</title>
+      <description>British police arrested Peter Mandelson, a former ambassador to the United States, in connection with an investigation into connections to Jeffrey Epstein.</description>
       <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.2" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 20:00:40 +0000</pubDate>
-      <guid isPermaLink="false">9f3f005ef8d3</guid>
-    </item>
-    <item>
-      <title>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold me...</title>
-      <description>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold medal.</description>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.4" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 18:00:43 +0000</pubDate>
-      <guid isPermaLink="false">ca7089e3431d</guid>
-    </item>
-    <item>
-      <title>U.S. Secret Service personnel shot and killed a man attempting to enter Mar-a-La...</title>
-      <description>U.S. Secret Service personnel shot and killed a man attempting to enter Mar-a-Lago.</description>
-      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 14:30:37 +0000</pubDate>
-      <guid isPermaLink="false">b7bce8d779a9</guid>
-    </item>
-    <item>
-      <title>Russia and Ukraine reported overnight strikes on energy infrastructure.</title>
-      <description>Russia and Ukraine reported overnight strikes on energy infrastructure.</description>
-      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 13:00:39 +0000</pubDate>
-      <guid isPermaLink="false">b62ea332a73b</guid>
+      <pubDate>Mon, 23 Feb 2026 18:30:41 +0000</pubDate>
+      <guid isPermaLink="false">8d1626db7804</guid>
     </item>
     <item>
       <title>More than 1,500 Venezuelan political prisoners apply for amnesty.</title>
