@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 18:30:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 19:30:50 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The International Criminal Court opens hearings into former President Rodrigo Du...</title>
+      <description>The International Criminal Court opens hearings into former President Rodrigo Duterte.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.4" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 23 Feb 2026 19:30:50 +0000</pubDate>
+      <guid isPermaLink="false">d508d496449a</guid>
+    </item>
     <item>
       <title>British police arrested Peter Mandelson, a former ambassador to the United State...</title>
       <description>British police arrested Peter Mandelson, a former ambassador to the United States, in connection with an investigation into connections to Jeffrey Epstein.</description>
