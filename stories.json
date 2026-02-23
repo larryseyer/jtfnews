@@ -26,6 +26,19 @@
       "audio": "../audio/audio_1.mp3",
       "published_at": "2026-02-23T00:02:21.988021+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-23-002",
+      "hash": "8473dfefcdd0",
+      "fact": "Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the conclusion of the 2026 Winter Olympics.",
+      "source": "PBS NewsHour 7.0|9.0 \u00b7 France 24 4.7|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/audio_2.mp3",
+      "published_at": "2026-02-23T00:03:32.043872+00:00",
+      "status": "published"
     }
   ]
 }
