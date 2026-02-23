@@ -1,37 +1,37 @@
 [
   {
-    "uid": "d283079e6c32acca7e6110e4c60d0ba6",
-    "updateDate": "2026-02-23T14:00:57.0Z",
-    "titleText": "JTF News: The Guardian, BBC News",
-    "mainText": "Robert Mugabe's son has been charged with attempted murder in South Africa.",
+    "uid": "22152e0c06e4cb2461c8af6a06dd68c1",
+    "updateDate": "2026-02-23T18:30:43.0Z",
+    "titleText": "JTF News: NPR, PBS NewsHour",
+    "mainText": "British police arrested Peter Mandelson, a former ambassador to the United States, in connection with an investigation into connections to Jeffrey Epstein.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   },
   {
-    "uid": "895ecf859c112c6275540deb7e7f8a24",
-    "updateDate": "2026-02-23T12:00:57.0Z",
-    "titleText": "JTF News: France 24, NPR",
-    "mainText": "New York implemented a citywide travel ban as a major blizzard affected the eastern United States.",
+    "uid": "05044842fa80bc11640e696bed654a24",
+    "updateDate": "2026-02-22T05:30:32.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "More than 1,500 Venezuelan political prisoners apply for amnesty.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   },
   {
-    "uid": "6ff592decf2083217172ad05f51cdcc5",
-    "updateDate": "2026-02-23T01:00:37.0Z",
-    "titleText": "JTF News: ABC News Australia, PBS NewsHour",
-    "mainText": "The United States and Iran are scheduled to hold nuclear talks in Geneva on Thursday.",
+    "uid": "e9cf38c7f8f0e05450c4998113cc4838",
+    "updateDate": "2026-02-22T03:00:34.0Z",
+    "titleText": "JTF News: NPR, ABC News Australia",
+    "mainText": "Crews recovered the bodies of 9 skiers killed in an avalanche in California.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   },
   {
-    "uid": "0058b45f355407faad28c53e1eca2f12",
-    "updateDate": "2026-02-23T00:30:35.0Z",
+    "uid": "fd056947d978eda6a50585bcec4307f9",
+    "updateDate": "2026-02-22T00:02:35.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "North Korea's ruling party reelected Kim Jong Un as general secretary.",
+    "mainText": "President Trump raised tariffs to 15% from 10%.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   },
   {
-    "uid": "76cccb424f806f52c2f60c05cd67a59a",
-    "updateDate": "2026-02-23T00:04:37.0Z",
-    "titleText": "JTF News: White House, PBS NewsHour",
-    "mainText": "President Trump imposes a temporary import duty.",
+    "uid": "1e491c1e01e9021f8f82046765277e9b",
+    "updateDate": "2026-02-22T00:02:22.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "NASA astronauts' moon mission delayed due to rocket issue.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
