@@ -52,6 +52,19 @@
       "audio": "../audio/audio_3.mp3",
       "published_at": "2026-02-23T00:04:35.184300+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-23-004",
+      "hash": "9faa3b16fa8c",
+      "fact": "North Korea's ruling party reelected Kim Jong Un as general secretary.",
+      "source": "Deutsche Welle 6.0|9.5 \u00b7 France 24 4.8|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/audio_4.mp3",
+      "published_at": "2026-02-23T00:30:33.533353+00:00",
+      "status": "published"
     }
   ]
 }
