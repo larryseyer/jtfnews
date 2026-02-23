@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-02-23T15:30:56.301812+00:00",
-  "web_refresh_at": "2026-02-23T15:30:56.301812+00:00",
+  "timestamp": "2026-02-23T15:35:57.296087+00:00",
   "uptime_start": "2026-02-23T03:51:24.447598+00:00",
-  "uptime_seconds": 41972,
+  "uptime_seconds": 42273,
   "availability_pct": 89.0,
   "cycle": {
     "number": 25,
-    "duration_seconds": 51.7,
-    "headlines_scraped": 143,
-    "headlines_processed": 9,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
-    "stories_queued": 2
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 35,
-    "oldest_item_age_hours": 21.5
+    "oldest_item_age_hours": 21.6
   },
   "stories_today": 8,
   "sources": {
@@ -45,32 +44,11 @@
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-23T14:31:05.809893+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYRALZWbxtTmU5NG95Kdr'}"
-    },
-    {
-      "timestamp": "2026-02-23T14:31:23.512063+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': 'req_011CYRAMRLkQqLUTaApuwqxi'}"
-    },
-    {
-      "timestamp": "2026-02-23T14:31:50.629798+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': 'req_011CYRAPqXbaqeZHgzb1kCnq'}"
-    },
-    {
-      "timestamp": "2026-02-23T14:32:34.026449+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYRASxFk8UGkNDpzcRkGc'}"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
