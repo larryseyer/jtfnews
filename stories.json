@@ -143,6 +143,19 @@
       "audio": "../audio/audio_10.mp3",
       "published_at": "2026-02-23T20:30:59.904882+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-23-011",
+      "hash": "a3e1517019c8",
+      "fact": "A son of Rob Reiner pleaded not guilty to charges related to the deaths of his parents.",
+      "source": "ABC News Australia 1.4|9.0 \u00b7 CBC News 3.0|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/audio_11.mp3",
+      "published_at": "2026-02-23T20:31:26.705859+00:00",
+      "status": "published"
     }
   ]
 }
