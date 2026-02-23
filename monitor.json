@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-23T07:00:43.126930+00:00",
-  "web_refresh_at": "2026-02-23T07:00:43.126930+00:00",
+  "timestamp": "2026-02-23T07:05:44.032396+00:00",
   "uptime_start": "2026-02-23T03:51:24.447598+00:00",
-  "uptime_seconds": 11359,
+  "uptime_seconds": 11660,
   "availability_pct": 88.7,
   "cycle": {
     "number": 8,
-    "duration_seconds": 38.5,
-    "headlines_scraped": 143,
-    "headlines_processed": 6,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 34,
-    "oldest_item_age_hours": 24.0
+    "oldest_item_age_hours": 24.1
   },
   "stories_today": 6,
   "sources": {
@@ -48,16 +47,6 @@
     ]
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-02-23T06:02:24.638864+00:00",
-      "level": "WARNING",
-      "message": "YouTube client secrets file not found: /Users/larryseyer/JTFNews/client_secrets.json"
-    },
-    {
-      "timestamp": "2026-02-23T06:02:38.371282+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
-    },
     {
       "timestamp": "2026-02-23T06:30:17.458933+00:00",
       "level": "WARNING",
@@ -72,7 +61,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
