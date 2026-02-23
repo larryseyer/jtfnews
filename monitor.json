@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-23T03:25:39.831205+00:00",
+  "timestamp": "2026-02-23T03:30:38.650434+00:00",
+  "web_refresh_at": "2026-02-23T03:30:38.650434+00:00",
   "uptime_start": "2026-02-22T17:10:52.342396+00:00",
-  "uptime_seconds": 36887,
+  "uptime_seconds": 37186,
   "availability_pct": 88.5,
   "cycle": {
-    "number": 21,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 22,
+    "duration_seconds": 34.3,
+    "headlines_scraped": 143,
+    "headlines_processed": 4,
     "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 223,
-        "cost_usd": 0.08461874999999998,
+        "calls": 227,
+        "cost_usd": 0.08659299999999996,
         "details": {
-          "input_tokens": 206355,
-          "output_tokens": 26424
+          "input_tokens": 210932,
+          "output_tokens": 27088
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1049,
+    "total_usd": 0.1069,
     "month_estimate_usd": 6.88,
     "daily_budget": 1.79,
-    "budget_pct": 5.9
+    "budget_pct": 6.0
   },
   "queue": {
     "size": 31,
-    "oldest_item_age_hours": 22.9
+    "oldest_item_age_hours": 23.0
   },
   "stories_today": 6,
   "sources": {
@@ -48,12 +49,12 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-02-23T02:30:20.373456+00:00",
+      "timestamp": "2026-02-23T03:00:17.784610+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     },
     {
-      "timestamp": "2026-02-23T03:00:17.784610+00:00",
+      "timestamp": "2026-02-23T03:30:19.107931+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     }
@@ -61,7 +62,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
