@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-23T04:30:45.780999+00:00",
-  "web_refresh_at": "2026-02-23T04:30:45.780999+00:00",
+  "timestamp": "2026-02-23T04:41:41.228252+00:00",
   "uptime_start": "2026-02-23T03:51:24.447598+00:00",
-  "uptime_seconds": 2361,
+  "uptime_seconds": 3017,
   "availability_pct": 88.5,
   "cycle": {
     "number": 3,
-    "duration_seconds": 41.6,
-    "headlines_scraped": 143,
-    "headlines_processed": 8,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 32,
-    "oldest_item_age_hours": 24.0
+    "oldest_item_age_hours": 24.2
   },
   "stories_today": 6,
   "sources": {
@@ -62,12 +61,17 @@
       "timestamp": "2026-02-23T04:30:18.294217+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
+    },
+    {
+      "timestamp": "2026-02-23T04:36:41.230557+00:00",
+      "level": "WARNING",
+      "message": "Error pushing monitor.json to gh-pages: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))"
     }
   ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 19,
     "degraded_services": []
   },
   "daily_digest": {
