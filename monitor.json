@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-23T03:50:43.495950+00:00",
-  "uptime_start": "2026-02-22T17:10:52.342396+00:00",
-  "uptime_seconds": 38391,
+  "timestamp": "2026-02-23T03:52:03.246170+00:00",
+  "web_refresh_at": "2026-02-23T03:52:03.246170+00:00",
+  "uptime_start": "2026-02-23T03:51:24.447598+00:00",
+  "uptime_seconds": 39,
   "availability_pct": 88.5,
   "cycle": {
-    "number": 22,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 1,
+    "duration_seconds": 38.1,
+    "headlines_scraped": 143,
+    "headlines_processed": 6,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 227,
-        "cost_usd": 0.08659299999999996,
+        "calls": 237,
+        "cost_usd": 0.08969574999999996,
         "details": {
-          "input_tokens": 210932,
-          "output_tokens": 27088
+          "input_tokens": 218203,
+          "output_tokens": 28116
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1069,
-    "month_estimate_usd": 6.88,
+    "total_usd": 0.11,
+    "month_estimate_usd": 6.78,
     "daily_budget": 1.79,
-    "budget_pct": 6.0
+    "budget_pct": 6.2
   },
   "queue": {
-    "size": 31,
-    "oldest_item_age_hours": 23.3
+    "size": 32,
+    "oldest_item_age_hours": 23.4
   },
   "stories_today": 6,
   "sources": {
@@ -48,12 +49,7 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-02-23T03:00:17.784610+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
-    },
-    {
-      "timestamp": "2026-02-23T03:30:19.107931+00:00",
+      "timestamp": "2026-02-23T03:51:38.146328+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     }
@@ -61,7 +57,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 9,
+    "next_cycle_minutes": 7,
     "degraded_services": []
   },
   "daily_digest": {
