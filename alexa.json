@@ -1,5 +1,12 @@
 [
   {
+    "uid": "6ff592decf2083217172ad05f51cdcc5",
+    "updateDate": "2026-02-23T01:00:37.0Z",
+    "titleText": "JTF News: ABC News Australia, PBS NewsHour",
+    "mainText": "The United States and Iran are scheduled to hold nuclear talks in Geneva on Thursday.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "0058b45f355407faad28c53e1eca2f12",
     "updateDate": "2026-02-23T00:30:35.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-23T00:02:24.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
     "mainText": "Mexican army reports death of drug trafficking organization leader Ismael Oseguera Cervantes.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "011f59d87b424f2bb1d86cd26ef6530d",
-    "updateDate": "2026-02-23T00:01:09.0Z",
-    "titleText": "JTF News: NPR, BBC News",
-    "mainText": "An armed man was killed after entering a secure perimeter of President Trump's residence, according to the Secret Service.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
