@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-23T06:55:57.835165+00:00",
+  "timestamp": "2026-02-23T07:00:43.126930+00:00",
+  "web_refresh_at": "2026-02-23T07:00:43.126930+00:00",
   "uptime_start": "2026-02-23T03:51:24.447598+00:00",
-  "uptime_seconds": 11073,
-  "availability_pct": 88.6,
+  "uptime_seconds": 11359,
+  "availability_pct": 88.7,
   "cycle": {
-    "number": 7,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 8,
+    "duration_seconds": 38.5,
+    "headlines_scraped": 143,
+    "headlines_processed": 6,
     "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 285,
-        "cost_usd": 0.10947874999999996,
+        "calls": 293,
+        "cost_usd": 0.11247149999999997,
         "details": {
-          "input_tokens": 266085,
-          "output_tokens": 34366
+          "input_tokens": 273226,
+          "output_tokens": 35332
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1298,
+    "total_usd": 0.1328,
     "month_estimate_usd": 6.78,
     "daily_budget": 1.79,
-    "budget_pct": 7.3
+    "budget_pct": 7.4
   },
   "queue": {
-    "size": 35,
-    "oldest_item_age_hours": 24.3
+    "size": 34,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 6,
   "sources": {
@@ -61,12 +62,17 @@
       "timestamp": "2026-02-23T06:30:17.458933+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
+    },
+    {
+      "timestamp": "2026-02-23T07:00:17.463649+00:00",
+      "level": "WARNING",
+      "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     }
   ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
