@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 20:31:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 21:00:33 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The State Department ordered nonessential U.S. diplomats to leave Lebanon.</title>
+      <description>The State Department ordered nonessential U.S. diplomats to leave Lebanon.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="3.2" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.6" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 23 Feb 2026 21:00:33 +0000</pubDate>
+      <guid isPermaLink="false">dff1ed21b7e9</guid>
+    </item>
     <item>
       <title>A son of Rob Reiner pleaded not guilty to charges related to the deaths of his p...</title>
       <description>A son of Rob Reiner pleaded not guilty to charges related to the deaths of his parents.</description>
