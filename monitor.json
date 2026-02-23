@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-23T08:55:47.418988+00:00",
+  "timestamp": "2026-02-23T09:00:39.130953+00:00",
+  "web_refresh_at": "2026-02-23T09:00:39.130953+00:00",
   "uptime_start": "2026-02-23T03:51:24.447598+00:00",
-  "uptime_seconds": 18263,
+  "uptime_seconds": 18555,
   "availability_pct": 88.8,
   "cycle": {
-    "number": 11,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 12,
+    "duration_seconds": 34.5,
+    "headlines_scraped": 143,
+    "headlines_processed": 5,
     "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 316,
-        "cost_usd": 0.12153524999999998,
+        "calls": 323,
+        "cost_usd": 0.12398224999999999,
         "details": {
-          "input_tokens": 294511,
-          "output_tokens": 38326
+          "input_tokens": 300599,
+          "output_tokens": 39066
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1418,
+    "total_usd": 0.1443,
     "month_estimate_usd": 6.78,
     "daily_budget": 1.79,
-    "budget_pct": 7.9
+    "budget_pct": 8.1
   },
   "queue": {
-    "size": 33,
-    "oldest_item_age_hours": 24.4
+    "size": 32,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 6,
   "sources": {
@@ -48,12 +49,12 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-02-23T08:00:17.533773+00:00",
+      "timestamp": "2026-02-23T08:30:17.496377+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     },
     {
-      "timestamp": "2026-02-23T08:30:17.496377+00:00",
+      "timestamp": "2026-02-23T09:00:17.619887+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     }
@@ -61,7 +62,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
