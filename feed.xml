@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 12:00:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 14:00:55 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robert Mugabe's son has been charged with attempted murder in South Africa.</title>
+      <description>Robert Mugabe's son has been charged with attempted murder in South Africa.</description>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.8" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 23 Feb 2026 14:00:55 +0000</pubDate>
+      <guid isPermaLink="false">93a452259a96</guid>
+    </item>
     <item>
       <title>New York implemented a citywide travel ban as a major blizzard affected the east...</title>
       <description>New York implemented a citywide travel ban as a major blizzard affected the eastern United States.</description>
