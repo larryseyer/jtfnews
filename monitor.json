@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-23T04:46:42.040058+00:00",
+  "timestamp": "2026-02-23T04:51:42.843401+00:00",
   "uptime_start": "2026-02-23T03:51:24.447598+00:00",
-  "uptime_seconds": 3318,
+  "uptime_seconds": 3618,
   "availability_pct": 88.5,
   "cycle": {
     "number": 3,
@@ -36,7 +36,7 @@
   },
   "queue": {
     "size": 32,
-    "oldest_item_age_hours": 24.3
+    "oldest_item_age_hours": 24.4
   },
   "stories_today": 6,
   "sources": {
@@ -47,11 +47,6 @@
     ]
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-02-23T03:51:38.146328+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
-    },
     {
       "timestamp": "2026-02-23T04:00:13.862646+00:00",
       "level": "WARNING",
@@ -71,7 +66,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 14,
+    "next_cycle_minutes": 9,
     "degraded_services": []
   },
   "daily_digest": {
