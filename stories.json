@@ -65,6 +65,19 @@
       "audio": "../audio/audio_4.mp3",
       "published_at": "2026-02-23T00:30:33.533353+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-23-005",
+      "hash": "1149382e23e7",
+      "fact": "The United States and Iran are scheduled to hold nuclear talks in Geneva on Thursday.",
+      "source": "ABC News Australia 1.4|9.0 \u00b7 PBS NewsHour 7.3|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/audio_5.mp3",
+      "published_at": "2026-02-23T01:00:35.242766+00:00",
+      "status": "published"
     }
   ]
 }
