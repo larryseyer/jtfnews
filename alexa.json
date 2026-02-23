@@ -1,5 +1,12 @@
 [
   {
+    "uid": "76cccb424f806f52c2f60c05cd67a59a",
+    "updateDate": "2026-02-23T00:04:37.0Z",
+    "titleText": "JTF News: White House, PBS NewsHour",
+    "mainText": "President Trump imposes a temporary import duty.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "a8bbd1c5492055fee740d4ba13a42911",
     "updateDate": "2026-02-23T00:03:33.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-22T23:00:47.0Z",
     "titleText": "JTF News: PBS NewsHour, CBC News",
     "mainText": "Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, signaling the end of the 2026 Winter Olympics.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "116ffc31785f94e4da0b7af05a5ce738",
-    "updateDate": "2026-02-22T20:00:42.0Z",
-    "titleText": "JTF News: Deutsche Welle, NPR",
-    "mainText": "The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mencho'.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
