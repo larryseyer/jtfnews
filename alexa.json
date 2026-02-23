@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ab73bd7d89835ac7ba5cbbce1889c6f9",
+    "updateDate": "2026-02-23T21:00:35.0Z",
+    "titleText": "JTF News: CBC News, PBS NewsHour",
+    "mainText": "The State Department ordered nonessential U.S. diplomats to leave Lebanon.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "b1505622c7d90869a68df1238d7e9fe3",
     "updateDate": "2026-02-23T20:31:28.0Z",
     "titleText": "JTF News: ABC News Australia, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-23T18:30:43.0Z",
     "titleText": "JTF News: NPR, PBS NewsHour",
     "mainText": "British police arrested Peter Mandelson, a former ambassador to the United States, in connection with an investigation into connections to Jeffrey Epstein.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "05044842fa80bc11640e696bed654a24",
-    "updateDate": "2026-02-22T05:30:32.0Z",
-    "titleText": "JTF News: BBC News, France 24",
-    "mainText": "More than 1,500 Venezuelan political prisoners apply for amnesty.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
