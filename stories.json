@@ -78,6 +78,19 @@
       "audio": "../audio/audio_5.mp3",
       "published_at": "2026-02-23T01:00:35.242766+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-23-006",
+      "hash": "c04e180e673f",
+      "fact": "New York implemented a citywide travel ban as a major blizzard affected the eastern United States.",
+      "source": "France 24 4.8|9.0 \u00b7 NPR 4.1|8.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "NPR": "https://www.npr.org/sections/news/"
+      },
+      "audio": "../audio/audio_6.mp3",
+      "published_at": "2026-02-23T12:00:55.493961+00:00",
+      "status": "published"
     }
   ]
 }
