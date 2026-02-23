@@ -1,5 +1,12 @@
 [
   {
+    "uid": "a8bbd1c5492055fee740d4ba13a42911",
+    "updateDate": "2026-02-23T00:03:33.0Z",
+    "titleText": "JTF News: PBS NewsHour, France 24",
+    "mainText": "Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the conclusion of the 2026 Winter Olympics.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "c2206269bcf9ba261c2abd9cc266c69a",
     "updateDate": "2026-02-23T00:02:24.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-22T20:00:42.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
     "mainText": "The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mencho'.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "56adf8c035ab5b1b14bf70c33666fc6a",
-    "updateDate": "2026-02-22T18:00:45.0Z",
-    "titleText": "JTF News: PBS NewsHour, NPR",
-    "mainText": "The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold medal.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
