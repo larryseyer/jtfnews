@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d283079e6c32acca7e6110e4c60d0ba6",
+    "updateDate": "2026-02-23T14:00:57.0Z",
+    "titleText": "JTF News: The Guardian, BBC News",
+    "mainText": "Robert Mugabe's son has been charged with attempted murder in South Africa.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "895ecf859c112c6275540deb7e7f8a24",
     "updateDate": "2026-02-23T12:00:57.0Z",
     "titleText": "JTF News: France 24, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-23T00:04:37.0Z",
     "titleText": "JTF News: White House, PBS NewsHour",
     "mainText": "President Trump imposes a temporary import duty.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "a8bbd1c5492055fee740d4ba13a42911",
-    "updateDate": "2026-02-23T00:03:33.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the conclusion of the 2026 Winter Olympics.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
