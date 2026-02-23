@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 00:02:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 00:03:32 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the ...</title>
+      <description>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the conclusion of the 2026 Winter Olympics.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 23 Feb 2026 00:03:32 +0000</pubDate>
+      <guid isPermaLink="false">3c77c28c5673</guid>
+    </item>
     <item>
       <title>Mexican army reports death of drug trafficking organization leader Ismael Osegue...</title>
       <description>Mexican army reports death of drug trafficking organization leader Ismael Oseguera Cervantes.</description>
