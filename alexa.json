@@ -1,5 +1,12 @@
 [
   {
+    "uid": "8b0240a1ec35cb84820795e8b61392a2",
+    "updateDate": "2026-02-24T18:00:57.0Z",
+    "titleText": "JTF News: PBS NewsHour, NPR",
+    "mainText": "France stated its ministers will not meet with the U.S. ambassador until the ambassador responds to a summons.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "517f066e26486d5ab4b1fd31c8a61f26",
     "updateDate": "2026-02-24T18:00:42.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-24T16:00:49.0Z",
     "titleText": "JTF News: ABC News Australia, BBC News",
     "mainText": "Nancy Guthrie's family offers $1 million reward for information regarding missing mother.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "8dd5712933da02f2ec00d0f1cf9debe1",
-    "updateDate": "2026-02-24T15:00:49.0Z",
-    "titleText": "JTF News: CBC News, ABC News Australia",
-    "mainText": "Russell Brand pleaded not guilty to additional rape and sexual assault charges.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
