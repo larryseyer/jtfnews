@@ -1,5 +1,12 @@
 [
   {
+    "uid": "6cfb68c361dc365361783d28257ad048",
+    "updateDate": "2026-02-24T15:00:35.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Mexico deployed thousands of soldiers in response to violence following the death of a drug lord.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "ba0f997494863da17c975d5e732a5b09",
     "updateDate": "2026-02-24T10:30:47.0Z",
     "titleText": "JTF News: France 24, European Commission",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-24T00:01:05.0Z",
     "titleText": "JTF News: NPR, CBC News",
     "mainText": "A winter storm is affecting travel across the northeastern U.S.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "ab73bd7d89835ac7ba5cbbce1889c6f9",
-    "updateDate": "2026-02-23T21:00:35.0Z",
-    "titleText": "JTF News: CBC News, PBS NewsHour",
-    "mainText": "The State Department ordered nonessential U.S. diplomats to leave Lebanon.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
