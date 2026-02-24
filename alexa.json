@@ -1,5 +1,12 @@
 [
   {
+    "uid": "8dd5712933da02f2ec00d0f1cf9debe1",
+    "updateDate": "2026-02-24T15:00:49.0Z",
+    "titleText": "JTF News: CBC News, ABC News Australia",
+    "mainText": "Russell Brand pleaded not guilty to additional rape and sexual assault charges.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "6cfb68c361dc365361783d28257ad048",
     "updateDate": "2026-02-24T15:00:35.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-24T01:00:43.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
     "mainText": "The U.S. military conducted a strike on a suspected drug boat in the Caribbean, resulting in 3 deaths.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "988e11b8d84af7f8478b8418a947c14b",
-    "updateDate": "2026-02-24T00:01:05.0Z",
-    "titleText": "JTF News: NPR, CBC News",
-    "mainText": "A winter storm is affecting travel across the northeastern U.S.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
