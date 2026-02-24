@@ -143,6 +143,19 @@
       "audio": "../audio/audio_10.mp3",
       "published_at": "2026-02-24T18:00:55.079215+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-24-011",
+      "hash": "b719e1d36254",
+      "fact": "The International Criminal Court opens hearings into former President Rodrigo Duterte of the Philippines.",
+      "source": "Deutsche Welle 6.0|9.5 \u00b7 PBS NewsHour 7.1|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/audio_11.mp3",
+      "published_at": "2026-02-24T20:30:38.223815+00:00",
+      "status": "published"
     }
   ]
 }
