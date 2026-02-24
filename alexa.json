@@ -1,5 +1,12 @@
 [
   {
+    "uid": "6be126701fef6e0fdf0d75b22bbd97d0",
+    "updateDate": "2026-02-24T17:01:12.0Z",
+    "titleText": "JTF News: France 24, Deutsche Welle",
+    "mainText": "Prime Minister of Senegal proposes doubling jail terms for same-sex acts.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "b290a5cc4db0ddfcc0024c296e9b4ce8",
     "updateDate": "2026-02-24T16:30:42.0Z",
     "titleText": "JTF News: CBC News, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-24T15:00:35.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "Mexico deployed thousands of soldiers in response to violence following the death of a drug lord.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "ba0f997494863da17c975d5e732a5b09",
-    "updateDate": "2026-02-24T10:30:47.0Z",
-    "titleText": "JTF News: France 24, European Commission",
-    "mainText": "President Volodymyr Zelensky addressed the European Parliament as Ukraine marked four years since the Russian invasion began.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
