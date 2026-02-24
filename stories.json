@@ -130,6 +130,19 @@
       "audio": "../audio/audio_9.mp3",
       "published_at": "2026-02-24T18:00:40.559506+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-24-010",
+      "hash": "d75eaaaf3665",
+      "fact": "France stated its ministers will not meet with the U.S. ambassador until the ambassador responds to a summons.",
+      "source": "PBS NewsHour 7.1|9.0 \u00b7 NPR 4.6|8.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "NPR": "https://www.npr.org/sections/news/"
+      },
+      "audio": "../audio/audio_10.mp3",
+      "published_at": "2026-02-24T18:00:55.079215+00:00",
+      "status": "published"
     }
   ]
 }
