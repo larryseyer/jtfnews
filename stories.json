@@ -65,6 +65,19 @@
       "audio": "../audio/audio_4.mp3",
       "published_at": "2026-02-24T15:00:33.919541+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-24-005",
+      "hash": "cbbca94fdcce",
+      "fact": "Russell Brand pleaded not guilty to additional rape and sexual assault charges.",
+      "source": "CBC News 3.7|9.0 \u00b7 ABC News Australia 1.4|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/audio_5.mp3",
+      "published_at": "2026-02-24T15:00:47.844526+00:00",
+      "status": "published"
     }
   ]
 }
