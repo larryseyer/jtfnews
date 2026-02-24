@@ -1,5 +1,12 @@
 [
   {
+    "uid": "22672a372470ac2bc1abe8926a660e3b",
+    "updateDate": "2026-02-24T16:00:49.0Z",
+    "titleText": "JTF News: ABC News Australia, BBC News",
+    "mainText": "Nancy Guthrie's family offers $1 million reward for information regarding missing mother.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "8dd5712933da02f2ec00d0f1cf9debe1",
     "updateDate": "2026-02-24T15:00:49.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-24T09:30:43.0Z",
     "titleText": "JTF News: CBC News, France 24",
     "mainText": "President Trump will deliver a State of the Union speech.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "f2174e3244daac23e67732af2b5fbdd5",
-    "updateDate": "2026-02-24T01:00:43.0Z",
-    "titleText": "JTF News: CBC News, Deutsche Welle",
-    "mainText": "The U.S. military conducted a strike on a suspected drug boat in the Caribbean, resulting in 3 deaths.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
