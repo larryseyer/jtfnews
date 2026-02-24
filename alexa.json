@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ba0f997494863da17c975d5e732a5b09",
+    "updateDate": "2026-02-24T10:30:47.0Z",
+    "titleText": "JTF News: France 24, European Commission",
+    "mainText": "President Volodymyr Zelensky addressed the European Parliament as Ukraine marked four years since the Russian invasion began.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "d12c3c832e4e53650f98d368ba1fd750",
     "updateDate": "2026-02-24T09:30:43.0Z",
     "titleText": "JTF News: CBC News, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-23T21:00:35.0Z",
     "titleText": "JTF News: CBC News, PBS NewsHour",
     "mainText": "The State Department ordered nonessential U.S. diplomats to leave Lebanon.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "b1505622c7d90869a68df1238d7e9fe3",
-    "updateDate": "2026-02-23T20:31:28.0Z",
-    "titleText": "JTF News: ABC News Australia, CBC News",
-    "mainText": "A son of Rob Reiner pleaded not guilty to charges related to the deaths of his parents.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
