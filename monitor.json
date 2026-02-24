@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-24T04:40:45.559426+00:00",
+  "timestamp": "2026-02-24T04:45:46.431478+00:00",
   "uptime_start": "2026-02-23T16:06:31.341683+00:00",
-  "uptime_seconds": 45254,
+  "uptime_seconds": 45555,
   "availability_pct": 89.7,
   "cycle": {
     "number": 26,
@@ -48,7 +48,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 19,
+    "next_cycle_minutes": 14,
     "degraded_services": []
   },
   "daily_digest": {
