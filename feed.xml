@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Feb 2026 18:00:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 20:30:38 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The International Criminal Court opens hearings into former President Rodrigo Du...</title>
+      <description>The International Criminal Court opens hearings into former President Rodrigo Duterte of the Philippines.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 24 Feb 2026 20:30:38 +0000</pubDate>
+      <guid isPermaLink="false">304607876479</guid>
+    </item>
     <item>
       <title>France stated its ministers will not meet with the U.S. ambassador until the amb...</title>
       <description>France stated its ministers will not meet with the U.S. ambassador until the ambassador responds to a summons.</description>
