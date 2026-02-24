@@ -13,6 +13,19 @@
       "audio": "../audio/audio_0.mp3",
       "published_at": "2026-02-24T00:01:03.006923+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-24-001",
+      "hash": "e635a6721a66",
+      "fact": "The U.S. military conducted a strike on a suspected drug boat in the Caribbean, resulting in 3 deaths.",
+      "source": "CBC News 3.5|9.0 \u00b7 Deutsche Welle 6.1|9.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/audio_1.mp3",
+      "published_at": "2026-02-24T01:00:42.052379+00:00",
+      "status": "published"
     }
   ]
 }
