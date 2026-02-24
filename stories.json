@@ -4,8 +4,8 @@
     {
       "id": "2026-02-24-000",
       "hash": "3207f54be038",
-      "fact": "A winter storm is affecting travel across the northeastern U.S.",
-      "source": "NPR 4.4|8.5 \u00b7 CBC News 3.3|9.0",
+      "fact": "A winter storm is affecting travel across the northeastern U.S. killing two people.",
+      "source": "NPR 4.4|8.5 \u00b7 CBC News 3.3|9.0 \u00b7 BBC News 5.5|9.0",
       "source_urls": {
         "NPR": "https://www.npr.org/sections/news/",
         "CBC News": "https://www.cbc.ca/news/world"
@@ -90,6 +90,19 @@
       },
       "audio": "../audio/audio_6.mp3",
       "published_at": "2026-02-24T16:00:47.019862+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-24-007",
+      "hash": "d366b1e9d475",
+      "fact": "The United States partially evacuated its embassy in Beirut.",
+      "source": "CBC News 3.7|9.0 \u00b7 BBC News 5.6|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_7.mp3",
+      "published_at": "2026-02-24T16:30:40.462010+00:00",
       "status": "published"
     }
   ]
