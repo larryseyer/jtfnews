@@ -65,6 +65,19 @@
       "audio": "../audio/audio_4.mp3",
       "published_at": "2026-02-25T06:30:42.456626+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-25-005",
+      "hash": "1d3f4d2c251e",
+      "fact": "Chancellor Friedrich Merz of Germany travels to Beijing.",
+      "source": "France 24 5.0|9.0 \u00b7 Deutsche Welle 5.9|9.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/audio_5.mp3",
+      "published_at": "2026-02-25T11:30:44.272723+00:00",
+      "status": "published"
     }
   ]
 }
