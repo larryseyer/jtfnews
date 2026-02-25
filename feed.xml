@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 02:30:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 06:30:42 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Australia police make arrests in connection with the death of a grandfather who ...</title>
+      <description>Australia police make arrests in connection with the death of a grandfather who was mistakenly kidnapped.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 25 Feb 2026 06:30:42 +0000</pubDate>
+      <guid isPermaLink="false">4ab730257b30</guid>
+    </item>
     <item>
       <title>President Trump delivers State of the Union address.</title>
       <description>President Trump delivers State of the Union address.</description>
