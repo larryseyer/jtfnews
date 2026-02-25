@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-25T19:40:30.316341+00:00",
+  "timestamp": "2026-02-25T19:45:31.282137+00:00",
   "uptime_start": "2026-02-25T19:19:29.032196+00:00",
-  "uptime_seconds": 1261,
+  "uptime_seconds": 1562,
   "availability_pct": 90.4,
   "cycle": {
     "number": 2,
@@ -43,7 +43,7 @@
   },
   "queue": {
     "size": 59,
-    "oldest_item_age_hours": 23.7
+    "oldest_item_age_hours": 23.8
   },
   "stories_today": 9,
   "sources": {
@@ -61,7 +61,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 19,
+    "next_cycle_minutes": 14,
     "degraded_services": []
   },
   "daily_digest": {
@@ -70,11 +70,11 @@
     "status": "success",
     "upload_status": "success",
     "error_message": "<HttpError 403 when requesting None returned \"YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\". Details: \"[{'message': 'YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]\">",
-    "last_completed_at": "2026-02-25T19:22:26.350636+00:00",
+    "last_completed_at": "2026-02-25T19:44:15.978344+00:00",
     "story_count": 11,
     "duration_seconds": 105,
     "video_path": "/Users/larryseyer/JTFNews/video/2026-02-22-daily-digest.mp4",
-    "youtube_id": "xBrBFQDOrEk",
-    "youtube_url": "https://youtube.com/watch?v=xBrBFQDOrEk"
+    "youtube_id": "j-h2OqcZmIc",
+    "youtube_url": "https://youtube.com/watch?v=j-h2OqcZmIc"
   }
 }
