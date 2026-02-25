@@ -39,6 +39,19 @@
       "audio": "../audio/audio_2.mp3",
       "published_at": "2026-02-25T01:00:37.369490+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-25-003",
+      "hash": "6d893b46d61d",
+      "fact": "President Trump delivers State of the Union address.",
+      "source": "NPR 4.9|8.5 \u00b7 CBC News 3.7|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/audio_3.mp3",
+      "published_at": "2026-02-25T02:30:33.452949+00:00",
+      "status": "published"
     }
   ]
 }
