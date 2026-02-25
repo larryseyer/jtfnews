@@ -117,6 +117,19 @@
       "audio": "../audio/audio_8.mp3",
       "published_at": "2026-02-25T18:30:45.341304+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-25-009",
+      "hash": "0f783e6a26ae",
+      "fact": "Cuban coast guard personnel killed 4 people in a US-flagged speedboat.",
+      "source": "BBC News 5.4|9.0 \u00b7 Deutsche Welle 5.8|9.5",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/audio_9.mp3",
+      "published_at": "2026-02-25T21:00:31.391571+00:00",
+      "status": "published"
     }
   ]
 }
