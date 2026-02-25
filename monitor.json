@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-25T20:15:55.981797+00:00",
+  "timestamp": "2026-02-25T20:20:56.938392+00:00",
   "uptime_start": "2026-02-25T19:50:06.705325+00:00",
-  "uptime_seconds": 1549,
+  "uptime_seconds": 1850,
   "availability_pct": 90.1,
   "cycle": {
     "number": 2,
@@ -55,7 +55,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 14,
+    "next_cycle_minutes": 9,
     "degraded_services": []
   },
   "daily_digest": {
@@ -64,11 +64,11 @@
     "status": "success",
     "upload_status": "success",
     "error_message": "<HttpError 403 when requesting None returned \"YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\". Details: \"[{'message': 'YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]\">",
-    "last_completed_at": "2026-02-25T19:52:34.740177+00:00",
+    "last_completed_at": "2026-02-25T20:19:32.296302+00:00",
     "story_count": 11,
     "duration_seconds": 105,
     "video_path": "/Users/larryseyer/JTFNews/video/2026-02-22-daily-digest.mp4",
-    "youtube_id": "pbbL2H8h-oA",
-    "youtube_url": "https://youtube.com/watch?v=pbbL2H8h-oA"
+    "youtube_id": "wZId9yTKAIY",
+    "youtube_url": "https://youtube.com/watch?v=wZId9yTKAIY"
   }
 }
