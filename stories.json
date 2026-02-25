@@ -1,160 +1,17 @@
 {
-  "date": "2026-02-24",
+  "date": "2026-02-25",
   "stories": [
     {
-      "id": "2026-02-24-000",
-      "hash": "3207f54be038",
-      "fact": "A winter storm is affecting travel across the northeastern U.S. killing two people.",
-      "source": "NPR 4.4|8.5 \u00b7 CBC News 3.3|9.0 \u00b7 BBC News 5.5|9.0",
+      "id": "2026-02-25-000",
+      "hash": "d11234f47f22",
+      "fact": "Floods and landslides in Brazil resulted in at least 20 deaths.",
+      "source": "The Guardian 2.9|2.5 \u00b7 BBC News 5.7|9.0",
       "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
-        "CBC News": "https://www.cbc.ca/news/world"
+        "The Guardian": "https://www.theguardian.com/world",
+        "BBC News": "https://www.bbc.com/news/world"
       },
       "audio": "../audio/audio_0.mp3",
-      "published_at": "2026-02-24T00:01:03.006923+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-001",
-      "hash": "e635a6721a66",
-      "fact": "The U.S. military conducted a strike on a suspected drug boat in the Caribbean, resulting in 3 deaths.",
-      "source": "CBC News 3.5|9.0 \u00b7 Deutsche Welle 6.1|9.5",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_1.mp3",
-      "published_at": "2026-02-24T01:00:42.052379+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-002",
-      "hash": "6c04a2c0c48e",
-      "fact": "President Trump will deliver a State of the Union speech.",
-      "source": "CBC News 3.6|9.0 \u00b7 France 24 4.7|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_2.mp3",
-      "published_at": "2026-02-24T09:30:41.063831+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-003",
-      "hash": "18a8d6e3500a",
-      "fact": "President Volodymyr Zelensky addressed the European Parliament as Ukraine marked four years since the Russian invasion began.",
-      "source": "France 24 4.8|9.0 \u00b7 European Commission 2.0|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "European Commission": "https://ec.europa.eu/commission/presscorner/home/en"
-      },
-      "audio": "../audio/audio_3.mp3",
-      "published_at": "2026-02-24T10:30:45.459809+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-004",
-      "hash": "bbb87ff150cd",
-      "fact": "Mexico deployed thousands of soldiers in response to violence following the death of a drug lord.",
-      "source": "France 24 4.9|9.0 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_4.mp3",
-      "published_at": "2026-02-24T15:00:33.919541+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-005",
-      "hash": "cbbca94fdcce",
-      "fact": "Russell Brand pleaded not guilty to additional rape and sexual assault charges.",
-      "source": "CBC News 3.7|9.0 \u00b7 ABC News Australia 1.4|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/audio_5.mp3",
-      "published_at": "2026-02-24T15:00:47.844526+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-006",
-      "hash": "1195c7e20774",
-      "fact": "Nancy Guthrie's family offers $1 million reward for information regarding missing mother.",
-      "source": "ABC News Australia 1.5|9.0 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_6.mp3",
-      "published_at": "2026-02-24T16:00:47.019862+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-007",
-      "hash": "d366b1e9d475",
-      "fact": "The United States partially evacuated its embassy in Beirut.",
-      "source": "CBC News 3.7|9.0 \u00b7 BBC News 5.6|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_7.mp3",
-      "published_at": "2026-02-24T16:30:40.462010+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-008",
-      "hash": "765c0a15303b",
-      "fact": "Prime Minister of Senegal proposes doubling jail terms for same-sex acts.",
-      "source": "France 24 4.9|9.0 \u00b7 Deutsche Welle 5.8|9.5",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_8.mp3",
-      "published_at": "2026-02-24T17:00:47.834916+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-009",
-      "hash": "edc0b10bc772",
-      "fact": "President Emmanuel Macron of France accepted the resignation of the Louvre director following a jewel theft in October.",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 5.0|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_9.mp3",
-      "published_at": "2026-02-24T18:00:40.559506+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-010",
-      "hash": "d75eaaaf3665",
-      "fact": "France stated its ministers will not meet with the U.S. ambassador until the ambassador responds to a summons.",
-      "source": "PBS NewsHour 7.1|9.0 \u00b7 NPR 4.6|8.5",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "NPR": "https://www.npr.org/sections/news/"
-      },
-      "audio": "../audio/audio_10.mp3",
-      "published_at": "2026-02-24T18:00:55.079215+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-24-011",
-      "hash": "b719e1d36254",
-      "fact": "The International Criminal Court opens hearings into former President Rodrigo Duterte of the Philippines.",
-      "source": "Deutsche Welle 6.0|9.5 \u00b7 PBS NewsHour 7.1|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
-      },
-      "audio": "../audio/audio_11.mp3",
-      "published_at": "2026-02-24T20:30:38.223815+00:00",
+      "published_at": "2026-02-25T00:01:24.961978+00:00",
       "status": "published"
     }
   ]
