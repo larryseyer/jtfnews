@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-02-25T19:00:59.443947+00:00",
-  "web_refresh_at": "2026-02-25T19:00:59.443947+00:00",
-  "uptime_start": "2026-02-25T18:41:15.613340+00:00",
-  "uptime_seconds": 1184,
-  "availability_pct": 90.9,
+  "timestamp": "2026-02-25T19:06:04.950505+00:00",
+  "web_refresh_at": "2026-02-25T19:06:04.950505+00:00",
+  "uptime_start": "2026-02-25T19:05:36.636321+00:00",
+  "uptime_seconds": 28,
+  "availability_pct": 90.6,
   "cycle": {
-    "number": 2,
-    "duration_seconds": 56.1,
+    "number": 1,
+    "duration_seconds": 27.7,
     "headlines_scraped": 132,
-    "headlines_processed": 12,
+    "headlines_processed": 2,
     "stories_published": 0,
-    "stories_queued": 4
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 612,
-        "cost_usd": 0.23098999999999983,
+        "calls": 615,
+        "cost_usd": 0.23195724999999984,
         "details": {
-          "input_tokens": 571515,
-          "output_tokens": 70489
+          "input_tokens": 573814,
+          "output_tokens": 70803
         }
       },
       "elevenlabs": {
@@ -37,14 +37,14 @@
         }
       }
     },
-    "total_usd": 0.2688,
+    "total_usd": 0.2697,
     "month_estimate_usd": 7.04,
     "daily_budget": 1.79,
     "budget_pct": 15.1
   },
   "queue": {
-    "size": 59,
-    "oldest_item_age_hours": 24.0
+    "size": 58,
+    "oldest_item_age_hours": 23.1
   },
   "stories_today": 9,
   "sources": {
@@ -56,12 +56,7 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-02-25T18:41:28.223204+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/briefing-room/"
-    },
-    {
-      "timestamp": "2026-02-25T19:00:14.599205+00:00",
+      "timestamp": "2026-02-25T19:05:48.278437+00:00",
       "level": "WARNING",
       "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/briefing-room/"
     }
@@ -69,13 +64,13 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 23,
     "degraded_services": []
   },
   "daily_digest": {
     "last_date": "2026-02-22",
     "next_digest_at": "2026-02-26T06:00:00+00:00",
-    "status": "no_stories",
+    "status": "in_progress",
     "upload_status": "pending",
     "error_message": "<HttpError 403 when requesting None returned \"YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\". Details: \"[{'message': 'YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]\">",
     "last_completed_at": "2026-02-25T18:38:51.106316+00:00",
