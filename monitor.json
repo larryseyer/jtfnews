@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-25T22:05:29.616391+00:00",
+  "timestamp": "2026-02-25T22:10:30.520422+00:00",
   "uptime_start": "2026-02-25T21:58:23.079192+00:00",
-  "uptime_seconds": 427,
+  "uptime_seconds": 727,
   "availability_pct": 89.8,
   "cycle": {
     "number": 2,
@@ -43,7 +43,7 @@
   },
   "queue": {
     "size": 61,
-    "oldest_item_age_hours": 23.6
+    "oldest_item_age_hours": 23.7
   },
   "stories_today": 11,
   "sources": {
@@ -55,20 +55,20 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 24,
+    "next_cycle_minutes": 19,
     "degraded_services": []
   },
   "daily_digest": {
     "last_date": "2026-02-22",
     "next_digest_at": "2026-02-26T06:00:00+00:00",
-    "status": "in_progress",
-    "upload_status": "pending",
+    "status": "success",
+    "upload_status": "success",
     "error_message": "<HttpError 403 when requesting None returned \"YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\". Details: \"[{'message': 'YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]\">",
-    "last_completed_at": "2026-02-25T21:26:42.697873+00:00",
+    "last_completed_at": "2026-02-25T22:06:30.098316+00:00",
     "story_count": 11,
     "duration_seconds": 105,
     "video_path": "/Users/larryseyer/JTFNews/video/2026-02-22-daily-digest.mp4",
-    "youtube_id": "Xv4CkWAB1Ow",
-    "youtube_url": "https://youtube.com/watch?v=Xv4CkWAB1Ow"
+    "youtube_id": "7AMbUeq9-z0",
+    "youtube_url": "https://youtube.com/watch?v=7AMbUeq9-z0"
   }
 }
