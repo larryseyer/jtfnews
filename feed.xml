@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 00:01:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 00:02:57 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ukraine marks four years of war with Russia.</title>
+      <description>Ukraine marks four years of war with Russia.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 25 Feb 2026 00:02:57 +0000</pubDate>
+      <guid isPermaLink="false">ca37f836d4b7</guid>
+    </item>
     <item>
       <title>Floods and landslides in Brazil resulted in at least 20 deaths.</title>
       <description>Floods and landslides in Brazil resulted in at least 20 deaths.</description>
