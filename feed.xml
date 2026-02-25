@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 21:00:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 21:59:04 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ukrainian officials will meet with envoys representing President Trump in Geneva...</title>
+      <description>Ukrainian officials will meet with envoys representing President Trump in Geneva for talks.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 25 Feb 2026 21:59:04 +0000</pubDate>
+      <guid isPermaLink="false">0552d2146b8c</guid>
+    </item>
     <item>
       <title>Cuban coast guard personnel killed 4 people in a US-flagged speedboat.</title>
       <description>Cuban coast guard personnel killed 4 people in a US-flagged speedboat.</description>
