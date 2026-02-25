@@ -30,8 +30,8 @@
     {
       "id": "2026-02-25-002",
       "hash": "9046dbbc1492",
-      "fact": "President Trump is scheduled to deliver a State of the Union address.",
-      "source": "CBC News 3.6|9.0 \u00b7 NPR 4.7|8.5",
+      "fact": "President Trump is scheduled to deliver a State of the Union address. During the address, he welcomed the U.S. men's hockey team.",
+      "source": "CBC News 3.6|9.0 \u00b7 NPR 4.7|8.5 \u00b7 France 24 5.0|9.0",
       "source_urls": {
         "CBC News": "https://www.cbc.ca/news/world",
         "NPR": "https://www.npr.org/sections/news/"
@@ -51,6 +51,19 @@
       },
       "audio": "../audio/audio_3.mp3",
       "published_at": "2026-02-25T02:30:33.452949+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-25-004",
+      "hash": "c74df4aebd68",
+      "fact": "Australia police make arrests in connection with the death of a grandfather who was mistakenly kidnapped.",
+      "source": "BBC News 5.6|9.0 \u00b7 ABC News Australia 1.6|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/audio_4.mp3",
+      "published_at": "2026-02-25T06:30:42.456626+00:00",
       "status": "published"
     }
   ]
