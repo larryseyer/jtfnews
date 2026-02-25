@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 11:30:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 13:30:41 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trial begins for Brazil politicians accused of ordering lawmakers' murders.</title>
+      <description>Trial begins for Brazil politicians accused of ordering lawmakers' murders.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 25 Feb 2026 13:30:41 +0000</pubDate>
+      <guid isPermaLink="false">998dcbb89088</guid>
+    </item>
     <item>
       <title>Chancellor Friedrich Merz of Germany travels to Beijing.</title>
       <description>Chancellor Friedrich Merz of Germany travels to Beijing.</description>
