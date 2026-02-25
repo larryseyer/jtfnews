@@ -13,6 +13,19 @@
       "audio": "../audio/audio_0.mp3",
       "published_at": "2026-02-25T00:01:24.961978+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-25-001",
+      "hash": "a4611c124a95",
+      "fact": "Ukraine marks four years of war with Russia.",
+      "source": "ABC News Australia 1.6|9.0 \u00b7 France 24 5.0|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/audio_1.mp3",
+      "published_at": "2026-02-25T00:02:57.988758+00:00",
+      "status": "published"
     }
   ]
 }
