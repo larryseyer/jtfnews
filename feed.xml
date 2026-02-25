@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 01:00:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 02:30:33 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump delivers State of the Union address.</title>
+      <description>President Trump delivers State of the Union address.</description>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="3.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 25 Feb 2026 02:30:33 +0000</pubDate>
+      <guid isPermaLink="false">c94ce95938d8</guid>
+    </item>
     <item>
       <title>President Trump is scheduled to deliver a State of the Union address.</title>
       <description>President Trump is scheduled to deliver a State of the Union address.</description>
