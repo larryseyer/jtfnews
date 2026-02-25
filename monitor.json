@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-25T22:00:28.697990+00:00",
-  "web_refresh_at": "2026-02-25T22:00:28.697990+00:00",
+  "timestamp": "2026-02-25T22:05:29.616391+00:00",
   "uptime_start": "2026-02-25T21:58:23.079192+00:00",
-  "uptime_seconds": 126,
+  "uptime_seconds": 427,
   "availability_pct": 89.8,
   "cycle": {
     "number": 2,
-    "duration_seconds": 28.7,
-    "headlines_scraped": 143,
-    "headlines_processed": 2,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -23,10 +22,10 @@
         }
       },
       "elevenlabs": {
-        "calls": 44,
-        "cost_usd": 0.11370000000000002,
+        "calls": 49,
+        "cost_usd": 0.12771000000000002,
         "details": {
-          "characters": 3790
+          "characters": 4257
         }
       },
       "twilio": {
@@ -37,14 +36,14 @@
         }
       }
     },
-    "total_usd": 0.3899,
+    "total_usd": 0.4039,
     "month_estimate_usd": 7.04,
     "daily_budget": 1.79,
-    "budget_pct": 21.8
+    "budget_pct": 22.6
   },
   "queue": {
     "size": 61,
-    "oldest_item_age_hours": 23.5
+    "oldest_item_age_hours": 23.6
   },
   "stories_today": 11,
   "sources": {
@@ -56,14 +55,14 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
     "last_date": "2026-02-22",
     "next_digest_at": "2026-02-26T06:00:00+00:00",
-    "status": "success",
-    "upload_status": "success",
+    "status": "in_progress",
+    "upload_status": "pending",
     "error_message": "<HttpError 403 when requesting None returned \"YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\". Details: \"[{'message': 'YouTube Data API v3 has not been used in project 349139848810 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=349139848810 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]\">",
     "last_completed_at": "2026-02-25T21:26:42.697873+00:00",
     "story_count": 11,
