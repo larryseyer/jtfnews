@@ -1,5 +1,12 @@
 [
   {
+    "uid": "79877ac52b63b252fadf4831bc8ff96a",
+    "updateDate": "2026-02-25T15:00:58.0Z",
+    "titleText": "JTF News: ABC News Australia, BBC News",
+    "mainText": "Japan announced plans to deploy missiles on an island near Taiwan by 2031.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "8256b20254e29081fcce99f0c396a356",
     "updateDate": "2026-02-25T13:30:43.0Z",
     "titleText": "JTF News: France 24, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-25T02:30:36.0Z",
     "titleText": "JTF News: NPR, CBC News",
     "mainText": "President Trump delivers State of the Union address.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "2f204bb260199abd04c5526054b80d86",
-    "updateDate": "2026-02-25T01:00:39.0Z",
-    "titleText": "JTF News: CBC News, NPR",
-    "mainText": "President Trump is scheduled to deliver a State of the Union address.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
