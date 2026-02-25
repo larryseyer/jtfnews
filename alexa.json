@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ad8e0b84b309b7d5d6372cab7d32ebb7",
+    "updateDate": "2026-02-25T21:00:33.0Z",
+    "titleText": "JTF News: BBC News, Deutsche Welle",
+    "mainText": "Cuban coast guard personnel killed 4 people in a US-flagged speedboat.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "6551d1e54c7acce36aa81c72ea1ed71b",
     "updateDate": "2026-02-25T18:30:47.0Z",
     "titleText": "JTF News: France 24, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-25T11:30:46.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
     "mainText": "Chancellor Friedrich Merz of Germany travels to Beijing.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "6594ba96ef342c180d93c44b4b4090d2",
-    "updateDate": "2026-02-25T06:30:44.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "Australia police make arrests in connection with the death of a grandfather who was mistakenly kidnapped.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
