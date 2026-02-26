@@ -1,5 +1,12 @@
 [
   {
+    "uid": "72596ffc70ab36333ae84a34ee1403db",
+    "updateDate": "2026-02-26T09:30:34.0Z",
+    "titleText": "JTF News: BBC News, NPR",
+    "mainText": "The United States and Iran began talks.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "9749fcbc690c84bbf7e6e3732af7e1ea",
     "updateDate": "2026-02-26T00:04:24.0Z",
     "titleText": "JTF News: White House, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-25T21:59:06.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
     "mainText": "Ukrainian officials will meet with envoys representing President Trump in Geneva for talks.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "ad8e0b84b309b7d5d6372cab7d32ebb7",
-    "updateDate": "2026-02-25T21:00:33.0Z",
-    "titleText": "JTF News: BBC News, Deutsche Welle",
-    "mainText": "Cuban coast guard personnel killed 4 people in a US-flagged speedboat.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
