@@ -1,5 +1,12 @@
 [
   {
+    "uid": "7ff88b98c3ac8328e8e8acaf2f782472",
+    "updateDate": "2026-02-26T12:30:57.0Z",
+    "titleText": "JTF News: France 24, ABC News Australia",
+    "mainText": "Prime Minister of Iceland stated the country will hold a referendum regarding European Union membership over the coming months.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "ad0aeb22fd17fa72842e9648cee0fc9e",
     "updateDate": "2026-02-26T12:30:36.0Z",
     "titleText": "JTF News: NPR, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-26T00:02:19.0Z",
     "titleText": "JTF News: France 24, The Guardian",
     "mainText": "Former Brazilian lawmakers were convicted of ordering the murder of Rio councilwoman Marielle Franco.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "7c52ac318bae37e1fdce26fbf21c1f02",
-    "updateDate": "2026-02-26T00:01:10.0Z",
-    "titleText": "JTF News: NPR, BBC News",
-    "mainText": "Four people were shot and killed on a US-registered speedboat by Cuban border guards, according to Cuban authorities.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
