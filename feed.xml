@@ -5,23 +5,35 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Feb 2026 12:30:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 12:30:55 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prime Minister of Iceland stated the country will hold a referendum regarding Eu...</title>
+      <description>Prime Minister of Iceland stated the country will hold a referendum regarding European Union membership over the coming months.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 26 Feb 2026 12:30:55 +0000</pubDate>
+      <guid isPermaLink="false">57b8cff98aaa</guid>
+    </item>
     <item>
       <title>[CORRECTION] The United States and Iran began talks....</title>
       <description>CORRECTION: Earlier we reported that The United States and Iran began talks.. NPR, France 24 now report that The U.S. and Iran are scheduled to hold nuclear talks..</description>
-      <jtf:source name="NPR" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
-      <jtf:source name="France 24" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
+      <jtf:source name="NPR" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
+      <jtf:source name="France 24" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
       <pubDate>Thu, 26 Feb 2026 12:30:41 +0000</pubDate>
       <guid isPermaLink="false">2b4fad545eb3</guid>
     </item>
     <item>
       <title>The U.S. and Iran are scheduled to hold nuclear talks.</title>
       <description>The U.S. and Iran are scheduled to hold nuclear talks.</description>
-      <jtf:source name="NPR" accuracy="5.0" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="5.0" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 26 Feb 2026 12:30:33 +0000</pubDate>
@@ -30,10 +42,10 @@
     <item>
       <title>The United States and Iran began talks.</title>
       <description>The United States and Iran began talks.</description>
-      <jtf:source name="BBC News" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 26 Feb 2026 09:30:31 +0000</pubDate>
@@ -48,10 +60,10 @@
     <item>
       <title>President Trump delivered a State of the Union address.</title>
       <description>President Trump delivered a State of the Union address.</description>
-      <jtf:source name="White House" accuracy="7.5*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
+      <jtf:source name="White House" url="" accuracy="7.5*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
         <jtf:owner name="US Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 26 Feb 2026 00:04:21 +0000</pubDate>
@@ -60,10 +72,10 @@
     <item>
       <title>Former Brazilian lawmakers were convicted of ordering the murder of Rio councilw...</title>
       <description>Former Brazilian lawmakers were convicted of ordering the murder of Rio councilwoman Marielle Franco.</description>
-      <jtf:source name="France 24" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="The Guardian" accuracy="3.6" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="3.6" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 26 Feb 2026 00:02:17 +0000</pubDate>
@@ -72,10 +84,10 @@
     <item>
       <title>Four people were shot and killed on a US-registered speedboat by Cuban border gu...</title>
       <description>Four people were shot and killed on a US-registered speedboat by Cuban border guards, according to Cuban authorities.</description>
-      <jtf:source name="NPR" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 26 Feb 2026 00:01:08 +0000</pubDate>
@@ -96,10 +108,10 @@
     <item>
       <title>Ukrainian officials will meet with envoys representing President Trump in Geneva...</title>
       <description>Ukrainian officials will meet with envoys representing President Trump in Geneva for talks.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 21:59:04 +0000</pubDate>
@@ -108,10 +120,10 @@
     <item>
       <title>Cuban coast guard personnel killed 4 people in a US-flagged speedboat.</title>
       <description>Cuban coast guard personnel killed 4 people in a US-flagged speedboat.</description>
-      <jtf:source name="BBC News" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 21:00:31 +0000</pubDate>
@@ -126,10 +138,10 @@
     <item>
       <title>Brazil politicians convicted for ordering murder of Rio activist councillor.</title>
       <description>Brazil politicians convicted for ordering murder of Rio activist councillor.</description>
-      <jtf:source name="France 24" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="The Guardian" accuracy="3.3" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="3.3" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 18:30:45 +0000</pubDate>
@@ -138,10 +150,10 @@
     <item>
       <title>Japan announced plans to deploy missiles on an island near Taiwan by 2031.</title>
       <description>Japan announced plans to deploy missiles on an island near Taiwan by 2031.</description>
-      <jtf:source name="ABC News Australia" accuracy="1.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 15:00:55 +0000</pubDate>
@@ -150,10 +162,10 @@
     <item>
       <title>Trial begins for Brazil politicians accused of ordering lawmakers' murders.</title>
       <description>Trial begins for Brazil politicians accused of ordering lawmakers' murders.</description>
-      <jtf:source name="France 24" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="The Guardian" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 13:30:41 +0000</pubDate>
@@ -162,10 +174,10 @@
     <item>
       <title>Chancellor Friedrich Merz of Germany travels to Beijing.</title>
       <description>Chancellor Friedrich Merz of Germany travels to Beijing.</description>
-      <jtf:source name="France 24" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 11:30:44 +0000</pubDate>
@@ -174,10 +186,10 @@
     <item>
       <title>Australia police make arrests in connection with the death of a grandfather who ...</title>
       <description>Australia police make arrests in connection with the death of a grandfather who was mistakenly kidnapped.</description>
-      <jtf:source name="BBC News" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 06:30:42 +0000</pubDate>
@@ -186,10 +198,10 @@
     <item>
       <title>President Trump delivers State of the Union address.</title>
       <description>President Trump delivers State of the Union address.</description>
-      <jtf:source name="NPR" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="CBC News" accuracy="3.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 02:30:33 +0000</pubDate>
@@ -198,10 +210,10 @@
     <item>
       <title>President Trump is scheduled to deliver a State of the Union address.</title>
       <description>President Trump is scheduled to deliver a State of the Union address.</description>
-      <jtf:source name="CBC News" accuracy="3.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="4.7" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.7" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 01:00:37 +0000</pubDate>
@@ -210,10 +222,10 @@
     <item>
       <title>Ukraine marks four years of war with Russia.</title>
       <description>Ukraine marks four years of war with Russia.</description>
-      <jtf:source name="ABC News Australia" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 00:02:57 +0000</pubDate>
@@ -222,10 +234,10 @@
     <item>
       <title>Floods and landslides in Brazil resulted in at least 20 deaths.</title>
       <description>Floods and landslides in Brazil resulted in at least 20 deaths.</description>
-      <jtf:source name="The Guardian" accuracy="2.9" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="2.9" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="5.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 00:01:24 +0000</pubDate>
@@ -234,10 +246,10 @@
     <item>
       <title>Robert Mugabe's son has been charged with attempted murder in South Africa.</title>
       <description>Robert Mugabe's son has been charged with attempted murder in South Africa.</description>
-      <jtf:source name="The Guardian" accuracy="2.8" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="2.8" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 14:00:55 +0000</pubDate>
@@ -246,10 +258,10 @@
     <item>
       <title>New York implemented a citywide travel ban as a major blizzard affected the east...</title>
       <description>New York implemented a citywide travel ban as a major blizzard affected the eastern United States.</description>
-      <jtf:source name="France 24" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 12:00:55 +0000</pubDate>
@@ -258,10 +270,10 @@
     <item>
       <title>The United States and Iran are scheduled to hold nuclear talks in Geneva on Thur...</title>
       <description>The United States and Iran are scheduled to hold nuclear talks in Geneva on Thursday.</description>
-      <jtf:source name="ABC News Australia" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 01:00:35 +0000</pubDate>
@@ -270,10 +282,10 @@
     <item>
       <title>North Korea's ruling party reelected Kim Jong Un as general secretary.</title>
       <description>North Korea's ruling party reelected Kim Jong Un as general secretary.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 00:30:33 +0000</pubDate>
@@ -282,10 +294,10 @@
     <item>
       <title>President Trump imposes a temporary import duty.</title>
       <description>President Trump imposes a temporary import duty.</description>
-      <jtf:source name="White House" accuracy="8.3*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
+      <jtf:source name="White House" url="" accuracy="8.3*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
         <jtf:owner name="US Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 00:04:35 +0000</pubDate>
@@ -294,10 +306,10 @@
     <item>
       <title>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the ...</title>
       <description>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, marking the conclusion of the 2026 Winter Olympics.</description>
-      <jtf:source name="PBS NewsHour" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 00:03:32 +0000</pubDate>
@@ -306,10 +318,10 @@
     <item>
       <title>Mexican army reports death of drug trafficking organization leader Ismael Osegue...</title>
       <description>Mexican army reports death of drug trafficking organization leader Ismael Oseguera Cervantes.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 00:02:21 +0000</pubDate>
@@ -318,10 +330,10 @@
     <item>
       <title>An armed man was killed after entering a secure perimeter of President Trump's r...</title>
       <description>An armed man was killed after entering a secure perimeter of President Trump's residence, according to the Secret Service.</description>
-      <jtf:source name="NPR" accuracy="3.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="3.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="5.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="5.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 00:01:08 +0000</pubDate>
@@ -330,10 +342,10 @@
     <item>
       <title>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, signaling th...</title>
       <description>Olympic cauldrons were extinguished in Milan and Cortina d'Ampezzo, signaling the end of the 2026 Winter Olympics.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="CBC News" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 23:00:45 +0000</pubDate>
@@ -342,10 +354,10 @@
     <item>
       <title>The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mench...</title>
       <description>The Mexican army killed drug lord Nemesio Oseguera Cervantes, known as 'El Mencho'.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="4.2" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.2" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 20:00:40 +0000</pubDate>
@@ -354,10 +366,10 @@
     <item>
       <title>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold me...</title>
       <description>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold medal.</description>
-      <jtf:source name="PBS NewsHour" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 18:00:43 +0000</pubDate>
@@ -366,10 +378,10 @@
     <item>
       <title>U.S. Secret Service personnel shot and killed a man attempting to enter Mar-a-La...</title>
       <description>U.S. Secret Service personnel shot and killed a man attempting to enter Mar-a-Lago.</description>
-      <jtf:source name="CBC News" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 14:30:37 +0000</pubDate>
@@ -378,10 +390,10 @@
     <item>
       <title>Russia and Ukraine reported overnight strikes on energy infrastructure.</title>
       <description>Russia and Ukraine reported overnight strikes on energy infrastructure.</description>
-      <jtf:source name="Deutsche Welle" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 13:00:39 +0000</pubDate>
@@ -390,10 +402,10 @@
     <item>
       <title>More than 1,500 Venezuelan political prisoners apply for amnesty.</title>
       <description>More than 1,500 Venezuelan political prisoners apply for amnesty.</description>
-      <jtf:source name="BBC News" accuracy="6.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.6" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.6" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 05:30:30 +0000</pubDate>
@@ -402,10 +414,10 @@
     <item>
       <title>Crews recovered the bodies of 9 skiers killed in an avalanche in California.</title>
       <description>Crews recovered the bodies of 9 skiers killed in an avalanche in California.</description>
-      <jtf:source name="NPR" accuracy="4.2" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.2" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 03:00:32 +0000</pubDate>
@@ -414,10 +426,10 @@
     <item>
       <title>President Trump raised tariffs to 15% from 10%.</title>
       <description>President Trump raised tariffs to 15% from 10%.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 00:02:33 +0000</pubDate>
@@ -426,10 +438,10 @@
     <item>
       <title>NASA astronauts' moon mission delayed due to rocket issue.</title>
       <description>NASA astronauts' moon mission delayed due to rocket issue.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="6.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 00:02:21 +0000</pubDate>
@@ -438,10 +450,10 @@
     <item>
       <title>The film 'Yellow Letters' won the top prize at the Berlinale film festival.</title>
       <description>The film 'Yellow Letters' won the top prize at the Berlinale film festival.</description>
-      <jtf:source name="France 24" accuracy="4.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 00:01:57 +0000</pubDate>
@@ -450,10 +462,10 @@
     <item>
       <title>Giant tortoises return to Galápagos island after nearly 200 years.</title>
       <description>Giant tortoises return to Galápagos island after nearly 200 years.</description>
-      <jtf:source name="The Guardian" accuracy="2.7" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="2.7" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="6.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 00:01:30 +0000</pubDate>
@@ -462,10 +474,10 @@
     <item>
       <title>Venezuela approved an amnesty bill.</title>
       <description>Venezuela approved an amnesty bill.</description>
-      <jtf:source name="France 24" accuracy="4.3" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.3" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 21:30:33 +0000</pubDate>
@@ -474,10 +486,10 @@
     <item>
       <title>Giant tortoises return to Galápagos island after nearly 200 years.</title>
       <description>Giant tortoises return to Galápagos island after nearly 200 years.</description>
-      <jtf:source name="BBC News" accuracy="6.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="The Guardian" accuracy="2.1" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="2.1" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 19:00:32 +0000</pubDate>
@@ -486,10 +498,10 @@
     <item>
       <title>NASA astronauts' moon mission is likely to be delayed due to a rocket issue.</title>
       <description>NASA astronauts' moon mission is likely to be delayed due to a rocket issue.</description>
-      <jtf:source name="BBC News" accuracy="6.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 18:30:32 +0000</pubDate>
@@ -498,10 +510,10 @@
     <item>
       <title>President Trump criticized Supreme Court justices regarding a tariffs ruling.</title>
       <description>President Trump criticized Supreme Court justices regarding a tariffs ruling.</description>
-      <jtf:source name="BBC News" accuracy="7.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="CBC News" accuracy="3.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 01:30:33 +0000</pubDate>
@@ -510,10 +522,10 @@
     <item>
       <title>President Trump imposed a temporary import duty.</title>
       <description>President Trump imposed a temporary import duty.</description>
-      <jtf:source name="CBC News" accuracy="3.2" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.2" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="White House" accuracy="9.1*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
+      <jtf:source name="White House" url="" accuracy="9.1*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
         <jtf:owner name="US Government" percent="100.0" />
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 01:00:32 +0000</pubDate>
@@ -522,10 +534,10 @@
     <item>
       <title>A Palestinian-American was killed by settlers in the occupied West Bank, accordi...</title>
       <description>A Palestinian-American was killed by settlers in the occupied West Bank, according to officials.</description>
-      <jtf:source name="NPR" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 09:30:32 +0000</pubDate>
@@ -534,10 +546,10 @@
     <item>
       <title>North Korea's Kim Jong Un opened a party congress.</title>
       <description>North Korea's Kim Jong Un opened a party congress.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.4" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.4" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 04:30:40 +0000</pubDate>
@@ -546,10 +558,10 @@
     <item>
       <title>President Trump issued a directive to the Pentagon to release files on unidentif...</title>
       <description>President Trump issued a directive to the Pentagon to release files on unidentified flying objects and extraterrestrial life.</description>
-      <jtf:source name="CBC News" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="6.3" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.3" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 04:00:53 +0000</pubDate>
@@ -558,10 +570,10 @@
     <item>
       <title>Eric Dane, actor known for 'Grey's Anatomy', died at age 53.</title>
       <description>Eric Dane, actor known for 'Grey's Anatomy', died at age 53.</description>
-      <jtf:source name="ABC News Australia" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 03:00:47 +0000</pubDate>
@@ -570,10 +582,10 @@
     <item>
       <title>Venezuela passes amnesty law for political prisoners.</title>
       <description>Venezuela passes amnesty law for political prisoners.</description>
-      <jtf:source name="Deutsche Welle" accuracy="6.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 03:00:36 +0000</pubDate>
@@ -582,10 +594,10 @@
     <item>
       <title>An Austrian climber was found guilty after his girlfriend died on a mountain.</title>
       <description>An Austrian climber was found guilty after his girlfriend died on a mountain.</description>
-      <jtf:source name="BBC News" accuracy="7.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="6.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="6.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 02:00:48 +0000</pubDate>
@@ -594,10 +606,10 @@
     <item>
       <title>President Trump stated the world has 10 days to determine if Iran agrees to a de...</title>
       <description>President Trump stated the world has 10 days to determine if Iran agrees to a deal.</description>
-      <jtf:source name="PBS NewsHour" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="7.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 00:04:02 +0000</pubDate>
@@ -606,10 +618,10 @@
     <item>
       <title>former President Yoon Suk Yeol of South Korea received a life sentence for impos...</title>
       <description>former President Yoon Suk Yeol of South Korea received a life sentence for imposing martial law.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="6.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 00:03:50 +0000</pubDate>
@@ -618,10 +630,10 @@
     <item>
       <title>The U.S. women's ice hockey team won Olympic gold against Canada.</title>
       <description>The U.S. women's ice hockey team won Olympic gold against Canada.</description>
-      <jtf:source name="CBC News" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="3.8" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="3.8" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 00:02:46 +0000</pubDate>
@@ -630,10 +642,10 @@
     <item>
       <title>President Trump stated that the world has 10 days to determine if Iran agrees to...</title>
       <description>President Trump stated that the world has 10 days to determine if Iran agrees to a deal.</description>
-      <jtf:source name="BBC News" accuracy="6.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="6.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 19 Feb 2026 23:30:33 +0000</pubDate>
@@ -642,10 +654,10 @@
     <item>
       <title>The White House stated Iran would be 'wise' to make a deal as the United States ...</title>
       <description>The White House stated Iran would be 'wise' to make a deal as the United States increases military presence.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.7" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.7" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="7.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 19 Feb 2026 21:52:43 +0000</pubDate>
@@ -654,10 +666,10 @@
     <item>
       <title>Peru's Congress removed interim President José Jerí as he faces a corruption pro...</title>
       <description>Peru's Congress removed interim President José Jerí as he faces a corruption probe.</description>
-      <jtf:source name="PBS NewsHour" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="The Guardian" accuracy="4.6*" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="4.6*" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 19 Feb 2026 00:03:46 +0000</pubDate>
@@ -666,10 +678,10 @@
     <item>
       <title>The United States and Iran are at an impasse following nuclear talks in Geneva.</title>
       <description>The United States and Iran are at an impasse following nuclear talks in Geneva.</description>
-      <jtf:source name="Deutsche Welle" accuracy="7.4" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="7.4" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 19 Feb 2026 00:02:22 +0000</pubDate>
@@ -678,10 +690,10 @@
     <item>
       <title>Eight skiers were found dead following an avalanche in California.</title>
       <description>Eight skiers were found dead following an avalanche in California.</description>
-      <jtf:source name="NPR" accuracy="3.9*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="3.9*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="7.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Thu, 19 Feb 2026 00:00:57 +0000</pubDate>
@@ -690,18 +702,18 @@
     <item>
       <title>[CORRECTION] 10 missing skiers after an avalanche in California...</title>
       <description>CORRECTION: Earlier we reported that 10 missing skiers after an avalanche in California. Deutsche Welle, BBC News now report that Eight skiers died in an avalanche in California..</description>
-      <jtf:source name="Deutsche Welle" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
-      <jtf:source name="BBC News" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
+      <jtf:source name="Deutsche Welle" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
+      <jtf:source name="BBC News" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
       <pubDate>Wed, 18 Feb 2026 21:00:51 +0000</pubDate>
       <guid isPermaLink="false">ae2c92109c29</guid>
     </item>
     <item>
       <title>Eight skiers died in an avalanche in California.</title>
       <description>Eight skiers died in an avalanche in California.</description>
-      <jtf:source name="Deutsche Welle" accuracy="7.3" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="7.3" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="7.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 21:00:44 +0000</pubDate>
@@ -710,10 +722,10 @@
     <item>
       <title>The United States and Iran remain at an impasse following nuclear talks in Genev...</title>
       <description>The United States and Iran remain at an impasse following nuclear talks in Geneva.</description>
-      <jtf:source name="Deutsche Welle" accuracy="7.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="7.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 19:00:47 +0000</pubDate>
@@ -722,10 +734,10 @@
     <item>
       <title>Mark Zuckerberg arrives to testify in social media addiction trial.</title>
       <description>Mark Zuckerberg arrives to testify in social media addiction trial.</description>
-      <jtf:source name="BBC News" accuracy="8.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 17:30:33 +0000</pubDate>
@@ -734,10 +746,10 @@
     <item>
       <title>Peru's President was impeached four months into the term.</title>
       <description>Peru's President was impeached four months into the term.</description>
-      <jtf:source name="France 24" accuracy="6.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="8.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.6" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 10:00:39 +0000</pubDate>
@@ -746,10 +758,10 @@
     <item>
       <title>Vice President Sara Duterte announced a presidential run in 2028.</title>
       <description>Vice President Sara Duterte announced a presidential run in 2028.</description>
-      <jtf:source name="Deutsche Welle" accuracy="8.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="8.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="8.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 07:00:43 +0000</pubDate>
@@ -758,10 +770,10 @@
     <item>
       <title>Rescuers search for 10 missing skiers after an avalanche in California.</title>
       <description>Rescuers search for 10 missing skiers after an avalanche in California.</description>
-      <jtf:source name="CBC News" accuracy="3.3" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.3" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="8.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 03:30:44 +0000</pubDate>
@@ -770,10 +782,10 @@
     <item>
       <title>Peru's Congress removed interim President José Jerí as he faces a corruption pro...</title>
       <description>Peru's Congress removed interim President José Jerí as he faces a corruption probe.</description>
-      <jtf:source name="France 24" accuracy="6.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 01:30:42 +0000</pubDate>
@@ -782,10 +794,10 @@
     <item>
       <title>Police identified a suspect in a shooting at an ice rink in Rhode Island.</title>
       <description>Police identified a suspect in a shooting at an ice rink in Rhode Island.</description>
-      <jtf:source name="CBC News" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="8.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 01:00:32 +0000</pubDate>
@@ -794,10 +806,10 @@
     <item>
       <title>Russian and Ukrainian officials meet in Geneva for talks brokered by the United ...</title>
       <description>Russian and Ukrainian officials meet in Geneva for talks brokered by the United States.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 00:03:57 +0000</pubDate>
@@ -806,10 +818,10 @@
     <item>
       <title>Jesse Jackson, a U.S. civil rights leader, died at age 84.</title>
       <description>Jesse Jackson, a U.S. civil rights leader, died at age 84.</description>
-      <jtf:source name="NPR" accuracy="4.8*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="4.8*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="8.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 00:01:17 +0000</pubDate>
@@ -818,10 +830,10 @@
     <item>
       <title>Peru's Congress removed interim President José Jerí, who faces a corruption prob...</title>
       <description>Peru's Congress removed interim President José Jerí, who faces a corruption probe.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.7" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.7" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="The Guardian" accuracy="6.3*" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+      <jtf:source name="The Guardian" url="" accuracy="6.3*" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Scott Trust Limited" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 23:30:56 +0000</pubDate>
@@ -830,10 +842,10 @@
     <item>
       <title>Nine people arrested in France in connection with the death of a student.</title>
       <description>Nine people arrested in France in connection with the death of a student.</description>
-      <jtf:source name="BBC News" accuracy="7.9*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.9*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 21:30:35 +0000</pubDate>
@@ -842,10 +854,10 @@
     <item>
       <title>Shein faces an investigation by the European Union regarding products and design...</title>
       <description>Shein faces an investigation by the European Union regarding products and design features.</description>
-      <jtf:source name="Deutsche Welle" accuracy="8.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="8.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="European Commission" accuracy="6.7*" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
+      <jtf:source name="European Commission" url="" accuracy="6.7*" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
         <jtf:owner name="European Union" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 20:00:47 +0000</pubDate>
@@ -854,10 +866,10 @@
     <item>
       <title>Eleven people killed in multiple strikes on alleged drug boats according to US m...</title>
       <description>Eleven people killed in multiple strikes on alleged drug boats according to US military statement.</description>
-      <jtf:source name="BBC News" accuracy="7.9*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.9*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="5.8*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="5.8*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 18:00:33 +0000</pubDate>
@@ -866,10 +878,10 @@
     <item>
       <title>Secretary Rubio spoke in Munich.</title>
       <description>Secretary Rubio spoke in Munich.</description>
-      <jtf:source name="European Commission" accuracy="6.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
+      <jtf:source name="European Commission" url="" accuracy="6.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
         <jtf:owner name="European Union" percent="100.0" />
       </jtf:source>
-      <jtf:source name="White House" accuracy="9.0*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
+      <jtf:source name="White House" url="" accuracy="9.0*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
         <jtf:owner name="US Government" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 16:30:53 +0000</pubDate>
@@ -878,10 +890,10 @@
     <item>
       <title>Russian and Ukrainian negotiators meet for talks brokered by the United States.</title>
       <description>Russian and Ukrainian negotiators meet for talks brokered by the United States.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.4" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.4" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 16:01:16 +0000</pubDate>
@@ -890,10 +902,10 @@
     <item>
       <title>Police identified a suspect in a shooting at an ice rink in Rhode Island.</title>
       <description>Police identified a suspect in a shooting at an ice rink in Rhode Island.</description>
-      <jtf:source name="BBC News" accuracy="7.8*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.8*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="CBC News" accuracy="5.6*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="CBC News" url="" accuracy="5.6*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 16:00:36 +0000</pubDate>
@@ -902,10 +914,10 @@
     <item>
       <title>Iran conducted military drills in the Strait of Hormuz ahead of US talks.</title>
       <description>Iran conducted military drills in the Strait of Hormuz ahead of US talks.</description>
-      <jtf:source name="PBS NewsHour" accuracy="6.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="6.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 12:30:49 +0000</pubDate>
@@ -914,10 +926,10 @@
     <item>
       <title>Russia conducts missile and drone strikes as peace talks with Ukraine are schedu...</title>
       <description>Russia conducts missile and drone strikes as peace talks with Ukraine are scheduled.</description>
-      <jtf:source name="France 24" accuracy="6.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
-      <jtf:source name="PBS NewsHour" accuracy="5.9*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="5.9*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 10:30:59 +0000</pubDate>
@@ -926,10 +938,10 @@
     <item>
       <title>At least five people died in a building fire in Catalonia, Spain.</title>
       <description>At least five people died in a building fire in Catalonia, Spain.</description>
-      <jtf:source name="Deutsche Welle" accuracy="9.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="BBC News" accuracy="7.8*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.8*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 10:01:03 +0000</pubDate>
@@ -938,10 +950,10 @@
     <item>
       <title>Jesse Jackson, a civil rights leader and two-time presidential candidate, died a...</title>
       <description>Jesse Jackson, a civil rights leader and two-time presidential candidate, died at age 84.</description>
-      <jtf:source name="Deutsche Welle" accuracy="9.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.2" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 10:00:55 +0000</pubDate>
@@ -950,10 +962,10 @@
     <item>
       <title>President Emmanuel Macron of France is in India to discuss Rafale aircraft sales...</title>
       <description>President Emmanuel Macron of France is in India to discuss Rafale aircraft sales and artificial intelligence cooperation.</description>
-      <jtf:source name="Deutsche Welle" accuracy="9.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.2" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.2" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 08:00:53 +0000</pubDate>
@@ -962,10 +974,10 @@
     <item>
       <title>The United States and Iran held high-level talks regarding Tehran's nuclear prog...</title>
       <description>The United States and Iran held high-level talks regarding Tehran's nuclear program.</description>
-      <jtf:source name="Deutsche Welle" accuracy="9.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.0" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="NPR" accuracy="5.6*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="5.6*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 08:00:44 +0000</pubDate>
@@ -974,10 +986,10 @@
     <item>
       <title>Australia rules out repatriating citizens from Syrian camp.</title>
       <description>Australia rules out repatriating citizens from Syrian camp.</description>
-      <jtf:source name="NPR" accuracy="6.4*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="NPR" url="" accuracy="6.4*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="8.9*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="8.9*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 07:30:35 +0000</pubDate>
@@ -986,10 +998,10 @@
     <item>
       <title>President Trump stated he will be indirectly involved in Iran nuclear talks.</title>
       <description>President Trump stated he will be indirectly involved in Iran nuclear talks.</description>
-      <jtf:source name="BBC News" accuracy="7.7*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="7.7*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="5.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="5.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 06:30:31 +0000</pubDate>
@@ -998,10 +1010,10 @@
     <item>
       <title>The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with d...</title>
       <description>The Kremlin rejected a claim that it poisoned Putin critic Alexei Navalny with dart frog toxin.</description>
-      <jtf:source name="Irish Times" accuracy="7.8*" bias="9.0" speed="7.5" consensus="8.5" control_type="trust">
+      <jtf:source name="Irish Times" url="" accuracy="7.8*" bias="9.0" speed="7.5" consensus="8.5" control_type="trust">
         <jtf:owner name="Irish Times Trust" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="7.5*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="7.5*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 04:00:59 +0000</pubDate>
@@ -1010,10 +1022,10 @@
     <item>
       <title>US troops arrive in Nigeria on training mission.</title>
       <description>US troops arrive in Nigeria on training mission.</description>
-      <jtf:source name="PBS NewsHour" accuracy="7.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+      <jtf:source name="PBS NewsHour" url="" accuracy="7.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
         <jtf:owner name="Public Broadcasting Service" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="9.6*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.6*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:03:32 +0000</pubDate>
@@ -1022,10 +1034,10 @@
     <item>
       <title>Austria filed terror charges related to an alleged plot targeting Taylor Swift c...</title>
       <description>Austria filed terror charges related to an alleged plot targeting Taylor Swift concerts.</description>
-      <jtf:source name="ABC News Australia" accuracy="9.2*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="9.2*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="Deutsche Welle" accuracy="9.5*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.5*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:03:16 +0000</pubDate>
@@ -1034,10 +1046,10 @@
     <item>
       <title>Actor Robert Duvall died at age 95.</title>
       <description>Actor Robert Duvall died at age 95.</description>
-      <jtf:source name="Deutsche Welle" accuracy="9.3*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="Deutsche Welle" url="" accuracy="9.3*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="German Federal Government" percent="100.0" />
       </jtf:source>
-      <jtf:source name="France 24" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+      <jtf:source name="France 24" url="" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
         <jtf:owner name="France Médias Monde" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:02:15 +0000</pubDate>
@@ -1046,10 +1058,10 @@
     <item>
       <title>Naveed Akram fronted court for the first time in connection with a shooting at B...</title>
       <description>Naveed Akram fronted court for the first time in connection with a shooting at Bondi Beach.</description>
-      <jtf:source name="BBC News" accuracy="8.6*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="8.6*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="9.1*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="9.1*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:00:51 +0000</pubDate>
@@ -1058,10 +1070,10 @@
     <item>
       <title>Sydney police appeal for the return of an 85-year-old man reported kidnapped.</title>
       <description>Sydney police appeal for the return of an 85-year-old man reported kidnapped.</description>
-      <jtf:source name="BBC News" accuracy="9.5*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+      <jtf:source name="BBC News" url="" accuracy="9.5*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
         <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
       </jtf:source>
-      <jtf:source name="ABC News Australia" accuracy="9.0*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+      <jtf:source name="ABC News Australia" url="" accuracy="9.0*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
         <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
       </jtf:source>
       <pubDate>Mon, 16 Feb 2026 09:00:43 +0000</pubDate>
