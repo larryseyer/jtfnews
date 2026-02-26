@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Feb 2026 00:02:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 00:04:21 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump delivered a State of the Union address.</title>
+      <description>President Trump delivered a State of the Union address.</description>
+      <jtf:source name="White House" url="https://www.whitehouse.gov/briefing-room/" accuracy="7.5*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
+        <jtf:owner name="US Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 26 Feb 2026 00:04:21 +0000</pubDate>
+      <guid isPermaLink="false">d904e6736483</guid>
+    </item>
     <item>
       <title>Former Brazilian lawmakers were convicted of ordering the murder of Rio councilw...</title>
       <description>Former Brazilian lawmakers were convicted of ordering the murder of Rio councilwoman Marielle Franco.</description>
