@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-23T20:31:04.865422+00:00",
+  "last_updated": "2026-02-26T12:30:39.022860+00:00",
   "corrections": [
     {
       "story_id": "[2026-02-18-004]",
@@ -23,6 +23,18 @@
       "correcting_sources": [
         "France 24",
         "PBS NewsHour"
+      ]
+    },
+    {
+      "story_id": "2026-02-26-003",
+      "corrected_at": "2026-02-26T12:30:39.020793+00:00",
+      "type": "correction",
+      "original_fact": "The United States and Iran began talks.",
+      "corrected_fact": "The U.S. and Iran are scheduled to hold nuclear talks.",
+      "reason": "Story [2026-02-26-003] states talks have 'begun' (past tense, indicating they already started), but the new verified fact states the U.S. and Iran are 'scheduled to hold' nuclear talks (future tense, indicating they are planned but have not yet occurred). These contradict each other regarding the timeline of the talks.",
+      "correcting_sources": [
+        "NPR",
+        "France 24"
       ]
     }
   ]
