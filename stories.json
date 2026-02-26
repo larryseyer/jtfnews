@@ -43,7 +43,7 @@
     {
       "id": "2026-02-26-003",
       "hash": "d08cfde01205",
-      "fact": "The United States and Iran began talks.",
+      "fact": "The U.S. and Iran are scheduled to hold nuclear talks.",
       "source": "BBC News 5.2|9.0 \u00b7 NPR 4.9|8.5",
       "source_urls": {
         "BBC News": "https://www.bbc.com/news/world",
@@ -51,7 +51,17 @@
       },
       "audio": "../audio/archive/2026-02-26/a9e30ff40c15.mp3",
       "published_at": "2026-02-26T09:30:31.833130+00:00",
-      "status": "published"
+      "status": "corrected",
+      "original_fact": "The United States and Iran began talks.",
+      "correction": {
+        "corrected_at": "2026-02-26T12:30:39.020793+00:00",
+        "type": "correction",
+        "reason": "Story [2026-02-26-003] states talks have 'begun' (past tense, indicating they already started), but the new verified fact states the U.S. and Iran are 'scheduled to hold' nuclear talks (future tense, indicating they are planned but have not yet occurred). These contradict each other regarding the timeline of the talks.",
+        "correcting_sources": [
+          "NPR",
+          "France 24"
+        ]
+      }
     },
     {
       "id": "2026-02-26-004",
@@ -64,6 +74,19 @@
       },
       "audio": "../audio/archive/2026-02-26/551dd0d495e0.mp3",
       "published_at": "2026-02-26T12:30:33.952307+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-26-005",
+      "hash": "280342ae0ed2",
+      "fact": "Prime Minister of Iceland stated the country will hold a referendum regarding European Union membership over the coming months.",
+      "source": "France 24 5.0|9.0 \u00b7 ABC News Australia 1.6|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-02-26/69edd8843251.mp3",
+      "published_at": "2026-02-26T12:30:55.271943+00:00",
       "status": "published"
     }
   ]
