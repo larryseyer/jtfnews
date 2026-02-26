@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-02-26T06:55:59.389745+00:00",
+  "timestamp": "2026-02-26T07:01:12.285836+00:00",
+  "web_refresh_at": "2026-02-26T07:01:12.285836+00:00",
   "uptime_start": "2026-02-26T01:21:24.376287+00:00",
-  "uptime_seconds": 20075,
+  "uptime_seconds": 20388,
   "availability_pct": 89.1,
   "cycle": {
-    "number": 12,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 13,
+    "duration_seconds": 67.9,
+    "headlines_scraped": 143,
+    "headlines_processed": 15,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 5
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 296,
-        "cost_usd": 0.11881724999999996,
+        "calls": 320,
+        "cost_usd": 0.12650924999999996,
         "details": {
-          "input_tokens": 291584,
-          "output_tokens": 36737
+          "input_tokens": 310707,
+          "output_tokens": 39066
         }
       },
       "elevenlabs": {
@@ -36,14 +37,14 @@
         }
       }
     },
-    "total_usd": 0.1925,
+    "total_usd": 0.2002,
     "month_estimate_usd": 7.84,
     "daily_budget": 1.79,
-    "budget_pct": 10.8
+    "budget_pct": 11.2
   },
   "queue": {
-    "size": 56,
-    "oldest_item_age_hours": 24.4
+    "size": 59,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 3,
   "sources": {
@@ -52,26 +53,6 @@
     "failed": []
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-02-26T06:00:04.439207+00:00",
-      "level": "WARNING",
-      "message": "Story 0: No audio file found for: Floods and landslides in Brazil resulted in at lea..."
-    },
-    {
-      "timestamp": "2026-02-26T06:00:04.439422+00:00",
-      "level": "WARNING",
-      "message": "Story 1: No audio file found for: Ukraine marks four years of war with Russia...."
-    },
-    {
-      "timestamp": "2026-02-26T06:00:04.439623+00:00",
-      "level": "WARNING",
-      "message": "Story 2: No audio file found for: President Trump is scheduled to deliver a State of..."
-    },
-    {
-      "timestamp": "2026-02-26T06:00:04.439823+00:00",
-      "level": "WARNING",
-      "message": "Story 3: No audio file found for: President Trump delivers State of the Union addres..."
-    },
     {
       "timestamp": "2026-02-26T06:02:53.665337+00:00",
       "level": "WARNING",
@@ -96,7 +77,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   },
   "daily_digest": {
