@@ -5,8 +5,20 @@
     <link>https://larryseyer.github.io/jtfnews/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Feb 2026 15:00:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 21:00:37 +0000</lastBuildDate>
     <atom:link href="https://larryseyer.github.io/jtfnews/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Kenyan individual is charged with luring young men to fight for Russia in Ukra...</title>
+      <description>A Kenyan individual is charged with luring young men to fight for Russia in Ukraine.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 26 Feb 2026 21:00:37 +0000</pubDate>
+      <guid isPermaLink="false">2bf0c7a77000</guid>
+    </item>
     <item>
       <title>Hillary Clinton is scheduled to appear before a U.S. House panel investigating E...</title>
       <description>Hillary Clinton is scheduled to appear before a U.S. House panel investigating Epstein.</description>
