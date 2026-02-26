@@ -1,61 +1,73 @@
 {
-  "timestamp": "2026-02-26T12:26:03.312761+00:00",
+  "timestamp": "2026-02-26T12:31:11.046262+00:00",
+  "web_refresh_at": "2026-02-26T12:31:11.046262+00:00",
   "uptime_start": "2026-02-26T01:21:24.376287+00:00",
-  "uptime_seconds": 39879,
+  "uptime_seconds": 40187,
   "availability_pct": 89.3,
   "cycle": {
-    "number": 23,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
+    "number": 24,
+    "duration_seconds": 66.3,
+    "headlines_scraped": 142,
+    "headlines_processed": 9,
+    "stories_published": 2,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 437,
-        "cost_usd": 0.17478174999999996,
+        "calls": 454,
+        "cost_usd": 0.18019649999999998,
         "details": {
-          "input_tokens": 427662,
-          "output_tokens": 54293
+          "input_tokens": 440401,
+          "output_tokens": 56077
         }
       },
       "elevenlabs": {
-        "calls": 16,
-        "cost_usd": 0.06696000000000003,
+        "calls": 19,
+        "cost_usd": 0.07740000000000002,
         "details": {
-          "characters": 2232
+          "characters": 2580
         }
       },
       "twilio": {
-        "calls": 1,
-        "cost_usd": 0.0079,
+        "calls": 2,
+        "cost_usd": 0.0158,
         "details": {
-          "sms_count": 1
+          "sms_count": 2
         }
       }
     },
-    "total_usd": 0.2496,
+    "total_usd": 0.2734,
     "month_estimate_usd": 7.84,
     "daily_budget": 1.79,
-    "budget_pct": 14.0
+    "budget_pct": 15.3
   },
   "queue": {
-    "size": 58,
-    "oldest_item_age_hours": 24.4
+    "size": 55,
+    "oldest_item_age_hours": 23.5
   },
-  "stories_today": 4,
+  "stories_today": 6,
   "sources": {
     "total": 17,
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-02-26T12:30:39.020760+00:00",
+      "level": "WARNING",
+      "message": "Correction needed: Story [2026-02-26-003] states talks have 'begun' ("
+    },
+    {
+      "timestamp": "2026-02-26T12:30:41.628402+00:00",
+      "level": "WARNING",
+      "message": "Alert sent: CORRECTION issued for 2026-02-26-003: Story [2026-02-26-003] states talks have 'begun' ("
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   },
   "daily_digest": {
