@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2ee5f6970e071b1170b663a9ca79da84",
+    "updateDate": "2026-02-26T00:02:19.0Z",
+    "titleText": "JTF News: France 24, The Guardian",
+    "mainText": "Former Brazilian lawmakers were convicted of ordering the murder of Rio councilwoman Marielle Franco.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "7c52ac318bae37e1fdce26fbf21c1f02",
     "updateDate": "2026-02-26T00:01:10.0Z",
     "titleText": "JTF News: NPR, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-25T18:30:47.0Z",
     "titleText": "JTF News: France 24, The Guardian",
     "mainText": "Brazil politicians convicted for ordering murder of Rio activist councillor.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "79877ac52b63b252fadf4831bc8ff96a",
-    "updateDate": "2026-02-25T15:00:58.0Z",
-    "titleText": "JTF News: ABC News Australia, BBC News",
-    "mainText": "Japan announced plans to deploy missiles on an island near Taiwan by 2031.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
