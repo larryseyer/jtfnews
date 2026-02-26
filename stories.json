@@ -1,147 +1,17 @@
 {
-  "date": "2026-02-25",
+  "date": "2026-02-26",
   "stories": [
     {
-      "id": "2026-02-25-000",
-      "hash": "d11234f47f22",
-      "fact": "Floods and landslides in Brazil resulted in at least 20 deaths.",
-      "source": "The Guardian 2.9|2.5 \u00b7 BBC News 5.7|9.0",
-      "source_urls": {
-        "The Guardian": "https://www.theguardian.com/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_0.mp3",
-      "published_at": "2026-02-25T00:01:24.961978+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-001",
-      "hash": "a4611c124a95",
-      "fact": "Ukraine marks four years of war with Russia.",
-      "source": "ABC News Australia 1.6|9.0 \u00b7 France 24 5.0|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/audio_1.mp3",
-      "published_at": "2026-02-25T00:02:57.988758+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-002",
-      "hash": "9046dbbc1492",
-      "fact": "President Trump is scheduled to deliver a State of the Union address. During the address, he welcomed the U.S. men's hockey team.",
-      "source": "CBC News 3.6|9.0 \u00b7 NPR 4.7|8.5 \u00b7 France 24 5.0|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "NPR": "https://www.npr.org/sections/news/"
-      },
-      "audio": "../audio/audio_2.mp3",
-      "published_at": "2026-02-25T01:00:37.369490+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-003",
-      "hash": "6d893b46d61d",
-      "fact": "President Trump delivers State of the Union address.",
-      "source": "NPR 4.9|8.5 \u00b7 CBC News 3.7|9.0",
+      "id": "2026-02-26-000",
+      "hash": "983607240600",
+      "fact": "Four people were shot and killed on a US-registered speedboat by Cuban border guards, according to Cuban authorities.",
+      "source": "NPR 4.9|8.5 \u00b7 BBC News 5.5|9.0",
       "source_urls": {
         "NPR": "https://www.npr.org/sections/news/",
-        "CBC News": "https://www.cbc.ca/news/world"
-      },
-      "audio": "../audio/audio_3.mp3",
-      "published_at": "2026-02-25T02:30:33.452949+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-004",
-      "hash": "c74df4aebd68",
-      "fact": "Australia police make arrests in connection with the death of a grandfather who was mistakenly kidnapped. The victim has been identified as Michael Gaine, a sheep farmer in County Kerry, and a man in his 50s is due in court in connection with the death.",
-      "source": "BBC News 5.6|9.0 \u00b7 ABC News Australia 1.6|9.0 \u00b7 Irish Times 0.5|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/audio_4.mp3",
-      "published_at": "2026-02-25T06:30:42.456626+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-005",
-      "hash": "1d3f4d2c251e",
-      "fact": "Chancellor Friedrich Merz of Germany travels to Beijing.",
-      "source": "France 24 5.0|9.0 \u00b7 Deutsche Welle 5.9|9.5",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_5.mp3",
-      "published_at": "2026-02-25T11:30:44.272723+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-006",
-      "hash": "12bfa4528f5b",
-      "fact": "Trial begins for Brazil politicians accused of ordering lawmakers' murders.",
-      "source": "France 24 4.9|9.0 \u00b7 The Guardian 3.0|2.5",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/audio_6.mp3",
-      "published_at": "2026-02-25T13:30:41.565340+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-007",
-      "hash": "3090d4b27b8a",
-      "fact": "Japan announced plans to deploy missiles on an island near Taiwan by 2031.",
-      "source": "ABC News Australia 1.7|9.0 \u00b7 BBC News 5.5|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
         "BBC News": "https://www.bbc.com/news/world"
       },
-      "audio": "../audio/audio_7.mp3",
-      "published_at": "2026-02-25T15:00:55.966813+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-008",
-      "hash": "d0f787734b86",
-      "fact": "Brazil politicians convicted for ordering murder of Rio activist councillor.",
-      "source": "France 24 5.0|9.0 \u00b7 The Guardian 3.3|2.5",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/audio_8.mp3",
-      "published_at": "2026-02-25T18:30:45.341304+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-009",
-      "hash": "0f783e6a26ae",
-      "fact": "Cuban coast guard personnel killed 4 people in a US-flagged speedboat.",
-      "source": "BBC News 5.4|9.0 \u00b7 Deutsche Welle 5.8|9.5",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_9.mp3",
-      "published_at": "2026-02-25T21:00:31.391571+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-25-010",
-      "hash": "1e74c4a00588",
-      "fact": "Ukrainian officials will meet with envoys representing President Trump in Geneva for talks.",
-      "source": "PBS NewsHour 6.3|9.0 \u00b7 France 24 5.1|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-02-25/e151e6983089.mp3",
-      "published_at": "2026-02-25T21:59:04.033241+00:00",
+      "audio": "../audio/archive/2026-02-26/5cb02d1640ad.mp3",
+      "published_at": "2026-02-26T00:01:08.702786+00:00",
       "status": "published"
     }
   ]
