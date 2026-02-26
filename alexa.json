@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f33806420b5ffdbf022288bafe2d25c4",
+    "updateDate": "2026-02-26T21:00:40.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "A Kenyan individual is charged with luring young men to fight for Russia in Ukraine.",
+    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+  },
+  {
     "uid": "426a161a2ab259a4a51d25a15c39eab8",
     "updateDate": "2026-02-26T15:00:45.0Z",
     "titleText": "JTF News: BBC News, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-26T09:30:34.0Z",
     "titleText": "JTF News: BBC News, NPR",
     "mainText": "The United States and Iran began talks.",
-    "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
-  },
-  {
-    "uid": "9749fcbc690c84bbf7e6e3732af7e1ea",
-    "updateDate": "2026-02-26T00:04:24.0Z",
-    "titleText": "JTF News: White House, France 24",
-    "mainText": "President Trump delivered a State of the Union address.",
     "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
   }
 ]
