@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-02-26/51f7e4a3c646.mp3",
       "published_at": "2026-02-26T00:02:17.650960+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-26-002",
+      "hash": "535d290d5ad2",
+      "fact": "President Trump delivered a State of the Union address.",
+      "source": "White House 7.5*|10.0 \u00b7 France 24 5.1|9.0",
+      "source_urls": {
+        "White House": "https://www.whitehouse.gov/briefing-room/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-02-26/152e55de2662.mp3",
+      "published_at": "2026-02-26T00:04:21.930099+00:00",
+      "status": "published"
     }
   ]
 }
