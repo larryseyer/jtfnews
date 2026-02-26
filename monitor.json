@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-26T15:11:20.034589+00:00",
+  "timestamp": "2026-02-26T15:16:21.063420+00:00",
   "uptime_start": "2026-02-26T01:21:24.376287+00:00",
-  "uptime_seconds": 49796,
+  "uptime_seconds": 50097,
   "availability_pct": 89.4,
   "cycle": {
     "number": 29,
@@ -43,7 +43,7 @@
   },
   "queue": {
     "size": 60,
-    "oldest_item_age_hours": 23.7
+    "oldest_item_age_hours": 23.8
   },
   "stories_today": 7,
   "sources": {
@@ -53,11 +53,6 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-02-26T14:12:17.662300+00:00",
-      "level": "WARNING",
-      "message": "Error pushing monitor.json to gh-pages: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/larryseyer/jtfnews/contents/monitor.json (Caused by NewConnectionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to establish a new connection: [Errno 60] Operation timed out\"))"
-    },
-    {
       "timestamp": "2026-02-26T14:18:39.612230+00:00",
       "level": "WARNING",
       "message": "Error pushing monitor.json to gh-pages: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/larryseyer/jtfnews/contents/monitor.json?ref=gh-pages (Caused by NewConnectionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to establish a new connection: [Errno 60] Operation timed out\"))"
@@ -66,7 +61,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 18,
+    "next_cycle_minutes": 13,
     "degraded_services": []
   },
   "daily_digest": {
