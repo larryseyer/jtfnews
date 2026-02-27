@@ -1,87 +1,60 @@
 {
-  "timestamp": "2026-02-26T22:50:48.145638+00:00",
-  "uptime_start": "2026-02-26T01:21:24.376287+00:00",
-  "uptime_seconds": 77364,
-  "availability_pct": 89.7,
+  "timestamp": "2026-02-27T23:09:30.365950+00:00",
+  "web_refresh_at": "2026-02-27T23:09:30.365950+00:00",
+  "uptime_start": "2026-02-27T23:03:02.597961+00:00",
+  "uptime_seconds": 388,
+  "availability_pct": 48.0,
   "cycle": {
-    "number": 44,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
-    "stories_queued": 0
+    "number": 1,
+    "duration_seconds": 387.1,
+    "headlines_scraped": 143,
+    "headlines_processed": 143,
+    "stories_published": 6,
+    "stories_queued": 24
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 715,
-        "cost_usd": 0.28615149999999967,
+        "calls": 182,
+        "cost_usd": 0.07098275000000001,
         "details": {
-          "input_tokens": 696881,
-          "output_tokens": 89545
+          "input_tokens": 173771,
+          "output_tokens": 22032
         }
       },
       "elevenlabs": {
-        "calls": 21,
-        "cost_usd": 0.08253000000000002,
+        "calls": 6,
+        "cost_usd": 0.01572,
         "details": {
-          "characters": 2751
-        }
-      },
-      "twilio": {
-        "calls": 2,
-        "cost_usd": 0.0158,
-        "details": {
-          "sms_count": 2
+          "characters": 524
         }
       }
     },
-    "total_usd": 0.3845,
-    "month_estimate_usd": 7.84,
+    "total_usd": 0.0867,
+    "month_estimate_usd": 8.14,
     "daily_budget": 1.79,
-    "budget_pct": 21.5
+    "budget_pct": 4.9
   },
   "queue": {
-    "size": 60,
-    "oldest_item_age_hours": 23.8
+    "size": 18,
+    "oldest_item_age_hours": 0.1
   },
-  "stories_today": 8,
+  "stories_today": 6,
   "sources": {
     "total": 17,
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-02-26T22:30:46.115655+00:00",
-      "level": "WARNING",
-      "message": "GitHub API error for monitor.json: 403"
-    },
-    {
-      "timestamp": "2026-02-26T22:35:46.771113+00:00",
-      "level": "WARNING",
-      "message": "GitHub API error for monitor.json: 403"
-    },
-    {
-      "timestamp": "2026-02-26T22:40:47.447637+00:00",
-      "level": "WARNING",
-      "message": "GitHub API error for monitor.json: 403"
-    },
-    {
-      "timestamp": "2026-02-26T22:45:48.141743+00:00",
-      "level": "WARNING",
-      "message": "GitHub API error for monitor.json: 403"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
-    "stream_health": "online",
-    "next_cycle_minutes": 9,
+    "stream_health": "offline",
+    "next_cycle_minutes": 20,
     "degraded_services": []
   },
   "daily_digest": {
     "last_date": "2026-02-25",
-    "next_digest_at": "2026-02-27T06:00:00+00:00",
+    "next_digest_at": "2026-02-28T06:00:00+00:00",
     "status": "success",
     "upload_status": "success",
     "error_message": "Failed to get recording output path",
