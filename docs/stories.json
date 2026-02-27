@@ -65,6 +65,19 @@
       "audio": "../audio/audio_4.mp3",
       "published_at": "2026-02-27T23:06:40.816478+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-27-005",
+      "hash": "2527e0774fbb",
+      "fact": "Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan following recent strikes.",
+      "source": "PBS NewsHour 6.2|9.0 \u00b7 BBC News 5.1|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_5.mp3",
+      "published_at": "2026-02-27T23:07:01.610736+00:00",
+      "status": "published"
     }
   ]
 }
