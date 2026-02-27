@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Feb 2026 21:00:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 23:04:09 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian gove...</title>
+      <description>At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian government minister.</description>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="3.3" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="4.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 27 Feb 2026 23:04:09 +0000</pubDate>
+      <guid isPermaLink="false">f0d47ef804ab</guid>
+    </item>
     <item>
       <title>A Kenyan individual is charged with luring young men to fight for Russia in Ukra...</title>
       <description>A Kenyan individual is charged with luring young men to fight for Russia in Ukraine.</description>
