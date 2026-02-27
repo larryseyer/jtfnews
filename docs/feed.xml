@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Feb 2026 23:05:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 23:06:10 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A tram derailed in Milan, resulting in two deaths and dozens of injuries.</title>
+      <description>A tram derailed in Milan, resulting in two deaths and dozens of injuries.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.5" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 27 Feb 2026 23:06:10 +0000</pubDate>
+      <guid isPermaLink="false">5b046f467d8c</guid>
+    </item>
     <item>
       <title>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' re...</title>
       <description>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Epstein.</description>
@@ -1150,12 +1162,6 @@
       <description>Eleven people killed in Israeli strikes on Gaza according to rescuers. Sources: France 24 8.7*|9.0 · BBC News 9.4*|9.0</description>
       <pubDate>Sun, 15 Feb 2026 22:40:55 +0000</pubDate>
       <guid isPermaLink="false">c1b197cf2966</guid>
-    </item>
-    <item>
-      <title>Iran's state media reports the foreign minister will attend indirect talks with the United States.</title>
-      <description>Iran's state media reports the foreign minister will attend indirect talks with the United States. Sources: PBS NewsHour 9.2*|9.0 · France 24 8.9*|9.0</description>
-      <pubDate>Sun, 15 Feb 2026 22:42:16 +0000</pubDate>
-      <guid isPermaLink="false">a774c93f5436</guid>
     </item>
   </channel>
 </rss>
