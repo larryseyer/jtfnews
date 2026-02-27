@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Feb 2026 23:04:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 23:05:46 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' re...</title>
+      <description>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Epstein.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.5" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 27 Feb 2026 23:05:46 +0000</pubDate>
+      <guid isPermaLink="false">994e5746b3ff</guid>
+    </item>
     <item>
       <title>Sweden states that a drone jammed near a French aircraft carrier was Russian.</title>
       <description>Sweden states that a drone jammed near a French aircraft carrier was Russian.</description>
@@ -1144,12 +1156,6 @@
       <description>Iran's state media reports the foreign minister will attend indirect talks with the United States. Sources: PBS NewsHour 9.2*|9.0 · France 24 8.9*|9.0</description>
       <pubDate>Sun, 15 Feb 2026 22:42:16 +0000</pubDate>
       <guid isPermaLink="false">a774c93f5436</guid>
-    </item>
-    <item>
-      <title>The FBI states that DNA from a glove may link a suspect to the Nancy Guthrie abduction.</title>
-      <description>The FBI states that DNA from a glove may link a suspect to the Nancy Guthrie abduction. Sources: France 24 9.0*|9.0 · CBC News 9.0*|9.0</description>
-      <pubDate>Sun, 15 Feb 2026 23:00:28 +0000</pubDate>
-      <guid isPermaLink="false">774e316bb15e</guid>
     </item>
   </channel>
 </rss>
