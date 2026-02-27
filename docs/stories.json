@@ -1,118 +1,17 @@
 {
-  "date": "2026-02-26",
+  "date": "2026-02-27",
   "stories": [
     {
-      "id": "2026-02-26-000",
-      "hash": "983607240600",
-      "fact": "Four people were shot and killed on a US-registered speedboat by Cuban border guards, according to Cuban authorities.",
-      "source": "NPR 4.9|8.5 \u00b7 BBC News 5.5|9.0",
+      "id": "2026-02-27-000",
+      "hash": "bac801e87280",
+      "fact": "At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian government minister.",
+      "source": "The Guardian 3.3|2.5 \u00b7 BBC News 4.9|9.0",
       "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
+        "The Guardian": "https://www.theguardian.com/world",
         "BBC News": "https://www.bbc.com/news/world"
       },
-      "audio": "../audio/archive/2026-02-26/5cb02d1640ad.mp3",
-      "published_at": "2026-02-26T00:01:08.702786+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-26-001",
-      "hash": "0e98f54d407d",
-      "fact": "Former Brazilian lawmakers were convicted of ordering the murder of Rio councilwoman Marielle Franco.",
-      "source": "France 24 5.1|9.0 \u00b7 The Guardian 3.6|2.5",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/archive/2026-02-26/51f7e4a3c646.mp3",
-      "published_at": "2026-02-26T00:02:17.650960+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-26-002",
-      "hash": "535d290d5ad2",
-      "fact": "President Trump delivered a State of the Union address.",
-      "source": "White House 7.5*|10.0 \u00b7 France 24 5.1|9.0",
-      "source_urls": {
-        "White House": "https://www.whitehouse.gov/briefing-room/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-02-26/152e55de2662.mp3",
-      "published_at": "2026-02-26T00:04:21.930099+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-26-003",
-      "hash": "d08cfde01205",
-      "fact": "The U.S. and Iran are scheduled to hold nuclear talks.",
-      "source": "BBC News 5.2|9.0 \u00b7 NPR 4.9|8.5",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "NPR": "https://www.npr.org/sections/news/"
-      },
-      "audio": "../audio/archive/2026-02-26/a9e30ff40c15.mp3",
-      "published_at": "2026-02-26T09:30:31.833130+00:00",
-      "status": "corrected",
-      "original_fact": "The United States and Iran began talks.",
-      "correction": {
-        "corrected_at": "2026-02-26T12:30:39.020793+00:00",
-        "type": "correction",
-        "reason": "Story [2026-02-26-003] states talks have 'begun' (past tense, indicating they already started), but the new verified fact states the U.S. and Iran are 'scheduled to hold' nuclear talks (future tense, indicating they are planned but have not yet occurred). These contradict each other regarding the timeline of the talks.",
-        "correcting_sources": [
-          "NPR",
-          "France 24"
-        ]
-      }
-    },
-    {
-      "id": "2026-02-26-004",
-      "hash": "625175655c42",
-      "fact": "The U.S. and Iran are scheduled to hold nuclear talks.",
-      "source": "NPR 5.0|8.5 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-02-26/551dd0d495e0.mp3",
-      "published_at": "2026-02-26T12:30:33.952307+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-26-005",
-      "hash": "280342ae0ed2",
-      "fact": "Prime Minister of Iceland stated the country will hold a referendum regarding European Union membership over the coming months.",
-      "source": "France 24 5.0|9.0 \u00b7 ABC News Australia 1.6|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-02-26/69edd8843251.mp3",
-      "published_at": "2026-02-26T12:30:55.271943+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-26-006",
-      "hash": "61878085c32e",
-      "fact": "Hillary Clinton is scheduled to appear before a U.S. House panel investigating Epstein.",
-      "source": "BBC News 5.3|9.0 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-02-26/37073a108669.mp3",
-      "published_at": "2026-02-26T15:00:43.428101+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-26-007",
-      "hash": "bac130b95c09",
-      "fact": "A Kenyan individual is charged with luring young men to fight for Russia in Ukraine.",
-      "source": "BBC News 5.2|9.0 \u00b7 France 24 5.0|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-02-26/e73c6595ee17.mp3",
-      "published_at": "2026-02-26T21:00:37.839013+00:00",
+      "audio": "../audio/audio_0.mp3",
+      "published_at": "2026-02-27T23:04:09.070589+00:00",
       "status": "published"
     }
   ]
