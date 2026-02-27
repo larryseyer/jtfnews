@@ -52,6 +52,19 @@
       "audio": "../audio/audio_3.mp3",
       "published_at": "2026-02-27T23:06:10.190777+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-27-004",
+      "hash": "1c595eaccfd1",
+      "fact": "President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'",
+      "source": "PBS NewsHour 6.2|9.0 \u00b7 The Guardian 3.5|2.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "The Guardian": "https://www.theguardian.com/world"
+      },
+      "audio": "../audio/audio_4.mp3",
+      "published_at": "2026-02-27T23:06:40.816478+00:00",
+      "status": "published"
     }
   ]
 }
