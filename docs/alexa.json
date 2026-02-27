@@ -1,5 +1,12 @@
 [
   {
+    "uid": "72d8311817df6437672efc4b743e4070",
+    "updateDate": "2026-02-27T23:07:03.0Z",
+    "titleText": "JTF News: PBS NewsHour, BBC News",
+    "mainText": "Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan following recent strikes.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "f5362e8300f3db47c7d513b549ddfb86",
     "updateDate": "2026-02-27T23:06:43.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-27T23:04:47.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "Sweden states that a drone jammed near a French aircraft carrier was Russian.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "6027c57144e01477ca5ea8b08f155402",
-    "updateDate": "2026-02-27T23:04:11.0Z",
-    "titleText": "JTF News: The Guardian, BBC News",
-    "mainText": "At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian government minister.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
