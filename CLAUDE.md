@@ -288,34 +288,31 @@ Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 3. Pushes to origin (main branch)
 4. Creates a timestamped backup zip in Dropbox
 5. Runs `./deploy.sh` to sync to production machine
-6. Deploys web assets to GitHub Pages (gh-pages branch)
 
-## Two-Branch Git Workflow
-| Branch | Purpose | Location |
-|--------|---------|----------|
-| `main` | Source code | `/Users/larryseyer/JTFNews` |
-| `gh-pages` | Public website | `/Users/larryseyer/JTFNews/gh-pages-dist` (worktree) |
+## Git Workflow
+- Single branch: `main`
+- Website served from `/docs` folder on main branch
+- Public site: https://jtfnews.org/
+- GitHub org: JTFNews/jtfnews
 
-- `gh-pages-dist/` is a **git worktree** linked to the `gh-pages` branch
-- `bu.sh` handles both branches automatically - commits main, then deploys gh-pages
-- Public site: https://larryseyer.github.io/jtfnews/
-- **Do NOT manually push to gh-pages** - let bu.sh handle it
+### Automatic GitHub Updates
+Runtime files (feed.xml, stories.json, monitor.json, etc.) are pushed automatically by main.py via GitHub API. No manual git operations needed for website updates.
 
-### CRITICAL: Syncing Overlay Files (web/ → gh-pages-dist/)
+### Syncing Overlay Files (web/ → docs/)
 When modifying overlay files that exist in BOTH locations, you MUST update BOTH:
 
-| web/ (OBS local) | gh-pages-dist/ (public site) |
-|------------------|------------------------------|
-| `web/screensaver.html` | `gh-pages-dist/screensaver.html` |
-| `web/monitor.html` | `gh-pages-dist/monitor.html` |
-| `web/lower-third.html` | (not on gh-pages) |
+| web/ (OBS local) | docs/ (public site) |
+|------------------|---------------------|
+| `web/screensaver.html` | `docs/screensaver.html` |
+| `web/monitor.html` | `docs/monitor.html` |
+| `web/lower-third.html` | (not on public site) |
 
 **Path differences to fix when syncing:**
 - `../media` → `./images`
 - `../data/stories.json` → `./stories.json`
 - `../data/monitor.json` → `./monitor.json`
 
-**Files that exist ONLY in gh-pages-dist/:** index.html, how-it-works.html, whitepaper.html, screensaver-setup.html, feed.xml
+**Files that exist ONLY in docs/:** index.html, how-it-works.html, whitepaper.html, screensaver-setup.html, feed.xml
 
 ## Testing & Deployment Workflow
 
@@ -382,16 +379,15 @@ After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to
 - `data/` and `audio/` - Runtime data (generated on each machine)
 
 ### Notes
-- `gh-pages-dist/` is for GitHub Pages web assets only, NOT deployment
 - Check if volume is mounted before deploying: `ls /Volumes/MacLive/Users/larryseyer/JTFNews`
 - If deploy machine venv breaks after copy, run `./fix-after-copy.sh` on the Intel machine
 
 ## Folder Structure
 - `main.py` - Main application (~2000 lines with resilience system)
 - `web/` - OBS browser source overlays (lower-third.html, background-slideshow.html, screensaver.html, monitor.html)
-- `gh-pages-dist/` - Public website (GitHub Pages) - how-it-works, whitepaper, feed.xml, stories.json
+- `docs/` - Public website (GitHub Pages) - index.html, how-it-works, whitepaper, feed.xml, stories.json
+- `documentation/` - Project documentation (SPECIFICATION.md, WhitePaper Ver 1.3 CURRENT.md, plans/)
 - `media/` - Background images organized by season (fall/, spring/, summer/, winter/)
-- `docs/` - Documentation (SPECIFICATION.md, WhitePaper Ver 1.3 CURRENT.md, ResilienceSystem.md)
 - `data/` - Runtime data (stories.json, queue.json, api_usage, monitor.json) - NOT committed
 
 ## Tech Stack

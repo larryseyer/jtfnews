@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTF News - Just The Facts</title>
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="24/7 automated news reporting only verified facts. No opinions, no adjectives, no interpretation. Every fact confirmed by 2+ independent sources.">
+    <meta name="keywords" content="unbiased news, facts only news, news without opinion, verified news, fact-based reporting, no commentary news">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="JTF News - Just The Facts">
+    <meta property="og:description" content="24/7 automated news reporting only verified facts. No opinions, no adjectives, no interpretation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jtfnews.org/">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JTF News - Just The Facts">
+    <meta name="twitter:description" content="24/7 automated news reporting only verified facts. No opinions, no adjectives, no interpretation.">
+    <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        h1 { color: #d4af37; }
+        .logo { height: 48px; margin-bottom: 15px; }
+        .logo img { height: 100%; width: auto; }
+        h2 { color: #94a3b8; margin-top: 30px; }
+        a { color: #60a5fa; }
+        .feed-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #1e40af;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .feed-link:hover { background: #2563eb; }
+
+        /* Operational Costs Section */
+        .costs-section {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .costs-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .costs-header h3 {
+            margin: 0;
+            color: #d4af37;
+            font-size: 16px;
+        }
+        .live-badge {
+            font-size: 11px;
+            padding: 3px 8px;
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+        .costs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .cost-item {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .cost-label {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .cost-value {
+            font-size: 24px;
+            font-weight: 600;
+            color: #f8fafc;
+            margin-top: 4px;
+        }
+        .cost-value.highlight {
+            color: #d4af37;
+        }
+        .cost-detail {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+        .budget-bar {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .budget-fill {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 0.3s, background 0.3s;
+        }
+        .budget-fill.green { background: #22c55e; }
+        .budget-fill.yellow { background: #eab308; }
+        .budget-fill.red { background: #ef4444; }
+        .costs-breakdown {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .breakdown-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 13px;
+        }
+        .breakdown-service {
+            color: #94a3b8;
+        }
+        .breakdown-cost {
+            color: #22c55e;
+        }
+        .transparency-note {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        .status-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+        }
+        .status-dot.offline { background: #ef4444; }
+        .status-text { color: #94a3b8; }
+
+        /* Full Dashboard Link */
+        .dashboard-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="assets/logo-horizontal-dark.svg" alt="JTF News"></a>
+    </div>
+    <p><strong>Just The Facts.</strong> No opinions. No adjectives. No interpretation.</p>
+    <p>Verified facts from multiple independent sources.</p>
+    <p style="margin-top: 15px;"><a href="how-it-works.html">Learn how it works</a> &middot; <a href="sources.html">Our sources</a> &middot; <a href="whitepaper.html">Read the whitepaper</a></p>
+    <p style="margin-top: 5px;"><a href="archive.html">Story archive</a> &middot; <a href="corrections.html">Corrections log</a></p>
+
+    <h2>Subscribe</h2>
+    <a class="feed-link" href="feed.xml">RSS Feed</a>
+
+    <h2>Watch Live</h2>
+    <p><a href="https://www.youtube.com/@JTFNewsLive">YouTube - JTF News Live</a></p>
+
+    <h2>Screen Saver</h2>
+    <p>Turn JTF News into your desktop screen saver.</p>
+    <a class="feed-link" href="screensaver-setup.html">Setup Guide</a>
+    <a class="feed-link" href="screensaver.html" style="margin-left: 10px; background: #334155;">Preview</a>
+
+    <h2>Support</h2>
+    <p>JTF News is supported by viewers like you. <a href="how-it-works.html">See how your support helps</a>.</p>
+
+    <!-- Live Operational Costs -->
+    <div class="costs-section">
+        <div class="costs-header">
+            <h3>Operational Costs (Live)</h3>
+            <span class="live-badge" id="live-status">Loading...</span>
+        </div>
+        <div class="costs-grid">
+            <div class="cost-item">
+                <div class="cost-label">Today's Cost</div>
+                <div class="cost-value highlight" id="today-cost">--</div>
+                <div class="cost-detail" id="today-calls">-- API calls</div>
+                <div class="budget-bar">
+                    <div class="budget-fill green" id="budget-fill" style="width: 0%"></div>
+                </div>
+                <div class="cost-detail" id="budget-text">-- of $5 budget</div>
+            </div>
+            <div class="cost-item">
+                <div class="cost-label">Monthly Estimate</div>
+                <div class="cost-value" id="month-estimate">--</div>
+                <div class="cost-detail">projected at current rate</div>
+            </div>
+        </div>
+        <div class="costs-breakdown">
+            <div class="breakdown-row">
+                <span class="breakdown-service">Claude AI (fact extraction)</span>
+                <span class="breakdown-cost" id="claude-cost">--</span>
+            </div>
+            <div class="breakdown-row">
+                <span class="breakdown-service">ElevenLabs (voice)</span>
+                <span class="breakdown-cost" id="elevenlabs-cost">--</span>
+            </div>
+            <div class="breakdown-row">
+                <span class="breakdown-service">Twilio (alerts)</span>
+                <span class="breakdown-cost" id="twilio-cost">--</span>
+            </div>
+        </div>
+        <div class="status-row">
+            <span class="status-dot" id="status-dot"></span>
+            <span class="status-text" id="status-text">Checking status...</span>
+        </div>
+        <p class="transparency-note">
+            Full transparency: Every API call is tracked and reported in real-time.
+        </p>
+        <a class="dashboard-link" href="monitor.html">View Full Operations Dashboard &rarr;</a>
+    </div>
+
+    <iframe src="https://github.com/sponsors/JTFNews/card" title="Sponsor JTFNews" height="225" width="100%" style="border: 0; max-width: 600px; margin-top: 15px;"></iframe>
+
+    <script>
+        // Cycle-sync refresh state
+        let lastKnownRefreshAt = null;
+
+        function formatCurrency(amount) {
+            if (typeof amount !== 'number') return '$0.00';
+            return '$' + amount.toFixed(2);
+        }
+
+        function formatUptime(seconds) {
+            if (!seconds) return '--';
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            if (hours > 0) return hours + 'h ' + minutes + 'm uptime';
+            return minutes + 'm uptime';
+        }
+
+        function checkForCycleRefresh(data) {
+            const currentRefreshAt = data.web_refresh_at;
+            if (!currentRefreshAt) return;
+
+            if (lastKnownRefreshAt === null) {
+                lastKnownRefreshAt = currentRefreshAt;
+                console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
+                return;
+            }
+
+            if (currentRefreshAt !== lastKnownRefreshAt) {
+                console.log('[Cycle Refresh] New cycle detected, refreshing...');
+                location.reload();
+            }
+        }
+
+        async function loadCosts() {
+            try {
+                const response = await fetch('./monitor.json?t=' + Date.now());
+                if (!response.ok) throw new Error('Not found');
+                const data = await response.json();
+
+                // Check for cycle-sync refresh
+                checkForCycleRefresh(data);
+
+                // Check if data is stale (>15 min old)
+                const dataTime = new Date(data.timestamp);
+                const now = new Date();
+                const isStale = (now - dataTime) > 15 * 60 * 1000;
+
+                // Update live badge
+                const liveBadge = document.getElementById('live-status');
+                if (isStale) {
+                    liveBadge.textContent = 'Stale';
+                    liveBadge.style.background = 'rgba(234, 179, 8, 0.2)';
+                    liveBadge.style.color = '#eab308';
+                } else {
+                    liveBadge.textContent = 'Live';
+                    liveBadge.style.background = 'rgba(34, 197, 94, 0.2)';
+                    liveBadge.style.color = '#22c55e';
+                }
+
+                // Update costs
+                const costs = data.api_costs || {};
+                const services = costs.today || {};
+
+                document.getElementById('today-cost').textContent = formatCurrency(costs.total_usd);
+                document.getElementById('month-estimate').textContent = formatCurrency(costs.month_estimate_usd);
+
+                // Update budget bar
+                const budgetPct = costs.budget_pct || 0;
+                const dailyBudget = costs.daily_budget || 5;
+                const budgetFill = document.getElementById('budget-fill');
+                const budgetText = document.getElementById('budget-text');
+
+                budgetFill.style.width = Math.min(budgetPct, 100) + '%';
+                budgetFill.className = 'budget-fill ' + (budgetPct < 50 ? 'green' : budgetPct < 80 ? 'yellow' : 'red');
+                budgetText.textContent = budgetPct.toFixed(0) + '% of $' + dailyBudget + ' daily budget';
+
+                // Count total calls
+                let totalCalls = 0;
+                for (const svc of Object.values(services)) {
+                    totalCalls += svc.calls || 0;
+                }
+                document.getElementById('today-calls').textContent = totalCalls + ' API calls';
+
+                // Service breakdown
+                const claude = services.claude || {};
+                const elevenlabs = services.elevenlabs || {};
+                const twilio = services.twilio || {};
+
+                document.getElementById('claude-cost').textContent = formatCurrency(claude.cost_usd);
+                document.getElementById('elevenlabs-cost').textContent = formatCurrency(elevenlabs.cost_usd);
+                document.getElementById('twilio-cost').textContent = formatCurrency(twilio.cost_usd);
+
+                // Status
+                const statusDot = document.getElementById('status-dot');
+                const statusText = document.getElementById('status-text');
+                const streamHealth = data.status?.stream_health || 'unknown';
+
+                if (streamHealth === 'online') {
+                    statusDot.className = 'status-dot';
+                    statusText.textContent = 'Stream online \u2022 ' + formatUptime(data.uptime_seconds);
+                } else if (streamHealth === 'offline') {
+                    statusDot.className = 'status-dot offline';
+                    statusText.textContent = 'Stream offline';
+                } else {
+                    statusDot.className = 'status-dot';
+                    statusDot.style.background = '#64748b';
+                    statusText.textContent = 'Status unknown';
+                }
+
+            } catch (e) {
+                document.getElementById('live-status').textContent = 'Offline';
+                document.getElementById('live-status').style.background = 'rgba(239, 68, 68, 0.2)';
+                document.getElementById('live-status').style.color = '#ef4444';
+                document.getElementById('status-text').textContent = 'Could not load live data';
+            }
+        }
+
+        // Load immediately and refresh every 30 seconds
+        loadCosts();
+        setInterval(loadCosts, 30000);
+    </script>
+</body>
+</html>

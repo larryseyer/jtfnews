@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- OBS Lower Third Logo - square icon for lower-third overlay -->
+
+  <rect width="120" height="120" fill="#000000"/>
+
+  <!-- Convergence Symbol -->
+  <g transform="translate(60, 60)">
+    <line x1="-30" y1="-26" x2="0" y2="6" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <line x1="30" y1="-26" x2="0" y2="6" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="0" cy="6" r="6" fill="#ffffff"/>
+    <line x1="0" y1="12" x2="0" y2="36" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

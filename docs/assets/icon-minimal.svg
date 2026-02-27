@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Minimal icon - symbol only, no border -->
+
+  <!-- Convergence Symbol -->
+  <g transform="translate(256, 240)">
+    <!-- Left source line -->
+    <line x1="-140" y1="-120" x2="0" y2="30"
+          stroke="#000000" stroke-width="28" stroke-linecap="round"/>
+    <!-- Right source line -->
+    <line x1="140" y1="-120" x2="0" y2="30"
+          stroke="#000000" stroke-width="28" stroke-linecap="round"/>
+    <!-- Convergence point -->
+    <circle cx="0" cy="30" r="24" fill="#000000"/>
+    <!-- Output line -->
+    <line x1="0" y1="54" x2="0" y2="160"
+          stroke="#000000" stroke-width="24" stroke-linecap="round"/>
+  </g>
+</svg>

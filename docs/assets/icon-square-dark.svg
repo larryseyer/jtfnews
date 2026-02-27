@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Refined Concept 2: Dark variant -->
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000000"/>
+
+  <!-- Border -->
+  <rect x="16" y="16" width="480" height="480" fill="none" stroke="#ffffff" stroke-width="8"/>
+
+  <!-- Convergence Symbol -->
+  <g transform="translate(256, 256)">
+    <!-- Left source line -->
+    <line x1="-120" y1="-100" x2="0" y2="20"
+          stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+    <!-- Right source line -->
+    <line x1="120" y1="-100" x2="0" y2="20"
+          stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+    <!-- Convergence point -->
+    <circle cx="0" cy="20" r="20" fill="#ffffff"/>
+    <!-- Output line -->
+    <line x1="0" y1="40" x2="0" y2="130"
+          stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
+  </g>
+</svg>

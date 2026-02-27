@@ -31,7 +31,7 @@ const SPONSOR_CONFIG = {
     messages: [
         {
             message: "JTF News is supported by viewers like you.",
-            sourceText: "Support · github.com/sponsors/larryseyer"
+            sourceText: "Support · github.com/sponsors/JTFNews"
         },
         {
             message: "Run JTF News as your screen saver.",
@@ -133,7 +133,7 @@ function buildTickerContent() {
     if (stories.length === 0) {
         // Display fallback messages when no stories are available
         const fallbackMessages = [
-            "JTF News is supported by viewers like you · Support at github.com/sponsors/larryseyer",
+            "JTF News is supported by viewers like you · Support at github.com/sponsors/JTFNews",
             "Run JTF News as your screen saver · Free at jtfnews.com/screensaver",
             "Gathering verified facts from around the world...",
             "Two sources. Strip the adjectives. State the facts."

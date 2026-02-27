@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JTF News Screen Saver</title>
+
+  <!-- Favicon - adapts to light/dark mode -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <style>
+    /* iOS-safe viewport and safe area variables */
+    :root {
+      --viewport-width-px: 100vw;
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-left: env(safe-area-inset-left, 0px);
+      --safe-right: env(safe-area-inset-right, 0px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      cursor: none; /* Hide cursor for screen saver */
+    }
+
+    /* ========== Background Slideshow Layer ========== */
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* ========== Lower Third Overlay ========== */
+    #lower-third {
+      position: absolute;
+      bottom: 15%;  /* Raised to make room for ticker */
+      left: 3%;
+      right: 3%;
+      max-width: 94%;
+      z-index: 100;
+
+      /* Dark glassmorphism */
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(40px) saturate(180%);
+      -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+      /* Subtle light border */
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: clamp(8px, 1.5vw, 16px);
+
+      /* Shadow for depth */
+      box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+      /* Animation */
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    /* ========== Mobile Portrait ========== */
+    @media (max-width: 600px) and (orientation: portrait) {
+      #lower-third {
+        bottom: 10%;
+        left: 2%;
+        right: 2%;
+        max-width: 96%;
+      }
+      #fact-text {
+        font-size: clamp(14px, 5vw, 24px);
+        line-height: 1.5;
+      }
+      #source-bar {
+        font-size: clamp(10px, 3vw, 14px);
+        letter-spacing: 1px;
+      }
+      #brand-tab {
+        font-size: clamp(10px, 3vw, 14px);
+        padding: 4px 10px;
+        top: -28px;
+        letter-spacing: 2px;
+      }
+    }
+
+    /* ========== Mobile Landscape ========== */
+    @media (max-height: 500px) and (orientation: landscape) {
+      #lower-third {
+        bottom: 5%;
+        left: 2%;
+        right: 2%;
+      }
+      #fact-text {
+        font-size: clamp(14px, 3vh, 28px);
+        padding: clamp(10px, 2vh, 20px) clamp(12px, 2vw, 24px);
+      }
+      #source-bar {
+        font-size: clamp(10px, 2vh, 16px);
+        padding: clamp(6px, 1vh, 12px) clamp(12px, 2vw, 24px);
+      }
+      #brand-tab {
+        font-size: clamp(10px, 2vh, 14px);
+        top: clamp(-24px, -3vh, -32px);
+      }
+    }
+
+    /* ========== Tablet Portrait ========== */
+    @media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+      #fact-text {
+        font-size: clamp(20px, 4vw, 36px);
+      }
+      #source-bar {
+        font-size: clamp(14px, 2.5vw, 20px);
+      }
+      #brand-tab {
+        font-size: clamp(12px, 2vw, 18px);
+        top: -38px;
+      }
+    }
+
+    /* ========== Tablet Landscape ========== */
+    @media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+      #fact-text {
+        font-size: clamp(18px, 3.5vw, 32px);
+      }
+      #source-bar {
+        font-size: clamp(12px, 2vw, 18px);
+      }
+    }
+
+    #lower-third.hidden {
+      opacity: 0;
+      transform: translateX(-50px);
+      pointer-events: none;
+    }
+
+    #lower-third.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    #brand-tab {
+      position: absolute;
+      top: clamp(-36px, -4.5vw, -52px);
+      left: 0;
+      background: linear-gradient(135deg,
+        rgba(212, 175, 55, 0.95) 0%,
+        rgba(170, 135, 35, 0.9) 100%);
+      padding: clamp(6px, 1vw, 12px) clamp(12px, 2vw, 28px);
+      font-size: clamp(12px, 1.5vw, 22px);
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: clamp(1px, 0.3vw, 4px);
+      border-radius: clamp(6px, 0.8vw, 10px) clamp(6px, 0.8vw, 10px) 0 0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: none;
+      box-shadow:
+        0 -4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    #source-bar {
+      background: linear-gradient(135deg,
+        rgba(30, 64, 175, 0.7) 0%,
+        rgba(23, 37, 84, 0.8) 100%);
+      padding: clamp(8px, 1.5vw, 18px) clamp(16px, 3vw, 36px);
+      font-size: clamp(12px, 2vw, 28px);
+      font-weight: 600;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: clamp(1px, 0.25vw, 3px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #fact-text {
+      padding: clamp(16px, 3vw, 36px) clamp(20px, 3.5vw, 44px);
+      font-size: clamp(16px, 4vw, 58px);
+      font-weight: 400;
+      color: white;
+      line-height: 1.45;
+      letter-spacing: 0.3px;
+    }
+
+    /* Subtle top shine */
+    #lower-third::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 100%);
+      pointer-events: none;
+    }
+
+    /* ========== News Ticker ========== */
+    #news-ticker {
+      position: fixed;  /* fixed instead of absolute for iOS */
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /* Fixed height with iOS-safe units fallback */
+      height: 70px;
+      height: clamp(60px, 10svh, 120px);  /* svh = small viewport height, safer for iOS */
+      min-height: 50px;  /* Ensure ticker is always visible */
+      overflow: hidden;
+      z-index: 50;
+
+      /* Very dark background for small text readability */
+      background: rgba(10, 15, 30, 0.95);  /* Slightly more opaque for visibility */
+      backdrop-filter: blur(40px) saturate(180%);
+      -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+      /* Subtle top border */
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+      /* Shadow for depth */
+      box-shadow:
+        0 -4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+      /* Center content vertically */
+      display: flex;
+      align-items: center;
+
+      /* iOS safe area support - use margin instead of padding */
+      margin-bottom: var(--safe-bottom);
+      padding-left: var(--safe-left);
+      padding-right: var(--safe-right);
+
+      /* iOS scroll optimization */
+      -webkit-overflow-scrolling: touch;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    #ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      /* Start visible, animation handles scroll */
+      padding-left: 0;
+      animation: scroll-ticker linear infinite;
+      animation-play-state: paused;  /* Start paused, JS will play */
+      font-size: clamp(24px, 4vw, 48px);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: 0.3px;
+      --scroll-distance: 0px;
+      --start-offset: 100vw;
+
+      /* iOS GPU acceleration for smooth animation */
+      will-change: transform;
+      -webkit-transform: translateZ(0) translateX(var(--start-offset, 100vw));
+      transform: translateZ(0) translateX(var(--start-offset, 100vw));
+    }
+
+    /* When animation is ready, start playing */
+    #ticker-content.animating {
+      animation-play-state: running;
+    }
+
+    #ticker-content .ticker-story {
+      display: inline;
+    }
+
+    #ticker-content .ticker-time {
+      color: rgba(212, 175, 55, 0.95);
+      font-weight: 500;
+      margin-right: clamp(6px, 1vw, 12px);
+    }
+
+    #ticker-content .ticker-fact {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    #ticker-content .ticker-source {
+      color: rgba(147, 197, 253, 0.8);
+      font-size: clamp(21px, 3.5vw, 42px);
+      margin-left: clamp(6px, 1vw, 12px);
+    }
+
+    #ticker-content .ticker-spacer {
+      display: inline-block;
+      width: var(--viewport-width-px, 100vw);
+    }
+
+    @keyframes scroll-ticker {
+      from { transform: translateZ(0) translateX(var(--start-offset, 100vw)); }
+      to { transform: translateZ(0) translateX(var(--scroll-distance, -4000px)); }
+    }
+
+    /* Edge fade effect */
+    #news-ticker::before,
+    #news-ticker::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: clamp(50px, 8vw, 100px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    #news-ticker::before {
+      left: 0;
+      background: linear-gradient(90deg,
+        rgba(10, 15, 30, 1) 0%,
+        rgba(10, 15, 30, 0) 100%);
+    }
+
+    #news-ticker::after {
+      right: 0;
+      background: linear-gradient(90deg,
+        rgba(10, 15, 30, 0) 0%,
+        rgba(10, 15, 30, 1) 100%);
+    }
+
+    /* Mobile portrait - smaller ticker with safe area */
+    @media (max-width: 600px) and (orientation: portrait) {
+      #news-ticker {
+        height: 60px;
+        height: clamp(50px, 10svh, 80px);
+        min-height: 45px;
+      }
+      #ticker-content {
+        font-size: clamp(16px, 4.5vw, 28px);
+      }
+      #ticker-content .ticker-source {
+        font-size: clamp(14px, 4vw, 24px);
+      }
+    }
+
+    /* Mobile landscape - compact ticker with safe area */
+    @media (max-height: 500px) and (orientation: landscape) {
+      #news-ticker {
+        height: 50px;
+        height: clamp(40px, 10svh, 70px);
+        min-height: 40px;
+      }
+      #ticker-content {
+        font-size: clamp(16px, 3.5svh, 26px);
+      }
+    }
+
+    /* ========== Audio Indicator ========== */
+    #audio-indicator {
+      position: absolute;
+      top: clamp(10px, 2vw, 20px);
+      right: clamp(10px, 2vw, 20px);
+      padding: clamp(4px, 1vw, 8px) clamp(8px, 1.5vw, 16px);
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: clamp(4px, 0.8vw, 8px);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: clamp(10px, 1.2vw, 14px);
+      opacity: 1;
+      transition: opacity 2s ease-out;
+      z-index: 200;
+    }
+
+    #audio-indicator.fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background slideshow -->
+  <img id="slide1" class="slide active" alt="">
+  <img id="slide2" class="slide" alt="">
+
+  <!-- Lower third overlay -->
+  <div id="lower-third" class="hidden">
+    <div id="brand-tab">JTF NEWS</div>
+    <div id="source-bar"></div>
+    <div id="fact-text"></div>
+  </div>
+
+  <!-- Scrolling news ticker for viewers joining mid-stream -->
+  <div id="news-ticker">
+    <div id="ticker-content"></div>
+  </div>
+
+  <!-- Audio element (used only if audio=true) -->
+  <audio id="tts-audio" preload="none"></audio>
+
+  <!-- Startup indicator -->
+  <div id="audio-indicator"></div>
+
+  <script>
+    /**
+     * JTF News Screen Saver
+     * Combines background slideshow + lower-third news overlay
+     *
+     * URL Parameters:
+     *   ?audio=true   - Enable TTS audio (default: false/silent)
+     *   ?interval=50  - Seconds between slide changes (default: 50)
+     *   ?gap=45       - Seconds between stories (default: 45)
+     */
+
+    // ========== Configuration ==========
+    const params = new URLSearchParams(window.location.search);
+    const CONFIG = {
+      audioEnabled: params.get('audio') === 'true',
+      slideInterval: (parseInt(params.get('interval')) || 50) * 1000,
+      storyGap: (parseInt(params.get('gap')) || 45) * 1000,
+      fadeDuration: 2000,
+      basePath: './images',
+      storiesUrl: './stories.json',
+      pollInterval: 5000,
+      minRepeatGap: 2700000,  // 45 minutes
+      sponsor: {
+        enabled: true,
+        frequency: 10,
+        holdTime: 5000,  // 5 seconds
+        messages: [
+          {
+            message: "JTF News is supported by viewers like you.",
+            sourceText: "Support · github.com/sponsors/JTFNews"
+          },
+          {
+            message: "Run JTF News as your screen saver.",
+            sourceText: "Free · jtfnews.com/screensaver"
+          }
+        ]
+      }
+    };
+
+    // Show audio status briefly on startup
+    const indicator = document.getElementById('audio-indicator');
+    indicator.textContent = CONFIG.audioEnabled ? '🔊 Audio ON' : '🔇 Silent Mode';
+    setTimeout(() => indicator.classList.add('fade-out'), 3000);
+
+    // ========== Background Slideshow ==========
+    let currentSeason = null;
+    let images = [];
+    let shuffledQueue = [];
+    let currentSlide = 1;
+    let seedRng = null;
+
+    function getDailySeed() {
+      const now = new Date();
+      return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    }
+
+    function createSeededRng(seed) {
+      let hash = 0;
+      for (let i = 0; i < seed.length; i++) {
+        const char = seed.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+      }
+      return function() {
+        let t = hash += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      };
+    }
+
+    function shuffleArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(seedRng() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    function getSeason() {
+      const month = new Date().getMonth() + 1;
+      if (month >= 3 && month <= 5) return 'spring';
+      if (month >= 6 && month <= 8) return 'summer';
+      if (month >= 9 && month <= 11) return 'fall';
+      return 'winter';
+    }
+
+    async function discoverImages(season) {
+      const discovered = [];
+      let consecutiveFails = 0;
+      const maxConsecutiveFails = 10;
+
+      for (let i = 0; i < 2000 && consecutiveFails < maxConsecutiveFails; i++) {
+        const filename = `${season}_${String(i).padStart(6, '0')}.png`;
+        const path = `${CONFIG.basePath}/${season}/${filename}`;
+        try {
+          const response = await fetch(path, { method: 'HEAD' });
+          if (response.ok) {
+            discovered.push(path);
+            consecutiveFails = 0;
+          } else {
+            consecutiveFails++;
+          }
+        } catch (e) {
+          consecutiveFails++;
+        }
+      }
+      console.log(`[Slideshow] Found ${discovered.length} ${season} images`);
+      return discovered;
+    }
+
+    function getNextImage() {
+      if (shuffledQueue.length === 0) {
+        if (images.length === 0) return null;
+        const cycleSeed = getDailySeed() + '-' + Date.now();
+        seedRng = createSeededRng(cycleSeed);
+        shuffledQueue = shuffleArray(images);
+      }
+      return shuffledQueue.shift();
+    }
+
+    function showNextImage() {
+      const nextImage = getNextImage();
+      if (!nextImage) return;
+
+      const activeSlide = currentSlide === 1 ? 'slide1' : 'slide2';
+      const inactiveSlide = currentSlide === 1 ? 'slide2' : 'slide1';
+      const activeEl = document.getElementById(activeSlide);
+      const inactiveEl = document.getElementById(inactiveSlide);
+
+      inactiveEl.src = nextImage;
+      inactiveEl.onload = () => {
+        activeEl.classList.remove('active');
+        inactiveEl.classList.add('active');
+        currentSlide = currentSlide === 1 ? 2 : 1;
+      };
+      inactiveEl.onerror = () => {
+        images = images.filter(img => img !== nextImage);
+        shuffledQueue = shuffledQueue.filter(img => img !== nextImage);
+        if (images.length > 0) showNextImage();
+      };
+    }
+
+    async function initSlideshow() {
+      currentSeason = getSeason();
+      seedRng = createSeededRng(getDailySeed());
+      images = await discoverImages(currentSeason);
+
+      if (images.length === 0) {
+        document.body.style.background = '#1a1a2e';
+        return;
+      }
+
+      const firstImage = getNextImage();
+      document.getElementById('slide1').src = firstImage;
+      setInterval(showNextImage, CONFIG.slideInterval);
+      setInterval(() => {
+        const newSeason = getSeason();
+        if (newSeason !== currentSeason) {
+          currentSeason = newSeason;
+          shuffledQueue = [];
+          initSlideshow();
+        }
+      }, 60 * 60 * 1000);
+    }
+
+    // ========== Lower Third News ==========
+    const SCRAPE_CYCLE_MS = 300000;  // 5 minute scrape cycle
+    const MIN_GAP_TIME = 10000;      // Minimum 10 seconds between stories
+    const MAX_GAP_TIME = 120000;     // Maximum 2 minutes between stories
+    const MIN_REPLAY_INTERVAL = 30 * 60 * 1000; // 30 minutes minimum between replays
+    const MAX_SILENCE_DURATION = 15 * 60 * 1000; // 15 minutes max silence before forcing replay
+    const SCREEN_CROSS_TIME = 7;     // Seconds for ticker to cross one viewport width
+
+    let stories = [];
+    let newsShuffledQueue = [];      // Shuffled story queue for current cycle
+    let lastPlayedFact = null;       // Track last played to avoid back-to-back
+    let lastPlayedTimes = {};        // Track when each story was last played (fact -> timestamp)
+    let lastStoryEndTime = Date.now(); // Track when silence began (for max silence duration)
+    let isDisplaying = false;
+    let audioElement = null;
+    let storyCountSinceSponsor = 0;  // Counter for sponsor message frequency
+    let currentMessageIndex = 0;     // Which sponsor message to show next (alternates)
+
+    function shuffleStoriesArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    // ========== News Ticker ==========
+
+    /**
+     * Calculate how long ago a story was verified
+     */
+    function getTimeAgo(timestamp) {
+      if (!timestamp) return '';
+      const now = Date.now();
+      const storyTime = new Date(timestamp).getTime();
+      const diffMs = now - storyTime;
+      const diffMinutes = Math.floor(diffMs / (1000 * 60));
+      const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+
+      if (diffMinutes < 5) return 'Just now';
+      if (diffMinutes < 60) return `${diffMinutes} min ago`;
+      if (diffHours === 1) return '1 hour ago';
+      if (diffHours < 12) return `${diffHours} hours ago`;
+      return 'Earlier today';
+    }
+
+    /**
+     * Parse source string to extract first source name and scores
+     * Input: "Reuters 9.9*|9.5 · AP 9.6|8.5"
+     */
+    function parseFirstSource(sourceStr) {
+      if (!sourceStr) return null;
+      const firstSource = sourceStr.split('·')[0].trim();
+      if (!firstSource) return null;
+      const match = firstSource.match(/^(.+?)\s+([\d.]+)\*?\|([\d.]+)$/);
+      if (!match) return null;
+      return { name: match[1].trim(), reliability: match[2], bias: match[3] };
+    }
+
+    /**
+     * Build ticker content HTML from stories array
+     */
+    function buildTickerContent() {
+      if (stories.length === 0) {
+        // Display fallback messages when no stories are available
+        const fallbackMessages = [
+          "JTF News is supported by viewers like you · Support at github.com/sponsors/JTFNews",
+          "Run JTF News as your screen saver · Free at jtfnews.com/screensaver",
+          "Gathering verified facts from around the world...",
+          "Two sources. Strip the adjectives. State the facts."
+        ];
+        return fallbackMessages.map(msg =>
+          `<span class="ticker-story"><span class="ticker-fact">${msg}</span></span>`
+        ).join('<span class="ticker-spacer"></span>');
+      }
+
+      const sortedStories = [...stories].sort((a, b) => {
+        const timeA = a.timestamp || a.published_at || 0;
+        const timeB = b.timestamp || b.published_at || 0;
+        return new Date(timeA) - new Date(timeB);
+      });
+
+      const items = sortedStories.map(story => {
+        const timeAgo = getTimeAgo(story.timestamp || story.published_at);
+        const source = parseFirstSource(story.source);
+        let attribution = '';
+        if (source) {
+          attribution = `(${source.name} · R:${source.reliability}, B:${source.bias})`;
+        }
+        return `<span class="ticker-story">` +
+          `<span class="ticker-time">${timeAgo}:</span>` +
+          `<span class="ticker-fact">${story.fact}</span>` +
+          `<span class="ticker-source">${attribution}</span>` +
+          `</span>`;
+      });
+
+      return items.join('<span class="ticker-spacer"></span>');
+    }
+
+    /**
+     * Update ticker animation based on content width
+     */
+    function updateTickerAnimation() {
+      const tickerContent = document.getElementById('ticker-content');
+      if (!tickerContent) return;
+
+      // Stop animation while updating
+      tickerContent.classList.remove('animating');
+
+      tickerContent.innerHTML = buildTickerContent();
+
+      requestAnimationFrame(() => {
+        const viewportWidth = document.documentElement.clientWidth;
+        const contentWidth = tickerContent.scrollWidth;
+        const totalDistance = viewportWidth + contentWidth;
+        // Dynamic speed: viewport width / cross time = consistent perceived speed
+        const tickerSpeed = viewportWidth / SCREEN_CROSS_TIME;
+        const duration = totalDistance / tickerSpeed;
+
+        // Set animation properties
+        tickerContent.style.setProperty('--start-offset', viewportWidth + 'px');
+        tickerContent.style.setProperty('--scroll-distance', `-${contentWidth}px`);
+        tickerContent.style.animationDuration = `${duration}s`;
+
+        // Start animation after a small delay to ensure CSS is applied
+        setTimeout(() => {
+          tickerContent.classList.add('animating');
+          console.log(`[Ticker] Started: ${stories.length} stories, duration: ${duration.toFixed(1)}s, speed: ${tickerSpeed.toFixed(0)}px/s`);
+        }, 50);
+      });
+    }
+
+    function reshuffleNewsForNewCycle() {
+      if (stories.length === 0) {
+        newsShuffledQueue = [];
+        return;
+      }
+      newsShuffledQueue = shuffleStoriesArray(stories);
+      // Avoid back-to-back: if first story matches last played, move it to end
+      if (lastPlayedFact && newsShuffledQueue.length > 1 && newsShuffledQueue[0].fact === lastPlayedFact) {
+        newsShuffledQueue.push(newsShuffledQueue.shift());
+      }
+      console.log(`[News] New cycle: ${newsShuffledQueue.length} stories shuffled`);
+    }
+
+    function calculateDynamicNewsGap() {
+      if (newsShuffledQueue.length <= 1) return MAX_GAP_TIME;
+      const estimatedDisplayTime = 15000;
+      const availableGapTime = SCRAPE_CYCLE_MS - (newsShuffledQueue.length * estimatedDisplayTime);
+      const gapTime = Math.floor(availableGapTime / newsShuffledQueue.length);
+      return Math.max(MIN_GAP_TIME, Math.min(gapTime, MAX_GAP_TIME));
+    }
+
+    /**
+     * Check if a story is eligible to play
+     * Normal: 30+ minutes since last play
+     * Emergency: 15+ minutes of silence allows early replay
+     */
+    function isEligibleToPlay(story) {
+      const lastPlayed = lastPlayedTimes[story.fact];
+      if (!lastPlayed) return true; // Never played before
+
+      const timeSincePlay = Date.now() - lastPlayed;
+      const silenceDuration = Date.now() - lastStoryEndTime;
+
+      // Normal case: 30-min replay interval
+      if (timeSincePlay >= MIN_REPLAY_INTERVAL) return true;
+
+      // Emergency case: silence has exceeded max duration
+      if (silenceDuration >= MAX_SILENCE_DURATION) return true;
+
+      return false;
+    }
+
+    /**
+     * Get next eligible story from queue
+     */
+    function getNextEligibleStory() {
+      for (let i = 0; i < newsShuffledQueue.length; i++) {
+        if (isEligibleToPlay(newsShuffledQueue[i])) {
+          return newsShuffledQueue.splice(i, 1)[0];
+        }
+      }
+      return null; // No eligible stories
+    }
+
+    async function loadStories() {
+      try {
+        const response = await fetch(CONFIG.storiesUrl + '?t=' + Date.now());
+        if (!response.ok) {
+          // File doesn't exist yet - show fallback content
+          if (stories.length === 0) updateTickerAnimation();
+          return;
+        }
+        const data = await response.json();
+        if (data.stories && data.stories.length > 0) {
+          const oldCount = stories.length;
+          stories = data.stories;
+          if (stories.length !== oldCount) {
+            if (newsShuffledQueue.length <= 1) {
+              reshuffleNewsForNewCycle();
+            }
+            // Update ticker with new stories
+            updateTickerAnimation();
+          }
+        } else {
+          // File exists but no stories - show fallback
+          if (stories.length === 0) updateTickerAnimation();
+        }
+      } catch (e) {
+        // No stories yet - show fallback
+        if (stories.length === 0) updateTickerAnimation();
+      }
+    }
+
+    function playAudio(audioPath) {
+      return new Promise((resolve) => {
+        if (!CONFIG.audioEnabled) {
+          resolve('disabled');
+          return;
+        }
+
+        if (!audioElement) {
+          audioElement = document.getElementById('tts-audio');
+        }
+
+        const onEnded = () => {
+          audioElement.removeEventListener('ended', onEnded);
+          audioElement.removeEventListener('error', onError);
+          resolve('ended');
+        };
+
+        const onError = () => {
+          audioElement.removeEventListener('ended', onEnded);
+          audioElement.removeEventListener('error', onError);
+          resolve('error');
+        };
+
+        audioElement.addEventListener('ended', onEnded);
+        audioElement.addEventListener('error', onError);
+        audioElement.src = audioPath + '?t=' + Date.now();
+        audioElement.load();
+        audioElement.play().catch(() => resolve('error'));
+      });
+    }
+
+    function calculateHoldTime(text) {
+      const baseTime = 5000;
+      const extraTime = Math.floor(text.length / 20) * 500;
+      return Math.min(baseTime + extraTime, 15000);
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    /**
+     * Display sponsor message (PBS-style acknowledgment)
+     * Always silent, visual-only
+     * Alternates between sponsor and screensaver messages
+     */
+    async function displaySponsorMessage() {
+      if (isDisplaying) return;
+      isDisplaying = true;
+
+      const lowerThird = document.getElementById('lower-third');
+      const sourceBar = document.getElementById('source-bar');
+      const factText = document.getElementById('fact-text');
+
+      // Get current message and advance to next for next time
+      const msg = CONFIG.sponsor.messages[currentMessageIndex];
+      currentMessageIndex = (currentMessageIndex + 1) % CONFIG.sponsor.messages.length;
+
+      // Set sponsor content
+      sourceBar.textContent = msg.sourceText;
+      factText.textContent = msg.message;
+
+      // Fade in
+      lowerThird.classList.remove('hidden');
+      lowerThird.classList.add('visible');
+
+      // Hold for sponsor display time (no audio)
+      await sleep(CONFIG.sponsor.holdTime);
+
+      // Fade out
+      lowerThird.classList.remove('visible');
+      lowerThird.classList.add('hidden');
+
+      // Wait for fade + gap
+      await sleep(1000 + MIN_GAP_TIME);
+
+      console.log(`[Sponsor] Displayed: "${msg.message}"`);
+      isDisplaying = false;
+    }
+
+    async function displayStory(story) {
+      if (isDisplaying) return;
+      isDisplaying = true;
+
+      const lowerThird = document.getElementById('lower-third');
+      const sourceBar = document.getElementById('source-bar');
+      const factText = document.getElementById('fact-text');
+
+      sourceBar.textContent = story.source || 'JTF News';
+      factText.textContent = story.fact;
+
+      lowerThird.classList.remove('hidden');
+      lowerThird.classList.add('visible');
+
+      const audioResult = await playAudio(story.audio);
+
+      if (audioResult === 'disabled' || audioResult === 'error') {
+        await sleep(calculateHoldTime(story.fact));
+      } else {
+        // Keep text visible 6 seconds after audio ends for readability
+        await sleep(6000);
+      }
+
+      lowerThird.classList.remove('visible');
+      lowerThird.classList.add('hidden');
+
+      // Track last played for back-to-back prevention
+      lastPlayedFact = story.fact;
+
+      // Track when this story was played (for 30-minute minimum)
+      lastPlayedTimes[story.fact] = Date.now();
+
+      // Reset silence timer (a story just ended)
+      lastStoryEndTime = Date.now();
+
+      // Use dynamic gap based on story count
+      const dynamicGap = calculateDynamicNewsGap();
+      await sleep(1000 + dynamicGap);
+      isDisplaying = false;
+    }
+
+    async function runNewsLoop() {
+      while (true) {
+        if (stories.length === 0) {
+          await sleep(2000);
+          continue;
+        }
+
+        // Start new cycle if queue is empty
+        if (newsShuffledQueue.length === 0) {
+          reshuffleNewsForNewCycle();
+          if (newsShuffledQueue.length === 0) {
+            await sleep(2000);
+            continue;
+          }
+        }
+
+        // Check if it's time for sponsor message
+        if (CONFIG.sponsor.enabled && storyCountSinceSponsor >= CONFIG.sponsor.frequency) {
+          await displaySponsorMessage();
+          storyCountSinceSponsor = 0;
+          continue;
+        }
+
+        // Get next eligible story (30+ minutes since last play, or 15+ min silence)
+        const story = getNextEligibleStory();
+
+        if (!story) {
+          // All stories played recently, wait before checking again
+          console.log('[News] All stories played within last 30 minutes, waiting...');
+          await sleep(30000); // Wait 30 seconds before checking again
+          continue;
+        }
+
+        await displayStory(story);
+        storyCountSinceSponsor++;
+      }
+    }
+
+    function initNews() {
+      loadStories();
+      setInterval(loadStories, CONFIG.pollInterval);
+      runNewsLoop();
+    }
+
+    // ========== Screen Saver Behaviors ==========
+    function preventSleep() {
+      // Request wake lock if available (keeps screen on)
+      if ('wakeLock' in navigator) {
+        navigator.wakeLock.request('screen').catch(() => {});
+      }
+    }
+
+    // ========== Cycle-Sync Refresh ==========
+    const MONITOR_URL = './monitor.json';
+    const CYCLE_REFRESH_INTERVAL = 30000;
+    let lastKnownRefreshAt = null;
+
+    async function checkForCycleRefresh() {
+      try {
+        const response = await fetch(MONITOR_URL + '?t=' + Date.now());
+        if (!response.ok) return;
+
+        const data = await response.json();
+        const currentRefreshAt = data.web_refresh_at;
+
+        if (lastKnownRefreshAt === null) {
+          lastKnownRefreshAt = currentRefreshAt;
+          console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
+          return;
+        }
+
+        if (currentRefreshAt !== lastKnownRefreshAt) {
+          console.log('[Cycle Refresh] New cycle detected');
+          if (isDisplaying) {
+            console.log('[Cycle Refresh] Waiting for story to finish...');
+            setTimeout(checkForCycleRefresh, 5000);
+            return;
+          }
+          console.log('[Cycle Refresh] Refreshing page...');
+          location.reload();
+        }
+      } catch (e) {
+        // Silently fail
+      }
+    }
+
+    function startCycleRefreshMonitor() {
+      checkForCycleRefresh();
+      setInterval(checkForCycleRefresh, CYCLE_REFRESH_INTERVAL);
+    }
+
+    // ========== iOS Viewport Fix ==========
+    function updateViewportWidth() {
+      const width = document.documentElement.clientWidth;
+      document.documentElement.style.setProperty('--viewport-width-px', width + 'px');
+    }
+
+    function initViewportFix() {
+      updateViewportWidth();
+      window.addEventListener('resize', () => {
+        updateViewportWidth();
+        updateTickerAnimation();  // Recalculate speed for new viewport
+      });
+      window.addEventListener('orientationchange', () => {
+        // Delay to let iOS settle after orientation change
+        setTimeout(() => {
+          updateViewportWidth();
+          updateTickerAnimation();  // Recalculate speed for new orientation
+        }, 100);
+      });
+    }
+
+    // ========== Initialize ==========
+    function init() {
+      console.log('[JTF Screen Saver] Starting...');
+      console.log('[JTF Screen Saver] Audio:', CONFIG.audioEnabled ? 'ON' : 'OFF');
+
+      initViewportFix();
+      preventSleep();
+      initSlideshow();
+      initNews();
+      startCycleRefreshMonitor();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>

@@ -72,6 +72,9 @@ __pycache__/
 # Session working files
 SESSION_STATE.md
 
-# Git worktree for gh-pages
-gh-pages-dist/
+# Virtual environment
+venv/
+
+# Video folder (runtime generated)
+video/
 

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Archive - JTF News</title>
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Browse the JTF News archive. Historical record of verified facts, searchable by date and source.">
+    <meta name="keywords" content="news archive, fact archive, historical news, verified facts database">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/archive.html">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Story Archive - JTF News">
+    <meta property="og:description" content="Browse historical verified facts. The record remains.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jtfnews.org/archive.html">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <!-- Pako for gzip decompression -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .logo { height: 48px; margin-bottom: 15px; }
+        .logo img { height: 100%; width: auto; }
+        a { color: #60a5fa; }
+        p { margin: 15px 0; }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Filters */
+        .filters {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .filters-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+        .filter-group {
+            flex: 1;
+            min-width: 150px;
+        }
+        .filter-label {
+            display: block;
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .filter-input {
+            width: 100%;
+            padding: 10px 12px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            color: #f8fafc;
+            font-size: 14px;
+        }
+        .filter-input:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+        .filter-button {
+            padding: 10px 20px;
+            background: #1e40af;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .filter-button:hover {
+            background: #2563eb;
+        }
+        .filter-button:disabled {
+            background: #475569;
+            cursor: not-allowed;
+        }
+
+        /* Quick Date Buttons */
+        .quick-dates {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .quick-date {
+            padding: 6px 12px;
+            background: rgba(96, 165, 250, 0.2);
+            color: #60a5fa;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .quick-date:hover {
+            background: rgba(96, 165, 250, 0.3);
+        }
+        .quick-date.active {
+            background: #60a5fa;
+            color: #0f172a;
+        }
+
+        /* Stories List */
+        .stories-container {
+            margin-top: 20px;
+        }
+        .stories-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .stories-count {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .stories-date {
+            font-size: 14px;
+            color: #d4af37;
+        }
+
+        /* Multi-day Range View */
+        .range-summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .range-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #d4af37;
+        }
+        .range-count {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .date-section {
+            margin-bottom: 30px;
+        }
+        .date-section .stories-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Story Card */
+        .story-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .story-card.corrected {
+            border-color: rgba(234, 179, 8, 0.4);
+            background: rgba(234, 179, 8, 0.05);
+        }
+        .story-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .story-time {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .corrected-badge {
+            font-size: 10px;
+            padding: 3px 8px;
+            background: rgba(234, 179, 8, 0.2);
+            color: #eab308;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .story-fact {
+            font-size: 15px;
+            color: #f8fafc;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .story-sources {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        .story-sources span {
+            display: inline-block;
+            background: rgba(15, 23, 42, 0.6);
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 6px;
+            margin-bottom: 4px;
+        }
+        .story-sources a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .story-sources a:hover {
+            text-decoration: underline;
+        }
+
+        /* Empty State */
+        .empty-state {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 60px 40px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .empty-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+        .empty-title {
+            font-size: 18px;
+            color: #f8fafc;
+            margin-bottom: 10px;
+        }
+        .empty-text {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
+        .loading-spinner {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-top-color: #d4af37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Load More */
+        .load-more {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .load-more-button {
+            padding: 12px 30px;
+            background: rgba(96, 165, 250, 0.2);
+            color: #60a5fa;
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .load-more-button:hover {
+            background: rgba(96, 165, 250, 0.3);
+        }
+
+        /* Navigation */
+        .nav-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-links a {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover {
+            color: #94a3b8;
+        }
+
+        /* Date Picker Styling */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.8);
+            cursor: pointer;
+        }
+
+        /* Available Dates Info */
+        .available-dates {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Back to JTF News</a>
+
+    <div class="logo">
+        <a href="index.html"><img src="assets/logo-horizontal-dark.svg" alt="JTF News"></a>
+    </div>
+
+    <h1>Story Archive</h1>
+    <p class="subtitle">The record remains.</p>
+
+    <!-- Filters -->
+    <div class="filters">
+        <div class="filters-row">
+            <div class="filter-group">
+                <label class="filter-label" for="date-select">Date</label>
+                <input type="date" id="date-select" class="filter-input">
+            </div>
+            <div class="filter-group">
+                <label class="filter-label" for="source-filter">Source</label>
+                <select id="source-filter" class="filter-input">
+                    <option value="">All Sources</option>
+                </select>
+            </div>
+            <button id="load-btn" class="filter-button">Load Stories</button>
+        </div>
+        <div class="quick-dates">
+            <button class="quick-date active" data-days="0">Today</button>
+            <button class="quick-date" data-days="1">Yesterday</button>
+            <button class="quick-date" data-days="7">Last 7 Days</button>
+        </div>
+        <div id="available-dates" class="available-dates"></div>
+    </div>
+
+    <!-- Stories Container -->
+    <div id="stories-container" class="stories-container">
+        <div class="loading">
+            <span class="loading-spinner"></span>
+            Loading stories...
+        </div>
+    </div>
+
+    <!-- Load More -->
+    <div id="load-more" class="load-more" style="display: none;">
+        <button class="load-more-button" id="load-more-btn">Load Previous Day</button>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+        <a href="index.html">&larr; Home</a>
+        <a href="corrections.html">Corrections</a>
+        <a href="sources.html">Our Sources</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="monitor.html">Operations Dashboard</a>
+    </div>
+
+    <script>
+        // State
+        let archiveIndex = null;
+        let corrections = [];
+        let allSources = new Set();
+        let loadedStories = [];
+        let currentDate = null;
+        let currentStoriesByDate = null; // For multi-day range view
+
+        // Cycle-sync auto-refresh
+        let lastKnownRefreshAt = null;
+
+        async function checkForCycleRefresh() {
+            try {
+                const response = await fetch('monitor.json?t=' + Date.now());
+                const data = await response.json();
+                const currentRefreshAt = data.web_refresh_at;
+
+                if (lastKnownRefreshAt === null) {
+                    lastKnownRefreshAt = currentRefreshAt;
+                    return;
+                }
+
+                if (currentRefreshAt !== lastKnownRefreshAt) {
+                    location.reload();
+                }
+            } catch (e) {
+                console.warn('Cycle refresh check failed:', e);
+            }
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr + 'T00:00:00');
+            return date.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        function formatTime(isoString) {
+            if (!isoString) return '';
+            const date = new Date(isoString);
+            return date.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                timeZoneName: 'short'
+            });
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function getDateString(daysAgo) {
+            const date = new Date();
+            date.setDate(date.getDate() - daysAgo);
+            return date.toISOString().split('T')[0];
+        }
+
+        function isStoryCorrected(storyId) {
+            return corrections.some(c => c.story_id === storyId);
+        }
+
+        function parseSourceString(sourceStr) {
+            // Parse source string like "BBC News 9.5*|9.0 · Reuters 9.9*|9.5"
+            if (!sourceStr) return [];
+            // Split by middle dot (·) or regular dot (.) for compatibility
+            return sourceStr.split(/ [·.] /).map(s => {
+                const match = s.match(/^(.+?)\s+([\d.]+\*?\|[\d.]+)$/);
+                if (match) {
+                    return { name: match[1].trim(), rating: match[2] };
+                }
+                return { name: s.trim(), rating: '' };
+            });
+        }
+
+        function renderStory(story, isCorrected) {
+            const sources = parseSourceString(story.source);
+            sources.forEach(s => allSources.add(s.name));
+
+            const correctedClass = isCorrected ? 'corrected' : '';
+            const correctedBadge = isCorrected ? '<span class="corrected-badge">Corrected</span>' : '';
+
+            // Use source_urls for clickable links (backward compatible)
+            const sourceUrls = story.source_urls || {};
+            const sourcesHtml = sources.map(s => {
+                const url = sourceUrls[s.name];
+                const nameHtml = url
+                    ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(s.name)}</a>`
+                    : escapeHtml(s.name);
+                return `<span>${nameHtml} ${s.rating}</span>`;
+            }).join('');
+
+            return `
+                <div class="story-card ${correctedClass}">
+                    <div class="story-header">
+                        <span class="story-time">${formatTime(story.published_at)}</span>
+                        ${correctedBadge}
+                    </div>
+                    <div class="story-fact">${escapeHtml(story.fact)}</div>
+                    <div class="story-sources">${sourcesHtml}</div>
+                </div>
+            `;
+        }
+
+        function renderStories(stories, dateStr) {
+            const container = document.getElementById('stories-container');
+            const sourceFilter = document.getElementById('source-filter').value;
+
+            let filtered = stories;
+            if (sourceFilter) {
+                filtered = stories.filter(s => s.source && s.source.includes(sourceFilter));
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">&#128196;</div>
+                        <div class="empty-title">No Stories Found</div>
+                        <div class="empty-text">
+                            ${sourceFilter ? 'No stories from this source on this date.' : 'No stories available for this date.'}
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            const header = `
+                <div class="stories-header">
+                    <span class="stories-date">${formatDate(dateStr)}</span>
+                    <span class="stories-count">${filtered.length} ${filtered.length === 1 ? 'story' : 'stories'}</span>
+                </div>
+            `;
+
+            const storiesHtml = filtered.map(story => {
+                const storyId = story.id || `${dateStr}-${story.hash || ''}`;
+                return renderStory(story, isStoryCorrected(storyId));
+            }).join('');
+
+            container.innerHTML = header + storiesHtml;
+            updateSourceFilter();
+        }
+
+        function updateSourceFilter() {
+            const select = document.getElementById('source-filter');
+            const currentValue = select.value;
+
+            // Clear and rebuild
+            select.innerHTML = '<option value="">All Sources</option>';
+            Array.from(allSources).sort().forEach(source => {
+                const option = document.createElement('option');
+                option.value = source;
+                option.textContent = source;
+                if (source === currentValue) option.selected = true;
+                select.appendChild(option);
+            });
+        }
+
+        async function loadTodayStories() {
+            try {
+                const response = await fetch('stories.json?t=' + Date.now());
+                if (!response.ok) throw new Error('Failed to load');
+                const data = await response.json();
+                return { date: data.date, stories: data.stories || [] };
+            } catch (e) {
+                console.error('Error loading today stories:', e);
+                return { date: getDateString(0), stories: [] };
+            }
+        }
+
+        async function loadArchiveStories(dateStr) {
+            const year = dateStr.split('-')[0];
+            const url = `archive/${year}/${dateStr}.txt.gz`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    console.log('Archive not found:', url);
+                    return [];
+                }
+
+                const arrayBuffer = await response.arrayBuffer();
+                const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+
+                const stories = [];
+                const lines = decompressed.split('\n');
+
+                for (const line of lines) {
+                    if (!line.trim() || line.startsWith('#')) continue;
+
+                    const parts = line.split('|');
+                    if (parts.length >= 4) {
+                        const timestamp = parts[0];
+                        const sourceNames = parts[1];
+                        const sourceScores = parts[2];
+
+                        // Parse both old (4-field) and new (5-field) formats
+                        // Old: timestamp|names|scores|fact
+                        // New: timestamp|names|scores|urls|fact
+                        let sourceUrlsStr, fact;
+                        if (parts.length === 4) {
+                            sourceUrlsStr = '';
+                            fact = parts[3];
+                        } else {
+                            sourceUrlsStr = parts[3];
+                            fact = parts.slice(4).join('|'); // Rejoin in case fact has |
+                        }
+
+                        // Build source string and URLs map
+                        const names = sourceNames.split(',');
+                        const scores = sourceScores.split(',');
+                        const urls = sourceUrlsStr ? sourceUrlsStr.split(',') : [];
+
+                        const sourceStr = names.map((name, i) =>
+                            `${name.trim()} ${scores[i] || ''}`
+                        ).join(' . ');
+
+                        const sourceUrls = {};
+                        names.forEach((name, i) => {
+                            const url = urls[i] ? urls[i].trim() : '';
+                            if (url) sourceUrls[name.trim()] = url;
+                        });
+
+                        stories.push({
+                            published_at: timestamp,
+                            fact: fact.trim(),
+                            source: sourceStr,
+                            source_urls: sourceUrls
+                        });
+                    }
+                }
+
+                return stories;
+            } catch (e) {
+                console.error('Error loading archive:', e);
+                return [];
+            }
+        }
+
+        async function loadStoriesForDate(dateStr) {
+            const container = document.getElementById('stories-container');
+            container.innerHTML = '<div class="loading"><span class="loading-spinner"></span>Loading stories...</div>';
+
+            const today = getDateString(0);
+            let stories;
+
+            if (dateStr === today) {
+                const data = await loadTodayStories();
+                stories = data.stories;
+            } else {
+                stories = await loadArchiveStories(dateStr);
+            }
+
+            loadedStories = stories;
+            currentDate = dateStr;
+            currentStoriesByDate = null; // Clear multi-day state
+            renderStories(stories, dateStr);
+        }
+
+        // Load stories for a range of days (e.g., last 7 days)
+        async function loadStoriesForRange(daysBack) {
+            const container = document.getElementById('stories-container');
+            container.innerHTML = '<div class="loading"><span class="loading-spinner"></span>Loading stories from ' + daysBack + ' days...</div>';
+
+            const storiesByDate = {};
+            const today = getDateString(0);
+
+            // Load each day from most recent (0) to oldest (daysBack-1)
+            for (let i = 0; i < daysBack; i++) {
+                const dateStr = getDateString(i);
+                let dayStories;
+
+                if (dateStr === today) {
+                    const data = await loadTodayStories();
+                    dayStories = data.stories || [];
+                } else {
+                    dayStories = await loadArchiveStories(dateStr);
+                }
+
+                if (dayStories.length > 0) {
+                    storiesByDate[dateStr] = dayStories;
+                }
+            }
+
+            // Flatten for filtering purposes but keep date info
+            const allStories = [];
+            Object.entries(storiesByDate).forEach(([dateStr, stories]) => {
+                stories.forEach(story => {
+                    allStories.push({ ...story, _date: dateStr });
+                });
+            });
+
+            loadedStories = allStories;
+            currentDate = null; // Indicate multi-day mode
+            currentStoriesByDate = storiesByDate; // Store for filter re-renders
+            renderStoriesMultiDay(storiesByDate);
+        }
+
+        function renderStoriesMultiDay(storiesByDate) {
+            const container = document.getElementById('stories-container');
+            const sourceFilter = document.getElementById('source-filter').value;
+
+            // Sort dates from most recent to oldest
+            const sortedDates = Object.keys(storiesByDate).sort().reverse();
+
+            let totalFiltered = 0;
+            let html = '';
+
+            sortedDates.forEach(dateStr => {
+                let stories = storiesByDate[dateStr];
+
+                // Apply source filter
+                if (sourceFilter) {
+                    stories = stories.filter(s => s.source && s.source.includes(sourceFilter));
+                }
+
+                if (stories.length === 0) return;
+
+                totalFiltered += stories.length;
+
+                // Add date header for each day
+                html += `
+                    <div class="date-section">
+                        <div class="stories-header">
+                            <span class="stories-date">${formatDate(dateStr)}</span>
+                            <span class="stories-count">${stories.length} ${stories.length === 1 ? 'story' : 'stories'}</span>
+                        </div>
+                        ${stories.map(story => {
+                            const storyId = story.id || `${dateStr}-${story.hash || ''}`;
+                            return renderStory(story, isStoryCorrected(storyId));
+                        }).join('')}
+                    </div>
+                `;
+            });
+
+            if (totalFiltered === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">&#128196;</div>
+                        <div class="empty-title">No Stories Found</div>
+                        <div class="empty-text">
+                            ${sourceFilter ? 'No stories from this source in this date range.' : 'No stories available for this date range.'}
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Add summary header
+            const summaryHeader = `
+                <div class="range-summary">
+                    <span class="range-title">Last ${sortedDates.length} Days</span>
+                    <span class="range-count">${totalFiltered} total ${totalFiltered === 1 ? 'story' : 'stories'}</span>
+                </div>
+            `;
+
+            container.innerHTML = summaryHeader + html;
+            updateSourceFilter();
+        }
+
+        async function loadArchiveIndex() {
+            try {
+                const response = await fetch('archive/index.json?t=' + Date.now());
+                if (!response.ok) return null;
+                return await response.json();
+            } catch (e) {
+                console.log('No archive index available');
+                return null;
+            }
+        }
+
+        async function loadCorrections() {
+            try {
+                const response = await fetch('corrections.json?t=' + Date.now());
+                if (!response.ok) return [];
+                const data = await response.json();
+                return data.corrections || [];
+            } catch (e) {
+                console.log('No corrections available');
+                return [];
+            }
+        }
+
+        function setupQuickDates() {
+            const buttons = document.querySelectorAll('.quick-date');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const days = parseInt(btn.dataset.days);
+
+                    if (days > 1) {
+                        // Range mode: load multiple days (e.g., "Last 7 Days")
+                        document.getElementById('date-select').value = '';
+                        loadStoriesForRange(days);
+                    } else {
+                        // Single day mode: "Today" (0) or "Yesterday" (1)
+                        const dateStr = getDateString(days);
+                        document.getElementById('date-select').value = dateStr;
+                        loadStoriesForDate(dateStr);
+                    }
+                });
+            });
+        }
+
+        function setupFilters() {
+            document.getElementById('load-btn').addEventListener('click', () => {
+                const dateStr = document.getElementById('date-select').value;
+                if (dateStr) {
+                    // Clear quick date active states
+                    document.querySelectorAll('.quick-date').forEach(b => b.classList.remove('active'));
+                    loadStoriesForDate(dateStr);
+                }
+            });
+
+            document.getElementById('source-filter').addEventListener('change', () => {
+                if (loadedStories.length > 0) {
+                    if (currentStoriesByDate) {
+                        // Multi-day mode: re-render grouped view
+                        renderStoriesMultiDay(currentStoriesByDate);
+                    } else if (currentDate) {
+                        // Single-day mode
+                        renderStories(loadedStories, currentDate);
+                    }
+                }
+            });
+
+            // Enter key on date input
+            document.getElementById('date-select').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    document.getElementById('load-btn').click();
+                }
+            });
+        }
+
+        function showAvailableDates() {
+            const container = document.getElementById('available-dates');
+            if (archiveIndex && archiveIndex.dates && archiveIndex.dates.length > 0) {
+                const oldest = archiveIndex.dates[archiveIndex.dates.length - 1];
+                const newest = archiveIndex.dates[0];
+                container.textContent = `Archive available: ${oldest} to ${newest} (${archiveIndex.dates.length} days)`;
+            } else {
+                container.textContent = 'Only today\'s stories are currently available';
+            }
+        }
+
+        // Initialize
+        async function init() {
+            // Set today's date as default
+            document.getElementById('date-select').value = getDateString(0);
+
+            // Load supporting data
+            archiveIndex = await loadArchiveIndex();
+            corrections = await loadCorrections();
+
+            showAvailableDates();
+            setupQuickDates();
+            setupFilters();
+
+            // Load today's stories
+            await loadStoriesForDate(getDateString(0));
+
+            // Set up cycle refresh
+            setInterval(checkForCycleRefresh, 30000);
+            checkForCycleRefresh();
+        }
+
+        init();
+    </script>
+</body>
+</html>

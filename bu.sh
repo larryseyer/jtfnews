@@ -22,7 +22,7 @@ TIMESTAMP=$(date +"%Y_%m_%d_%H_%M_%S")
 MESSAGE=$(echo "$1" | head -1 | cut -c1-50 | sed 's/[^a-zA-Z0-9]/_/g' | sed 's/__*/_/g' | sed 's/_$//')
 ZIP_FILE="$DEST_DIR/JTFNews_${TIMESTAMP}_${MESSAGE}.zip"
 cd "$SOURCE" || exit 1
-zip -r "$ZIP_FILE" . -x "media/*" "media/" "gh-pages-dist/*" "gh-pages-dist/" "audio/*" "audio/" "data/*" "data/" "venv/*" "venv/" "__pycache__/*" "__pycache__/" ".git/*" ".git/" ".env"
+zip -r "$ZIP_FILE" . -x "media/*" "media/" "audio/*" "audio/" "data/*" "data/" "venv/*" "venv/" "__pycache__/*" "__pycache__/" ".git/*" ".git/" ".env"
 
 # =============================================================================
 # DEPLOY TO PRODUCTION
@@ -31,23 +31,5 @@ echo ""
 echo "=== Deploying to production ==="
 ./deploy.sh
 
-# =============================================================================
-# DEPLOY TO GITHUB PAGES (using worktree)
-# =============================================================================
 echo ""
-echo "=== Deploying to GitHub Pages ==="
-cd "$SOURCE/gh-pages-dist"
-
-# Pull any remote changes first (e.g., from automated monitor.json updates)
-git pull --rebase origin gh-pages
-
-git add -A
-# Only commit and push if there are changes
-if ! git diff --cached --quiet; then
-    git commit -m "Deploy: $1"
-    git push origin gh-pages
-    echo "GitHub Pages deployed successfully"
-else
-    echo "GitHub Pages: no changes to deploy"
-fi
-cd "$SOURCE"
+echo "Done! Website updates (feed.xml, stories.json, etc.) are pushed automatically by main.py"

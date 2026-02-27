@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500">
+  <!-- Twitter/X Banner (1500x500) -->
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="#ffffff"/>
+
+  <!-- Centered logo -->
+  <g transform="translate(500, 150)">
+    <!-- Icon container -->
+    <rect x="0" y="0" width="140" height="140" fill="#000000"/>
+
+    <!-- Convergence Symbol -->
+    <g transform="translate(70, 70)">
+      <line x1="-38" y1="-32" x2="0" y2="7" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+      <line x1="38" y1="-32" x2="0" y2="7" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="0" cy="7" r="7" fill="#ffffff"/>
+      <line x1="0" y1="14" x2="0" y2="42" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <!-- JTF NEWS -->
+    <text x="170" y="95"
+          font-family="Helvetica Neue, Arial, sans-serif"
+          font-size="56"
+          font-weight="600"
+          fill="#000000">JTF NEWS</text>
+  </g>
+
+  <!-- Border -->
+  <rect x="10" y="10" width="1480" height="480" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+</svg>

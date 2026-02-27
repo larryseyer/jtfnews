@@ -208,7 +208,7 @@ def setup_playlist(creds):
                     'title': 'JTF News - Daily Digest',
                     'description': 'Daily digest of verified facts from JTF News.\n'
                                   'No opinions. No adjectives. Just the facts.\n\n'
-                                  'https://larryseyer.github.io/jtfnews/'
+                                  'https://jtfnews.org/'
                 },
                 'status': {
                     'privacyStatus': 'public'

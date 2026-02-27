@@ -61,16 +61,12 @@ mkdir -p data audio archive
 echo "Directories ready."
 echo ""
 
-# 3. Fix gh-pages worktree (optional - skip if no .git)
-echo "[3/3] Checking gh-pages worktree..."
-if [ -d ".git" ]; then
-    find gh-pages-dist -name ".DS_Store" -delete 2>/dev/null || true
-    xattr -cr gh-pages-dist 2>/dev/null || true
-    rm -rf gh-pages-dist
-    rm -rf .git/worktrees/gh-pages-dist 2>/dev/null || true
-    git fetch origin gh-pages 2>/dev/null && git worktree add gh-pages-dist gh-pages 2>/dev/null || echo "Skipping gh-pages (not available)"
+# 3. Verify docs folder exists (for GitHub Pages)
+echo "[3/3] Checking docs folder..."
+if [ -d "docs" ]; then
+    echo "docs/ folder exists"
 else
-    echo "No .git directory - skipping worktree setup"
+    echo "WARNING: docs/ folder missing - website content not present"
 fi
 echo ""
 

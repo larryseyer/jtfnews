@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTF News Screen Saver - Setup Guide</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Turn JTF News into your desktop screen saver. Setup guides for macOS, Windows, and Linux. Calm, fact-only news on your idle screen.">
+  <meta name="keywords" content="news screen saver, calm news screensaver, fact news desktop, JTF News screensaver, web screensaver">
+  <meta name="author" content="JTF News">
+  <link rel="canonical" href="https://jtfnews.org/screensaver-setup.html">
+
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="JTF News Screen Saver">
+  <meta property="og:description" content="Turn your idle screen into a calm, fact-only news display. Setup guides for macOS, Windows, and Linux.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jtfnews.org/screensaver-setup.html">
+  <meta property="og:site_name" content="JTF News">
+  <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="500">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JTF News Screen Saver">
+  <meta name="twitter:description" content="Turn your idle screen into a calm, fact-only news display.">
+  <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      color: #d4af37;
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .logo { height: 56px; margin-bottom: 12px; }
+    .logo img { height: 100%; width: auto; }
+
+    .tagline {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    .preview-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #1e40af;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .preview-link:hover {
+      background: #2563eb;
+    }
+
+    .url-box {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 24px 0;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 14px;
+      word-break: break-all;
+      position: relative;
+    }
+
+    .url-box code {
+      color: #60a5fa;
+    }
+
+    .url-box .label {
+      display: block;
+      color: #94a3b8;
+      font-size: 12px;
+      margin-bottom: 8px;
+      font-family: -apple-system, sans-serif;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #334155;
+      border: none;
+      color: #e2e8f0;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .copy-btn:hover { background: #475569; }
+
+    h2 {
+      color: #f8fafc;
+      font-size: 1.5rem;
+      margin: 40px 0 16px 0;
+      padding-top: 24px;
+      border-top: 1px solid #334155;
+    }
+
+    h2:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    h3 {
+      color: #cbd5e1;
+      font-size: 1.1rem;
+      margin: 24px 0 12px 0;
+    }
+
+    p, li {
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+
+    ol, ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .platform-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 16px 0;
+    }
+
+    .platform-card h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .platform-icon {
+      font-size: 1.5rem;
+    }
+
+    .param-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+
+    .param-table th,
+    .param-table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .param-table th {
+      color: #f8fafc;
+      font-weight: 600;
+    }
+
+    .param-table code {
+      background: #334155;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .note {
+      background: rgba(212, 175, 55, 0.1);
+      border-left: 3px solid #d4af37;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .note strong {
+      color: #d4af37;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #334155;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo-horizontal-dark.svg" alt="JTF News"></a>
+      </div>
+      <h1>Screen Saver</h1>
+      <p class="tagline">Just The Facts. No opinions. No adjectives. No interpretation.</p>
+      <a href="screensaver.html" class="preview-link" target="_blank">Preview Screen Saver</a>
+    </header>
+
+    <div class="url-box">
+      <span class="label">Screen Saver URL (copy this)</span>
+      <code id="screensaver-url">https://jtfnews.org/screensaver.html</code>
+      <button class="copy-btn" onclick="copyUrl()">Copy</button>
+    </div>
+
+    <h2>Quick Start</h2>
+    <p>The JTF News screen saver runs in any web browser. To use it as your system screen saver, you'll need a wrapper app for your platform.</p>
+
+    <div class="platform-card">
+      <h3><span class="platform-icon">🍎</span> macOS</h3>
+      <ol>
+        <li>Install <a href="https://github.com/liquidx/webviewscreensaver/releases" target="_blank">WebViewScreenSaver</a></li>
+        <li>Open <strong>System Settings → Screen Saver</strong></li>
+        <li>Select <strong>WebViewScreenSaver</strong></li>
+        <li>Click <strong>Options</strong> and paste the URL above</li>
+      </ol>
+      <p>Or install via Homebrew: <code>brew install --cask webviewscreensaver</code></p>
+    </div>
+
+    <div class="platform-card">
+      <h3><span class="platform-icon">🪟</span> Windows</h3>
+      <p>Several options available:</p>
+      <ul>
+        <li><a href="https://github.com/nickelsr/yet-another-web-screen-saver" target="_blank">Yet Another Web Screen Saver</a> (free, open source)</li>
+        <li><a href="https://www.screensaverify.com/" target="_blank">Screensaverify</a> - URL-based screen saver</li>
+        <li><a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank">Wallpaper Engine</a> (paid, on Steam) - supports web URLs</li>
+      </ul>
+    </div>
+
+    <div class="platform-card">
+      <h3><span class="platform-icon">🐧</span> Linux</h3>
+      <ul>
+        <li><strong>GNOME:</strong> Use <a href="https://github.com/patarapolw/web-screensaver" target="_blank">web-screensaver</a></li>
+        <li><strong>KDE:</strong> Add a web page widget to lock screen</li>
+        <li><strong>XScreenSaver:</strong> Use <code>xscreensaver-webview</code> or similar wrapper</li>
+      </ul>
+    </div>
+
+    <h2>URL Parameters</h2>
+    <p>Customize behavior by adding parameters to the URL:</p>
+
+    <table class="param-table">
+      <tr>
+        <th>Parameter</th>
+        <th>Default</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>audio=true</code></td>
+        <td>false</td>
+        <td>Enable text-to-speech audio for news</td>
+      </tr>
+      <tr>
+        <td><code>interval=30</code></td>
+        <td>50</td>
+        <td>Seconds between background image changes</td>
+      </tr>
+      <tr>
+        <td><code>gap=60</code></td>
+        <td>45</td>
+        <td>Seconds of silence between news stories</td>
+      </tr>
+    </table>
+
+    <div class="url-box">
+      <span class="label">Example with audio enabled</span>
+      <code>https://jtfnews.org/screensaver.html?audio=true</code>
+    </div>
+
+    <h2>Self-Hosting</h2>
+    <p>Want to run your own JTF News feed? You can point the screen saver to custom data sources:</p>
+
+    <table class="param-table">
+      <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>images=URL</code></td>
+        <td>URL to custom image manifest JSON</td>
+      </tr>
+      <tr>
+        <td><code>stories=URL</code></td>
+        <td>URL to custom stories feed JSON</td>
+      </tr>
+    </table>
+
+    <div class="note">
+      <strong>Note:</strong> Custom URLs must allow CORS requests, or be on the same domain as the screen saver.
+    </div>
+
+    <h2>About JTF News</h2>
+    <p>JTF News (Just The Facts) reports only verified facts confirmed by multiple independent sources. No opinions, no editorializing, no emotional language—just the facts.</p>
+    <p>
+      <a href="index.html">Main Site</a> •
+      <a href="sources.html">Our Sources</a> •
+      <a href="https://www.youtube.com/@JTFNewsLive" target="_blank">YouTube Live</a> •
+      <a href="https://github.com/JTFNews/jtfnews" target="_blank">GitHub</a>
+    </p>
+
+    <footer>
+      <p>JTF News • CC-BY-SA License • <a href="https://github.com/JTFNews/jtfnews">Open Source</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function copyUrl() {
+      const url = document.getElementById('screensaver-url').textContent;
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

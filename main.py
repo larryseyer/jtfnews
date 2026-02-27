@@ -1977,11 +1977,11 @@ def update_stories_json(fact: str, sources: list, audio_file: str = None):
     with open(stories_file, 'w') as f:
         json.dump(stories, f, indent=2)
 
-    # Also copy to gh-pages-dist for screensaver
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    if gh_pages_dir.exists():
+    # Also copy to docs for screensaver
+    docs_dir = BASE_DIR / "docs"
+    if docs_dir.exists():
         import shutil
-        shutil.copy(stories_file, gh_pages_dir / "stories.json")
+        shutil.copy(stories_file, docs_dir / "stories.json")
 
     # Update RSS feed
     update_rss_feed(fact, sources)
@@ -1991,7 +1991,7 @@ def update_stories_json(fact: str, sources: list, audio_file: str = None):
 
 
 def update_rss_feed(fact: str, sources: list):
-    """Update RSS feed with new story and push to gh-pages.
+    """Update RSS feed with new story and push to GitHub.
 
     Per SPECIFICATION.md Section 5.3.3, each source element includes:
     - name, accuracy, bias, speed, consensus as attributes
@@ -2009,13 +2009,13 @@ def update_rss_feed(fact: str, sources: list):
     ET.register_namespace("jtf", JTF_NS)
     ET.register_namespace("atom", ATOM_NS)
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    feed_file = gh_pages_dir / "feed.xml"
+    docs_dir = BASE_DIR / "docs"
+    feed_file = docs_dir / "feed.xml"
     max_items = 100  # Keep last 100 stories in feed
 
-    # Check if gh-pages worktree exists
-    if not gh_pages_dir.exists():
-        log.warning("gh-pages-dist worktree not found, skipping RSS update")
+    # Check if docs folder exists
+    if not docs_dir.exists():
+        log.warning("docs worktree not found, skipping RSS update")
         return
 
     # Build rich source data for each source (top 2)
@@ -2124,14 +2124,14 @@ def update_rss_feed(fact: str, sources: list):
     channel = ET.SubElement(rss, "channel")
 
     ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
-    ET.SubElement(channel, "link").text = "https://larryseyer.github.io/jtfnews/"
-    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
+    ET.SubElement(channel, "link").text = "https://jtfnews.org/"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/JTFNews"
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date
 
     # Add atom:link for RSS compliance
     ET.SubElement(channel, f"{{{ATOM_NS}}}link", {
-        "href": "https://larryseyer.github.io/jtfnews/feed.xml",
+        "href": "https://jtfnews.org/feed.xml",
         "rel": "self",
         "type": "application/rss+xml"
     })
@@ -2172,7 +2172,7 @@ def update_rss_feed(fact: str, sources: list):
 
     log.info(f"RSS feed updated: {len(items)} items")
 
-    # Push to gh-pages via API
+    # Push to GitHub via API
     stories_file = DATA_DIR / "stories.json"
     push_to_ghpages([
         (feed_file, "feed.xml"),
@@ -2198,12 +2198,12 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
     ET.register_namespace("jtf", JTF_NS)
     ET.register_namespace("atom", ATOM_NS)
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    feed_file = gh_pages_dir / "feed.xml"
+    docs_dir = BASE_DIR / "docs"
+    feed_file = docs_dir / "feed.xml"
     max_items = 100
 
-    if not gh_pages_dir.exists():
-        log.warning("gh-pages-dist worktree not found, skipping RSS correction")
+    if not docs_dir.exists():
+        log.warning("docs worktree not found, skipping RSS correction")
         return
 
     # Format source text for description
@@ -2316,14 +2316,14 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
     channel = ET.SubElement(rss, "channel")
 
     ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
-    ET.SubElement(channel, "link").text = "https://larryseyer.github.io/jtfnews/"
-    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
+    ET.SubElement(channel, "link").text = "https://jtfnews.org/"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/JTFNews"
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date
 
     # Add atom:link for RSS compliance
     ET.SubElement(channel, f"{{{ATOM_NS}}}link", {
-        "href": "https://larryseyer.github.io/jtfnews/feed.xml",
+        "href": "https://jtfnews.org/feed.xml",
         "rel": "self",
         "type": "application/rss+xml"
     })
@@ -2363,7 +2363,7 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
 
     log.info(f"RSS feed updated with {correction_type}: {title[:50]}")
 
-    # Push to gh-pages via API
+    # Push to GitHub via API
     push_to_ghpages([
         (feed_file, "feed.xml"),
         (CORRECTIONS_FILE, "corrections.json")
@@ -2385,12 +2385,12 @@ def regenerate_rss_feed():
     ET.register_namespace("jtf", JTF_NS)
     ET.register_namespace("atom", ATOM_NS)
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    feed_file = gh_pages_dir / "feed.xml"
-    stories_file = gh_pages_dir / "stories.json"
+    docs_dir = BASE_DIR / "docs"
+    feed_file = docs_dir / "feed.xml"
+    stories_file = docs_dir / "stories.json"
 
     if not stories_file.exists():
-        log.error("stories.json not found in gh-pages-dist")
+        log.error("stories.json not found in docs")
         return False
 
     # Load stories
@@ -2538,14 +2538,14 @@ def regenerate_rss_feed():
     channel = ET.SubElement(rss, "channel")
 
     ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
-    ET.SubElement(channel, "link").text = "https://larryseyer.github.io/jtfnews/"
-    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
+    ET.SubElement(channel, "link").text = "https://jtfnews.org/"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/JTFNews"
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date
 
     # Add atom:link for RSS compliance
     ET.SubElement(channel, f"{{{ATOM_NS}}}link", {
-        "href": "https://larryseyer.github.io/jtfnews/feed.xml",
+        "href": "https://jtfnews.org/feed.xml",
         "rel": "self",
         "type": "application/rss+xml"
     })
@@ -2602,11 +2602,11 @@ def add_digest_to_feed(date: str, story_count: int, youtube_id: str):
     ET.register_namespace("jtf", JTF_NS)
     ET.register_namespace("atom", ATOM_NS)
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    feed_file = gh_pages_dir / "feed.xml"
+    docs_dir = BASE_DIR / "docs"
+    feed_file = docs_dir / "feed.xml"
 
-    if not gh_pages_dir.exists():
-        log.warning("gh-pages-dist worktree not found, skipping digest feed entry")
+    if not docs_dir.exists():
+        log.warning("docs worktree not found, skipping digest feed entry")
         return
 
     # Create pub date
@@ -2614,7 +2614,7 @@ def add_digest_to_feed(date: str, story_count: int, youtube_id: str):
 
     # Create digest item
     youtube_url = f"https://youtube.com/watch?v={youtube_id}"
-    archive_url = f"https://larryseyer.github.io/jtfnews/archive/{date}.html"
+    archive_url = f"https://jtfnews.org/archive/{date}.html"
 
     digest_item = {
         "title": f"[DAILY DIGEST] {date} - {story_count} verified facts",
@@ -2693,39 +2693,39 @@ def add_digest_to_feed(date: str, story_count: int, youtube_id: str):
 
         log.info(f"Added digest entry for {date} to RSS feed")
 
-        # Push to gh-pages
+        # Push to GitHub
         try:
             subprocess.run(
-                ["git", "-C", str(gh_pages_dir), "add", "feed.xml"],
+                ["git", "-C", str(docs_dir), "add", "feed.xml"],
                 capture_output=True, check=True
             )
             subprocess.run(
-                ["git", "-C", str(gh_pages_dir), "commit", "-m", f"Add digest entry for {date}"],
+                ["git", "-C", str(docs_dir), "commit", "-m", f"Add digest entry for {date}"],
                 capture_output=True, check=True
             )
             subprocess.run(
-                ["git", "-C", str(gh_pages_dir), "push"],
+                ["git", "-C", str(docs_dir), "push"],
                 capture_output=True, check=True
             )
-            log.info("Pushed digest feed entry to gh-pages")
+            log.info("Pushed digest feed entry to GitHub")
         except subprocess.CalledProcessError as e:
-            log.warning(f"Could not push digest entry to gh-pages: {e}")
+            log.warning(f"Could not push digest entry to GitHub: {e}")
 
     except Exception as e:
         log.error(f"Failed to add digest to feed: {e}")
 
 
 def update_alexa_feed(fact: str, sources: list):
-    """Update Alexa Flash Briefing JSON feed and push to gh-pages."""
+    """Update Alexa Flash Briefing JSON feed and push to GitHub."""
     import subprocess
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    alexa_file = gh_pages_dir / "alexa.json"
+    docs_dir = BASE_DIR / "docs"
+    alexa_file = docs_dir / "alexa.json"
     max_items = 5  # Alexa typically reads top few items
 
-    # Check if gh-pages worktree exists
-    if not gh_pages_dir.exists():
-        log.warning("gh-pages-dist worktree not found, skipping Alexa feed update")
+    # Check if docs folder exists
+    if not docs_dir.exists():
+        log.warning("docs worktree not found, skipping Alexa feed update")
         return
 
     # Format source attribution
@@ -2740,7 +2740,7 @@ def update_alexa_feed(fact: str, sources: list):
         "updateDate": update_date,
         "titleText": f"JTF News: {source_text}",
         "mainText": fact,
-        "redirectionUrl": "https://larryseyer.github.io/jtfnews/"
+        "redirectionUrl": "https://jtfnews.org/"
     }
 
     # Load existing items or create new list
@@ -2764,7 +2764,7 @@ def update_alexa_feed(fact: str, sources: list):
 
     log.info(f"Alexa feed updated: {len(items)} items")
 
-    # Push to gh-pages via API
+    # Push to GitHub via API
     push_to_ghpages([(alexa_file, "alexa.json")], "Update Alexa feed")
 
 
@@ -2959,18 +2959,18 @@ def load_corrections() -> dict:
 
 
 def save_corrections(corrections: dict):
-    """Save corrections log to disk and sync to gh-pages."""
+    """Save corrections log to disk and sync to GitHub."""
     corrections["last_updated"] = datetime.now(timezone.utc).isoformat()
 
     with open(CORRECTIONS_FILE, 'w') as f:
         json.dump(corrections, f, indent=2)
 
-    # Sync to gh-pages-dist for public access
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    if gh_pages_dir.exists():
+    # Sync to docs for public access
+    docs_dir = BASE_DIR / "docs"
+    if docs_dir.exists():
         import shutil
-        shutil.copy(CORRECTIONS_FILE, gh_pages_dir / "corrections.json")
-        log.info("Corrections synced to gh-pages-dist")
+        shutil.copy(CORRECTIONS_FILE, docs_dir / "corrections.json")
+        log.info("Corrections synced to docs")
 
 
 def get_recent_stories_for_correction(days: int = 7) -> list:
@@ -3879,7 +3879,7 @@ def upload_to_youtube(video_path: str, date: str) -> str:
                 'description': f'Daily summary of verified facts from {date}.\n\n'
                               'JTF News reports only verified facts from 2+ unrelated sources.\n'
                               'No opinions. No adjectives. No interpretation.\n\n'
-                              'Learn more: https://larryseyer.github.io/jtfnews/',
+                              'Learn more: https://jtfnews.org/',
                 'tags': ['news', 'facts', 'daily summary', 'JTF News', 'just the facts'],
                 'categoryId': '25'  # News & Politics
             },
@@ -4588,7 +4588,7 @@ def write_monitor_data(cycle_stats: dict):
         log.warning(f"Could not write monitor data: {e}")
         return
 
-    # Push to gh-pages for public dashboard
+    # Push to GitHub for public dashboard
     push_monitor_to_ghpages(monitor_file)
 
 
@@ -4659,17 +4659,17 @@ def write_sleeping_heartbeat(minutes_remaining: int, last_cycle_stats: dict = No
         log.warning(f"Could not write sleeping heartbeat: {e}")
         return
 
-    # Push to gh-pages
+    # Push to GitHub
     push_monitor_to_ghpages(monitor_file)
 
 
 def push_to_ghpages(files: list, commit_message: str):
-    """Push files to gh-pages branch via GitHub API.
+    """Push files to GitHub branch via GitHub API.
 
     Args:
-        files: List of tuples (local_path, gh_pages_path) where:
+        files: List of tuples (local_path, docs_path) where:
                - local_path: Path to the local file (Path or str)
-               - gh_pages_path: Path in gh-pages repo (e.g., "feed.xml", "archive/2026/02-15.txt.gz")
+               - docs_path: Path in docs folder (e.g., "feed.xml", "archive/2026/02-15.txt.gz")
         commit_message: Commit message for the push
 
     Returns:
@@ -4679,22 +4679,22 @@ def push_to_ghpages(files: list, commit_message: str):
 
     github_token = os.getenv("GITHUB_TOKEN")
     if not github_token:
-        log.warning("GITHUB_TOKEN not set, cannot push to gh-pages")
+        log.warning("GITHUB_TOKEN not set, cannot push to GitHub")
         return False
 
-    # Also copy to local gh-pages-dist if it exists (for dev machine)
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    if gh_pages_dir.exists():
+    # Also copy to local docs if it exists (for dev machine)
+    docs_dir = BASE_DIR / "docs"
+    if docs_dir.exists():
         for local_path, gh_path in files:
-            dest = gh_pages_dir / gh_path
+            dest = docs_dir / gh_path
             dest.parent.mkdir(parents=True, exist_ok=True)
             # Skip copy if source and destination are the same file
             if Path(local_path).resolve() != dest.resolve():
                 shutil.copy(local_path, dest)
 
-    owner = "larryseyer"
+    owner = "JTFNews"
     repo = "jtfnews"
-    branch = "gh-pages"
+    branch = "main"
     headers = {
         "Authorization": f"token {github_token}",
         "Accept": "application/vnd.github.v3+json"
@@ -4703,6 +4703,9 @@ def push_to_ghpages(files: list, commit_message: str):
     success = True
     for local_path, gh_path in files:
         try:
+            # Prefix path with docs/ for main branch deployment
+            gh_path = f"docs/{gh_path}"
+
             # Read file content (binary mode for gz files)
             local_path = Path(local_path)
             if local_path.suffix == '.gz':
@@ -4734,16 +4737,16 @@ def push_to_ghpages(files: list, commit_message: str):
                 success = False
 
         except Exception as e:
-            log.warning(f"Error pushing {gh_path} to gh-pages: {e}")
+            log.warning(f"Error pushing {gh_path} to GitHub: {e}")
             success = False
 
     if success:
-        log.info(f"Pushed to gh-pages: {commit_message}")
+        log.info(f"Pushed to GitHub: {commit_message}")
     return success
 
 
 def push_monitor_to_ghpages(monitor_file: Path):
-    """Push monitor.json to gh-pages branch via GitHub API."""
+    """Push monitor.json to GitHub branch via GitHub API."""
     push_to_ghpages([(monitor_file, "monitor.json")], "Update monitor data")
 
 
@@ -4802,7 +4805,7 @@ def mark_corrected_stories_in_log(log_file: Path, date_str: str):
 
 
 def archive_daily_log():
-    """Archive yesterday's log to gh-pages."""
+    """Archive yesterday's log to GitHub."""
     import subprocess
 
     yesterday = (datetime.now(timezone.utc).date() -
@@ -4820,14 +4823,14 @@ def archive_daily_log():
     # Mark any corrected stories before archiving
     mark_corrected_stories_in_log(log_file, yesterday_str)
 
-    # Archive to gh-pages-dist
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    if not gh_pages_dir.exists():
-        log.warning("gh-pages-dist not found, skipping archive")
+    # Archive to docs
+    docs_dir = BASE_DIR / "docs"
+    if not docs_dir.exists():
+        log.warning("docs not found, skipping archive")
         return
 
-    # Create year folder in gh-pages archive
-    archive_dir = gh_pages_dir / "archive" / year
+    # Create year folder in docs archive
+    archive_dir = docs_dir / "archive" / year
     archive_dir.mkdir(parents=True, exist_ok=True)
 
     # Gzip the log
@@ -4850,7 +4853,7 @@ def archive_daily_log():
     fact_cache_file = DATA_DIR / f"fact_cache_{yesterday_str}.json"
     fact_cache_file.unlink(missing_ok=True)
 
-    # Push to gh-pages via API
+    # Push to GitHub via API
     push_to_ghpages(
         [(archive_file, f"archive/{year}/{yesterday_str}.txt.gz")],
         f"Archive {yesterday_str}"
@@ -4862,7 +4865,7 @@ def archive_daily_log():
 
 def update_archive_index():
     """Update archive/index.json with list of available archive dates."""
-    archive_dir = BASE_DIR / "gh-pages-dist" / "archive"
+    archive_dir = BASE_DIR / "docs" / "archive"
     if not archive_dir.exists():
         log.debug("Archive directory does not exist yet")
         return
@@ -5592,8 +5595,8 @@ def rebuild_archives_with_urls():
     """
     import gzip
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    archive_dir = gh_pages_dir / "archive"
+    docs_dir = BASE_DIR / "docs"
+    archive_dir = docs_dir / "archive"
 
     files_updated = 0
 
@@ -5683,8 +5686,8 @@ def rebuild_feed_with_urls():
     JTF_NS = "https://jtfnews.com/rss"
     ATOM_NS = "http://www.w3.org/2005/Atom"
 
-    gh_pages_dir = BASE_DIR / "gh-pages-dist"
-    feed_file = gh_pages_dir / "feed.xml"
+    docs_dir = BASE_DIR / "docs"
+    feed_file = docs_dir / "feed.xml"
 
     if not feed_file.exists():
         log.warning("No feed.xml found")
@@ -5772,11 +5775,11 @@ def rebuild_stories_json_with_urls():
         with open(stories_file, 'w') as f:
             json.dump(data, f, indent=2)
 
-        # Also copy to gh-pages-dist
-        gh_pages_dir = BASE_DIR / "gh-pages-dist"
-        if gh_pages_dir.exists():
+        # Also copy to docs
+        docs_dir = BASE_DIR / "docs"
+        if docs_dir.exists():
             import shutil
-            shutil.copy(stories_file, gh_pages_dir / "stories.json")
+            shutil.copy(stories_file, docs_dir / "stories.json")
 
         log.info(f"Updated stories.json: {stories_updated} stories updated")
         return True

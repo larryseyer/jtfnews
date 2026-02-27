@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitepaper - JTF News</title>
+    <!-- v3 - Updated to WhitePaper Ver 1.3 -->
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Algorithmic Reporting for a Narrative-Free World. The JTF News methodology: two sources, different owners, strip the adjectives, state the facts, stop.">
+    <meta name="keywords" content="news methodology, fact-based journalism, algorithmic news, narrative-free reporting, news philosophy, journalism ethics">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/whitepaper.html">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="JTF News Whitepaper - Algorithmic Reporting">
+    <meta property="og:description" content="If we stay boring enough, we might just change the world. The methodology behind fact-only news.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jtfnews.org/whitepaper.html">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JTF News Whitepaper">
+    <meta name="twitter:description" content="If we stay boring enough, we might just change the world. The methodology behind fact-only news.">
+    <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <!-- Marked.js for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            color: #94a3b8;
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #64748b;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(212, 175, 55, 0.3);
+            border-top-color: #d4af37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Markdown rendered styles */
+        #content h1 {
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        #content h2 {
+            color: #94a3b8;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        #content h3 {
+            color: #f8fafc;
+            font-size: 18px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        #content p {
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        #content ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        #content li {
+            margin-bottom: 8px;
+            color: #94a3b8;
+        }
+
+        #content em {
+            color: #64748b;
+            font-style: italic;
+        }
+
+        #content strong {
+            color: #f8fafc;
+        }
+
+        #content a {
+            color: #60a5fa;
+        }
+
+        #content blockquote {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 4px solid #d4af37;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        #content blockquote p {
+            color: #e2e8f0;
+            margin-bottom: 0;
+        }
+
+        #content hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 30px 0;
+        }
+
+        /* Source link */
+        .source-note {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        .source-note a {
+            color: #60a5fa;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #d4af37 0%, #aa8723 100%);
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+
+        .cta-button.secondary {
+            background: #1e40af;
+            color: white;
+        }
+
+        /* Error state */
+        .error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            color: #fca5a5;
+            text-align: center;
+        }
+
+        .error a {
+            color: #60a5fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to JTF News</a>
+
+        <div id="content">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading whitepaper...</p>
+            </div>
+        </div>
+
+        <p class="source-note" id="source-note" style="display: none;">
+            This content is rendered from <a href="https://github.com/JTFNews/jtfnews/blob/main/docs/WhitePaper%20Ver%201.3%20CURRENT.md" target="_blank">WhitePaper Ver 1.3</a> &mdash; the single source of truth.
+        </p>
+
+        <div class="cta-section">
+            <p style="color: #94a3b8; margin-bottom: 20px;">Support fact-based reporting. No ads. No tracking. Just facts.</p>
+            <a href="how-it-works.html" class="cta-button secondary">How It Works</a>
+            <a href="sources.html" class="cta-button secondary">Our Sources</a>
+            <a href="https://github.com/sponsors/JTFNews" class="cta-button">Support JTF News</a>
+        </div>
+    </div>
+
+    <script>
+        // Fetch WhitePaper.md from GitHub raw content
+        const WHITEPAPER_URL = 'https://raw.githubusercontent.com/JTFNews/jtfnews/main/docs/WhitePaper%20Ver%201.3%20CURRENT.md';
+
+        async function loadWhitepaper() {
+            const contentDiv = document.getElementById('content');
+            const sourceNote = document.getElementById('source-note');
+
+            try {
+                const response = await fetch(WHITEPAPER_URL);
+                if (!response.ok) throw new Error('Failed to fetch');
+
+                const markdown = await response.text();
+
+                // Configure marked for our styling
+                marked.setOptions({
+                    breaks: true,
+                    gfm: true
+                });
+
+                // Render markdown to HTML
+                contentDiv.innerHTML = marked.parse(markdown);
+                sourceNote.style.display = 'block';
+
+            } catch (error) {
+                contentDiv.innerHTML = `
+                    <div class="error">
+                        <p>Could not load the whitepaper. Please try again or view it directly on GitHub.</p>
+                        <p style="margin-top: 10px;"><a href="https://github.com/JTFNews/jtfnews/blob/main/docs/WhitePaper%20Ver%201.3%20CURRENT.md" target="_blank">View WhitePaper.md on GitHub &rarr;</a></p>
+                    </div>
+                `;
+            }
+        }
+
+        // Load on page ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadWhitepaper);
+        } else {
+            loadWhitepaper();
+        }
+    </script>
+</body>
+</html>

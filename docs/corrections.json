@@ -1,0 +1,41 @@
+{
+  "last_updated": "2026-02-26T12:30:39.022860+00:00",
+  "corrections": [
+    {
+      "story_id": "[2026-02-18-004]",
+      "corrected_at": "2026-02-18T21:00:49.089979+00:00",
+      "type": "correction",
+      "original_fact": "10 missing skiers after an avalanche in California",
+      "corrected_fact": "Eight skiers died in an avalanche in California.",
+      "reason": "The new verified fact states that 8 skiers died in the avalanche, contradicting the earlier report of 10 missing skiers. This represents a significant factual discrepancy in the number of people involved.",
+      "correcting_sources": [
+        "Deutsche Welle",
+        "BBC News"
+      ]
+    },
+    {
+      "story_id": "[2026-02-23-001]",
+      "corrected_at": "2026-02-23T20:31:04.865129+00:00",
+      "type": "correction",
+      "original_fact": "Mexican army reports death of drug trafficking organization leader Ismael Oseguera Cervantes",
+      "corrected_fact": "The Mexican army killed cartel leader Nemesio Oseguera Cervantes, known as 'El Mencho.'",
+      "reason": "The previously published story identifies the killed cartel leader as 'Ismael Oseguera Cervantes,' but the new verified fact confirms his name is 'Nemesio Oseguera Cervantes' (known as 'El Mencho'). This is a direct contradiction in the identity of the person killed.",
+      "correcting_sources": [
+        "France 24",
+        "PBS NewsHour"
+      ]
+    },
+    {
+      "story_id": "2026-02-26-003",
+      "corrected_at": "2026-02-26T12:30:39.020793+00:00",
+      "type": "correction",
+      "original_fact": "The United States and Iran began talks.",
+      "corrected_fact": "The U.S. and Iran are scheduled to hold nuclear talks.",
+      "reason": "Story [2026-02-26-003] states talks have 'begun' (past tense, indicating they already started), but the new verified fact states the U.S. and Iran are 'scheduled to hold' nuclear talks (future tense, indicating they are planned but have not yet occurred). These contradict each other regarding the timeline of the talks.",
+      "correcting_sources": [
+        "NPR",
+        "France 24"
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 </p>
 
 [![Live Stream](https://img.shields.io/badge/YouTube-Live%2024%2F7-red)](https://www.youtube.com/@JTFNewsLive)
-[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange)](https://larryseyer.github.io/jtfnews/feed.xml)
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange)](https://jtfnews.org/feed.xml)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ---
@@ -30,14 +30,14 @@ Just facts.
 
 ## Subscribe
 
-- **[RSS Feed](https://larryseyer.github.io/jtfnews/feed.xml)** - Add to Feedly, NewsBlur, or any RSS reader
-- **[Alexa Flash Briefing](https://larryseyer.github.io/jtfnews/alexa.json)** - "Alexa, what's my Flash Briefing?"
+- **[RSS Feed](https://jtfnews.org/feed.xml)** - Add to Feedly, NewsBlur, or any RSS reader
+- **[Alexa Flash Briefing](https://jtfnews.org/alexa.json)** - "Alexa, what's my Flash Briefing?"
 
 ## Screen Saver
 
 Turn JTF News into your desktop screen saver.
 
-**[Setup Guide](https://larryseyer.github.io/jtfnews/screensaver-setup.html)** | **[Preview](https://larryseyer.github.io/jtfnews/screensaver.html)**
+**[Setup Guide](https://jtfnews.org/screensaver-setup.html)** | **[Preview](https://jtfnews.org/screensaver.html)**
 
 ## How It Works
 
@@ -46,7 +46,7 @@ Turn JTF News into your desktop screen saver.
 3. Facts wait until confirmed by 2+ unrelated sources
 4. Verified facts broadcast with full attribution
 
-**[Learn more](https://larryseyer.github.io/jtfnews/how-it-works.html)**
+**[Learn more](https://jtfnews.org/how-it-works.html)**
 
 ## The Philosophy
 
@@ -54,7 +54,7 @@ Turn JTF News into your desktop screen saver.
 
 JTF News exists because modern news often tells you how to feel about events rather than simply reporting what happened.
 
-**[Read the Whitepaper](https://larryseyer.github.io/jtfnews/whitepaper.html)**
+**[Read the Whitepaper](https://jtfnews.org/whitepaper.html)**
 
 ## Source Verification
 
@@ -76,7 +76,7 @@ Sources must be **unrelated** - different owners, different investors.
 
 JTF News is viewer-supported. No ads. No tracking.
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/larryseyer)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/JTFNews)
 
 ## License
 
