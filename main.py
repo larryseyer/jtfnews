@@ -2125,7 +2125,7 @@ def update_rss_feed(fact: str, sources: list):
 
     ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
     ET.SubElement(channel, "link").text = "https://jtfnews.org/"
-    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/JTFNews"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date
 
@@ -2317,7 +2317,7 @@ def add_correction_to_rss(correction_type: str, original_fact: str,
 
     ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
     ET.SubElement(channel, "link").text = "https://jtfnews.org/"
-    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/JTFNews"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date
 
@@ -2539,7 +2539,7 @@ def regenerate_rss_feed():
 
     ET.SubElement(channel, "title").text = "JTF News - Just The Facts"
     ET.SubElement(channel, "link").text = "https://jtfnews.org/"
-    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/JTFNews"
+    ET.SubElement(channel, "description").text = "Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer"
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date
 

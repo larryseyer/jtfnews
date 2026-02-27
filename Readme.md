@@ -76,7 +76,7 @@ Sources must be **unrelated** - different owners, different investors.
 
 JTF News is viewer-supported. No ads. No tracking.
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/JTFNews)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/larryseyer)
 
 ## License
 

@@ -31,7 +31,7 @@ const SPONSOR_CONFIG = {
     messages: [
         {
             message: "JTF News is supported by viewers like you.",
-            sourceText: "Support · github.com/sponsors/JTFNews"
+            sourceText: "Support · github.com/sponsors/larryseyer"
         },
         {
             message: "Run JTF News as your screen saver.",
