@@ -1,5 +1,12 @@
 [
   {
+    "uid": "34caea97580e2365a4c677de9f68522e",
+    "updateDate": "2026-02-27T23:04:47.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Sweden states that a drone jammed near a French aircraft carrier was Russian.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "6027c57144e01477ca5ea8b08f155402",
     "updateDate": "2026-02-27T23:04:11.0Z",
     "titleText": "JTF News: The Guardian, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-26T12:30:57.0Z",
     "titleText": "JTF News: France 24, ABC News Australia",
     "mainText": "Prime Minister of Iceland stated the country will hold a referendum regarding European Union membership over the coming months.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "ad0aeb22fd17fa72842e9648cee0fc9e",
-    "updateDate": "2026-02-26T12:30:36.0Z",
-    "titleText": "JTF News: NPR, France 24",
-    "mainText": "The U.S. and Iran are scheduled to hold nuclear talks.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
