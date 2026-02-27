@@ -24,10 +24,8 @@ body {
     left: 5%;
     max-width: 90%;
 
-    /* Dark glassmorphism */
+    /* Dark semi-transparent background (no backdrop-filter — breaks OBS transparency on older Chromium) */
     background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(40px) saturate(180%);
-    -webkit-backdrop-filter: blur(40px) saturate(180%);
 
     /* Subtle light border for definition */
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -125,10 +123,8 @@ body {
     height: 120px;
     overflow: hidden;
 
-    /* Very dark background for small text readability */
+    /* Very dark background for small text readability (no backdrop-filter — breaks OBS transparency) */
     background: rgba(10, 15, 30, 0.92);
-    backdrop-filter: blur(40px) saturate(180%);
-    -webkit-backdrop-filter: blur(40px) saturate(180%);
 
     /* Subtle top border for definition */
     border-top: 1px solid rgba(255, 255, 255, 0.15);
