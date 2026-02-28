@@ -248,19 +248,11 @@ Across all channels, always:
 
 ## Commands
 
-### Development Machine
-- **`./bu.sh "commit message"`** - ALWAYS use this for commits. Does git commit+push AND creates timestamped backup zip to Dropbox (excludes media/). Also deploys to production automatically.
-- `./deploy.sh` - Deploy code + web only (fast, daily use)
-- `./deploy.sh --media` - Include media sync (only copies newer files)
-- `./deploy.sh --data` - Sync data folder (requires confirmation)
-- `./deploy.sh --full` - Code + web + media
-- `./deploy.sh --dry-run` - Preview what would be copied (combinable with other flags)
-
-### Deploy Machine (run these ON the deploy machine)
+### Running the Service
 - `./start.sh` - Start the JTF News service (normal operation)
 - `./start.sh --rebuild` - Recover stories.json from daily log (use if stories were accidentally cleared)
 - `./start.sh --fresh` - Clear stories and start fresh (requires confirmation; use only when file format changes)
-- `./fix-after-copy.sh` - Reinstall venv dependencies (run if venv breaks after deploy)
+- `./digest.sh` - Manually run the daily digest (record, upload to YouTube)
 
 **When to use each start.sh flag:**
 | Situation | Command |
@@ -269,6 +261,7 @@ Across all channels, always:
 | Accidentally ran --fresh | `./start.sh --rebuild` |
 | Quarterly ownership audit | `python main.py --audit` |
 | Apply pending audit (non-interactive) | `python main.py --apply-audit` |
+| Regenerate audio for a date | `python main.py --regenerate-audio YYYY-MM-DD` |
 
 ### Quarterly Ownership Audit
 On startup, main.py checks if the current quarter's ownership audit has been completed. If not:
@@ -279,15 +272,21 @@ On startup, main.py checks if the current quarter's ownership audit has been com
 5. Logs the audit to `data/ownership_audit.json`
 
 The audit happens automatically on normal startup if needed, or can be run manually with `--audit`.
-| Code changes to story format | `./start.sh --fresh` (confirm with 'y') |
 
 ### IMPORTANT: Always Use bu.sh for Commits
 Do NOT use raw `git commit` commands. Always use `./bu.sh "message"` which:
 1. Stages all changes
 2. Commits with your message
 3. Pushes to origin (main branch)
-4. Creates a timestamped backup zip in Dropbox
-5. Runs `./deploy.sh` to sync to production machine
+4. Creates a timestamped backup zip in Downloads
+
+## Single-Machine Architecture
+
+**Everything runs on one machine.** Development, OBS streaming, and production all happen at `/Users/larryseyer/JTFNews`. There is no separate deploy machine.
+
+| Path | Purpose |
+|------|---------|
+| `/Users/larryseyer/JTFNews` | Everything: development, OBS streaming, production |
 
 ## Git Workflow
 - Single branch: `main`
@@ -314,76 +313,8 @@ When modifying overlay files that exist in BOTH locations, you MUST update BOTH:
 
 **Files that exist ONLY in docs/:** index.html, how-it-works.html, whitepaper.html, screensaver-setup.html, feed.xml
 
-## Testing & Deployment Workflow
-
-### Deploy Machine is ACTIVE
-
-The deploy machine is now in use at `/Volumes/MacLive/Users/larryseyer/JTFNews`.
-
-**Deployment scenarios:**
-| Scenario | Command |
-|----------|---------|
-| Daily code changes | `./deploy.sh` |
-| Preview what would deploy | `./deploy.sh --dry-run` |
-| Added spring images | `./deploy.sh --media` |
-| Preview media sync | `./deploy.sh --media --dry-run` |
-| Stories format changed | `./deploy.sh --data` |
-| Full refresh (rare) | `./deploy.sh --full` |
-
-**Notes:**
-- `bu.sh` automatically runs `./deploy.sh` (code-only) after each commit
-- The `.env` file with API keys is synced from dev to deploy
-- After deploying code changes, restart the service on the deploy machine with `./start.sh`
-
-## IMPORTANT: Two-Machine Architecture (Apple Silicon to Intel)
-
-**We develop on Apple Silicon but deploy on Intel/Mojave.** These architectures are incompatible for compiled files.
-
-| Machine | Path | Purpose |
-|---------|------|---------|
-| Apple Silicon (dev) | `/Users/larryseyer/JTFNews` | Development |
-| Intel/Mojave (deploy) | `/Volumes/MacLive/Users/larryseyer/JTFNews` | Production streaming |
-
-### CRITICAL: Always Deploy After Making Changes
-After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to the production machine.
-
-### NEVER EDIT FILES ON THE DEPLOY MACHINE
-**ALL code changes MUST happen on the DEV machine first, then deploy.**
-
-- The deploy path (`/Volumes/MacLive/...`) is for PRODUCTION ONLY
-- NEVER open or edit files at the deploy path directly
-- If you accidentally edit on deploy, STOP and copy changes back to dev first
-- The deploy.sh script will OVERWRITE deploy files with dev versions (no -u flag)
-- Dev is ALWAYS the source of truth
-
-### NEVER RUN SCRIPTS THROUGH THE MOUNTED VOLUME
-**Running scripts via `/Volumes/MacLive/...` creates ARM64 binaries that BREAK on Intel.**
-
-- `fix-after-copy.sh` and `start.sh` must be run **directly on the deploy machine**
-- The mounted volume is for FILE COPYING ONLY, not script execution
-- If venv needs rebuilding, the user must run it on the Intel machine (SSH or physical)
-- Claude cannot fix venv issues - only the user can, by running commands on the actual hardware
-
-**What gets deployed** (safe to copy):
-- Python source files (.py)
-- Config files (config.json, requirements.txt)
-- Web assets (HTML, CSS, JS)
-- Media files (images, videos)
-- Shell scripts
-
-**What NEVER gets deployed** (architecture-specific, will break on Intel):
-- `venv/` - Python virtual environment (ARM64 binaries)
-- `__pycache__/` - Compiled Python bytecode
-- `*.pyc` files - Compiled Python
-- `.git/` - Git internals
-- `data/` and `audio/` - Runtime data (generated on each machine)
-
-### Notes
-- Check if volume is mounted before deploying: `ls /Volumes/MacLive/Users/larryseyer/JTFNews`
-- If deploy machine venv breaks after copy, run `./fix-after-copy.sh` on the Intel machine
-
 ## Folder Structure
-- `main.py` - Main application (~2000 lines with resilience system)
+- `main.py` - Main application (~6500 lines with resilience system, daily digest, YouTube upload)
 - `web/` - OBS browser source overlays (lower-third.html, background-slideshow.html, screensaver.html, monitor.html)
 - `docs/` - Public website (GitHub Pages) - index.html, how-it-works, whitepaper, feed.xml, stories.json
 - `documentation/` - Project documentation (SPECIFICATION.md, WhitePaper Ver 1.3 CURRENT.md, plans/)
@@ -394,9 +325,11 @@ After ANY changes to the development folder, ALWAYS run `./deploy.sh` to sync to
 - Python main script with resilience system (retry logic, alert throttling, graceful degradation)
 - HTML/CSS/JS overlays for OBS browser source
 - Claude AI (Haiku) for fact extraction/rewriting
-- ElevenLabs TTS for audio generation
+- ElevenLabs TTS for audio generation (hash-based audio naming for sync integrity)
+- ffmpeg/ffprobe for video silence trimming and validation
+- YouTube Data API for daily digest uploads
 - Twilio for SMS alerts
-- OBS for streaming to YouTube
+- OBS for streaming to YouTube (OBS WebSocket v4 for recording control)
 - GitHub Pages for public website (how-it-works, whitepaper, operations dashboard)
 
 ## Constraints

@@ -4150,6 +4150,22 @@ def upload_to_youtube(video_path: str, date: str) -> str:
                 log.warning(f"Failed to add video to playlist: {e}")
                 # Non-critical - video is still uploaded
 
+        # Set custom thumbnail
+        thumbnail_path = BASE_DIR / "web" / "assets" / "png" / "thumbnail-youtube-1280x720.png"
+        if thumbnail_path.exists():
+            try:
+                from googleapiclient.http import MediaFileUpload as ThumbnailUpload
+                youtube.thumbnails().set(
+                    videoId=video_id,
+                    media_body=ThumbnailUpload(str(thumbnail_path), mimetype='image/png')
+                ).execute()
+                log.info(f"Set custom thumbnail for video: {video_id}")
+            except Exception as e:
+                log.warning(f"Failed to set thumbnail: {e}")
+                # Non-critical - video is still uploaded with auto-generated thumbnail
+        else:
+            log.debug(f"No custom thumbnail found at {thumbnail_path}")
+
         return video_id
 
     except Exception as e:

@@ -13,7 +13,7 @@ git commit -m "$1"
 git push origin main
 
 # =============================================================================
-# BACKUP TO DROPBOX
+# BACKUP TO DOWNLOADS
 # =============================================================================
 SOURCE="/Users/larryseyer/JTFNews"
 DEST_DIR="/Users/larryseyer/Downloads/JTFNews Backups"
@@ -23,13 +23,6 @@ MESSAGE=$(echo "$1" | head -1 | cut -c1-50 | sed 's/[^a-zA-Z0-9]/_/g' | sed 's/_
 ZIP_FILE="$DEST_DIR/JTFNews_${TIMESTAMP}_${MESSAGE}.zip"
 cd "$SOURCE" || exit 1
 zip -r "$ZIP_FILE" . -x "media/*" "media/" "audio/*" "audio/" "data/*" "data/" "venv/*" "venv/" "__pycache__/*" "__pycache__/" ".git/*" ".git/" ".env"
-
-# =============================================================================
-# DEPLOY TO PRODUCTION
-# =============================================================================
-echo ""
-echo "=== Deploying to production ==="
-./deploy.sh
 
 echo ""
 echo "Done! Website updates (feed.xml, stories.json, etc.) are pushed automatically by main.py"

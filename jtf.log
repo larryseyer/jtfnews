@@ -1061,3 +1061,164 @@ Error opening input files: Invalid data found when processing input
 2026-02-27 20:14:39 | INFO | Uploaded to YouTube: https://youtube.com/watch?v=CIP7IRWqfq4
 2026-02-27 20:14:39 | INFO | Updated digest feed entry for 2026-02-26: https://youtube.com/watch?v=d__BGOxWBVI → https://youtube.com/watch?v=CIP7IRWqfq4
 2026-02-27 20:14:39 | ERROR | Failed to add digest to feed: name '_push_file_to_github' is not defined
+2026-02-27 20:16:09 | INFO | Starting daily digest for 2026-02-26
+2026-02-27 20:16:09 | INFO | Loaded 8 stories from 2026-02-26
+2026-02-27 20:16:09 | INFO | Found 8 stories with valid audio out of 8 total
+2026-02-27 20:16:09 | INFO | Generating intro audio for 2026-02-26: The following is the JTF News Daily Digest for Thursday, the 26th of February, 2026.  Every story you're about to hear was verified by two or more independent sources.
+2026-02-27 20:16:11 | INFO | Generated TTS (archive/2026-02-26/intro.mp3): The following is the JTF News Daily Digest for Thu...
+2026-02-27 20:16:11 | INFO | Generating outro audio for 2026-02-26: You have been listening to the JTF News Daily Digest for Thursday, the 26th of February, 2026.  Facts without opinion. We do not interpret.
+2026-02-27 20:16:12 | INFO | Generated TTS (archive/2026-02-26/outro.mp3): You have been listening to the JTF News Daily Dige...
+2026-02-27 20:16:12 | INFO | Generated intro audio: intro.mp3
+2026-02-27 20:16:12 | INFO | Generated outro audio: outro.mp3
+2026-02-27 20:16:12 | INFO | Wrote digest config and stories for 2026-02-26
+2026-02-27 20:16:12 | INFO | Total audio: 95.4s (10 files)
+2026-02-27 20:16:12 | INFO | Estimated digest duration: 95 seconds
+2026-02-27 20:16:12 | INFO | Connected to OBS WebSocket at 192.168.1.108:4449
+2026-02-27 20:16:12 | INFO | Refreshed browser source: Daily Digest Browser
+2026-02-27 20:16:15 | INFO | Switched to scene: DailyDigest
+2026-02-27 20:16:15 | INFO | OBS recording started
+2026-02-27 20:16:15 | INFO | Recording digest for 95s (max wait: 125s)
+2026-02-27 20:16:45 | INFO | Recording... 30s elapsed, ~95s remaining
+2026-02-27 20:17:15 | INFO | Recording... 60s elapsed, ~65s remaining
+2026-02-27 20:17:45 | INFO | Recording... 90s elapsed, ~35s remaining
+2026-02-27 20:18:15 | INFO | Recording... 120s elapsed, ~5s remaining
+2026-02-27 20:18:20 | INFO | OBS recording stop requested
+2026-02-27 20:18:28 | INFO | OBS confirmed recording stopped after 3s
+2026-02-27 20:18:28 | INFO | Waiting 5s for OBS to flush file buffers...
+2026-02-27 20:18:33 | INFO | Found recording: /Users/larryseyer/Downloads/2026-02-27 20-16-15.mp4
+2026-02-27 20:18:33 | INFO | Waiting for OBS to finalize file...
+2026-02-27 20:18:39 | INFO | File stabilized after 6s (62.8MB)
+2026-02-27 20:18:40 | INFO | Video file validated successfully
+2026-02-27 20:18:40 | INFO | Switched to scene: JTF News
+2026-02-27 20:18:40 | INFO | Digest recorded: /Users/larryseyer/Downloads/2026-02-27 20-16-15.mp4
+2026-02-27 20:18:40 | INFO | Video saved to: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 20:18:40 | INFO | Trimming silence from video: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 20:18:43 | INFO | Video trimmed: 62.8MB -> 58.9MB
+2026-02-27 20:18:43 | INFO | Video silence trimmed successfully
+2026-02-27 20:18:43 | INFO | Deleted original recording: /Users/larryseyer/Downloads/2026-02-27 20-16-15.mp4
+2026-02-27 20:18:44 | INFO | Uploading video to YouTube: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 20:18:45 | INFO | Upload progress: 1%
+2026-02-27 20:18:46 | INFO | Upload progress: 3%
+2026-02-27 20:18:46 | INFO | Upload progress: 5%
+2026-02-27 20:18:47 | INFO | Upload progress: 6%
+2026-02-27 20:18:47 | INFO | Upload progress: 8%
+2026-02-27 20:18:48 | INFO | Upload progress: 10%
+2026-02-27 20:18:48 | INFO | Upload progress: 11%
+2026-02-27 20:18:48 | INFO | Upload progress: 13%
+2026-02-27 20:18:49 | INFO | Upload progress: 15%
+2026-02-27 20:18:49 | INFO | Upload progress: 16%
+2026-02-27 20:18:49 | INFO | Upload progress: 18%
+2026-02-27 20:18:49 | INFO | Upload progress: 20%
+2026-02-27 20:18:49 | INFO | Upload progress: 22%
+2026-02-27 20:18:50 | INFO | Upload progress: 23%
+2026-02-27 20:18:50 | INFO | Upload progress: 25%
+2026-02-27 20:18:50 | INFO | Upload progress: 27%
+2026-02-27 20:18:50 | INFO | Upload progress: 28%
+2026-02-27 20:18:50 | INFO | Upload progress: 30%
+2026-02-27 20:18:51 | INFO | Upload progress: 32%
+2026-02-27 20:18:51 | INFO | Upload progress: 33%
+2026-02-27 20:18:51 | INFO | Upload progress: 35%
+2026-02-27 20:18:52 | INFO | Upload progress: 37%
+2026-02-27 20:18:53 | INFO | Upload progress: 39%
+2026-02-27 20:18:53 | INFO | Upload progress: 40%
+2026-02-27 20:18:54 | INFO | Upload progress: 42%
+2026-02-27 20:18:54 | INFO | Upload progress: 44%
+2026-02-27 20:18:55 | INFO | Upload progress: 45%
+2026-02-27 20:18:55 | INFO | Upload progress: 47%
+2026-02-27 20:18:55 | INFO | Upload progress: 49%
+2026-02-27 20:18:56 | INFO | Upload progress: 50%
+2026-02-27 20:18:56 | INFO | Upload progress: 52%
+2026-02-27 20:18:57 | INFO | Upload progress: 54%
+2026-02-27 20:18:57 | INFO | Upload progress: 56%
+2026-02-27 20:18:57 | INFO | Upload progress: 57%
+2026-02-27 20:18:57 | INFO | Upload progress: 59%
+2026-02-27 20:18:58 | INFO | Upload progress: 61%
+2026-02-27 20:18:58 | INFO | Upload progress: 62%
+2026-02-27 20:18:59 | INFO | Upload progress: 64%
+2026-02-27 20:18:59 | INFO | Upload progress: 66%
+2026-02-27 20:19:00 | INFO | Upload progress: 67%
+2026-02-27 20:19:00 | INFO | Upload progress: 69%
+2026-02-27 20:19:01 | INFO | Upload progress: 71%
+2026-02-27 20:19:01 | INFO | Upload progress: 73%
+2026-02-27 20:19:02 | INFO | Upload progress: 74%
+2026-02-27 20:19:03 | INFO | Upload progress: 76%
+2026-02-27 20:19:03 | INFO | Upload progress: 78%
+2026-02-27 20:19:04 | INFO | Upload progress: 79%
+2026-02-27 20:19:04 | INFO | Upload progress: 81%
+2026-02-27 20:19:05 | INFO | Upload progress: 83%
+2026-02-27 20:19:05 | INFO | Upload progress: 84%
+2026-02-27 20:19:05 | INFO | Upload progress: 86%
+2026-02-27 20:19:05 | INFO | Upload progress: 88%
+2026-02-27 20:19:05 | INFO | Upload progress: 89%
+2026-02-27 20:19:06 | INFO | Upload progress: 91%
+2026-02-27 20:19:06 | INFO | Upload progress: 93%
+2026-02-27 20:19:06 | INFO | Upload progress: 95%
+2026-02-27 20:19:07 | INFO | Upload progress: 96%
+2026-02-27 20:19:07 | INFO | Upload progress: 98%
+2026-02-27 20:19:08 | INFO | Video uploaded successfully: d91bAxEzbbo
+2026-02-27 20:19:08 | INFO | Added video to playlist: PLm8mlmJgzmMfqH8YkhdRVFET200vZGRWN
+2026-02-27 20:19:08 | INFO | Uploaded to YouTube: https://youtube.com/watch?v=d91bAxEzbbo
+2026-02-27 20:19:08 | INFO | Updated digest feed entry for 2026-02-26: https://youtube.com/watch?v=CIP7IRWqfq4 → https://youtube.com/watch?v=d91bAxEzbbo
+2026-02-27 20:19:09 | INFO | Pushed to GitHub: Update digest YouTube link for 2026-02-26
+2026-02-27 20:24:00 | INFO | JTF News starting...
+2026-02-27 20:24:00 | INFO | Facts only. No opinions.
+2026-02-27 20:24:00 | INFO | ----------------------------------------
+2026-02-27 20:24:00 | INFO | Resuming uptime tracking - 5294s downtime recorded
+2026-02-27 20:24:00 | INFO | Archived 2026-02-27 cost: $0.0910
+2026-02-27 20:24:00 | INFO | Validating services...
+2026-02-27 20:24:02 | INFO | Claude API: OK
+2026-02-27 20:24:02 | INFO | ElevenLabs API: OK (key present)
+2026-02-27 20:24:02 | INFO | All services validated successfully
+2026-02-27 20:24:02 | INFO | ============================================================
+2026-02-27 20:24:02 | INFO | Starting cycle #1
+2026-02-27 20:24:02 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-27 20:24:04 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-27 20:24:05 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-27 20:24:06 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-27 20:24:08 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-27 20:24:09 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-27 20:24:10 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-27 20:24:12 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-27 20:24:13 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-27 20:24:14 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-27 20:24:15 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-02-27 20:24:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-02-27 20:24:18 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-02-27 20:24:21 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-02-27 20:24:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-02-27 20:24:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-02-27 20:24:26 | INFO | Total headlines: 143
+2026-02-27 20:24:29 | INFO | Word overlap pre-filter: 1/21 candidates
+2026-02-27 20:24:31 | INFO | Queued: former President Bill Clinton testified ...
+2026-02-27 20:24:32 | INFO | Word overlap pre-filter: 1/22 candidates
+2026-02-27 20:24:32 | INFO | Queued: At least 11 people died after a military...
+2026-02-27 20:24:35 | INFO | Word overlap pre-filter: 4/23 candidates
+2026-02-27 20:24:36 | INFO | Preferring new source (NPR: 4.1) over queued (CBC News: 2.5)
+2026-02-27 20:24:38 | INFO | Generated TTS (archive/2026-02-28/92dec87c2ac6.mp3): President Trump announced a ban on U.S. government...
+2026-02-27 20:24:38 | INFO | Published: President Trump announced a ban on U.S. government...
+2026-02-27 20:24:38 | INFO | RSS feed updated: 100 items
+2026-02-27 20:24:40 | INFO | Pushed to GitHub: Update feed: President Trump announced a ban on U.S. government
+2026-02-27 20:24:40 | INFO | Alexa feed updated: 5 items
+2026-02-27 20:24:41 | INFO | Pushed to GitHub: Update Alexa feed
+2026-02-27 20:24:41 | INFO | VERIFIED: President Trump announced a ban on U.S. government...
+2026-02-27 20:24:41 | INFO | Rating +1 success for npr: {'successes': 23, 'failures': 24}
+2026-02-27 20:24:41 | INFO | Rating +1 success for cbc: {'successes': 26, 'failures': 60}
+2026-02-27 20:24:44 | INFO | Word overlap pre-filter: 1/22 candidates
+2026-02-27 20:24:45 | INFO | Queued: A cargo plane crashed near La Paz, Boliv...
+2026-02-27 20:24:48 | INFO | Low confidence (75%): Pakistan stated it is at 'open war' with...
+2026-02-27 20:24:50 | INFO | Not newsworthy (none): Frozen blueberries were recalled over Li...
+2026-02-27 20:24:59 | INFO | Word overlap pre-filter: 2/23 candidates
+2026-02-27 20:25:00 | INFO | Preferring queued source (BBC News: 4.5) over new (ABC News Australia: 1.3)
+2026-02-27 20:25:04 | INFO | Generated TTS (archive/2026-02-28/02a985d78ac6.mp3): At least 11 people died after a military plane car...
+2026-02-27 20:25:04 | INFO | Published: At least 11 people died after a military plane car...
+2026-02-27 20:25:04 | INFO | RSS feed updated: 100 items
+2026-02-27 20:25:06 | INFO | Pushed to GitHub: Update feed: At least 11 people died after a military plane car
+2026-02-27 20:25:06 | INFO | Alexa feed updated: 5 items
+2026-02-27 20:25:06 | INFO | Pushed to GitHub: Update Alexa feed
+2026-02-27 20:25:06 | INFO | VERIFIED: At least 11 people died after a military plane car...
+2026-02-27 20:25:06 | INFO | Rating +1 success for abc_au: {'successes': 21, 'failures': 106}
+2026-02-27 20:25:06 | INFO | Rating +1 success for bbc: {'successes': 49, 'failures': 43}
+2026-02-27 20:25:13 | INFO | Pushed to GitHub: Update monitor data
+2026-02-27 20:25:13 | INFO | Cycle complete. Published: 2, Queue: 22, Skipped (cached): 128
+2026-02-27 20:25:13 | INFO | Sleeping until 20:30 (4 minutes)...
+2026-02-27 20:25:29 | INFO | Shutting down...

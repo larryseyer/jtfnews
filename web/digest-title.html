@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>JTF News - Daily Digest Title</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg">
+    <link rel="stylesheet" href="digest-title.css">
+</head>
+<body>
+    <div id="title-card">
+        <div id="brand-badge">JTF NEWS</div>
+        <h1 id="main-title">Daily Digest</h1>
+        <div id="divider"></div>
+        <div id="date-line">Monday, February 24, 2026</div>
+        <div id="subtitle"></div>
+    </div>
+
+    <script>
+        /**
+         * JTF News - Daily Digest Title Screen
+         * Displays intro/outro title card for daily digest recordings
+         *
+         * URL Parameters:
+         *   date: YYYY-MM-DD format (default: yesterday)
+         *   type: 'intro' or 'outro' (default: intro)
+         */
+
+        function getOrdinalSuffix(n) {
+            // Handle special cases: 11th, 12th, 13th
+            if (n >= 11 && n <= 13) return 'th';
+            // Standard cases: 1st, 2nd, 3rd, Nth
+            const suffixes = { 1: 'st', 2: 'nd', 3: 'rd' };
+            return suffixes[n % 10] || 'th';
+        }
+
+        function formatDate(dateStr) {
+            // Parse YYYY-MM-DD format
+            const [year, month, day] = dateStr.split('-').map(Number);
+            const date = new Date(year, month - 1, day);
+
+            const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+            const monthName = date.toLocaleDateString('en-US', { month: 'long' });
+
+            return `${dayName}, ${monthName} ${day}, ${year}`;
+        }
+
+        function getYesterdayDate() {
+            const now = new Date();
+            const yesterday = new Date(Date.UTC(
+                now.getUTCFullYear(),
+                now.getUTCMonth(),
+                now.getUTCDate() - 1
+            ));
+            return yesterday.toISOString().split('T')[0];
+        }
+
+        function init() {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            // Get date (default: yesterday)
+            const dateStr = urlParams.get('date') || getYesterdayDate();
+
+            // Get type (default: intro)
+            const type = urlParams.get('type') || 'intro';
+
+            // Update date display
+            const dateLine = document.getElementById('date-line');
+            dateLine.textContent = formatDate(dateStr);
+
+            // Update subtitle for outro
+            const subtitle = document.getElementById('subtitle');
+            if (type === 'outro') {
+                subtitle.textContent = 'Thank you for watching';
+                subtitle.classList.add('visible');
+            }
+
+            // Animate in after brief delay
+            setTimeout(() => {
+                document.getElementById('title-card').classList.add('visible');
+            }, 300);
+
+            console.log(`Title screen initialized: ${type} for ${dateStr}`);
+        }
+
+        // Start when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    </script>
+</body>
+</html>
