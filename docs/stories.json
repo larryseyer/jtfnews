@@ -39,6 +39,19 @@
       "audio": "../audio/audio_2.mp3",
       "published_at": "2026-02-28T00:02:50.412411+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-28-003",
+      "hash": "63aef35ce171",
+      "fact": "A tram derailed in Milan, resulting in two deaths and dozens of injuries.",
+      "source": "ABC News Australia 1.5|9.0 \u00b7 BBC News 5.2|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/audio_3.mp3",
+      "published_at": "2026-02-28T00:03:11.327845+00:00",
+      "status": "published"
     }
   ]
 }
