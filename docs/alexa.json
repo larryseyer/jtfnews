@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f13b553d3b987cda7c341611cbec0e52",
+    "updateDate": "2026-02-28T07:30:55.0Z",
+    "titleText": "JTF News: ABC News Australia, France 24",
+    "mainText": "Israel declared a state of emergency and stated it launched a strike against Iran.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "dd0e93485ff42e0bced6518fd733cc74",
     "updateDate": "2026-02-28T06:53:21.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-28T00:03:42.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
     "mainText": "President Trump suggested the U.S. could have a 'friendly takeover of Cuba'.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "b92e799522876bd8db057fbe42c98ef2",
-    "updateDate": "2026-02-28T00:03:13.0Z",
-    "titleText": "JTF News: ABC News Australia, BBC News",
-    "mainText": "A tram derailed in Milan, resulting in two deaths and dozens of injuries.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
