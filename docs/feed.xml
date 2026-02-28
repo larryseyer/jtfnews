@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 08:30:32 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 11:30:51 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump stated the US began 'major combat operations' against Iran.</title>
+      <description>President Trump stated the US began 'major combat operations' against Iran.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 28 Feb 2026 11:30:51 +0000</pubDate>
+      <guid isPermaLink="false">0720c00e4ca7</guid>
+    </item>
     <item>
       <title>Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix wi...</title>
       <description>Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix withdrew its bid.</description>
@@ -1120,18 +1132,6 @@
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 20:00:47 +0000</pubDate>
       <guid isPermaLink="false">c37d1420a5d8</guid>
-    </item>
-    <item>
-      <title>Eleven people killed in multiple strikes on alleged drug boats according to US m...</title>
-      <description>Eleven people killed in multiple strikes on alleged drug boats according to US military statement.</description>
-      <jtf:source name="BBC News" url="" accuracy="7.9*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="" accuracy="5.8*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 17 Feb 2026 18:00:33 +0000</pubDate>
-      <guid isPermaLink="false">a07450452bc4</guid>
     </item>
   </channel>
 </rss>
