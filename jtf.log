@@ -3097,3 +3097,99 @@ Error opening input files: Invalid data found when processing input
 2026-02-27 22:37:01 | INFO | Uploaded to YouTube: https://youtube.com/watch?v=OGWLJ2THD38
 2026-02-27 22:37:01 | INFO | Updated digest feed entry for 2026-02-15: https://youtube.com/watch?v=NKEPFHCX5gw → https://youtube.com/watch?v=OGWLJ2THD38
 2026-02-27 22:37:02 | INFO | Pushed to GitHub: Update digest YouTube link for 2026-02-15
+2026-02-27 22:42:22 | INFO | Starting daily digest for 2026-02-15
+2026-02-27 22:42:22 | INFO | Loading from archive: /Users/larryseyer/JTFNews/docs/archive/2026/2026-02-15.txt.gz
+2026-02-27 22:42:22 | INFO | Loaded 4 stories from 2026-02-15
+2026-02-27 22:42:22 | INFO | Found 4 stories with valid audio out of 4 total
+2026-02-27 22:42:22 | INFO | Generating intro audio for 2026-02-15: The following is the JTF News Daily Digest for Sunday, the 15th of February, 2026.  Every story you're about to hear was verified by two or more independent sources.
+2026-02-27 22:42:24 | INFO | Generated TTS (archive/2026-02-15/intro.mp3): The following is the JTF News Daily Digest for Sun...
+2026-02-27 22:42:24 | INFO | Generating outro audio for 2026-02-15: You have been listening to the JTF News Daily Digest for Sunday, the 15th of February, 2026.  Facts without opinion. We do not interpret.
+2026-02-27 22:42:26 | INFO | Generated TTS (archive/2026-02-15/outro.mp3): You have been listening to the JTF News Daily Dige...
+2026-02-27 22:42:26 | INFO | Generated intro audio: intro.mp3
+2026-02-27 22:42:26 | INFO | Generated outro audio: outro.mp3
+2026-02-27 22:42:26 | INFO | Wrote digest config and stories for 2026-02-15
+2026-02-27 22:42:26 | INFO | Total audio: 69.6s (6 files)
+2026-02-27 22:42:26 | INFO | Estimated digest duration: 70 seconds
+2026-02-27 22:42:26 | INFO | Connected to OBS WebSocket at 192.168.1.108:4449
+2026-02-27 22:42:26 | INFO | Switched to scene: Black
+2026-02-27 22:42:26 | INFO | Refreshed browser source: Daily Digest Browser
+2026-02-27 22:42:27 | INFO | OBS recording started
+2026-02-27 22:42:27 | INFO | Switched to scene: DailyDigest
+2026-02-27 22:42:27 | INFO | Recording digest for 70s (max wait: 99s)
+2026-02-27 22:42:57 | INFO | Recording... 30s elapsed, ~69s remaining
+2026-02-27 22:43:27 | INFO | Recording... 60s elapsed, ~39s remaining
+2026-02-27 22:43:57 | INFO | Recording... 90s elapsed, ~9s remaining
+2026-02-27 22:44:07 | INFO | Switched to scene: Black
+2026-02-27 22:44:08 | INFO | OBS recording stop requested
+2026-02-27 22:44:14 | INFO | OBS confirmed recording stopped after 1s
+2026-02-27 22:44:14 | INFO | Waiting 5s for OBS to flush file buffers...
+2026-02-27 22:44:19 | INFO | Found recording: /Users/larryseyer/Downloads/2026-02-27 22-42-27.mp4
+2026-02-27 22:44:19 | INFO | Waiting for OBS to finalize file...
+2026-02-27 22:44:25 | INFO | File stabilized after 6s (34.4MB)
+2026-02-27 22:44:25 | INFO | Video file validated successfully
+2026-02-27 22:44:25 | INFO | Switched to scene: JTF News
+2026-02-27 22:44:25 | INFO | Digest recorded: /Users/larryseyer/Downloads/2026-02-27 22-42-27.mp4
+2026-02-27 22:44:25 | INFO | Video saved to: /Users/larryseyer/JTFNews/video/2026-02-15-daily-digest.mp4
+2026-02-27 22:44:25 | INFO | Trimming silence from video: /Users/larryseyer/JTFNews/video/2026-02-15-daily-digest.mp4
+2026-02-27 22:44:28 | INFO | Video trimmed: 34.4MB -> 34.0MB
+2026-02-27 22:44:28 | INFO | Video silence trimmed successfully
+2026-02-27 22:44:28 | INFO | Deleted original recording: /Users/larryseyer/Downloads/2026-02-27 22-42-27.mp4
+2026-02-27 22:44:28 | INFO | Uploading video to YouTube: /Users/larryseyer/JTFNews/video/2026-02-15-daily-digest.mp4
+2026-02-27 22:44:29 | INFO | Upload progress: 2%
+2026-02-27 22:44:29 | INFO | Upload progress: 5%
+2026-02-27 22:44:29 | INFO | Upload progress: 8%
+2026-02-27 22:44:30 | INFO | Upload progress: 11%
+2026-02-27 22:44:30 | INFO | Upload progress: 14%
+2026-02-27 22:44:30 | INFO | Upload progress: 17%
+2026-02-27 22:44:30 | INFO | Upload progress: 20%
+2026-02-27 22:44:31 | INFO | Upload progress: 23%
+2026-02-27 22:44:31 | INFO | Upload progress: 26%
+2026-02-27 22:44:31 | INFO | Upload progress: 29%
+2026-02-27 22:44:31 | INFO | Upload progress: 32%
+2026-02-27 22:44:31 | INFO | Upload progress: 35%
+2026-02-27 22:44:32 | INFO | Upload progress: 38%
+2026-02-27 22:44:32 | INFO | Upload progress: 41%
+2026-02-27 22:44:32 | INFO | Upload progress: 44%
+2026-02-27 22:44:32 | INFO | Upload progress: 47%
+2026-02-27 22:44:32 | INFO | Upload progress: 50%
+2026-02-27 22:44:32 | INFO | Upload progress: 52%
+2026-02-27 22:44:32 | INFO | Upload progress: 55%
+2026-02-27 22:44:32 | INFO | Upload progress: 58%
+2026-02-27 22:44:33 | INFO | Upload progress: 61%
+2026-02-27 22:44:33 | INFO | Upload progress: 64%
+2026-02-27 22:44:34 | INFO | Upload progress: 67%
+2026-02-27 22:44:34 | INFO | Upload progress: 70%
+2026-02-27 22:44:34 | INFO | Upload progress: 73%
+2026-02-27 22:44:34 | INFO | Upload progress: 76%
+2026-02-27 22:44:34 | INFO | Upload progress: 79%
+2026-02-27 22:44:34 | INFO | Upload progress: 82%
+2026-02-27 22:44:34 | INFO | Upload progress: 85%
+2026-02-27 22:44:35 | INFO | Upload progress: 88%
+2026-02-27 22:44:35 | INFO | Upload progress: 91%
+2026-02-27 22:44:35 | INFO | Upload progress: 94%
+2026-02-27 22:44:35 | INFO | Upload progress: 97%
+2026-02-27 22:44:36 | INFO | Video uploaded successfully: zN8K2EwgX1k
+2026-02-27 22:44:36 | INFO | Added video to playlist: PLm8mlmJgzmMfqH8YkhdRVFET200vZGRWN
+2026-02-27 22:44:38 | INFO | Set custom thumbnail for video: zN8K2EwgX1k
+2026-02-27 22:44:38 | INFO | Uploaded to YouTube: https://youtube.com/watch?v=zN8K2EwgX1k
+2026-02-27 22:44:38 | INFO | Updated digest feed entry for 2026-02-15: https://youtube.com/watch?v=OGWLJ2THD38 → https://youtube.com/watch?v=zN8K2EwgX1k
+2026-02-27 22:44:39 | INFO | Pushed to GitHub: Update digest YouTube link for 2026-02-15
+2026-02-27 22:46:05 | INFO | Starting daily digest for 2026-02-15
+2026-02-27 22:46:05 | INFO | Loading from archive: /Users/larryseyer/JTFNews/docs/archive/2026/2026-02-15.txt.gz
+2026-02-27 22:46:05 | INFO | Loaded 4 stories from 2026-02-15
+2026-02-27 22:46:05 | INFO | Found 4 stories with valid audio out of 4 total
+2026-02-27 22:46:05 | INFO | Generating intro audio for 2026-02-15: The following is the JTF News Daily Digest for Sunday, the 15th of February, 2026.  Every story you're about to hear was verified by two or more independent sources.
+2026-02-27 22:46:07 | INFO | Generated TTS (archive/2026-02-15/intro.mp3): The following is the JTF News Daily Digest for Sun...
+2026-02-27 22:46:07 | INFO | Generating outro audio for 2026-02-15: You have been listening to the JTF News Daily Digest for Sunday, the 15th of February, 2026.  Facts without opinion. We do not interpret.
+2026-02-27 22:46:09 | INFO | Generated TTS (archive/2026-02-15/outro.mp3): You have been listening to the JTF News Daily Dige...
+2026-02-27 22:46:09 | INFO | Generated intro audio: intro.mp3
+2026-02-27 22:46:09 | INFO | Generated outro audio: outro.mp3
+2026-02-27 22:46:09 | INFO | Wrote digest config and stories for 2026-02-15
+2026-02-27 22:46:09 | INFO | Total audio: 69.2s (6 files)
+2026-02-27 22:46:09 | INFO | Estimated digest duration: 69 seconds
+2026-02-27 22:46:09 | INFO | Connected to OBS WebSocket at 192.168.1.108:4449
+2026-02-27 22:46:09 | INFO | Switched to scene: Black
+2026-02-27 22:46:09 | INFO | Refreshed browser source: Daily Digest Browser
+2026-02-27 22:46:10 | INFO | OBS recording started
+2026-02-27 22:46:10 | INFO | Switched to scene: DailyDigest
+2026-02-27 22:46:10 | INFO | Recording digest for 69s (max wait: 99s)

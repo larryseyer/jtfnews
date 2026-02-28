@@ -4709,10 +4709,12 @@ def generate_and_upload_daily_summary(date: str):
 
 
 def trim_video_silence(video_path: str) -> bool:
-    """Trim silence from start and end of video using ffmpeg.
+    """Trim trailing silence from video by cutting both audio and video together.
 
-    Uses audio detection to remove dead air at the beginning and end
-    of recordings, ensuring clean start/stop without cutting content.
+    Pass 1: Detects silence boundaries using ffmpeg silencedetect.
+    Pass 2: Trims both streams at those timestamps so they stay in sync.
+
+    Only trims silence at the END of the video (dead air after last story).
 
     Args:
         video_path: Path to the video file to trim (will be modified in place)
@@ -4721,31 +4723,67 @@ def trim_video_silence(video_path: str) -> bool:
         True if trimming succeeded, False otherwise
     """
     import subprocess
+    import re
 
     video_path = Path(video_path)
     if not video_path.exists():
         log.error(f"Video file not found for trimming: {video_path}")
         return False
 
-    # Create temp output path
-    trimmed_path = video_path.with_suffix('.trimmed.mp4')
-
     try:
-        # ffmpeg command to trim silence from start and end
-        # - silenceremove: removes silence from start (start_periods=1)
-        # - areverse + silenceremove + areverse: removes silence from end
-        # - start_threshold=-50dB: audio below this is considered silence
-        # - start_silence=0.3: minimum silence duration to trigger removal
-        cmd = [
-            'ffmpeg', '-y',  # -y to overwrite output
+        # Pass 1: Detect silence regions using silencedetect
+        # -50dB threshold, minimum 0.3s silence duration
+        detect_cmd = [
+            'ffmpeg', '-i', str(video_path),
+            '-af', 'silencedetect=noise=-50dB:d=0.3',
+            '-f', 'null', '-'
+        ]
+
+        log.info(f"Detecting silence in video: {video_path}")
+        result = subprocess.run(detect_cmd, capture_output=True, text=True, timeout=300)
+
+        # silencedetect outputs to stderr
+        output = result.stderr
+
+        # Find all silence_start timestamps
+        silence_starts = re.findall(r'silence_start: ([\d.]+)', output)
+
+        if not silence_starts:
+            log.info("No trailing silence detected, skipping trim")
+            return True
+
+        # Get total duration
+        duration_match = re.search(r'Duration: (\d+):(\d+):(\d+\.\d+)', output)
+        if not duration_match:
+            log.warning("Could not determine video duration, skipping trim")
+            return True
+
+        h, m, s = duration_match.groups()
+        total_duration = int(h) * 3600 + int(m) * 60 + float(s)
+
+        # We only care about the LAST silence region — trailing dead air
+        last_silence_start = float(silence_starts[-1])
+
+        # Only trim if silence is near the end (within last 10% of video)
+        if last_silence_start < total_duration * 0.9:
+            log.info("No trailing silence detected near end, skipping trim")
+            return True
+
+        # Add a small buffer (0.5s) after last audio to avoid cutting off abruptly
+        trim_end = last_silence_start + 0.5
+
+        # Pass 2: Trim both audio AND video together using -to
+        trimmed_path = video_path.with_suffix('.trimmed.mp4')
+        trim_cmd = [
+            'ffmpeg', '-y',
             '-i', str(video_path),
-            '-af', 'silenceremove=start_periods=1:start_silence=0.3:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_silence=0.3:start_threshold=-50dB,areverse',
-            '-c:v', 'copy',  # Copy video stream (no re-encoding)
+            '-to', str(trim_end),
+            '-c', 'copy',  # Copy BOTH streams — no re-encoding, no desync
             str(trimmed_path)
         ]
 
-        log.info(f"Trimming silence from video: {video_path}")
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        log.info(f"Trimming video to {trim_end:.1f}s (was {total_duration:.1f}s)")
+        result = subprocess.run(trim_cmd, capture_output=True, text=True, timeout=300)
 
         if result.returncode != 0:
             log.error(f"ffmpeg trim failed: {result.stderr}")
@@ -4759,16 +4797,19 @@ def trim_video_silence(video_path: str) -> bool:
         video_path.unlink()
         trimmed_path.rename(video_path)
 
-        log.info(f"Video trimmed: {original_size:.1f}MB -> {trimmed_size:.1f}MB")
+        trimmed_seconds = total_duration - trim_end
+        log.info(f"Video trimmed: {original_size:.1f}MB -> {trimmed_size:.1f}MB (removed {trimmed_seconds:.1f}s trailing silence)")
         return True
 
     except subprocess.TimeoutExpired:
         log.error("ffmpeg trim timed out after 5 minutes")
+        trimmed_path = video_path.with_suffix('.trimmed.mp4')
         if trimmed_path.exists():
             trimmed_path.unlink()
         return False
     except Exception as e:
         log.error(f"Video trimming failed: {e}")
+        trimmed_path = video_path.with_suffix('.trimmed.mp4')
         if trimmed_path.exists():
             trimmed_path.unlink()
         return False
