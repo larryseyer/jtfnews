@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d32da8876095b8e565bfba19bf124ce9",
+    "updateDate": "2026-02-28T08:30:34.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix withdrew its bid.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "f13b553d3b987cda7c341611cbec0e52",
     "updateDate": "2026-02-28T07:30:55.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-28T02:24:40.0Z",
     "titleText": "JTF News: NPR, CBC News",
     "mainText": "President Trump announced a ban on U.S. government use of Anthropic.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "b48534ba98adc1a5564474f765e5ef97",
-    "updateDate": "2026-02-28T00:03:42.0Z",
-    "titleText": "JTF News: PBS NewsHour, The Guardian",
-    "mainText": "President Trump suggested the U.S. could have a 'friendly takeover of Cuba'.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
