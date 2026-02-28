@@ -1,5 +1,12 @@
 [
   {
+    "uid": "421751af768b2ee8138e330bfb26920b",
+    "updateDate": "2026-02-28T00:02:52.0Z",
+    "titleText": "JTF News: CBC News, Deutsche Welle",
+    "mainText": "former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Jeffrey Epstein.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "f70b63f27ab8eafb39fac1249b528b52",
     "updateDate": "2026-02-28T00:02:09.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-27T23:06:43.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
     "mainText": "President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "26a70e0e017f3640e88db6d14ccc9df0",
-    "updateDate": "2026-02-27T23:06:12.0Z",
-    "titleText": "JTF News: ABC News Australia, BBC News",
-    "mainText": "A tram derailed in Milan, resulting in two deaths and dozens of injuries.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
