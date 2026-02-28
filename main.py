@@ -4422,26 +4422,30 @@ def estimate_digest_duration(stories: list, audio_files: list, has_intro_outro: 
     """
     total_duration = 0.0
     gap_time = 2.0  # Gap between stories (matches HTML GAP_BETWEEN_STORIES)
+    lower_third_transition = 0.8  # CSS transition for lower third show/hide
+    title_card_transition = 1.0   # CSS transition for title card show/hide
+    title_hold_time = 3.0         # Hold title screen after audio ends
 
     for audio_file in audio_files:
         duration = get_audio_duration(audio_file)
         total_duration += duration
         log.debug(f"Audio {audio_file}: {duration:.1f}s")
 
-    # Add gaps between stories
+    # Per-story: lower third fade in + fade out
+    total_duration += lower_third_transition * 2 * len(stories)
+
+    # Gaps between stories
     if len(stories) > 1:
         total_duration += gap_time * (len(stories) - 1)
 
-    # Add timing for intro/outro screens and transitions
     if has_intro_outro:
-        # Intro: title screen visible time + transition
-        total_duration += 5.0  # Title screen visible after intro audio
-        # Outro: transition to title screen + hold time
-        total_duration += 5.0  # Title screen visible after outro audio
-        # Completion screen
-        total_duration += 10.0
+        # Page startup delay
+        total_duration += 5.0
+        # Intro: fade in + hold after audio + fade out
+        total_duration += title_card_transition + title_hold_time + title_card_transition
+        # Outro: 1s pause + fade in + hold after audio + fade out
+        total_duration += 1.0 + title_card_transition + title_hold_time + title_card_transition
     else:
-        # Legacy: Add intro delay (5s) + completion screen (15s) for older hardware
         total_duration += 20.0
 
     log.info(f"Total audio: {total_duration:.1f}s ({len(audio_files)} files)")
@@ -4598,20 +4602,23 @@ def generate_and_upload_daily_summary(date: str):
     browser_source = os.getenv("OBS_DIGEST_BROWSER_SOURCE", "Daily Digest Browser")
 
     try:
-        # Refresh browser source with correct date
+        black_scene = os.getenv("OBS_BLACK_SCENE", "Black")
         digest_url = f"file://{BASE_DIR}/web/daily-digest.html?date={date}"
+
+        # 1. Switch to Black
+        obs_switch_scene(ws, black_scene)
         obs_refresh_browser_source(ws, browser_source, digest_url)
 
-        # Wait for browser to load
-        time.sleep(3)
+        # 2. Wait for scene to load
+        time.sleep(1)
 
-        # Switch to digest scene
-        if not obs_switch_scene(ws, digest_scene):
-            raise Exception(f"Failed to switch to scene: {digest_scene}")
-
-        # Start recording
+        # 3. Start recording
         if not obs_start_recording(ws):
             raise Exception("Failed to start OBS recording")
+
+        # 4. Switch to DailyDigest
+        if not obs_switch_scene(ws, digest_scene):
+            raise Exception(f"Failed to switch to scene: {digest_scene}")
 
         # Wait for digest to complete
         # Using precise audio duration + buffer for older hardware
@@ -4635,10 +4642,16 @@ def generate_and_upload_daily_summary(date: str):
                 remaining = max_wait - elapsed
                 log.info(f"Recording... {elapsed}s elapsed, ~{remaining}s remaining")
 
-        # Stop recording
+        # 5. Switch to Black
+        obs_switch_scene(ws, black_scene)
+
+        # 6. Wait for scene to load
+        time.sleep(1)
+
+        # 7. Stop recording
         recording_path = obs_stop_recording(ws)
 
-        # Switch back to normal scene
+        # 8. Back to normal scene
         obs_switch_scene(ws, normal_scene)
 
         # Close OBS connection

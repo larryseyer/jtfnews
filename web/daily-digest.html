@@ -137,38 +137,6 @@
             opacity: 1;
         }
 
-        /* Completion overlay */
-        #completion-overlay {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 100;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: white;
-            font-family: 'Inter', sans-serif;
-        }
-
-        #completion-overlay.visible {
-            display: flex;
-        }
-
-        #completion-overlay h1 {
-            font-size: 72px;
-            margin-bottom: 20px;
-            color: rgba(212, 175, 55, 0.95);
-        }
-
-        #completion-overlay p {
-            font-size: 36px;
-            opacity: 0.8;
-        }
-
         /* Progress indicator - sits above ticker */
         #progress-bar {
             position: absolute;
@@ -211,12 +179,6 @@
 
     <!-- Progress bar (above ticker) -->
     <div id="progress-bar" style="width: 0%"></div>
-
-    <!-- Completion overlay -->
-    <div id="completion-overlay">
-        <h1>Daily Digest Complete</h1>
-        <p id="completion-stats"></p>
-    </div>
 
     <!-- Audio elements -->
     <audio id="tts-audio" preload="none"></audio>
@@ -447,16 +409,14 @@
 
         // ========== Title Screen ==========
 
-        function showTitleScreen(type) {
+        async function showTitleScreen(type) {
             const overlay = document.getElementById('title-overlay');
             const card = document.getElementById('title-card');
             const dateEl = document.getElementById('title-date');
             const subtitle = document.getElementById('title-subtitle');
 
-            // Update date
             dateEl.textContent = formatDateForTitle(digestDate);
 
-            // Update subtitle based on type
             if (type === 'outro') {
                 subtitle.textContent = 'Thank you for watching';
                 subtitle.classList.add('visible');
@@ -465,28 +425,22 @@
                 subtitle.classList.remove('visible');
             }
 
-            // Show overlay and animate card in
             overlay.classList.add('visible');
-            setTimeout(() => {
-                card.classList.add('visible');
-            }, 100);
-
-            console.log(`Showing ${type} title screen`);
+            card.classList.add('visible');
+            await sleep(TITLE_CARD_TRANSITION);
+            console.log(`Title screen ${type} visible`);
         }
 
-        function hideTitleScreen() {
+        async function hideTitleScreen() {
             const overlay = document.getElementById('title-overlay');
             const card = document.getElementById('title-card');
 
-            // Fade out card first
             card.classList.add('fade-out');
             card.classList.remove('visible');
-
-            // Then hide overlay
-            setTimeout(() => {
-                overlay.classList.remove('visible');
-                card.classList.remove('fade-out');
-            }, 1000);
+            await sleep(TITLE_CARD_TRANSITION);
+            overlay.classList.remove('visible');
+            card.classList.remove('fade-out');
+            console.log('Title screen hidden');
         }
 
         // ========== Audio Playback ==========
@@ -573,8 +527,26 @@
             return Math.min(baseTime + extraTime, 15000);
         }
 
-        async function displayStory(story, index) {
+        const LOWER_THIRD_TRANSITION = 800;   // Must match lower-third CSS transition (0.8s)
+        const TITLE_CARD_TRANSITION = 1000;    // Must match title-card CSS transition (1s)
+
+        async function showLowerThird() {
             const lowerThird = document.getElementById('lower-third');
+            lowerThird.classList.remove('hidden');
+            lowerThird.classList.add('visible');
+            await sleep(LOWER_THIRD_TRANSITION);
+            console.log('Lower third visible');
+        }
+
+        async function hideLowerThird() {
+            const lowerThird = document.getElementById('lower-third');
+            lowerThird.classList.remove('visible');
+            lowerThird.classList.add('hidden');
+            await sleep(LOWER_THIRD_TRANSITION);
+            console.log('Lower third hidden');
+        }
+
+        async function displayStory(story, index) {
             const sourceBar = document.getElementById('source-bar');
             const factText = document.getElementById('fact-text');
 
@@ -583,19 +555,18 @@
 
             updateProgress();
 
-            lowerThird.classList.remove('hidden');
-            lowerThird.classList.add('visible');
+            // Show lower third — waits for CSS transition to fully complete
+            await showLowerThird();
 
+            // NOW play audio — lower third is guaranteed fully visible
             const audioResult = await playStoryAudio(index);
 
             if (audioResult === 'error') {
                 await sleep(calculateHoldTime(story.fact));
-            } else {
-                await sleep(3000);
             }
 
-            lowerThird.classList.remove('visible');
-            lowerThird.classList.add('hidden');
+            // Hide lower third — waits for CSS transition to fully complete
+            await hideLowerThird();
 
             console.log(`[${index + 1}/${stories.length}] Displayed: "${story.fact.substring(0, 50)}..."`);
         }
@@ -608,12 +579,10 @@
             console.log('DIGEST_STARTED');
 
             // === INTRO ===
-            showTitleScreen('intro');
-            await sleep(500);  // Let title card animate in
+            await showTitleScreen('intro');       // Waits until title card is fully visible
             await playIntroOutroAudio(introAudioPath, 'intro-audio');
-            await sleep(TITLE_HOLD_TIME);  // Hold title screen briefly
-            hideTitleScreen();
-            await sleep(1500);  // Transition time
+            await sleep(TITLE_HOLD_TIME);         // Hold title screen after audio ends
+            await hideTitleScreen();              // Waits until title card is fully hidden
 
             // === STORIES ===
             for (let i = 0; i < stories.length; i++) {
@@ -626,33 +595,16 @@
             }
 
             // === OUTRO ===
-            await sleep(1000);  // Brief pause before outro
-            showTitleScreen('outro');
-            await sleep(500);  // Let title card animate in
+            await sleep(1000);                    // Brief pause before outro
+            await showTitleScreen('outro');        // Waits until title card is fully visible
             await playIntroOutroAudio(outroAudioPath, 'outro-audio');
-            await sleep(TITLE_HOLD_TIME);  // Hold title screen briefly
-            hideTitleScreen();
-            await sleep(1000);  // Transition time
+            await sleep(TITLE_HOLD_TIME);         // Hold title screen after audio ends
+            await hideTitleScreen();              // Waits until title card is fully hidden
 
-            // === COMPLETION ===
-            showCompletion();
-        }
-
-        function showCompletion() {
+            // Done — Python switches to Black scene from here
             isComplete = true;
-
-            const overlay = document.getElementById('completion-overlay');
-            const stats = document.getElementById('completion-stats');
-
-            stats.textContent = `${stories.length} verified facts from ${digestDate}`;
-            overlay.classList.add('visible');
-
             console.log('DIGEST_COMPLETE');
             console.log(`Total stories: ${stories.length}`);
-
-            setTimeout(() => {
-                console.log('DIGEST_FINISHED');
-            }, 10000);
         }
 
         // ========== Initialization ==========
@@ -690,15 +642,10 @@
             if (stories.length === 0) {
                 console.error('No stories found for digest');
                 console.log('DIGEST_ERROR: No stories');
-                const overlay = document.getElementById('completion-overlay');
-                const stats = document.getElementById('completion-stats');
-                document.querySelector('#completion-overlay h1').textContent = 'No Stories Available';
-                stats.textContent = `No archived stories found for ${digestDate}`;
-                overlay.classList.add('visible');
                 return;
             }
 
-            // Start digest playback after brief delay
+            // Brief wait for OBS to switch to DailyDigest scene
             await sleep(2000);
             runDigest();
         }
