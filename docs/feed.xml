@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 02:24:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 02:25:04 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>At least 11 people died after a military plane carrying banknotes crashed in Bol...</title>
+      <description>At least 11 people died after a military plane carrying banknotes crashed in Bolivia.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 28 Feb 2026 02:25:04 +0000</pubDate>
+      <guid isPermaLink="false">635901bdf6a2</guid>
+    </item>
     <item>
       <title>President Trump announced a ban on U.S. government use of Anthropic.</title>
       <description>President Trump announced a ban on U.S. government use of Anthropic.</description>
@@ -1156,18 +1168,6 @@
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 08:00:44 +0000</pubDate>
       <guid isPermaLink="false">67acb748e214</guid>
-    </item>
-    <item>
-      <title>Australia rules out repatriating citizens from Syrian camp.</title>
-      <description>Australia rules out repatriating citizens from Syrian camp.</description>
-      <jtf:source name="NPR" url="" accuracy="6.4*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="8.9*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 17 Feb 2026 07:30:35 +0000</pubDate>
-      <guid isPermaLink="false">839d68c2f433</guid>
     </item>
   </channel>
 </rss>
