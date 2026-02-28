@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JTF News Daily Digest (Video)</title>
+    <link>https://jtfnews.org</link>
+    <language>en-us</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <itunes:author>JTF News</itunes:author>
+    <itunes:owner>
+      <itunes:name>JTF News</itunes:name>
+      <itunes:email>podcast@jtfnews.org</itunes:email>
+    </itunes:owner>
+    <description>Verified facts without opinion. Daily video digest following the JTF methodology: two unrelated sources, no adjectives, just facts.</description>
+    <itunes:image href="https://jtfnews.org/assets/podcast-artwork.png"/>
+    <itunes:category text="News">
+      <itunes:category text="Daily News"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <atom:link href="https://jtfnews.org/podcast-video.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>JTF News - February 15, 2026</title>
+      <description>7 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-15/2026-02-15-daily-digest.mp4" type="video/mp4" length="29328097"/>
+      <guid isPermaLink="false">jtf-news-2026-02-15-video</guid>
+      <pubDate>Sun, 15 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>01:07</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 16, 2026</title>
+      <description>10 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-16/2026-02-16-daily-digest.mp4" type="video/mp4" length="39847343"/>
+      <guid isPermaLink="false">jtf-news-2026-02-16-video</guid>
+      <pubDate>Mon, 16 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>01:28</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 17, 2026</title>
+      <description>23 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-17/2026-02-17-daily-digest.mp4" type="video/mp4" length="71369472"/>
+      <guid isPermaLink="false">jtf-news-2026-02-17-video</guid>
+      <pubDate>Tue, 17 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>03:21</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 18, 2026</title>
+      <description>13 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-18/2026-02-18-daily-digest.mp4" type="video/mp4" length="43103858"/>
+      <guid isPermaLink="false">jtf-news-2026-02-18-video</guid>
+      <pubDate>Wed, 18 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>01:52</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 19, 2026</title>
+      <description>11 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-19/2026-02-19-daily-digest.mp4" type="video/mp4" length="43507642"/>
+      <guid isPermaLink="false">jtf-news-2026-02-19-video</guid>
+      <pubDate>Thu, 19 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>01:41</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 20, 2026</title>
+      <description>14 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-20/2026-02-20-daily-digest.mp4" type="video/mp4" length="51535747"/>
+      <guid isPermaLink="false">jtf-news-2026-02-20-video</guid>
+      <pubDate>Fri, 20 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>02:06</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 22, 2026</title>
+      <description>14 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-22/2026-02-22-daily-digest.mp4" type="video/mp4" length="48245446"/>
+      <guid isPermaLink="false">jtf-news-2026-02-22-video</guid>
+      <pubDate>Sun, 22 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>02:06</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 23, 2026</title>
+      <description>16 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-23/2026-02-23-daily-digest.mp4" type="video/mp4" length="55483070"/>
+      <guid isPermaLink="false">jtf-news-2026-02-23-video</guid>
+      <pubDate>Mon, 23 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>02:33</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 24, 2026</title>
+      <description>15 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-24/2026-02-24-daily-digest.mp4" type="video/mp4" length="51245142"/>
+      <guid isPermaLink="false">jtf-news-2026-02-24-video</guid>
+      <pubDate>Tue, 24 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>02:19</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 25, 2026</title>
+      <description>14 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-25/2026-02-25-daily-digest.mp4" type="video/mp4" length="46020278"/>
+      <guid isPermaLink="false">jtf-news-2026-02-25-video</guid>
+      <pubDate>Wed, 25 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>02:00</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>JTF News - February 26, 2026</title>
+      <description>0 verified facts from today's news.</description>
+      <enclosure url="https://archive.org/download/jtf-news-2026-02-26/2026-02-26-daily-digest.mp4" type="video/mp4" length="41981957"/>
+      <guid isPermaLink="false">jtf-news-2026-02-26-video</guid>
+      <pubDate>Thu, 26 Feb 2026 06:00:00 GMT</pubDate>
+      <itunes:duration>01:40</itunes:duration>
+      <itunes:episode>11</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
