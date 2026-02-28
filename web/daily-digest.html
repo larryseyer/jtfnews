@@ -31,6 +31,112 @@
             z-index: 10;
         }
 
+        /* ========== Title Screen Overlay (Intro/Outro) ========== */
+        #title-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 80;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        #title-overlay.visible {
+            display: flex;
+        }
+
+        /* Title card - matches digest-title.css glassmorphism */
+        #title-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(40px) saturate(180%);
+            -webkit-backdrop-filter: blur(40px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            box-shadow:
+                0 24px 80px rgba(0, 0, 0, 0.5),
+                0 8px 24px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            padding: 60px 100px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        #title-card.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        #title-card.fade-out {
+            opacity: 0;
+            transform: scale(1.02);
+        }
+
+        /* JTF NEWS brand badge */
+        #title-badge {
+            display: inline-block;
+            background: linear-gradient(135deg,
+                rgba(212, 175, 55, 0.95) 0%,
+                rgba(170, 135, 35, 0.9) 100%);
+            padding: 16px 48px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: 6px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+
+        #title-main {
+            font-size: 96px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            line-height: 1.1;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        #title-divider {
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(212, 175, 55, 0.8) 50%,
+                transparent 100%);
+            margin: 30px auto;
+        }
+
+        #title-date {
+            font-size: 42px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+        }
+
+        #title-subtitle {
+            font-size: 32px;
+            font-weight: 400;
+            color: rgba(147, 197, 253, 0.9);
+            margin-top: 30px;
+            letter-spacing: 0.5px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #title-subtitle.visible {
+            opacity: 1;
+        }
+
         /* Completion overlay */
         #completion-overlay {
             display: none;
@@ -80,6 +186,17 @@
     <img id="slide1" class="slide active" alt="">
     <img id="slide2" class="slide" alt="">
 
+    <!-- Title screen overlay (intro/outro) -->
+    <div id="title-overlay">
+        <div id="title-card">
+            <div id="title-badge">JTF NEWS</div>
+            <h1 id="title-main">Daily Digest</h1>
+            <div id="title-divider"></div>
+            <div id="title-date">Monday, February 24, 2026</div>
+            <div id="title-subtitle"></div>
+        </div>
+    </div>
+
     <!-- Lower third overlay (same as live stream) -->
     <div id="lower-third" class="hidden">
         <div id="brand-tab">JTF NEWS</div>
@@ -101,13 +218,18 @@
         <p id="completion-stats"></p>
     </div>
 
+    <!-- Audio elements -->
     <audio id="tts-audio" preload="none"></audio>
+    <audio id="intro-audio" preload="none"></audio>
+    <audio id="outro-audio" preload="none"></audio>
 
     <script>
         /**
          * JTF News - Daily Digest
          * Plays through all archived stories for the previous day
          * Used for midnight summary broadcast + YouTube upload
+         *
+         * Flow: Intro Title → Stories → Outro Title → Completion
          */
 
         // Configuration
@@ -115,24 +237,21 @@
         const GAP_BETWEEN_STORIES = 2000;  // 2 seconds between stories
         const SLIDE_INTERVAL = 50000;      // 50 seconds per background
         const MAX_IMAGES = 2000;
+        const TITLE_HOLD_TIME = 3000;      // Hold title screen after audio
 
         // Calculate base paths - handle both file:// and http:// URLs
         function getBasePaths() {
             const currentUrl = window.location.href;
 
             if (currentUrl.startsWith('file://')) {
-                // For file:// URLs, extract the directory path
-                // e.g., file:///Users/.../JTFNews/web/daily-digest.html
-                // We need: file:///Users/.../JTFNews/
-                const webDir = currentUrl.substring(0, currentUrl.lastIndexOf('/'));  // .../web
-                const projectDir = webDir.substring(0, webDir.lastIndexOf('/'));      // .../JTFNews
+                const webDir = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
+                const projectDir = webDir.substring(0, webDir.lastIndexOf('/'));
                 return {
                     media: projectDir + '/media',
                     data: projectDir + '/data',
                     audio: projectDir + '/audio'
                 };
             } else {
-                // For http:// URLs, use relative paths
                 return {
                     media: '../media',
                     data: '../data',
@@ -147,7 +266,6 @@
         // Get yesterday's date for archive lookup
         function getYesterdayDate() {
             const now = new Date();
-            // Use UTC to match server
             const yesterday = new Date(Date.UTC(
                 now.getUTCFullYear(),
                 now.getUTCMonth(),
@@ -164,6 +282,24 @@
         let audioElement = null;
         let isComplete = false;
         let digestDate = getYesterdayDate();
+        let introAudioPath = null;
+        let outroAudioPath = null;
+
+        // ========== Date Formatting ==========
+
+        function getOrdinalSuffix(n) {
+            if (n >= 11 && n <= 13) return 'th';
+            const suffixes = { 1: 'st', 2: 'nd', 3: 'rd' };
+            return suffixes[n % 10] || 'th';
+        }
+
+        function formatDateForTitle(dateStr) {
+            const [year, month, day] = dateStr.split('-').map(Number);
+            const date = new Date(year, month - 1, day);
+            const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+            const monthName = date.toLocaleDateString('en-US', { month: 'long' });
+            return `${dayName}, ${monthName} ${day}, ${year}`;
+        }
 
         // ========== Background Slideshow ==========
 
@@ -229,7 +365,7 @@
 
         // ========== News Ticker ==========
 
-        const TICKER_SPEED = 120;  // Pixels per second
+        const TICKER_SPEED = 120;
 
         function buildTickerContent() {
             if (stories.length === 0) return '';
@@ -267,15 +403,11 @@
         // ========== Story Loading ==========
 
         async function loadArchivedStories() {
-            // First check for pre-loaded stories (from digest-stories.js)
-            // This avoids CORS issues with file:// URLs
             if (window.DIGEST_STORIES && window.DIGEST_STORIES.length > 0) {
                 console.log(`Using ${window.DIGEST_STORIES.length} pre-loaded stories`);
                 return window.DIGEST_STORIES;
             }
 
-            // Fallback: Try loading from archived audio directory
-            // Stories are stored in data/YYYY-MM-DD.txt
             const archiveUrl = `${PATHS.data}/${digestDate}.txt`;
 
             try {
@@ -292,8 +424,6 @@
                 for (const line of lines) {
                     if (!line.trim() || line.startsWith('#')) continue;
 
-                    // Parse pipe-delimited format:
-                    // timestamp|sources|ratings|urls|fact
                     const parts = line.split('|');
                     if (parts.length >= 5) {
                         loadedStories.push({
@@ -315,24 +445,96 @@
             }
         }
 
-        // ========== Story Display ==========
+        // ========== Title Screen ==========
 
-        function updateProgress() {
-            const progress = ((currentStoryIndex + 1) / stories.length) * 100;
-            document.getElementById('progress-bar').style.width = `${progress}%`;
+        function showTitleScreen(type) {
+            const overlay = document.getElementById('title-overlay');
+            const card = document.getElementById('title-card');
+            const dateEl = document.getElementById('title-date');
+            const subtitle = document.getElementById('title-subtitle');
+
+            // Update date
+            dateEl.textContent = formatDateForTitle(digestDate);
+
+            // Update subtitle based on type
+            if (type === 'outro') {
+                subtitle.textContent = 'Thank you for watching';
+                subtitle.classList.add('visible');
+            } else {
+                subtitle.textContent = '';
+                subtitle.classList.remove('visible');
+            }
+
+            // Show overlay and animate card in
+            overlay.classList.add('visible');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 100);
+
+            console.log(`Showing ${type} title screen`);
         }
+
+        function hideTitleScreen() {
+            const overlay = document.getElementById('title-overlay');
+            const card = document.getElementById('title-card');
+
+            // Fade out card first
+            card.classList.add('fade-out');
+            card.classList.remove('visible');
+
+            // Then hide overlay
+            setTimeout(() => {
+                overlay.classList.remove('visible');
+                card.classList.remove('fade-out');
+            }, 1000);
+        }
+
+        // ========== Audio Playback ==========
 
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
 
-        function playAudio(storyIndex) {
+        function playIntroOutroAudio(audioPath, elementId) {
+            return new Promise((resolve) => {
+                const audio = document.getElementById(elementId);
+
+                if (!audioPath) {
+                    console.log(`No ${elementId} path provided, skipping`);
+                    resolve('skipped');
+                    return;
+                }
+
+                const onEnded = () => {
+                    audio.removeEventListener('ended', onEnded);
+                    audio.removeEventListener('error', onError);
+                    resolve('ended');
+                };
+
+                const onError = () => {
+                    audio.removeEventListener('ended', onEnded);
+                    audio.removeEventListener('error', onError);
+                    console.log(`${elementId} not found: ${audioPath}`);
+                    resolve('error');
+                };
+
+                audio.addEventListener('ended', onEnded);
+                audio.addEventListener('error', onError);
+
+                audio.src = audioPath + '?t=' + Date.now();
+                audio.load();
+                audio.play().catch(() => resolve('error'));
+
+                console.log(`Playing ${elementId}: ${audioPath}`);
+            });
+        }
+
+        function playStoryAudio(storyIndex) {
             return new Promise((resolve) => {
                 if (!audioElement) {
                     audioElement = document.getElementById('tts-audio');
                 }
 
-                // Use pre-loaded audio path if available, otherwise construct it
                 const story = stories[storyIndex];
                 const audioPath = story.audioPath || `${PATHS.audio}/archive/${digestDate}/audio_${storyIndex}.mp3`;
 
@@ -358,6 +560,13 @@
             });
         }
 
+        // ========== Story Display ==========
+
+        function updateProgress() {
+            const progress = ((currentStoryIndex + 1) / stories.length) * 100;
+            document.getElementById('progress-bar').style.width = `${progress}%`;
+        }
+
         function calculateHoldTime(text) {
             const baseTime = 5000;
             const extraTime = Math.floor(text.length / 20) * 500;
@@ -369,28 +578,22 @@
             const sourceBar = document.getElementById('source-bar');
             const factText = document.getElementById('fact-text');
 
-            // Set content
             sourceBar.textContent = story.source || 'JTF News';
             factText.textContent = story.fact;
 
-            // Update progress
             updateProgress();
 
-            // Fade in
             lowerThird.classList.remove('hidden');
             lowerThird.classList.add('visible');
 
-            // Play audio
-            const audioResult = await playAudio(index);
+            const audioResult = await playStoryAudio(index);
 
             if (audioResult === 'error') {
                 await sleep(calculateHoldTime(story.fact));
             } else {
-                // Keep text visible briefly after audio ends
                 await sleep(3000);
             }
 
-            // Fade out
             lowerThird.classList.remove('visible');
             lowerThird.classList.add('hidden');
 
@@ -402,21 +605,36 @@
         async function runDigest() {
             console.log(`Starting Daily Digest for ${digestDate}`);
             console.log(`${stories.length} stories to play`);
-
-            // Signal start (Python script can detect this)
             console.log('DIGEST_STARTED');
 
+            // === INTRO ===
+            showTitleScreen('intro');
+            await sleep(500);  // Let title card animate in
+            await playIntroOutroAudio(introAudioPath, 'intro-audio');
+            await sleep(TITLE_HOLD_TIME);  // Hold title screen briefly
+            hideTitleScreen();
+            await sleep(1500);  // Transition time
+
+            // === STORIES ===
             for (let i = 0; i < stories.length; i++) {
                 currentStoryIndex = i;
                 await displayStory(stories[i], i);
 
-                // Gap between stories (except after last)
                 if (i < stories.length - 1) {
                     await sleep(GAP_BETWEEN_STORIES);
                 }
             }
 
-            // All stories complete
+            // === OUTRO ===
+            await sleep(1000);  // Brief pause before outro
+            showTitleScreen('outro');
+            await sleep(500);  // Let title card animate in
+            await playIntroOutroAudio(outroAudioPath, 'outro-audio');
+            await sleep(TITLE_HOLD_TIME);  // Hold title screen briefly
+            hideTitleScreen();
+            await sleep(1000);  // Transition time
+
+            // === COMPLETION ===
             showCompletion();
         }
 
@@ -429,11 +647,9 @@
             stats.textContent = `${stories.length} verified facts from ${digestDate}`;
             overlay.classList.add('visible');
 
-            // Signal completion
             console.log('DIGEST_COMPLETE');
             console.log(`Total stories: ${stories.length}`);
 
-            // Keep completion screen for 10 seconds
             setTimeout(() => {
                 console.log('DIGEST_FINISHED');
             }, 10000);
@@ -445,28 +661,35 @@
             console.log('JTF News Daily Digest initializing...');
             console.log(`Digest date: ${digestDate}`);
 
+            // Load intro/outro audio paths from pre-generated JS
+            if (window.DIGEST_INTRO_AUDIO) {
+                introAudioPath = window.DIGEST_INTRO_AUDIO;
+                console.log(`Intro audio: ${introAudioPath}`);
+            }
+            if (window.DIGEST_OUTRO_AUDIO) {
+                outroAudioPath = window.DIGEST_OUTRO_AUDIO;
+                console.log(`Outro audio: ${outroAudioPath}`);
+            }
+
             // Load background images
             const season = getSeason();
             console.log(`Current season: ${season}`);
             images = await discoverImages(season);
 
             if (images.length > 0) {
-                // Show first image
                 document.getElementById('slide1').src = images[0];
-                // Start slideshow
                 setInterval(showNextImage, SLIDE_INTERVAL);
             }
 
             // Load archived stories
             stories = await loadArchivedStories();
 
-            // Start the ticker with all stories
+            // Start the ticker
             updateTickerAnimation();
 
             if (stories.length === 0) {
                 console.error('No stories found for digest');
                 console.log('DIGEST_ERROR: No stories');
-                // Show error on screen
                 const overlay = document.getElementById('completion-overlay');
                 const stats = document.getElementById('completion-stats');
                 document.querySelector('#completion-overlay h1').textContent = 'No Stories Available';
@@ -480,23 +703,18 @@
             runDigest();
         }
 
-        // Allow overriding the digest date via URL parameter or config file
-        // Priority: 1) URL param, 2) config file, 3) auto-calculate yesterday
         async function getDigestDate() {
-            // Check for pre-loaded date first (from digest-stories.js)
             if (window.DIGEST_DATE) {
                 console.log(`Using date from pre-loaded JS: ${window.DIGEST_DATE}`);
                 return window.DIGEST_DATE;
             }
 
-            // Check URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('date')) {
                 console.log(`Using date from URL: ${urlParams.get('date')}`);
                 return urlParams.get('date');
             }
 
-            // Try to read from config file (set by Python script)
             try {
                 const configUrl = `${PATHS.data}/digest-config.json?t=${Date.now()}`;
                 const response = await fetch(configUrl);
@@ -511,18 +729,15 @@
                 console.log('No config file found, using yesterday');
             }
 
-            // Default to yesterday
             console.log(`Using yesterday's date: ${getYesterdayDate()}`);
             return getYesterdayDate();
         }
 
-        // Async init wrapper to handle date loading
         async function startDigest() {
             digestDate = await getDigestDate();
             init();
         }
 
-        // Start when DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', startDigest);
         } else {
