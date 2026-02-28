@@ -65,6 +65,19 @@
       "audio": "../audio/audio_4.mp3",
       "published_at": "2026-02-28T00:03:40.467382+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-28-005",
+      "hash": "0bd2694e924d",
+      "fact": "President Trump announced a ban on U.S. government use of Anthropic.",
+      "source": "NPR 4.8|8.5 \u00b7 CBC News 2.9|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-02-28/92dec87c2ac6.mp3",
+      "published_at": "2026-02-28T02:24:38.389680+00:00",
+      "status": "published"
     }
   ]
 }
