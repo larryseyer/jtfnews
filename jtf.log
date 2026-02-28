@@ -5865,3 +5865,25 @@ Error opening input files: Invalid data found when processing input
 2026-02-28 12:14:31 | INFO | Pushed to GitHub: Update podcast feed
 2026-02-28 12:18:45 | INFO | Pushed to GitHub: Update monitor data
 2026-02-28 12:23:46 | INFO | Pushed to GitHub: Update monitor data
+2026-02-28 12:27:38 | INFO | Shutting down...
+2026-02-28 12:28:38 | INFO | JTF News starting...
+2026-02-28 12:28:38 | INFO | Facts only. No opinions.
+2026-02-28 12:28:38 | INFO | ----------------------------------------
+2026-02-28 12:28:38 | INFO | Resuming uptime tracking - 293s downtime recorded
+2026-02-28 12:28:38 | INFO | Validating services...
+2026-02-28 12:28:39 | INFO | Claude API: OK
+2026-02-28 12:28:39 | INFO | ElevenLabs API: OK (key present)
+2026-02-28 12:28:39 | INFO | All services validated successfully
+2026-02-28 12:28:39 | INFO | ============================================================
+2026-02-28 12:28:39 | INFO | Starting cycle #1
+2026-02-28 12:28:39 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-02-28 12:28:40 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-02-28 12:28:41 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-02-28 12:28:42 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-02-28 12:28:44 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-02-28 12:28:46 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-02-28 12:28:47 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-02-28 12:28:48 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-02-28 12:28:49 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-02-28 12:28:50 | INFO | Fetched 10 headlines from White House (HTML)
+2026-02-28 12:28:52 | INFO | Fetched 1 headlines from Congress.gov (RSS)
