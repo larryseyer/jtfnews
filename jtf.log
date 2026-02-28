@@ -731,3 +731,117 @@
 2026-02-27 18:35:44 | INFO | Pushed to GitHub: Update monitor data
 2026-02-27 18:40:45 | INFO | Pushed to GitHub: Update monitor data
 2026-02-27 18:45:45 | INFO | Pushed to GitHub: Update monitor data
+2026-02-27 19:41:05 | INFO | Starting daily digest for 2026-02-26
+2026-02-27 19:41:05 | INFO | Loaded 8 stories from 2026-02-26
+2026-02-27 19:41:05 | INFO | Found 8 stories with valid audio out of 8 total
+2026-02-27 19:41:05 | INFO | Generating intro audio for 2026-02-26: The following is the JTF News Daily Digest for Thursday, the 26th of February, 2026.  Every story you're about to hear was verified by two or more independent sources.
+2026-02-27 19:41:07 | INFO | Generated TTS (archive/2026-02-26/intro.mp3): The following is the JTF News Daily Digest for Thu...
+2026-02-27 19:41:07 | INFO | Generating outro audio for 2026-02-26: You have been listening to the JTF News Daily Digest for Thursday, the 26th of February, 2026.  Facts without opinion. We do not interpret.
+2026-02-27 19:41:09 | INFO | Generated TTS (archive/2026-02-26/outro.mp3): You have been listening to the JTF News Daily Dige...
+2026-02-27 19:41:09 | INFO | Generated intro audio: intro.mp3
+2026-02-27 19:41:09 | INFO | Generated outro audio: outro.mp3
+2026-02-27 19:41:09 | INFO | Wrote digest config and stories for 2026-02-26
+2026-02-27 19:41:09 | INFO | Total audio: 94.0s (10 files)
+2026-02-27 19:41:09 | INFO | Estimated digest duration: 94 seconds
+2026-02-27 19:41:09 | INFO | Connected to OBS WebSocket at 192.168.1.108:4449
+2026-02-27 19:41:09 | INFO | Refreshed browser source: Daily Digest Browser
+2026-02-27 19:41:12 | INFO | Switched to scene: DailyDigest
+2026-02-27 19:41:12 | INFO | OBS recording started
+2026-02-27 19:41:12 | INFO | Recording digest for 94s (max wait: 123s)
+2026-02-27 19:41:17 | INFO | Recording stopped externally
+2026-02-27 19:41:17 | INFO | OBS recording stop requested
+2026-02-27 19:41:18 | INFO | OBS recording stopped after 1s
+2026-02-27 19:41:33 | INFO | Found recording: /Users/larryseyer/Downloads/2026-02-27 19-41-29.mp4
+2026-02-27 19:41:33 | INFO | Waiting for OBS to finalize file...
+2026-02-27 19:42:33 | WARNING | File size still changing after 60s, proceeding anyway
+2026-02-27 19:42:33 | WARNING | Could not validate video file: [Errno 2] No such file or directory: 'ffprobe'
+2026-02-27 19:42:33 | INFO | Switched to scene: JTF News
+2026-02-27 19:42:33 | INFO | Digest recorded: /Users/larryseyer/Downloads/2026-02-27 19-41-29.mp4
+2026-02-27 19:42:33 | INFO | Video saved to: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 19:42:33 | INFO | Trimming silence from video: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 19:42:33 | ERROR | Video trimming failed: [Errno 2] No such file or directory: 'ffmpeg'
+2026-02-27 19:42:33 | WARNING | Video silence trimming failed, using original recording
+2026-02-27 19:42:33 | INFO | Deleted original recording: /Users/larryseyer/Downloads/2026-02-27 19-41-29.mp4
+2026-02-27 19:42:33 | WARNING | YouTube client secrets file not found: /Users/larryseyer/JTFNews/client_secret.json
+2026-02-27 19:42:33 | INFO | YouTube not configured. Video saved locally: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 19:55:47 | INFO | Starting daily digest for 2026-02-26
+2026-02-27 19:55:47 | INFO | Loaded 8 stories from 2026-02-26
+2026-02-27 19:55:47 | INFO | Found 8 stories with valid audio out of 8 total
+2026-02-27 19:55:47 | INFO | Generating intro audio for 2026-02-26: The following is the JTF News Daily Digest for Thursday, the 26th of February, 2026.  Every story you're about to hear was verified by two or more independent sources.
+2026-02-27 19:55:49 | INFO | Generated TTS (archive/2026-02-26/intro.mp3): The following is the JTF News Daily Digest for Thu...
+2026-02-27 19:55:49 | INFO | Generating outro audio for 2026-02-26: You have been listening to the JTF News Daily Digest for Thursday, the 26th of February, 2026.  Facts without opinion. We do not interpret.
+2026-02-27 19:55:50 | INFO | Generated TTS (archive/2026-02-26/outro.mp3): You have been listening to the JTF News Daily Dige...
+2026-02-27 19:55:50 | INFO | Generated intro audio: intro.mp3
+2026-02-27 19:55:50 | INFO | Generated outro audio: outro.mp3
+2026-02-27 19:55:50 | INFO | Wrote digest config and stories for 2026-02-26
+2026-02-27 19:55:50 | INFO | Total audio: 93.2s (10 files)
+2026-02-27 19:55:50 | INFO | Estimated digest duration: 93 seconds
+2026-02-27 19:55:50 | INFO | Connected to OBS WebSocket at 192.168.1.108:4449
+2026-02-27 19:55:50 | INFO | Refreshed browser source: Daily Digest Browser
+2026-02-27 19:55:53 | INFO | Switched to scene: DailyDigest
+2026-02-27 19:55:53 | INFO | OBS recording started
+2026-02-27 19:55:53 | INFO | Recording digest for 93s (max wait: 123s)
+2026-02-27 19:56:23 | INFO | Recording... 30s elapsed, ~93s remaining
+2026-02-27 19:56:53 | INFO | Recording... 60s elapsed, ~63s remaining
+2026-02-27 19:57:23 | INFO | Recording... 90s elapsed, ~33s remaining
+2026-02-27 19:57:53 | INFO | Recording... 120s elapsed, ~3s remaining
+2026-02-27 19:57:58 | INFO | OBS recording stop requested
+2026-02-27 19:58:29 | WARNING | OBS still recording after 30s, proceeding anyway
+2026-02-27 19:58:29 | INFO | Found recording: /Users/larryseyer/Downloads/2026-02-27 19-55-53.mp4
+2026-02-27 19:58:29 | INFO | Waiting for OBS to finalize file...
+2026-02-27 19:59:29 | WARNING | File size still changing after 60s, proceeding anyway
+2026-02-27 19:59:29 | ERROR | Video file may be corrupt: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7ffd6b1076c0] moov atom not found
+/Users/larryseyer/Downloads/2026-02-27 19-55-53.mp4: Invalid data found when processing input
+
+2026-02-27 19:59:29 | INFO | Switched to scene: JTF News
+2026-02-27 19:59:29 | INFO | Digest recorded: /Users/larryseyer/Downloads/2026-02-27 19-55-53.mp4
+2026-02-27 19:59:29 | INFO | Video saved to: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 19:59:29 | INFO | Trimming silence from video: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 19:59:29 | ERROR | ffmpeg trim failed: ffmpeg version 8.0.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.4.4.1)
+  configuration: --cc=/usr/bin/clang --prefix=/opt/ffmpeg --extra-version=tessus --enable-avisynth --enable-fontconfig --enable-gpl --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfreetype --enable-libgsm --enable-libharfbuzz --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-version3 --pkg-config-flags=--static --disable-ffplay
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7ffd3a70bc00] moov atom not found
+[in#0 @ 0x7ffd3a70b740] Error opening input: Invalid data found when processing input
+Error opening input file /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4.
+Error opening input files: Invalid data found when processing input
+
+2026-02-27 19:59:29 | WARNING | Video silence trimming failed, using original recording
+2026-02-27 19:59:29 | INFO | Deleted original recording: /Users/larryseyer/Downloads/2026-02-27 19-55-53.mp4
+2026-02-27 19:59:32 | INFO | Uploading video to YouTube: /Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4
+2026-02-27 19:59:34 | INFO | Upload progress: 3%
+2026-02-27 19:59:34 | INFO | Upload progress: 7%
+2026-02-27 19:59:34 | INFO | Upload progress: 11%
+2026-02-27 19:59:34 | INFO | Upload progress: 15%
+2026-02-27 19:59:35 | INFO | Upload progress: 19%
+2026-02-27 19:59:35 | INFO | Upload progress: 23%
+2026-02-27 19:59:35 | INFO | Upload progress: 27%
+2026-02-27 19:59:36 | INFO | Upload progress: 31%
+2026-02-27 19:59:36 | INFO | Upload progress: 35%
+2026-02-27 19:59:36 | INFO | Upload progress: 39%
+2026-02-27 19:59:36 | INFO | Upload progress: 43%
+2026-02-27 19:59:37 | INFO | Upload progress: 47%
+2026-02-27 19:59:37 | INFO | Upload progress: 51%
+2026-02-27 19:59:37 | INFO | Upload progress: 55%
+2026-02-27 19:59:37 | INFO | Upload progress: 59%
+2026-02-27 19:59:37 | INFO | Upload progress: 63%
+2026-02-27 19:59:38 | INFO | Upload progress: 67%
+2026-02-27 19:59:38 | INFO | Upload progress: 71%
+2026-02-27 19:59:38 | INFO | Upload progress: 75%
+2026-02-27 19:59:38 | INFO | Upload progress: 79%
+2026-02-27 19:59:38 | INFO | Upload progress: 83%
+2026-02-27 19:59:39 | INFO | Upload progress: 87%
+2026-02-27 19:59:39 | INFO | Upload progress: 91%
+2026-02-27 19:59:39 | INFO | Upload progress: 95%
+2026-02-27 19:59:39 | INFO | Upload progress: 99%
+2026-02-27 19:59:40 | INFO | Video uploaded successfully: d__BGOxWBVI
+2026-02-27 19:59:40 | INFO | Added video to playlist: PLm8mlmJgzmMfqH8YkhdRVFET200vZGRWN
+2026-02-27 19:59:40 | INFO | Uploaded to YouTube: https://youtube.com/watch?v=d__BGOxWBVI
+2026-02-27 19:59:40 | INFO | Added digest entry for 2026-02-26 to RSS feed
+2026-02-27 19:59:42 | INFO | Pushed digest feed entry to GitHub

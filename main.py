@@ -4236,21 +4236,35 @@ def obs_stop_recording(ws) -> str:
         ws.call(obs_requests.StopRecording())
         log.info("OBS recording stop requested")
 
-        # Wait for OBS to report recording has stopped (max 30 seconds)
-        max_wait = 30
+        # Give OBS time to begin the stop process before polling
+        time.sleep(5)
+
+        # Wait for OBS to report recording has stopped (max 60 seconds)
+        max_wait = 60
+        recording_confirmed_stopped = False
         for i in range(max_wait):
             time.sleep(1)
             try:
                 status = ws.call(obs_requests.GetRecordingStatus())
                 is_recording = status.datain.get('isRecording', False)
                 if not is_recording:
-                    log.info(f"OBS recording stopped after {i+1}s")
+                    log.info(f"OBS confirmed recording stopped after {i+1}s")
+                    recording_confirmed_stopped = True
                     break
-            except Exception:
-                # Connection may close after recording stops
-                break
+                else:
+                    if (i + 1) % 10 == 0:
+                        log.info(f"OBS still finalizing recording... {i+1}s")
+            except Exception as e:
+                # Don't break on exceptions — OBS may be in a transitional state
+                log.debug(f"GetRecordingStatus exception (may be transitional): {e}")
+                continue
         else:
-            log.warning("OBS still recording after 30s, proceeding anyway")
+            log.warning("OBS still recording after 60s, proceeding anyway")
+
+        # Extra settling time after OBS reports stopped
+        if recording_confirmed_stopped:
+            log.info("Waiting 5s for OBS to flush file buffers...")
+            time.sleep(5)
 
         # Find the newest mp4 file
         mp4_files = glob.glob(f"{rec_folder}/*.mp4")
@@ -4261,35 +4275,48 @@ def obs_stop_recording(ws) -> str:
         output_path = max(mp4_files, key=os.path.getmtime)
         log.info(f"Found recording: {output_path}")
 
-        # Wait for file to stabilize (size stops changing) - max 60 seconds
+        # Wait for file to stabilize (size stops changing) - max 90 seconds
         log.info("Waiting for OBS to finalize file...")
         last_size = -1
         stable_count = 0
-        for i in range(60):
+        for i in range(90):
             time.sleep(1)
             try:
                 current_size = os.path.getsize(output_path)
                 if current_size == last_size:
                     stable_count += 1
-                    if stable_count >= 3:  # Size stable for 3 seconds
+                    if stable_count >= 5:  # Size stable for 5 seconds
                         log.info(f"File stabilized after {i+1}s ({current_size / 1024 / 1024:.1f}MB)")
                         break
                 else:
                     stable_count = 0
                     last_size = current_size
+                    if (i + 1) % 10 == 0:
+                        log.info(f"File still writing... {current_size / 1024 / 1024:.1f}MB after {i+1}s")
             except OSError:
                 pass  # File might be locked
         else:
-            log.warning("File size still changing after 60s, proceeding anyway")
+            log.warning("File size still changing after 90s, proceeding anyway")
 
         # Verify the file is valid (has moov atom)
         try:
             result = subprocess.run(
                 ['ffprobe', '-v', 'error', output_path],
-                capture_output=True, text=True, timeout=10
+                capture_output=True, text=True, timeout=30
             )
             if 'moov atom not found' in result.stderr or result.returncode != 0:
-                log.error(f"Video file may be corrupt: {result.stderr}")
+                log.error(f"Video file may be corrupt (moov atom issue): {result.stderr}")
+                log.error("OBS may not have finished writing. Waiting 30s and retrying...")
+                time.sleep(30)
+                result = subprocess.run(
+                    ['ffprobe', '-v', 'error', output_path],
+                    capture_output=True, text=True, timeout=30
+                )
+                if 'moov atom not found' in result.stderr or result.returncode != 0:
+                    log.error(f"Video file still corrupt after retry: {result.stderr}")
+                    return None
+                else:
+                    log.info("Video file validated on retry")
             else:
                 log.info("Video file validated successfully")
         except Exception as e:
