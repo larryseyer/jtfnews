@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b92e799522876bd8db057fbe42c98ef2",
+    "updateDate": "2026-02-28T00:03:13.0Z",
+    "titleText": "JTF News: ABC News Australia, BBC News",
+    "mainText": "A tram derailed in Milan, resulting in two deaths and dozens of injuries.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "421751af768b2ee8138e330bfb26920b",
     "updateDate": "2026-02-28T00:02:52.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-27T23:07:03.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
     "mainText": "Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan following recent strikes.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "f5362e8300f3db47c7d513b549ddfb86",
-    "updateDate": "2026-02-27T23:06:43.0Z",
-    "titleText": "JTF News: PBS NewsHour, The Guardian",
-    "mainText": "President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
