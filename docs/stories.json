@@ -91,6 +91,19 @@
       "audio": "../audio/archive/2026-02-28/02a985d78ac6.mp3",
       "published_at": "2026-02-28T02:25:04.116198+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-28-007",
+      "hash": "585f70811d7b",
+      "fact": "Israel announced it conducted a military strike against Iran.",
+      "source": "Deutsche Welle 5.7|9.5 \u00b7 France 24 4.7|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-02-28/fa24dddc3854.mp3",
+      "published_at": "2026-02-28T06:53:19.074013+00:00",
+      "status": "published"
     }
   ]
 }
