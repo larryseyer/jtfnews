@@ -95,14 +95,27 @@
     {
       "id": "2026-02-28-007",
       "hash": "585f70811d7b",
-      "fact": "Israel announced it conducted a military strike against Iran.",
-      "source": "Deutsche Welle 5.7|9.5 \u00b7 France 24 4.7|9.0",
+      "fact": "Israel announced it conducted a military strike against Iran. with the United States also participating in the strikes",
+      "source": "Deutsche Welle 5.7|9.5 \u00b7 France 24 4.7|9.0 \u00b7 NPR 4.9|8.5",
       "source_urls": {
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
         "France 24": "https://www.france24.com/en/"
       },
-      "audio": "../audio/archive/2026-02-28/fa24dddc3854.mp3",
+      "audio": "../audio/archive/2026-02-28/128300964e66.mp3",
       "published_at": "2026-02-28T06:53:19.074013+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-02-28-008",
+      "hash": "bc5ceaef206e",
+      "fact": "Israel declared a state of emergency and stated it launched a strike against Iran.",
+      "source": "ABC News Australia 1.7|9.0 \u00b7 France 24 4.8|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-02-28/fe75183ca985.mp3",
+      "published_at": "2026-02-28T07:30:53.041727+00:00",
       "status": "published"
     }
   ]
