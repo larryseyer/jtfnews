@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 12:30:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 13:00:33 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iran states it has conducted strikes on a U.S. military base in Bahrain and laun...</title>
+      <description>Iran states it has conducted strikes on a U.S. military base in Bahrain and launched strikes in the region.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 28 Feb 2026 13:00:33 +0000</pubDate>
+      <guid isPermaLink="false">d2d499d963db</guid>
+    </item>
     <item>
       <title>Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelt...</title>
       <description>Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelter in place as the U.S. and Israel launched attacks.</description>
@@ -1120,18 +1132,6 @@
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 23:30:56 +0000</pubDate>
       <guid isPermaLink="false">57215f85537c</guid>
-    </item>
-    <item>
-      <title>Nine people arrested in France in connection with the death of a student.</title>
-      <description>Nine people arrested in France in connection with the death of a student.</description>
-      <jtf:source name="BBC News" url="" accuracy="7.9*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="6.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 17 Feb 2026 21:30:35 +0000</pubDate>
-      <guid isPermaLink="false">599222bbb3b2</guid>
     </item>
   </channel>
 </rss>
