@@ -143,6 +143,19 @@
       "audio": "../audio/archive/2026-02-28/6f441a5f63c9.mp3",
       "published_at": "2026-02-28T11:30:51.946813+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-28-011",
+      "hash": "4d45208c8902",
+      "fact": "Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelter in place as the U.S. and Israel launched attacks.",
+      "source": "CBC News 3.1|9.0 \u00b7 ABC News Australia 1.7|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-02-28/70908c9460b8.mp3",
+      "published_at": "2026-02-28T12:30:50.380468+00:00",
+      "status": "published"
     }
   ]
 }
