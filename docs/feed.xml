@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 00:02:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 00:02:50 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' re...</title>
+      <description>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Jeffrey Epstein.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.6" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 28 Feb 2026 00:02:50 +0000</pubDate>
+      <guid isPermaLink="false">c48079039afb</guid>
+    </item>
     <item>
       <title>Sweden reported that a Russian drone flew near a French aircraft carrier.</title>
       <description>Sweden reported that a Russian drone flew near a French aircraft carrier.</description>
@@ -1162,18 +1174,6 @@
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:03:16 +0000</pubDate>
       <guid isPermaLink="false">761e1e4c0ec4</guid>
-    </item>
-    <item>
-      <title>Actor Robert Duvall died at age 95.</title>
-      <description>Actor Robert Duvall died at age 95.</description>
-      <jtf:source name="Deutsche Welle" url="" accuracy="9.3*" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="6.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 17 Feb 2026 00:02:15 +0000</pubDate>
-      <guid isPermaLink="false">901c211c27de</guid>
     </item>
   </channel>
 </rss>
