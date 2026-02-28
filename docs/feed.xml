@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 00:01:36 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 00:02:07 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sweden reported that a Russian drone flew near a French aircraft carrier.</title>
+      <description>Sweden reported that a Russian drone flew near a French aircraft carrier.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.5" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 28 Feb 2026 00:02:07 +0000</pubDate>
+      <guid isPermaLink="false">f32b817595f3</guid>
+    </item>
     <item>
       <title>At least 55 Ghanaians have been killed in the Russia-Ukraine war, according to a...</title>
       <description>At least 55 Ghanaians have been killed in the Russia-Ukraine war, according to a Ghanaian minister.</description>
@@ -1162,18 +1174,6 @@
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 00:02:15 +0000</pubDate>
       <guid isPermaLink="false">901c211c27de</guid>
-    </item>
-    <item>
-      <title>Naveed Akram fronted court for the first time in connection with a shooting at B...</title>
-      <description>Naveed Akram fronted court for the first time in connection with a shooting at Bondi Beach.</description>
-      <jtf:source name="BBC News" url="" accuracy="8.6*" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="" accuracy="9.1*" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 17 Feb 2026 00:00:51 +0000</pubDate>
-      <guid isPermaLink="false">fd6cde29b83a</guid>
     </item>
   </channel>
 </rss>
