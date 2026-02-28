@@ -26,6 +26,19 @@
       "audio": "../audio/audio_1.mp3",
       "published_at": "2026-02-28T00:02:07.492653+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-02-28-002",
+      "hash": "1715d9c53825",
+      "fact": "former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Jeffrey Epstein.",
+      "source": "CBC News 2.9|9.0 \u00b7 Deutsche Welle 5.6|9.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/audio_2.mp3",
+      "published_at": "2026-02-28T00:02:50.412411+00:00",
+      "status": "published"
     }
   ]
 }
