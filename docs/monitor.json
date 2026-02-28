@@ -1,45 +1,52 @@
 {
-  "timestamp": "2026-02-28T02:25:12.306651+00:00",
-  "web_refresh_at": "2026-02-28T02:25:12.306651+00:00",
-  "uptime_start": "2026-02-28T02:24:00.891023+00:00",
-  "uptime_seconds": 71,
-  "availability_pct": 46.7,
+  "timestamp": "2026-02-28T06:54:09.220030+00:00",
+  "web_refresh_at": "2026-02-28T06:54:09.220030+00:00",
+  "uptime_start": "2026-02-28T06:52:24.516986+00:00",
+  "uptime_seconds": 105,
+  "availability_pct": 43.2,
   "cycle": {
     "number": 1,
-    "duration_seconds": 69.7,
+    "duration_seconds": 104.0,
     "headlines_scraped": 143,
-    "headlines_processed": 15,
-    "stories_published": 2,
-    "stories_queued": 3
+    "headlines_processed": 32,
+    "stories_published": 1,
+    "stories_queued": 4
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 216,
-        "cost_usd": 0.08218199999999996,
+        "calls": 262,
+        "cost_usd": 0.09851474999999997,
         "details": {
-          "input_tokens": 203383,
-          "output_tokens": 25069
+          "input_tokens": 242759,
+          "output_tokens": 30260
         }
       },
       "elevenlabs": {
-        "calls": 19,
-        "cost_usd": 0.07242,
+        "calls": 168,
+        "cost_usd": 0.5867699999999999,
         "details": {
-          "characters": 2414
+          "characters": 19559
+        }
+      },
+      "twilio": {
+        "calls": 2,
+        "cost_usd": 0.0158,
+        "details": {
+          "sms_count": 2
         }
       }
     },
-    "total_usd": 0.1546,
+    "total_usd": 0.7011,
     "month_estimate_usd": 7.63,
     "daily_budget": 1.79,
-    "budget_pct": 8.7
+    "budget_pct": 39.3
   },
   "queue": {
-    "size": 22,
-    "oldest_item_age_hours": 3.4
+    "size": 25,
+    "oldest_item_age_hours": 7.9
   },
-  "stories_today": 7,
+  "stories_today": 8,
   "sources": {
     "total": 17,
     "successful": 17,
@@ -49,20 +56,20 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 5,
     "degraded_services": []
   },
   "daily_digest": {
     "last_date": "2026-02-26",
-    "next_digest_at": "2026-02-28T06:00:00+00:00",
+    "next_digest_at": "2026-03-01T06:00:00+00:00",
     "status": "success",
     "upload_status": "success",
     "error_message": "Failed to get recording output path",
-    "last_completed_at": "2026-02-28T02:18:43.961311+00:00",
+    "last_completed_at": "2026-02-28T06:51:46.298353+00:00",
     "story_count": 8,
-    "duration_seconds": 95,
+    "duration_seconds": 98,
     "video_path": "/Users/larryseyer/JTFNews/video/2026-02-26-daily-digest.mp4",
-    "youtube_id": "d91bAxEzbbo",
-    "youtube_url": "https://youtube.com/watch?v=d91bAxEzbbo"
+    "youtube_id": "bQvh1u-XkuU",
+    "youtube_url": "https://youtube.com/watch?v=bQvh1u-XkuU"
   }
 }
