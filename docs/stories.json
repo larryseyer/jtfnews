@@ -1,82 +1,17 @@
 {
-  "date": "2026-02-27",
+  "date": "2026-02-28",
   "stories": [
     {
-      "id": "2026-02-27-000",
-      "hash": "bac801e87280",
-      "fact": "At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian government minister.",
-      "source": "The Guardian 3.3|2.5 \u00b7 BBC News 4.9|9.0",
-      "source_urls": {
-        "The Guardian": "https://www.theguardian.com/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_0.mp3",
-      "published_at": "2026-02-27T23:04:09.070589+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-27-001",
-      "hash": "b6d567d94fe2",
-      "fact": "Sweden states that a drone jammed near a French aircraft carrier was Russian.",
-      "source": "France 24 4.6|9.0 \u00b7 BBC News 5.0|9.0",
+      "id": "2026-02-28-000",
+      "hash": "2f35bdb68a03",
+      "fact": "At least 55 Ghanaians have been killed in the Russia-Ukraine war, according to a Ghanaian minister.",
+      "source": "France 24 4.6|9.0 \u00b7 BBC News 5.2|9.0",
       "source_urls": {
         "France 24": "https://www.france24.com/en/",
         "BBC News": "https://www.bbc.com/news/world"
       },
-      "audio": "../audio/audio_1.mp3",
-      "published_at": "2026-02-27T23:04:45.287330+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-27-002",
-      "hash": "a65b031066d1",
-      "fact": "former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Epstein.",
-      "source": "CBC News 2.8|9.0 \u00b7 Deutsche Welle 5.5|9.5",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/audio_2.mp3",
-      "published_at": "2026-02-27T23:05:46.141989+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-27-003",
-      "hash": "63aef35ce171",
-      "fact": "A tram derailed in Milan, resulting in two deaths and dozens of injuries.",
-      "source": "ABC News Australia 1.5|9.0 \u00b7 BBC News 5.1|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_3.mp3",
-      "published_at": "2026-02-27T23:06:10.190777+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-27-004",
-      "hash": "1c595eaccfd1",
-      "fact": "President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'",
-      "source": "PBS NewsHour 6.2|9.0 \u00b7 The Guardian 3.5|2.5",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/audio_4.mp3",
-      "published_at": "2026-02-27T23:06:40.816478+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-02-27-005",
-      "hash": "2527e0774fbb",
-      "fact": "Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan following recent strikes.",
-      "source": "PBS NewsHour 6.2|9.0 \u00b7 BBC News 5.1|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/audio_5.mp3",
-      "published_at": "2026-02-27T23:07:01.610736+00:00",
+      "audio": "../audio/audio_0.mp3",
+      "published_at": "2026-02-28T00:01:36.245538+00:00",
       "status": "published"
     }
   ]
