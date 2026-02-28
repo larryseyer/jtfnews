@@ -4605,18 +4605,21 @@ def generate_and_upload_daily_summary(date: str):
         black_scene = os.getenv("OBS_BLACK_SCENE", "Black")
         digest_url = f"file://{BASE_DIR}/web/daily-digest.html?date={date}"
 
-        # 1. Switch to Black
+        # 1. Switch to Black and refresh browser source
         obs_switch_scene(ws, black_scene)
         obs_refresh_browser_source(ws, browser_source, digest_url)
 
-        # 2. Wait for Black scene to be fully shown before recording
+        # 2. Wait for OBS to fully transition from JTF News to Black
         time.sleep(2)
 
-        # 3. Start recording
+        # 3. Start recording (now showing solid Black)
         if not obs_start_recording(ws):
             raise Exception("Failed to start OBS recording")
 
-        # 4. Switch to DailyDigest
+        # 4. Hold Black for 2 seconds so it appears in the recording
+        time.sleep(2)
+
+        # 5. Switch to DailyDigest
         if not obs_switch_scene(ws, digest_scene):
             raise Exception(f"Failed to switch to scene: {digest_scene}")
 
