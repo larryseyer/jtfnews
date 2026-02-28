@@ -1,5 +1,12 @@
 [
   {
+    "uid": "e0ff3a1b49599e6dfc63641dfcf09104",
+    "updateDate": "2026-02-28T13:00:35.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "Iran states it has conducted strikes on a U.S. military base in Bahrain and launched strikes in the region.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "bedc0d2c67d49774fe719659fee5f418",
     "updateDate": "2026-02-28T12:30:52.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-28T07:30:55.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
     "mainText": "Israel declared a state of emergency and stated it launched a strike against Iran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "dd0e93485ff42e0bced6518fd733cc74",
-    "updateDate": "2026-02-28T06:53:21.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Israel announced it conducted a military strike against Iran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
