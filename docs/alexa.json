@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f70b63f27ab8eafb39fac1249b528b52",
+    "updateDate": "2026-02-28T00:02:09.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Sweden reported that a Russian drone flew near a French aircraft carrier.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "9eed27d7d456f8b278633cd75a1ebf1a",
     "updateDate": "2026-02-28T00:01:38.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-27T23:06:12.0Z",
     "titleText": "JTF News: ABC News Australia, BBC News",
     "mainText": "A tram derailed in Milan, resulting in two deaths and dozens of injuries.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "6cd1d89edace30e198a334354fd4317c",
-    "updateDate": "2026-02-27T23:05:48.0Z",
-    "titleText": "JTF News: CBC News, Deutsche Welle",
-    "mainText": "former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Epstein.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
