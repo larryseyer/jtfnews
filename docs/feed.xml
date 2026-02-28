@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 07:30:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 08:30:32 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix wi...</title>
+      <description>Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix withdrew its bid.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 28 Feb 2026 08:30:32 +0000</pubDate>
+      <guid isPermaLink="false">889064c31b42</guid>
+    </item>
     <item>
       <title>Israel declared a state of emergency and stated it launched a strike against Ira...</title>
       <description>Israel declared a state of emergency and stated it launched a strike against Iran.</description>
@@ -1120,18 +1132,6 @@
       </jtf:source>
       <pubDate>Tue, 17 Feb 2026 18:00:33 +0000</pubDate>
       <guid isPermaLink="false">a07450452bc4</guid>
-    </item>
-    <item>
-      <title>Secretary Rubio spoke in Munich.</title>
-      <description>Secretary Rubio spoke in Munich.</description>
-      <jtf:source name="European Commission" url="" accuracy="6.6*" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
-        <jtf:owner name="European Union" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="White House" url="" accuracy="9.0*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
-        <jtf:owner name="US Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 17 Feb 2026 16:30:53 +0000</pubDate>
-      <guid isPermaLink="false">a9e34fb1e1ce</guid>
     </item>
   </channel>
 </rss>
