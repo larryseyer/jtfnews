@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-03-01T06:35:26.834665+00:00",
-  "uptime_start": "2026-03-01T01:27:04.754914+00:00",
-  "uptime_seconds": 18502,
-  "availability_pct": 85.7,
+  "timestamp": "2026-03-01T06:40:44.365318+00:00",
+  "web_refresh_at": "2026-03-01T06:40:44.365318+00:00",
+  "uptime_start": "2026-03-01T06:40:16.848986+00:00",
+  "uptime_seconds": 28,
+  "availability_pct": 77.7,
   "cycle": {
-    "number": 12,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 1,
+    "duration_seconds": 26.8,
+    "headlines_scraped": 143,
+    "headlines_processed": 2,
     "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 229,
-        "cost_usd": 0.09848024999999994,
+        "calls": 232,
+        "cost_usd": 0.09949349999999994,
         "details": {
-          "input_tokens": 236701,
-          "output_tokens": 31444
+          "input_tokens": 239009,
+          "output_tokens": 31793
         }
       },
       "elevenlabs": {
@@ -29,14 +30,14 @@
         }
       }
     },
-    "total_usd": 0.1158,
+    "total_usd": 0.1168,
     "month_estimate_usd": 9.88,
     "daily_budget": 1.61,
     "budget_pct": 7.2
   },
   "queue": {
     "size": 27,
-    "oldest_item_age_hours": 23.7
+    "oldest_item_age_hours": 23.8
   },
   "stories_today": 2,
   "sources": {
@@ -44,17 +45,11 @@
     "successful": 17,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-01T06:06:56.921766+00:00",
-      "level": "WARNING",
-      "message": "Could not push digest entry to GitHub: Command '['git', '-C', '/Users/larryseyer/JTFNews/docs', 'push']' returned non-zero exit status 1."
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 24,
+    "next_cycle_minutes": 19,
     "degraded_services": []
   },
   "daily_digest": {
