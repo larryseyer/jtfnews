@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-01/a857b8f3679e.mp3",
       "published_at": "2026-03-01T00:00:39.970587+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-01-001",
+      "hash": "a01dff288fc9",
+      "fact": "The United States reported no American casualties following strikes by Iran.",
+      "source": "France 24 4.9|9.0 \u00b7 Deutsche Welle 5.8|9.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-01/8e0ab5ad6821.mp3",
+      "published_at": "2026-03-01T00:02:05.994450+00:00",
+      "status": "published"
     }
   ]
 }
