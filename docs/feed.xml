@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 00:02:05 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The United States reported no American casualties following strikes by Iran.</title>
+      <description>The United States reported no American casualties following strikes by Iran.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 01 Mar 2026 00:02:05 +0000</pubDate>
+      <guid isPermaLink="false">90c10a27b37d</guid>
+    </item>
     <item>
       <title>A cargo plane crashed near La Paz, Bolivia, resulting in 15 deaths.</title>
       <description>A cargo plane crashed near La Paz, Bolivia, resulting in 15 deaths.</description>
@@ -1120,18 +1132,6 @@
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 00:03:57 +0000</pubDate>
       <guid isPermaLink="false">5e7c23e52183</guid>
-    </item>
-    <item>
-      <title>Jesse Jackson, a U.S. civil rights leader, died at age 84.</title>
-      <description>Jesse Jackson, a U.S. civil rights leader, died at age 84.</description>
-      <jtf:source name="NPR" url="" accuracy="4.8*" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="8.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 18 Feb 2026 00:01:17 +0000</pubDate>
-      <guid isPermaLink="false">d1c6f7d07681</guid>
     </item>
   </channel>
 </rss>
