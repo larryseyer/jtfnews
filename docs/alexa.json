@@ -1,5 +1,12 @@
 [
   {
+    "uid": "166d61a906be32b5e23d51abe54e49a1",
+    "updateDate": "2026-03-01T00:02:08.0Z",
+    "titleText": "JTF News: France 24, Deutsche Welle",
+    "mainText": "The United States reported no American casualties following strikes by Iran.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "d06077f29192bd9eaeb0ff5ce788bbc8",
     "updateDate": "2026-03-01T00:00:42.0Z",
     "titleText": "JTF News: BBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-28T11:30:53.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
     "mainText": "President Trump stated the US began 'major combat operations' against Iran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "d32da8876095b8e565bfba19bf124ce9",
-    "updateDate": "2026-02-28T08:30:34.0Z",
-    "titleText": "JTF News: France 24, BBC News",
-    "mainText": "Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix withdrew its bid.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
