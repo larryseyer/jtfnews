@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 10:30:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 11:30:31 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Israeli army reports beginning strikes on targets in Tehran.</title>
+      <description>Israeli army reports beginning strikes on targets in Tehran.</description>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.8" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 01 Mar 2026 11:30:31 +0000</pubDate>
+      <guid isPermaLink="false">27b7779f29f2</guid>
+    </item>
     <item>
       <title>Belgium seized a suspected Russian shadow fleet tanker.</title>
       <description>Belgium seized a suspected Russian shadow fleet tanker.</description>
@@ -1114,18 +1126,6 @@
       </jtf:source>
       <pubDate>Wed, 18 Feb 2026 03:30:44 +0000</pubDate>
       <guid isPermaLink="false">5aa83098f326</guid>
-    </item>
-    <item>
-      <title>Peru's Congress removed interim President José Jerí as he faces a corruption pro...</title>
-      <description>Peru's Congress removed interim President José Jerí as he faces a corruption probe.</description>
-      <jtf:source name="France 24" url="" accuracy="6.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 18 Feb 2026 01:30:42 +0000</pubDate>
-      <guid isPermaLink="false">12d3adce6e78</guid>
     </item>
   </channel>
 </rss>
