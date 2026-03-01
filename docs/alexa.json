@@ -1,5 +1,12 @@
 [
   {
+    "uid": "947c892e9bcdcc901773d670acc966dd",
+    "updateDate": "2026-03-01T10:30:41.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Belgium seized a suspected Russian shadow fleet tanker.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "166d61a906be32b5e23d51abe54e49a1",
     "updateDate": "2026-03-01T00:02:08.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-02-28T12:30:52.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
     "mainText": "Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelter in place as the U.S. and Israel launched attacks.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "d754bf4038d9e44b0fdb9489530d3cdd",
-    "updateDate": "2026-02-28T11:30:53.0Z",
-    "titleText": "JTF News: CBC News, Deutsche Welle",
-    "mainText": "President Trump stated the US began 'major combat operations' against Iran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
