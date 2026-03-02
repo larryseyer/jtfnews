@@ -3013,3 +3013,8 @@ Log cleared at 2026-03-01T06:00:03.833222+00:00
 2026-03-02 12:22:16 | INFO | Registered journalist: Jane Doe (jdoe)
 2026-03-02 12:22:16 | INFO | Registered journalist: John Smith (jsmith)
 2026-03-02 12:22:16 | INFO | Registered journalist: Funded Person (jfunded)
+2026-03-02 12:27:36 | INFO | Registered journalist: Score Test (scoretest)
+2026-03-02 12:28:01 | INFO | Registered journalist: Stale Test (staletest)
+2026-03-02 12:28:01 | WARNING | Journalist Stale Test suspended: disclosure from Q4 2025, current is Q1 2026
+2026-03-02 12:28:01 | INFO | Suspended 1 journalist(s) for stale disclosures
+2026-03-02 12:28:01 | INFO | Journalist Stale Test reactivated after disclosure update

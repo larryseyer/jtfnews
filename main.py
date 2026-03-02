@@ -1605,6 +1605,22 @@ def record_verification_success(source_id: str, fact_hash: str = None):
 
     log.info(f"Rating +1 success for {source_id}: {ratings[source_id]}")
 
+    # If this is a journalist source, also update journalist stats
+    if source_id.startswith("journalist:"):
+        journalist_id = source_id.split(":", 1)[1]
+        journalists = load_journalists()
+        if journalist_id in journalists:
+            journalists[journalist_id]["stats"]["successes"] += 1
+            journalists[journalist_id]["stats"]["verified"] += 1
+            # Recalculate accuracy rating
+            stats = journalists[journalist_id]["stats"]
+            total = stats["successes"] + stats["failures"]
+            if total > 0:
+                journalists[journalist_id]["ratings"]["accuracy"] = round(
+                    (stats["successes"] / total) * 10, 1
+                )
+            save_journalists(journalists)
+
 
 def record_verification_failure(source_id: str, fact_hash: str = None):
     """Record that a source's story expired without verification."""
@@ -1622,6 +1638,22 @@ def record_verification_failure(source_id: str, fact_hash: str = None):
 
     log.info(f"Rating +1 failure for {source_id}: {ratings[source_id]}")
 
+    # If this is a journalist source, also update journalist stats
+    if source_id.startswith("journalist:"):
+        journalist_id = source_id.split(":", 1)[1]
+        journalists = load_journalists()
+        if journalist_id in journalists:
+            journalists[journalist_id]["stats"]["failures"] += 1
+            journalists[journalist_id]["stats"]["expired"] += 1
+            # Recalculate accuracy rating
+            stats = journalists[journalist_id]["stats"]
+            total = stats["successes"] + stats["failures"]
+            if total > 0:
+                journalists[journalist_id]["ratings"]["accuracy"] = round(
+                    (stats["successes"] / total) * 10, 1
+                )
+            save_journalists(journalists)
+
 
 def get_learned_rating(source_id: str) -> float:
     """Get the learned accuracy rating for a source (0-10 scale).
@@ -1629,6 +1661,22 @@ def get_learned_rating(source_id: str) -> float:
     Formula: (successes / (successes + failures)) * 10
     Returns default config rating if no data yet.
     """
+    # Handle journalist sources
+    if source_id.startswith("journalist:"):
+        journalist_id = source_id.split(":", 1)[1]
+        info = get_journalist_info(journalist_id)
+        if info:
+            stats = info.get("stats", {})
+            total = stats.get("successes", 0) + stats.get("failures", 0)
+            if total >= 5:
+                return round((stats["successes"] / total) * 10, 1)
+            elif total > 0:
+                # Blend with default (5.0) during cold start
+                observed = (stats["successes"] / total) * 10
+                weight = total / 5
+                return round(5.0 * (1 - weight) + observed * weight, 1)
+        return 5.0  # Default for new journalists
+
     ratings = load_learned_ratings()
 
     if source_id not in ratings:
@@ -1671,6 +1719,285 @@ def get_reliability_score(source_id: str, confidence: int) -> float:
     """
     rating = get_learned_rating(source_id)
     return rating * (confidence / 100)
+
+
+# =============================================================================
+# JOURNALIST SCORING AND QUOTA
+# =============================================================================
+
+def update_journalist_bias_score(journalist_id: str, original_length: int, fact_length: int):
+    """Update a journalist's bias score based on how much text the AI stripped.
+
+    Bias score = 10 - (avg_percentage_of_text_removed x 10)
+    Higher = more neutral writing (less stripping needed).
+    """
+    journalists = load_journalists()
+    if journalist_id not in journalists:
+        return
+
+    profile = journalists[journalist_id]
+
+    # Track running average of text removed percentage
+    if original_length > 0:
+        pct_removed = (original_length - fact_length) / original_length
+    else:
+        pct_removed = 0
+
+    # Use simple running average via stats
+    stats = profile.get("stats", {})
+    prev_count = stats.get("bias_samples", 0)
+    prev_avg = stats.get("bias_avg_removed", 0)
+
+    new_count = prev_count + 1
+    new_avg = ((prev_avg * prev_count) + pct_removed) / new_count
+
+    stats["bias_samples"] = new_count
+    stats["bias_avg_removed"] = round(new_avg, 4)
+    profile["stats"] = stats
+
+    # Update bias rating
+    profile["ratings"]["bias"] = round(10 - (new_avg * 10), 1)
+
+    journalists[journalist_id] = profile
+    save_journalists(journalists)
+
+
+def get_journalist_quota(journalist_id: str) -> int:
+    """Get daily submission quota based on accuracy score.
+
+    | Accuracy Score | Daily Quota |
+    |---------------|-------------|
+    | No data (new) | 3           |
+    | < 5.0         | 2           |
+    | 5.0 - 7.0     | 5           |
+    | 7.0 - 9.0     | 10          |
+    | > 9.0         | 20          |
+    """
+    info = get_journalist_info(journalist_id)
+    if not info:
+        return 0
+
+    stats = info.get("stats", {})
+    total = stats.get("successes", 0) + stats.get("failures", 0)
+
+    if total == 0:
+        return 3  # New journalist
+
+    accuracy = info.get("ratings", {}).get("accuracy", 5.0)
+
+    if accuracy < 5.0:
+        return 2
+    elif accuracy < 7.0:
+        return 5
+    elif accuracy < 9.0:
+        return 10
+    else:
+        return 20
+
+
+def check_journalist_quota(journalist_id: str) -> bool:
+    """Check if journalist has remaining submissions for today.
+
+    Returns True if they can submit, False if quota exceeded.
+    """
+    quota = get_journalist_quota(journalist_id)
+
+    # Count today's submissions
+    submissions_dir = DATA_DIR / "submissions"
+    processed_dir = submissions_dir / "processed"
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    count = 0
+
+    # Count pending submissions from today
+    if submissions_dir.exists():
+        for f in submissions_dir.glob("*.json"):
+            try:
+                with open(f) as fh:
+                    sub = json.load(fh)
+                if sub.get("journalist_id") == journalist_id and sub.get("submitted", "").startswith(today):
+                    count += 1
+            except (json.JSONDecodeError, KeyError):
+                continue
+
+    # Count processed submissions from today
+    if processed_dir.exists():
+        for f in processed_dir.glob("*.json"):
+            try:
+                with open(f) as fh:
+                    sub = json.load(fh)
+                if sub.get("journalist_id") == journalist_id and sub.get("submitted", "").startswith(today):
+                    count += 1
+            except (json.JSONDecodeError, KeyError):
+                continue
+
+    return count < quota
+
+
+# =============================================================================
+# JOURNALIST SUBMISSION I/O
+# =============================================================================
+
+def load_pending_submissions() -> list:
+    """Load unprocessed journalist submissions from data/submissions/.
+
+    Returns list of submission dicts sorted by submission time (oldest first).
+    """
+    submissions_dir = DATA_DIR / "submissions"
+    if not submissions_dir.exists():
+        submissions_dir.mkdir(parents=True, exist_ok=True)
+        return []
+
+    submissions = []
+    for f in sorted(submissions_dir.glob("*.json")):
+        if f.name == "processed":
+            continue
+        try:
+            with open(f) as fh:
+                sub = json.load(fh)
+            sub["_file"] = str(f)  # Track file path for later move
+            submissions.append(sub)
+        except (json.JSONDecodeError, KeyError) as e:
+            log.warning(f"Invalid submission file {f.name}: {e}")
+            continue
+
+    return submissions
+
+
+def mark_submission_processed(submission: dict, processed_fact: str = None,
+                               confidence: int = None):
+    """Move a processed submission to the processed/ directory.
+
+    Updates the submission with processing results before moving.
+    """
+    file_path = Path(submission.get("_file", ""))
+    if not file_path.exists():
+        log.warning(f"Submission file not found: {file_path}")
+        return
+
+    processed_dir = DATA_DIR / "submissions" / "processed"
+    processed_dir.mkdir(parents=True, exist_ok=True)
+
+    # Update submission with processing results
+    submission["status"] = "processed"
+    submission["processed_fact"] = processed_fact
+    submission["confidence"] = confidence
+    submission["processed_at"] = datetime.now(timezone.utc).isoformat()
+
+    # Remove internal tracking field
+    submission.pop("_file", None)
+
+    # Write to processed directory
+    dest = processed_dir / file_path.name
+    with open(dest, 'w') as f:
+        json.dump(submission, f, indent=2)
+
+    # Remove from pending
+    file_path.unlink()
+
+
+def clean_old_submissions(max_age_days: int = 7):
+    """Delete processed submissions older than max_age_days.
+
+    Per whitepaper: 'We do not store raw data longer than seven days.'
+    """
+    processed_dir = DATA_DIR / "submissions" / "processed"
+    if not processed_dir.exists():
+        return
+
+    cutoff = datetime.now(timezone.utc).timestamp() - (max_age_days * 86400)
+    cleaned = 0
+
+    for f in processed_dir.glob("*.json"):
+        try:
+            with open(f) as fh:
+                sub = json.load(fh)
+            processed_at = sub.get("processed_at", sub.get("submitted", ""))
+            if processed_at:
+                ts = datetime.fromisoformat(processed_at.replace("Z", "+00:00")).timestamp()
+                if ts < cutoff:
+                    f.unlink()
+                    cleaned += 1
+        except Exception:
+            continue
+
+    if cleaned > 0:
+        log.info(f"Cleaned {cleaned} old submissions (>{max_age_days} days)")
+
+
+# =============================================================================
+# JOURNALIST DISCLOSURE FRESHNESS
+# =============================================================================
+
+def check_disclosure_freshness():
+    """Suspend journalists with stale quarterly disclosures.
+
+    Same quarterly cadence as institutional ownership audits:
+    Q1=Jan, Q2=Apr, Q3=Jul, Q4=Oct.
+
+    Journalists whose last disclosure update is from a previous quarter
+    are suspended until they update.
+    """
+    now = datetime.now(timezone.utc)
+    current_quarter = f"Q{(now.month - 1) // 3 + 1} {now.year}"
+
+    journalists = load_journalists()
+    suspended_count = 0
+
+    for jid, profile in journalists.items():
+        if profile.get("status") == "active":
+            disclosure_quarter = profile.get("disclosure_quarter", "")
+            if disclosure_quarter != current_quarter:
+                profile["status"] = "suspended_disclosure"
+                suspended_count += 1
+                log.warning(
+                    f"Journalist {profile.get('name', jid)} suspended: "
+                    f"disclosure from {disclosure_quarter}, current is {current_quarter}"
+                )
+
+    if suspended_count > 0:
+        save_journalists(journalists)
+        log.info(f"Suspended {suspended_count} journalist(s) for stale disclosures")
+
+    return suspended_count
+
+
+def update_journalist_disclosure(journalist_id: str, financial_disclosures: list):
+    """Update a journalist's financial disclosures and reactivate if suspended.
+
+    Called when a journalist submits updated disclosures.
+    """
+    journalists = load_journalists()
+    if journalist_id not in journalists:
+        log.warning(f"Cannot update disclosure: journalist {journalist_id} not found")
+        return
+
+    profile = journalists[journalist_id]
+    now = datetime.now(timezone.utc)
+    current_quarter = f"Q{(now.month - 1) // 3 + 1} {now.year}"
+
+    profile["financial_disclosures"] = financial_disclosures
+    profile["last_disclosure_update"] = now.isoformat()
+    profile["disclosure_quarter"] = current_quarter
+
+    # Recalculate owner from new disclosures
+    owner = "Self-funded"
+    owner_display = "Self-funded (100%)"
+    for disclosure in financial_disclosures:
+        if disclosure.get("percentage", 0) > 50:
+            owner = disclosure["entity"]
+            owner_display = f"{disclosure['entity']} ({disclosure['percentage']}%)"
+            break
+
+    profile["owner"] = owner
+    profile["owner_display"] = owner_display
+
+    # Reactivate if suspended for disclosure
+    if profile.get("status") == "suspended_disclosure":
+        profile["status"] = "active"
+        log.info(f"Journalist {profile.get('name', journalist_id)} reactivated after disclosure update")
+
+    journalists[journalist_id] = profile
+    save_journalists(journalists)
 
 
 def get_display_rating(source_id: str) -> str:
