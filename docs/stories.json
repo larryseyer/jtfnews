@@ -104,6 +104,19 @@
       "audio": "../audio/archive/2026-03-02/8644cc3c67db.mp3",
       "published_at": "2026-03-02T19:45:25.794545+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-02-008",
+      "hash": "7baff492e4ad",
+      "fact": "Oil prices rise following attacks on ships near the Strait of Hormuz.",
+      "source": "ABC News Australia 1.8|9.0 \u00b7 BBC News 5.5|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-02/5205b24f40b2.mp3",
+      "published_at": "2026-03-02T21:00:42.571699+00:00",
+      "status": "published"
     }
   ]
 }
