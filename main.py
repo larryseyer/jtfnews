@@ -2087,6 +2087,26 @@ def get_source_for_rss(source_id: str) -> dict:
     Format matches spec: accuracy, bias, speed, consensus as attributes,
     owners as nested elements with name and percent.
     """
+    # Handle journalist sources
+    if source_id.startswith("journalist:"):
+        journalist_id = source_id.split(":", 1)[1]
+        info = get_journalist_info(journalist_id)
+        if info:
+            ratings = info.get("ratings", {})
+            owners = [{"name": info.get("owner_display", "Undisclosed"), "percent": "100.0"}]
+            return {
+                "name": get_journalist_display_name(journalist_id),
+                "url": "",
+                "accuracy": f"{ratings.get('accuracy', 5.0):.1f}",
+                "bias": f"{ratings.get('bias', 5.0):.1f}",
+                "speed": f"{ratings.get('speed', 5.0):.1f}",
+                "consensus": f"{ratings.get('consensus', 5.0):.1f}",
+                "control_type": "journalist",
+                "owners": owners
+            }
+        return {"name": source_id, "url": "", "accuracy": "0.0", "bias": "0.0",
+                "speed": "0.0", "consensus": "0.0", "control_type": "journalist", "owners": []}
+
     # Find source in config
     source_config = None
     for source in CONFIG["sources"]:
@@ -6908,6 +6928,74 @@ def apply_ownership_changes(changes: list):
     log.info(f"Config saved to {config_file}")
 
 
+def generate_leaderboard():
+    """Calculate Top 10 journalist leaderboard and push to GitHub Pages.
+
+    Composite score = (accuracy x 4 + bias x 3 + speed x 2 + consensus x 1) / 10
+
+    Only includes active journalists with at least 1 verified submission.
+    Pushed to docs/journalists.json for the public website.
+    """
+    journalists = load_journalists()
+
+    # Filter: active journalists with verified submissions
+    eligible = []
+    for jid, profile in journalists.items():
+        if profile.get("status") == "active" and profile.get("stats", {}).get("verified", 0) > 0:
+            ratings = profile.get("ratings", {})
+            composite = (
+                ratings.get("accuracy", 0) * 4 +
+                ratings.get("bias", 0) * 3 +
+                ratings.get("speed", 0) * 2 +
+                ratings.get("consensus", 0) * 1
+            ) / 10
+
+            eligible.append({
+                "rank": 0,  # Set after sorting
+                "name": profile.get("name", jid),
+                "affiliation": profile.get("affiliation", "Independent"),
+                "location": profile.get("location", ""),
+                "accuracy": ratings.get("accuracy", 0),
+                "bias": ratings.get("bias", 0),
+                "speed": ratings.get("speed", 0),
+                "consensus": ratings.get("consensus", 0),
+                "composite": round(composite, 2),
+                "verified": profile.get("stats", {}).get("verified", 0),
+                "owner_display": profile.get("owner_display", "Undisclosed"),
+                "registered": profile.get("registered", ""),
+                "data_points": profile.get("stats", {}).get("successes", 0) + profile.get("stats", {}).get("failures", 0)
+            })
+
+    # Sort by composite score (descending), take top 10
+    eligible.sort(key=lambda x: x["composite"], reverse=True)
+    top_10 = eligible[:10]
+
+    # Assign ranks
+    for i, entry in enumerate(top_10):
+        entry["rank"] = i + 1
+
+    # Write to local docs/journalists.json
+    leaderboard_data = {
+        "leaderboard": top_10,
+        "total_journalists": len(journalists),
+        "total_active": sum(1 for j in journalists.values() if j.get("status") == "active"),
+        "total_verified_stories": sum(j.get("stats", {}).get("verified", 0) for j in journalists.values()),
+        "last_updated": datetime.now(timezone.utc).isoformat()
+    }
+
+    leaderboard_file = BASE_DIR / "docs" / "journalists.json"
+    with open(leaderboard_file, 'w') as f:
+        json.dump(leaderboard_data, f, indent=2)
+
+    # Push to GitHub Pages
+    push_to_ghpages(
+        [(leaderboard_file, "journalists.json")],
+        "Update journalist leaderboard"
+    )
+
+    log.info(f"Leaderboard updated: {len(top_10)} journalists ranked")
+
+
 def check_midnight_archive():
     """Check if it's time to archive and cleanup (midnight GMT = 00:00 UTC)."""
     global _midnight_archive_done_for
@@ -6940,6 +7028,9 @@ def check_midnight_archive():
 
         # 4. Cleanup old data
         cleanup_old_data(days=7)  # Delete raw data older than 7 days
+
+        # 5. Update journalist leaderboard (daily at midnight alongside archive)
+        generate_leaderboard()
 
         # Clear the log file for the new day
         log_file = BASE_DIR / "jtf.log"
@@ -6988,6 +7079,28 @@ def main():
 
         log.info("Ownership audit complete. Continuing startup...")
         log.info("-" * 40)
+
+    # Also check journalist disclosure freshness (same quarterly cadence)
+    check_disclosure_freshness()
+
+    # Journalist disclosure audit report
+    journalists = load_journalists()
+    if journalists:
+        now = datetime.now(timezone.utc)
+        current_quarter = f"Q{(now.month - 1) // 3 + 1} {now.year}"
+        stale_journalists = []
+        for jid, profile in journalists.items():
+            if profile.get("disclosure_quarter") != current_quarter:
+                stale_journalists.append(profile)
+        if stale_journalists:
+            log.info(f"{'='*60}")
+            log.info(f"JOURNALISTS WITH STALE DISCLOSURES ({len(stale_journalists)})")
+            log.info(f"{'='*60}")
+            for j in stale_journalists:
+                log.info(f"  {j['name']} ({j['github_username']}) — last: {j.get('disclosure_quarter', 'never')}")
+            log.info(f"These journalists are suspended until they update disclosures.")
+        else:
+            log.info(f"All journalist disclosures current for {current_quarter}.")
 
     # Validate all services before starting
     if not validate_services():
