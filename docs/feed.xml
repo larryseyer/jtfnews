@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 19:44:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 19:45:25 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>169 people killed in a village in a remote area of South Sudan after an insurgen...</title>
+      <description>169 people killed in a village in a remote area of South Sudan after an insurgent raid.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 02 Mar 2026 19:45:25 +0000</pubDate>
+      <guid isPermaLink="false">7460f94ae3f1</guid>
+    </item>
     <item>
       <title>President Trump stated the US acted on its 'last, best chance' to hit Iran.</title>
       <description>President Trump stated the US acted on its 'last, best chance' to hit Iran.</description>
@@ -1108,18 +1120,6 @@
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 00:04:02 +0000</pubDate>
       <guid isPermaLink="false">1653d7fd5173</guid>
-    </item>
-    <item>
-      <title>former President Yoon Suk Yeol of South Korea received a life sentence for impos...</title>
-      <description>former President Yoon Suk Yeol of South Korea received a life sentence for imposing martial law.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="6.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 20 Feb 2026 00:03:50 +0000</pubDate>
-      <guid isPermaLink="false">33838b37b30d</guid>
     </item>
   </channel>
 </rss>
