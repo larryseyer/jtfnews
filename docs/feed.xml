@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 15:00:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 16:00:42 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Emmanuel Macron of France stated France will increase its nuclear arse...</title>
+      <description>President Emmanuel Macron of France stated France will increase its nuclear arsenal.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 02 Mar 2026 16:00:42 +0000</pubDate>
+      <guid isPermaLink="false">679d41301b98</guid>
+    </item>
     <item>
       <title>Israel and Hezbollah exchange fire in southern and eastern Lebanon.</title>
       <description>Israel and Hezbollah exchange fire in southern and eastern Lebanon.</description>
@@ -1108,18 +1120,6 @@
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 00:02:46 +0000</pubDate>
       <guid isPermaLink="false">62ccdabeb822</guid>
-    </item>
-    <item>
-      <title>President Trump stated that the world has 10 days to determine if Iran agrees to...</title>
-      <description>President Trump stated that the world has 10 days to determine if Iran agrees to a deal.</description>
-      <jtf:source name="BBC News" url="" accuracy="6.8" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 19 Feb 2026 23:30:33 +0000</pubDate>
-      <guid isPermaLink="false">7e23bf7be95c</guid>
     </item>
   </channel>
 </rss>
