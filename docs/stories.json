@@ -69,13 +69,13 @@
     {
       "id": "2026-03-02-005",
       "hash": "e88d0345e25a",
-      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal.",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
+      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal. and allow temporary deployment of nuclear-armed jets to European allies",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0 \u00b7 PBS NewsHour 6.0|9.0",
       "source_urls": {
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
         "France 24": "https://www.france24.com/en/"
       },
-      "audio": "../audio/archive/2026-03-02/c7a12140595f.mp3",
+      "audio": "../audio/archive/2026-03-02/c9de64d792da.mp3",
       "published_at": "2026-03-02T16:00:42.020851+00:00",
       "status": "published"
     },
@@ -90,6 +90,19 @@
       },
       "audio": "../audio/archive/2026-03-02/acb9f4144327.mp3",
       "published_at": "2026-03-02T19:44:06.917037+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-02-007",
+      "hash": "92d10c43c830",
+      "fact": "169 people killed in a village in a remote area of South Sudan after an insurgent raid.",
+      "source": "PBS NewsHour 6.1|9.0 \u00b7 BBC News 5.4|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-02/8644cc3c67db.mp3",
+      "published_at": "2026-03-02T19:45:25.794545+00:00",
       "status": "published"
     }
   ]
