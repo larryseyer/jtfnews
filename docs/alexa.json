@@ -1,5 +1,12 @@
 [
   {
+    "uid": "83b93463b209053e557ac99b7dbbe3bc",
+    "updateDate": "2026-03-02T16:00:44.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "President Emmanuel Macron of France stated France will increase its nuclear arsenal.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "75029050a5d16454f4582786899e1c63",
     "updateDate": "2026-03-02T15:00:53.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T00:03:16.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
     "mainText": "Three U.S. troops were killed and five others were seriously wounded during Iran attacks, according to the military.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "508150f07c895c9cdc319a44f210a642",
-    "updateDate": "2026-03-02T00:01:29.0Z",
-    "titleText": "JTF News: The Guardian, BBC News",
-    "mainText": "At least 20 people died when a military plane carrying banknotes crashed in Bolivia.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
