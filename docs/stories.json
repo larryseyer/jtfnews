@@ -78,6 +78,19 @@
       "audio": "../audio/archive/2026-03-02/c7a12140595f.mp3",
       "published_at": "2026-03-02T16:00:42.020851+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-02-006",
+      "hash": "1ffec2d29326",
+      "fact": "President Trump stated the US acted on its 'last, best chance' to hit Iran.",
+      "source": "France 24 4.8|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-02/acb9f4144327.mp3",
+      "published_at": "2026-03-02T19:44:06.917037+00:00",
+      "status": "published"
     }
   ]
 }
