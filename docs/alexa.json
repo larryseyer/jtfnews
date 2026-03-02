@@ -1,5 +1,12 @@
 [
   {
+    "uid": "5138873c4803e3d59fbfa7d38553bcea",
+    "updateDate": "2026-03-02T19:45:28.0Z",
+    "titleText": "JTF News: PBS NewsHour, BBC News",
+    "mainText": "169 people killed in a village in a remote area of South Sudan after an insurgent raid.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "78473e740f248872ec4bb60c45d3d3b4",
     "updateDate": "2026-03-02T19:44:08.0Z",
     "titleText": "JTF News: France 24, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T14:00:43.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
     "mainText": "The U.S. stated that Kuwait downed 3 American jets during Iranian attacks, with all crew members safely ejecting.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "3a58bd408f8d32c6802d87914e567e04",
-    "updateDate": "2026-03-02T06:30:41.0Z",
-    "titleText": "JTF News: France 24, BBC News",
-    "mainText": "At least 148 people are dead following a reported strike on a school, according to Iranian authorities.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
