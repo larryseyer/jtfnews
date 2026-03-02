@@ -333,6 +333,47 @@ When modifying overlay files that exist in BOTH locations, you MUST update BOTH:
 - OBS for streaming to YouTube (OBS WebSocket v4 for recording control)
 - GitHub Pages for public website (how-it-works, whitepaper, operations dashboard)
 
+## Journalist Submission System
+
+Independent journalists can submit original reporting via `jtfnews.org/submit`. Submissions enter the same verification pipeline as automated sources.
+
+### Key Principle
+A journalist is a source. Sources follow the methodology. The methodology does not bend.
+
+### How It Works
+1. Journalist registers at `jtfnews.org/register` (GitHub OAuth, real name, financial disclosures)
+2. Submits original reporting via web form at `jtfnews.org/submit`
+3. Submission processed by same AI (extract_fact) — identical treatment
+4. Enters queue awaiting independent corroboration (24-hour timeout)
+5. Two-source rule: journalist + unrelated source = published
+6. Financial independence check: no common majority funder between journalist and corroborating source
+
+### Journalist Source IDs
+Journalist source IDs use the prefix `journalist:` (e.g., `journalist:janedoe`). Functions that handle source IDs (are_sources_unrelated, get_learned_rating, record_verification_success, etc.) check for this prefix and route to journalist data.
+
+### Data Files
+| File | Purpose |
+|------|---------|
+| `data/journalists.json` | Journalist profiles, disclosures, scores |
+| `data/submissions/` | Pending submission JSON files |
+| `data/submissions/processed/` | Processed submissions (7-day retention) |
+| `docs/journalists.json` | Public leaderboard data (pushed to GitHub Pages) |
+
+### Quarterly Audit
+Journalist financial disclosures are audited on the same quarterly schedule as institutional source ownership. Stale disclosures → journalist suspended until updated.
+
+### Web Pages
+| Page | Purpose |
+|------|---------|
+| `docs/register.html` | Journalist registration (GitHub OAuth) |
+| `docs/submit.html` | Submission form for authenticated journalists |
+| `docs/journalists.html` | Top 10 contributor leaderboard |
+
+### OAuth Setup
+GitHub OAuth proxy deployed as a Cloudflare Worker. See `documentation/oauth-setup.md` for deployment instructions. OAuth config placeholders in register.html and submit.html need real values:
+- `GITHUB_CLIENT_ID` — from GitHub OAuth app
+- `OAUTH_PROXY_URL` — Cloudflare Worker URL
+
 ## Constraints
 - No APIs, no paywalls, respect robots.txt
 - No ads, no tracking, no long-term raw data storage
