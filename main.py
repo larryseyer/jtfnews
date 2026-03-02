@@ -1221,12 +1221,179 @@ def get_ordinal_suffix(n: int) -> str:
     return {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
 
 
-def are_sources_unrelated(source1_id: str, source2_id: str) -> bool:
-    """Check if two sources are unrelated (different owners)."""
-    sources = {s["id"]: s for s in CONFIG["sources"]}
+# =============================================================================
+# JOURNALIST DATA MANAGEMENT
+# =============================================================================
 
-    s1 = sources.get(source1_id)
-    s2 = sources.get(source2_id)
+def load_journalists() -> dict:
+    """Load journalist profiles from data/journalists.json."""
+    journalists_file = DATA_DIR / "journalists.json"
+    if journalists_file.exists():
+        with open(journalists_file) as f:
+            data = json.load(f)
+        return data.get("journalists", {})
+    return {}
+
+
+def save_journalists(journalists: dict):
+    """Save journalist profiles to data/journalists.json."""
+    journalists_file = DATA_DIR / "journalists.json"
+    data = {
+        "journalists": journalists,
+        "last_updated": datetime.now(timezone.utc).isoformat()
+    }
+    with open(journalists_file, 'w') as f:
+        json.dump(data, f, indent=2)
+
+
+def get_journalist_info(journalist_id: str) -> dict:
+    """Load a single journalist's profile.
+
+    Args:
+        journalist_id: GitHub username of the journalist
+
+    Returns:
+        Journalist profile dict, or None if not found
+    """
+    journalists = load_journalists()
+    return journalists.get(journalist_id)
+
+
+def get_journalist_display_name(journalist_id: str) -> str:
+    """Format journalist name for display.
+
+    Returns: "Jane Doe, Independent – Portland, OR" or "Unknown Journalist"
+    """
+    info = get_journalist_info(journalist_id)
+    if not info:
+        return "Unknown Journalist"
+
+    name = info.get("name", journalist_id)
+    affiliation = info.get("affiliation", "Independent")
+    location = info.get("location", "")
+
+    if location:
+        return f"{name}, {affiliation} – {location}"
+    return f"{name}, {affiliation}"
+
+
+def register_journalist(github_username: str, name: str, location: str,
+                        affiliation: str, financial_disclosures: list) -> dict:
+    """Register a new journalist.
+
+    Args:
+        github_username: GitHub username (serves as journalist_id)
+        name: Full legal name
+        location: City, state/province, country
+        affiliation: Employer or "Independent"
+        financial_disclosures: List of dicts with entity, relationship, percentage
+
+    Returns:
+        The created journalist profile dict
+    """
+    journalists = load_journalists()
+
+    if github_username in journalists:
+        log.warning(f"Journalist {github_username} already registered")
+        return journalists[github_username]
+
+    # Determine majority funder (owner) from disclosures
+    owner = "Self-funded"
+    owner_display = "Self-funded (100%)"
+    for disclosure in financial_disclosures:
+        if disclosure.get("percentage", 0) > 50:
+            owner = disclosure["entity"]
+            owner_display = f"{disclosure['entity']} ({disclosure['percentage']}%)"
+            break
+
+    now = datetime.now(timezone.utc).isoformat()
+    current_quarter = f"Q{(datetime.now(timezone.utc).month - 1) // 3 + 1} {datetime.now(timezone.utc).year}"
+
+    profile = {
+        "github_username": github_username,
+        "name": name,
+        "location": location,
+        "affiliation": affiliation,
+        "owner": owner,
+        "owner_display": owner_display,
+        "financial_disclosures": financial_disclosures,
+        "registered": now,
+        "last_disclosure_update": now,
+        "disclosure_quarter": current_quarter,
+        "status": "active",
+        "ratings": {
+            "accuracy": 5.0,
+            "bias": 5.0,
+            "speed": 5.0,
+            "consensus": 5.0
+        },
+        "stats": {
+            "submitted": 0,
+            "verified": 0,
+            "expired": 0,
+            "successes": 0,
+            "failures": 0
+        },
+        "submission_quota": 3,
+        "control_type": "journalist",
+        "institutional_holders": []
+    }
+
+    journalists[github_username] = profile
+    save_journalists(journalists)
+    log.info(f"Registered journalist: {name} ({github_username})")
+    return profile
+
+
+# =============================================================================
+# UNIFIED SOURCE LOOKUP
+# =============================================================================
+
+def get_source_info(source_id: str) -> dict:
+    """Unified source lookup — works for both institutional sources and journalists.
+
+    Args:
+        source_id: Either a config source ID ("bbc", "npr") or "journalist:username"
+
+    Returns:
+        Dict with at minimum: owner, institutional_holders, control_type, name
+        Returns None if source not found.
+    """
+    if source_id.startswith("journalist:"):
+        journalist_id = source_id.split(":", 1)[1]
+        info = get_journalist_info(journalist_id)
+        if info:
+            return {
+                "id": source_id,
+                "name": get_journalist_display_name(journalist_id),
+                "owner": info["owner"],
+                "owner_display": info.get("owner_display", info["owner"]),
+                "control_type": "journalist",
+                "institutional_holders": info.get("institutional_holders", []),
+                "ratings": info.get("ratings", {}),
+                "status": info.get("status", "active")
+            }
+        return None
+
+    # Institutional source from config.json
+    for source in CONFIG["sources"]:
+        if source["id"] == source_id:
+            return source
+
+    return None
+
+
+def are_sources_unrelated(source1_id: str, source2_id: str) -> bool:
+    """Check if two sources are unrelated (different owners).
+
+    Works for institutional sources (from config.json), journalists
+    (from journalists.json), and cross-type pairs (journalist + institutional).
+
+    Rule: "No common majority shareholder is the minimum threshold."
+    This applies identically regardless of source type.
+    """
+    s1 = get_source_info(source1_id)
+    s2 = get_source_info(source2_id)
 
     if not s1 or not s2:
         return False
