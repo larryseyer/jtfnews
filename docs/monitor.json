@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-03-02T21:21:02.033282+00:00",
-  "uptime_start": "2026-03-02T19:42:51.560899+00:00",
-  "uptime_seconds": 5890,
-  "availability_pct": 49.1,
+  "timestamp": "2026-03-02T21:24:14.670450+00:00",
+  "web_refresh_at": "2026-03-02T21:24:14.670450+00:00",
+  "uptime_start": "2026-03-02T21:23:22.745523+00:00",
+  "uptime_seconds": 52,
+  "availability_pct": 49.0,
   "cycle": {
-    "number": 4,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 1,
+    "duration_seconds": 51.2,
+    "headlines_scraped": 173,
+    "headlines_processed": 11,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 4
   },
   "api_costs": {
     "today": {
       "claude": {
-        "calls": 644,
-        "cost_usd": 0.26260400000000017,
+        "calls": 658,
+        "cost_usd": 0.2679065000000001,
         "details": {
-          "input_tokens": 633956,
-          "output_tokens": 83292
+          "input_tokens": 646796,
+          "output_tokens": 84966
         }
       },
       "elevenlabs": {
@@ -29,34 +30,26 @@
         }
       }
     },
-    "total_usd": 0.2912,
+    "total_usd": 0.2965,
     "month_estimate_usd": 9.77,
     "daily_budget": 1.61,
-    "budget_pct": 18.1
+    "budget_pct": 18.4
   },
   "queue": {
-    "size": 43,
-    "oldest_item_age_hours": 24.3
+    "size": 45,
+    "oldest_item_age_hours": 22.9
   },
   "stories_today": 9,
   "sources": {
     "total": 20,
-    "successful": 19,
-    "failed": [
-      "White House"
-    ]
+    "successful": 20,
+    "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-02T21:00:15.488066+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/news/"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 9,
+    "next_cycle_minutes": 5,
     "degraded_services": []
   },
   "daily_digest": {
