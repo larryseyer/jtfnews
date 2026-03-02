@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 16:00:42 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 19:44:06 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump stated the US acted on its 'last, best chance' to hit Iran.</title>
+      <description>President Trump stated the US acted on its 'last, best chance' to hit Iran.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 02 Mar 2026 19:44:06 +0000</pubDate>
+      <guid isPermaLink="false">78f431921660</guid>
+    </item>
     <item>
       <title>President Emmanuel Macron of France stated France will increase its nuclear arse...</title>
       <description>President Emmanuel Macron of France stated France will increase its nuclear arsenal.</description>
@@ -1108,18 +1120,6 @@
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 00:03:50 +0000</pubDate>
       <guid isPermaLink="false">33838b37b30d</guid>
-    </item>
-    <item>
-      <title>The U.S. women's ice hockey team won Olympic gold against Canada.</title>
-      <description>The U.S. women's ice hockey team won Olympic gold against Canada.</description>
-      <jtf:source name="CBC News" url="" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="" accuracy="3.8" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 20 Feb 2026 00:02:46 +0000</pubDate>
-      <guid isPermaLink="false">62ccdabeb822</guid>
     </item>
   </channel>
 </rss>
