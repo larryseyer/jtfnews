@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 19:45:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 21:00:42 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oil prices rise following attacks on ships near the Strait of Hormuz.</title>
+      <description>Oil prices rise following attacks on ships near the Strait of Hormuz.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 02 Mar 2026 21:00:42 +0000</pubDate>
+      <guid isPermaLink="false">35fcfe43e2f2</guid>
+    </item>
     <item>
       <title>169 people killed in a village in a remote area of South Sudan after an insurgen...</title>
       <description>169 people killed in a village in a remote area of South Sudan after an insurgent raid.</description>
@@ -1108,18 +1120,6 @@
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 02:00:48 +0000</pubDate>
       <guid isPermaLink="false">f2be2fac610f</guid>
-    </item>
-    <item>
-      <title>President Trump stated the world has 10 days to determine if Iran agrees to a de...</title>
-      <description>President Trump stated the world has 10 days to determine if Iran agrees to a deal.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="7.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="7.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 20 Feb 2026 00:04:02 +0000</pubDate>
-      <guid isPermaLink="false">1653d7fd5173</guid>
     </item>
   </channel>
 </rss>
