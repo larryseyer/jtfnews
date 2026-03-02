@@ -1,5 +1,12 @@
 [
   {
+    "uid": "64421d650c299e5010a22d9fb9b242d0",
+    "updateDate": "2026-03-02T21:00:44.0Z",
+    "titleText": "JTF News: ABC News Australia, BBC News",
+    "mainText": "Oil prices rise following attacks on ships near the Strait of Hormuz.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "5138873c4803e3d59fbfa7d38553bcea",
     "updateDate": "2026-03-02T19:45:28.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T15:00:53.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Israel and Hezbollah exchange fire in southern and eastern Lebanon.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "13925f95517a4a66e6ab44c57d87ada4",
-    "updateDate": "2026-03-02T14:00:43.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "The U.S. stated that Kuwait downed 3 American jets during Iranian attacks, with all crew members safely ejecting.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
