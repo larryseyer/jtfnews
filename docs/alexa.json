@@ -1,5 +1,12 @@
 [
   {
+    "uid": "78473e740f248872ec4bb60c45d3d3b4",
+    "updateDate": "2026-03-02T19:44:08.0Z",
+    "titleText": "JTF News: France 24, ABC News Australia",
+    "mainText": "President Trump stated the US acted on its 'last, best chance' to hit Iran.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "83b93463b209053e557ac99b7dbbe3bc",
     "updateDate": "2026-03-02T16:00:44.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T06:30:41.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "At least 148 people are dead following a reported strike on a school, according to Iranian authorities.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "164529ef800f547f39fbf4a058905675",
-    "updateDate": "2026-03-02T00:03:16.0Z",
-    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
-    "mainText": "Three U.S. troops were killed and five others were seriously wounded during Iran attacks, according to the military.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
