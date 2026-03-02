@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit | JTF News</title>
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Submit original reporting to JTF News. Your facts are processed through our methodology: AI strips editorial language, two independent sources required for publication.">
+    <meta name="keywords" content="submit news, JTF News submission, fact submission, citizen journalism, verified reporting">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/submit.html">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Submit | JTF News">
+    <meta property="og:description" content="Submit original reporting to JTF News. Your facts are processed through our methodology: AI strips editorial language, two independent sources required for publication.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jtfnews.org/submit.html">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Submit | JTF News">
+    <meta name="twitter:description" content="Submit original reporting to JTF News. Your facts are processed through our methodology.">
+    <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Submit-specific styles -->
+    <style>
+        .subtitle {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Auth Section */
+        .auth-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .auth-section p {
+            color: #94a3b8;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            font-size: 16px;
+        }
+        .github-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .auth-note {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 12px;
+        }
+        .auth-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .auth-status--ok {
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+        }
+        .auth-status__dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+        }
+
+        /* Quota Bar */
+        .quota-bar {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 14px 20px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .quota-bar__text {
+            color: #94a3b8;
+        }
+        .quota-bar__count {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+        .quota-bar__count--exhausted {
+            color: #ef4444;
+        }
+
+        /* Form Styles */
+        .submit-form {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .form-group label .required {
+            color: #ef4444;
+            margin-left: 2px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #60a5fa;
+        }
+        .form-input::placeholder {
+            color: #475569;
+        }
+        textarea.form-input {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-hint {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        /* Checkbox Groups */
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .checkbox-group input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            background: rgba(15, 23, 42, 0.8);
+            cursor: pointer;
+            position: relative;
+            margin-top: 2px;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+        .checkbox-group input[type="checkbox"]:checked {
+            background: #60a5fa;
+            border-color: #60a5fa;
+        }
+        .checkbox-group input[type="checkbox"]:checked::after {
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .checkbox-group label {
+            color: #94a3b8;
+            font-size: 13px;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+
+        /* Submit Button Area */
+        .form-actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .form-actions .btn {
+            min-width: 200px;
+            padding: 14px 32px;
+            font-size: 16px;
+        }
+        .form-actions .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Status Messages */
+        .message {
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+            display: none;
+        }
+        .message--success {
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+        .message--error {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+        .message--info {
+            background: rgba(96, 165, 250, 0.15);
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            color: #60a5fa;
+        }
+        .message--warning {
+            background: rgba(234, 179, 8, 0.15);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            color: #eab308;
+        }
+        .message a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        /* Philosophy Quote */
+        .philosophy-quote {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid #d4af37;
+            padding: 15px 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__logo">
+            <img src="assets/logo-horizontal-dark.svg" alt="JTF News">
+        </a>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="journalists.html">Contributors</a></li>
+            <li><a href="submit.html" aria-current="page">Submit</a></li>
+        </ul>
+        <button class="site-nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav-overlay').classList.add('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+<div id="nav-overlay" class="site-nav__overlay">
+    <button class="site-nav__close" aria-label="Close menu" onclick="this.parentElement.classList.remove('open')">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="sources.html">Sources</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="archive.html">Archive</a>
+    <a href="corrections.html">Corrections</a>
+    <a href="journalists.html">Contributors</a>
+    <a href="submit.html" aria-current="page">Submit</a>
+</div>
+
+<!-- State: Not Authenticated (Hero + Sign In) -->
+<div id="state-unauth">
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">Submit Original Reporting</h1>
+            <p class="hero__subtitle">Your facts. Our methodology. Full verification.</p>
+            <p class="hero__desc">Submit verifiable facts through the JTF methodology. AI strips all editorial language. Only what happened, where, when, and how many remains. Two independent sources required for publication.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="auth-section">
+            <p>Authenticate with GitHub to submit stories. Your GitHub identity is used for attribution, submission tracking, and transparency.</p>
+            <button id="github-login-btn" class="btn btn--secondary github-btn" onclick="startOAuth()">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                Sign in with GitHub
+            </button>
+            <p class="auth-note">We only request public profile access. No private data is read or stored.</p>
+        </div>
+    </section>
+</div>
+
+<!-- State: Not Registered -->
+<div id="state-not-registered" style="display: none;">
+    <section class="container">
+        <div style="text-align: center; margin: 60px 0;">
+            <h1 style="color: #d4af37; margin-bottom: 16px;">Registration Required</h1>
+            <div class="auth-status auth-status--ok">
+                <span class="auth-status__dot"></span>
+                Authenticated as <strong id="unregistered-username"></strong>
+            </div>
+            <div class="message message--info" style="display: block; max-width: 500px; margin: 20px auto;">
+                You need to register as a contributor before submitting stories. Registration requires financial disclosures and acknowledgment of the JTF methodology.
+            </div>
+            <a href="register.html" class="btn btn--primary" style="margin-top: 12px;">Register as Contributor</a>
+        </div>
+    </section>
+</div>
+
+<!-- State: Suspended -->
+<div id="state-suspended" style="display: none;">
+    <section class="container">
+        <div style="text-align: center; margin: 60px 0;">
+            <h1 style="color: #d4af37; margin-bottom: 16px;">Account Suspended</h1>
+            <div class="auth-status" style="background: rgba(234, 179, 8, 0.15); color: #eab308;">
+                <span class="auth-status__dot" style="background: #eab308;"></span>
+                Authenticated as <strong id="suspended-username"></strong>
+            </div>
+            <div class="message message--warning" style="display: block; max-width: 500px; margin: 20px auto;">
+                Your contributor account has been suspended. This may be because your financial disclosures are out of date or due to a policy violation. Please update your disclosures to restore access.
+            </div>
+            <a href="register.html" class="btn btn--primary" style="margin-top: 12px;">Update Disclosures</a>
+        </div>
+    </section>
+</div>
+
+<!-- State: Active Journalist (Submission Form) -->
+<div id="state-active" style="display: none;">
+    <section class="container">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #d4af37; margin-bottom: 16px;">Submit a Story</h1>
+            <div class="auth-status auth-status--ok">
+                <span class="auth-status__dot"></span>
+                Authenticated as <strong id="active-username"></strong>
+            </div>
+        </div>
+
+        <!-- Status Messages -->
+        <div id="msg-success" class="message message--success"></div>
+        <div id="msg-error" class="message message--error"></div>
+
+        <!-- Quota Display -->
+        <div class="quota-bar" id="quota-bar">
+            <span class="quota-bar__text">Daily submission quota:</span>
+            <span class="quota-bar__count" id="quota-count">Loading...</span>
+        </div>
+
+        <!-- Submission Form -->
+        <form id="submit-form" class="submit-form" onsubmit="return handleSubmit(event)">
+
+            <!-- Event Description -->
+            <div class="form-group">
+                <label for="event-description">Event Description <span class="required">*</span></label>
+                <textarea id="event-description" class="form-input" rows="5" placeholder="What happened? State the facts: what, where, when, who, how many." required></textarea>
+                <p class="form-hint">Stick to verifiable facts. The AI will strip any opinions, adjectives, or speculation.</p>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="event-location">Location <span class="required">*</span></label>
+                <input type="text" id="event-location" class="form-input" placeholder="Where did it occur?" required>
+            </div>
+
+            <!-- Date/Time -->
+            <div class="form-group">
+                <label for="event-date">Date and Time <span class="required">*</span></label>
+                <input type="datetime-local" id="event-date" class="form-input" required>
+            </div>
+
+            <!-- People Involved -->
+            <div class="form-group">
+                <label for="people-involved">People Involved</label>
+                <input type="text" id="people-involved" class="form-input" placeholder="Who was formally involved? Use official titles.">
+                <p class="form-hint">Use official titles: President [surname], Senator [surname], Judge [surname] of the [court].</p>
+            </div>
+
+            <!-- Quantifiable Outcomes -->
+            <div class="form-group">
+                <label for="quantifiable-outcomes">Quantifiable Outcomes</label>
+                <input type="text" id="quantifiable-outcomes" class="form-input" placeholder="Numbers: casualties, dollar amounts, vote counts">
+            </div>
+
+            <!-- Supporting Evidence -->
+            <div class="form-group">
+                <label for="supporting-evidence">Supporting Evidence</label>
+                <textarea id="supporting-evidence" class="form-input" rows="3" placeholder="URLs, document references, public records"></textarea>
+                <p class="form-hint">Optional. One URL or reference per line.</p>
+            </div>
+
+            <!-- Disclosure Confirmation -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="disclosure-current" required>
+                <label for="disclosure-current">My financial disclosures are current as of this quarter</label>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-actions">
+                <button type="submit" id="submit-btn" class="btn btn--primary">Submit Story</button>
+            </div>
+        </form>
+
+        <div class="philosophy-quote">
+            "Two sources. Different owners. Strip the adjectives. State the facts. Stop."
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <ul class="site-footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="journalists.html">Contributors</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="monitor.html">Dashboard</a></li>
+            <li><a href="feed.xml">RSS</a></li>
+            <li><a href="podcast.xml">Podcast</a></li>
+        </ul>
+        <p class="site-footer__tagline">The methodology belongs to no one. It serves everyone.</p>
+        <p class="site-footer__copy">
+            <a href="https://github.com/JTFNews/jtfnews">GitHub</a> &middot;
+            <a href="https://github.com/sponsors/larryseyer">Support</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // ============================================================
+    // OAuth Configuration
+    // ============================================================
+    const GITHUB_CLIENT_ID = 'PLACEHOLDER_CLIENT_ID';
+    const OAUTH_PROXY_URL = 'PLACEHOLDER_PROXY_URL';
+    const GITHUB_REPO_OWNER = 'JTFNews';
+    const GITHUB_REPO_NAME = 'jtfnews';
+
+    // ============================================================
+    // State
+    // ============================================================
+    let githubToken = null;
+    let githubUser = null;
+    let journalistProfile = null;
+    let remainingQuota = 0;
+    let totalQuota = 0;
+
+    // ============================================================
+    // OAuth Flow
+    // ============================================================
+    function startOAuth() {
+        const redirectUri = window.location.origin + window.location.pathname;
+        const state = crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substring(2);
+        sessionStorage.setItem('oauth_state', state);
+        const authUrl = 'https://github.com/login/oauth/authorize'
+            + '?client_id=' + encodeURIComponent(GITHUB_CLIENT_ID)
+            + '&redirect_uri=' + encodeURIComponent(redirectUri)
+            + '&scope=public_repo'
+            + '&state=' + encodeURIComponent(state);
+        window.location.href = authUrl;
+    }
+
+    async function handleOAuthRedirect() {
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const state = params.get('state');
+
+        if (!code) return false;
+
+        // Verify state
+        const savedState = sessionStorage.getItem('oauth_state');
+        if (state !== savedState) {
+            showError('OAuth state mismatch. Please try signing in again.');
+            return false;
+        }
+        sessionStorage.removeItem('oauth_state');
+
+        // Clean URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+
+        try {
+            // Exchange code for token via proxy
+            const response = await fetch(OAUTH_PROXY_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code: code })
+            });
+
+            if (!response.ok) {
+                const errData = await response.json().catch(function() { return {}; });
+                throw new Error(errData.error || 'Token exchange failed');
+            }
+
+            const data = await response.json();
+            githubToken = data.access_token;
+            sessionStorage.setItem('github_token', githubToken);
+
+            return true;
+        } catch (e) {
+            showError('Authentication failed: ' + e.message);
+            return false;
+        }
+    }
+
+    async function fetchGitHubUser() {
+        if (!githubToken) return null;
+
+        try {
+            const response = await fetch('https://api.github.com/user', {
+                headers: { 'Authorization': 'Bearer ' + githubToken }
+            });
+
+            if (!response.ok) {
+                sessionStorage.removeItem('github_token');
+                githubToken = null;
+                return null;
+            }
+
+            return await response.json();
+        } catch (e) {
+            return null;
+        }
+    }
+
+    // ============================================================
+    // Registration Check
+    // ============================================================
+    async function fetchJournalistProfile(username) {
+        try {
+            const filePath = 'data/journalists/' + username + '.json';
+            const response = await fetch(
+                'https://api.github.com/repos/' + GITHUB_REPO_OWNER + '/' + GITHUB_REPO_NAME + '/contents/' + filePath,
+                { headers: { 'Authorization': 'Bearer ' + githubToken } }
+            );
+
+            if (!response.ok) return null;
+
+            const fileData = await response.json();
+            const decoded = decodeURIComponent(escape(atob(fileData.content)));
+            return JSON.parse(decoded);
+        } catch (e) {
+            return null;
+        }
+    }
+
+    // ============================================================
+    // Quota Calculation
+    // ============================================================
+    function getTodayDateString() {
+        var now = new Date();
+        var y = now.getUTCFullYear();
+        var m = String(now.getUTCMonth() + 1).padStart(2, '0');
+        var d = String(now.getUTCDate()).padStart(2, '0');
+        return y + '-' + m + '-' + d;
+    }
+
+    async function countTodaySubmissions(username) {
+        var today = getTodayDateString();
+        var prefix = 'sub-' + today + '-' + username + '-';
+        var count = 0;
+
+        try {
+            var response = await fetch(
+                'https://api.github.com/repos/' + GITHUB_REPO_OWNER + '/' + GITHUB_REPO_NAME + '/contents/data/submissions',
+                { headers: { 'Authorization': 'Bearer ' + githubToken } }
+            );
+
+            if (!response.ok) return 0;
+
+            var files = await response.json();
+            if (!Array.isArray(files)) return 0;
+
+            for (var i = 0; i < files.length; i++) {
+                if (files[i].name.indexOf(prefix) === 0) {
+                    count++;
+                }
+            }
+        } catch (e) {
+            // Directory may not exist yet
+            return 0;
+        }
+
+        return count;
+    }
+
+    function updateQuotaDisplay() {
+        var countEl = document.getElementById('quota-count');
+        countEl.textContent = remainingQuota + ' of ' + totalQuota + ' submissions remaining today';
+        if (remainingQuota <= 0) {
+            countEl.className = 'quota-bar__count quota-bar__count--exhausted';
+        } else {
+            countEl.className = 'quota-bar__count';
+        }
+    }
+
+    // ============================================================
+    // Submission ID Generator
+    // ============================================================
+    function generateSubmissionId(username) {
+        var today = getTodayDateString();
+        var hex = '';
+        var chars = '0123456789abcdef';
+        for (var i = 0; i < 6; i++) {
+            hex += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return 'sub-' + today + '-' + username + '-' + hex;
+    }
+
+    // ============================================================
+    // Page State Management
+    // ============================================================
+    function showState(stateId) {
+        var states = ['state-unauth', 'state-not-registered', 'state-suspended', 'state-active'];
+        for (var i = 0; i < states.length; i++) {
+            document.getElementById(states[i]).style.display = states[i] === stateId ? '' : 'none';
+        }
+    }
+
+    async function resolveState(user) {
+        githubUser = user;
+
+        // Check registration
+        var profile = await fetchJournalistProfile(user.login);
+
+        if (!profile) {
+            document.getElementById('unregistered-username').textContent = user.login;
+            showState('state-not-registered');
+            return;
+        }
+
+        journalistProfile = profile;
+
+        // Check status
+        if (profile.status !== 'active') {
+            document.getElementById('suspended-username').textContent = user.login;
+            showState('state-suspended');
+            return;
+        }
+
+        // Active journalist — show submission form
+        document.getElementById('active-username').textContent = user.login;
+
+        // Calculate quota
+        totalQuota = profile.submission_quota || 3;
+        var todayCount = await countTodaySubmissions(user.login);
+        remainingQuota = Math.max(0, totalQuota - todayCount);
+        updateQuotaDisplay();
+
+        // Disable form if quota exhausted
+        if (remainingQuota <= 0) {
+            document.getElementById('submit-btn').disabled = true;
+            document.getElementById('submit-btn').textContent = 'Quota Exhausted';
+        }
+
+        // Pre-fill event date to current local time
+        var now = new Date();
+        var localISO = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+        document.getElementById('event-date').value = localISO;
+
+        showState('state-active');
+    }
+
+    // ============================================================
+    // Form Submission
+    // ============================================================
+    async function handleSubmit(event) {
+        event.preventDefault();
+        hideMessages();
+
+        if (remainingQuota <= 0) {
+            showError('You have reached your daily submission quota. Try again tomorrow.');
+            return false;
+        }
+
+        var eventDescription = document.getElementById('event-description').value.trim();
+        var eventLocation = document.getElementById('event-location').value.trim();
+        var eventDate = document.getElementById('event-date').value;
+        var peopleInvolved = document.getElementById('people-involved').value.trim();
+        var quantifiableOutcomes = document.getElementById('quantifiable-outcomes').value.trim();
+        var supportingEvidence = document.getElementById('supporting-evidence').value.trim();
+        var disclosureCurrent = document.getElementById('disclosure-current').checked;
+
+        // Validate required fields
+        if (!eventDescription || !eventLocation || !eventDate) {
+            showError('Please fill in all required fields: event description, location, and date/time.');
+            return false;
+        }
+        if (!disclosureCurrent) {
+            showError('You must confirm your financial disclosures are current before submitting.');
+            return false;
+        }
+
+        // Parse supporting evidence into array (one per line)
+        var evidenceArray = [];
+        if (supportingEvidence) {
+            var lines = supportingEvidence.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i].trim();
+                if (line) evidenceArray.push(line);
+            }
+        }
+
+        // Generate submission
+        var submissionId = generateSubmissionId(githubUser.login);
+        var submission = {
+            id: submissionId,
+            journalist_id: githubUser.login,
+            submitted: new Date().toISOString(),
+            status: 'pending',
+            event_description: eventDescription,
+            location: eventLocation,
+            event_date: eventDate,
+            people_involved: peopleInvolved,
+            quantifiable_outcomes: quantifiableOutcomes,
+            supporting_evidence: evidenceArray,
+            processed_fact: null,
+            confidence: null
+        };
+
+        // Disable submit button
+        var submitBtn = document.getElementById('submit-btn');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        try {
+            var filePath = 'data/submissions/' + submissionId + '.json';
+            var content = btoa(unescape(encodeURIComponent(JSON.stringify(submission, null, 2))));
+
+            var body = {
+                message: 'Submission: ' + submissionId,
+                content: content,
+                branch: 'main'
+            };
+
+            var putResp = await fetch(
+                'https://api.github.com/repos/' + GITHUB_REPO_OWNER + '/' + GITHUB_REPO_NAME + '/contents/' + filePath,
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': 'Bearer ' + githubToken,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                }
+            );
+
+            if (!putResp.ok) {
+                var errData = await putResp.json().catch(function() { return {}; });
+                throw new Error(errData.message || 'GitHub API error (' + putResp.status + ')');
+            }
+
+            // Success
+            showSuccess('Your submission has entered the verification queue. If an independent source corroborates your facts within 24 hours, the story will be published.');
+
+            // Update quota
+            remainingQuota = Math.max(0, remainingQuota - 1);
+            updateQuotaDisplay();
+
+            // Reset form
+            document.getElementById('submit-form').reset();
+
+            // Re-set event date default
+            var now = new Date();
+            var localISO = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+            document.getElementById('event-date').value = localISO;
+
+            // Re-enable button if quota remains
+            if (remainingQuota > 0) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Story';
+            } else {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Quota Exhausted';
+            }
+
+        } catch (e) {
+            showError('Submission failed: ' + e.message);
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Story';
+        }
+
+        return false;
+    }
+
+    // ============================================================
+    // Messages
+    // ============================================================
+    function showSuccess(html) {
+        var el = document.getElementById('msg-success');
+        el.innerHTML = html;
+        el.style.display = 'block';
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function showError(html) {
+        var el = document.getElementById('msg-error');
+        el.innerHTML = html;
+        el.style.display = 'block';
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function hideMessages() {
+        document.getElementById('msg-success').style.display = 'none';
+        document.getElementById('msg-error').style.display = 'none';
+    }
+
+    // ============================================================
+    // Initialization
+    // ============================================================
+    (async function init() {
+        // Check for existing token in sessionStorage
+        var storedToken = sessionStorage.getItem('github_token');
+        if (storedToken) {
+            githubToken = storedToken;
+            var user = await fetchGitHubUser();
+            if (user) {
+                await resolveState(user);
+                return;
+            }
+        }
+
+        // Check for OAuth redirect
+        var authenticated = await handleOAuthRedirect();
+        if (authenticated) {
+            var user = await fetchGitHubUser();
+            if (user) {
+                await resolveState(user);
+                return;
+            }
+        }
+
+        // Default: show unauthenticated state
+        showState('state-unauth');
+    })();
+</script>
+</body>
+</html>

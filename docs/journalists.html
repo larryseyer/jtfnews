@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors | JTF News</title>
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="JTF News contributor leaderboard. Contributors scored on four metrics: Accuracy, Bias, Speed, Consensus. Numbers only. No labels.">
+    <meta name="keywords" content="JTF News contributors, contributor leaderboard, fact-based reporting, journalist scores, news accuracy">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/journalists.html">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Contributors | JTF News">
+    <meta property="og:description" content="JTF News contributor leaderboard. Scored on Accuracy, Bias, Speed, and Consensus. Numbers only. No labels.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jtfnews.org/journalists.html">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contributors | JTF News">
+    <meta name="twitter:description" content="JTF News contributor leaderboard. Scored on Accuracy, Bias, Speed, and Consensus. Numbers only. No labels.">
+    <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Contributors-specific styles -->
+    <style>
+        /* Stats bar */
+        .stats-bar {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            padding: 18px 24px;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--color-gold);
+            font-family: 'Inter', monospace;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: var(--color-text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        /* Leaderboard table */
+        .leaderboard-wrapper {
+            overflow-x: auto;
+            margin: 30px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        .leaderboard-table thead th {
+            color: #94a3b8;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 12px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
+        }
+        .leaderboard-table thead th.col-score {
+            text-align: right;
+        }
+        .leaderboard-table tbody tr {
+            transition: background 0.15s ease;
+        }
+        .leaderboard-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .leaderboard-table tbody td {
+            padding: 14px 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            vertical-align: top;
+        }
+        .leaderboard-table tbody td.col-score {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: right;
+            color: var(--color-text);
+            white-space: nowrap;
+        }
+        .leaderboard-table tbody td.col-rank {
+            color: #d4af37;
+            font-weight: 700;
+            text-align: center;
+            width: 50px;
+        }
+        .leaderboard-table tbody td.col-composite {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: right;
+            color: var(--color-gold);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .leaderboard-table tbody td.col-verified {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: right;
+            color: var(--color-blue);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* Name cell */
+        .contributor-name {
+            color: #e2e8f0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .contributor-meta {
+            color: #64748b;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        /* Funding disclosure sub-row */
+        .funding-row td {
+            padding: 0 12px 12px 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .funding-row:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .funding-disclosure {
+            font-size: 11px;
+            color: #64748b;
+            padding-left: 50px;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            margin: 30px 0;
+        }
+        .empty-state h3 {
+            color: var(--color-text-muted);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .empty-state p {
+            color: var(--color-text-dim);
+            font-size: 14px;
+        }
+
+        /* Last updated */
+        .last-updated {
+            font-size: 12px;
+            color: var(--color-text-dim);
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        /* CTA section */
+        .contributors-cta {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contributors-cta h2 {
+            color: var(--color-gold);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .contributors-cta p {
+            color: var(--color-text-muted);
+            font-size: 15px;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .stats-bar {
+                gap: 10px;
+            }
+            .stat-item {
+                padding: 14px 16px;
+                min-width: 100px;
+            }
+            .stat-value {
+                font-size: 22px;
+            }
+            .leaderboard-table thead th,
+            .leaderboard-table tbody td {
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+            .funding-disclosure {
+                padding-left: 30px;
+            }
+            .contributors-cta {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__logo">
+            <img src="assets/logo-horizontal-dark.svg" alt="JTF News">
+        </a>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="journalists.html" aria-current="page">Contributors</a></li>
+            <li><a href="submit.html">Submit</a></li>
+        </ul>
+        <button class="site-nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav-overlay').classList.add('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+<div id="nav-overlay" class="site-nav__overlay">
+    <button class="site-nav__close" aria-label="Close menu" onclick="this.parentElement.classList.remove('open')">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="sources.html">Sources</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="archive.html">Archive</a>
+    <a href="corrections.html">Corrections</a>
+    <a href="journalists.html">Contributors</a>
+    <a href="submit.html">Submit</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+        <h1 class="hero__title">Contributors</h1>
+        <p class="hero__subtitle">By the Numbers</p>
+    </div>
+</section>
+
+<div class="container" style="padding-top: 0;">
+
+    <!-- Methodology Summary -->
+    <div class="philosophy">
+        <p><strong>Contributors are scored by the same four metrics as institutional sources. Numbers only. No labels.</strong></p>
+        <p>Each contributor is evaluated on four metrics, weighted by importance:</p>
+        <ul style="margin: 10px 0 10px 20px; list-style: none; padding: 0;">
+            <li style="margin-bottom: 6px; color: var(--color-text);"><strong>Accuracy</strong> (weight: 4) &mdash; How often submitted facts are verified by independent sources.</li>
+            <li style="margin-bottom: 6px; color: var(--color-text);"><strong>Bias</strong> (weight: 3) &mdash; Editorial neutrality of submissions. Higher means less detected slant.</li>
+            <li style="margin-bottom: 6px; color: var(--color-text);"><strong>Speed</strong> (weight: 2) &mdash; How quickly facts are submitted relative to the event.</li>
+            <li style="margin-bottom: 6px; color: var(--color-text);"><strong>Consensus</strong> (weight: 1) &mdash; How often submissions align with the majority of verified sources.</li>
+        </ul>
+        <p style="margin-bottom: 0; font-size: 13px; color: var(--color-text-dim);">Composite score = (accuracy &times; 4 + bias &times; 3 + speed &times; 2 + consensus &times; 1) &divide; 10</p>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar" id="stats-bar">
+        <div class="stat-item">
+            <div class="stat-value" id="stat-total">--</div>
+            <div class="stat-label">Total Contributors</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="stat-active">--</div>
+            <div class="stat-label">Active</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="stat-verified">--</div>
+            <div class="stat-label">Verified Stories</div>
+        </div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div id="leaderboard-container">
+        <div class="leaderboard-wrapper" id="leaderboard-wrapper" style="display: none;">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th class="col-score">Accuracy</th>
+                        <th class="col-score">Bias</th>
+                        <th class="col-score">Speed</th>
+                        <th class="col-score">Consensus</th>
+                        <th class="col-score">Composite</th>
+                        <th class="col-score">Verified</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                </tbody>
+            </table>
+            <div class="last-updated" id="last-updated"></div>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <h3>No contributors yet.</h3>
+            <p>Be the first.</p>
+            <a href="register.html" class="btn btn--primary" style="display: inline-block; margin-top: 15px;">Register</a>
+        </div>
+    </div>
+
+    <!-- Become a Contributor CTA -->
+    <div class="contributors-cta">
+        <h2>Become a Contributor</h2>
+        <p>Submit verified facts. Earn your score. Join the record.</p>
+        <a href="register.html" class="btn btn--primary">Register</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <ul class="site-footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="journalists.html">Contributors</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="monitor.html">Dashboard</a></li>
+            <li><a href="feed.xml">RSS</a></li>
+            <li><a href="podcast.xml">Podcast</a></li>
+        </ul>
+        <p class="site-footer__tagline">The methodology belongs to no one. It serves everyone.</p>
+        <p class="site-footer__copy">
+            <a href="https://github.com/JTFNews/jtfnews">GitHub</a> &middot;
+            <a href="https://github.com/sponsors/larryseyer">Support</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    async function loadLeaderboard() {
+        const leaderboardWrapper = document.getElementById('leaderboard-wrapper');
+        const emptyState = document.getElementById('empty-state');
+        const leaderboardBody = document.getElementById('leaderboard-body');
+        const lastUpdated = document.getElementById('last-updated');
+        const statTotal = document.getElementById('stat-total');
+        const statActive = document.getElementById('stat-active');
+        const statVerified = document.getElementById('stat-verified');
+
+        try {
+            const response = await fetch('journalists.json?t=' + Date.now());
+            if (!response.ok) throw new Error('Not found');
+            const data = await response.json();
+
+            // Update stats bar
+            statTotal.textContent = typeof data.total_journalists === 'number' ? data.total_journalists : '--';
+            statActive.textContent = typeof data.total_active === 'number' ? data.total_active : '--';
+            statVerified.textContent = typeof data.total_verified_stories === 'number' ? data.total_verified_stories : '--';
+
+            // Check if leaderboard has entries
+            if (!data.leaderboard || data.leaderboard.length === 0) {
+                emptyState.style.display = 'block';
+                leaderboardWrapper.style.display = 'none';
+                return;
+            }
+
+            // Build table rows (top 10)
+            const top10 = data.leaderboard.slice(0, 10);
+            let html = '';
+
+            top10.forEach(function(entry, index) {
+                const rank = index + 1;
+                const name = entry.name || 'Unknown';
+                const affiliation = entry.affiliation || '';
+                const location = entry.location || '';
+                const accuracy = typeof entry.accuracy === 'number' ? entry.accuracy.toFixed(1) : '--';
+                const bias = typeof entry.bias === 'number' ? entry.bias.toFixed(1) : '--';
+                const speed = typeof entry.speed === 'number' ? entry.speed.toFixed(1) : '--';
+                const consensus = typeof entry.consensus === 'number' ? entry.consensus.toFixed(1) : '--';
+                const composite = typeof entry.composite === 'number' ? entry.composite.toFixed(1) : '--';
+                const verified = typeof entry.verified_stories === 'number' ? entry.verified_stories : '--';
+                const funding = entry.owner_display || '';
+
+                // Meta line: affiliation + location
+                let metaParts = [];
+                if (affiliation) metaParts.push(affiliation);
+                if (location) metaParts.push(location);
+                const metaLine = metaParts.join(' &middot; ');
+
+                // Main row
+                html += '<tr>';
+                html += '<td class="col-rank">' + rank + '</td>';
+                html += '<td><div class="contributor-name">' + escapeHtml(name) + '</div>';
+                if (metaLine) {
+                    html += '<div class="contributor-meta">' + metaLine + '</div>';
+                }
+                html += '</td>';
+                html += '<td class="col-score">' + accuracy + '</td>';
+                html += '<td class="col-score">' + bias + '</td>';
+                html += '<td class="col-score">' + speed + '</td>';
+                html += '<td class="col-score">' + consensus + '</td>';
+                html += '<td class="col-composite">' + composite + '</td>';
+                html += '<td class="col-verified">' + verified + '</td>';
+                html += '</tr>';
+
+                // Funding disclosure sub-row
+                if (funding) {
+                    html += '<tr class="funding-row">';
+                    html += '<td colspan="8"><div class="funding-disclosure">' + escapeHtml(funding) + '</div></td>';
+                    html += '</tr>';
+                }
+            });
+
+            leaderboardBody.innerHTML = html;
+            leaderboardWrapper.style.display = 'block';
+            emptyState.style.display = 'none';
+
+            // Last updated
+            if (data.last_updated) {
+                const date = new Date(data.last_updated);
+                const formatted = date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    timeZoneName: 'short'
+                });
+                lastUpdated.textContent = 'Last updated: ' + formatted;
+            }
+
+        } catch (e) {
+            // No data available - show empty state
+            emptyState.style.display = 'block';
+            leaderboardWrapper.style.display = 'none';
+        }
+    }
+
+    function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.appendChild(document.createTextNode(text));
+        return div.innerHTML;
+    }
+
+    // Load on page ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadLeaderboard);
+    } else {
+        loadLeaderboard();
+    }
+</script>
+</body>
+</html>

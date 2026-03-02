@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | JTF News</title>
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Register as a contributor to JTF News. Submit verified facts through our open methodology. GitHub authentication required.">
+    <meta name="keywords" content="JTF News contributor, journalist registration, fact-based reporting, citizen journalism, submit news">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/register.html">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Register | JTF News">
+    <meta property="og:description" content="Register as a contributor to JTF News. Submit verified facts through our open methodology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jtfnews.org/register.html">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Register | JTF News">
+    <meta name="twitter:description" content="Register as a contributor to JTF News. Submit verified facts through our open methodology.">
+    <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Registration-specific styles -->
+    <style>
+        .subtitle {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Auth Section */
+        .auth-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .auth-section p {
+            color: #94a3b8;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            font-size: 16px;
+        }
+        .github-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .auth-note {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 12px;
+        }
+        .auth-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .auth-status--ok {
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+        }
+        .auth-status__dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+        }
+
+        /* Form Styles */
+        .reg-form {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .form-group label .required {
+            color: #ef4444;
+            margin-left: 2px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #60a5fa;
+        }
+        .form-input::placeholder {
+            color: #475569;
+        }
+        .form-hint {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        /* Disclosure Section */
+        .disclosure-section {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .disclosure-section h3 {
+            color: #d4af37;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .disclosure-section p {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        .disclosure-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: flex-end;
+        }
+        .disclosure-row .form-group {
+            margin-bottom: 0;
+            flex: 1;
+        }
+        .disclosure-row .form-group:last-of-type {
+            flex: 0 0 100px;
+        }
+        .disclosure-remove {
+            background: none;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: background 0.2s ease;
+        }
+        .disclosure-remove:hover {
+            background: rgba(239, 68, 68, 0.15);
+        }
+        .add-disclosure-btn {
+            background: none;
+            border: 1px dashed rgba(255, 255, 255, 0.15);
+            color: #60a5fa;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            width: 100%;
+            margin-top: 8px;
+            transition: border-color 0.2s ease, background 0.2s ease;
+        }
+        .add-disclosure-btn:hover {
+            border-color: #60a5fa;
+            background: rgba(96, 165, 250, 0.05);
+        }
+
+        /* Checkbox Groups */
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .checkbox-group input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            background: rgba(15, 23, 42, 0.8);
+            cursor: pointer;
+            position: relative;
+            margin-top: 2px;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+        .checkbox-group input[type="checkbox"]:checked {
+            background: #60a5fa;
+            border-color: #60a5fa;
+        }
+        .checkbox-group input[type="checkbox"]:checked::after {
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .checkbox-group label {
+            color: #94a3b8;
+            font-size: 13px;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+
+        /* Submit Button Area */
+        .form-actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .form-actions .btn {
+            min-width: 200px;
+            padding: 14px 32px;
+            font-size: 16px;
+        }
+        .form-actions .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Status Messages */
+        .message {
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+            display: none;
+        }
+        .message--success {
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+        .message--error {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+        .message a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        /* Philosophy Quote */
+        .philosophy-quote {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid #d4af37;
+            padding: 15px 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .disclosure-row {
+                flex-wrap: wrap;
+            }
+            .disclosure-row .form-group {
+                flex: 1 1 100%;
+            }
+            .disclosure-row .form-group:last-of-type {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__logo">
+            <img src="assets/logo-horizontal-dark.svg" alt="JTF News">
+        </a>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="journalists.html">Contributors</a></li>
+            <li><a href="submit.html">Submit</a></li>
+        </ul>
+        <button class="site-nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav-overlay').classList.add('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+<div id="nav-overlay" class="site-nav__overlay">
+    <button class="site-nav__close" aria-label="Close menu" onclick="this.parentElement.classList.remove('open')">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="sources.html">Sources</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="archive.html">Archive</a>
+    <a href="corrections.html">Corrections</a>
+    <a href="journalists.html">Contributors</a>
+    <a href="submit.html">Submit</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1 class="hero__title">Register as a Contributor</h1>
+        <p class="hero__subtitle">Your facts. Our methodology. Full transparency.</p>
+        <p class="hero__desc">Contributors submit stories that are processed identically to institutional sources. The AI strips all editorial language. Only verifiable facts remain. Acknowledge the methodology, disclose your funding, and start submitting.</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="container">
+
+    <!-- Status Messages -->
+    <div id="msg-success" class="message message--success"></div>
+    <div id="msg-error" class="message message--error"></div>
+
+    <!-- Step 1: GitHub Auth -->
+    <div id="auth-section" class="auth-section">
+        <p>Authenticate with GitHub to begin registration. Your GitHub identity is used for attribution, submission tracking, and transparency.</p>
+        <button id="github-login-btn" class="btn btn--secondary github-btn" onclick="startOAuth()">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            Sign in with GitHub
+        </button>
+        <p class="auth-note">We only request public profile access. No private data is read or stored.</p>
+    </div>
+
+    <!-- Step 2: Registration Form (hidden until authenticated) -->
+    <div id="reg-form-section" style="display: none;">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <div class="auth-status auth-status--ok">
+                <span class="auth-status__dot"></span>
+                Authenticated as <strong id="auth-username"></strong>
+            </div>
+        </div>
+
+        <form id="reg-form" class="reg-form" onsubmit="return handleSubmit(event)">
+
+            <!-- Full Legal Name -->
+            <div class="form-group">
+                <label for="full-name">Full Legal Name <span class="required">*</span></label>
+                <input type="text" id="full-name" class="form-input" placeholder="e.g. Jane A. Smith" required>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Location (City, State/Province, Country) <span class="required">*</span></label>
+                <input type="text" id="location" class="form-input" placeholder="e.g. Austin, Texas, United States" required>
+            </div>
+
+            <!-- Professional Affiliation -->
+            <div class="form-group">
+                <label for="affiliation">Professional Affiliation <span class="required">*</span></label>
+                <input type="text" id="affiliation" class="form-input" value="Independent" required>
+                <p class="form-hint">Your employer or organization. Use "Independent" if self-funded.</p>
+            </div>
+
+            <!-- Financial Disclosures -->
+            <div class="disclosure-section">
+                <h3>Financial Disclosures</h3>
+                <p>List all entities that fund or could influence your reporting. This information is displayed publicly alongside your submissions, just as institutional source ownership is disclosed.</p>
+                <div id="disclosure-rows">
+                    <!-- Initial row -->
+                    <div class="disclosure-row" data-row="0">
+                        <div class="form-group">
+                            <label>Entity Name</label>
+                            <input type="text" class="form-input disclosure-entity" placeholder="e.g. Self, Acme Corp">
+                        </div>
+                        <div class="form-group">
+                            <label>Relationship</label>
+                            <input type="text" class="form-input disclosure-relationship" placeholder="e.g. Employer, Investor">
+                        </div>
+                        <div class="form-group">
+                            <label>%</label>
+                            <input type="number" class="form-input disclosure-pct" placeholder="100" min="0" max="100">
+                        </div>
+                        <button type="button" class="disclosure-remove" onclick="removeDisclosureRow(this)" title="Remove row">&times;</button>
+                    </div>
+                </div>
+                <button type="button" class="add-disclosure-btn" onclick="addDisclosureRow()">+ Add disclosure</button>
+            </div>
+
+            <!-- Methodology Acknowledgment -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="ack-methodology" required>
+                <label for="ack-methodology">Your submission will be processed identically to any institutional source. The AI will strip all adjectives, editorial language, and speculation. Only verifiable facts (what, where, when, who, how many) will remain. Your original text will not appear as-is. If the facts cannot be corroborated by an independent source within 24 hours, the story will not be published.</label>
+            </div>
+
+            <!-- CC-BY-SA License -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="ack-license" required>
+                <label for="ack-license">I agree that extracted facts from my submissions are licensed CC-BY-SA 4.0</label>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-actions">
+                <button type="submit" id="submit-btn" class="btn btn--primary">Register as Contributor</button>
+            </div>
+        </form>
+
+        <div class="philosophy-quote">
+            "The methodology belongs to no one. It serves everyone."
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <ul class="site-footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="journalists.html">Contributors</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="monitor.html">Dashboard</a></li>
+            <li><a href="feed.xml">RSS</a></li>
+            <li><a href="podcast.xml">Podcast</a></li>
+        </ul>
+        <p class="site-footer__tagline">The methodology belongs to no one. It serves everyone.</p>
+        <p class="site-footer__copy">
+            <a href="https://github.com/JTFNews/jtfnews">GitHub</a> &middot;
+            <a href="https://github.com/sponsors/larryseyer">Support</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // ============================================================
+    // OAuth Configuration
+    // ============================================================
+    const GITHUB_CLIENT_ID = 'PLACEHOLDER_CLIENT_ID';
+    const OAUTH_PROXY_URL = 'PLACEHOLDER_PROXY_URL';
+    const GITHUB_REPO_OWNER = 'JTFNews';
+    const GITHUB_REPO_NAME = 'jtfnews';
+
+    // ============================================================
+    // State
+    // ============================================================
+    let githubToken = null;
+    let githubUser = null;
+    let disclosureRowCount = 1;
+
+    // ============================================================
+    // OAuth Flow
+    // ============================================================
+    function startOAuth() {
+        const redirectUri = window.location.origin + window.location.pathname;
+        const state = crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substring(2);
+        sessionStorage.setItem('oauth_state', state);
+        const authUrl = 'https://github.com/login/oauth/authorize'
+            + '?client_id=' + encodeURIComponent(GITHUB_CLIENT_ID)
+            + '&redirect_uri=' + encodeURIComponent(redirectUri)
+            + '&scope=public_repo'
+            + '&state=' + encodeURIComponent(state);
+        window.location.href = authUrl;
+    }
+
+    async function handleOAuthRedirect() {
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const state = params.get('state');
+
+        if (!code) return false;
+
+        // Verify state
+        const savedState = sessionStorage.getItem('oauth_state');
+        if (state !== savedState) {
+            showError('OAuth state mismatch. Please try signing in again.');
+            return false;
+        }
+        sessionStorage.removeItem('oauth_state');
+
+        // Clean URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+
+        try {
+            // Exchange code for token via proxy
+            const response = await fetch(OAUTH_PROXY_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code: code })
+            });
+
+            if (!response.ok) {
+                const errData = await response.json().catch(() => ({}));
+                throw new Error(errData.error || 'Token exchange failed');
+            }
+
+            const data = await response.json();
+            githubToken = data.access_token;
+            sessionStorage.setItem('github_token', githubToken);
+
+            return true;
+        } catch (e) {
+            showError('Authentication failed: ' + e.message);
+            return false;
+        }
+    }
+
+    async function fetchGitHubUser() {
+        if (!githubToken) return null;
+
+        try {
+            const response = await fetch('https://api.github.com/user', {
+                headers: { 'Authorization': 'Bearer ' + githubToken }
+            });
+
+            if (!response.ok) {
+                sessionStorage.removeItem('github_token');
+                githubToken = null;
+                return null;
+            }
+
+            return await response.json();
+        } catch (e) {
+            return null;
+        }
+    }
+
+    function showAuthenticated(user) {
+        githubUser = user;
+        document.getElementById('auth-section').style.display = 'none';
+        document.getElementById('reg-form-section').style.display = 'block';
+        document.getElementById('auth-username').textContent = user.login;
+    }
+
+    // ============================================================
+    // Disclosure Rows
+    // ============================================================
+    function addDisclosureRow() {
+        const container = document.getElementById('disclosure-rows');
+        const row = document.createElement('div');
+        row.className = 'disclosure-row';
+        row.setAttribute('data-row', disclosureRowCount);
+        row.innerHTML = ''
+            + '<div class="form-group">'
+            + '    <label>Entity Name</label>'
+            + '    <input type="text" class="form-input disclosure-entity" placeholder="e.g. Self, Acme Corp">'
+            + '</div>'
+            + '<div class="form-group">'
+            + '    <label>Relationship</label>'
+            + '    <input type="text" class="form-input disclosure-relationship" placeholder="e.g. Employer, Investor">'
+            + '</div>'
+            + '<div class="form-group">'
+            + '    <label>%</label>'
+            + '    <input type="number" class="form-input disclosure-pct" placeholder="0" min="0" max="100">'
+            + '</div>'
+            + '<button type="button" class="disclosure-remove" onclick="removeDisclosureRow(this)" title="Remove row">&times;</button>';
+        container.appendChild(row);
+        disclosureRowCount++;
+    }
+
+    function removeDisclosureRow(btn) {
+        const rows = document.querySelectorAll('.disclosure-row');
+        if (rows.length <= 1) return; // Keep at least one row
+        btn.closest('.disclosure-row').remove();
+    }
+
+    // ============================================================
+    // Form Submission
+    // ============================================================
+    function gatherDisclosures() {
+        const rows = document.querySelectorAll('.disclosure-row');
+        const disclosures = [];
+        rows.forEach(function(row) {
+            const entity = row.querySelector('.disclosure-entity').value.trim();
+            const relationship = row.querySelector('.disclosure-relationship').value.trim();
+            const pct = parseFloat(row.querySelector('.disclosure-pct').value) || 0;
+            if (entity) {
+                disclosures.push({
+                    entity: entity,
+                    relationship: relationship || 'Undisclosed',
+                    percentage: pct
+                });
+            }
+        });
+        return disclosures;
+    }
+
+    function computeMajorityFunder(disclosures) {
+        if (disclosures.length === 0) {
+            return { owner: 'Self-funded', owner_display: 'Self-funded (100%)' };
+        }
+
+        // Sort by percentage descending
+        var sorted = disclosures.slice().sort(function(a, b) { return b.percentage - a.percentage; });
+        var top = sorted[0];
+
+        // If top entity is "Self" or no entity has > 0%, default to self-funded
+        if (top.percentage <= 0 || top.entity.toLowerCase() === 'self') {
+            return { owner: 'Self-funded', owner_display: 'Self-funded (100%)' };
+        }
+
+        return {
+            owner: top.entity,
+            owner_display: top.entity + ' (' + top.percentage + '%)'
+        };
+    }
+
+    function getCurrentQuarter() {
+        var now = new Date();
+        var q = Math.ceil((now.getMonth() + 1) / 3);
+        return 'Q' + q + ' ' + now.getFullYear();
+    }
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        hideMessages();
+
+        var name = document.getElementById('full-name').value.trim();
+        var location = document.getElementById('location').value.trim();
+        var affiliation = document.getElementById('affiliation').value.trim();
+        var ackMethodology = document.getElementById('ack-methodology').checked;
+        var ackLicense = document.getElementById('ack-license').checked;
+
+        // Validate required fields
+        if (!name || !location || !affiliation) {
+            showError('Please fill in all required fields.');
+            return false;
+        }
+        if (!ackMethodology) {
+            showError('You must acknowledge the methodology processing rules.');
+            return false;
+        }
+        if (!ackLicense) {
+            showError('You must agree to the CC-BY-SA 4.0 license for extracted facts.');
+            return false;
+        }
+
+        var disclosures = gatherDisclosures();
+        var funder = computeMajorityFunder(disclosures);
+        var now = new Date().toISOString();
+
+        var profile = {
+            github_username: githubUser.login,
+            name: name,
+            location: location,
+            affiliation: affiliation,
+            owner: funder.owner,
+            owner_display: funder.owner_display,
+            financial_disclosures: disclosures,
+            registered: now,
+            last_disclosure_update: now,
+            disclosure_quarter: getCurrentQuarter(),
+            status: 'active',
+            ratings: {
+                accuracy: 5.0,
+                bias: 5.0,
+                speed: 5.0,
+                consensus: 5.0
+            },
+            stats: {
+                submitted: 0,
+                verified: 0,
+                expired: 0,
+                successes: 0,
+                failures: 0
+            },
+            submission_quota: 3,
+            control_type: 'journalist',
+            institutional_holders: []
+        };
+
+        // Disable submit button
+        var submitBtn = document.getElementById('submit-btn');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Registering...';
+
+        try {
+            var filePath = 'data/journalists/' + githubUser.login + '.json';
+            var content = btoa(unescape(encodeURIComponent(JSON.stringify(profile, null, 2))));
+
+            // Check if file already exists (to get SHA for update)
+            var sha = null;
+            try {
+                var checkResp = await fetch(
+                    'https://api.github.com/repos/' + GITHUB_REPO_OWNER + '/' + GITHUB_REPO_NAME + '/contents/' + filePath,
+                    { headers: { 'Authorization': 'Bearer ' + githubToken } }
+                );
+                if (checkResp.ok) {
+                    var existing = await checkResp.json();
+                    sha = existing.sha;
+                }
+            } catch (e) {
+                // File doesn't exist yet, that's fine
+            }
+
+            var body = {
+                message: 'Register contributor: ' + githubUser.login,
+                content: content,
+                branch: 'main'
+            };
+            if (sha) {
+                body.sha = sha;
+                body.message = 'Update contributor registration: ' + githubUser.login;
+            }
+
+            var putResp = await fetch(
+                'https://api.github.com/repos/' + GITHUB_REPO_OWNER + '/' + GITHUB_REPO_NAME + '/contents/' + filePath,
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': 'Bearer ' + githubToken,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                }
+            );
+
+            if (!putResp.ok) {
+                var errData = await putResp.json().catch(function() { return {}; });
+                throw new Error(errData.message || 'GitHub API error (' + putResp.status + ')');
+            }
+
+            showSuccess('Registration submitted. Your profile has been created at <code>data/journalists/' + githubUser.login + '.json</code>. It will be active on the next processing cycle. You can now <a href="submit.html">submit stories</a>.');
+            document.getElementById('reg-form').style.display = 'none';
+
+        } catch (e) {
+            showError('Registration failed: ' + e.message);
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Register as Contributor';
+        }
+
+        return false;
+    }
+
+    // ============================================================
+    // Messages
+    // ============================================================
+    function showSuccess(html) {
+        var el = document.getElementById('msg-success');
+        el.innerHTML = html;
+        el.style.display = 'block';
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function showError(html) {
+        var el = document.getElementById('msg-error');
+        el.innerHTML = html;
+        el.style.display = 'block';
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function hideMessages() {
+        document.getElementById('msg-success').style.display = 'none';
+        document.getElementById('msg-error').style.display = 'none';
+    }
+
+    // ============================================================
+    // Initialization
+    // ============================================================
+    (async function init() {
+        // Check for existing token in sessionStorage
+        var storedToken = sessionStorage.getItem('github_token');
+        if (storedToken) {
+            githubToken = storedToken;
+            var user = await fetchGitHubUser();
+            if (user) {
+                showAuthenticated(user);
+                return;
+            }
+        }
+
+        // Check for OAuth redirect
+        var authenticated = await handleOAuthRedirect();
+        if (authenticated) {
+            var user = await fetchGitHubUser();
+            if (user) {
+                showAuthenticated(user);
+            }
+        }
+    })();
+</script>
+</body>
+</html>

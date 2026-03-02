@@ -6293,6 +6293,177 @@ def process_cycle():
     processed_count = 0  # Headlines sent to Claude
     queued_count = 0  # Stories added to queue this cycle
 
+    # =========================================================================
+    # JOURNALIST SUBMISSIONS — Process pending submissions from data/submissions/
+    # A journalist is a source. Sources follow the methodology.
+    # =========================================================================
+    submissions = load_pending_submissions()
+    if submissions:
+        log.info(f"Processing {len(submissions)} journalist submission(s)")
+
+    for sub in submissions:
+        journalist_id = sub.get("journalist_id", "")
+        journalist_info = get_journalist_info(journalist_id)
+
+        # Skip if journalist not found or suspended
+        if not journalist_info:
+            log.warning(f"Submission from unknown journalist: {journalist_id}")
+            mark_submission_processed(sub, processed_fact="SKIP", confidence=0)
+            continue
+
+        if journalist_info.get("status") != "active":
+            log.info(f"Skipping submission from suspended journalist: {journalist_id}")
+            mark_submission_processed(sub, processed_fact="SKIP", confidence=0)
+            continue
+
+        # Check quota
+        if not check_journalist_quota(journalist_id):
+            log.info(f"Journalist {journalist_id} exceeded daily quota, skipping")
+            mark_submission_processed(sub, processed_fact="SKIP_QUOTA", confidence=0)
+            continue
+
+        # Process through same Claude pipeline as scraped headlines
+        event_text = sub.get("event_description", "")
+        if not event_text.strip():
+            mark_submission_processed(sub, processed_fact="SKIP", confidence=0)
+            continue
+
+        result = extract_fact(event_text)
+        processed_count += 1
+
+        if result["fact"] == "SKIP":
+            mark_submission_processed(sub, processed_fact="SKIP", confidence=0)
+            # Increment submitted count
+            journalists = load_journalists()
+            if journalist_id in journalists:
+                journalists[journalist_id]["stats"]["submitted"] += 1
+                save_journalists(journalists)
+            continue
+
+        fact = result["fact"]
+        confidence = result["confidence"]
+
+        # Track bias score (how much was stripped)
+        original_length = len(event_text)
+        fact_length = len(fact)
+        update_journalist_bias_score(journalist_id, original_length, fact_length)
+
+        # Check confidence threshold (same as institutional)
+        if confidence < CONFIG["thresholds"]["min_confidence"]:
+            log.info(f"Low confidence journalist submission ({confidence}%): {fact[:40]}...")
+            mark_submission_processed(sub, processed_fact=fact, confidence=confidence)
+            continue
+
+        # Check newsworthiness (same thresholds as institutional)
+        newsworthy = result.get("newsworthy", True)
+        if not newsworthy:
+            log.info(f"Journalist submission not newsworthy: {fact[:40]}...")
+            mark_submission_processed(sub, processed_fact=fact, confidence=confidence)
+            continue
+
+        # Check for duplicates
+        if is_duplicate(fact):
+            log.info(f"Duplicate journalist submission: {fact[:40]}...")
+            mark_submission_processed(sub, processed_fact=fact, confidence=confidence)
+            continue
+
+        # Capitalize first letter
+        if fact and fact[0].islower():
+            fact = fact[0].upper() + fact[1:]
+
+        # Increment submitted count
+        journalists_data = load_journalists()
+        if journalist_id in journalists_data:
+            journalists_data[journalist_id]["stats"]["submitted"] += 1
+            save_journalists(journalists_data)
+
+        # Look for matching stories in queue (same logic as scraped headlines)
+        matches = find_matching_stories(fact, queue)
+
+        if matches:
+            for match in matches:
+                if are_sources_unrelated(f"journalist:{journalist_id}", match["source_id"]):
+                    # VERIFIED! Journalist + independent source
+                    new_reliability = get_reliability_score(f"journalist:{journalist_id}", confidence)
+                    queue_confidence = match.get("confidence", 85)
+                    queue_reliability = get_reliability_score(match["source_id"], queue_confidence)
+
+                    if queue_reliability > new_reliability:
+                        best_fact = match["fact"]
+                        log.info(
+                            f"Preferring queued source ({match['source_name']}: {queue_reliability:.1f}) "
+                            f"over journalist ({journalist_id}: {new_reliability:.1f})"
+                        )
+                    else:
+                        best_fact = fact
+
+                    journalist_headline = {
+                        "source_id": f"journalist:{journalist_id}",
+                        "source_name": get_journalist_display_name(journalist_id),
+                        "source_rating": get_learned_rating(f"journalist:{journalist_id}"),
+                        "source_url": "",
+                        "timestamp": sub.get("submitted", datetime.now(timezone.utc).isoformat())
+                    }
+                    sources = [journalist_headline, match]
+
+                    # Check for contradictions
+                    recent_facts = get_recent_facts()
+                    if check_contradiction(best_fact, recent_facts):
+                        log.warning(f"Contradiction blocked (journalist): {best_fact[:40]}...")
+                        send_alert(f"Contradiction: {best_fact[:50]}")
+                        continue
+
+                    if best_fact and best_fact[0].islower():
+                        best_fact = best_fact[0].upper() + best_fact[1:]
+
+                    story_audio_id = get_story_audio_id(best_fact)
+                    audio_file = generate_tts(best_fact, story_id=story_audio_id)
+                    write_current_story(best_fact, sources)
+                    append_daily_log(best_fact, sources, audio_file)
+                    add_shown_hash(get_story_hash(best_fact))
+
+                    queue = [q for q in queue if q["fact"] != match["fact"]]
+                    published_count += 1
+                    log.info(f"VERIFIED (journalist): {best_fact[:50]}...")
+
+                    fact_hash = get_story_hash(best_fact)
+                    record_verification_success(f"journalist:{journalist_id}", fact_hash)
+                    record_verification_success(match["source_id"], fact_hash)
+
+                    # Check for corrections (same as institutional)
+                    recent_stories = get_recent_stories_for_correction(days=7)
+                    correction_info = detect_correction_needed(best_fact, sources, recent_stories)
+                    if correction_info:
+                        correction_type = correction_info.get("correction_type", "correction")
+                        story_id = correction_info.get("story_id", "").strip("[]")
+                        original = correction_info.get("original_fact", "")
+                        reason = correction_info.get("reason", "")
+                        if correction_type == "retraction":
+                            issue_retraction(story_id, original, reason, sources)
+                        else:
+                            issue_correction(story_id, original, best_fact, reason, sources, correction_type)
+
+                    break
+        else:
+            # No match — add to queue
+            queue.append({
+                "fact": fact,
+                "source_id": f"journalist:{journalist_id}",
+                "source_name": get_journalist_display_name(journalist_id),
+                "source_rating": get_learned_rating(f"journalist:{journalist_id}"),
+                "source_url": "",
+                "timestamp": sub.get("submitted", datetime.now(timezone.utc).isoformat()),
+                "confidence": confidence,
+                "type": "journalist_submission"
+            })
+            queued_count += 1
+            log.info(f"Queued (journalist): {fact[:40]}...")
+
+        mark_submission_processed(sub, processed_fact=fact, confidence=confidence)
+
+    # Clean old processed submissions (7-day retention)
+    clean_old_submissions(max_age_days=7)
+
     for headline in headlines:
         # Skip if already processed (saves API costs)
         if is_headline_processed(headline["text"], processed_cache):
