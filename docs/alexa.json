@@ -1,5 +1,12 @@
 [
   {
+    "uid": "13361f7add9104ff37d03fe8379ba8b0",
+    "updateDate": "2026-03-03T17:30:55.0Z",
+    "titleText": "JTF News: Deutsche Welle, PBS NewsHour",
+    "mainText": "President Trump meets with Friedrich Merz, Chancellor of Germany.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "41d9245afcfede94d536fcd4018fc41e",
     "updateDate": "2026-03-03T15:30:55.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T09:00:45.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Israel conducted strikes on Beirut and Tehran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "8bdc49f7df6007caf70357a427482c90",
-    "updateDate": "2026-03-03T00:09:14.0Z",
-    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
-    "mainText": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
