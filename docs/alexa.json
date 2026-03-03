@@ -1,5 +1,12 @@
 [
   {
+    "uid": "41d9245afcfede94d536fcd4018fc41e",
+    "updateDate": "2026-03-03T15:30:55.0Z",
+    "titleText": "JTF News: France 24, PBS NewsHour",
+    "mainText": "The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "ffd455c45c7b2c63d52133aa6f756df6",
     "updateDate": "2026-03-03T12:30:38.0Z",
     "titleText": "JTF News: France 24, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T00:09:14.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
     "mainText": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "64421d650c299e5010a22d9fb9b242d0",
-    "updateDate": "2026-03-02T21:00:44.0Z",
-    "titleText": "JTF News: ABC News Australia, BBC News",
-    "mainText": "Oil prices rise following attacks on ships near the Strait of Hormuz.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
