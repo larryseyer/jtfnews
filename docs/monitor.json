@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-03T05:25:35.696952+00:00",
+  "timestamp": "2026-03-03T05:30:45.688884+00:00",
+  "web_refresh_at": "2026-03-03T05:30:45.688884+00:00",
   "uptime_start": "2026-03-03T04:49:13.977434+00:00",
-  "uptime_seconds": 2182,
+  "uptime_seconds": 2492,
   "availability_pct": 52.5,
   "cycle": {
-    "number": 2,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 3,
+    "duration_seconds": 41.7,
+    "headlines_scraped": 173,
+    "headlines_processed": 8,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -21,30 +22,28 @@
         }
       },
       "claude": {
-        "calls": 268,
-        "cost_usd": 0.11064025,
+        "calls": 276,
+        "cost_usd": 0.11439074999999999,
         "details": {
-          "input_tokens": 267791,
-          "output_tokens": 34954
+          "input_tokens": 276928,
+          "output_tokens": 36127
         }
       }
     },
-    "total_usd": 0.1238,
+    "total_usd": 0.1276,
     "month_estimate_usd": 9.78,
     "daily_budget": 1.61,
-    "budget_pct": 7.7
+    "budget_pct": 7.9
   },
   "queue": {
     "size": 55,
-    "oldest_item_age_hours": 23.9
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 1,
   "sources": {
     "total": 20,
-    "successful": 19,
-    "failed": [
-      "White House"
-    ]
+    "successful": 20,
+    "failed": []
   },
   "recent_errors": [
     {
@@ -56,7 +55,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
