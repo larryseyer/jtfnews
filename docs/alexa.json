@@ -1,5 +1,12 @@
 [
   {
+    "uid": "eee71e13b9f9033e3305e8434f8a5114",
+    "updateDate": "2026-03-03T11:00:39.0Z",
+    "titleText": "JTF News: BBC News, Deutsche Welle",
+    "mainText": "The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "cc760074639f934972d414404da4212b",
     "updateDate": "2026-03-03T09:00:45.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T19:45:28.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
     "mainText": "169 people killed in a village in a remote area of South Sudan after an insurgent raid.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "78473e740f248872ec4bb60c45d3d3b4",
-    "updateDate": "2026-03-02T19:44:08.0Z",
-    "titleText": "JTF News: France 24, ABC News Australia",
-    "mainText": "President Trump stated the US acted on its 'last, best chance' to hit Iran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
