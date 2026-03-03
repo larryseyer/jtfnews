@@ -1916,3 +1916,43 @@ Log cleared at 2026-03-03T00:00:03.914743+00:00
 2026-03-03 15:04:31 | INFO | Cycle complete. Published: 0, Queue: 49, Skipped (cached): 172
 2026-03-03 15:04:31 | INFO | Sleeping until 15:30 (25 minutes)...
 2026-03-03 15:05:28 | INFO | Shutting down...
+2026-03-03 15:21:02 | INFO | JTF News starting...
+2026-03-03 15:21:02 | INFO | Facts only. No opinions.
+2026-03-03 15:21:02 | INFO | ----------------------------------------
+2026-03-03 15:21:02 | INFO | Resuming uptime tracking - 992s downtime recorded
+2026-03-03 15:21:02 | INFO | Validating services...
+2026-03-03 15:21:03 | INFO | Claude API: OK
+2026-03-03 15:21:03 | INFO | ElevenLabs API: OK (key present)
+2026-03-03 15:21:03 | INFO | All services validated successfully
+2026-03-03 15:21:03 | INFO | ============================================================
+2026-03-03 15:21:03 | INFO | Starting cycle #1
+2026-03-03 15:21:03 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 15:21:04 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 15:21:05 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 15:21:06 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 15:21:08 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 15:21:09 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 15:21:11 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 15:21:12 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 15:21:13 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 15:21:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 15:21:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 15:21:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 15:21:18 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 15:21:21 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 15:21:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 15:21:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 15:21:26 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 15:21:27 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 15:21:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 15:21:30 | INFO | Total headlines: 173
+2026-03-03 15:21:40 | INFO | Word overlap pre-filter: 2/49 candidates
+2026-03-03 15:21:41 | INFO | Queued: President Trump criticized Prime Ministe...
+2026-03-03 15:21:44 | INFO | Low confidence (72%): Alberta is ending an income supplement p...
+2026-03-03 15:21:47 | INFO | Low confidence (75%): Liquidators determined a sports centre c...
+2026-03-03 15:21:49 | INFO | Alert throttled (queue_backup): Queue backup: 50 items, oldest 24.0h
+2026-03-03 15:21:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 15:21:50 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 165
+2026-03-03 15:21:50 | INFO | Sleeping until 15:30 (8 minutes)...
+2026-03-03 15:26:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 15:27:38 | INFO | Shutting down...
