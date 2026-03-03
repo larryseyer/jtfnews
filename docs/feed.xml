@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 11:00:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 12:30:36 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>U.S. embassy in Saudi Arabia was hit by Iranian drones.</title>
+      <description>U.S. embassy in Saudi Arabia was hit by Iranian drones.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 03 Mar 2026 12:30:36 +0000</pubDate>
+      <guid isPermaLink="false">dc5351790429</guid>
+    </item>
     <item>
       <title>The United States imposed sanctions on the Rwandan military over fighting in eas...</title>
       <description>The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.</description>
@@ -1102,18 +1114,6 @@
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 09:30:32 +0000</pubDate>
       <guid isPermaLink="false">d6c9aaaf7f79</guid>
-    </item>
-    <item>
-      <title>North Korea's Kim Jong Un opened a party congress.</title>
-      <description>North Korea's Kim Jong Un opened a party congress.</description>
-      <jtf:source name="Deutsche Welle" url="" accuracy="6.4" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 20 Feb 2026 04:30:40 +0000</pubDate>
-      <guid isPermaLink="false">d5b8f534ce1b</guid>
     </item>
   </channel>
 </rss>
