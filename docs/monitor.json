@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-03-03T19:56:03.301918+00:00",
+  "timestamp": "2026-03-03T20:02:43.201576+00:00",
+  "web_refresh_at": "2026-03-03T20:02:43.201576+00:00",
   "uptime_start": "2026-03-03T04:49:13.977434+00:00",
-  "uptime_seconds": 54409,
+  "uptime_seconds": 54809,
   "availability_pct": 58.1,
   "cycle": {
-    "number": 31,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 32,
+    "duration_seconds": 159.1,
+    "headlines_scraped": 173,
+    "headlines_processed": 21,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 3
   },
   "api_costs": {
     "today": {
@@ -21,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 576,
-        "cost_usd": 0.23295274999999988,
+        "calls": 592,
+        "cost_usd": 0.23934274999999988,
         "details": {
-          "input_tokens": 564516,
-          "output_tokens": 73459
+          "input_tokens": 580841,
+          "output_tokens": 75306
         }
       }
     },
-    "total_usd": 0.2662,
+    "total_usd": 0.2726,
     "month_estimate_usd": 9.78,
     "daily_budget": 1.61,
-    "budget_pct": 16.5
+    "budget_pct": 16.9
   },
   "queue": {
     "size": 50,
-    "oldest_item_age_hours": 24.2
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 7,
   "sources": {
@@ -44,11 +45,57 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-03-03T20:00:53.984149+00:00",
+      "level": "ERROR",
+      "message": "Claude batch matching error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgjyMA8o8dCrJuN4KPqM'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:01:16.908479+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk12WmQHxXnrmAkxPox'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:01:29.143537+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk1tkDwENfRjxTFyhkr'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:01:38.028645+00:00",
+      "level": "ERROR",
+      "message": "Claude batch matching error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk2bhq3AFYd8e5gDfQN'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:01:51.676625+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk3c4SGJfsMS1Qp4LDi'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:02:08.682383+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk4pqAMjbfLh2nNkeUZ'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:02:14.313670+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk5D3Pkwb4JrLqoPwLr'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:02:19.071480+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk5c7Tnm9VgTpC74wrD'}"
+    },
+    {
+      "timestamp": "2026-03-03T20:02:36.577027+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk6t1TpSzrBwU7aVeYj'}"
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 27,
     "degraded_services": []
   },
   "daily_digest": {
