@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-03-03T04:25:23.582511+00:00",
-  "web_refresh_at": "2026-03-03T04:25:23.582511+00:00",
+  "timestamp": "2026-03-03T04:30:28.898565+00:00",
+  "web_refresh_at": "2026-03-03T04:30:28.898565+00:00",
   "uptime_start": "2026-03-03T04:24:47.592033+00:00",
-  "uptime_seconds": 36,
+  "uptime_seconds": 341,
   "availability_pct": 52.7,
   "cycle": {
-    "number": 1,
-    "duration_seconds": 35.4,
+    "number": 2,
+    "duration_seconds": 28.9,
     "headlines_scraped": 173,
-    "headlines_processed": 5,
+    "headlines_processed": 1,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -22,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 257,
-        "cost_usd": 0.10624,
+        "calls": 258,
+        "cost_usd": 0.1067755,
         "details": {
-          "input_tokens": 257335,
-          "output_tokens": 33525
+          "input_tokens": 258477,
+          "output_tokens": 33725
         }
       }
     },
-    "total_usd": 0.1194,
+    "total_usd": 0.12,
     "month_estimate_usd": 9.78,
     "daily_budget": 1.61,
     "budget_pct": 7.4
   },
   "queue": {
     "size": 56,
-    "oldest_item_age_hours": 23.6
+    "oldest_item_age_hours": 23.7
   },
   "stories_today": 1,
   "sources": {
@@ -49,7 +49,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
