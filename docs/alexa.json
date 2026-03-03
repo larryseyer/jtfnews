@@ -1,5 +1,12 @@
 [
   {
+    "uid": "93bad38cd637a2436752906d82a31245",
+    "updateDate": "2026-03-03T23:01:43.0Z",
+    "titleText": "JTF News: ABC News Australia, Deutsche Welle",
+    "mainText": "The father of the accused Georgia school shooter was convicted of murder.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "a130b9b0b16eff57db306f6c46cf5a8a",
     "updateDate": "2026-03-03T18:00:50.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T12:30:38.0Z",
     "titleText": "JTF News: France 24, CBC News",
     "mainText": "U.S. embassy in Saudi Arabia was hit by Iranian drones.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "eee71e13b9f9033e3305e8434f8a5114",
-    "updateDate": "2026-03-03T11:00:39.0Z",
-    "titleText": "JTF News: BBC News, Deutsche Welle",
-    "mainText": "The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
