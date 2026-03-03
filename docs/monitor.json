@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-03T14:56:06.411323+00:00",
+  "timestamp": "2026-03-03T15:01:17.563942+00:00",
+  "web_refresh_at": "2026-03-03T15:01:17.563942+00:00",
   "uptime_start": "2026-03-03T04:49:13.977434+00:00",
-  "uptime_seconds": 36412,
+  "uptime_seconds": 36724,
   "availability_pct": 56.2,
   "cycle": {
-    "number": 21,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 22,
+    "duration_seconds": 73.0,
+    "headlines_scraped": 172,
+    "headlines_processed": 5,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -36,7 +37,7 @@
   },
   "queue": {
     "size": 52,
-    "oldest_item_age_hours": 23.9
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 4,
   "sources": {
@@ -46,15 +47,35 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-03-03T14:00:51.934593+00:00",
+      "timestamp": "2026-03-03T15:00:39.303982+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgGWyayxHGvvVGnAuhX7'}"
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM5RjTP1u337ioTZmM5'}"
+    },
+    {
+      "timestamp": "2026-03-03T15:00:46.947791+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM625SJ26HVjQgneKGg'}"
+    },
+    {
+      "timestamp": "2026-03-03T15:00:53.317589+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM6Kiapj79WRaRPiBJb'}"
+    },
+    {
+      "timestamp": "2026-03-03T15:01:03.355821+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM6yo3UmJJk93yxahCd'}"
+    },
+    {
+      "timestamp": "2026-03-03T15:01:17.562200+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM7vqUNxTpDGc1YNbk4'}"
     }
   ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   },
   "daily_digest": {
