@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-03/931d11ee18b9.mp3",
       "published_at": "2026-03-03T12:30:36.260991+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-03-004",
+      "hash": "054a40f97697",
+      "fact": "The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.",
+      "source": "France 24 4.9|9.0 \u00b7 PBS NewsHour 6.1|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-03/2a4232a62472.mp3",
+      "published_at": "2026-03-03T15:30:53.547847+00:00",
+      "status": "published"
     }
   ]
 }
