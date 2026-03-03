@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 17:30:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 18:00:48 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump stated Iran is 'in for a lot of hurt' during an Oval Office addr...</title>
+      <description>President Trump stated Iran is 'in for a lot of hurt' during an Oval Office address.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 03 Mar 2026 18:00:48 +0000</pubDate>
+      <guid isPermaLink="false">3aa3f89ef2e6</guid>
+    </item>
     <item>
       <title>President Trump meets with Friedrich Merz, Chancellor of Germany.</title>
       <description>President Trump meets with Friedrich Merz, Chancellor of Germany.</description>
@@ -1102,18 +1114,6 @@
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 18:30:32 +0000</pubDate>
       <guid isPermaLink="false">7d44068889b3</guid>
-    </item>
-    <item>
-      <title>President Trump criticized Supreme Court justices regarding a tariffs ruling.</title>
-      <description>President Trump criticized Supreme Court justices regarding a tariffs ruling.</description>
-      <jtf:source name="BBC News" url="" accuracy="7.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="CBC News" url="" accuracy="3.4" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 21 Feb 2026 01:30:33 +0000</pubDate>
-      <guid isPermaLink="false">27215537eee2</guid>
     </item>
   </channel>
 </rss>
