@@ -1,5 +1,12 @@
 [
   {
+    "uid": "8bdc49f7df6007caf70357a427482c90",
+    "updateDate": "2026-03-03T00:09:14.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "64421d650c299e5010a22d9fb9b242d0",
     "updateDate": "2026-03-02T21:00:44.0Z",
     "titleText": "JTF News: ABC News Australia, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T16:00:44.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "President Emmanuel Macron of France stated France will increase its nuclear arsenal.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "75029050a5d16454f4582786899e1c63",
-    "updateDate": "2026-03-02T15:00:53.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Israel and Hezbollah exchange fire in southern and eastern Lebanon.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
