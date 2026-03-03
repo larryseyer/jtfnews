@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-03-03T15:56:27.280108+00:00",
+  "timestamp": "2026-03-03T16:00:43.189728+00:00",
+  "web_refresh_at": "2026-03-03T16:00:43.189728+00:00",
   "uptime_start": "2026-03-03T04:49:13.977434+00:00",
-  "uptime_seconds": 40033,
-  "availability_pct": 56.6,
+  "uptime_seconds": 40289,
+  "availability_pct": 56.9,
   "cycle": {
-    "number": 23,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 24,
+    "duration_seconds": 38.6,
+    "headlines_scraped": 171,
+    "headlines_processed": 5,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
@@ -21,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 487,
-        "cost_usd": 0.19665925,
+        "calls": 493,
+        "cost_usd": 0.19909749999999998,
         "details": {
-          "input_tokens": 477377,
-          "output_tokens": 61852
+          "input_tokens": 483265,
+          "output_tokens": 62625
         }
       }
     },
-    "total_usd": 0.2254,
+    "total_usd": 0.2279,
     "month_estimate_usd": 9.78,
     "daily_budget": 1.61,
-    "budget_pct": 14.0
+    "budget_pct": 14.1
   },
   "queue": {
-    "size": 51,
-    "oldest_item_age_hours": 23.9
+    "size": 52,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 5,
   "sources": {
@@ -45,11 +46,6 @@
     "failed": []
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-03-03T15:00:39.303982+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM5RjTP1u337ioTZmM5'}"
-    },
     {
       "timestamp": "2026-03-03T15:00:46.947791+00:00",
       "level": "ERROR",
@@ -74,7 +70,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
