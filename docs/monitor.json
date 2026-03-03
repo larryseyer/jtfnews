@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-03-03T19:46:01.645311+00:00",
+  "timestamp": "2026-03-03T19:51:02.459717+00:00",
   "uptime_start": "2026-03-03T04:49:13.977434+00:00",
-  "uptime_seconds": 53808,
+  "uptime_seconds": 54108,
   "availability_pct": 58.1,
   "cycle": {
     "number": 31,
@@ -44,17 +44,11 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-03T18:50:52.934080+00:00",
-      "level": "WARNING",
-      "message": "GitHub API error for docs/monitor.json: 500"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 13,
+    "next_cycle_minutes": 8,
     "degraded_services": []
   },
   "daily_digest": {
