@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 15:30:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 17:30:53 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump meets with Friedrich Merz, Chancellor of Germany.</title>
+      <description>President Trump meets with Friedrich Merz, Chancellor of Germany.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 03 Mar 2026 17:30:53 +0000</pubDate>
+      <guid isPermaLink="false">0b2aebba8632</guid>
+    </item>
     <item>
       <title>The State Department urged U.S. citizens to leave more than a dozen Middle Easte...</title>
       <description>The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.</description>
@@ -1102,18 +1114,6 @@
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 01:30:33 +0000</pubDate>
       <guid isPermaLink="false">27215537eee2</guid>
-    </item>
-    <item>
-      <title>President Trump imposed a temporary import duty.</title>
-      <description>President Trump imposed a temporary import duty.</description>
-      <jtf:source name="CBC News" url="" accuracy="3.2" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="White House" url="" accuracy="9.1*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
-        <jtf:owner name="US Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 21 Feb 2026 01:00:32 +0000</pubDate>
-      <guid isPermaLink="false">660f118328ec</guid>
     </item>
   </channel>
 </rss>
