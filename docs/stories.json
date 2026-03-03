@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-03/3995e80220b7.mp3",
       "published_at": "2026-03-03T11:00:37.878352+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-03-003",
+      "hash": "82a4d7bb6aae",
+      "fact": "U.S. embassy in Saudi Arabia was hit by Iranian drones.",
+      "source": "France 24 4.8|9.0 \u00b7 CBC News 3.0|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-03/931d11ee18b9.mp3",
+      "published_at": "2026-03-03T12:30:36.260991+00:00",
+      "status": "published"
     }
   ]
 }
