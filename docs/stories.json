@@ -1,121 +1,17 @@
 {
-  "date": "2026-03-02",
+  "date": "2026-03-03",
   "stories": [
     {
-      "id": "2026-03-02-000",
-      "hash": "43f07859bda0",
-      "fact": "At least 20 people died when a military plane carrying banknotes crashed in Bolivia.",
-      "source": "The Guardian 3.8|2.5 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "The Guardian": "https://www.theguardian.com/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-02/7efa31db3ea4.mp3",
-      "published_at": "2026-03-02T00:01:27.477410+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-001",
-      "hash": "2be1bc4e4ed0",
-      "fact": "Three U.S. troops were killed and five others were seriously wounded during Iran attacks, according to the military.",
-      "source": "PBS NewsHour 6.0|9.0 \u00b7 Deutsche Welle 6.0|9.5",
+      "id": "2026-03-03-000",
+      "hash": "983c41dc33ac",
+      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.",
+      "source": "PBS NewsHour 6.1|9.0 \u00b7 Deutsche Welle 5.9|9.5",
       "source_urls": {
         "PBS NewsHour": "https://www.pbs.org/newshour/world",
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
       },
-      "audio": "../audio/archive/2026-03-02/595136e07385.mp3",
-      "published_at": "2026-03-02T00:03:14.446280+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-002",
-      "hash": "7a6ca11ed828",
-      "fact": "At least 148 people are dead following a reported strike on a school, according to Iranian authorities.",
-      "source": "France 24 4.8|9.0 \u00b7 BBC News 5.5|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-02/778437902d88.mp3",
-      "published_at": "2026-03-02T06:30:39.850355+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-003",
-      "hash": "ac1a405165f9",
-      "fact": "The U.S. stated that Kuwait downed 3 American jets during Iranian attacks, with all crew members safely ejecting.",
-      "source": "PBS NewsHour 6.0|9.0 \u00b7 France 24 4.7|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-02/115b6e4f708b.mp3",
-      "published_at": "2026-03-02T14:00:40.699042+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-004",
-      "hash": "6582343a98aa",
-      "fact": "Israel and Hezbollah exchange fire in southern and eastern Lebanon.",
-      "source": "Deutsche Welle 6.0|9.5 \u00b7 France 24 4.8|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-02/d8e87c9875b7.mp3",
-      "published_at": "2026-03-02T15:00:51.573556+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-005",
-      "hash": "e88d0345e25a",
-      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal. and allow temporary deployment of nuclear-armed jets to European allies",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0 \u00b7 PBS NewsHour 6.0|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-02/c9de64d792da.mp3",
-      "published_at": "2026-03-02T16:00:42.020851+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-006",
-      "hash": "1ffec2d29326",
-      "fact": "President Trump stated the US acted on its 'last, best chance' to hit Iran.",
-      "source": "France 24 4.8|9.0 \u00b7 ABC News Australia 1.8|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-02/acb9f4144327.mp3",
-      "published_at": "2026-03-02T19:44:06.917037+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-007",
-      "hash": "92d10c43c830",
-      "fact": "169 people killed in a village in a remote area of South Sudan after an insurgent raid.",
-      "source": "PBS NewsHour 6.1|9.0 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-02/8644cc3c67db.mp3",
-      "published_at": "2026-03-02T19:45:25.794545+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-02-008",
-      "hash": "7baff492e4ad",
-      "fact": "Oil prices rise following attacks on ships near the Strait of Hormuz.",
-      "source": "ABC News Australia 1.8|9.0 \u00b7 BBC News 5.5|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-02/5205b24f40b2.mp3",
-      "published_at": "2026-03-02T21:00:42.571699+00:00",
+      "audio": "../audio/archive/2026-03-03/ea5780163c1a.mp3",
+      "published_at": "2026-03-03T00:09:13.030511+00:00",
       "status": "published"
     }
   ]
