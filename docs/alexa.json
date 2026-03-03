@@ -1,5 +1,12 @@
 [
   {
+    "uid": "cc760074639f934972d414404da4212b",
+    "updateDate": "2026-03-03T09:00:45.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Israel conducted strikes on Beirut and Tehran.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "8bdc49f7df6007caf70357a427482c90",
     "updateDate": "2026-03-03T00:09:14.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T19:44:08.0Z",
     "titleText": "JTF News: France 24, ABC News Australia",
     "mainText": "President Trump stated the US acted on its 'last, best chance' to hit Iran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "83b93463b209053e557ac99b7dbbe3bc",
-    "updateDate": "2026-03-02T16:00:44.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "President Emmanuel Macron of France stated France will increase its nuclear arsenal.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
