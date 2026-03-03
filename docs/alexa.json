@@ -1,5 +1,12 @@
 [
   {
+    "uid": "a130b9b0b16eff57db306f6c46cf5a8a",
+    "updateDate": "2026-03-03T18:00:50.0Z",
+    "titleText": "JTF News: ABC News Australia, France 24",
+    "mainText": "President Trump stated Iran is 'in for a lot of hurt' during an Oval Office address.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "13361f7add9104ff37d03fe8379ba8b0",
     "updateDate": "2026-03-03T17:30:55.0Z",
     "titleText": "JTF News: Deutsche Welle, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T11:00:39.0Z",
     "titleText": "JTF News: BBC News, Deutsche Welle",
     "mainText": "The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "cc760074639f934972d414404da4212b",
-    "updateDate": "2026-03-03T09:00:45.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Israel conducted strikes on Beirut and Tehran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
