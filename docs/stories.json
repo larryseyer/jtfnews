@@ -91,6 +91,19 @@
       "audio": "../audio/archive/2026-03-03/d3b5bb54cf05.mp3",
       "published_at": "2026-03-03T18:00:48.316694+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-03-007",
+      "hash": "fcef236596eb",
+      "fact": "The father of the accused Georgia school shooter was convicted of murder.",
+      "source": "ABC News Australia 1.8|9.0 \u00b7 Deutsche Welle 5.9|9.5",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-03/d29f78f2d617.mp3",
+      "published_at": "2026-03-03T23:01:41.449261+00:00",
+      "status": "published"
     }
   ]
 }
