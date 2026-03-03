@@ -4,14 +4,92 @@
     {
       "id": "2026-03-03-000",
       "hash": "983c41dc33ac",
-      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.",
-      "source": "PBS NewsHour 6.1|9.0 \u00b7 Deutsche Welle 5.9|9.5",
+      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies. and deployed jets over the United Arab Emirates to protect its military bases",
+      "source": "PBS NewsHour 6.1|9.0 \u00b7 Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
       "source_urls": {
         "PBS NewsHour": "https://www.pbs.org/newshour/world",
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
       },
-      "audio": "../audio/archive/2026-03-03/ea5780163c1a.mp3",
+      "audio": "../audio/archive/2026-03-03/6c7f66498236.mp3",
       "published_at": "2026-03-03T00:09:13.030511+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-001",
+      "hash": "3bc2ff3865f4",
+      "fact": "Israel conducted strikes on Beirut and Tehran.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-03/0bdf88e4e19a.mp3",
+      "published_at": "2026-03-03T09:00:43.708103+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-002",
+      "hash": "8c578f8a8df5",
+      "fact": "The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.",
+      "source": "BBC News 5.4|9.0 \u00b7 Deutsche Welle 5.8|9.5",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-03/3995e80220b7.mp3",
+      "published_at": "2026-03-03T11:00:37.878352+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-003",
+      "hash": "82a4d7bb6aae",
+      "fact": "U.S. embassy in Saudi Arabia was hit by Iranian drones.",
+      "source": "France 24 4.8|9.0 \u00b7 CBC News 3.0|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-03/931d11ee18b9.mp3",
+      "published_at": "2026-03-03T12:30:36.260991+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-004",
+      "hash": "054a40f97697",
+      "fact": "The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.",
+      "source": "France 24 4.9|9.0 \u00b7 PBS NewsHour 6.1|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-03/2a4232a62472.mp3",
+      "published_at": "2026-03-03T15:30:53.547847+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-005",
+      "hash": "a214e2093955",
+      "fact": "President Trump meets with Friedrich Merz, Chancellor of Germany.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 PBS NewsHour 6.2|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-03/bfd68ce0639d.mp3",
+      "published_at": "2026-03-03T17:30:53.359905+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-006",
+      "hash": "53b0588fbcf3",
+      "fact": "President Trump stated Iran is 'in for a lot of hurt' during an Oval Office address.",
+      "source": "ABC News Australia 1.8|9.0 \u00b7 France 24 4.9|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-03/d3b5bb54cf05.mp3",
+      "published_at": "2026-03-03T18:00:48.316694+00:00",
       "status": "published"
     }
   ]

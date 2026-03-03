@@ -498,3 +498,1421 @@ Log cleared at 2026-03-03T00:00:03.914743+00:00
 2026-03-02 22:25:24 | INFO | Pushed to GitHub: Update monitor data
 2026-03-02 22:25:24 | INFO | Cycle complete. Published: 0, Queue: 56, Skipped (cached): 168
 2026-03-02 22:25:24 | INFO | Sleeping until 22:30 (4 minutes)...
+2026-03-02 22:30:00 | INFO | ============================================================
+2026-03-02 22:30:00 | INFO | Starting cycle #2
+2026-03-02 22:30:00 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-02 22:30:01 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-02 22:30:02 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-02 22:30:04 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-02 22:30:05 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-02 22:30:06 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-02 22:30:08 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-02 22:30:09 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-02 22:30:10 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-02 22:30:11 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-02 22:30:12 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-02 22:30:14 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-02 22:30:15 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-02 22:30:18 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-02 22:30:19 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-02 22:30:21 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-02 22:30:22 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-02 22:30:24 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-02 22:30:25 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-02 22:30:26 | INFO | Total headlines: 173
+2026-03-02 22:30:28 | INFO | Low confidence (45%): The U.S. embassy in Saudi Arabia was att...
+2026-03-02 22:30:29 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 22:30:29 | INFO | Cycle complete. Published: 0, Queue: 56, Skipped (cached): 172
+2026-03-02 22:30:29 | INFO | Sleeping until 23:00 (29 minutes)...
+2026-03-02 22:35:30 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 22:40:31 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 22:45:32 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 22:46:26 | INFO | Shutting down...
+2026-03-02 22:49:13 | INFO | JTF News starting...
+2026-03-02 22:49:13 | INFO | Facts only. No opinions.
+2026-03-02 22:49:13 | INFO | ----------------------------------------
+2026-03-02 22:49:13 | INFO | Resuming uptime tracking - 223s downtime recorded
+2026-03-02 22:49:13 | INFO | Validating services...
+2026-03-02 22:49:14 | INFO | Claude API: OK
+2026-03-02 22:49:14 | INFO | ElevenLabs API: OK (key present)
+2026-03-02 22:49:14 | INFO | All services validated successfully
+2026-03-02 22:49:14 | INFO | ============================================================
+2026-03-02 22:49:14 | INFO | Starting cycle #1
+2026-03-02 22:49:14 | INFO | Expired from queue: Canada invested over $2.3 million in science and n...
+2026-03-02 22:49:14 | INFO | Rating +1 failure for canada: {'successes': 0, 'failures': 1}
+2026-03-02 22:49:14 | INFO | Expired from queue: The U.S. Forest Service stopped issuing firefighte...
+2026-03-02 22:49:14 | INFO | Rating +1 failure for propublica: {'successes': 0, 'failures': 1}
+2026-03-02 22:49:14 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-02 22:49:15 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-02 22:49:17 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-02 22:49:18 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-02 22:49:20 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-02 22:49:21 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-02 22:49:22 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-02 22:49:23 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-02 22:49:24 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-02 22:49:26 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-02 22:49:27 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-02 22:49:28 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-02 22:49:29 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-02 22:49:32 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-02 22:49:34 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-02 22:49:36 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-02 22:49:37 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-02 22:49:38 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-02 22:49:40 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-02 22:49:41 | INFO | Total headlines: 173
+2026-03-02 22:49:43 | INFO | Low confidence (75%): A drone struck the U.S. embassy in Saudi...
+2026-03-02 22:49:45 | INFO | Low confidence (45%): former President Bill Clinton denied kno...
+2026-03-02 22:49:46 | INFO | Queued: The Queensland government plans to elimi...
+2026-03-02 22:49:51 | INFO | Low confidence (72%): Police did not review the Kelly Wilkinso...
+2026-03-02 22:49:53 | INFO | Low confidence (75%): Minister Sidhu advanced Canada-India com...
+2026-03-02 22:49:53 | INFO | Alert throttled (queue_backup): Queue backup: 55 items, oldest 23.3h
+2026-03-02 22:49:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 22:49:54 | INFO | Cycle complete. Published: 0, Queue: 55, Skipped (cached): 167
+2026-03-02 22:49:54 | INFO | Sleeping until 23:00 (10 minutes)...
+2026-03-02 22:54:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 22:59:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:00:01 | INFO | ============================================================
+2026-03-02 23:00:01 | INFO | Starting cycle #2
+2026-03-02 23:00:01 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-02 23:00:02 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-02 23:00:03 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-02 23:00:05 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-02 23:00:07 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-02 23:00:08 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-02 23:00:09 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-02 23:00:10 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-02 23:00:12 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-02 23:00:13 | WARNING | Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/news/
+2026-03-02 23:00:14 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-02 23:00:15 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-02 23:00:17 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-02 23:00:20 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-02 23:00:21 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-02 23:00:23 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-02 23:00:24 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-02 23:00:26 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-02 23:00:27 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-02 23:00:28 | INFO | Total headlines: 163
+2026-03-02 23:00:30 | INFO | Low confidence (75%): The U.S. embassy in Saudi Arabia was str...
+2026-03-02 23:00:31 | INFO | Word overlap pre-filter: 3/55 candidates
+2026-03-02 23:00:32 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:00:32 | INFO | Cycle complete. Published: 0, Queue: 55, Skipped (cached): 161
+2026-03-02 23:00:32 | INFO | Sleeping until 23:30 (29 minutes)...
+2026-03-02 23:05:33 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:10:34 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:15:34 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:20:35 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:25:36 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:30:04 | INFO | ============================================================
+2026-03-02 23:30:04 | INFO | Starting cycle #3
+2026-03-02 23:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-02 23:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-02 23:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-02 23:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-02 23:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-02 23:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-02 23:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-02 23:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-02 23:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-02 23:30:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-02 23:30:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-02 23:30:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-02 23:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-02 23:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-02 23:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-02 23:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-02 23:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-02 23:30:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-02 23:30:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-02 23:30:30 | INFO | Total headlines: 173
+2026-03-02 23:30:38 | INFO | Low confidence (45%): Explosions reported in Kabul as Afghan a...
+2026-03-02 23:30:41 | INFO | Low confidence (75%): A murder charge was downgraded to assaul...
+2026-03-02 23:30:43 | INFO | Low confidence (45%): Israel's ambassador stated that a girls'...
+2026-03-02 23:30:45 | INFO | Low confidence (45%): The Health and Social Care Act 2008 (Reg...
+2026-03-02 23:30:46 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:30:46 | INFO | Cycle complete. Published: 0, Queue: 55, Skipped (cached): 165
+2026-03-02 23:30:46 | INFO | Sleeping until 00:00 (29 minutes)...
+2026-03-02 23:35:47 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:40:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:45:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:50:49 | INFO | Pushed to GitHub: Update monitor data
+2026-03-02 23:55:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:00:03 | INFO | ============================================================
+2026-03-03 00:00:03 | INFO | Starting cycle #4
+2026-03-03 00:00:03 | INFO | Expired from queue: A father died while zip-lining during a trip, acco...
+2026-03-03 00:00:03 | INFO | Rating +1 failure for abc_au: {'successes': 26, 'failures': 115}
+2026-03-03 00:00:03 | INFO | Expired from queue: Emergency powers invoked as flood risk rises acros...
+2026-03-03 00:00:03 | INFO | Rating +1 failure for abc_au: {'successes': 26, 'failures': 116}
+2026-03-03 00:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 00:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 00:00:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 00:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 00:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 00:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 00:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 00:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 00:00:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 00:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 00:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 00:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 00:00:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 00:00:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 00:00:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 00:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 00:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 00:00:30 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 00:00:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 00:00:32 | INFO | Total headlines: 173
+2026-03-03 00:00:34 | INFO | Low confidence (45%): A man pleaded not guilty to murder charg...
+2026-03-03 00:00:36 | INFO | Low confidence (35%): A new government department is planned t...
+2026-03-03 00:00:41 | INFO | Low confidence (45%): A survey finds adults aged under 35 and ...
+2026-03-03 00:00:42 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:00:42 | INFO | Cycle complete. Published: 0, Queue: 53, Skipped (cached): 169
+2026-03-03 00:00:42 | INFO | Sleeping until 00:30 (29 minutes)...
+2026-03-03 00:05:42 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:10:43 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:15:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:20:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:25:46 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:30:03 | INFO | ============================================================
+2026-03-03 00:30:03 | INFO | Starting cycle #5
+2026-03-03 00:30:03 | INFO | Expired from queue: Israel calls for evacuations in Lebanon following ...
+2026-03-03 00:30:03 | INFO | Rating +1 failure for france24: {'successes': 69, 'failures': 74}
+2026-03-03 00:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 00:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 00:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 00:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 00:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 00:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 00:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 00:30:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 00:30:16 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 00:30:17 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 00:30:18 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 00:30:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 00:30:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 00:30:24 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 00:30:26 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 00:30:28 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 00:30:29 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 00:30:31 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 00:30:32 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 00:30:33 | INFO | Total headlines: 173
+2026-03-03 00:30:35 | INFO | Low confidence (75%): FC Barcelona leads the La Liga standings...
+2026-03-03 00:30:36 | INFO | Word overlap pre-filter: 1/52 candidates
+2026-03-03 00:30:37 | INFO | Queued: Israeli military announces simultaneous ...
+2026-03-03 00:30:41 | INFO | Low confidence (78%): A teenager was found guilty of making a ...
+2026-03-03 00:30:44 | INFO | Low confidence (45%): Australians in the Middle East described...
+2026-03-03 00:30:48 | INFO | Low confidence (75%): A fire occurred in northern Geelong trig...
+2026-03-03 00:30:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:30:53 | INFO | Cycle complete. Published: 0, Queue: 53, Skipped (cached): 164
+2026-03-03 00:30:53 | INFO | Sleeping until 01:00 (29 minutes)...
+2026-03-03 00:35:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:40:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:45:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:50:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 00:55:57 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:00:03 | INFO | ============================================================
+2026-03-03 01:00:03 | INFO | Starting cycle #6
+2026-03-03 01:00:03 | INFO | Expired from queue: Brisbane house prices increased approximately 16 p...
+2026-03-03 01:00:03 | INFO | Rating +1 failure for abc_au: {'successes': 26, 'failures': 117}
+2026-03-03 01:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 01:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 01:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 01:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 01:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 01:00:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 01:00:11 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 01:00:12 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 01:00:13 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 01:00:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 01:00:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 01:00:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 01:00:18 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 01:00:21 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 01:00:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 01:00:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 01:00:26 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 01:00:27 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 01:00:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 01:00:30 | INFO | Total headlines: 173
+2026-03-03 01:00:32 | INFO | Low confidence (45%): Airlines resume limited operations to th...
+2026-03-03 01:00:39 | INFO | Low confidence (45%): A teenager who made threatening statemen...
+2026-03-03 01:00:43 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:00:43 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 167
+2026-03-03 01:00:43 | INFO | Sleeping until 01:30 (29 minutes)...
+2026-03-03 01:05:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:10:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:15:46 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:20:47 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:25:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:30:04 | INFO | ============================================================
+2026-03-03 01:30:04 | INFO | Starting cycle #7
+2026-03-03 01:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 01:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 01:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 01:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 01:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 01:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 01:30:11 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 01:30:12 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 01:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 01:30:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 01:30:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 01:30:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 01:30:18 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 01:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 01:30:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 01:30:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 01:30:26 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 01:30:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 01:30:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 01:30:30 | INFO | Total headlines: 173
+2026-03-03 01:30:31 | INFO | Word overlap pre-filter: 3/52 candidates
+2026-03-03 01:30:31 | INFO | Queued: The Israeli army states that troops are ...
+2026-03-03 01:30:32 | INFO | Word overlap pre-filter: 4/53 candidates
+2026-03-03 01:30:32 | INFO | Queued: The United States imposed sanctions on t...
+2026-03-03 01:30:38 | INFO | Low confidence (45%): A teenager who made threats regarding Pr...
+2026-03-03 01:30:40 | INFO | Low confidence (78%): A landlord evicted a family of eight whi...
+2026-03-03 01:30:41 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:30:41 | INFO | Cycle complete. Published: 0, Queue: 54, Skipped (cached): 168
+2026-03-03 01:30:41 | INFO | Sleeping until 02:00 (29 minutes)...
+2026-03-03 01:35:42 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:40:43 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:45:43 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:50:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 01:55:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:00:04 | INFO | ============================================================
+2026-03-03 02:00:04 | INFO | Starting cycle #8
+2026-03-03 02:00:04 | INFO | Expired from queue: Smoke rises from the U.S. embassy in Kuwait....
+2026-03-03 02:00:04 | INFO | Rating +1 failure for dw: {'successes': 53, 'failures': 37}
+2026-03-03 02:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 02:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 02:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 02:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 02:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 02:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 02:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 02:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 02:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 02:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 02:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 02:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 02:00:20 | INFO | Fetched 1 headlines from Supreme Court (HTML)
+2026-03-03 02:00:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 02:00:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 02:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 02:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 02:00:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 02:00:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 02:00:31 | INFO | Total headlines: 172
+2026-03-03 02:00:34 | INFO | Low confidence (75%): Israel stated it will reopen a Gaza aid ...
+2026-03-03 02:00:36 | INFO | Word overlap pre-filter: 1/53 candidates
+2026-03-03 02:00:38 | INFO | Low confidence (45%): A tobacconist shop was destroyed by Molo...
+2026-03-03 02:00:43 | INFO | Not newsworthy (none): A man acquitted of a 2009 murder subsequ...
+2026-03-03 02:00:44 | INFO | Word overlap pre-filter: 3/53 candidates
+2026-03-03 02:00:44 | INFO | Queued: A Queensland massage therapist was charg...
+2026-03-03 02:00:46 | INFO | Low confidence (45%): Unauthorized direct debits affected a Pe...
+2026-03-03 02:00:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:00:51 | INFO | Cycle complete. Published: 0, Queue: 54, Skipped (cached): 163
+2026-03-03 02:00:51 | INFO | Sleeping until 02:30 (29 minutes)...
+2026-03-03 02:05:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:10:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:15:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:20:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:25:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:30:04 | INFO | ============================================================
+2026-03-03 02:30:04 | INFO | Starting cycle #9
+2026-03-03 02:30:04 | INFO | Expired from queue: A woman died after being shot with a bean-bag roun...
+2026-03-03 02:30:04 | INFO | Rating +1 failure for abc_au: {'successes': 26, 'failures': 118}
+2026-03-03 02:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 02:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 02:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 02:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 02:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 02:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 02:30:11 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 02:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 02:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 02:30:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 02:30:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 02:30:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 02:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 02:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 02:30:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 02:30:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 02:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 02:30:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 02:30:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 02:30:30 | INFO | Total headlines: 173
+2026-03-03 02:30:33 | INFO | Low confidence (45%): The U.S. embassy in Riyadh reported a dr...
+2026-03-03 02:30:35 | INFO | Word overlap pre-filter: 3/53 candidates
+2026-03-03 02:30:39 | INFO | Low confidence (75%): Domestic violence prevention groups reje...
+2026-03-03 02:30:42 | INFO | Low confidence (75%): A tribunal found that a general practiti...
+2026-03-03 02:30:45 | INFO | Low confidence (45%): A zip-line supervisor stated they could ...
+2026-03-03 02:30:48 | INFO | Low confidence (45%): Cycling in Dublin increased 50% with maj...
+2026-03-03 02:30:49 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:30:49 | INFO | Cycle complete. Published: 0, Queue: 53, Skipped (cached): 166
+2026-03-03 02:30:49 | INFO | Sleeping until 03:00 (29 minutes)...
+2026-03-03 02:35:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:40:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:45:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:50:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 02:55:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:00:04 | INFO | ============================================================
+2026-03-03 03:00:04 | INFO | Starting cycle #10
+2026-03-03 03:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 03:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 03:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 03:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 03:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 03:00:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 03:00:11 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 03:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 03:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 03:00:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 03:00:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 03:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 03:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 03:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 03:00:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 03:00:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 03:00:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 03:00:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 03:00:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 03:00:30 | INFO | Total headlines: 173
+2026-03-03 03:00:32 | INFO | Low confidence (75%): Real Madrid lost a match and FC Barcelon...
+2026-03-03 03:00:35 | INFO | Low confidence (75%): Lebanese army evacuates positions in the...
+2026-03-03 03:00:40 | INFO | Word overlap pre-filter: 9/53 candidates
+2026-03-03 03:00:41 | INFO | Preferring new source (Deutsche Welle: 5.0) over queued (France 24: 4.1)
+2026-03-03 03:00:43 | INFO | Generated TTS (archive/2026-03-03/0bdf88e4e19a.mp3): Israel conducted strikes on Beirut and Tehran....
+2026-03-03 03:00:43 | INFO | Published: Israel conducted strikes on Beirut and Tehran....
+2026-03-03 03:00:43 | INFO | RSS feed updated: 100 items
+2026-03-03 03:00:45 | INFO | Pushed to GitHub: Update feed: Israel conducted strikes on Beirut and Tehran.
+2026-03-03 03:00:45 | INFO | Alexa feed updated: 5 items
+2026-03-03 03:00:46 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-03 03:00:46 | INFO | VERIFIED: Israel conducted strikes on Beirut and Tehran....
+2026-03-03 03:00:46 | INFO | Rating +1 success for dw: {'successes': 54, 'failures': 37}
+2026-03-03 03:00:46 | INFO | Rating +1 success for france24: {'successes': 70, 'failures': 74}
+2026-03-03 03:00:52 | INFO | Low confidence (75%): Australian Border Force seized an illega...
+2026-03-03 03:00:57 | INFO | Low confidence (75%): A restaurant received a $40,000 fine aft...
+2026-03-03 03:01:00 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:01:00 | INFO | Cycle complete. Published: 1, Queue: 52, Skipped (cached): 166
+2026-03-03 03:01:00 | INFO | Sleeping until 03:30 (28 minutes)...
+2026-03-03 03:06:00 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:11:01 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:16:02 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:21:03 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:26:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:30:04 | INFO | ============================================================
+2026-03-03 03:30:04 | INFO | Starting cycle #11
+2026-03-03 03:30:04 | INFO | Expired from queue: French Foreign Minister Jean-Noel Barrot stated th...
+2026-03-03 03:30:04 | INFO | Rating +1 failure for france24: {'successes': 70, 'failures': 75}
+2026-03-03 03:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 03:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 03:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 03:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 03:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 03:30:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 03:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 03:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 03:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 03:30:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 03:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 03:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 03:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 03:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 03:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 03:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 03:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 03:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 03:30:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 03:30:31 | INFO | Total headlines: 173
+2026-03-03 03:30:33 | INFO | Low confidence (45%): Oil and gas prices rise following report...
+2026-03-03 03:30:52 | INFO | Word overlap pre-filter: 5/51 candidates
+2026-03-03 03:30:53 | INFO | Queued: A man was jailed for sexually abusing a ...
+2026-03-03 03:30:57 | INFO | Low confidence (75%): A public meeting is scheduled regarding ...
+2026-03-03 03:30:59 | INFO | Low confidence (75%): A proposed revision to requirements for ...
+2026-03-03 03:31:05 | INFO | Low confidence (45%): A supplemental nutrition assistance prog...
+2026-03-03 03:31:11 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:31:11 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 152
+2026-03-03 03:31:11 | INFO | Sleeping until 04:00 (28 minutes)...
+2026-03-03 03:36:12 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:41:13 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:46:13 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:51:14 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 03:56:15 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:00:04 | INFO | ============================================================
+2026-03-03 04:00:04 | INFO | Starting cycle #12
+2026-03-03 04:00:04 | INFO | Expired from queue: President Javier Milei of Argentina praised the re...
+2026-03-03 04:00:04 | INFO | Rating +1 failure for dw: {'successes': 54, 'failures': 38}
+2026-03-03 04:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 04:00:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 04:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 04:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 04:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 04:00:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 04:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 04:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 04:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 04:00:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 04:00:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 04:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 04:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 04:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 04:00:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 04:00:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 04:00:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 04:00:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 04:00:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 04:00:31 | INFO | Total headlines: 172
+2026-03-03 04:00:33 | INFO | Queued: A US fighter jet was shot down by Kuwait...
+2026-03-03 04:00:34 | INFO | Word overlap pre-filter: 3/52 candidates
+2026-03-03 04:00:38 | INFO | Generated TTS (archive/2026-03-03/6c7f66498236.mp3): President Emmanuel Macron of France stated France ...
+2026-03-03 04:00:38 | INFO | UPDATED story: +'and deployed jets over the United Arab Emirates to protect its military bases' from France 24
+2026-03-03 04:00:38 | INFO | Rating +1 success for france24: {'successes': 71, 'failures': 75}
+2026-03-03 04:00:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:00:44 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 167
+2026-03-03 04:00:44 | INFO | Sleeping until 04:30 (29 minutes)...
+2026-03-03 04:05:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:10:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:15:46 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:20:47 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:25:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:30:04 | INFO | ============================================================
+2026-03-03 04:30:04 | INFO | Starting cycle #13
+2026-03-03 04:30:04 | INFO | Expired from queue: Friedrich Merz, Chancellor of Germany, is travelin...
+2026-03-03 04:30:04 | INFO | Rating +1 failure for dw: {'successes': 54, 'failures': 39}
+2026-03-03 04:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 04:30:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 04:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 04:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 04:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 04:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 04:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 04:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 04:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 04:30:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 04:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 04:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 04:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 04:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 04:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 04:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 04:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 04:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 04:30:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 04:30:31 | INFO | Total headlines: 172
+2026-03-03 04:30:32 | INFO | Word overlap pre-filter: 2/51 candidates
+2026-03-03 04:30:32 | INFO | Queued: Six U.S. soldiers were killed in a strik...
+2026-03-03 04:30:35 | INFO | Low confidence (45%): Governor Kristi Noem is scheduled to fac...
+2026-03-03 04:30:38 | INFO | Word overlap pre-filter: 1/52 candidates
+2026-03-03 04:30:38 | INFO | Queued: Primary elections are scheduled for Tues...
+2026-03-03 04:30:44 | INFO | Low confidence (45%): Melania Trump presided at a United Natio...
+2026-03-03 04:30:45 | INFO | Duplicate (Claude batch): 'France deployed fighter jets over the Un...'
+2026-03-03 04:30:45 | INFO | Duplicate: France deployed fighter jets over the Un...
+2026-03-03 04:30:47 | INFO | Low confidence (45%): Global stock markets declined amid repor...
+2026-03-03 04:30:50 | INFO | Low confidence (75%): Jurors will receive thank you cards in r...
+2026-03-03 04:30:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:30:52 | INFO | Cycle complete. Published: 0, Queue: 53, Skipped (cached): 162
+2026-03-03 04:30:52 | INFO | Sleeping until 05:00 (29 minutes)...
+2026-03-03 04:35:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:40:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:45:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:50:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 04:55:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:00:04 | INFO | ============================================================
+2026-03-03 05:00:04 | INFO | Starting cycle #14
+2026-03-03 05:00:04 | INFO | Expired from queue: The President of the European Commission and the P...
+2026-03-03 05:00:04 | INFO | Rating +1 failure for eu_commission: {'successes': 3, 'failures': 24}
+2026-03-03 05:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 05:00:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 05:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 05:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 05:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 05:00:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 05:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 05:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 05:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 05:00:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 05:00:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 05:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 05:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 05:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 05:00:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 05:00:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 05:00:26 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 05:00:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 05:00:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 05:00:30 | INFO | Total headlines: 172
+2026-03-03 05:00:33 | INFO | Low confidence (45%): Gas and oil prices increase and stock ma...
+2026-03-03 05:00:35 | INFO | Word overlap pre-filter: 3/52 candidates
+2026-03-03 05:00:35 | INFO | Preferring queued source (Deutsche Welle: 5.3) over new (BBC News: 4.6)
+2026-03-03 05:00:37 | INFO | Generated TTS (archive/2026-03-03/3995e80220b7.mp3): The United States imposed sanctions on the Rwandan...
+2026-03-03 05:00:37 | INFO | Published: The United States imposed sanctions on the Rwandan...
+2026-03-03 05:00:37 | INFO | RSS feed updated: 100 items
+2026-03-03 05:00:39 | INFO | Pushed to GitHub: Update feed: The United States imposed sanctions on the Rwandan
+2026-03-03 05:00:39 | INFO | Alexa feed updated: 5 items
+2026-03-03 05:00:40 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-03 05:00:40 | INFO | VERIFIED: The United States imposed sanctions on the Rwandan...
+2026-03-03 05:00:40 | INFO | Rating +1 success for bbc: {'successes': 58, 'failures': 48}
+2026-03-03 05:00:40 | INFO | Rating +1 success for dw: {'successes': 55, 'failures': 39}
+2026-03-03 05:00:45 | INFO | Low confidence (45%): The United States evacuated diplomats an...
+2026-03-03 05:00:48 | INFO | Low confidence (75%): Israel's military received orders to sei...
+2026-03-03 05:00:49 | INFO | Word overlap pre-filter: 2/51 candidates
+2026-03-03 05:00:52 | INFO | Low confidence (45%): Secretary of State Marco Rubio stated th...
+2026-03-03 05:00:54 | INFO | Duplicate (Claude batch): 'Israeli military strikes reported in Bei...'
+2026-03-03 05:00:54 | INFO | Duplicate: Israeli military strikes reported in Bei...
+2026-03-03 05:00:56 | INFO | Duplicate (Claude batch): 'Israel launched simultaneous strikes on ...'
+2026-03-03 05:00:56 | INFO | Duplicate: Israel launched simultaneous strikes on ...
+2026-03-03 05:00:58 | INFO | Low confidence (45%): Stock markets declined amid concerns abo...
+2026-03-03 05:01:02 | INFO | Alert throttled (queue_backup): Queue backup: 51 items, oldest 24.0h
+2026-03-03 05:01:03 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:01:03 | INFO | Cycle complete. Published: 1, Queue: 51, Skipped (cached): 161
+2026-03-03 05:01:03 | INFO | Sleeping until 05:30 (28 minutes)...
+2026-03-03 05:06:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:11:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:16:05 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:21:06 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:26:07 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:30:04 | INFO | ============================================================
+2026-03-03 05:30:04 | INFO | Starting cycle #15
+2026-03-03 05:30:04 | INFO | Expired from queue: President Trump urged Iranian military forces to s...
+2026-03-03 05:30:04 | INFO | Rating +1 failure for france24: {'successes': 71, 'failures': 76}
+2026-03-03 05:30:04 | INFO | Expired from queue: A Commission proposes €2 million from the European...
+2026-03-03 05:30:04 | INFO | Rating +1 failure for eu_commission: {'successes': 3, 'failures': 25}
+2026-03-03 05:30:04 | INFO | Expired from queue: The Commission approved Slovenia's fifth payment r...
+2026-03-03 05:30:04 | INFO | Rating +1 failure for eu_commission: {'successes': 3, 'failures': 26}
+2026-03-03 05:30:04 | INFO | Expired from queue: President Ursula von der Leyen launched OceanEye a...
+2026-03-03 05:30:04 | INFO | Rating +1 failure for eu_commission: {'successes': 3, 'failures': 27}
+2026-03-03 05:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 05:30:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 05:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 05:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 05:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 05:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 05:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 05:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 05:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 05:30:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 05:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 05:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 05:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 05:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 05:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 05:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 05:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 05:30:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 05:30:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 05:30:31 | INFO | Total headlines: 172
+2026-03-03 05:30:33 | INFO | Low confidence (45%): Scientists developed a pocket-sized arti...
+2026-03-03 05:30:37 | INFO | Low confidence (45%): Iranians are fleeing to Turkey....
+2026-03-03 05:30:40 | INFO | Word overlap pre-filter: 5/47 candidates
+2026-03-03 05:30:45 | INFO | Not newsworthy (none): President Ursula von der Leyen released ...
+2026-03-03 05:30:49 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:30:49 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 164
+2026-03-03 05:30:49 | INFO | Sleeping until 06:00 (29 minutes)...
+2026-03-03 05:35:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:40:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:45:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:50:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 05:55:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:00:04 | INFO | ============================================================
+2026-03-03 06:00:04 | INFO | Starting cycle #16
+2026-03-03 06:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 06:00:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 06:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 06:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 06:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 06:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 06:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 06:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 06:00:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 06:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 06:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 06:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 06:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 06:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 06:00:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 06:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 06:00:29 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 06:00:30 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 06:00:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 06:00:32 | INFO | Total headlines: 172
+2026-03-03 06:00:34 | INFO | Low confidence (45%): OpenAI changed a deal with the U.S. mili...
+2026-03-03 06:00:37 | INFO | Low confidence (45%): A junior judge in India cited AI-generat...
+2026-03-03 06:00:40 | INFO | Low confidence (45%): A U.S. House panel released depositions ...
+2026-03-03 06:00:47 | INFO | Low confidence (45%): Calgary is reconsidering its 2026 Olympi...
+2026-03-03 06:00:50 | INFO | Low confidence (75%): The Australian dollar and global stock m...
+2026-03-03 06:00:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:00:50 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 164
+2026-03-03 06:00:50 | INFO | Sleeping until 06:30 (29 minutes)...
+2026-03-03 06:05:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:10:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:15:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:20:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:25:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:30:04 | INFO | ============================================================
+2026-03-03 06:30:04 | INFO | Starting cycle #17
+2026-03-03 06:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 06:30:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 06:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 06:30:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 06:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 06:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 06:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 06:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 06:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 06:30:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 06:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 06:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 06:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 06:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 06:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 06:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 06:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 06:30:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 06:30:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 06:30:30 | INFO | Total headlines: 172
+2026-03-03 06:30:32 | INFO | Word overlap pre-filter: 1/47 candidates
+2026-03-03 06:30:33 | INFO | Preferring new source (France 24: 4.1) over queued (CBC News: 2.6)
+2026-03-03 06:30:36 | INFO | Generated TTS (archive/2026-03-03/931d11ee18b9.mp3): U.S. embassy in Saudi Arabia was hit by Iranian dr...
+2026-03-03 06:30:36 | INFO | Published: U.S. embassy in Saudi Arabia was hit by Iranian dr...
+2026-03-03 06:30:36 | INFO | RSS feed updated: 100 items
+2026-03-03 06:30:38 | INFO | Pushed to GitHub: Update feed: U.S. embassy in Saudi Arabia was hit by Iranian dr
+2026-03-03 06:30:38 | INFO | Alexa feed updated: 5 items
+2026-03-03 06:30:39 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-03 06:30:39 | INFO | VERIFIED: U.S. embassy in Saudi Arabia was hit by Iranian dr...
+2026-03-03 06:30:39 | INFO | Rating +1 success for france24: {'successes': 72, 'failures': 76}
+2026-03-03 06:30:39 | INFO | Rating +1 success for cbc: {'successes': 30, 'failures': 67}
+2026-03-03 06:30:46 | INFO | Low confidence (45%): Israel and the United States stated that...
+2026-03-03 06:30:49 | INFO | Low confidence (45%): Military strikes reported between US and...
+2026-03-03 06:30:53 | INFO | Low confidence (45%): The Trump administration ceased legal pr...
+2026-03-03 06:30:55 | INFO | Low confidence (45%): A lunar eclipse occurs; the next will no...
+2026-03-03 06:31:00 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:31:00 | INFO | Cycle complete. Published: 1, Queue: 46, Skipped (cached): 163
+2026-03-03 06:31:00 | INFO | Sleeping until 07:00 (28 minutes)...
+2026-03-03 06:36:00 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:41:01 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:46:02 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:51:03 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 06:56:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:00:04 | INFO | ============================================================
+2026-03-03 07:00:04 | INFO | Starting cycle #18
+2026-03-03 07:00:05 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 07:00:06 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 07:00:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 07:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 07:00:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 07:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 07:00:13 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 07:00:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 07:00:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 07:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 07:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 07:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 07:00:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 07:00:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 07:00:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 07:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 07:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 07:00:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 07:00:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 07:00:32 | INFO | Total headlines: 172
+2026-03-03 07:00:35 | INFO | Low confidence (45%): The U.S. evacuated diplomats from the Mi...
+2026-03-03 07:00:39 | INFO | Low confidence (45%): A Bundeswehr report finds recruitment bo...
+2026-03-03 07:00:46 | INFO | Low confidence (25%): A minister called for a swift and clean ...
+2026-03-03 07:00:48 | INFO | Queued: An Army chaplain was stabbed by a teenag...
+2026-03-03 07:00:49 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:00:49 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 165
+2026-03-03 07:00:49 | INFO | Sleeping until 07:30 (29 minutes)...
+2026-03-03 07:05:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:10:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:15:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:20:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:25:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:30:05 | INFO | ============================================================
+2026-03-03 07:30:05 | INFO | Starting cycle #19
+2026-03-03 07:30:05 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 07:30:06 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 07:30:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 07:30:09 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 07:30:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 07:30:12 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 07:30:13 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 07:30:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 07:30:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 07:30:17 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 07:30:18 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 07:30:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 07:30:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 07:30:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 07:30:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 07:30:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 07:30:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 07:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 07:30:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 07:30:32 | INFO | Total headlines: 172
+2026-03-03 07:30:34 | INFO | Low confidence (45%): U.S. officials have urged U.S. nationals...
+2026-03-03 07:30:36 | INFO | Low confidence (45%): Mexican drug lord Nemesio Oseguera Cerva...
+2026-03-03 07:30:38 | INFO | Word overlap pre-filter: 1/47 candidates
+2026-03-03 07:30:44 | INFO | Word overlap pre-filter: 3/47 candidates
+2026-03-03 07:30:45 | INFO | Queued: A 42-year-old man pleaded guilty to the ...
+2026-03-03 07:30:48 | INFO | Queued: The Crime and Policing Bill enters repor...
+2026-03-03 07:30:50 | INFO | Low confidence (45%): The Online Services (Age Restrictions) B...
+2026-03-03 07:30:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:30:54 | INFO | Cycle complete. Published: 0, Queue: 49, Skipped (cached): 162
+2026-03-03 07:30:54 | INFO | Sleeping until 08:00 (29 minutes)...
+2026-03-03 07:35:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:40:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:45:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:50:57 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 07:55:58 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:00:04 | INFO | ============================================================
+2026-03-03 08:00:04 | INFO | Starting cycle #20
+2026-03-03 08:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 08:00:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 08:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 08:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 08:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 08:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 08:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 08:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 08:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 08:00:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 08:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 08:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 08:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 08:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 08:00:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 08:00:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 08:00:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 08:00:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 08:00:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 08:00:30 | INFO | Total headlines: 172
+2026-03-03 08:00:36 | INFO | Word overlap pre-filter: 1/49 candidates
+2026-03-03 08:00:37 | INFO | Queued: Israeli military stated it struck Iran's...
+2026-03-03 08:00:40 | INFO | Low confidence (78%): President Trump will meet with German Ch...
+2026-03-03 08:00:43 | INFO | Not newsworthy (none): Garda investigations into Grok AI images...
+2026-03-03 08:00:47 | INFO | Not newsworthy (none): President Ursula von der Leyen spoke at ...
+2026-03-03 08:00:51 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgGWyayxHGvvVGnAuhX7'}
+2026-03-03 08:00:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:00:52 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 165
+2026-03-03 08:00:52 | INFO | Sleeping until 08:30 (29 minutes)...
+2026-03-03 08:05:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:10:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:15:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:20:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:25:57 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:30:05 | INFO | ============================================================
+2026-03-03 08:30:05 | INFO | Starting cycle #21
+2026-03-03 08:30:05 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 08:30:06 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 08:30:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 08:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 08:30:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 08:30:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 08:30:13 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 08:30:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 08:30:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 08:30:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 08:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 08:30:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 08:30:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 08:30:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 08:30:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 08:30:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 08:30:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 08:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 08:30:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 08:30:32 | INFO | Total headlines: 172
+2026-03-03 08:30:36 | INFO | Word overlap pre-filter: 4/50 candidates
+2026-03-03 08:30:36 | INFO | Queued: A mafia boss died in prison in Milan, It...
+2026-03-03 08:30:44 | INFO | Word overlap pre-filter: 3/51 candidates
+2026-03-03 08:30:48 | INFO | Duplicate (Claude batch): 'Drones struck the U.S. Embassy in Saudi ...'
+2026-03-03 08:30:48 | INFO | Duplicate: Drones struck the U.S. Embassy in Saudi ...
+2026-03-03 08:30:51 | INFO | Not newsworthy (none): Parks Canada introduces a reservation sy...
+2026-03-03 08:30:54 | INFO | Low confidence (75%): The Government of Canada supports growth...
+2026-03-03 08:30:56 | INFO | Not newsworthy (none): The Government of Canada supports projec...
+2026-03-03 08:30:59 | INFO | Word overlap pre-filter: 2/51 candidates
+2026-03-03 08:30:59 | INFO | Queued: Minister Solomon announced $8.5 million ...
+2026-03-03 08:31:02 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:31:02 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 160
+2026-03-03 08:31:02 | INFO | Sleeping until 09:00 (28 minutes)...
+2026-03-03 08:36:03 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:41:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:46:05 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:51:06 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 08:56:07 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:00:04 | INFO | ============================================================
+2026-03-03 09:00:04 | INFO | Starting cycle #22
+2026-03-03 09:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 09:00:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 09:00:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 09:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 09:00:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 09:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 09:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 09:00:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 09:00:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 09:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 09:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 09:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 09:00:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 09:00:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 09:00:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 09:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 09:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 09:00:30 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 09:00:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 09:00:32 | INFO | Total headlines: 172
+2026-03-03 09:00:39 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM5RjTP1u337ioTZmM5'}
+2026-03-03 09:00:46 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM625SJ26HVjQgneKGg'}
+2026-03-03 09:00:53 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM6Kiapj79WRaRPiBJb'}
+2026-03-03 09:01:03 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM6yo3UmJJk93yxahCd'}
+2026-03-03 09:01:17 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgM7vqUNxTpDGc1YNbk4'}
+2026-03-03 09:01:18 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:01:18 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 167
+2026-03-03 09:01:18 | INFO | Sleeping until 09:30 (28 minutes)...
+2026-03-03 09:06:19 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:11:27 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:16:28 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:21:29 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:26:30 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:30:11 | INFO | ============================================================
+2026-03-03 09:30:11 | INFO | Starting cycle #23
+2026-03-03 09:30:11 | INFO | Expired from queue: A 4-year-old girl died of injuries sustained on a ...
+2026-03-03 09:30:11 | INFO | Rating +1 failure for cbc: {'successes': 30, 'failures': 68}
+2026-03-03 09:30:12 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 09:30:13 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 09:30:14 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 09:30:16 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 09:30:18 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 09:30:19 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 09:30:20 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 09:30:21 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 09:30:23 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 09:30:24 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 09:30:25 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 09:30:26 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 09:30:28 | INFO | Fetched 1 headlines from Supreme Court (HTML)
+2026-03-03 09:30:31 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 09:30:32 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 09:30:34 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 09:30:35 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 09:30:37 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 09:30:38 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 09:30:39 | INFO | Total headlines: 171
+2026-03-03 09:30:43 | INFO | Low confidence (45%): Governor Kristi Noem faces senators rega...
+2026-03-03 09:30:45 | INFO | Low confidence (45%): Thousands of Afghans are displaced due t...
+2026-03-03 09:30:50 | INFO | Word overlap pre-filter: 6/51 candidates
+2026-03-03 09:30:50 | INFO | Preferring queued source (PBS NewsHour: 5.8) over new (France 24: 4.1)
+2026-03-03 09:30:53 | INFO | Generated TTS (archive/2026-03-03/2a4232a62472.mp3): The State Department urged U.S. citizens to leave ...
+2026-03-03 09:30:53 | INFO | Published: The State Department urged U.S. citizens to leave ...
+2026-03-03 09:30:53 | INFO | RSS feed updated: 100 items
+2026-03-03 09:30:55 | INFO | Pushed to GitHub: Update feed: The State Department urged U.S. citizens to leave 
+2026-03-03 09:30:55 | INFO | Alexa feed updated: 5 items
+2026-03-03 09:30:56 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-03 09:30:56 | INFO | VERIFIED: The State Department urged U.S. citizens to leave ...
+2026-03-03 09:30:56 | INFO | Rating +1 success for france24: {'successes': 73, 'failures': 76}
+2026-03-03 09:30:56 | INFO | Rating +1 success for pbs: {'successes': 42, 'failures': 26}
+2026-03-03 09:31:02 | INFO | Low confidence (45%): A drug lord identified as El Mencho was ...
+2026-03-03 09:31:08 | INFO | Low confidence (45%): Iran conducted attacks on Gulf oil and g...
+2026-03-03 09:31:14 | INFO | Low confidence (75%): President Trump stated that a war with I...
+2026-03-03 09:31:16 | INFO | Low confidence (75%): Minister Joly plans to highlight support...
+2026-03-03 09:31:18 | INFO | Low confidence (45%): The Government of Canada provides suppor...
+2026-03-03 09:31:19 | INFO | Word overlap pre-filter: 6/50 candidates
+2026-03-03 09:31:20 | INFO | Queued: The Government of Canada announced $1.5 ...
+2026-03-03 09:31:22 | INFO | Low confidence (45%): The Government of Canada will provide a ...
+2026-03-03 09:31:23 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:31:23 | INFO | Cycle complete. Published: 1, Queue: 51, Skipped (cached): 158
+2026-03-03 09:31:23 | INFO | Sleeping until 10:00 (28 minutes)...
+2026-03-03 09:36:24 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:41:25 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:46:26 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:51:27 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 09:56:28 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:00:04 | INFO | ============================================================
+2026-03-03 10:00:04 | INFO | Starting cycle #24
+2026-03-03 10:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 10:00:05 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 10:00:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 10:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 10:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 10:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 10:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 10:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 10:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 10:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 10:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 10:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 10:00:19 | INFO | Fetched 1 headlines from Supreme Court (HTML)
+2026-03-03 10:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 10:00:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 10:00:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 10:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 10:00:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 10:00:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 10:00:31 | INFO | Total headlines: 171
+2026-03-03 10:00:42 | INFO | Word overlap pre-filter: 3/51 candidates
+2026-03-03 10:00:43 | INFO | Queued: President Trump meets with Friedrich Mer...
+2026-03-03 10:00:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:00:44 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 166
+2026-03-03 10:00:44 | INFO | Sleeping until 10:30 (29 minutes)...
+2026-03-03 10:05:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:10:46 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:15:47 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:20:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:25:49 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:30:05 | INFO | ============================================================
+2026-03-03 10:30:05 | INFO | Starting cycle #25
+2026-03-03 10:30:05 | INFO | Expired from queue: The Canada Border Services Agency seized 111 kilog...
+2026-03-03 10:30:05 | INFO | Rating +1 failure for canada: {'successes': 0, 'failures': 2}
+2026-03-03 10:30:05 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 10:30:06 | INFO | Fetched 9 headlines from NPR (RSS)
+2026-03-03 10:30:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 10:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 10:30:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 10:30:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 10:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 10:30:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 10:30:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 10:30:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 10:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 10:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 10:30:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 10:30:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 10:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 10:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 10:30:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 10:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 10:30:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 10:30:31 | INFO | Total headlines: 172
+2026-03-03 10:30:34 | INFO | Low confidence (75%): The U.S. closed some Gulf embassies and ...
+2026-03-03 10:30:37 | INFO | Low confidence (45%): Energy prices increase and stock markets...
+2026-03-03 10:30:39 | INFO | Low confidence (75%): German customs officials seized ketamine...
+2026-03-03 10:30:42 | INFO | Queued: A seventh complainant is being cross-exa...
+2026-03-03 10:30:44 | INFO | Low confidence (75%): Prime Minister Benjamin Netanyahu stated...
+2026-03-03 10:30:46 | INFO | Low confidence (75%): President von der Leyen had a call with ...
+2026-03-03 10:30:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:30:51 | INFO | Cycle complete. Published: 0, Queue: 52, Skipped (cached): 164
+2026-03-03 10:30:51 | INFO | Sleeping until 11:00 (29 minutes)...
+2026-03-03 10:35:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:40:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:45:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:50:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 10:55:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:00:04 | INFO | ============================================================
+2026-03-03 11:00:04 | INFO | Starting cycle #26
+2026-03-03 11:00:04 | INFO | Expired from queue: Canada secured 30 critical minerals partnerships a...
+2026-03-03 11:00:04 | INFO | Rating +1 failure for canada: {'successes': 0, 'failures': 3}
+2026-03-03 11:00:04 | INFO | Expired from queue: Canada and Greenland issued a joint declaration of...
+2026-03-03 11:00:04 | INFO | Rating +1 failure for canada: {'successes': 0, 'failures': 4}
+2026-03-03 11:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 11:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 11:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 11:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 11:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 11:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 11:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 11:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 11:00:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 11:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 11:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 11:00:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 11:00:21 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 11:00:24 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 11:00:26 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 11:00:28 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 11:00:29 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 11:00:31 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 11:00:32 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 11:00:33 | INFO | Total headlines: 173
+2026-03-03 11:00:46 | INFO | Not newsworthy (none): Justin Timberlake filed a lawsuit regard...
+2026-03-03 11:00:49 | INFO | Low confidence (65%): A man claimed to have had consensual sex...
+2026-03-03 11:00:51 | INFO | Low confidence (65%): A family settled a legal action regardin...
+2026-03-03 11:00:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:00:52 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 165
+2026-03-03 11:00:52 | INFO | Sleeping until 11:30 (29 minutes)...
+2026-03-03 11:05:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:10:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:15:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:20:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:25:57 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:30:04 | INFO | ============================================================
+2026-03-03 11:30:04 | INFO | Starting cycle #27
+2026-03-03 11:30:04 | INFO | Expired from queue: A man died while attempting to help six people cau...
+2026-03-03 11:30:04 | INFO | Rating +1 failure for irish: {'successes': 3, 'failures': 68}
+2026-03-03 11:30:04 | INFO | Expired from queue: The Competition Bureau notification threshold for ...
+2026-03-03 11:30:04 | INFO | Rating +1 failure for canada: {'successes': 0, 'failures': 5}
+2026-03-03 11:30:04 | INFO | Expired from queue: ProPublica filed a lawsuit against the Education D...
+2026-03-03 11:30:04 | INFO | Rating +1 failure for propublica: {'successes': 0, 'failures': 2}
+2026-03-03 11:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 11:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 11:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 11:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 11:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 11:30:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 11:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 11:30:20 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 11:30:21 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 11:30:22 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 11:30:23 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 11:30:24 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 11:30:26 | INFO | Fetched 1 headlines from Supreme Court (HTML)
+2026-03-03 11:30:29 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 11:30:30 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 11:30:32 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 11:30:33 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 11:30:35 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 11:30:36 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 11:30:37 | INFO | Total headlines: 172
+2026-03-03 11:30:39 | INFO | Low confidence (45%): A U.S. father of a teenage school shoote...
+2026-03-03 11:30:46 | INFO | Low confidence (45%): The son of former President Jair Bolsona...
+2026-03-03 11:30:49 | INFO | Low confidence (45%): Israel and the United States conducted s...
+2026-03-03 11:30:50 | INFO | Word overlap pre-filter: 4/47 candidates
+2026-03-03 11:30:50 | INFO | Preferring queued source (PBS NewsHour: 5.2) over new (Deutsche Welle: 5.0)
+2026-03-03 11:30:53 | INFO | Generated TTS (archive/2026-03-03/bfd68ce0639d.mp3): President Trump meets with Friedrich Merz, Chancel...
+2026-03-03 11:30:53 | INFO | Published: President Trump meets with Friedrich Merz, Chancel...
+2026-03-03 11:30:53 | INFO | RSS feed updated: 100 items
+2026-03-03 11:30:55 | INFO | Pushed to GitHub: Update feed: President Trump meets with Friedrich Merz, Chancel
+2026-03-03 11:30:55 | INFO | Alexa feed updated: 5 items
+2026-03-03 11:30:56 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-03 11:30:56 | INFO | VERIFIED: President Trump meets with Friedrich Merz, Chancel...
+2026-03-03 11:30:56 | INFO | Rating +1 success for dw: {'successes': 56, 'failures': 39}
+2026-03-03 11:30:56 | INFO | Rating +1 success for pbs: {'successes': 43, 'failures': 26}
+2026-03-03 11:31:05 | INFO | Low confidence (45%): President Trump suggested that someone f...
+2026-03-03 11:31:08 | INFO | Not newsworthy (none): Property owners in Malahide dispute a cl...
+2026-03-03 11:31:09 | INFO | Alert throttled (queue_backup): Queue backup: 46 items, oldest 21.8h
+2026-03-03 11:31:10 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:31:10 | INFO | Cycle complete. Published: 1, Queue: 46, Skipped (cached): 161
+2026-03-03 11:31:10 | INFO | Sleeping until 12:00 (28 minutes)...
+2026-03-03 11:36:11 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:41:12 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:46:13 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:51:14 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 11:56:15 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:00:04 | INFO | ============================================================
+2026-03-03 12:00:04 | INFO | Starting cycle #28
+2026-03-03 12:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 12:00:06 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 12:00:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 12:00:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 12:00:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 12:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 12:00:13 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 12:00:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 12:00:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 12:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 12:00:18 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 12:00:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 12:00:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 12:00:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 12:00:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 12:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 12:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 12:00:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 12:00:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 12:00:32 | INFO | Total headlines: 173
+2026-03-03 12:00:37 | INFO | Word overlap pre-filter: 4/46 candidates
+2026-03-03 12:00:39 | INFO | Queued: President Trump stated Iran is 'in for a...
+2026-03-03 12:00:42 | INFO | Low confidence (45%): Pakistan reports dozens of Afghan Taliba...
+2026-03-03 12:00:45 | INFO | Word overlap pre-filter: 5/47 candidates
+2026-03-03 12:00:45 | INFO | Preferring queued source (France 24: 4.2) over new (ABC News Australia: 1.5)
+2026-03-03 12:00:48 | INFO | Generated TTS (archive/2026-03-03/d3b5bb54cf05.mp3): President Trump stated Iran is 'in for a lot of hu...
+2026-03-03 12:00:48 | INFO | Published: President Trump stated Iran is 'in for a lot of hu...
+2026-03-03 12:00:48 | INFO | RSS feed updated: 100 items
+2026-03-03 12:00:50 | INFO | Pushed to GitHub: Update feed: President Trump stated Iran is 'in for a lot of hu
+2026-03-03 12:00:50 | INFO | Alexa feed updated: 5 items
+2026-03-03 12:00:51 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-03 12:00:51 | INFO | VERIFIED: President Trump stated Iran is 'in for a lot of hu...
+2026-03-03 12:00:51 | INFO | Rating +1 success for abc_au: {'successes': 27, 'failures': 118}
+2026-03-03 12:00:51 | INFO | Rating +1 success for france24: {'successes': 74, 'failures': 76}
+2026-03-03 12:00:57 | INFO | Low confidence (72%): A Dutch museum confirmed a painting is a...
+2026-03-03 12:01:01 | INFO | Low confidence (45%): The Government of Canada announced suppo...
+2026-03-03 12:01:02 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:01:02 | INFO | Cycle complete. Published: 1, Queue: 46, Skipped (cached): 166
+2026-03-03 12:01:02 | INFO | Sleeping until 12:30 (28 minutes)...
+2026-03-03 12:06:02 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:11:03 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:16:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:21:05 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:26:06 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:30:04 | INFO | ============================================================
+2026-03-03 12:30:04 | INFO | Starting cycle #29
+2026-03-03 12:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 12:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 12:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 12:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 12:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 12:30:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 12:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 12:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 12:30:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 12:30:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 12:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 12:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 12:30:20 | INFO | Fetched 1 headlines from Supreme Court (HTML)
+2026-03-03 12:30:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 12:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 12:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 12:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 12:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 12:30:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 12:30:31 | INFO | Total headlines: 172
+2026-03-03 12:30:35 | INFO | Low confidence (45%): President Trump and Chancellor Friedrich...
+2026-03-03 12:30:36 | INFO | Word overlap pre-filter: 1/46 candidates
+2026-03-03 12:30:36 | INFO | Queued: The chief coroner of British Columbia an...
+2026-03-03 12:30:39 | INFO | Low confidence (45%): A blood moon eclipse occurred....
+2026-03-03 12:30:41 | INFO | Low confidence (75%): EDreams is alleged to have been involved...
+2026-03-03 12:30:43 | INFO | Low confidence (45%): The Government of Canada announced an in...
+2026-03-03 12:30:45 | INFO | Low confidence (45%): The Government of Canada is investing in...
+2026-03-03 12:30:47 | INFO | Low confidence (45%): Minister of Energy and Natural Resources...
+2026-03-03 12:30:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:30:48 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 164
+2026-03-03 12:30:48 | INFO | Sleeping until 13:00 (29 minutes)...
+2026-03-03 12:35:49 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:40:50 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:45:51 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 12:50:52 | WARNING | GitHub API error for docs/monitor.json: 500
+2026-03-03 12:55:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:00:06 | INFO | ============================================================
+2026-03-03 13:00:06 | INFO | Starting cycle #30
+2026-03-03 13:00:06 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 13:00:07 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 13:00:08 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 13:00:09 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 13:00:11 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 13:00:12 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 13:00:13 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 13:00:15 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 13:00:16 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 13:00:17 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 13:00:18 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 13:00:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 13:00:21 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 13:00:24 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 13:00:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 13:00:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 13:00:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 13:00:30 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 13:00:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 13:00:32 | INFO | Total headlines: 173
+2026-03-03 13:00:48 | INFO | Low confidence (45%): Packer donated $150,000 to Advance....
+2026-03-03 13:01:08 | INFO | Low confidence (45%): The Government of Canada invests in yout...
+2026-03-03 13:01:10 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:01:10 | INFO | Cycle complete. Published: 0, Queue: 47, Skipped (cached): 161
+2026-03-03 13:01:10 | INFO | Sleeping until 13:30 (28 minutes)...
+2026-03-03 13:06:11 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:11:12 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:16:13 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:21:14 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:26:15 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:30:05 | INFO | ============================================================
+2026-03-03 13:30:05 | INFO | Starting cycle #31
+2026-03-03 13:30:05 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 13:30:06 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 13:30:07 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 13:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 13:30:10 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 13:30:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 13:30:13 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 13:30:14 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 13:30:15 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 13:30:17 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 13:30:18 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 13:30:19 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 13:30:20 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 13:30:23 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 13:30:25 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 13:30:27 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 13:30:28 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 13:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 13:30:31 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 13:30:32 | INFO | Total headlines: 173
+2026-03-03 13:30:33 | INFO | Word overlap pre-filter: 1/47 candidates
+2026-03-03 13:30:33 | INFO | Queued: The son of Norway's Crown Princess faces...
+2026-03-03 13:30:37 | INFO | Word overlap pre-filter: 4/48 candidates
+2026-03-03 13:30:38 | INFO | Queued: President Macron of France stated France...
+2026-03-03 13:30:43 | INFO | Word overlap pre-filter: 4/49 candidates
+2026-03-03 13:30:43 | INFO | Queued: A member of An Garda Síochána charged wi...
+2026-03-03 13:30:46 | INFO | Low confidence (45%): A legal challenge to a Data Protection C...
+2026-03-03 13:30:53 | INFO | Low confidence (45%): An inmate at Donnacona Institution died....
+2026-03-03 13:30:55 | INFO | Not newsworthy (none): The Government of Canada is hosting a wr...
+2026-03-03 13:30:57 | INFO | Low confidence (45%): Secretary of State Sarai announced fundi...
+2026-03-03 13:30:59 | INFO | Not newsworthy (none): Secretary of State Sarai concluded parti...
+2026-03-03 13:31:00 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:31:00 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 160
+2026-03-03 13:31:00 | INFO | Sleeping until 14:00 (28 minutes)...
+2026-03-03 13:36:00 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:41:01 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:46:02 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:51:03 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 13:56:04 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:00:04 | INFO | ============================================================
+2026-03-03 14:00:04 | INFO | Starting cycle #32
+2026-03-03 14:00:04 | INFO | Expired from queue: Some Middle East flights resume while thousands of...
+2026-03-03 14:00:04 | INFO | Rating +1 failure for npr: {'successes': 26, 'failures': 27}
+2026-03-03 14:00:04 | INFO | Expired from queue: President Trump honored three U.S. Army soldiers i...
+2026-03-03 14:00:04 | INFO | Rating +1 failure for pbs: {'successes': 43, 'failures': 27}
+2026-03-03 14:00:04 | INFO | Expired from queue: President Trump delivered the 2026 State of the Un...
+2026-03-03 14:00:04 | INFO | Rating +1 failure for whitehouse: {'successes': 4, 'failures': 5}
+2026-03-03 14:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 14:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 14:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 14:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 14:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 14:00:10 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 14:00:11 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 14:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 14:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 14:00:15 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 14:00:16 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 14:00:17 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 14:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 14:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 14:00:23 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 14:00:25 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 14:00:26 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 14:00:28 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 14:00:29 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 14:00:30 | INFO | Total headlines: 173
+2026-03-03 14:00:35 | INFO | Low confidence (45%): Israel and the United States conducted s...
+2026-03-03 14:00:49 | INFO | Word overlap pre-filter: 4/47 candidates
+2026-03-03 14:00:53 | ERROR | Claude batch matching error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgjyMA8o8dCrJuN4KPqM'}
+2026-03-03 14:00:53 | INFO | Queued: Israeli military operations in Lebanon d...
+2026-03-03 14:00:58 | INFO | Word overlap pre-filter: 3/48 candidates
+2026-03-03 14:01:01 | INFO | Queued: The father of the accused Georgia school...
+2026-03-03 14:01:11 | INFO | Low confidence (42%): A seventh complainant was cross-examined...
+2026-03-03 14:01:16 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk12WmQHxXnrmAkxPox'}
+2026-03-03 14:01:29 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk1tkDwENfRjxTFyhkr'}
+2026-03-03 14:01:33 | INFO | Word overlap pre-filter: 6/49 candidates
+2026-03-03 14:01:38 | ERROR | Claude batch matching error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk2bhq3AFYd8e5gDfQN'}
+2026-03-03 14:01:38 | INFO | Queued: Heavy rain is forecast for the Queenslan...
+2026-03-03 14:01:51 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk3c4SGJfsMS1Qp4LDi'}
+2026-03-03 14:02:08 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk4pqAMjbfLh2nNkeUZ'}
+2026-03-03 14:02:14 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk5D3Pkwb4JrLqoPwLr'}
+2026-03-03 14:02:19 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk5c7Tnm9VgTpC74wrD'}
+2026-03-03 14:02:36 | ERROR | Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYgk6t1TpSzrBwU7aVeYj'}
+2026-03-03 14:02:43 | INFO | Not newsworthy (none): Minister Sidhu will host EU Commissioner...
+2026-03-03 14:02:44 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:02:44 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 152
+2026-03-03 14:02:44 | INFO | Sleeping until 14:30 (27 minutes)...
+2026-03-03 14:07:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:12:45 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:17:46 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:22:47 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:27:48 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:30:04 | INFO | ============================================================
+2026-03-03 14:30:04 | INFO | Starting cycle #33
+2026-03-03 14:30:04 | INFO | Expired from queue: Iran's soccer federation stated that Iran's World ...
+2026-03-03 14:30:04 | INFO | Rating +1 failure for pbs: {'successes': 43, 'failures': 28}
+2026-03-03 14:30:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 14:30:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 14:30:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 14:30:08 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 14:30:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 14:30:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 14:30:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 14:30:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 14:30:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 14:30:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 14:30:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 14:30:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 14:30:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 14:30:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 14:30:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 14:30:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 14:30:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 14:30:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 14:30:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 14:30:31 | INFO | Total headlines: 173
+2026-03-03 14:30:33 | INFO | Word overlap pre-filter: 3/49 candidates
+2026-03-03 14:30:35 | INFO | Queued: President Trump threatened to halt trade...
+2026-03-03 14:30:38 | INFO | Low confidence (45%): Senators questioned Governor Kristi Noem...
+2026-03-03 14:30:45 | INFO | Low confidence (75%): Governor Kristi Noem stands by remarks a...
+2026-03-03 14:30:47 | INFO | Low confidence (75%): Prime Minister Anthony Albanese is meeti...
+2026-03-03 14:30:52 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:30:52 | INFO | Cycle complete. Published: 0, Queue: 50, Skipped (cached): 165
+2026-03-03 14:30:52 | INFO | Sleeping until 15:00 (29 minutes)...
+2026-03-03 14:35:53 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:40:54 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:45:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:50:55 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 14:55:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 15:00:04 | INFO | ============================================================
+2026-03-03 15:00:04 | INFO | Starting cycle #34
+2026-03-03 15:00:04 | INFO | Expired from queue: British Columbia will end biannual time changes an...
+2026-03-03 15:00:04 | INFO | Rating +1 failure for cbc: {'successes': 30, 'failures': 69}
+2026-03-03 15:00:04 | INFO | Expired from queue: Thousands of endangered frogs were released after ...
+2026-03-03 15:00:04 | INFO | Rating +1 failure for abc_au: {'successes': 27, 'failures': 119}
+2026-03-03 15:00:04 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 15:00:05 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 15:00:06 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 15:00:07 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 15:00:09 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 15:00:11 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 15:00:12 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 15:00:13 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 15:00:14 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 15:00:16 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 15:00:17 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 15:00:18 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 15:00:19 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 15:00:22 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 15:00:24 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 15:00:26 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 15:00:27 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 15:00:29 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 15:00:30 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 15:00:31 | INFO | Total headlines: 173
+2026-03-03 15:00:33 | INFO | Low confidence (65%): The United States is sending planes to e...
+2026-03-03 15:00:35 | INFO | Word overlap pre-filter: 4/48 candidates
+2026-03-03 15:00:36 | INFO | Queued: Canada requested permission from Oman to...
+2026-03-03 15:00:38 | INFO | Low confidence (45%): Pierre Poilievre discussed trade policy ...
+2026-03-03 15:00:55 | INFO | Low confidence (45%): A former chief of Inland Fisheries Irela...
+2026-03-03 15:00:56 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 15:00:56 | INFO | Cycle complete. Published: 0, Queue: 49, Skipped (cached): 162
+2026-03-03 15:00:56 | INFO | Sleeping until 15:30 (29 minutes)...
+2026-03-03 15:03:58 | INFO | Shutting down...
+2026-03-03 15:04:01 | INFO | JTF News starting...
+2026-03-03 15:04:01 | INFO | Facts only. No opinions.
+2026-03-03 15:04:01 | INFO | ----------------------------------------
+2026-03-03 15:04:01 | INFO | Resuming uptime tracking - 186s downtime recorded
+2026-03-03 15:04:01 | INFO | Validating services...
+2026-03-03 15:04:02 | INFO | Claude API: OK
+2026-03-03 15:04:02 | INFO | ElevenLabs API: OK (key present)
+2026-03-03 15:04:02 | INFO | All services validated successfully
+2026-03-03 15:04:02 | INFO | ============================================================
+2026-03-03 15:04:02 | INFO | Starting cycle #1
+2026-03-03 15:04:02 | INFO | Expired from queue: Minister for Defence Marles states Australia was n...
+2026-03-03 15:04:02 | INFO | Rating +1 failure for abc_au: {'successes': 27, 'failures': 120}
+2026-03-03 15:04:02 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-03 15:04:03 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-03 15:04:04 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-03 15:04:06 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-03 15:04:07 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-03 15:04:08 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-03 15:04:10 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-03 15:04:11 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-03 15:04:12 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-03 15:04:13 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-03 15:04:14 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-03 15:04:15 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-03 15:04:17 | INFO | Fetched 2 headlines from Supreme Court (HTML)
+2026-03-03 15:04:20 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-03 15:04:21 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-03 15:04:23 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-03 15:04:24 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-03 15:04:26 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-03 15:04:27 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-03 15:04:28 | INFO | Total headlines: 173
+2026-03-03 15:04:30 | INFO | Word overlap pre-filter: 4/48 candidates
+2026-03-03 15:04:31 | INFO | Queued: A high court canceled the registration o...
+2026-03-03 15:04:31 | INFO | Alert throttled (queue_backup): Queue backup: 49 items, oldest 23.7h
+2026-03-03 15:04:31 | INFO | Pushed to GitHub: Update monitor data
+2026-03-03 15:04:31 | INFO | Cycle complete. Published: 0, Queue: 49, Skipped (cached): 172
+2026-03-03 15:04:31 | INFO | Sleeping until 15:30 (25 minutes)...
+2026-03-03 15:05:28 | INFO | Shutting down...
