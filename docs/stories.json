@@ -4,13 +4,13 @@
     {
       "id": "2026-03-03-000",
       "hash": "983c41dc33ac",
-      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.",
-      "source": "PBS NewsHour 6.1|9.0 \u00b7 Deutsche Welle 5.9|9.5",
+      "fact": "President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies. and deployed jets over the United Arab Emirates to protect its military bases",
+      "source": "PBS NewsHour 6.1|9.0 \u00b7 Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
       "source_urls": {
         "PBS NewsHour": "https://www.pbs.org/newshour/world",
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
       },
-      "audio": "../audio/archive/2026-03-03/ea5780163c1a.mp3",
+      "audio": "../audio/archive/2026-03-03/6c7f66498236.mp3",
       "published_at": "2026-03-03T00:09:13.030511+00:00",
       "status": "published"
     },
@@ -25,6 +25,19 @@
       },
       "audio": "../audio/archive/2026-03-03/0bdf88e4e19a.mp3",
       "published_at": "2026-03-03T09:00:43.708103+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-03-002",
+      "hash": "8c578f8a8df5",
+      "fact": "The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.",
+      "source": "BBC News 5.4|9.0 \u00b7 Deutsche Welle 5.8|9.5",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-03/3995e80220b7.mp3",
+      "published_at": "2026-03-03T11:00:37.878352+00:00",
       "status": "published"
     }
   ]
