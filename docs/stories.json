@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-03/ea5780163c1a.mp3",
       "published_at": "2026-03-03T00:09:13.030511+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-03-001",
+      "hash": "3bc2ff3865f4",
+      "fact": "Israel conducted strikes on Beirut and Tehran.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-03/0bdf88e4e19a.mp3",
+      "published_at": "2026-03-03T09:00:43.708103+00:00",
+      "status": "published"
     }
   ]
 }
