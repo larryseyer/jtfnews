@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-03/2a4232a62472.mp3",
       "published_at": "2026-03-03T15:30:53.547847+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-03-005",
+      "hash": "a214e2093955",
+      "fact": "President Trump meets with Friedrich Merz, Chancellor of Germany.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 PBS NewsHour 6.2|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-03/bfd68ce0639d.mp3",
+      "published_at": "2026-03-03T17:30:53.359905+00:00",
+      "status": "published"
     }
   ]
 }
