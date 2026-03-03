@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 09:00:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 11:00:37 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The United States imposed sanctions on the Rwandan military over fighting in eas...</title>
+      <description>The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 03 Mar 2026 11:00:37 +0000</pubDate>
+      <guid isPermaLink="false">f206a02acf0b</guid>
+    </item>
     <item>
       <title>Israel conducted strikes on Beirut and Tehran.</title>
       <description>Israel conducted strikes on Beirut and Tehran.</description>
@@ -1102,18 +1114,6 @@
       </jtf:source>
       <pubDate>Fri, 20 Feb 2026 04:30:40 +0000</pubDate>
       <guid isPermaLink="false">d5b8f534ce1b</guid>
-    </item>
-    <item>
-      <title>President Trump issued a directive to the Pentagon to release files on unidentif...</title>
-      <description>President Trump issued a directive to the Pentagon to release files on unidentified flying objects and extraterrestrial life.</description>
-      <jtf:source name="CBC News" url="" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="6.3" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 20 Feb 2026 04:00:53 +0000</pubDate>
-      <guid isPermaLink="false">dd5a013b2b7a</guid>
     </item>
   </channel>
 </rss>
