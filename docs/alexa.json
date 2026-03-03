@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ffd455c45c7b2c63d52133aa6f756df6",
+    "updateDate": "2026-03-03T12:30:38.0Z",
+    "titleText": "JTF News: France 24, CBC News",
+    "mainText": "U.S. embassy in Saudi Arabia was hit by Iranian drones.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "eee71e13b9f9033e3305e8434f8a5114",
     "updateDate": "2026-03-03T11:00:39.0Z",
     "titleText": "JTF News: BBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-02T21:00:44.0Z",
     "titleText": "JTF News: ABC News Australia, BBC News",
     "mainText": "Oil prices rise following attacks on ships near the Strait of Hormuz.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "5138873c4803e3d59fbfa7d38553bcea",
-    "updateDate": "2026-03-02T19:45:28.0Z",
-    "titleText": "JTF News: PBS NewsHour, BBC News",
-    "mainText": "169 people killed in a village in a remote area of South Sudan after an insurgent raid.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
