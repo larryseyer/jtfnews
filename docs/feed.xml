@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 12:30:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 15:30:53 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The State Department urged U.S. citizens to leave more than a dozen Middle Easte...</title>
+      <description>The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 03 Mar 2026 15:30:53 +0000</pubDate>
+      <guid isPermaLink="false">526a720d0bd6</guid>
+    </item>
     <item>
       <title>U.S. embassy in Saudi Arabia was hit by Iranian drones.</title>
       <description>U.S. embassy in Saudi Arabia was hit by Iranian drones.</description>
@@ -1102,18 +1114,6 @@
       </jtf:source>
       <pubDate>Sat, 21 Feb 2026 01:00:32 +0000</pubDate>
       <guid isPermaLink="false">660f118328ec</guid>
-    </item>
-    <item>
-      <title>A Palestinian-American was killed by settlers in the occupied West Bank, accordi...</title>
-      <description>A Palestinian-American was killed by settlers in the occupied West Bank, according to officials.</description>
-      <jtf:source name="NPR" url="" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="" accuracy="7.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 20 Feb 2026 09:30:32 +0000</pubDate>
-      <guid isPermaLink="false">d6c9aaaf7f79</guid>
     </item>
   </channel>
 </rss>
