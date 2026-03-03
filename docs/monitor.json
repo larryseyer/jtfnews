@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-03T05:55:49.688490+00:00",
+  "timestamp": "2026-03-03T06:00:41.347198+00:00",
+  "web_refresh_at": "2026-03-03T06:00:41.347198+00:00",
   "uptime_start": "2026-03-03T04:49:13.977434+00:00",
-  "uptime_seconds": 3996,
-  "availability_pct": 52.5,
+  "uptime_seconds": 4287,
+  "availability_pct": 52.9,
   "cycle": {
-    "number": 3,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 4,
+    "duration_seconds": 37.4,
+    "headlines_scraped": 173,
+    "headlines_processed": 4,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -21,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 276,
-        "cost_usd": 0.11439074999999999,
+        "calls": 280,
+        "cost_usd": 0.11636274999999999,
         "details": {
-          "input_tokens": 276928,
-          "output_tokens": 36127
+          "input_tokens": 281496,
+          "output_tokens": 36791
         }
       }
     },
-    "total_usd": 0.1276,
+    "total_usd": 0.1296,
     "month_estimate_usd": 9.78,
     "daily_budget": 1.61,
-    "budget_pct": 7.9
+    "budget_pct": 8.0
   },
   "queue": {
-    "size": 55,
-    "oldest_item_age_hours": 24.4
+    "size": 53,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 1,
   "sources": {
@@ -44,17 +45,11 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-03T05:00:13.388125+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/news/"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
