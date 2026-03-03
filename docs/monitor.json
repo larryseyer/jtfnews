@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-03-03T22:30:53.675382+00:00",
-  "web_refresh_at": "2026-03-03T22:30:53.675382+00:00",
+  "timestamp": "2026-03-03T22:41:48.326155+00:00",
   "uptime_start": "2026-03-03T21:55:58.690758+00:00",
-  "uptime_seconds": 2095,
+  "uptime_seconds": 2750,
   "availability_pct": 57.3,
   "cycle": {
     "number": 3,
-    "duration_seconds": 49.4,
-    "headlines_scraped": 173,
-    "headlines_processed": 9,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
-    "stories_queued": 1
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 46,
-    "oldest_item_age_hours": 24.0
+    "oldest_item_age_hours": 24.2
   },
   "stories_today": 7,
   "sources": {
@@ -45,11 +44,17 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-03-03T22:36:48.325765+00:00",
+      "level": "WARNING",
+      "message": "Error pushing docs/monitor.json to GitHub: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))"
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 19,
     "degraded_services": []
   },
   "daily_digest": {
