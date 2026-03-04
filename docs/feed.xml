@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 22:30:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 22:30:49 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U....</title>
+      <description>Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 04 Mar 2026 22:30:49 +0000</pubDate>
+      <guid isPermaLink="false">5bc0a287ee5c</guid>
+    </item>
     <item>
       <title>The Senate votes on a war powers resolution following U.S.-Israeli strikes on Ir...</title>
       <description>The Senate votes on a war powers resolution following U.S.-Israeli strikes on Iran.</description>
@@ -1096,18 +1108,6 @@
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 18:00:43 +0000</pubDate>
       <guid isPermaLink="false">ca7089e3431d</guid>
-    </item>
-    <item>
-      <title>U.S. Secret Service personnel shot and killed a man attempting to enter Mar-a-La...</title>
-      <description>U.S. Secret Service personnel shot and killed a man attempting to enter Mar-a-Lago.</description>
-      <jtf:source name="CBC News" url="" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 14:30:37 +0000</pubDate>
-      <guid isPermaLink="false">b7bce8d779a9</guid>
     </item>
   </channel>
 </rss>
