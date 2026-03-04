@@ -104,6 +104,19 @@
       "audio": "../audio/archive/2026-03-04/73f9be3407db.mp3",
       "published_at": "2026-03-04T22:30:35.595370+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-04-008",
+      "hash": "7703ebb488e9",
+      "fact": "Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.",
+      "source": "PBS NewsHour 6.3|9.0 \u00b7 France 24 4.8|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-04/27954b56b8ac.mp3",
+      "published_at": "2026-03-04T22:30:49.743376+00:00",
+      "status": "published"
     }
   ]
 }
