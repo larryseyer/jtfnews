@@ -62,6 +62,7 @@
             <li><a href="screensaver-setup.html">Screen Saver</a></li>
             <li><a href="journalists.html">Contributors</a></li>
             <li><a href="submit.html">Submit</a></li>
+            <li><a href="support.html">Support</a></li>
         </ul>
         <button class="site-nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav-overlay').classList.add('open')">
             <span></span><span></span><span></span>
@@ -79,6 +80,7 @@
     <a href="screensaver-setup.html">Screen Saver</a>
     <a href="journalists.html">Contributors</a>
     <a href="submit.html">Submit</a>
+    <a href="support.html">Support</a>
 </div>
 
 <!-- Hero -->
@@ -115,55 +117,6 @@
         <div class="card"><h3>4. Broadcast</h3><p>Verified facts are spoken aloud and displayed with full source attribution.</p></div>
     </div>
     <p class="text-center"><a href="how-it-works.html">Learn more about our process &rarr;</a></p>
-</section>
-
-<!-- Operational Costs -->
-<section class="container section">
-    <h2 class="section__title">Operational Costs</h2>
-    <div class="costs-section">
-        <div class="costs-header">
-            <h3>Operational Costs (Live)</h3>
-            <span class="live-badge" id="live-status">Loading...</span>
-        </div>
-        <div class="costs-grid">
-            <div class="cost-item">
-                <div class="cost-label">Today's Cost</div>
-                <div class="cost-value highlight" id="today-cost">--</div>
-                <div class="cost-detail" id="today-calls">-- API calls</div>
-                <div class="budget-bar">
-                    <div class="budget-fill green" id="budget-fill" style="width: 0%"></div>
-                </div>
-                <div class="cost-detail" id="budget-text">-- of $5 budget</div>
-            </div>
-            <div class="cost-item">
-                <div class="cost-label">Monthly Estimate</div>
-                <div class="cost-value" id="month-estimate">--</div>
-                <div class="cost-detail">projected at current rate</div>
-            </div>
-        </div>
-        <div class="costs-breakdown">
-            <div class="breakdown-row">
-                <span class="breakdown-service">Claude AI (fact extraction)</span>
-                <span class="breakdown-cost" id="claude-cost">--</span>
-            </div>
-            <div class="breakdown-row">
-                <span class="breakdown-service">ElevenLabs (voice)</span>
-                <span class="breakdown-cost" id="elevenlabs-cost">--</span>
-            </div>
-            <div class="breakdown-row">
-                <span class="breakdown-service">Twilio (alerts)</span>
-                <span class="breakdown-cost" id="twilio-cost">--</span>
-            </div>
-        </div>
-        <div class="status-row">
-            <span class="status-dot" id="status-dot"></span>
-            <span class="status-text" id="status-text">Checking status...</span>
-        </div>
-        <p class="transparency-note">
-            Full transparency: Every API call is tracked and reported in real-time.
-        </p>
-        <a class="dashboard-link" href="monitor.html">View Full Operations Dashboard &rarr;</a>
-    </div>
 </section>
 
 <!-- Get Involved -->
@@ -203,7 +156,7 @@
         <div class="card text-center">
             <h3>Support</h3>
             <p>No ads. No tracking. Viewer-supported.</p>
-            <a href="https://github.com/sponsors/larryseyer" class="btn btn--primary" style="display:inline-block;margin-top:0.75rem;">Sponsor</a>
+            <a href="support.html" class="btn btn--primary" style="display:inline-block;margin-top:0.75rem;">Learn More</a>
         </div>
     </div>
 </section>
@@ -237,132 +190,12 @@
         <p class="site-footer__tagline">The methodology belongs to no one. It serves everyone.</p>
         <p class="site-footer__copy">
             <a href="https://github.com/JTFNews/jtfnews">GitHub</a> &middot;
-            <a href="https://github.com/sponsors/larryseyer">Support</a>
+            <a href="support.html">Support</a>
         </p>
     </div>
 </footer>
 
 <script>
-    // Cycle-sync refresh state
-    let lastKnownRefreshAt = null;
-
-    function formatCurrency(amount) {
-        if (typeof amount !== 'number') return '$0.00';
-        return '$' + amount.toFixed(2);
-    }
-
-    function formatUptime(seconds) {
-        if (!seconds) return '--';
-        const hours = Math.floor(seconds / 3600);
-        const minutes = Math.floor((seconds % 3600) / 60);
-        if (hours > 0) return hours + 'h ' + minutes + 'm uptime';
-        return minutes + 'm uptime';
-    }
-
-    function checkForCycleRefresh(data) {
-        const currentRefreshAt = data.web_refresh_at;
-        if (!currentRefreshAt) return;
-
-        if (lastKnownRefreshAt === null) {
-            lastKnownRefreshAt = currentRefreshAt;
-            console.log('[Cycle Refresh] Initial timestamp:', currentRefreshAt);
-            return;
-        }
-
-        if (currentRefreshAt !== lastKnownRefreshAt) {
-            console.log('[Cycle Refresh] New cycle detected, refreshing...');
-            location.reload();
-        }
-    }
-
-    async function loadCosts() {
-        try {
-            const response = await fetch('./monitor.json?t=' + Date.now());
-            if (!response.ok) throw new Error('Not found');
-            const data = await response.json();
-
-            // Check for cycle-sync refresh
-            checkForCycleRefresh(data);
-
-            // Check if data is stale (>15 min old)
-            const dataTime = new Date(data.timestamp);
-            const now = new Date();
-            const isStale = (now - dataTime) > 15 * 60 * 1000;
-
-            // Update live badge
-            const liveBadge = document.getElementById('live-status');
-            if (isStale) {
-                liveBadge.textContent = 'Stale';
-                liveBadge.style.background = 'rgba(234, 179, 8, 0.2)';
-                liveBadge.style.color = '#eab308';
-            } else {
-                liveBadge.textContent = 'Live';
-                liveBadge.style.background = 'rgba(34, 197, 94, 0.2)';
-                liveBadge.style.color = '#22c55e';
-            }
-
-            // Update costs
-            const costs = data.api_costs || {};
-            const services = costs.today || {};
-
-            document.getElementById('today-cost').textContent = formatCurrency(costs.total_usd);
-            document.getElementById('month-estimate').textContent = formatCurrency(costs.month_estimate_usd);
-
-            // Update budget bar
-            const budgetPct = costs.budget_pct || 0;
-            const dailyBudget = costs.daily_budget || 5;
-            const budgetFill = document.getElementById('budget-fill');
-            const budgetText = document.getElementById('budget-text');
-
-            budgetFill.style.width = Math.min(budgetPct, 100) + '%';
-            budgetFill.className = 'budget-fill ' + (budgetPct < 50 ? 'green' : budgetPct < 80 ? 'yellow' : 'red');
-            budgetText.textContent = budgetPct.toFixed(0) + '% of $' + dailyBudget + ' daily budget';
-
-            // Count total calls
-            let totalCalls = 0;
-            for (const svc of Object.values(services)) {
-                totalCalls += svc.calls || 0;
-            }
-            document.getElementById('today-calls').textContent = totalCalls + ' API calls';
-
-            // Service breakdown
-            const claude = services.claude || {};
-            const elevenlabs = services.elevenlabs || {};
-            const twilio = services.twilio || {};
-
-            document.getElementById('claude-cost').textContent = formatCurrency(claude.cost_usd);
-            document.getElementById('elevenlabs-cost').textContent = formatCurrency(elevenlabs.cost_usd);
-            document.getElementById('twilio-cost').textContent = formatCurrency(twilio.cost_usd);
-
-            // Status
-            const statusDot = document.getElementById('status-dot');
-            const statusText = document.getElementById('status-text');
-            const streamHealth = data.status?.stream_health || 'unknown';
-
-            if (streamHealth === 'online') {
-                statusDot.className = 'status-dot';
-                statusText.textContent = 'Stream online \u2022 ' + formatUptime(data.uptime_seconds);
-            } else if (streamHealth === 'offline') {
-                statusDot.className = 'status-dot offline';
-                statusText.textContent = 'Stream offline';
-            } else {
-                statusDot.className = 'status-dot';
-                statusDot.style.background = '#64748b';
-                statusText.textContent = 'Status unknown';
-            }
-
-        } catch (e) {
-            document.getElementById('live-status').textContent = 'Offline';
-            document.getElementById('live-status').style.background = 'rgba(239, 68, 68, 0.2)';
-            document.getElementById('live-status').style.color = '#ef4444';
-            document.getElementById('status-text').textContent = 'Could not load live data';
-        }
-    }
-
-    // Load immediately and refresh every 30 seconds
-    loadCosts();
-    setInterval(loadCosts, 30000);
-
     // Live story preview
     async function loadLivePreview() {
         try {
