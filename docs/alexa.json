@@ -1,5 +1,12 @@
 [
   {
+    "uid": "cd071728d4868b7320c92c65880f4f60",
+    "updateDate": "2026-03-04T18:00:45.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "A Greek court upheld convictions of leaders of a neo-Nazi party.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "f34595856be98725e3c86d87e8f6b549",
     "updateDate": "2026-03-04T11:30:52.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-04T01:30:51.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
     "mainText": "The Pentagon identified 4 of 6 U.S. soldiers killed in a drone strike in Kuwait.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "60548bfb56a902f1cfb83e46fa5de3c2",
-    "updateDate": "2026-03-04T01:00:54.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "President Emmanuel Macron of France ordered France's nuclear-powered aircraft carrier to move from the Baltic Sea to the Mediterranean.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
