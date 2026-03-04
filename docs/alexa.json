@@ -1,5 +1,12 @@
 [
   {
+    "uid": "60548bfb56a902f1cfb83e46fa5de3c2",
+    "updateDate": "2026-03-04T01:00:54.0Z",
+    "titleText": "JTF News: PBS NewsHour, France 24",
+    "mainText": "President Emmanuel Macron of France ordered France's nuclear-powered aircraft carrier to move from the Baltic Sea to the Mediterranean.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "fb09c9601d4c267ae6f81533227886e1",
     "updateDate": "2026-03-04T00:08:56.0Z",
     "titleText": "JTF News: ABC News Australia, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T17:30:55.0Z",
     "titleText": "JTF News: Deutsche Welle, PBS NewsHour",
     "mainText": "President Trump meets with Friedrich Merz, Chancellor of Germany.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "41d9245afcfede94d536fcd4018fc41e",
-    "updateDate": "2026-03-03T15:30:55.0Z",
-    "titleText": "JTF News: France 24, PBS NewsHour",
-    "mainText": "The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
