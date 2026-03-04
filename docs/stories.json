@@ -69,14 +69,27 @@
     {
       "id": "2026-03-04-005",
       "hash": "aa1d06ac1ddf",
-      "fact": "Israel conducted airstrikes in Lebanon and Iran.",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.9|9.0",
+      "fact": "Israel conducted airstrikes in Lebanon and Iran. with the U.S. participating in strikes on Iranian cities, and Iran responding with missiles and drones.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.9|9.0 \u00b7 CBC News 2.9|9.0",
       "source_urls": {
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
         "France 24": "https://www.france24.com/en/"
       },
-      "audio": "../audio/archive/2026-03-04/ea8e0f63e2eb.mp3",
+      "audio": "../audio/archive/2026-03-04/3bcf225954da.mp3",
       "published_at": "2026-03-04T11:30:49.997530+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-04-006",
+      "hash": "052357285d26",
+      "fact": "A Greek court upheld convictions of leaders of a neo-Nazi party.",
+      "source": "Deutsche Welle 6.0|9.5 \u00b7 BBC News 5.4|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-04/a4965bbef2a9.mp3",
+      "published_at": "2026-03-04T18:00:43.928876+00:00",
       "status": "published"
     }
   ]
