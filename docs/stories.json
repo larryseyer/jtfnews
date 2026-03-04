@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-04/6064f4526c61.mp3",
       "published_at": "2026-03-04T01:00:52.929237+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-04-002",
+      "hash": "9eb6febe0821",
+      "fact": "The Pentagon identified 4 of 6 U.S. soldiers killed in a drone strike in Kuwait.",
+      "source": "PBS NewsHour 6.1|9.0 \u00b7 BBC News 5.4|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-04/869393a2d9d1.mp3",
+      "published_at": "2026-03-04T01:30:49.466354+00:00",
+      "status": "published"
     }
   ]
 }
