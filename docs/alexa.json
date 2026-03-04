@@ -1,5 +1,12 @@
 [
   {
+    "uid": "0834586288b6d2799139773ae5e2e8b2",
+    "updateDate": "2026-03-04T22:30:51.0Z",
+    "titleText": "JTF News: PBS NewsHour, France 24",
+    "mainText": "Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "4881f2faec41c0441fee5f337b726d70",
     "updateDate": "2026-03-04T22:30:37.0Z",
     "titleText": "JTF News: CBC News, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-04T07:00:55.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
     "mainText": "An 8-year-old Australian girl died in a snowmobile accident in Japan.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "23b5a62675a4686ae6184d1a6e642fc9",
-    "updateDate": "2026-03-04T07:00:36.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "US and Ecuador forces launch operation to fight drug trafficking.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
