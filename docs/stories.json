@@ -69,13 +69,13 @@
     {
       "id": "2026-03-04-005",
       "hash": "aa1d06ac1ddf",
-      "fact": "Israel conducted airstrikes in Lebanon and Iran. with the U.S. participating in strikes on Iranian cities, and Iran responding with missiles and drones.",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.9|9.0 \u00b7 CBC News 2.9|9.0",
+      "fact": "Israel conducted airstrikes in Lebanon and Iran. with the U.S. participating in strikes on Iranian cities, and Iran responding with missiles and drones. denied cooperating with U.S. military operations in the Middle East.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.9|9.0 \u00b7 CBC News 2.9|9.0 \u00b7 PBS NewsHour 6.2|9.0",
       "source_urls": {
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
         "France 24": "https://www.france24.com/en/"
       },
-      "audio": "../audio/archive/2026-03-04/3bcf225954da.mp3",
+      "audio": "../audio/archive/2026-03-04/7cb5fed02d3a.mp3",
       "published_at": "2026-03-04T11:30:49.997530+00:00",
       "status": "published"
     },
@@ -90,6 +90,19 @@
       },
       "audio": "../audio/archive/2026-03-04/a4965bbef2a9.mp3",
       "published_at": "2026-03-04T18:00:43.928876+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-04-007",
+      "hash": "b28b58fd65ad",
+      "fact": "The Senate votes on a war powers resolution following U.S.-Israeli strikes on Iran.",
+      "source": "CBC News 2.9|9.0 \u00b7 PBS NewsHour 6.2|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-04/73f9be3407db.mp3",
+      "published_at": "2026-03-04T22:30:35.595370+00:00",
       "status": "published"
     }
   ]
