@@ -265,5 +265,27 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>14</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 3, 2026</title>
+      <description>8 verified facts for March 3, 2026.</description>
+      <content:encoded><![CDATA[8 verified facts for March 3, 2026.
+
+- President Emmanuel Macron of France stated France will increase its nuclear arsenal and allow temporary deployment of nuclear-armed jets to European allies.
+- Israel conducted strikes on Beirut and Tehran.
+- The United States imposed sanctions on the Rwandan military over fighting in eastern Congo.
+- U.S. embassy in Saudi Arabia was hit by Iranian drones.
+- The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.
+- President Trump meets with Friedrich Merz, Chancellor of Germany.
+- President Trump stated Iran is 'in for a lot of hurt' during an Oval Office address.
+- The father of the accused Georgia school shooter was convicted of murder.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-03/2026-03-03-daily-digest.mp3" type="audio/mpeg" length="4029272"/>
+      <guid isPermaLink="false">jtf-news-2026-03-03</guid>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:36</itunes:duration>
+      <itunes:episode>15</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
