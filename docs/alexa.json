@@ -1,5 +1,12 @@
 [
   {
+    "uid": "fb09c9601d4c267ae6f81533227886e1",
+    "updateDate": "2026-03-04T00:08:56.0Z",
+    "titleText": "JTF News: ABC News Australia, Deutsche Welle",
+    "mainText": "The father of the accused Georgia school shooter was convicted of murder.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "93bad38cd637a2436752906d82a31245",
     "updateDate": "2026-03-03T23:01:43.0Z",
     "titleText": "JTF News: ABC News Australia, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T15:30:55.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
     "mainText": "The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "ffd455c45c7b2c63d52133aa6f756df6",
-    "updateDate": "2026-03-03T12:30:38.0Z",
-    "titleText": "JTF News: France 24, CBC News",
-    "mainText": "U.S. embassy in Saudi Arabia was hit by Iranian drones.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
