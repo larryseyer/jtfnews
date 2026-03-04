@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-04/62fee49c9d41.mp3",
       "published_at": "2026-03-04T07:00:34.495590+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-04-004",
+      "hash": "6d410e610fbf",
+      "fact": "An 8-year-old Australian girl died in a snowmobile accident in Japan.",
+      "source": "BBC News 5.5|9.0 \u00b7 ABC News Australia 1.9|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-04/1e2e5e8ed381.mp3",
+      "published_at": "2026-03-04T07:00:53.620452+00:00",
+      "status": "published"
     }
   ]
 }
