@@ -5,8 +5,26 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 23:01:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 00:08:54 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The father of the accused Georgia school shooter was convicted of murder.</title>
+      <description>The father of the accused Georgia school shooter was convicted of murder.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 04 Mar 2026 00:08:54 +0000</pubDate>
+      <guid isPermaLink="false">54d43105b32f</guid>
+    </item>
+    <item>
+      <title>[DAILY DIGEST] 2026-03-03 - 8 verified facts</title>
+      <description>Daily summary of 8 verified facts from 2026-03-03.</description>
+      <pubDate>Wed, 04 Mar 2026 00:04:31 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-03</guid>
+    </item>
     <item>
       <title>The father of the accused Georgia school shooter was convicted of murder.</title>
       <description>The father of the accused Georgia school shooter was convicted of murder.</description>
@@ -1090,30 +1108,6 @@
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 00:01:30 +0000</pubDate>
       <guid isPermaLink="false">56f0c7236fc6</guid>
-    </item>
-    <item>
-      <title>Venezuela approved an amnesty bill.</title>
-      <description>Venezuela approved an amnesty bill.</description>
-      <jtf:source name="France 24" url="" accuracy="4.3" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 21 Feb 2026 21:30:33 +0000</pubDate>
-      <guid isPermaLink="false">32d0fd3a10a2</guid>
-    </item>
-    <item>
-      <title>Giant tortoises return to Galápagos island after nearly 200 years.</title>
-      <description>Giant tortoises return to Galápagos island after nearly 200 years.</description>
-      <jtf:source name="BBC News" url="" accuracy="6.7" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="The Guardian" url="" accuracy="2.1" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 21 Feb 2026 19:00:32 +0000</pubDate>
-      <guid isPermaLink="false">2b82a7d66526</guid>
     </item>
   </channel>
 </rss>
