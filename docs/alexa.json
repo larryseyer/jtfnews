@@ -1,5 +1,12 @@
 [
   {
+    "uid": "23b5a62675a4686ae6184d1a6e642fc9",
+    "updateDate": "2026-03-04T07:00:36.0Z",
+    "titleText": "JTF News: BBC News, ABC News Australia",
+    "mainText": "US and Ecuador forces launch operation to fight drug trafficking.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "507ed7244d8b09b51c38c9fe8329a031",
     "updateDate": "2026-03-04T01:30:51.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-03T23:01:43.0Z",
     "titleText": "JTF News: ABC News Australia, Deutsche Welle",
     "mainText": "The father of the accused Georgia school shooter was convicted of murder.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "a130b9b0b16eff57db306f6c46cf5a8a",
-    "updateDate": "2026-03-03T18:00:50.0Z",
-    "titleText": "JTF News: ABC News Australia, France 24",
-    "mainText": "President Trump stated Iran is 'in for a lot of hurt' during an Oval Office address.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
