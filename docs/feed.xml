@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 07:00:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 07:00:53 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An 8-year-old Australian girl died in a snowmobile accident in Japan.</title>
+      <description>An 8-year-old Australian girl died in a snowmobile accident in Japan.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 04 Mar 2026 07:00:53 +0000</pubDate>
+      <guid isPermaLink="false">d2f0cd1f2f9e</guid>
+    </item>
     <item>
       <title>US and Ecuador forces launch operation to fight drug trafficking.</title>
       <description>US and Ecuador forces launch operation to fight drug trafficking.</description>
@@ -1096,18 +1108,6 @@
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 03:00:32 +0000</pubDate>
       <guid isPermaLink="false">7f9aa6c3bf90</guid>
-    </item>
-    <item>
-      <title>President Trump raised tariffs to 15% from 10%.</title>
-      <description>President Trump raised tariffs to 15% from 10%.</description>
-      <jtf:source name="Deutsche Welle" url="" accuracy="6.1" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 00:02:33 +0000</pubDate>
-      <guid isPermaLink="false">dc7df2de7b27</guid>
     </item>
   </channel>
 </rss>
