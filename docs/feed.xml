@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 12:30:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 16:30:58 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Israel conducted strikes in Beirut.</title>
+      <description>Israel conducted strikes in Beirut.</description>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 05 Mar 2026 16:30:58 +0000</pubDate>
+      <guid isPermaLink="false">f707629394f5</guid>
+    </item>
     <item>
       <title>Kim Jong Un visited a warship and oversaw a missile launch in North Korea.</title>
       <description>Kim Jong Un visited a warship and oversaw a missile launch in North Korea.</description>
@@ -1090,18 +1102,6 @@
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 14:00:55 +0000</pubDate>
       <guid isPermaLink="false">93a452259a96</guid>
-    </item>
-    <item>
-      <title>New York implemented a citywide travel ban as a major blizzard affected the east...</title>
-      <description>New York implemented a citywide travel ban as a major blizzard affected the eastern United States.</description>
-      <jtf:source name="France 24" url="" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 12:00:55 +0000</pubDate>
-      <guid isPermaLink="false">13e70021f367</guid>
     </item>
   </channel>
 </rss>
