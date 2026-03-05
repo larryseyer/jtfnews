@@ -1,121 +1,17 @@
 {
-  "date": "2026-03-04",
+  "date": "2026-03-05",
   "stories": [
     {
-      "id": "2026-03-04-000",
-      "hash": "fcef236596eb",
-      "fact": "The father of the accused Georgia school shooter was convicted of murder.",
-      "source": "ABC News Australia 1.9|9.0 \u00b7 Deutsche Welle 5.9|9.5",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-04/d29f78f2d617.mp3",
-      "published_at": "2026-03-04T00:08:54.602014+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-001",
-      "hash": "965eaedbfe32",
-      "fact": "President Emmanuel Macron of France ordered France's nuclear-powered aircraft carrier to move from the Baltic Sea to the Mediterranean.",
-      "source": "PBS NewsHour 6.1|9.0 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-04/6064f4526c61.mp3",
-      "published_at": "2026-03-04T01:00:52.929237+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-002",
-      "hash": "9eb6febe0821",
-      "fact": "The Pentagon identified 4 of 6 U.S. soldiers killed in a drone strike in Kuwait.",
-      "source": "PBS NewsHour 6.1|9.0 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-04/869393a2d9d1.mp3",
-      "published_at": "2026-03-04T01:30:49.466354+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-003",
-      "hash": "91f3b331e1f6",
-      "fact": "US and Ecuador forces launch operation to fight drug trafficking.",
-      "source": "BBC News 5.4|9.0 \u00b7 ABC News Australia 1.9|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-04/62fee49c9d41.mp3",
-      "published_at": "2026-03-04T07:00:34.495590+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-004",
-      "hash": "6d410e610fbf",
-      "fact": "An 8-year-old Australian girl died in a snowmobile accident in Japan.",
-      "source": "BBC News 5.5|9.0 \u00b7 ABC News Australia 1.9|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-04/1e2e5e8ed381.mp3",
-      "published_at": "2026-03-04T07:00:53.620452+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-005",
-      "hash": "aa1d06ac1ddf",
-      "fact": "Israel conducted airstrikes in Lebanon and Iran. with the U.S. participating in strikes on Iranian cities, and Iran responding with missiles and drones. denied cooperating with U.S. military operations in the Middle East.",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.9|9.0 \u00b7 CBC News 2.9|9.0 \u00b7 PBS NewsHour 6.2|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-04/7cb5fed02d3a.mp3",
-      "published_at": "2026-03-04T11:30:49.997530+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-006",
-      "hash": "052357285d26",
-      "fact": "A Greek court upheld convictions of leaders of a neo-Nazi party.",
-      "source": "Deutsche Welle 6.0|9.5 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-04/a4965bbef2a9.mp3",
-      "published_at": "2026-03-04T18:00:43.928876+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-007",
-      "hash": "b28b58fd65ad",
-      "fact": "The Senate votes on a war powers resolution following U.S.-Israeli strikes on Iran.",
-      "source": "CBC News 2.9|9.0 \u00b7 PBS NewsHour 6.2|9.0",
+      "id": "2026-03-05-000",
+      "hash": "8334bf6ab289",
+      "fact": "The Senate voted against a measure to constrain President Trump's authorities in Iran.",
+      "source": "CBC News 2.9|9.0 \u00b7 NPR 4.7|8.5",
       "source_urls": {
         "CBC News": "https://www.cbc.ca/news/world",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+        "NPR": "https://www.npr.org/sections/news/"
       },
-      "audio": "../audio/archive/2026-03-04/73f9be3407db.mp3",
-      "published_at": "2026-03-04T22:30:35.595370+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-04-008",
-      "hash": "7703ebb488e9",
-      "fact": "Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.",
-      "source": "PBS NewsHour 6.3|9.0 \u00b7 France 24 4.8|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-04/27954b56b8ac.mp3",
-      "published_at": "2026-03-04T22:30:49.743376+00:00",
+      "audio": "../audio/archive/2026-03-05/f5f256ed9117.mp3",
+      "published_at": "2026-03-05T00:10:01.629551+00:00",
       "status": "published"
     }
   ]
