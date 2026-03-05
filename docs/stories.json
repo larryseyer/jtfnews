@@ -78,6 +78,19 @@
       "audio": "../audio/archive/2026-03-05/7c3713744311.mp3",
       "published_at": "2026-03-05T16:30:58.859904+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-05-006",
+      "hash": "036b29a06d20",
+      "fact": "Israel issued an evacuation order for Beirut's southern suburbs.",
+      "source": "BBC News 5.3|9.0 \u00b7 France 24 4.9|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-05/e9855ea0b6df.mp3",
+      "published_at": "2026-03-05T19:00:38.561624+00:00",
+      "status": "published"
     }
   ]
 }
