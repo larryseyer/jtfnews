@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-05/d4a58223f777.mp3",
       "published_at": "2026-03-05T11:30:46.144977+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-05-004",
+      "hash": "8a0a969a6e41",
+      "fact": "Kim Jong Un visited a warship and oversaw a missile launch in North Korea.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-05/d88d71b250c3.mp3",
+      "published_at": "2026-03-05T12:30:41.687930+00:00",
+      "status": "published"
     }
   ]
 }
