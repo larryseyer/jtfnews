@@ -287,5 +287,28 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>15</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 4, 2026</title>
+      <description>9 verified facts for March 4, 2026.</description>
+      <content:encoded><![CDATA[9 verified facts for March 4, 2026.
+
+- The father of the accused Georgia school shooter was convicted of murder.
+- President Emmanuel Macron of France ordered France's nuclear-powered aircraft carrier to move from the Baltic Sea to the Mediterranean.
+- The Pentagon identified 4 of 6 U.S. soldiers killed in a drone strike in Kuwait.
+- US and Ecuador forces launch operation to fight drug trafficking.
+- An 8-year-old Australian girl died in a snowmobile accident in Japan.
+- Israel conducted airstrikes in Lebanon and Iran.
+- A Greek court upheld convictions of leaders of a neo-Nazi party.
+- The Senate votes on a war powers resolution following U.S.-Israeli strikes on Iran.
+- Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-04/2026-03-04-daily-digest.mp3" type="audio/mpeg" length="4414840"/>
+      <guid isPermaLink="false">jtf-news-2026-03-04</guid>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:46</itunes:duration>
+      <itunes:episode>16</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
