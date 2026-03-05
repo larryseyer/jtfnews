@@ -1,5 +1,12 @@
 [
   {
+    "uid": "dbda462d0a26a3ef96b63272bb16512c",
+    "updateDate": "2026-03-05T21:46:08.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "Azerbaijan reports Iran conducted strikes on its territory.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "ab0d9bddee094f18620ded6b027a5fcb",
     "updateDate": "2026-03-05T19:30:39.0Z",
     "titleText": "JTF News: NPR, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T12:30:43.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Kim Jong Un visited a warship and oversaw a missile launch in North Korea.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "e8c245c8795e457040b25fbbffe1c128",
-    "updateDate": "2026-03-05T11:30:48.0Z",
-    "titleText": "JTF News: France 24, CBC News",
-    "mainText": "A blackout affects millions of people in Cuba.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
