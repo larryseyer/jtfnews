@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 22:30:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 00:10:01 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Senate voted against a measure to constrain President Trump's authorities in...</title>
+      <description>The Senate voted against a measure to constrain President Trump's authorities in Iran.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.7" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 05 Mar 2026 00:10:01 +0000</pubDate>
+      <guid isPermaLink="false">4072f6380e2b</guid>
+    </item>
     <item>
       <title>Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U....</title>
       <description>Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.</description>
@@ -1096,18 +1108,6 @@
       </jtf:source>
       <pubDate>Sun, 22 Feb 2026 20:00:40 +0000</pubDate>
       <guid isPermaLink="false">9f3f005ef8d3</guid>
-    </item>
-    <item>
-      <title>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold me...</title>
-      <description>The U.S. men's hockey team defeated Canada in overtime to win an Olympic gold medal.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="7.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="" accuracy="4.1" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 22 Feb 2026 18:00:43 +0000</pubDate>
-      <guid isPermaLink="false">ca7089e3431d</guid>
     </item>
   </channel>
 </rss>
