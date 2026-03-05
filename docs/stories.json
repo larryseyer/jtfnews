@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-05/bfe33a0b8ed6.mp3",
       "published_at": "2026-03-05T10:30:49.129575+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-05-003",
+      "hash": "abcee5c3f56e",
+      "fact": "A blackout affects millions of people in Cuba.",
+      "source": "France 24 4.8|9.0 \u00b7 CBC News 2.9|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-05/d4a58223f777.mp3",
+      "published_at": "2026-03-05T11:30:46.144977+00:00",
+      "status": "published"
     }
   ]
 }
