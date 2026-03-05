@@ -1972,3 +1972,54 @@ Log cleared at 2026-03-05T00:00:26.181026+00:00
 2026-03-05 15:35:47 | INFO | Pushed to GitHub: Update monitor data
 2026-03-05 15:40:48 | INFO | Pushed to GitHub: Update monitor data
 2026-03-05 15:42:10 | INFO | Shutting down...
+2026-03-05 15:45:33 | INFO | JTF News starting...
+2026-03-05 15:45:33 | INFO | Facts only. No opinions.
+2026-03-05 15:45:33 | INFO | ----------------------------------------
+2026-03-05 15:45:33 | INFO | Resuming uptime tracking - 285s downtime recorded
+2026-03-05 15:45:33 | INFO | Validating services...
+2026-03-05 15:45:33 | INFO | Claude API: OK
+2026-03-05 15:45:33 | INFO | ElevenLabs API: OK (key present)
+2026-03-05 15:45:33 | INFO | All services validated successfully
+2026-03-05 15:45:33 | INFO | ============================================================
+2026-03-05 15:45:33 | INFO | Starting cycle #1
+2026-03-05 15:45:33 | INFO | Fetched 10 headlines from BBC News (RSS)
+2026-03-05 15:45:35 | INFO | Fetched 10 headlines from NPR (RSS)
+2026-03-05 15:45:36 | INFO | Fetched 10 headlines from The Guardian (RSS)
+2026-03-05 15:45:37 | INFO | Fetched 10 headlines from France 24 (RSS)
+2026-03-05 15:45:39 | INFO | Fetched 10 headlines from Deutsche Welle (RSS)
+2026-03-05 15:45:40 | INFO | Fetched 10 headlines from CBC News (RSS)
+2026-03-05 15:45:41 | INFO | Fetched 10 headlines from ABC News Australia (RSS)
+2026-03-05 15:45:42 | INFO | Fetched 10 headlines from PBS NewsHour (RSS)
+2026-03-05 15:45:43 | INFO | Fetched 10 headlines from Irish Times (RSS)
+2026-03-05 15:45:45 | INFO | Fetched 10 headlines from White House (HTML)
+2026-03-05 15:45:46 | INFO | Fetched 1 headlines from Congress.gov (RSS)
+2026-03-05 15:45:47 | INFO | Fetched 10 headlines from Federal Register (RSS)
+2026-03-05 15:45:48 | INFO | Fetched 3 headlines from Supreme Court (HTML)
+2026-03-05 15:45:51 | INFO | Fetched 10 headlines from US Department of Defense (RSS)
+2026-03-05 15:45:53 | INFO | Fetched 10 headlines from UK Parliament (RSS)
+2026-03-05 15:45:55 | INFO | Fetched 10 headlines from European Commission (RSS)
+2026-03-05 15:45:56 | INFO | Fetched 10 headlines from UN News (RSS)
+2026-03-05 15:45:58 | INFO | Fetched 10 headlines from Government of Canada (RSS)
+2026-03-05 15:45:59 | INFO | Fetched 10 headlines from ProPublica (RSS)
+2026-03-05 15:46:00 | INFO | Total headlines: 174
+2026-03-05 15:46:03 | INFO | Word overlap pre-filter: 5/65 candidates
+2026-03-05 15:46:04 | INFO | Preferring new source (BBC News: 4.9) over queued (France 24: 4.2)
+2026-03-05 15:46:06 | INFO | Generated TTS (archive/2026-03-05/f7932c9b9add.mp3): Azerbaijan reports Iran conducted strikes on its t...
+2026-03-05 15:46:06 | INFO | Published: Azerbaijan reports Iran conducted strikes on its t...
+2026-03-05 15:46:06 | INFO | RSS feed updated: 100 items
+2026-03-05 15:46:08 | INFO | Pushed to GitHub: Update feed: Azerbaijan reports Iran conducted strikes on its t
+2026-03-05 15:46:08 | INFO | Alexa feed updated: 5 items
+2026-03-05 15:46:09 | INFO | Pushed to GitHub: Update Alexa feed
+2026-03-05 15:46:09 | INFO | VERIFIED: Azerbaijan reports Iran conducted strikes on its t...
+2026-03-05 15:46:09 | INFO | Rating +1 success for bbc: {'successes': 66, 'failures': 56}
+2026-03-05 15:46:09 | INFO | Rating +1 success for france24: {'successes': 84, 'failures': 86}
+2026-03-05 15:46:13 | INFO | Queued: Israeli army announces start of airstrik...
+2026-03-05 15:46:16 | INFO | Low confidence (72%): Hizb ut-Tahrir has been listed as a proh...
+2026-03-05 15:46:17 | INFO | Word overlap pre-filter: 4/65 candidates
+2026-03-05 15:46:18 | INFO | Alert throttled (queue_backup): Queue backup: 65 items, oldest 23.7h
+2026-03-05 15:46:19 | INFO | Pushed to GitHub: Update monitor data
+2026-03-05 15:46:19 | INFO | Cycle complete. Published: 1, Queue: 65, Skipped (cached): 169
+2026-03-05 15:46:19 | INFO | Sleeping until 16:00 (13 minutes)...
+2026-03-05 15:51:19 | INFO | Pushed to GitHub: Update monitor data
+2026-03-05 15:56:20 | INFO | Pushed to GitHub: Update monitor data
+2026-03-05 15:58:54 | INFO | Shutting down...

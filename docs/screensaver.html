@@ -705,13 +705,13 @@
           }
         `;
 
-        // Re-apply animation with new duration
+        // Re-apply animation with new duration (start paused, then play via inline style — CSS class can't override inline)
         tickerContent.style.animation = `scroll-ticker ${duration}s linear infinite`;
         tickerContent.style.animationPlayState = 'paused';
 
         // Start animation after a small delay to ensure CSS is applied
         setTimeout(() => {
-          tickerContent.classList.add('animating');
+          tickerContent.style.animationPlayState = 'running';
           console.log(`[Ticker] Started: ${stories.length} stories, duration: ${duration.toFixed(1)}s, speed: ${tickerSpeed.toFixed(0)}px/s`);
         }, 50);
       });
