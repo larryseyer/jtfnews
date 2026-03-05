@@ -1,77 +1,132 @@
 {
-  "timestamp": "2026-03-04T23:56:20.453656+00:00",
+  "timestamp": "2026-03-05T00:15:16.871453+00:00",
+  "web_refresh_at": "2026-03-05T00:15:16.871453+00:00",
   "uptime_start": "2026-03-04T22:01:17.720437+00:00",
-  "uptime_seconds": 6903,
+  "uptime_seconds": 8039,
   "availability_pct": 52.1,
   "cycle": {
-    "number": 4,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
-    "stories_queued": 0
+    "number": 5,
+    "duration_seconds": 531.0,
+    "headlines_scraped": 164,
+    "headlines_processed": 164,
+    "stories_published": 1,
+    "stories_queued": 11
   },
   "api_costs": {
     "today": {
       "elevenlabs": {
-        "calls": 13,
-        "cost_usd": 0.04107,
+        "calls": 3,
+        "cost_usd": 0.01128,
         "details": {
-          "characters": 1369
+          "characters": 376
+        }
+      },
+      "twilio": {
+        "calls": 1,
+        "cost_usd": 0.0079,
+        "details": {
+          "sms_count": 1
         }
       },
       "claude": {
-        "calls": 675,
-        "cost_usd": 0.28324224999999964,
+        "calls": 177,
+        "cost_usd": 0.07586174999999998,
         "details": {
-          "input_tokens": 678569,
-          "output_tokens": 90880
+          "input_tokens": 184577,
+          "output_tokens": 23774
         }
       }
     },
-    "total_usd": 0.3243,
+    "total_usd": 0.095,
     "month_estimate_usd": 9.77,
     "daily_budget": 1.61,
-    "budget_pct": 20.1
+    "budget_pct": 5.9
   },
   "queue": {
-    "size": 46,
-    "oldest_item_age_hours": 24.4
+    "size": 49,
+    "oldest_item_age_hours": 24.1
   },
-  "stories_today": 9,
+  "stories_today": 1,
   "sources": {
     "total": 20,
-    "successful": 20,
-    "failed": []
+    "successful": 19,
+    "failed": [
+      "White House"
+    ]
   },
   "recent_errors": [
     {
-      "timestamp": "2026-03-04T23:51:20.454066+00:00",
+      "timestamp": "2026-03-05T00:05:00.848537+00:00",
+      "level": "ERROR",
+      "message": "YouTube upload failed for 2026-03-04, video saved locally: /Users/larryseyer/JTFNews/video/2026-03-04-daily-digest.mp4"
+    },
+    {
+      "timestamp": "2026-03-05T00:05:01.277599+00:00",
       "level": "WARNING",
-      "message": "Error pushing docs/monitor.json to GitHub: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+      "message": "Alert sent: YouTube upload failed for 2026-03-04. Video saved at: /Users/larryseyer/JTFNews/video/2026-03-04-daily-digest.mp4"
+    },
+    {
+      "timestamp": "2026-03-05T00:06:39.122031+00:00",
+      "level": "WARNING",
+      "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/briefing-room/"
+    },
+    {
+      "timestamp": "2026-03-05T00:06:57.745193+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixYayAKFopZKs85PVMs'}"
+    },
+    {
+      "timestamp": "2026-03-05T00:07:06.012266+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixZBChPtDF1RtsGyaaF'}"
+    },
+    {
+      "timestamp": "2026-03-05T00:07:21.327983+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixaJM6cUyosxvtSenFq'}"
+    },
+    {
+      "timestamp": "2026-03-05T00:07:27.448004+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixanEPTiXtqxKTpJkdn'}"
+    },
+    {
+      "timestamp": "2026-03-05T00:08:29.654714+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixfMVk68XSSDC1XUT2x'}"
+    },
+    {
+      "timestamp": "2026-03-05T00:09:47.230204+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixm4E5yZoCzYRADxxdx'}"
+    },
+    {
+      "timestamp": "2026-03-05T00:12:06.677592+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYixwM6d4z6b2y7aCtJDy'}"
     }
   ],
   "status": {
     "state": "running",
-    "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "stream_health": "offline",
+    "next_cycle_minutes": 14,
     "degraded_services": []
   },
   "daily_digest": {
-    "last_date": "2026-03-03",
-    "next_digest_at": "2026-03-05T00:00:00+00:00",
+    "last_date": "2026-03-04",
+    "next_digest_at": "2026-03-06T00:00:00+00:00",
     "status": "success",
-    "upload_status": "success",
-    "error_message": "Failed to get recording output path",
-    "last_completed_at": "2026-03-04T00:04:20.562693+00:00",
-    "story_count": 8,
-    "duration_seconds": 96,
-    "video_path": "/Users/larryseyer/JTFNews/video/2026-03-03-daily-digest.mp4",
+    "upload_status": "failed",
+    "error_message": "Upload returned no video ID",
+    "last_completed_at": "2026-03-05T00:05:00.277684+00:00",
+    "story_count": 9,
+    "duration_seconds": 106,
+    "video_path": "/Users/larryseyer/JTFNews/video/2026-03-04-daily-digest.mp4",
     "youtube_id": "aUVHZjluiJc",
     "youtube_url": "https://youtube.com/watch?v=aUVHZjluiJc",
-    "archive_org_id": "jtf-news-2026-03-03",
-    "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-03/2026-03-03-daily-digest.mp3",
-    "archive_video_url": "https://archive.org/download/jtf-news-2026-03-03/2026-03-03-daily-digest.mp4",
+    "archive_org_id": "jtf-news-2026-03-04",
+    "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-04/2026-03-04-daily-digest.mp3",
+    "archive_video_url": "https://archive.org/download/jtf-news-2026-03-04/2026-03-04-daily-digest.mp4",
     "podcast_updated": true
   }
 }
