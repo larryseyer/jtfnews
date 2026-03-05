@@ -4,13 +4,13 @@
     {
       "id": "2026-03-05-000",
       "hash": "8334bf6ab289",
-      "fact": "The Senate voted against a measure to constrain President Trump's authorities in Iran.",
-      "source": "CBC News 2.9|9.0 \u00b7 NPR 4.7|8.5",
+      "fact": "The Senate voted against a measure to constrain President Trump's authorities in Iran. and released footage of the strikes.",
+      "source": "CBC News 2.9|9.0 \u00b7 NPR 4.7|8.5 \u00b7 France 24 4.8|9.0",
       "source_urls": {
         "CBC News": "https://www.cbc.ca/news/world",
         "NPR": "https://www.npr.org/sections/news/"
       },
-      "audio": "../audio/archive/2026-03-05/f5f256ed9117.mp3",
+      "audio": "../audio/archive/2026-03-05/d042a812efaf.mp3",
       "published_at": "2026-03-05T00:10:01.629551+00:00",
       "status": "published"
     },
@@ -25,6 +25,19 @@
       },
       "audio": "../audio/archive/2026-03-05/d48219290102.mp3",
       "published_at": "2026-03-05T02:36:48.710160+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-05-002",
+      "hash": "70301d46bb15",
+      "fact": "Cuba experiences widespread power outages amid fuel shortage.",
+      "source": "France 24 4.8|9.0 \u00b7 BBC News 5.4|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-05/bfe33a0b8ed6.mp3",
+      "published_at": "2026-03-05T10:30:49.129575+00:00",
       "status": "published"
     }
   ]
