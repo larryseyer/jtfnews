@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 02:36:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 10:30:49 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cuba experiences widespread power outages amid fuel shortage.</title>
+      <description>Cuba experiences widespread power outages amid fuel shortage.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 05 Mar 2026 10:30:49 +0000</pubDate>
+      <guid isPermaLink="false">d4eb7cb9599c</guid>
+    </item>
     <item>
       <title>The Pentagon identified six U.S. soldiers killed in an Iran conflict.</title>
       <description>The Pentagon identified six U.S. soldiers killed in an Iran conflict.</description>
@@ -1090,18 +1102,6 @@
       </jtf:source>
       <pubDate>Mon, 23 Feb 2026 00:30:33 +0000</pubDate>
       <guid isPermaLink="false">cba90459be07</guid>
-    </item>
-    <item>
-      <title>President Trump imposes a temporary import duty.</title>
-      <description>President Trump imposes a temporary import duty.</description>
-      <jtf:source name="White House" url="" accuracy="8.3*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
-        <jtf:owner name="US Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="" accuracy="7.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 23 Feb 2026 00:04:35 +0000</pubDate>
-      <guid isPermaLink="false">d1ea76b26000</guid>
     </item>
   </channel>
 </rss>
