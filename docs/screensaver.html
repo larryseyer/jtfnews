@@ -272,8 +272,6 @@
 
       /* iOS GPU acceleration for smooth animation */
       will-change: transform;
-      -webkit-transform: translateZ(0) translateX(var(--start-offset, 100vw));
-      transform: translateZ(0) translateX(var(--start-offset, 100vw));
     }
 
     /* When animation is ready, start playing */
@@ -306,10 +304,7 @@
       width: var(--viewport-width-px, 100vw);
     }
 
-    @keyframes scroll-ticker {
-      from { transform: translateZ(0) translateX(var(--start-offset, 100vw)); }
-      to { transform: translateZ(0) translateX(var(--scroll-distance, -4000px)); }
-    }
+    /* scroll-ticker keyframes are injected dynamically by JS (iOS Safari does not support var() in @keyframes) */
 
     /* Edge fade effect */
     #news-ticker::before,
@@ -677,12 +672,16 @@
     /**
      * Update ticker animation based on content width
      */
+    // Dynamic keyframes style element (iOS Safari does not support var() in @keyframes)
+    let tickerStyleEl = null;
+
     function updateTickerAnimation() {
       const tickerContent = document.getElementById('ticker-content');
       if (!tickerContent) return;
 
       // Stop animation while updating
       tickerContent.classList.remove('animating');
+      tickerContent.style.animation = 'none';
 
       tickerContent.innerHTML = buildTickerContent();
 
@@ -694,10 +693,21 @@
         const tickerSpeed = viewportWidth / SCREEN_CROSS_TIME;
         const duration = totalDistance / tickerSpeed;
 
-        // Set animation properties
-        tickerContent.style.setProperty('--start-offset', viewportWidth + 'px');
-        tickerContent.style.setProperty('--scroll-distance', `-${contentWidth}px`);
-        tickerContent.style.animationDuration = `${duration}s`;
+        // Inject @keyframes with actual pixel values (iOS Safari ignores var() in keyframes)
+        if (!tickerStyleEl) {
+          tickerStyleEl = document.createElement('style');
+          document.head.appendChild(tickerStyleEl);
+        }
+        tickerStyleEl.textContent = `
+          @keyframes scroll-ticker {
+            from { transform: translateZ(0) translateX(${viewportWidth}px); }
+            to { transform: translateZ(0) translateX(-${contentWidth}px); }
+          }
+        `;
+
+        // Re-apply animation with new duration
+        tickerContent.style.animation = `scroll-ticker ${duration}s linear infinite`;
+        tickerContent.style.animationPlayState = 'paused';
 
         // Start animation after a small delay to ensure CSS is applied
         setTimeout(() => {
