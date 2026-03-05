@@ -1,5 +1,12 @@
 [
   {
+    "uid": "e8c245c8795e457040b25fbbffe1c128",
+    "updateDate": "2026-03-05T11:30:48.0Z",
+    "titleText": "JTF News: France 24, CBC News",
+    "mainText": "A blackout affects millions of people in Cuba.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "a10d767876dcf84331966660bbfe652f",
     "updateDate": "2026-03-05T10:30:51.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-04T22:30:51.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
     "mainText": "Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "4881f2faec41c0441fee5f337b726d70",
-    "updateDate": "2026-03-04T22:30:37.0Z",
-    "titleText": "JTF News: CBC News, PBS NewsHour",
-    "mainText": "The Senate votes on a war powers resolution following U.S.-Israeli strikes on Iran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
