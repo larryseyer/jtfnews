@@ -1,5 +1,12 @@
 [
   {
+    "uid": "80126396aac27d4b69e36c1a7c10b7db",
+    "updateDate": "2026-03-05T00:10:03.0Z",
+    "titleText": "JTF News: CBC News, NPR",
+    "mainText": "The Senate voted against a measure to constrain President Trump's authorities in Iran.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "0834586288b6d2799139773ae5e2e8b2",
     "updateDate": "2026-03-04T22:30:51.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-04T11:30:52.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Israel conducted airstrikes in Lebanon and Iran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "803366b01eadd89570bb59633aa14654",
-    "updateDate": "2026-03-04T07:00:55.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "An 8-year-old Australian girl died in a snowmobile accident in Japan.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
