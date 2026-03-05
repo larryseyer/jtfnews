@@ -1,5 +1,12 @@
 [
   {
+    "uid": "36c0110637570c7bc576b3c5688d58d5",
+    "updateDate": "2026-03-05T19:00:40.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "Israel issued an evacuation order for Beirut's southern suburbs.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "813dcedcc87a7cda100e8606854fbef6",
     "updateDate": "2026-03-05T16:31:01.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T10:30:51.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "Cuba experiences widespread power outages amid fuel shortage.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "9d6bde1f28387a12bb335dcad6780316",
-    "updateDate": "2026-03-05T02:36:50.0Z",
-    "titleText": "JTF News: NPR, BBC News",
-    "mainText": "The Pentagon identified six U.S. soldiers killed in an Iran conflict.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
