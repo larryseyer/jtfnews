@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-05/d88d71b250c3.mp3",
       "published_at": "2026-03-05T12:30:41.687930+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-05-005",
+      "hash": "15130674af87",
+      "fact": "Israel conducted strikes in Beirut.",
+      "source": "ABC News Australia 1.9|9.0 \u00b7 France 24 4.9|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-05/7c3713744311.mp3",
+      "published_at": "2026-03-05T16:30:58.859904+00:00",
+      "status": "published"
     }
   ]
 }
