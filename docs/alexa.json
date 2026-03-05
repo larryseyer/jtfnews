@@ -1,5 +1,12 @@
 [
   {
+    "uid": "813dcedcc87a7cda100e8606854fbef6",
+    "updateDate": "2026-03-05T16:31:01.0Z",
+    "titleText": "JTF News: ABC News Australia, France 24",
+    "mainText": "Israel conducted strikes in Beirut.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "b3d44b3c1ae95042dbe8adfab3037d11",
     "updateDate": "2026-03-05T12:30:43.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T02:36:50.0Z",
     "titleText": "JTF News: NPR, BBC News",
     "mainText": "The Pentagon identified six U.S. soldiers killed in an Iran conflict.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "80126396aac27d4b69e36c1a7c10b7db",
-    "updateDate": "2026-03-05T00:10:03.0Z",
-    "titleText": "JTF News: CBC News, NPR",
-    "mainText": "The Senate voted against a measure to constrain President Trump's authorities in Iran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
