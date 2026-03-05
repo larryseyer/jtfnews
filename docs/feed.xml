@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 19:30:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 21:46:06 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azerbaijan reports Iran conducted strikes on its territory.</title>
+      <description>Azerbaijan reports Iran conducted strikes on its territory.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 05 Mar 2026 21:46:06 +0000</pubDate>
+      <guid isPermaLink="false">4fc5231cf8af</guid>
+    </item>
     <item>
       <title>President Trump announced that Governor Kristi Noem will be replaced as Secretar...</title>
       <description>President Trump announced that Governor Kristi Noem will be replaced as Secretary of Homeland Security.</description>
@@ -1090,18 +1102,6 @@
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 01:00:37 +0000</pubDate>
       <guid isPermaLink="false">4fbd46562958</guid>
-    </item>
-    <item>
-      <title>Ukraine marks four years of war with Russia.</title>
-      <description>Ukraine marks four years of war with Russia.</description>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 25 Feb 2026 00:02:57 +0000</pubDate>
-      <guid isPermaLink="false">ca37f836d4b7</guid>
     </item>
   </channel>
 </rss>
