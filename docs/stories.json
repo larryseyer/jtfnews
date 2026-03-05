@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-05/f5f256ed9117.mp3",
       "published_at": "2026-03-05T00:10:01.629551+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-05-001",
+      "hash": "3ce464ea340e",
+      "fact": "The Pentagon identified six U.S. soldiers killed in an Iran conflict.",
+      "source": "NPR 4.7|8.5 \u00b7 BBC News 5.4|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-05/d48219290102.mp3",
+      "published_at": "2026-03-05T02:36:48.710160+00:00",
+      "status": "published"
     }
   ]
 }
