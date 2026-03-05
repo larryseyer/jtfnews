@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-03-05T01:00:46.627991+00:00",
-  "web_refresh_at": "2026-03-05T01:00:46.627991+00:00",
+  "timestamp": "2026-03-05T01:05:47.542926+00:00",
   "uptime_start": "2026-03-04T22:01:17.720437+00:00",
-  "uptime_seconds": 10769,
+  "uptime_seconds": 11070,
   "availability_pct": 52.3,
   "cycle": {
     "number": 7,
-    "duration_seconds": 42.2,
-    "headlines_scraped": 174,
-    "headlines_processed": 7,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
-    "stories_queued": 1
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
@@ -44,7 +43,7 @@
   },
   "queue": {
     "size": 49,
-    "oldest_item_age_hours": 24.0
+    "oldest_item_age_hours": 24.1
   },
   "stories_today": 1,
   "sources": {
@@ -53,16 +52,6 @@
     "failed": []
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-03-05T00:05:00.848537+00:00",
-      "level": "ERROR",
-      "message": "YouTube upload failed for 2026-03-04, video saved locally: /Users/larryseyer/JTFNews/video/2026-03-04-daily-digest.mp4"
-    },
-    {
-      "timestamp": "2026-03-05T00:05:01.277599+00:00",
-      "level": "WARNING",
-      "message": "Alert sent: YouTube upload failed for 2026-03-04. Video saved at: /Users/larryseyer/JTFNews/video/2026-03-04-daily-digest.mp4"
-    },
     {
       "timestamp": "2026-03-05T00:06:39.122031+00:00",
       "level": "WARNING",
@@ -107,7 +96,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
