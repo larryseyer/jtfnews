@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b3d44b3c1ae95042dbe8adfab3037d11",
+    "updateDate": "2026-03-05T12:30:43.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Kim Jong Un visited a warship and oversaw a missile launch in North Korea.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "e8c245c8795e457040b25fbbffe1c128",
     "updateDate": "2026-03-05T11:30:48.0Z",
     "titleText": "JTF News: France 24, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T00:10:03.0Z",
     "titleText": "JTF News: CBC News, NPR",
     "mainText": "The Senate voted against a measure to constrain President Trump's authorities in Iran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "0834586288b6d2799139773ae5e2e8b2",
-    "updateDate": "2026-03-04T22:30:51.0Z",
-    "titleText": "JTF News: PBS NewsHour, France 24",
-    "mainText": "Sri Lanka recovered 87 bodies from an Iranian warship sunk off its coast by a U.S. submarine.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
