@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 03:00:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 03:30:36 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Canadian tourist died by drowning in Australia following a dingo attack, accor...</title>
+      <description>A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 03:30:36 +0000</pubDate>
+      <guid isPermaLink="false">a0d83b668a22</guid>
+    </item>
     <item>
       <title>Israel launches attacks on Tehran and Beirut.</title>
       <description>Israel launches attacks on Tehran and Beirut.</description>
@@ -1084,18 +1096,6 @@
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 13:30:41 +0000</pubDate>
       <guid isPermaLink="false">998dcbb89088</guid>
-    </item>
-    <item>
-      <title>Chancellor Friedrich Merz of Germany travels to Beijing.</title>
-      <description>Chancellor Friedrich Merz of Germany travels to Beijing.</description>
-      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 25 Feb 2026 11:30:44 +0000</pubDate>
-      <guid isPermaLink="false">060225ee2e00</guid>
     </item>
   </channel>
 </rss>
