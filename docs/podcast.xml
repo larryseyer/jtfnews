@@ -310,5 +310,28 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>16</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 5, 2026</title>
+      <description>9 verified facts for March 5, 2026.</description>
+      <content:encoded><![CDATA[9 verified facts for March 5, 2026.
+
+- The Senate voted against a measure to constrain President Trump's authorities in Iran.
+- The Pentagon identified six U.S. soldiers killed in an Iran conflict.
+- Cuba experiences widespread power outages amid fuel shortage.
+- A blackout affects millions of people in Cuba.
+- Kim Jong Un visited a warship and oversaw a missile launch in North Korea.
+- Israel conducted strikes in Beirut.
+- Israel issued an evacuation order for Beirut's southern suburbs.
+- President Trump announced that Governor Kristi Noem will be replaced as Secretary of Homeland Security.
+- Azerbaijan reports Iran conducted strikes on its territory.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-05/2026-03-05-daily-digest.mp3" type="audio/mpeg" length="4080472"/>
+      <guid isPermaLink="false">jtf-news-2026-03-05</guid>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:37</itunes:duration>
+      <itunes:episode>17</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
