@@ -1,5 +1,12 @@
 [
   {
+    "uid": "42365d0d04303372c17fe92d61c85349",
+    "updateDate": "2026-03-06T11:30:38.0Z",
+    "titleText": "JTF News: France 24, Deutsche Welle",
+    "mainText": "President Trump stated that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "662433de44289953380f5b6b676094aa",
     "updateDate": "2026-03-06T08:30:43.0Z",
     "titleText": "JTF News: European Commission, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-06T00:07:28.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "dbda462d0a26a3ef96b63272bb16512c",
-    "updateDate": "2026-03-05T21:46:08.0Z",
-    "titleText": "JTF News: BBC News, France 24",
-    "mainText": "Azerbaijan reports Iran conducted strikes on its territory.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
