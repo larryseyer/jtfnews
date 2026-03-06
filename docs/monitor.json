@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-06T16:55:53.857904+00:00",
+  "timestamp": "2026-03-06T17:00:48.133096+00:00",
+  "web_refresh_at": "2026-03-06T17:00:48.133096+00:00",
   "uptime_start": "2026-03-06T05:26:42.016017+00:00",
-  "uptime_seconds": 41352,
-  "availability_pct": 60.7,
+  "uptime_seconds": 41646,
+  "availability_pct": 60.9,
   "cycle": {
-    "number": 24,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 25,
+    "duration_seconds": 43.6,
+    "headlines_scraped": 173,
+    "headlines_processed": 9,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -43,7 +44,7 @@
   },
   "queue": {
     "size": 49,
-    "oldest_item_age_hours": 23.9
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 5,
   "sources": {
@@ -55,60 +56,60 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-03-06T16:30:47.658223+00:00",
-      "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NtXN21fhwVViYEhyA'}"
+      "timestamp": "2026-03-06T17:00:32.639779+00:00",
+      "level": "WARNING",
+      "message": "Failed to fetch from Congress.gov: 403 Client Error: Forbidden for url: https://www.congress.gov/"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.157357+00:00",
+      "timestamp": "2026-03-06T17:00:47.056201+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9Nu6qXNRrhoWi2D881'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfXU3QYhWDtmGPKywi'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.283341+00:00",
+      "timestamp": "2026-03-06T17:00:47.245244+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NwA7kSABG224YNhG5'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfYH9yptmRSmDK6yS4'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.404201+00:00",
+      "timestamp": "2026-03-06T17:00:47.363584+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NwhMgrzhMifQLB9RC'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfZ2oZBKLXjsARdW6d'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.520285+00:00",
+      "timestamp": "2026-03-06T17:00:47.486456+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NxDNGK8iuYMhtu4rP'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfZXa44odBHE9r957i'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.661175+00:00",
+      "timestamp": "2026-03-06T17:00:47.613484+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NxjcmFCHaDswAUNJV'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfa6JUaYEfQE6PBemi'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.786291+00:00",
+      "timestamp": "2026-03-06T17:00:47.741196+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NyLqMme2FGfhsVpCy'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfacocfrg3yZKpaFjd'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:48.919612+00:00",
+      "timestamp": "2026-03-06T17:00:47.868509+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9Nyup5H5zMWcjBZUEE'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfbBYADnox7ADtj6t1'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:49.060288+00:00",
+      "timestamp": "2026-03-06T17:00:47.996694+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9NzRZtxFFUmfbDgATv'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfbinHu3MRLtk4UR9S'}"
     },
     {
-      "timestamp": "2026-03-06T16:30:49.204896+00:00",
+      "timestamp": "2026-03-06T17:00:48.129444+00:00",
       "level": "ERROR",
-      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYn9P17zQDGoLHES7BSzM'}"
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYnBfcGGbcQdNwVu9UjRo'}"
     }
   ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
