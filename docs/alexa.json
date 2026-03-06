@@ -1,5 +1,12 @@
 [
   {
+    "uid": "26bacd71219a8a33c0643a6d5c81bf74",
+    "updateDate": "2026-03-06T00:07:28.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "dbda462d0a26a3ef96b63272bb16512c",
     "updateDate": "2026-03-05T21:46:08.0Z",
     "titleText": "JTF News: BBC News, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T16:31:01.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
     "mainText": "Israel conducted strikes in Beirut.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "b3d44b3c1ae95042dbe8adfab3037d11",
-    "updateDate": "2026-03-05T12:30:43.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Kim Jong Un visited a warship and oversaw a missile launch in North Korea.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
