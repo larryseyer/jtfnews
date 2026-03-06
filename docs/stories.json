@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-06/71b297302862.mp3",
       "published_at": "2026-03-06T11:30:36.242634+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-06-005",
+      "hash": "998327fac876",
+      "fact": "Oil prices reached $90 USD per barrel for the first time in 2 years.",
+      "source": "CBC News 2.9|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-06/a09a107cbe07.mp3",
+      "published_at": "2026-03-06T18:47:40.467496+00:00",
+      "status": "published"
     }
   ]
 }
