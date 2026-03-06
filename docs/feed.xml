@@ -5,8 +5,26 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 21:46:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 00:07:26 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The DR Congo government reported 200 deaths from a landslide at a mine in a rebe...</title>
+      <description>The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 00:07:26 +0000</pubDate>
+      <guid isPermaLink="false">1e2d83bb8bd0</guid>
+    </item>
+    <item>
+      <title>[DAILY DIGEST] 2026-03-05 - 9 verified facts</title>
+      <description>Daily summary of 9 verified facts from 2026-03-05.</description>
+      <pubDate>Fri, 06 Mar 2026 00:04:46 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-05</guid>
+    </item>
     <item>
       <title>Azerbaijan reports Iran conducted strikes on its territory.</title>
       <description>Azerbaijan reports Iran conducted strikes on its territory.</description>
@@ -1078,30 +1096,6 @@
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 06:30:42 +0000</pubDate>
       <guid isPermaLink="false">4ab730257b30</guid>
-    </item>
-    <item>
-      <title>President Trump delivers State of the Union address.</title>
-      <description>President Trump delivers State of the Union address.</description>
-      <jtf:source name="NPR" url="" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="CBC News" url="" accuracy="3.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 25 Feb 2026 02:30:33 +0000</pubDate>
-      <guid isPermaLink="false">c94ce95938d8</guid>
-    </item>
-    <item>
-      <title>President Trump is scheduled to deliver a State of the Union address.</title>
-      <description>President Trump is scheduled to deliver a State of the Union address.</description>
-      <jtf:source name="CBC News" url="" accuracy="3.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="" accuracy="4.7" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 25 Feb 2026 01:00:37 +0000</pubDate>
-      <guid isPermaLink="false">4fbd46562958</guid>
     </item>
   </channel>
 </rss>
