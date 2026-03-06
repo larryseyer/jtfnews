@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-06/1cb9a589ebf8.mp3",
       "published_at": "2026-03-06T03:30:36.635393+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-06-003",
+      "hash": "3de32266ba2b",
+      "fact": "Canada is signing an agreement with the European Union to enhance a free trade deal.",
+      "source": "European Commission 1.0|9.0 \u00b7 CBC News 2.9|9.0",
+      "source_urls": {
+        "European Commission": "https://ec.europa.eu/commission/presscorner/home/en",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-06/6656ca10d3fa.mp3",
+      "published_at": "2026-03-06T08:30:41.143536+00:00",
+      "status": "published"
     }
   ]
 }
