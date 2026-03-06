@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-06T12:55:54.472746+00:00",
+  "timestamp": "2026-03-06T13:00:40.998414+00:00",
+  "web_refresh_at": "2026-03-06T13:00:40.998414+00:00",
   "uptime_start": "2026-03-06T05:26:42.016017+00:00",
-  "uptime_seconds": 26952,
-  "availability_pct": 59.6,
+  "uptime_seconds": 27239,
+  "availability_pct": 59.8,
   "cycle": {
-    "number": 16,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 17,
+    "duration_seconds": 37.0,
+    "headlines_scraped": 174,
+    "headlines_processed": 7,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -21,11 +22,11 @@
         }
       },
       "claude": {
-        "calls": 435,
-        "cost_usd": 0.17853899999999998,
+        "calls": 440,
+        "cost_usd": 0.18065374999999997,
         "details": {
-          "input_tokens": 436281,
-          "output_tokens": 55575
+          "input_tokens": 441070,
+          "output_tokens": 56309
         }
       },
       "twilio": {
@@ -36,14 +37,14 @@
         }
       }
     },
-    "total_usd": 0.2077,
+    "total_usd": 0.2098,
     "month_estimate_usd": 9.85,
     "daily_budget": 1.61,
-    "budget_pct": 12.9
+    "budget_pct": 13.0
   },
   "queue": {
-    "size": 56,
-    "oldest_item_age_hours": 24.4
+    "size": 55,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 5,
   "sources": {
@@ -52,11 +53,6 @@
     "failed": []
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-03-06T12:00:15.318221+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/briefing-room/"
-    },
     {
       "timestamp": "2026-03-06T12:00:44.661202+00:00",
       "level": "WARNING",
@@ -71,12 +67,27 @@
       "timestamp": "2026-03-06T12:00:45.114249+00:00",
       "level": "WARNING",
       "message": "Alert sent: Contradiction: The Winter Paralympics open in Milan-Cortina with "
+    },
+    {
+      "timestamp": "2026-03-06T13:00:40.658475+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYmsMYzyFgCNXcYnFpwPS'}"
+    },
+    {
+      "timestamp": "2026-03-06T13:00:40.840597+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYmsMagRVgJu6GGuMqwsW'}"
+    },
+    {
+      "timestamp": "2026-03-06T13:00:40.996782+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYmsMbV3bb4KvtCiF8aLM'}"
     }
   ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
