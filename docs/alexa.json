@@ -1,5 +1,12 @@
 [
   {
+    "uid": "5039b3aeeaf1ef375a3ca683dd6acfc5",
+    "updateDate": "2026-03-06T03:30:38.0Z",
+    "titleText": "JTF News: CBC News, ABC News Australia",
+    "mainText": "A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "3b0495115ae15f1c71513f4b5017a231",
     "updateDate": "2026-03-06T03:00:38.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T19:30:39.0Z",
     "titleText": "JTF News: NPR, Deutsche Welle",
     "mainText": "President Trump announced that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "36c0110637570c7bc576b3c5688d58d5",
-    "updateDate": "2026-03-05T19:00:40.0Z",
-    "titleText": "JTF News: BBC News, France 24",
-    "mainText": "Israel issued an evacuation order for Beirut's southern suburbs.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
