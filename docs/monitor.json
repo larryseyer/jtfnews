@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-03-06T13:00:40.998414+00:00",
-  "web_refresh_at": "2026-03-06T13:00:40.998414+00:00",
+  "timestamp": "2026-03-06T13:05:41.861055+00:00",
   "uptime_start": "2026-03-06T05:26:42.016017+00:00",
-  "uptime_seconds": 27239,
+  "uptime_seconds": 27540,
   "availability_pct": 59.8,
   "cycle": {
     "number": 17,
-    "duration_seconds": 37.0,
-    "headlines_scraped": 174,
-    "headlines_processed": 7,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -44,7 +43,7 @@
   },
   "queue": {
     "size": 55,
-    "oldest_item_age_hours": 24.0
+    "oldest_item_age_hours": 24.1
   },
   "stories_today": 5,
   "sources": {
@@ -53,21 +52,6 @@
     "failed": []
   },
   "recent_errors": [
-    {
-      "timestamp": "2026-03-06T12:00:44.661202+00:00",
-      "level": "WARNING",
-      "message": "Contradiction detected: Russia has been banned from competing in the Winter Paralympics since 2022 due to its invasion of Ukraine. The 2026 Milan-Cortina Winter Paralympics will not include Russian participation. This directly contradicts the new fact stated."
-    },
-    {
-      "timestamp": "2026-03-06T12:00:44.661418+00:00",
-      "level": "WARNING",
-      "message": "Contradiction blocked: The Winter Paralympics open in Milan-Cor..."
-    },
-    {
-      "timestamp": "2026-03-06T12:00:45.114249+00:00",
-      "level": "WARNING",
-      "message": "Alert sent: Contradiction: The Winter Paralympics open in Milan-Cortina with "
-    },
     {
       "timestamp": "2026-03-06T13:00:40.658475+00:00",
       "level": "ERROR",
@@ -87,7 +71,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
