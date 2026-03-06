@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-06/aab06c9c3666.mp3",
       "published_at": "2026-03-06T03:00:36.541827+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-06-002",
+      "hash": "e6442518a037",
+      "fact": "A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.",
+      "source": "CBC News 2.8|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-06/1cb9a589ebf8.mp3",
+      "published_at": "2026-03-06T03:30:36.635393+00:00",
+      "status": "published"
     }
   ]
 }
