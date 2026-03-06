@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 03:30:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 08:30:41 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canada is signing an agreement with the European Union to enhance a free trade d...</title>
+      <description>Canada is signing an agreement with the European Union to enhance a free trade deal.</description>
+      <jtf:source name="European Commission" url="https://ec.europa.eu/commission/presscorner/home/en" accuracy="1.0" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
+        <jtf:owner name="European Union" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 08:30:41 +0000</pubDate>
+      <guid isPermaLink="false">e9741c724521</guid>
+    </item>
     <item>
       <title>A Canadian tourist died by drowning in Australia following a dingo attack, accor...</title>
       <description>A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.</description>
@@ -1084,18 +1096,6 @@
       </jtf:source>
       <pubDate>Wed, 25 Feb 2026 15:00:55 +0000</pubDate>
       <guid isPermaLink="false">5ded6713ec2e</guid>
-    </item>
-    <item>
-      <title>Trial begins for Brazil politicians accused of ordering lawmakers' murders.</title>
-      <description>Trial begins for Brazil politicians accused of ordering lawmakers' murders.</description>
-      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="The Guardian" url="" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 25 Feb 2026 13:30:41 +0000</pubDate>
-      <guid isPermaLink="false">998dcbb89088</guid>
     </item>
   </channel>
 </rss>
