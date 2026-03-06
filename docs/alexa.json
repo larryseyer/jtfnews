@@ -1,5 +1,12 @@
 [
   {
+    "uid": "662433de44289953380f5b6b676094aa",
+    "updateDate": "2026-03-06T08:30:43.0Z",
+    "titleText": "JTF News: European Commission, CBC News",
+    "mainText": "Canada is signing an agreement with the European Union to enhance a free trade deal.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "5039b3aeeaf1ef375a3ca683dd6acfc5",
     "updateDate": "2026-03-06T03:30:38.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T21:46:08.0Z",
     "titleText": "JTF News: BBC News, France 24",
     "mainText": "Azerbaijan reports Iran conducted strikes on its territory.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "ab0d9bddee094f18620ded6b027a5fcb",
-    "updateDate": "2026-03-05T19:30:39.0Z",
-    "titleText": "JTF News: NPR, Deutsche Welle",
-    "mainText": "President Trump announced that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
