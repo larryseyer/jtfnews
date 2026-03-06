@@ -1,5 +1,12 @@
 [
   {
+    "uid": "0fb2db60dc54661198e9b92eb6437dbe",
+    "updateDate": "2026-03-06T18:47:42.0Z",
+    "titleText": "JTF News: CBC News, ABC News Australia",
+    "mainText": "Oil prices reached $90 USD per barrel for the first time in 2 years.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "42365d0d04303372c17fe92d61c85349",
     "updateDate": "2026-03-06T11:30:38.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-06T03:00:38.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Israel launches attacks on Tehran and Beirut.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "26bacd71219a8a33c0643a6d5c81bf74",
-    "updateDate": "2026-03-06T00:07:28.0Z",
-    "titleText": "JTF News: France 24, BBC News",
-    "mainText": "The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
