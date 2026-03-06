@@ -1,5 +1,12 @@
 [
   {
+    "uid": "3b0495115ae15f1c71513f4b5017a231",
+    "updateDate": "2026-03-06T03:00:38.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Israel launches attacks on Tehran and Beirut.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "26bacd71219a8a33c0643a6d5c81bf74",
     "updateDate": "2026-03-06T00:07:28.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-05T19:00:40.0Z",
     "titleText": "JTF News: BBC News, France 24",
     "mainText": "Israel issued an evacuation order for Beirut's southern suburbs.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "813dcedcc87a7cda100e8606854fbef6",
-    "updateDate": "2026-03-05T16:31:01.0Z",
-    "titleText": "JTF News: ABC News Australia, France 24",
-    "mainText": "Israel conducted strikes in Beirut.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
