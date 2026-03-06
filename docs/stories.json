@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-06/6656ca10d3fa.mp3",
       "published_at": "2026-03-06T08:30:41.143536+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-06-004",
+      "hash": "e24c28b37c84",
+      "fact": "President Trump stated that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
+      "source": "France 24 4.9|9.0 \u00b7 Deutsche Welle 5.9|9.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-06/71b297302862.mp3",
+      "published_at": "2026-03-06T11:30:36.242634+00:00",
+      "status": "published"
     }
   ]
 }
