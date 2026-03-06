@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-06/24008ba2e9bc.mp3",
       "published_at": "2026-03-06T00:07:26.077458+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-06-001",
+      "hash": "f0d94431b6c2",
+      "fact": "Israel launches attacks on Tehran and Beirut.",
+      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.9|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-06/aab06c9c3666.mp3",
+      "published_at": "2026-03-06T03:00:36.541827+00:00",
+      "status": "published"
     }
   ]
 }
