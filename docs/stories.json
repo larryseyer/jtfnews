@@ -1,121 +1,17 @@
 {
-  "date": "2026-03-05",
+  "date": "2026-03-06",
   "stories": [
     {
-      "id": "2026-03-05-000",
-      "hash": "8334bf6ab289",
-      "fact": "The Senate voted against a measure to constrain President Trump's authorities in Iran. and released footage of the strikes.",
-      "source": "CBC News 2.9|9.0 \u00b7 NPR 4.7|8.5 \u00b7 France 24 4.8|9.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "NPR": "https://www.npr.org/sections/news/"
-      },
-      "audio": "../audio/archive/2026-03-05/d042a812efaf.mp3",
-      "published_at": "2026-03-05T00:10:01.629551+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-001",
-      "hash": "3ce464ea340e",
-      "fact": "The Pentagon identified six U.S. soldiers killed in an Iran conflict.",
-      "source": "NPR 4.7|8.5 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-05/d48219290102.mp3",
-      "published_at": "2026-03-05T02:36:48.710160+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-002",
-      "hash": "70301d46bb15",
-      "fact": "Cuba experiences widespread power outages amid fuel shortage.",
-      "source": "France 24 4.8|9.0 \u00b7 BBC News 5.4|9.0",
+      "id": "2026-03-06-000",
+      "hash": "da2f1c4184c8",
+      "fact": "The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.",
+      "source": "France 24 4.9|9.0 \u00b7 BBC News 5.4|9.0",
       "source_urls": {
         "France 24": "https://www.france24.com/en/",
         "BBC News": "https://www.bbc.com/news/world"
       },
-      "audio": "../audio/archive/2026-03-05/bfe33a0b8ed6.mp3",
-      "published_at": "2026-03-05T10:30:49.129575+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-003",
-      "hash": "abcee5c3f56e",
-      "fact": "A blackout affects millions of people in Cuba.",
-      "source": "France 24 4.8|9.0 \u00b7 CBC News 2.9|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "CBC News": "https://www.cbc.ca/news/world"
-      },
-      "audio": "../audio/archive/2026-03-05/d4a58223f777.mp3",
-      "published_at": "2026-03-05T11:30:46.144977+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-004",
-      "hash": "8a0a969a6e41",
-      "fact": "Kim Jong Un visited a warship and oversaw a missile launch in North Korea.",
-      "source": "Deutsche Welle 5.9|9.5 \u00b7 France 24 4.8|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-05/d88d71b250c3.mp3",
-      "published_at": "2026-03-05T12:30:41.687930+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-005",
-      "hash": "15130674af87",
-      "fact": "Israel conducted strikes in Beirut.",
-      "source": "ABC News Australia 1.9|9.0 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-05/7c3713744311.mp3",
-      "published_at": "2026-03-05T16:30:58.859904+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-006",
-      "hash": "036b29a06d20",
-      "fact": "Israel issued an evacuation order for Beirut's southern suburbs.",
-      "source": "BBC News 5.3|9.0 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-05/e9855ea0b6df.mp3",
-      "published_at": "2026-03-05T19:00:38.561624+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-007",
-      "hash": "c3c563a4819a",
-      "fact": "President Trump announced that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
-      "source": "NPR 4.7|8.5 \u00b7 Deutsche Welle 5.9|9.5",
-      "source_urls": {
-        "NPR": "https://www.npr.org/sections/news/",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-05/62d3aa70289e.mp3",
-      "published_at": "2026-03-05T19:30:36.467962+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-05-008",
-      "hash": "c729eda92354",
-      "fact": "Azerbaijan reports Iran conducted strikes on its territory.",
-      "source": "BBC News 5.4|9.0 \u00b7 France 24 4.9|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-05/f7932c9b9add.mp3",
-      "published_at": "2026-03-05T21:46:06.577517+00:00",
+      "audio": "../audio/archive/2026-03-06/24008ba2e9bc.mp3",
+      "published_at": "2026-03-06T00:07:26.077458+00:00",
       "status": "published"
     }
   ]
