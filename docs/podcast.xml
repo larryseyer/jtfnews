@@ -333,5 +333,25 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>17</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 6, 2026</title>
+      <description>6 verified facts for March 6, 2026.</description>
+      <content:encoded><![CDATA[6 verified facts for March 6, 2026.
+
+- The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.
+- Israel launches attacks on Tehran and Beirut.
+- A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.
+- Canada is signing an agreement with the European Union to enhance a free trade deal.
+- President Trump stated that Governor Kristi Noem will be replaced as Secretary of Homeland Security.
+- Oil prices reached $90 USD per barrel for the first time in 2 years.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-06/2026-03-06-daily-digest.mp3" type="audio/mpeg" length="3479656"/>
+      <guid isPermaLink="false">jtf-news-2026-03-06</guid>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:23</itunes:duration>
+      <itunes:episode>18</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
