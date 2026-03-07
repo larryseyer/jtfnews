@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-03-07T09:25:48.456444+00:00",
+  "timestamp": "2026-03-07T09:31:11.624572+00:00",
+  "web_refresh_at": "2026-03-07T09:31:11.624572+00:00",
   "uptime_start": "2026-03-07T06:36:17.643739+00:00",
-  "uptime_seconds": 10171,
+  "uptime_seconds": 10494,
   "availability_pct": 56.2,
   "cycle": {
-    "number": 6,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 7,
+    "duration_seconds": 67.5,
+    "headlines_scraped": 174,
+    "headlines_processed": 9,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
@@ -21,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 321,
-        "cost_usd": 0.13148425,
+        "calls": 330,
+        "cost_usd": 0.13541624999999996,
         "details": {
-          "input_tokens": 319827,
-          "output_tokens": 41222
+          "input_tokens": 329165,
+          "output_tokens": 42500
         }
       }
     },
-    "total_usd": 0.1429,
+    "total_usd": 0.1468,
     "month_estimate_usd": 9.75,
     "daily_budget": 1.61,
-    "budget_pct": 8.9
+    "budget_pct": 9.1
   },
   "queue": {
-    "size": 39,
-    "oldest_item_age_hours": 23.9
+    "size": 40,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 1,
   "sources": {
@@ -44,11 +45,17 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-03-07T09:30:53.316897+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Request timed out or interrupted. This could be due to a network timeout, dropped connection, or request cancellation. See https://docs.anthropic.com/en/api/errors#long-requests for more details."
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   },
   "daily_digest": {
@@ -67,5 +74,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-06/2026-03-06-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-06/2026-03-06-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
