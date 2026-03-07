@@ -296,6 +296,12 @@ p {
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .btn {
+    margin-top: auto;
 }
 
 .card h3 {
