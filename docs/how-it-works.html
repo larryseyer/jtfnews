@@ -235,19 +235,70 @@
             color: #22c55e;
         }
 
-        /* Mobile: show inline explanations instead */
+        /* Touch devices: tap to toggle tooltips */
+        .hover-zone.tooltip-active {
+            box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.5);
+        }
+
+        .hover-zone.tooltip-active .tooltip {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .hover-zone.tooltip-active .tooltip-right {
+            transform: translateY(-50%) translateX(0);
+        }
+
+        .hover-zone.tooltip-active .tooltip-left {
+            transform: translateY(-50%) translateX(0);
+        }
+
+        .hover-zone.tooltip-active .tooltip-bottom {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* Mobile: reposition all tooltips below to avoid overflow */
         @media (max-width: 768px) {
             .tooltip {
-                display: none !important;
-            }
-            .hover-zone:hover {
-                box-shadow: none;
-            }
-            .hover-hint {
+                position: relative !important;
+                left: auto !important;
+                right: auto !important;
+                top: auto !important;
+                bottom: auto !important;
+                transform: none !important;
+                max-width: 100%;
+                margin-top: 10px;
                 display: none;
             }
-            .mobile-explanations {
+
+            .tooltip::before {
+                display: none;
+            }
+
+            .hover-zone:hover .tooltip {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .hover-zone.tooltip-active .tooltip {
                 display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .hover-zone.tooltip-active .tooltip-right,
+            .hover-zone.tooltip-active .tooltip-left,
+            .hover-zone.tooltip-active .tooltip-bottom {
+                transform: none;
+            }
+
+            .hover-zone {
+                display: block !important;
+            }
+
+            .mobile-explanations {
+                display: none;
             }
         }
 
@@ -422,7 +473,7 @@
                 </div>
             </div>
 
-            <p class="hover-hint"><span>Hover over elements to learn more</span></p>
+            <p class="hover-hint"><span id="interaction-hint">Hover over elements to learn more</span></p>
 
             <!-- Mobile fallback explanations -->
             <div class="mobile-explanations">
@@ -757,6 +808,47 @@
         } else {
             loadLiveStory();
         }
+
+        // Touch device support: tap to toggle tooltips
+        function initTouchTooltips() {
+            var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+            // Update hint text for touch devices
+            var hint = document.getElementById('interaction-hint');
+            if (hint && isTouch) {
+                hint.textContent = 'Tap elements to learn more';
+            }
+
+            // Add tap-to-toggle on all hover zones
+            document.querySelectorAll('.hover-zone').forEach(function(zone) {
+                zone.addEventListener('click', function(e) {
+                    // On touch devices, prevent default and toggle
+                    // On desktop, this also works as a click fallback
+                    var wasActive = zone.classList.contains('tooltip-active');
+
+                    // Close all other open tooltips
+                    document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(other) {
+                        other.classList.remove('tooltip-active');
+                    });
+
+                    // Toggle this one
+                    if (!wasActive) {
+                        zone.classList.add('tooltip-active');
+                    }
+
+                    e.stopPropagation();
+                });
+            });
+
+            // Tap anywhere else to close tooltips
+            document.addEventListener('click', function() {
+                document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(zone) {
+                    zone.classList.remove('tooltip-active');
+                });
+            });
+        }
+
+        initTouchTooltips();
     </script>
 </body>
 </html>
