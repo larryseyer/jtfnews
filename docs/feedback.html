@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Issue | JTF News</title>
+
+    <!-- Favicon - adapts to light/dark mode -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/icon-square-dark-32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/icon-square-dark-16.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/icon-square-dark-256.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/icon-square-dark.svg" media="(prefers-color-scheme: dark)">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Report a factual error, bias, or suggestion to JTF News. No login required. We do not bury mistakes - we name them.">
+    <meta name="keywords" content="report error, news correction, bias report, JTF News feedback, fact check">
+    <meta name="author" content="JTF News">
+    <link rel="canonical" href="https://jtfnews.org/feedback.html">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Report an Issue | JTF News">
+    <meta property="og:description" content="Report a factual error, bias, or suggestion to JTF News. No login required. We do not bury mistakes - we name them.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jtfnews.org/feedback.html">
+    <meta property="og:site_name" content="JTF News">
+    <meta property="og:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Report an Issue | JTF News">
+    <meta name="twitter:description" content="Report a factual error, bias, or suggestion to JTF News. No login required.">
+    <meta name="twitter:image" content="https://jtfnews.org/assets/png/banner-twitter-1500x500.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feedback-specific styles -->
+    <style>
+        .subtitle {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .philosophy-quote {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid #d4af37;
+            padding: 15px 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .intro-text {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .intro-text a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .intro-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Styles */
+        .feedback-form {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .form-group label .required {
+            color: #ef4444;
+            margin-left: 2px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #60a5fa;
+        }
+        .form-input::placeholder {
+            color: #475569;
+        }
+        textarea.form-input {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-hint {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        /* Submit Button Area */
+        .form-actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .form-actions .btn {
+            min-width: 200px;
+            padding: 14px 32px;
+            font-size: 16px;
+        }
+        .form-actions .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Status Messages */
+        .message {
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+            display: none;
+        }
+        .message--success {
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+        .message--error {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+        .message a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        /* Proof-of-work status */
+        .pow-status {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        /* Honeypot */
+        .jtf-hp {
+            position: absolute;
+            left: -9999px;
+        }
+
+        /* Success Card */
+        .success-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 640px;
+            margin: 30px auto;
+        }
+        .success-card h2 {
+            color: #22c55e;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        .success-card p {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .success-card .ref-number {
+            font-family: monospace;
+            font-size: 16px;
+            color: #e2e8f0;
+            background: rgba(15, 23, 42, 0.8);
+            padding: 8px 16px;
+            border-radius: 6px;
+            display: inline-block;
+            margin: 10px 0 20px;
+        }
+        .success-card a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .success-card a:hover {
+            text-decoration: underline;
+        }
+        .success-card .btn {
+            margin-top: 20px;
+        }
+
+        /* Error Card */
+        .error-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            max-width: 640px;
+            margin: 30px auto;
+        }
+        .error-card p {
+            color: #ef4444;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__logo">
+            <img src="assets/logo-horizontal-dark.svg" alt="JTF News">
+        </a>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="screensaver-setup.html">Screen Saver</a></li>
+            <li><a href="journalists.html">Contributors</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <button class="site-nav__toggle" aria-label="Open menu" onclick="document.getElementById('nav-overlay').classList.add('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+<div id="nav-overlay" class="site-nav__overlay">
+    <button class="site-nav__close" aria-label="Close menu" onclick="this.parentElement.classList.remove('open')">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="sources.html">Sources</a>
+    <a href="archive.html">Archive</a>
+    <a href="corrections.html">Corrections</a>
+    <a href="screensaver-setup.html">Screen Saver</a>
+    <a href="journalists.html">Contributors</a>
+    <a href="submit.html">Submit</a>
+    <a href="support.html">Support</a>
+</div>
+
+<div class="container">
+    <h1>Report an Issue</h1>
+    <p class="subtitle">Help us keep the record accurate.</p>
+
+    <div class="philosophy-quote">
+        <p><strong>We do not bury mistakes. We name them.</strong></p>
+    </div>
+
+    <p class="intro-text">
+        If you have found a factual error, detected bias, or have a suggestion for improvement, let us know.
+        No account or personal information is required. All reports are reviewed during the next update cycle.
+        Confirmed errors are published on the <a href="corrections.html">corrections page</a> with the same prominence as the original item.
+    </p>
+
+    <!-- Feedback Form -->
+    <form id="feedback-form" class="feedback-form">
+
+        <!-- Category -->
+        <div class="form-group">
+            <label for="category">Category <span class="required">*</span></label>
+            <select id="category" class="form-input" required>
+                <option value="">Select a category</option>
+                <option value="factual_error">Factual Error</option>
+                <option value="bias">Bias or Distortion</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Story -->
+        <div class="form-group">
+            <label for="story">Related Story</label>
+            <select id="story" class="form-input">
+                <option value="">General / Not about a specific story</option>
+            </select>
+            <p class="form-hint">Optional. Select a specific story if your report relates to one.</p>
+        </div>
+
+        <!-- Details -->
+        <div class="form-group">
+            <label for="details">Details <span class="required">*</span></label>
+            <textarea id="details" class="form-input" rows="6" placeholder="Describe the issue. Be specific: what is incorrect, what the correct information is, and how you know." required minlength="20"></textarea>
+            <p class="form-hint">Minimum 20 characters. Stick to verifiable facts.</p>
+        </div>
+
+        <!-- Evidence URL -->
+        <div class="form-group">
+            <label for="evidence-url">Evidence URL</label>
+            <input type="url" id="evidence-url" class="form-input" placeholder="https://example.com/source">
+            <p class="form-hint">Optional. A link to a source that supports your report.</p>
+        </div>
+
+        <!-- Honeypot (spam layer 1) -->
+        <div class="jtf-hp" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Time gate (spam layer 2) -->
+        <input type="hidden" id="load_time" name="load_time" value="">
+
+        <!-- Proof-of-work (spam layer 3) -->
+        <input type="hidden" id="pow_nonce" name="pow_nonce" value="">
+        <input type="hidden" id="pow_hash" name="pow_hash" value="">
+
+        <!-- Submit -->
+        <div class="form-actions">
+            <button type="submit" id="submit-btn" class="btn btn--primary" disabled>Preparing...</button>
+        </div>
+        <p id="pow-status" class="pow-status">Verifying your browser...</p>
+    </form>
+
+    <!-- Success Message -->
+    <div id="success-message" class="success-card" role="status" aria-live="polite" style="display: none;">
+        <h2>Report Received</h2>
+        <p>Your report has been submitted and will be reviewed during the next update cycle.</p>
+        <p>Reference number:</p>
+        <div id="ref-number" class="ref-number"></div>
+        <p>If your report leads to a correction, it will appear on the <a href="corrections.html">corrections page</a>.</p>
+        <button type="button" class="btn btn--secondary" onclick="resetForm()">Submit Another</button>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error-card" role="alert" aria-live="assertive" style="display: none;">
+        <p id="error-text">An error occurred. Please try again.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <ul class="site-footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="corrections.html">Corrections</a></li>
+            <li><a href="monitor.html">Dashboard</a></li>
+            <li><a href="screensaver-setup.html">Screen Saver</a></li>
+            <li><a href="feed.xml">RSS</a></li>
+            <li><a href="podcast.xml">Podcast</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLm8mlmJgzmMfqH8YkhdRVFET200vZGRWN">Daily Digest</a></li>
+            <li><a href="feedback.html">Report an Issue</a></li>
+        </ul>
+        <p class="site-footer__tagline">The methodology belongs to no one. It serves everyone.</p>
+        <p class="site-footer__copy">
+            <a href="https://github.com/JTFNews/jtfnews">GitHub</a> &middot;
+            <a href="support.html">Support</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // ============================================================
+    // Configuration
+    // ============================================================
+    var FEEDBACK_WORKER_URL = 'https://jtf-feedback.larryseyer.workers.dev/';
+
+    // ============================================================
+    // Spam Prevention: Time Gate (layer 2)
+    // ============================================================
+    document.getElementById('load_time').value = Date.now().toString();
+
+    // ============================================================
+    // Spam Prevention: Proof of Work (layer 3)
+    // ============================================================
+    async function startProofOfWork() {
+        var challenge = Date.now().toString() + Math.random().toString(36);
+        var prefix = '0000'; // 4 leading hex zeros
+        var nonce = 0;
+
+        while (true) {
+            var candidate = challenge + ':' + nonce;
+            var encoder = new TextEncoder();
+            var data = encoder.encode(candidate);
+            var hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            var hashArray = Array.from(new Uint8Array(hashBuffer));
+            var hashHex = hashArray.map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+
+            if (hashHex.startsWith(prefix)) {
+                document.getElementById('pow_nonce').value = challenge + ':' + nonce;
+                document.getElementById('pow_hash').value = hashHex;
+                document.getElementById('submit-btn').disabled = false;
+                document.getElementById('submit-btn').textContent = 'Submit';
+                document.getElementById('pow-status').textContent = '';
+                return;
+            }
+            nonce++;
+            // Yield to UI every 1000 iterations
+            if (nonce % 1000 === 0) {
+                await new Promise(function(r) { setTimeout(r, 0); });
+            }
+        }
+    }
+
+    // ============================================================
+    // Load Stories for Dropdown
+    // ============================================================
+    async function loadStories() {
+        try {
+            var response = await fetch('./stories.json?t=' + Date.now());
+            if (!response.ok) return;
+
+            var data = await response.json();
+            var stories = data.stories || data;
+            if (!Array.isArray(stories)) return;
+
+            var select = document.getElementById('story');
+            for (var i = 0; i < stories.length; i++) {
+                var s = stories[i];
+                if (!s.published) continue;
+
+                var fact = s.fact || s.text || '';
+                if (fact.length > 80) {
+                    fact = fact.substring(0, 77) + '...';
+                }
+
+                var option = document.createElement('option');
+                option.value = s.id || ('story-' + i);
+                option.textContent = fact;
+                select.appendChild(option);
+            }
+        } catch (e) {
+            // Stories dropdown is optional; fail silently
+        }
+    }
+
+    // ============================================================
+    // Form Submission
+    // ============================================================
+    document.getElementById('feedback-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Hide previous messages
+        document.getElementById('error-message').style.display = 'none';
+
+        // Honeypot check (layer 1)
+        var honeypot = document.getElementById('website').value;
+        if (honeypot) {
+            // Silently pretend success for bots
+            showSuccess('FB-' + Date.now().toString(36).toUpperCase());
+            return;
+        }
+
+        // Validate required fields
+        var category = document.getElementById('category').value;
+        var details = document.getElementById('details').value.trim();
+
+        if (!category) {
+            showError('Please select a category.');
+            return;
+        }
+        if (!details || details.length < 20) {
+            showError('Please provide at least 20 characters of detail.');
+            return;
+        }
+
+        // Build payload
+        var payload = {
+            category: category,
+            story_id: document.getElementById('story').value || null,
+            details: details.substring(0, 2000),
+            evidence_url: (document.getElementById('evidence-url').value || '').substring(0, 500) || null,
+            load_time: document.getElementById('load_time').value,
+            pow_nonce: document.getElementById('pow_nonce').value,
+            pow_hash: document.getElementById('pow_hash').value,
+            submitted_at: new Date().toISOString()
+        };
+
+        // Disable submit button
+        var submitBtn = document.getElementById('submit-btn');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        try {
+            var response = await fetch(FEEDBACK_WORKER_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+                var errData = await response.json().catch(function() { return {}; });
+                throw new Error(errData.error || 'Submission failed (' + response.status + ')');
+            }
+
+            var result = await response.json();
+            var refNumber = result.reference || ('FB-' + Date.now().toString(36).toUpperCase());
+            showSuccess(refNumber);
+
+        } catch (err) {
+            showError('Submission failed: ' + err.message + '. Please try again.');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit';
+        }
+    });
+
+    // ============================================================
+    // UI Helpers
+    // ============================================================
+    function showSuccess(refNumber) {
+        document.getElementById('feedback-form').style.display = 'none';
+        document.getElementById('error-message').style.display = 'none';
+        document.getElementById('ref-number').textContent = refNumber;
+        document.getElementById('success-message').style.display = '';
+        document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function showError(message) {
+        var errorEl = document.getElementById('error-message');
+        document.getElementById('error-text').textContent = message;
+        errorEl.style.display = '';
+        errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function resetForm() {
+        document.getElementById('feedback-form').reset();
+        document.getElementById('feedback-form').style.display = '';
+        document.getElementById('success-message').style.display = 'none';
+        document.getElementById('error-message').style.display = 'none';
+
+        // Reset spam fields
+        document.getElementById('load_time').value = Date.now().toString();
+        document.getElementById('pow_nonce').value = '';
+        document.getElementById('pow_hash').value = '';
+        document.getElementById('submit-btn').disabled = true;
+        document.getElementById('submit-btn').textContent = 'Preparing...';
+        document.getElementById('pow-status').textContent = 'Verifying your browser...';
+
+        // Restart proof of work
+        startProofOfWork();
+    }
+
+    // ============================================================
+    // Initialization
+    // ============================================================
+    loadStories();
+    startProofOfWork();
+</script>
+</body>
+</html>

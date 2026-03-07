@@ -1925,6 +1925,520 @@ def clean_old_submissions(max_age_days: int = 7):
 
 
 # =============================================================================
+# COMMUNITY FEEDBACK PROCESSING
+# =============================================================================
+
+def load_pending_feedback() -> list:
+    """Load unprocessed feedback from data/feedback/.
+
+    Returns list of feedback dicts sorted by filename (oldest first).
+    """
+    feedback_dir = DATA_DIR / "feedback"
+    if not feedback_dir.exists():
+        feedback_dir.mkdir(parents=True, exist_ok=True)
+        return []
+
+    feedback = []
+    for f in sorted(feedback_dir.glob("JTF-*.json")):
+        try:
+            with open(f) as fh:
+                fb = json.load(fh)
+            fb["_file"] = str(f)  # Track file path for later move
+            feedback.append(fb)
+        except (json.JSONDecodeError, KeyError) as e:
+            log.warning(f"Invalid feedback file {f.name}: {e}")
+            continue
+
+    return feedback
+
+
+def mark_feedback_processed(feedback: dict, triage_result: str, action_taken: str):
+    """Move processed feedback to the processed/ directory.
+
+    Updates the feedback with processing results before moving.
+    """
+    file_path = Path(feedback.get("_file", ""))
+    if not file_path.exists():
+        log.warning(f"Feedback file not found: {file_path}")
+        return
+
+    processed_dir = DATA_DIR / "feedback" / "processed"
+    processed_dir.mkdir(parents=True, exist_ok=True)
+
+    # Update feedback with processing results
+    feedback["status"] = "processed"
+    feedback["triage_result"] = triage_result
+    feedback["action_taken"] = action_taken
+    feedback["processed_at"] = datetime.now(timezone.utc).isoformat()
+
+    # Remove internal tracking field
+    feedback.pop("_file", None)
+
+    # Write to processed directory
+    dest = processed_dir / file_path.name
+    with open(dest, 'w') as f:
+        json.dump(feedback, f, indent=2)
+
+    # Remove from pending
+    file_path.unlink()
+
+
+def clean_old_feedback(max_age_days: int = 7):
+    """Delete processed feedback older than max_age_days.
+
+    Per whitepaper: 'We do not store raw data longer than seven days.'
+    """
+    processed_dir = DATA_DIR / "feedback" / "processed"
+    if not processed_dir.exists():
+        return
+
+    cutoff = datetime.now(timezone.utc).timestamp() - (max_age_days * 86400)
+    cleaned = 0
+
+    for f in processed_dir.glob("*.json"):
+        try:
+            with open(f) as fh:
+                fb = json.load(fh)
+            processed_at = fb.get("processed_at", fb.get("timestamp", ""))
+            if processed_at:
+                ts = datetime.fromisoformat(processed_at.replace("Z", "+00:00")).timestamp()
+                if ts < cutoff:
+                    f.unlink()
+                    cleaned += 1
+        except Exception:
+            continue
+
+    if cleaned > 0:
+        log.info(f"Cleaned {cleaned} old feedback files (>{max_age_days} days)")
+
+
+def log_suggestion(feedback: dict):
+    """Append a suggestion to data/feedback/suggestions.json.
+
+    Keeps only last 90 days of suggestions.
+    """
+    suggestions_file = DATA_DIR / "feedback" / "suggestions.json"
+    data = {"suggestions": []}
+
+    if suggestions_file.exists():
+        try:
+            with open(suggestions_file) as f:
+                data = json.load(f)
+        except Exception:
+            data = {"suggestions": []}
+
+    data["suggestions"].append({
+        "ref": feedback.get("ref", ""),
+        "timestamp": feedback.get("timestamp", datetime.now(timezone.utc).isoformat()),
+        "details": feedback.get("details", ""),
+        "story_id": feedback.get("story_id", "")
+    })
+
+    # Keep only last 90 days
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=90)).isoformat()
+    data["suggestions"] = [
+        s for s in data["suggestions"]
+        if s.get("timestamp", "") >= cutoff
+    ]
+
+    suggestions_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(suggestions_file, 'w') as f:
+        json.dump(data, f, indent=2)
+
+
+def log_bias_report(feedback: dict):
+    """Append a bias/distortion report to data/feedback/bias_reports.json."""
+    reports_file = DATA_DIR / "feedback" / "bias_reports.json"
+    data = {"reports": []}
+
+    if reports_file.exists():
+        try:
+            with open(reports_file) as f:
+                data = json.load(f)
+        except Exception:
+            data = {"reports": []}
+
+    data["reports"].append({
+        "ref": feedback.get("ref", ""),
+        "timestamp": feedback.get("timestamp", datetime.now(timezone.utc).isoformat()),
+        "details": feedback.get("details", ""),
+        "story_id": feedback.get("story_id", ""),
+        "evidence_url": feedback.get("evidence_url", "")
+    })
+
+    # Keep only last 90 days
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=90)).isoformat()
+    data["reports"] = [
+        r for r in data["reports"]
+        if r.get("timestamp", "") >= cutoff
+    ]
+
+    reports_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(reports_file, 'w') as f:
+        json.dump(data, f, indent=2)
+
+
+def update_feedback_stats(triage_result: str):
+    """Update feedback stats with daily counts and rolling totals.
+
+    Keeps 30 days of daily stats.
+    """
+    stats_file = DATA_DIR / "feedback" / "stats.json"
+    data = {"daily": {}, "totals": {}}
+
+    if stats_file.exists():
+        try:
+            with open(stats_file) as f:
+                data = json.load(f)
+        except Exception:
+            data = {"daily": {}, "totals": {}}
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # Update daily counts
+    if today not in data["daily"]:
+        data["daily"][today] = {}
+    data["daily"][today][triage_result] = data["daily"][today].get(triage_result, 0) + 1
+
+    # Update rolling totals
+    data["totals"][triage_result] = data["totals"].get(triage_result, 0) + 1
+
+    # Keep only last 30 days of daily stats
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
+    data["daily"] = {
+        day: counts for day, counts in data["daily"].items()
+        if day >= cutoff
+    }
+
+    stats_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(stats_file, 'w') as f:
+        json.dump(data, f, indent=2)
+
+
+def triage_feedback(feedback: dict) -> str:
+    """Use Claude to classify feedback into: spam, suggestion, bias_distortion, factual_error, other.
+
+    Returns classification string. Defaults to 'other' on error.
+    """
+    try:
+        prompt = f"""Classify this community feedback into exactly one category.
+
+Categories:
+- spam: Irrelevant, promotional, or abusive content
+- suggestion: General improvement suggestions or feature requests
+- bias_distortion: Reports of bias, editorialization, or distortion in our reporting
+- factual_error: Claims that a specific published fact is incorrect, with evidence
+- other: Anything that doesn't fit the above categories
+
+Feedback:
+Type: {feedback.get('type', 'unknown')}
+Details: {feedback.get('details', '')}
+Story ID: {feedback.get('story_id', 'none')}
+Evidence URL: {feedback.get('evidence_url', 'none')}
+
+Respond with JSON only: {{"classification": "<category>"}}"""
+
+        client = anthropic.Anthropic()
+        response = client.messages.create(
+            model=CONFIG["claude"]["model"],
+            max_tokens=CONFIG["claude"]["max_tokens"],
+            messages=[{"role": "user", "content": prompt}]
+        )
+
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
+
+        text = response.content[0].text
+        result = safe_parse_claude_json(text, {"classification": "other"})
+
+        classification = result.get("classification", "other")
+        valid = {"spam", "suggestion", "bias_distortion", "factual_error", "other"}
+        return classification if classification in valid else "other"
+
+    except Exception as e:
+        log.warning(f"Feedback triage failed: {e}")
+        return "other"
+
+
+def verify_factual_error(feedback: dict) -> dict:
+    """Verify a reported factual error against the referenced story.
+
+    Looks up the story, uses Claude to assess the claim, and checks
+    source independence via are_sources_unrelated().
+
+    Returns dict with confirmed, corrected_fact, sources, reason.
+    """
+    story_id = feedback.get("story_id", "")
+    if not story_id:
+        return {"confirmed": False, "corrected_fact": None, "sources": [], "reason": "No story_id provided"}
+
+    # Load the referenced story
+    stories_file = DATA_DIR / "stories.json"
+    story = None
+    if stories_file.exists():
+        try:
+            with open(stories_file) as f:
+                stories_data = json.load(f)
+            for s in stories_data.get("stories", []):
+                if s.get("id") == story_id:
+                    story = s
+                    break
+        except Exception:
+            pass
+
+    if not story:
+        return {"confirmed": False, "corrected_fact": None, "sources": [], "reason": f"Story {story_id} not found"}
+
+    try:
+        prompt = f"""A community member reports a factual error in our published story.
+
+Published fact: {story.get('fact', '')}
+Published sources: {json.dumps(story.get('sources', []))}
+
+Reported error: {feedback.get('details', '')}
+Evidence URL: {feedback.get('evidence_url', 'none')}
+
+Assess whether the reported error is valid. If it is, provide the corrected fact.
+Check if the evidence supports the correction using at least 2 independent sources.
+
+Respond with JSON only:
+{{
+  "error_confirmed": true/false,
+  "corrected_fact": "the corrected fact statement or null",
+  "supporting_sources": [
+    {{"source_name": "name", "source_id": "id"}},
+    {{"source_name": "name", "source_id": "id"}}
+  ],
+  "reason": "explanation of assessment"
+}}"""
+
+        client = anthropic.Anthropic()
+        response = client.messages.create(
+            model=CONFIG["claude"]["model"],
+            max_tokens=CONFIG["claude"]["max_tokens"],
+            messages=[{"role": "user", "content": prompt}]
+        )
+
+        log_api_usage("claude", {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens
+        })
+
+        text = response.content[0].text
+        result = safe_parse_claude_json(text, {"error_confirmed": False})
+
+        if not result.get("error_confirmed", False):
+            return {
+                "confirmed": False,
+                "corrected_fact": None,
+                "sources": [],
+                "reason": result.get("reason", "Error not confirmed by assessment")
+            }
+
+        # Verify source independence (two-source rule)
+        sources = result.get("supporting_sources", [])
+        if len(sources) >= 2:
+            src1 = sources[0].get("source_id", "")
+            src2 = sources[1].get("source_id", "")
+            if src1 and src2 and are_sources_unrelated(src1, src2):
+                return {
+                    "confirmed": True,
+                    "corrected_fact": result.get("corrected_fact"),
+                    "sources": sources,
+                    "reason": result.get("reason", "Error confirmed by 2 independent sources")
+                }
+            else:
+                return {
+                    "confirmed": False,
+                    "corrected_fact": result.get("corrected_fact"),
+                    "sources": sources,
+                    "reason": "Sources not confirmed as independent"
+                }
+
+        return {
+            "confirmed": False,
+            "corrected_fact": result.get("corrected_fact"),
+            "sources": sources,
+            "reason": "Fewer than 2 independent sources found"
+        }
+
+    except Exception as e:
+        log.warning(f"Factual error verification failed: {e}")
+        return {"confirmed": False, "corrected_fact": None, "sources": [], "reason": str(e)}
+
+
+def fetch_feedback_from_github():
+    """Fetch pending feedback files from GitHub API.
+
+    Downloads any JTF-*.json files from repos/JTFNews/jtfnews/contents/data/feedback
+    that are not already local. Deletes from GitHub after downloading.
+    """
+    github_token = os.getenv("GITHUB_TOKEN")
+    if not github_token:
+        log.warning("GITHUB_TOKEN not set, cannot fetch feedback from GitHub")
+        return
+
+    headers = {
+        "Authorization": f"token {github_token}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+
+    feedback_dir = DATA_DIR / "feedback"
+    feedback_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        # List files in the feedback directory on GitHub
+        url = "https://api.github.com/repos/JTFNews/jtfnews/contents/data/feedback"
+        resp = requests.get(url, headers=headers, timeout=30)
+
+        if resp.status_code == 404:
+            # Directory doesn't exist on GitHub yet — no feedback to fetch
+            return
+        if resp.status_code != 200:
+            log.warning(f"GitHub feedback fetch failed: {resp.status_code}")
+            return
+
+        files = resp.json()
+        if not isinstance(files, list):
+            return
+
+        for file_info in files:
+            name = file_info.get("name", "")
+            if not name.startswith("JTF-") or not name.endswith(".json"):
+                continue
+
+            local_path = feedback_dir / name
+            if local_path.exists():
+                # Already downloaded — still delete from GitHub
+                pass
+            else:
+                # Download file content
+                download_url = file_info.get("download_url", "")
+                if download_url:
+                    try:
+                        dl_resp = requests.get(download_url, headers=headers, timeout=30)
+                        if dl_resp.status_code == 200:
+                            with open(local_path, 'w') as f:
+                                f.write(dl_resp.text)
+                            log.info(f"Downloaded feedback: {name}")
+                    except Exception as e:
+                        log.warning(f"Failed to download feedback {name}: {e}")
+                        continue
+
+            # Delete from GitHub after downloading
+            sha = file_info.get("sha", "")
+            if sha:
+                try:
+                    delete_url = f"https://api.github.com/repos/JTFNews/jtfnews/contents/data/feedback/{name}"
+                    delete_resp = requests.delete(delete_url, headers=headers, json={
+                        "message": f"Process feedback {name}",
+                        "sha": sha,
+                        "branch": "main"
+                    }, timeout=30)
+                    if delete_resp.status_code in (200, 204):
+                        log.info(f"Deleted feedback from GitHub: {name}")
+                    else:
+                        log.warning(f"Failed to delete feedback {name} from GitHub: {delete_resp.status_code}")
+                except Exception as e:
+                    log.warning(f"Failed to delete feedback {name} from GitHub: {e}")
+
+    except Exception as e:
+        log.warning(f"GitHub feedback fetch error: {e}")
+
+
+def process_pending_feedback():
+    """Main orchestrator for community feedback processing.
+
+    1. Fetch feedback from GitHub
+    2. Load pending feedback
+    3. Triage and route each item
+    4. Clean old processed feedback
+    5. Update stats
+    """
+    # Fetch any new feedback from GitHub
+    fetch_feedback_from_github()
+
+    # Load pending feedback
+    pending = load_pending_feedback()
+    if not pending:
+        return
+
+    log.info(f"Processing {len(pending)} community feedback items")
+
+    for fb in pending:
+        try:
+            ref = fb.get("ref", "unknown")
+
+            # Triage the feedback
+            classification = triage_feedback(fb)
+            log.info(f"Feedback {ref}: classified as {classification}")
+
+            # Route based on classification
+            if classification == "spam":
+                mark_feedback_processed(fb, classification, "discarded")
+
+            elif classification == "suggestion":
+                log_suggestion(fb)
+                mark_feedback_processed(fb, classification, "logged_suggestion")
+
+            elif classification == "bias_distortion":
+                log_bias_report(fb)
+                mark_feedback_processed(fb, classification, "logged_bias_report")
+
+            elif classification == "factual_error":
+                result = verify_factual_error(fb)
+                if result["confirmed"] and result["corrected_fact"]:
+                    story_id = fb.get("story_id", "")
+                    # Look up original fact for the correction
+                    original_fact = ""
+                    stories_file = DATA_DIR / "stories.json"
+                    if stories_file.exists():
+                        try:
+                            with open(stories_file) as f:
+                                stories_data = json.load(f)
+                            for s in stories_data.get("stories", []):
+                                if s.get("id") == story_id:
+                                    original_fact = s.get("fact", "")
+                                    break
+                        except Exception:
+                            pass
+
+                    issue_correction(
+                        story_id=story_id,
+                        original_fact=original_fact,
+                        corrected_fact=result["corrected_fact"],
+                        reason=f"Community feedback {ref}: {result['reason']}",
+                        correcting_sources=result["sources"],
+                        correction_type="correction"
+                    )
+                    mark_feedback_processed(fb, classification, "correction_issued")
+                    log.info(f"Feedback {ref}: correction issued for story {story_id}")
+                else:
+                    mark_feedback_processed(fb, classification, f"not_confirmed: {result['reason']}")
+                    log.info(f"Feedback {ref}: factual error not confirmed — {result['reason']}")
+
+            else:  # other
+                log_suggestion(fb)  # Log for human review
+                mark_feedback_processed(fb, classification, "logged_for_review")
+
+            # Update stats for every processed item
+            update_feedback_stats(classification)
+
+        except Exception as e:
+            log.warning(f"Error processing feedback {fb.get('ref', 'unknown')}: {e}")
+            try:
+                mark_feedback_processed(fb, "error", str(e))
+                update_feedback_stats("error")
+            except Exception:
+                pass
+
+    # Clean old processed feedback
+    clean_old_feedback(max_age_days=7)
+
+
+# =============================================================================
 # JOURNALIST DISCLOSURE FRESHNESS
 # =============================================================================
 
@@ -5888,6 +6402,31 @@ def get_stream_health_status() -> str:
         return "unknown"
 
 
+def get_feedback_monitor_stats() -> dict:
+    """Get feedback statistics for the operations monitor."""
+    stats_file = DATA_DIR / "feedback" / "stats.json"
+    if not stats_file.exists():
+        return {}
+
+    try:
+        with open(stats_file) as f:
+            stats = json.load(f)
+
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        today_stats = stats.get("daily", {}).get(today, {})
+        totals = stats.get("totals", {})
+
+        return {
+            "today_submissions": today_stats.get("submissions", 0),
+            "today_corrections": today_stats.get("corrections_triggered", 0),
+            "total_submissions": totals.get("submissions", 0),
+            "total_corrections": totals.get("corrections_triggered", 0),
+            "total_spam_blocked": totals.get("spam_blocked", 0),
+        }
+    except Exception:
+        return {}
+
+
 def write_monitor_data(cycle_stats: dict):
     """Write monitoring data to JSON file for dashboard.
 
@@ -5965,7 +6504,8 @@ def write_monitor_data(cycle_stats: dict):
             "next_cycle_minutes": next_cycle_minutes,
             "degraded_services": list(_degraded_services)
         },
-        "daily_digest": load_digest_status()
+        "daily_digest": load_digest_status(),
+        "feedback": get_feedback_monitor_stats()
     }
 
     try:
@@ -6562,6 +7102,9 @@ def process_cycle():
 
     # Clean old processed submissions (7-day retention)
     clean_old_submissions(max_age_days=7)
+
+    # Process community feedback
+    process_pending_feedback()
 
     for headline in headlines:
         # Skip if already processed (saves API costs)

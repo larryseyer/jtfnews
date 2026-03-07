@@ -374,6 +374,34 @@ GitHub OAuth proxy deployed as a Cloudflare Worker. See `documentation/oauth-set
 - `GITHUB_CLIENT_ID` — from GitHub OAuth app
 - `OAUTH_PROXY_URL` — Cloudflare Worker URL
 
+## Feedback System
+
+The public can anonymously report factual errors, bias concerns, and suggestions via `jtfnews.org/feedback.html`. No personal data collected. No email. No login.
+
+### How It Works
+1. User submits feedback via form (no account required)
+2. Cloudflare Worker validates spam prevention (honeypot, time gate, rate limit, proof-of-work)
+3. Worker pushes feedback JSON to `data/feedback/` via GitHub API
+4. main.py fetches pending feedback each cycle
+5. Claude AI triages: spam (discard), suggestion (log), bias (flag for audit), factual error (verify)
+6. Factual errors verified by 2+ independent sources trigger auto-correction via existing pipeline
+
+### Data Files
+| File | Purpose |
+|------|---------|
+| `data/feedback/JTF-*.json` | Pending feedback (fetched from GitHub) |
+| `data/feedback/processed/` | Processed feedback (7-day retention) |
+| `data/feedback/suggestions.json` | Suggestions log (90-day retention) |
+| `data/feedback/bias_reports.json` | Bias reports (until quarterly audit) |
+| `data/feedback/stats.json` | Aggregate counts (30-day rolling) |
+
+### Key Files
+| File | Purpose |
+|------|---------|
+| `docs/feedback.html` | Public feedback form |
+| `docs/feedback-worker.js` | Cloudflare Worker source |
+| `documentation/feedback-worker-setup.md` | Worker deployment instructions |
+
 ## Constraints
 - No APIs, no paywalls, respect robots.txt
 - No ads, no tracking, no long-term raw data storage
