@@ -1,5 +1,12 @@
 [
   {
+    "uid": "cb54f0ac7cfd62ffd50a26228dc61aeb",
+    "updateDate": "2026-03-07T13:00:42.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "A Russian strike on an apartment block in Kharkiv killed seven people.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "f7fe170ba55b34c57ae2c42f3ad6a34f",
     "updateDate": "2026-03-07T00:05:39.0Z",
     "titleText": "JTF News: BBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-06T08:30:43.0Z",
     "titleText": "JTF News: European Commission, CBC News",
     "mainText": "Canada is signing an agreement with the European Union to enhance a free trade deal.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "5039b3aeeaf1ef375a3ca683dd6acfc5",
-    "updateDate": "2026-03-06T03:30:38.0Z",
-    "titleText": "JTF News: CBC News, ABC News Australia",
-    "mainText": "A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
