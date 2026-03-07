@@ -1,5 +1,12 @@
 [
   {
+    "uid": "fb3c87e460e637e92d35c976e577f6a8",
+    "updateDate": "2026-03-07T19:30:45.0Z",
+    "titleText": "JTF News: NPR, BBC News",
+    "mainText": "At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "cb54f0ac7cfd62ffd50a26228dc61aeb",
     "updateDate": "2026-03-07T13:00:42.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-06T11:30:38.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
     "mainText": "President Trump stated that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "662433de44289953380f5b6b676094aa",
-    "updateDate": "2026-03-06T08:30:43.0Z",
-    "titleText": "JTF News: European Commission, CBC News",
-    "mainText": "Canada is signing an agreement with the European Union to enhance a free trade deal.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
