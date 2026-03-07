@@ -1,5 +1,12 @@
 [
   {
+    "uid": "628f283d159e83f28d8d242c1913a611",
+    "updateDate": "2026-03-07T19:30:52.0Z",
+    "titleText": "JTF News: The Guardian, PBS NewsHour",
+    "mainText": "A bombing at a nightclub in Peru injured 33 people, including minors.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "fb3c87e460e637e92d35c976e577f6a8",
     "updateDate": "2026-03-07T19:30:45.0Z",
     "titleText": "JTF News: NPR, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-06T18:47:42.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
     "mainText": "Oil prices reached $90 USD per barrel for the first time in 2 years.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "42365d0d04303372c17fe92d61c85349",
-    "updateDate": "2026-03-06T11:30:38.0Z",
-    "titleText": "JTF News: France 24, Deutsche Welle",
-    "mainText": "President Trump stated that Governor Kristi Noem will be replaced as Secretary of Homeland Security.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
