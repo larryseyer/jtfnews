@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 19:30:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 19:30:50 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A bombing at a nightclub in Peru injured 33 people, including minors.</title>
+      <description>A bombing at a nightclub in Peru injured 33 people, including minors.</description>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.7" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 07 Mar 2026 19:30:50 +0000</pubDate>
+      <guid isPermaLink="false">c35aedc498c0</guid>
+    </item>
     <item>
       <title>At least six people died after tornadoes swept across Michigan and Oklahoma, acc...</title>
       <description>At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.</description>
@@ -1094,18 +1106,6 @@
       </jtf:source>
       <pubDate>Thu, 26 Feb 2026 15:00:43 +0000</pubDate>
       <guid isPermaLink="false">31372ca1d9c1</guid>
-    </item>
-    <item>
-      <title>Prime Minister of Iceland stated the country will hold a referendum regarding Eu...</title>
-      <description>Prime Minister of Iceland stated the country will hold a referendum regarding European Union membership over the coming months.</description>
-      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.6" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 12:30:55 +0000</pubDate>
-      <guid isPermaLink="false">57b8cff98aaa</guid>
     </item>
   </channel>
 </rss>
