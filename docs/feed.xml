@@ -5,13 +5,23 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:05:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 13:00:40 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
-    <item jtf:type="digest">
+    <item>
+      <title>A Russian strike on an apartment block in Kharkiv killed seven people.</title>
+      <description>A Russian strike on an apartment block in Kharkiv killed seven people.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 07 Mar 2026 13:00:40 +0000</pubDate>
+      <guid isPermaLink="false">dfcc5e396573</guid>
+    </item>
+    <item>
       <title>[DAILY DIGEST] 2026-03-06 - 6 verified facts</title>
       <description>Daily summary of 6 verified facts from 2026-03-06.</description>
-      <link>https://youtube.com/watch?v=UfUW4MCxjyU</link>
-      <jtf:archive>https://jtfnews.org/archive/2026-03-06.html</jtf:archive>
       <pubDate>Sat, 07 Mar 2026 00:04:11 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-03-06</guid>
     </item>
@@ -1092,96 +1102,6 @@
       <jtf:source name="France 24" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
       <pubDate>Thu, 26 Feb 2026 12:30:41 +0000</pubDate>
       <guid isPermaLink="false">2b4fad545eb3</guid>
-    </item>
-    <item>
-      <title>The U.S. and Iran are scheduled to hold nuclear talks.</title>
-      <description>The U.S. and Iran are scheduled to hold nuclear talks.</description>
-      <jtf:source name="NPR" url="" accuracy="5.0" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 12:30:33 +0000</pubDate>
-      <guid isPermaLink="false">214610691251</guid>
-    </item>
-    <item>
-      <title>The United States and Iran began talks.</title>
-      <description>The United States and Iran began talks.</description>
-      <jtf:source name="BBC News" url="" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 09:30:31 +0000</pubDate>
-      <guid isPermaLink="false">3f7150d08ba5</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-25 - 7 verified facts</title>
-      <description>Daily summary of 7 verified facts from 2026-02-25.</description>
-      <pubDate>Thu, 26 Feb 2026 06:03:09 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-25</guid>
-    </item>
-    <item>
-      <title>President Trump delivered a State of the Union address.</title>
-      <description>President Trump delivered a State of the Union address.</description>
-      <jtf:source name="White House" url="" accuracy="7.5*" bias="10.0" speed="9.5" consensus="9.0" control_type="government">
-        <jtf:owner name="US Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 00:04:21 +0000</pubDate>
-      <guid isPermaLink="false">d904e6736483</guid>
-    </item>
-    <item>
-      <title>Former Brazilian lawmakers were convicted of ordering the murder of Rio councilw...</title>
-      <description>Former Brazilian lawmakers were convicted of ordering the murder of Rio councilwoman Marielle Franco.</description>
-      <jtf:source name="France 24" url="" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="The Guardian" url="" accuracy="3.6" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 00:02:17 +0000</pubDate>
-      <guid isPermaLink="false">7d5f8b9df0b5</guid>
-    </item>
-    <item>
-      <title>Four people were shot and killed on a US-registered speedboat by Cuban border gu...</title>
-      <description>Four people were shot and killed on a US-registered speedboat by Cuban border guards, according to Cuban authorities.</description>
-      <jtf:source name="NPR" url="" accuracy="4.9" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.5" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 00:01:08 +0000</pubDate>
-      <guid isPermaLink="false">0170adc051ac</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-24 - 12 verified facts</title>
-      <description>Daily summary of 12 verified facts from 2026-02-24.</description>
-      <pubDate>Wed, 25 Feb 2026 22:23:48 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-24</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-23 - 13 verified facts</title>
-      <description>Daily summary of 13 verified facts from 2026-02-23.</description>
-      <pubDate>Wed, 25 Feb 2026 22:20:30 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-23</guid>
-    </item>
-    <item>
-      <title>Ukrainian officials will meet with envoys representing President Trump in Geneva...</title>
-      <description>Ukrainian officials will meet with envoys representing President Trump in Geneva for talks.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="5.1" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Wed, 25 Feb 2026 21:59:04 +0000</pubDate>
-      <guid isPermaLink="false">0552d2146b8c</guid>
     </item>
   </channel>
 </rss>
