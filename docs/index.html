@@ -95,18 +95,6 @@
         </div>
     </div>
 </section>
-
-<!-- Live Story Preview -->
-<section class="container">
-    <div class="live-preview">
-        <div class="live-preview__badge" id="demo-label">Live Story</div>
-        <div class="live-preview__card">
-            <div class="live-preview__sources" id="demo-sources">Loading...</div>
-            <div class="live-preview__fact" id="demo-fact">Loading latest verified fact...</div>
-        </div>
-    </div>
-</section>
-
 <!-- How It Works -->
 <section class="container section">
     <h2 class="section__title">How It Works</h2>
@@ -194,26 +182,5 @@
         </p>
     </div>
 </footer>
-
-<script>
-    // Live story preview
-    async function loadLivePreview() {
-        try {
-            const response = await fetch('./stories.json?t=' + Date.now());
-            if (!response.ok) throw new Error('No stories');
-            const data = await response.json();
-            if (!data.stories || data.stories.length === 0) throw new Error('Empty');
-            const story = data.stories[0];
-            document.getElementById('demo-sources').textContent = story.source || 'JTF News';
-            document.getElementById('demo-fact').textContent = story.fact;
-            document.getElementById('demo-label').innerHTML = 'Live Story <span style="background:rgba(34,197,94,0.2);color:#22c55e;padding:2px 8px;border-radius:10px;font-size:9px;margin-left:8px;">LIVE</span>';
-        } catch (e) {
-            document.getElementById('demo-sources').textContent = 'Reuters 9.8|9.5 \u00b7 AP 9.6|9.4';
-            document.getElementById('demo-fact').textContent = 'The European Central Bank held interest rates at 2.75% at its February 2025 meeting.';
-            document.getElementById('demo-label').textContent = 'Example';
-        }
-    }
-    loadLivePreview();
-</script>
 </body>
 </html>
