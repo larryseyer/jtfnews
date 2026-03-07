@@ -110,7 +110,7 @@ async function handleRequest(request) {
   }
 
   // --- Layer 1: Honeypot ---
-  if (body.website) {
+  if (body.jtf_hp_field) {
     return jsonResponse({ ref: 'JTF-00000000-0000' });
   }
 

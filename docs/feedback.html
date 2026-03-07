@@ -330,8 +330,8 @@
 
         <!-- Honeypot (spam layer 1) -->
         <div class="jtf-hp" aria-hidden="true">
-            <label for="website">Website</label>
-            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            <label for="jtf_hp_field">Website</label>
+            <input type="text" id="jtf_hp_field" name="jtf_hp_field" tabindex="-1" autocomplete="off">
         </div>
 
         <!-- Time gate (spam layer 2) -->
@@ -534,7 +534,7 @@
         document.getElementById('error-message').style.display = 'none';
 
         // Honeypot check (layer 1)
-        var honeypot = document.getElementById('website').value;
+        var honeypot = document.getElementById('jtf_hp_field').value;
         if (honeypot) {
             // Silently pretend success for bots
             showSuccess('FB-' + Date.now().toString(36).toUpperCase());
