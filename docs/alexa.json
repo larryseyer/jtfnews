@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f7fe170ba55b34c57ae2c42f3ad6a34f",
+    "updateDate": "2026-03-07T00:05:39.0Z",
+    "titleText": "JTF News: BBC News, Deutsche Welle",
+    "mainText": "Indonesia's government announced a plan to ban social media access for users under 16 years old.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "0fb2db60dc54661198e9b92eb6437dbe",
     "updateDate": "2026-03-06T18:47:42.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-06T03:30:38.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
     "mainText": "A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "3b0495115ae15f1c71513f4b5017a231",
-    "updateDate": "2026-03-06T03:00:38.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Israel launches attacks on Tehran and Beirut.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
