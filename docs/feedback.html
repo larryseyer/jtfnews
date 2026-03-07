@@ -444,7 +444,7 @@
             var select = document.getElementById('story');
             for (var i = 0; i < stories.length; i++) {
                 var s = stories[i];
-                if (!s.published) continue;
+                if (s.status !== 'published') continue;
 
                 var fact = s.fact || s.text || '';
                 if (fact.length > 80) {
