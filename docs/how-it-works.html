@@ -666,29 +666,31 @@
             }
 
             document.querySelectorAll('.hover-zone').forEach(function(zone) {
-                // Desktop hover
-                zone.addEventListener('mouseenter', function() {
-                    document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
-                    zone.classList.add('tooltip-active');
-                    showDesc(zone);
-                });
-                zone.addEventListener('mouseleave', function() {
-                    zone.classList.remove('tooltip-active');
-                    clearDesc();
-                });
-
-                // Touch tap
-                zone.addEventListener('click', function(e) {
-                    var wasActive = zone.classList.contains('tooltip-active');
-                    document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
-                    if (!wasActive) {
+                if (!isTouch) {
+                    // Desktop: hover to show, leave to clear
+                    zone.addEventListener('mouseenter', function() {
+                        document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
                         zone.classList.add('tooltip-active');
                         showDesc(zone);
-                    } else {
+                    });
+                    zone.addEventListener('mouseleave', function() {
+                        zone.classList.remove('tooltip-active');
                         clearDesc();
-                    }
-                    e.stopPropagation();
-                });
+                    });
+                } else {
+                    // Touch: tap to toggle
+                    zone.addEventListener('click', function(e) {
+                        var wasActive = zone.classList.contains('tooltip-active');
+                        document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
+                        if (!wasActive) {
+                            zone.classList.add('tooltip-active');
+                            showDesc(zone);
+                        } else {
+                            clearDesc();
+                        }
+                        e.stopPropagation();
+                    });
+                }
             });
 
             document.addEventListener('click', function() {
