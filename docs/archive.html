@@ -371,6 +371,13 @@
     <!-- Filters -->
     <div class="filters">
         <div class="filters-row">
+            <div class="filter-group" style="flex: 2;">
+                <label class="filter-label" for="search-input">Search</label>
+                <div style="position: relative;">
+                    <input type="text" id="search-input" class="filter-input" placeholder="Search facts... (e.g. Biden, earthquake, GDP)" autocomplete="off">
+                    <button id="search-clear" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--color-text-dim); cursor: pointer; font-size: 16px; display: none;" title="Clear search">&times;</button>
+                </div>
+            </div>
             <div class="filter-group">
                 <label class="filter-label" for="date-select">Date</label>
                 <input type="date" id="date-select" class="filter-input">
@@ -436,6 +443,10 @@
         let loadedStories = [];
         let currentDate = null;
         let currentStoriesByDate = null; // For multi-day range view
+
+        // Search state
+        let searchIndex = null; // Cached decompressed search index
+        let searchDebounceTimer = null;
 
         // Cycle-sync auto-refresh
         let lastKnownRefreshAt = null;
@@ -855,7 +866,11 @@
             });
 
             document.getElementById('source-filter').addEventListener('change', () => {
-                if (loadedStories.length > 0) {
+                const searchQuery = document.getElementById('search-input').value.trim();
+                if (searchQuery.length >= 2 && searchIndex) {
+                    // Re-run search with updated source filter
+                    performSearch(searchQuery);
+                } else if (loadedStories.length > 0) {
                     if (currentStoriesByDate) {
                         // Multi-day mode: re-render grouped view
                         renderStoriesMultiDay(currentStoriesByDate);
@@ -885,6 +900,169 @@
             }
         }
 
+        // Search functionality
+        async function loadSearchIndex() {
+            if (searchIndex) return searchIndex; // Already cached
+
+            try {
+                const response = await fetch('archive/search-index.json.gz?t=' + Date.now());
+                if (!response.ok) return null;
+
+                const arrayBuffer = await response.arrayBuffer();
+                const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+                searchIndex = JSON.parse(decompressed);
+                return searchIndex;
+            } catch (e) {
+                console.error('Error loading search index:', e);
+                return null;
+            }
+        }
+
+        function performSearch(query) {
+            if (!searchIndex || !query) return;
+
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+            const sourceFilter = document.getElementById('source-filter').value;
+
+            // Filter entries matching ALL search terms in the fact text
+            const matches = searchIndex.filter(entry => {
+                const factLower = entry.f.toLowerCase();
+                const sourceLower = entry.s.toLowerCase();
+                const matchesTerms = terms.every(term =>
+                    factLower.includes(term) || sourceLower.includes(term)
+                );
+                if (!matchesTerms) return false;
+
+                // Apply source filter if set
+                if (sourceFilter && !entry.s.includes(sourceFilter)) return false;
+
+                return true;
+            });
+
+            // Group by date for multi-day rendering
+            const storiesByDate = {};
+            matches.forEach(entry => {
+                if (!storiesByDate[entry.d]) storiesByDate[entry.d] = [];
+
+                // Parse source names for display
+                const names = entry.s.split(',');
+                const sourceStr = names.map(n => n.trim()).join(' . ');
+
+                // Collect source names for filter dropdown
+                names.forEach(n => allSources.add(n.trim()));
+
+                storiesByDate[entry.d].push({
+                    published_at: entry.t,
+                    fact: entry.f,
+                    source: sourceStr,
+                    source_urls: {}
+                });
+            });
+
+            currentDate = null;
+            currentStoriesByDate = storiesByDate;
+            loadedStories = matches;
+
+            const container = document.getElementById('stories-container');
+
+            if (matches.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">&#128270;</div>
+                        <div class="empty-title">No Results</div>
+                        <div class="empty-text">No stories found matching "${escapeHtml(query)}".</div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Render using multi-day view with search summary
+            const sortedDates = Object.keys(storiesByDate).sort().reverse();
+            let totalFiltered = 0;
+            let html = '';
+
+            sortedDates.forEach(dateStr => {
+                const stories = storiesByDate[dateStr];
+                totalFiltered += stories.length;
+
+                html += `
+                    <div class="date-section">
+                        <div class="stories-header">
+                            <span class="stories-date">${formatDate(dateStr)}</span>
+                            <span class="stories-count">${stories.length} ${stories.length === 1 ? 'match' : 'matches'}</span>
+                        </div>
+                        ${stories.map(story => renderStory(story, false)).join('')}
+                    </div>
+                `;
+            });
+
+            const summaryHeader = `
+                <div class="range-summary">
+                    <span class="range-title">Search: "${escapeHtml(query)}"</span>
+                    <span class="range-count">${totalFiltered} ${totalFiltered === 1 ? 'result' : 'results'} across ${sortedDates.length} ${sortedDates.length === 1 ? 'day' : 'days'}</span>
+                </div>
+            `;
+
+            container.innerHTML = summaryHeader + html;
+            updateSourceFilter();
+        }
+
+        function setupSearch() {
+            const input = document.getElementById('search-input');
+            const clearBtn = document.getElementById('search-clear');
+
+            input.addEventListener('input', () => {
+                const query = input.value.trim();
+                clearBtn.style.display = query ? 'block' : 'none';
+
+                clearTimeout(searchDebounceTimer);
+
+                if (query.length < 2) {
+                    if (query.length === 0) {
+                        // Cleared — reload today
+                        document.querySelectorAll('.quick-date').forEach(b => b.classList.remove('active'));
+                        document.querySelector('.quick-date[data-days="0"]').classList.add('active');
+                        loadStoriesForDate(getDateString(0));
+                    }
+                    return;
+                }
+
+                searchDebounceTimer = setTimeout(async () => {
+                    // Clear quick date active states
+                    document.querySelectorAll('.quick-date').forEach(b => b.classList.remove('active'));
+
+                    // Show loading while fetching index on first search
+                    if (!searchIndex) {
+                        const container = document.getElementById('stories-container');
+                        container.innerHTML = '<div class="loading"><span class="loading-spinner"></span>Loading search index...</div>';
+                    }
+
+                    const index = await loadSearchIndex();
+                    if (!index) {
+                        const container = document.getElementById('stories-container');
+                        container.innerHTML = `
+                            <div class="empty-state">
+                                <div class="empty-icon">&#128270;</div>
+                                <div class="empty-title">Search Unavailable</div>
+                                <div class="empty-text">The search index has not been built yet. Try browsing by date.</div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    performSearch(query);
+                }, 300);
+            });
+
+            clearBtn.addEventListener('click', () => {
+                input.value = '';
+                clearBtn.style.display = 'none';
+                document.querySelectorAll('.quick-date').forEach(b => b.classList.remove('active'));
+                document.querySelector('.quick-date[data-days="0"]').classList.add('active');
+                loadStoriesForDate(getDateString(0));
+            });
+        }
+
         // Initialize
         async function init() {
             // Set today's date as default
@@ -897,6 +1075,7 @@
             showAvailableDates();
             setupQuickDates();
             setupFilters();
+            setupSearch();
 
             // Load today's stories
             await loadStoriesForDate(getDateString(0));

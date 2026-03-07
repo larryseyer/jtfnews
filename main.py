@@ -6275,6 +6275,85 @@ def update_archive_index():
 
     log.info(f"Updated archive index: {len(dates)} dates")
 
+    # Also update search index
+    update_search_index(dates)
+
+
+def update_search_index(dates: list = None):
+    """Build a gzipped search index of all archived stories for client-side search.
+
+    Generates docs/archive/search-index.json.gz containing every archived story
+    as a compact JSON array. The browser decompresses this with pako and filters
+    client-side — no server, no tracking, no logs.
+    """
+    archive_dir = BASE_DIR / "docs" / "archive"
+    if not archive_dir.exists():
+        return
+
+    # If dates not provided, scan for them
+    if dates is None:
+        dates = []
+        for year_dir in sorted(archive_dir.iterdir(), reverse=True):
+            if year_dir.is_dir() and year_dir.name.isdigit():
+                for archive_file in sorted(year_dir.glob("*.txt.gz"), reverse=True):
+                    date_str = archive_file.stem.replace(".txt", "")
+                    dates.append(date_str)
+
+    entries = []
+
+    for date_str in dates:
+        year = date_str[:4]
+        gz_file = archive_dir / year / f"{date_str}.txt.gz"
+        if not gz_file.exists():
+            continue
+
+        try:
+            with gzip.open(gz_file, 'rt', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#'):
+                        continue
+
+                    parts = line.split('|')
+                    if len(parts) < 4:
+                        continue
+
+                    timestamp = parts[0]
+                    source_names = parts[1]
+
+                    # Extract fact from variable-length format
+                    if len(parts) == 4:
+                        fact = parts[3]
+                    elif len(parts) == 5:
+                        fact = parts[4]
+                    else:
+                        fact = parts[5] if len(parts) >= 6 else parts[-1]
+
+                    # Compact entry: short keys to minimize size
+                    entries.append({
+                        "d": date_str,
+                        "t": timestamp,
+                        "f": fact.strip(),
+                        "s": source_names
+                    })
+        except Exception as e:
+            log.warning(f"Error reading archive {gz_file} for search index: {e}")
+            continue
+
+    # Write gzipped JSON
+    search_index_file = archive_dir / "search-index.json.gz"
+    json_bytes = json.dumps(entries, separators=(',', ':')).encode('utf-8')
+    with gzip.open(search_index_file, 'wb') as f:
+        f.write(json_bytes)
+
+    log.info(f"Updated search index: {len(entries)} stories, {len(json_bytes)} bytes uncompressed")
+
+    # Push to GitHub
+    push_to_ghpages(
+        [(search_index_file, "archive/search-index.json.gz")],
+        "Update search index"
+    )
+
 
 # =============================================================================
 # MAIN LOOP
