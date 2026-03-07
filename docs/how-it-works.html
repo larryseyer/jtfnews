@@ -129,211 +129,42 @@
             position: absolute;
         }
 
-        .hover-zone:hover {
-            box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.5);
-        }
-
-        .tooltip {
-            position: absolute;
-            background: rgba(15, 23, 42, 0.95);
-            border: 2px solid #22c55e;
-            border-radius: 10px;
-            padding: 14px 18px;
-            font-size: 13px;
-            color: #e2e8f0;
-            max-width: 280px;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
-            z-index: 100;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-            pointer-events: none;
-        }
-
-        .tooltip strong {
-            color: #22c55e;
-            display: block;
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
-
-        .hover-zone:hover .tooltip {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* Tooltip positions */
-        .tooltip-right {
-            left: calc(100% + 15px);
-            top: 50%;
-            transform: translateY(-50%) translateX(-10px);
-        }
-
-        .hover-zone:hover .tooltip-right {
-            transform: translateY(-50%) translateX(0);
-        }
-
-        .tooltip-left {
-            right: calc(100% + 15px);
-            top: 50%;
-            transform: translateY(-50%) translateX(10px);
-        }
-
-        .hover-zone:hover .tooltip-left {
-            transform: translateY(-50%) translateX(0);
-        }
-
-        .tooltip-bottom {
-            top: calc(100% + 15px);
-            left: 50%;
-            transform: translateX(-50%) translateY(-10px);
-        }
-
-        .hover-zone:hover .tooltip-bottom {
-            transform: translateX(-50%) translateY(0);
-        }
-
-        /* Arrow indicators */
-        .tooltip::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 0;
-            border: 8px solid transparent;
-        }
-
-        .tooltip-right::before {
-            left: -16px;
-            top: 50%;
-            transform: translateY(-50%);
-            border-right-color: #22c55e;
-        }
-
-        .tooltip-left::before {
-            right: -16px;
-            top: 50%;
-            transform: translateY(-50%);
-            border-left-color: #22c55e;
-        }
-
-        .tooltip-bottom::before {
-            top: -16px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-bottom-color: #22c55e;
-        }
-
-        /* Hover hint */
-        .hover-hint {
-            text-align: center;
-            font-size: 12px;
-            color: #64748b;
-            margin-top: 15px;
-        }
-
-        .hover-hint span {
-            display: inline-block;
-            padding: 4px 12px;
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.3);
-            border-radius: 20px;
-            color: #22c55e;
-        }
-
-        /* Touch devices: tap to toggle tooltips */
+        .hover-zone:hover,
         .hover-zone.tooltip-active {
             box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.5);
         }
 
-        .hover-zone.tooltip-active .tooltip {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
+        /* Hidden inline tooltips (data read by JS) */
+        .tooltip {
+            display: none;
         }
 
-        .hover-zone.tooltip-active .tooltip-right {
-            transform: translateY(-50%) translateX(0);
-        }
-
-        .hover-zone.tooltip-active .tooltip-left {
-            transform: translateY(-50%) translateX(0);
-        }
-
-        .hover-zone.tooltip-active .tooltip-bottom {
-            transform: translateX(-50%) translateY(0);
-        }
-
-        /* Mobile: reposition all tooltips below to avoid overflow */
-        @media (max-width: 768px) {
-            .tooltip {
-                position: relative !important;
-                left: auto !important;
-                right: auto !important;
-                top: auto !important;
-                bottom: auto !important;
-                transform: none !important;
-                max-width: 100%;
-                margin-top: 10px;
-                display: none;
-            }
-
-            .tooltip::before {
-                display: none;
-            }
-
-            .hover-zone:hover .tooltip {
-                opacity: 0;
-                visibility: hidden;
-            }
-
-            .hover-zone.tooltip-active .tooltip {
-                display: block;
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .hover-zone.tooltip-active .tooltip-right,
-            .hover-zone.tooltip-active .tooltip-left,
-            .hover-zone.tooltip-active .tooltip-bottom {
-                transform: none;
-            }
-
-            .hover-zone {
-                display: block !important;
-            }
-
-            .mobile-explanations {
-                display: none;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .mobile-explanations {
-                display: none;
-            }
-        }
-
-        .mobile-explanations {
-            margin-top: 20px;
-            padding: 15px;
-            background: rgba(30, 41, 59, 0.6);
+        /* Description panel below the example */
+        .desc-panel {
+            margin-top: 15px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 2px solid #22c55e;
             border-radius: 10px;
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #e2e8f0;
+            line-height: 1.5;
+            transition: opacity 0.25s ease;
         }
 
-        .mobile-explanations p {
-            font-size: 13px;
-            margin-bottom: 10px;
-            padding-left: 15px;
-            border-left: 3px solid #22c55e;
-        }
-
-        .mobile-explanations p:last-child {
-            margin-bottom: 0;
-        }
-
-        .mobile-explanations strong {
+        .desc-panel strong {
             color: #22c55e;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 15px;
         }
+
+        .desc-panel--empty {
+            border-color: rgba(34, 197, 94, 0.3);
+            text-align: center;
+            color: #64748b;
+        }
+
 
         /* Rating examples */
         .rating-example {
@@ -450,7 +281,7 @@
             <div class="lower-third">
                 <div class="brand-tab hover-zone">
                     JTF NEWS
-                    <div class="tooltip tooltip-right">
+                    <div class="tooltip">
                         <strong>Brand Identifier</strong>
                         "Just The Facts News" &mdash; our commitment to reporting only verified, factual information without editorial spin.
                     </div>
@@ -458,14 +289,13 @@
                 <div class="source-bar">
                     <span class="hover-zone" style="display: inline-block;" id="demo-sources">
                         Loading...
-                        <div class="tooltip tooltip-bottom">
+                        <div class="tooltip">
                             <strong>Verified Sources</strong>
                             Every fact requires 2+ independent sources. Format: Source Accuracy|Bias (both 0-10). Higher is better. An asterisk (*) means limited data.
                         </div>
                     </span>
                     <span class="hover-zone" style="display: inline-block; margin-left: 10px;" id="demo-time">
-
-                        <div class="tooltip tooltip-left">
+                        <div class="tooltip">
                             <strong>Time Verified</strong>
                             When this fact was confirmed by multiple sources. Fresh news is prioritized in the display rotation.
                         </div>
@@ -473,21 +303,15 @@
                 </div>
                 <div class="fact-text hover-zone" id="demo-fact">
                     Loading latest verified fact...
-                    <div class="tooltip tooltip-bottom">
+                    <div class="tooltip">
                         <strong>The Fact</strong>
                         Pure, verified information. No opinions, adjectives, speculation, or emotional language. Just what happened, confirmed by multiple independent sources.
                     </div>
                 </div>
             </div>
 
-            <p class="hover-hint"><span id="interaction-hint">Hover over elements to learn more</span></p>
-
-            <!-- Mobile fallback explanations -->
-            <div class="mobile-explanations">
-                <p><strong>JTF NEWS</strong> &mdash; Brand identifier for "Just The Facts News"</p>
-                <p><strong>Source scores</strong> &mdash; Format: Source Accuracy|Bias (both 0-10, higher is better)</p>
-                <p><strong>Time</strong> &mdash; When this fact was confirmed by multiple sources</p>
-                <p><strong>The fact</strong> &mdash; No opinions, adjectives, or speculation. Just verified information.</p>
+            <div id="desc-panel" class="desc-panel desc-panel--empty">
+                <span id="interaction-hint">Hover over elements above to learn more</span>
             </div>
         </div>
 
@@ -817,46 +641,63 @@
             loadLiveStory();
         }
 
-        // Touch device support: tap to toggle tooltips
-        function initTouchTooltips() {
+        // Description panel: show tooltip content below the example
+        function initDescPanel() {
+            var panel = document.getElementById('desc-panel');
+            var hint = document.getElementById('interaction-hint');
             var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-            // Update hint text for touch devices
-            var hint = document.getElementById('interaction-hint');
             if (hint && isTouch) {
-                hint.textContent = 'Tap elements to learn more';
+                hint.textContent = 'Tap elements above to learn more';
             }
 
-            // Add tap-to-toggle on all hover zones
+            function showDesc(zone) {
+                var tooltip = zone.querySelector('.tooltip');
+                if (!tooltip) return;
+                var title = tooltip.querySelector('strong');
+                var text = tooltip.textContent.replace(title ? title.textContent : '', '').trim();
+                panel.classList.remove('desc-panel--empty');
+                panel.innerHTML = '<strong>' + (title ? title.textContent : '') + '</strong>' + text;
+            }
+
+            function clearDesc() {
+                panel.classList.add('desc-panel--empty');
+                panel.innerHTML = '<span id="interaction-hint">' + (isTouch ? 'Tap' : 'Hover over') + ' elements above to learn more</span>';
+            }
+
             document.querySelectorAll('.hover-zone').forEach(function(zone) {
+                // Desktop hover
+                zone.addEventListener('mouseenter', function() {
+                    document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
+                    zone.classList.add('tooltip-active');
+                    showDesc(zone);
+                });
+                zone.addEventListener('mouseleave', function() {
+                    zone.classList.remove('tooltip-active');
+                    clearDesc();
+                });
+
+                // Touch tap
                 zone.addEventListener('click', function(e) {
-                    // On touch devices, prevent default and toggle
-                    // On desktop, this also works as a click fallback
                     var wasActive = zone.classList.contains('tooltip-active');
-
-                    // Close all other open tooltips
-                    document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(other) {
-                        other.classList.remove('tooltip-active');
-                    });
-
-                    // Toggle this one
+                    document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
                     if (!wasActive) {
                         zone.classList.add('tooltip-active');
+                        showDesc(zone);
+                    } else {
+                        clearDesc();
                     }
-
                     e.stopPropagation();
                 });
             });
 
-            // Tap anywhere else to close tooltips
             document.addEventListener('click', function() {
-                document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(zone) {
-                    zone.classList.remove('tooltip-active');
-                });
+                document.querySelectorAll('.hover-zone.tooltip-active').forEach(function(z) { z.classList.remove('tooltip-active'); });
+                clearDesc();
             });
         }
 
-        initTouchTooltips();
+        initDescPanel();
     </script>
 </body>
 </html>
