@@ -335,7 +335,7 @@
         </div>
 
         <!-- Time gate (spam layer 2) -->
-        <input type="hidden" id="load_time" name="load_time" value="">
+        <input type="hidden" id="loaded_at" name="loaded_at" value="">
 
         <!-- Proof-of-work (spam layer 3) -->
         <input type="hidden" id="pow_nonce" name="pow_nonce" value="">
@@ -398,7 +398,7 @@
     // ============================================================
     // Spam Prevention: Time Gate (layer 2)
     // ============================================================
-    document.getElementById('load_time').value = Date.now().toString();
+    document.getElementById('loaded_at').value = Date.now().toString();
 
     // ============================================================
     // Spam Prevention: Proof of Work (layer 3)
@@ -560,7 +560,7 @@
             story_id: document.getElementById('story').value || null,
             details: details.substring(0, 2000),
             evidence_url: (document.getElementById('evidence-url').value || '').substring(0, 500) || null,
-            load_time: document.getElementById('load_time').value,
+            loaded_at: document.getElementById('loaded_at').value,
             pow_nonce: document.getElementById('pow_nonce').value,
             pow_hash: document.getElementById('pow_hash').value,
             submitted_at: new Date().toISOString()
@@ -619,7 +619,7 @@
         document.getElementById('error-message').style.display = 'none';
 
         // Reset spam fields
-        document.getElementById('load_time').value = Date.now().toString();
+        document.getElementById('loaded_at').value = Date.now().toString();
         document.getElementById('pow_nonce').value = '';
         document.getElementById('pow_hash').value = '';
         document.getElementById('submit-btn').disabled = true;
