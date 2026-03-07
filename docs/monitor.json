@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-03-07T15:35:54.964848+00:00",
-  "web_refresh_at": "2026-03-07T15:35:54.964848+00:00",
-  "uptime_start": "2026-03-07T15:35:21.253783+00:00",
-  "uptime_seconds": 34,
-  "availability_pct": 57.0,
+  "timestamp": "2026-03-07T15:38:18.426409+00:00",
+  "web_refresh_at": "2026-03-07T15:38:18.426409+00:00",
+  "uptime_start": "2026-03-07T15:37:50.634557+00:00",
+  "uptime_seconds": 28,
+  "availability_pct": 56.9,
   "cycle": {
     "number": 1,
-    "duration_seconds": 32.5,
+    "duration_seconds": 27.2,
     "headlines_scraped": 174,
-    "headlines_processed": 2,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -22,11 +22,11 @@
         }
       },
       "claude": {
-        "calls": 415,
-        "cost_usd": 0.17050425000000002,
+        "calls": 416,
+        "cost_usd": 0.17051200000000002,
         "details": {
-          "input_tokens": 414907,
-          "output_tokens": 53422
+          "input_tokens": 414918,
+          "output_tokens": 53426
         }
       }
     },
@@ -49,7 +49,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 24,
+    "next_cycle_minutes": 21,
     "degraded_services": []
   },
   "daily_digest": {
