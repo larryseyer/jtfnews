@@ -584,7 +584,7 @@
             }
 
             var result = await response.json();
-            var refNumber = result.reference || ('FB-' + Date.now().toString(36).toUpperCase());
+            var refNumber = result.ref || result.reference || 'Unknown';
             showSuccess(refNumber);
 
         } catch (err) {
