@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-07T13:55:52.663553+00:00",
+  "timestamp": "2026-03-07T14:00:53.685452+00:00",
+  "web_refresh_at": "2026-03-07T14:00:53.685452+00:00",
   "uptime_start": "2026-03-07T06:36:17.643739+00:00",
-  "uptime_seconds": 26375,
+  "uptime_seconds": 26676,
   "availability_pct": 56.9,
   "cycle": {
-    "number": 15,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 16,
+    "duration_seconds": 49.9,
+    "headlines_scraped": 174,
+    "headlines_processed": 3,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -36,7 +37,7 @@
   },
   "queue": {
     "size": 33,
-    "oldest_item_age_hours": 18.4
+    "oldest_item_age_hours": 18.5
   },
   "stories_today": 2,
   "sources": {
@@ -44,11 +45,27 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [],
+  "recent_errors": [
+    {
+      "timestamp": "2026-03-07T14:00:41.099310+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYoqjjj2dmtxYfHX5qhcK'}"
+    },
+    {
+      "timestamp": "2026-03-07T14:00:47.425578+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYoqkEcqzYc8e4gNQeWFL'}"
+    },
+    {
+      "timestamp": "2026-03-07T14:00:53.679082+00:00",
+      "level": "ERROR",
+      "message": "Claude API error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CYoqkjE3dD1cHWAnKM5NS'}"
+    }
+  ],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
@@ -67,5 +84,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-06/2026-03-06-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-06/2026-03-06-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
