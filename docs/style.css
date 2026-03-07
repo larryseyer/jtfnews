@@ -300,7 +300,8 @@ p {
     flex-direction: column;
 }
 
-.card .btn {
+.card > .btn:last-child,
+.card > a.btn {
     margin-top: auto;
 }
 
@@ -313,7 +314,7 @@ p {
 .card p {
     font-size: 14px;
     color: var(--color-text-muted);
-    margin-bottom: 0;
+    margin-bottom: 0.75rem;
 }
 
 .card-grid {
