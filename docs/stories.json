@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-07/4ec05112fd74.mp3",
       "published_at": "2026-03-07T00:05:38.082634+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-07-001",
+      "hash": "385b937cff84",
+      "fact": "A Russian strike on an apartment block in Kharkiv killed seven people.",
+      "source": "Deutsche Welle 5.8|9.5 \u00b7 BBC News 5.3|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-07/acbaa0ef5cc5.mp3",
+      "published_at": "2026-03-07T13:00:40.241983+00:00",
+      "status": "published"
     }
   ]
 }
