@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-07/acbaa0ef5cc5.mp3",
       "published_at": "2026-03-07T13:00:40.241983+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-07-002",
+      "hash": "8a51d60c4925",
+      "fact": "At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.",
+      "source": "NPR 4.3|8.5 \u00b7 BBC News 5.3|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-07/b02a913e23aa.mp3",
+      "published_at": "2026-03-07T19:30:42.951891+00:00",
+      "status": "published"
     }
   ]
 }
