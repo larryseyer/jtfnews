@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-03-07T01:00:38.189270+00:00",
-  "web_refresh_at": "2026-03-07T01:00:38.189270+00:00",
+  "timestamp": "2026-03-07T01:05:38.972387+00:00",
   "uptime_start": "2026-03-06T18:47:06.689130+00:00",
-  "uptime_seconds": 22412,
+  "uptime_seconds": 22712,
   "availability_pct": 61.9,
   "cycle": {
     "number": 14,
-    "duration_seconds": 34.4,
-    "headlines_scraped": 174,
-    "headlines_processed": 4,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
-    "stories_queued": 1
+    "stories_queued": 0
   },
   "api_costs": {
     "today": {
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 40,
-    "oldest_item_age_hours": 23.0
+    "oldest_item_age_hours": 23.1
   },
   "stories_today": 1,
   "sources": {
@@ -45,17 +44,11 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-07T00:04:11.732729+00:00",
-      "level": "WARNING",
-      "message": "Could not push digest entry to GitHub: Command '['git', '-C', '/Users/larryseyer/JTFNews/docs', 'push']' returned non-zero exit status 1."
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
