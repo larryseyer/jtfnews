@@ -44,6 +44,9 @@
     <!-- Shared Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Pako for decompressing archive search index -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+
     <!-- Feedback-specific styles -->
     <style>
         .subtitle {
@@ -433,31 +436,91 @@
     // Load Stories for Dropdown
     // ============================================================
     async function loadStories() {
+        var select = document.getElementById('story');
+
+        // Get date string for N days ago
+        function daysAgoStr(n) {
+            var d = new Date();
+            d.setUTCDate(d.getUTCDate() - n);
+            var y = d.getUTCFullYear();
+            var m = String(d.getUTCMonth() + 1).padStart(2, '0');
+            var dd = String(d.getUTCDate()).padStart(2, '0');
+            return y + '-' + m + '-' + dd;
+        }
+
+        // Build set of valid dates (today + past 7 days)
+        var validDates = {};
+        for (var i = 0; i <= 7; i++) {
+            validDates[daysAgoStr(i)] = true;
+        }
+
+        // 1. Load today's stories from stories.json
         try {
             var response = await fetch('./stories.json?t=' + Date.now());
-            if (!response.ok) return;
-
-            var data = await response.json();
-            var stories = data.stories || data;
-            if (!Array.isArray(stories)) return;
-
-            var select = document.getElementById('story');
-            for (var i = 0; i < stories.length; i++) {
-                var s = stories[i];
-                if (s.status !== 'published') continue;
-
-                var fact = s.fact || s.text || '';
-                if (fact.length > 80) {
-                    fact = fact.substring(0, 77) + '...';
+            if (response.ok) {
+                var data = await response.json();
+                var stories = data.stories || data;
+                if (Array.isArray(stories)) {
+                    var group = document.createElement('optgroup');
+                    group.label = 'Today';
+                    var count = 0;
+                    for (var j = 0; j < stories.length; j++) {
+                        var s = stories[j];
+                        if (s.status !== 'published') continue;
+                        var fact = s.fact || '';
+                        if (fact.length > 80) fact = fact.substring(0, 77) + '...';
+                        var opt = document.createElement('option');
+                        opt.value = s.id || ('story-' + j);
+                        opt.textContent = fact;
+                        group.appendChild(opt);
+                        count++;
+                    }
+                    if (count > 0) select.appendChild(group);
                 }
-
-                var option = document.createElement('option');
-                option.value = s.id || ('story-' + i);
-                option.textContent = fact;
-                select.appendChild(option);
             }
         } catch (e) {
-            // Stories dropdown is optional; fail silently
+            // Continue — today's stories are optional
+        }
+
+        // 2. Load past 7 days from archive search index
+        try {
+            var archiveResp = await fetch('./archive/search-index.json.gz?t=' + Date.now());
+            if (!archiveResp.ok) return;
+            var arrayBuffer = await archiveResp.arrayBuffer();
+            var decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+            var entries = JSON.parse(decompressed);
+
+            // Group entries by date, filter to past 7 days (skip today — already loaded)
+            var today = daysAgoStr(0);
+            var byDate = {};
+            for (var k = 0; k < entries.length; k++) {
+                var e = entries[k];
+                if (e.d === today) continue;
+                if (!validDates[e.d]) continue;
+                if (!byDate[e.d]) byDate[e.d] = [];
+                byDate[e.d].push(e);
+            }
+
+            // Sort dates descending
+            var sortedDates = Object.keys(byDate).sort().reverse();
+            for (var di = 0; di < sortedDates.length; di++) {
+                var dateStr = sortedDates[di];
+                var group = document.createElement('optgroup');
+                group.label = dateStr;
+                var items = byDate[dateStr];
+                for (var ei = 0; ei < items.length; ei++) {
+                    var entry = items[ei];
+                    var fact = entry.f || '';
+                    if (fact.length > 80) fact = fact.substring(0, 77) + '...';
+                    var opt = document.createElement('option');
+                    opt.value = dateStr + '-' + String(ei).padStart(3, '0');
+                    opt.textContent = fact;
+                    group.appendChild(opt);
+                }
+                select.appendChild(group);
+            }
+        } catch (e) {
+            // Archive loading is optional; fail silently
         }
     }
 
