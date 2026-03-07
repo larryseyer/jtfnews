@@ -8,10 +8,88 @@
     <lastBuildDate>Sat, 07 Mar 2026 00:05:38 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
     <item jtf:type="digest">
+      <title>[DAILY DIGEST] 2026-03-06 - 6 verified facts</title>
+      <description>Daily summary of 6 verified facts from 2026-03-06.</description>
+      <link>https://youtube.com/watch?v=UfUW4MCxjyU</link>
+      <jtf:archive>https://jtfnews.org/archive/2026-03-06.html</jtf:archive>
+      <pubDate>Sat, 07 Mar 2026 00:04:11 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-06</guid>
+    </item>
+    <item>
+      <title>Oil prices reached $90 USD per barrel for the first time in 2 years.</title>
+      <description>Oil prices reached $90 USD per barrel for the first time in 2 years.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 18:47:40 +0000</pubDate>
+      <guid isPermaLink="false">19efee2e19f2</guid>
+    </item>
+    <item>
+      <title>President Trump stated that Governor Kristi Noem will be replaced as Secretary o...</title>
+      <description>President Trump stated that Governor Kristi Noem will be replaced as Secretary of Homeland Security.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 11:30:36 +0000</pubDate>
+      <guid isPermaLink="false">30152f4b5b05</guid>
+    </item>
+    <item>
+      <title>Canada is signing an agreement with the European Union to enhance a free trade d...</title>
+      <description>Canada is signing an agreement with the European Union to enhance a free trade deal.</description>
+      <jtf:source name="European Commission" url="https://ec.europa.eu/commission/presscorner/home/en" accuracy="1.0" bias="9.0" speed="7.5" consensus="9.0" control_type="government">
+        <jtf:owner name="European Union" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 08:30:41 +0000</pubDate>
+      <guid isPermaLink="false">e9741c724521</guid>
+    </item>
+    <item>
+      <title>A Canadian tourist died by drowning in Australia following a dingo attack, accor...</title>
+      <description>A Canadian tourist died by drowning in Australia following a dingo attack, according to authorities.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 03:30:36 +0000</pubDate>
+      <guid isPermaLink="false">a0d83b668a22</guid>
+    </item>
+    <item>
+      <title>Israel launches attacks on Tehran and Beirut.</title>
+      <description>Israel launches attacks on Tehran and Beirut.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 03:00:36 +0000</pubDate>
+      <guid isPermaLink="false">13d05dfdb255</guid>
+    </item>
+    <item>
+      <title>The DR Congo government reported 200 deaths from a landslide at a mine in a rebe...</title>
+      <description>The DR Congo government reported 200 deaths from a landslide at a mine in a rebel-held area.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 06 Mar 2026 00:07:26 +0000</pubDate>
+      <guid isPermaLink="false">1e2d83bb8bd0</guid>
+    </item>
+    <item>
       <title>[DAILY DIGEST] 2026-03-05 - 9 verified facts</title>
       <description>Daily summary of 9 verified facts from 2026-03-05.</description>
-      <link>https://youtube.com/watch?v=Uzc-A180Lns</link>
-      <jtf:archive>https://jtfnews.org/archive/2026-03-05.html</jtf:archive>
       <pubDate>Fri, 06 Mar 2026 00:04:46 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-03-05</guid>
     </item>
