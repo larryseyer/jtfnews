@@ -353,5 +353,23 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>18</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 7, 2026</title>
+      <description>4 verified facts for March 7, 2026.</description>
+      <content:encoded><![CDATA[4 verified facts for March 7, 2026.
+
+- Indonesia's government announced a plan to ban social media access for users under 16 years old.
+- A Russian strike on an apartment block in Kharkiv killed seven people.
+- At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.
+- A bombing at a nightclub in Peru injured 33 people, including minors.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-07/2026-03-07-daily-digest.mp3" type="audio/mpeg" length="2802562"/>
+      <guid isPermaLink="false">jtf-news-2026-03-07</guid>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:06</itunes:duration>
+      <itunes:episode>19</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
