@@ -1,5 +1,12 @@
 [
   {
+    "uid": "fcaf77cf663f9ff519d547b19ef7f207",
+    "updateDate": "2026-03-08T07:30:41.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "Israel conducted strikes on oil storage sites near Tehran, Iran.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "42455e832bcf7382de7b6ad32b30a80c",
     "updateDate": "2026-03-08T05:30:35.0Z",
     "titleText": "JTF News: BBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-08T00:06:40.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
     "mainText": "Russia conducted strikes on a Kharkiv apartment block in Ukraine.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "1ad2efc79bb30dd2017bfa5f412f9b0e",
-    "updateDate": "2026-03-08T00:05:36.0Z",
-    "titleText": "JTF News: NPR, BBC News",
-    "mainText": "At least six people died after tornadoes in Michigan and Oklahoma, according to officials.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
