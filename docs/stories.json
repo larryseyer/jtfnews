@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-08/629b4545b8d6.mp3",
       "published_at": "2026-03-08T05:30:34.163063+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-08-005",
+      "hash": "09e7d972e9af",
+      "fact": "Israel conducted strikes on oil storage sites near Tehran, Iran.",
+      "source": "Deutsche Welle 5.8|9.5 \u00b7 France 24 4.5|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-08/e3a6ee501cad.mp3",
+      "published_at": "2026-03-08T07:30:39.362710+00:00",
+      "status": "published"
     }
   ]
 }
