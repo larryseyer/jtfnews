@@ -1,44 +1,45 @@
 {
-  "timestamp": "2026-03-08T05:25:43.951104+00:00",
+  "timestamp": "2026-03-08T05:30:44.348078+00:00",
+  "web_refresh_at": "2026-03-08T05:30:44.348078+00:00",
   "uptime_start": "2026-03-08T00:20:16.668099+00:00",
-  "uptime_seconds": 18327,
+  "uptime_seconds": 18628,
   "availability_pct": 58.4,
   "cycle": {
-    "number": 11,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
+    "number": 12,
+    "duration_seconds": 40.7,
+    "headlines_scraped": 174,
+    "headlines_processed": 4,
+    "stories_published": 1,
     "stories_queued": 0
   },
   "api_costs": {
     "today": {
       "elevenlabs": {
-        "calls": 6,
-        "cost_usd": 0.01875,
+        "calls": 7,
+        "cost_usd": 0.02052,
         "details": {
-          "characters": 625
+          "characters": 684
         }
       },
       "claude": {
-        "calls": 239,
-        "cost_usd": 0.09687275000000001,
+        "calls": 246,
+        "cost_usd": 0.0990805,
         "details": {
-          "input_tokens": 237286,
-          "output_tokens": 30041
+          "input_tokens": 242637,
+          "output_tokens": 30737
         }
       }
     },
-    "total_usd": 0.1156,
+    "total_usd": 0.1196,
     "month_estimate_usd": 9.62,
     "daily_budget": 1.61,
-    "budget_pct": 7.2
+    "budget_pct": 7.4
   },
   "queue": {
-    "size": 28,
-    "oldest_item_age_hours": 24.3
+    "size": 26,
+    "oldest_item_age_hours": 22.5
   },
-  "stories_today": 4,
+  "stories_today": 5,
   "sources": {
     "total": 20,
     "successful": 20,
@@ -48,7 +49,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
@@ -67,5 +68,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-07/2026-03-07-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-07/2026-03-07-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
