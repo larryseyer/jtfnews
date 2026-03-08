@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-08/063a61e64a97.mp3",
       "published_at": "2026-03-08T00:05:34.016172+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-08-001",
+      "hash": "3f8f95fe6622",
+      "fact": "Russia conducted strikes on a Kharkiv apartment block in Ukraine.",
+      "source": "Deutsche Welle 5.8|9.5 \u00b7 BBC News 5.4|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-08/cf45ef1e2078.mp3",
+      "published_at": "2026-03-08T00:06:38.216318+00:00",
+      "status": "published"
     }
   ]
 }
