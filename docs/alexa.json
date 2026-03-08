@@ -1,5 +1,12 @@
 [
   {
+    "uid": "34c1f07851454d05b4010596ebb877d6",
+    "updateDate": "2026-03-08T00:07:59.0Z",
+    "titleText": "JTF News: PBS NewsHour, The Guardian",
+    "mainText": "A bombing at a nightclub in Peru injured 33 people, including minors.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "3e5f1903026f25e0310d92bdbb212322",
     "updateDate": "2026-03-08T00:07:46.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-07T19:30:52.0Z",
     "titleText": "JTF News: The Guardian, PBS NewsHour",
     "mainText": "A bombing at a nightclub in Peru injured 33 people, including minors.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "fb3c87e460e637e92d35c976e577f6a8",
-    "updateDate": "2026-03-07T19:30:45.0Z",
-    "titleText": "JTF News: NPR, BBC News",
-    "mainText": "At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
