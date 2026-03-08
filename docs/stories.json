@@ -1,56 +1,17 @@
 {
-  "date": "2026-03-07",
+  "date": "2026-03-08",
   "stories": [
     {
-      "id": "2026-03-07-000",
-      "hash": "c9b08310cbad",
-      "fact": "Indonesia's government announced a plan to ban social media access for users under 16 years old.",
-      "source": "BBC News 5.3|9.0 \u00b7 Deutsche Welle 5.9|9.5",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-07/4ec05112fd74.mp3",
-      "published_at": "2026-03-07T00:05:38.082634+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-07-001",
-      "hash": "385b937cff84",
-      "fact": "A Russian strike on an apartment block in Kharkiv killed seven people.",
-      "source": "Deutsche Welle 5.8|9.5 \u00b7 BBC News 5.3|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-07/acbaa0ef5cc5.mp3",
-      "published_at": "2026-03-07T13:00:40.241983+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-07-002",
-      "hash": "8a51d60c4925",
-      "fact": "At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.",
+      "id": "2026-03-08-000",
+      "hash": "d9fe22483bc3",
+      "fact": "At least six people died after tornadoes in Michigan and Oklahoma, according to officials.",
       "source": "NPR 4.3|8.5 \u00b7 BBC News 5.3|9.0",
       "source_urls": {
         "NPR": "https://www.npr.org/sections/news/",
         "BBC News": "https://www.bbc.com/news/world"
       },
-      "audio": "../audio/archive/2026-03-07/b02a913e23aa.mp3",
-      "published_at": "2026-03-07T19:30:42.951891+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-07-003",
-      "hash": "70176cf33eb9",
-      "fact": "A bombing at a nightclub in Peru injured 33 people, including minors.",
-      "source": "The Guardian 2.7|2.5 \u00b7 PBS NewsHour 5.9|9.0",
-      "source_urls": {
-        "The Guardian": "https://www.theguardian.com/world",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
-      },
-      "audio": "../audio/archive/2026-03-07/59bba1878328.mp3",
-      "published_at": "2026-03-07T19:30:50.405231+00:00",
+      "audio": "../audio/archive/2026-03-08/063a61e64a97.mp3",
+      "published_at": "2026-03-08T00:05:34.016172+00:00",
       "status": "published"
     }
   ]
