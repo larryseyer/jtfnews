@@ -1,5 +1,12 @@
 [
   {
+    "uid": "11dc49a1fa5d8ba06c145e582c31e9f5",
+    "updateDate": "2026-03-08T00:06:40.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "Russia conducted strikes on a Kharkiv apartment block in Ukraine.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "1ad2efc79bb30dd2017bfa5f412f9b0e",
     "updateDate": "2026-03-08T00:05:36.0Z",
     "titleText": "JTF News: NPR, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-07T13:00:42.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
     "mainText": "A Russian strike on an apartment block in Kharkiv killed seven people.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "f7fe170ba55b34c57ae2c42f3ad6a34f",
-    "updateDate": "2026-03-07T00:05:39.0Z",
-    "titleText": "JTF News: BBC News, Deutsche Welle",
-    "mainText": "Indonesia's government announced a plan to ban social media access for users under 16 years old.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
