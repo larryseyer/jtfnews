@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 07:30:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 17:00:45 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A search for missing Flight MH370 concluded without locating the aircraft 12 yea...</title>
+      <description>A search for missing Flight MH370 concluded without locating the aircraft 12 years after its disappearance.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 17:00:45 +0000</pubDate>
+      <guid isPermaLink="false">f93fc3f0d702</guid>
+    </item>
     <item>
       <title>Israel conducted strikes on oil storage sites near Tehran, Iran.</title>
       <description>Israel conducted strikes on oil storage sites near Tehran, Iran.</description>
@@ -1088,18 +1100,6 @@
       </jtf:source>
       <pubDate>Sat, 28 Feb 2026 00:01:36 +0000</pubDate>
       <guid isPermaLink="false">0aa81f8c9985</guid>
-    </item>
-    <item>
-      <title>Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan...</title>
-      <description>Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan following recent strikes.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:07:01 +0000</pubDate>
-      <guid isPermaLink="false">cfe8ed949e8a</guid>
     </item>
   </channel>
 </rss>
