@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-08/7f27603b8a47.mp3",
       "published_at": "2026-03-08T00:07:44.627396+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-08-003",
+      "hash": "70176cf33eb9",
+      "fact": "A bombing at a nightclub in Peru injured 33 people, including minors.",
+      "source": "PBS NewsHour 6.0|9.0 \u00b7 The Guardian 3.0|2.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "The Guardian": "https://www.theguardian.com/world"
+      },
+      "audio": "../audio/archive/2026-03-08/59bba1878328.mp3",
+      "published_at": "2026-03-08T00:07:57.834953+00:00",
+      "status": "published"
     }
   ]
 }
