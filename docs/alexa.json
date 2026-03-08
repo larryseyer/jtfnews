@@ -1,5 +1,12 @@
 [
   {
+    "uid": "3e5f1903026f25e0310d92bdbb212322",
+    "updateDate": "2026-03-08T00:07:46.0Z",
+    "titleText": "JTF News: PBS NewsHour, The Guardian",
+    "mainText": "President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "11dc49a1fa5d8ba06c145e582c31e9f5",
     "updateDate": "2026-03-08T00:06:40.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-07T19:30:45.0Z",
     "titleText": "JTF News: NPR, BBC News",
     "mainText": "At least six people died after tornadoes swept across Michigan and Oklahoma, according to officials.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "cb54f0ac7cfd62ffd50a26228dc61aeb",
-    "updateDate": "2026-03-07T13:00:42.0Z",
-    "titleText": "JTF News: Deutsche Welle, BBC News",
-    "mainText": "A Russian strike on an apartment block in Kharkiv killed seven people.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
