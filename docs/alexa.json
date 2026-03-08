@@ -1,5 +1,12 @@
 [
   {
+    "uid": "42455e832bcf7382de7b6ad32b30a80c",
+    "updateDate": "2026-03-08T05:30:35.0Z",
+    "titleText": "JTF News: BBC News, Deutsche Welle",
+    "mainText": "An explosion was reported outside the U.S. embassy in Oslo.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "34c1f07851454d05b4010596ebb877d6",
     "updateDate": "2026-03-08T00:07:59.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-08T00:05:36.0Z",
     "titleText": "JTF News: NPR, BBC News",
     "mainText": "At least six people died after tornadoes in Michigan and Oklahoma, according to officials.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "628f283d159e83f28d8d242c1913a611",
-    "updateDate": "2026-03-07T19:30:52.0Z",
-    "titleText": "JTF News: The Guardian, PBS NewsHour",
-    "mainText": "A bombing at a nightclub in Peru injured 33 people, including minors.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
