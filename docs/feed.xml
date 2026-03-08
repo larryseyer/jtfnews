@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:06:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 00:07:44 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump encouraged Latin American leaders to use military action to help...</title>
+      <description>President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.9" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:07:44 +0000</pubDate>
+      <guid isPermaLink="false">681ba20565e7</guid>
+    </item>
     <item>
       <title>Russia conducted strikes on a Kharkiv apartment block in Ukraine.</title>
       <description>Russia conducted strikes on a Kharkiv apartment block in Ukraine.</description>
@@ -1088,18 +1100,6 @@
       </jtf:source>
       <pubDate>Fri, 27 Feb 2026 23:05:46 +0000</pubDate>
       <guid isPermaLink="false">994e5746b3ff</guid>
-    </item>
-    <item>
-      <title>Sweden states that a drone jammed near a French aircraft carrier was Russian.</title>
-      <description>Sweden states that a drone jammed near a French aircraft carrier was Russian.</description>
-      <jtf:source name="France 24" url="" accuracy="4.6" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:04:45 +0000</pubDate>
-      <guid isPermaLink="false">625ab11d3d88</guid>
     </item>
   </channel>
 </rss>
