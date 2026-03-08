@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-08/59bba1878328.mp3",
       "published_at": "2026-03-08T00:07:57.834953+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-08-004",
+      "hash": "1fc343a38597",
+      "fact": "An explosion was reported outside the U.S. embassy in Oslo.",
+      "source": "BBC News 5.3|9.0 \u00b7 Deutsche Welle 5.7|9.5",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-08/629b4545b8d6.mp3",
+      "published_at": "2026-03-08T05:30:34.163063+00:00",
+      "status": "published"
     }
   ]
 }
