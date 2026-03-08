@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:05:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 00:06:38 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Russia conducted strikes on a Kharkiv apartment block in Ukraine.</title>
+      <description>Russia conducted strikes on a Kharkiv apartment block in Ukraine.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:06:38 +0000</pubDate>
+      <guid isPermaLink="false">89e0d825a9b7</guid>
+    </item>
     <item>
       <title>At least six people died after tornadoes in Michigan and Oklahoma, according to ...</title>
       <description>At least six people died after tornadoes in Michigan and Oklahoma, according to officials.</description>
@@ -1088,18 +1100,6 @@
       </jtf:source>
       <pubDate>Fri, 27 Feb 2026 23:04:45 +0000</pubDate>
       <guid isPermaLink="false">625ab11d3d88</guid>
-    </item>
-    <item>
-      <title>At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian gove...</title>
-      <description>At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian government minister.</description>
-      <jtf:source name="The Guardian" url="" accuracy="3.3" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="4.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:04:09 +0000</pubDate>
-      <guid isPermaLink="false">f0d47ef804ab</guid>
     </item>
   </channel>
 </rss>
