@@ -1,5 +1,12 @@
 [
   {
+    "uid": "75fa1e0b03d3ee5fefc16f65375df5da",
+    "updateDate": "2026-03-08T17:00:46.0Z",
+    "titleText": "JTF News: PBS NewsHour, France 24",
+    "mainText": "A search for missing Flight MH370 concluded without locating the aircraft 12 years after its disappearance.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "fcaf77cf663f9ff519d547b19ef7f207",
     "updateDate": "2026-03-08T07:30:41.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-08T00:07:46.0Z",
     "titleText": "JTF News: PBS NewsHour, The Guardian",
     "mainText": "President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "11dc49a1fa5d8ba06c145e582c31e9f5",
-    "updateDate": "2026-03-08T00:06:40.0Z",
-    "titleText": "JTF News: Deutsche Welle, BBC News",
-    "mainText": "Russia conducted strikes on a Kharkiv apartment block in Ukraine.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
