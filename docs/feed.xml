@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:07:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 00:07:57 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A bombing at a nightclub in Peru injured 33 people, including minors.</title>
+      <description>A bombing at a nightclub in Peru injured 33 people, including minors.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:07:57 +0000</pubDate>
+      <guid isPermaLink="false">507ac4242d19</guid>
+    </item>
     <item>
       <title>President Trump encouraged Latin American leaders to use military action to help...</title>
       <description>President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.</description>
@@ -1088,18 +1100,6 @@
       </jtf:source>
       <pubDate>Fri, 27 Feb 2026 23:06:10 +0000</pubDate>
       <guid isPermaLink="false">5b046f467d8c</guid>
-    </item>
-    <item>
-      <title>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' re...</title>
-      <description>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Epstein.</description>
-      <jtf:source name="CBC News" url="" accuracy="2.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.5" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:05:46 +0000</pubDate>
-      <guid isPermaLink="false">994e5746b3ff</guid>
     </item>
   </channel>
 </rss>
