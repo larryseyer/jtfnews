@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-08/cf45ef1e2078.mp3",
       "published_at": "2026-03-08T00:06:38.216318+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-08-002",
+      "hash": "8b018059843d",
+      "fact": "President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.",
+      "source": "PBS NewsHour 5.9|9.0 \u00b7 The Guardian 2.9|2.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "The Guardian": "https://www.theguardian.com/world"
+      },
+      "audio": "../audio/archive/2026-03-08/7f27603b8a47.mp3",
+      "published_at": "2026-03-08T00:07:44.627396+00:00",
+      "status": "published"
     }
   ]
 }
