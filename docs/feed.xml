@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 05:30:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 07:30:39 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Israel conducted strikes on oil storage sites near Tehran, Iran.</title>
+      <description>Israel conducted strikes on oil storage sites near Tehran, Iran.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 07:30:39 +0000</pubDate>
+      <guid isPermaLink="false">31d6e87a66de</guid>
+    </item>
     <item>
       <title>An explosion was reported outside the U.S. embassy in Oslo.</title>
       <description>An explosion was reported outside the U.S. embassy in Oslo.</description>
@@ -1088,18 +1100,6 @@
       </jtf:source>
       <pubDate>Fri, 27 Feb 2026 23:07:01 +0000</pubDate>
       <guid isPermaLink="false">cfe8ed949e8a</guid>
-    </item>
-    <item>
-      <title>President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'</title>
-      <description>President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="The Guardian" url="" accuracy="3.5" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:06:40 +0000</pubDate>
-      <guid isPermaLink="false">3c8693e7008f</guid>
     </item>
   </channel>
 </rss>
