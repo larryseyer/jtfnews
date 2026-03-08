@@ -5,13 +5,107 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:03:46 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 22:30:46 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
-    <item jtf:type="digest">
+    <item>
+      <title>Iranian state TV reports Mojtaba Khamenei named successor to the supreme leader.</title>
+      <description>Iranian state TV reports Mojtaba Khamenei named successor to the supreme leader.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 22:30:46 +0000</pubDate>
+      <guid isPermaLink="false">14898a2a9ad0</guid>
+    </item>
+    <item>
+      <title>A search for missing Flight MH370 concluded without locating the aircraft 12 yea...</title>
+      <description>A search for missing Flight MH370 concluded without locating the aircraft 12 years after its disappearance.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 17:00:45 +0000</pubDate>
+      <guid isPermaLink="false">f93fc3f0d702</guid>
+    </item>
+    <item>
+      <title>Israel conducted strikes on oil storage sites near Tehran, Iran.</title>
+      <description>Israel conducted strikes on oil storage sites near Tehran, Iran.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 07:30:39 +0000</pubDate>
+      <guid isPermaLink="false">31d6e87a66de</guid>
+    </item>
+    <item>
+      <title>An explosion was reported outside the U.S. embassy in Oslo.</title>
+      <description>An explosion was reported outside the U.S. embassy in Oslo.</description>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 05:30:34 +0000</pubDate>
+      <guid isPermaLink="false">9f0ac0608715</guid>
+    </item>
+    <item>
+      <title>A bombing at a nightclub in Peru injured 33 people, including minors.</title>
+      <description>A bombing at a nightclub in Peru injured 33 people, including minors.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.0" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:07:57 +0000</pubDate>
+      <guid isPermaLink="false">507ac4242d19</guid>
+    </item>
+    <item>
+      <title>President Trump encouraged Latin American leaders to use military action to help...</title>
+      <description>President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.9" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.9" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:07:44 +0000</pubDate>
+      <guid isPermaLink="false">681ba20565e7</guid>
+    </item>
+    <item>
+      <title>Russia conducted strikes on a Kharkiv apartment block in Ukraine.</title>
+      <description>Russia conducted strikes on a Kharkiv apartment block in Ukraine.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:06:38 +0000</pubDate>
+      <guid isPermaLink="false">89e0d825a9b7</guid>
+    </item>
+    <item>
+      <title>At least six people died after tornadoes in Michigan and Oklahoma, according to ...</title>
+      <description>At least six people died after tornadoes in Michigan and Oklahoma, according to officials.</description>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sun, 08 Mar 2026 00:05:34 +0000</pubDate>
+      <guid isPermaLink="false">d9b063c744bb</guid>
+    </item>
+    <item>
       <title>[DAILY DIGEST] 2026-03-07 - 4 verified facts</title>
       <description>Daily summary of 4 verified facts from 2026-03-07.</description>
-      <link>https://youtube.com/watch?v=17LZjqIGRgI</link>
-      <jtf:archive>https://jtfnews.org/archive/2026-03-07.html</jtf:archive>
       <pubDate>Sun, 08 Mar 2026 00:03:46 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-03-07</guid>
     </item>
@@ -1006,114 +1100,6 @@
       </jtf:source>
       <pubDate>Sat, 28 Feb 2026 00:02:07 +0000</pubDate>
       <guid isPermaLink="false">f32b817595f3</guid>
-    </item>
-    <item>
-      <title>At least 55 Ghanaians have been killed in the Russia-Ukraine war, according to a...</title>
-      <description>At least 55 Ghanaians have been killed in the Russia-Ukraine war, according to a Ghanaian minister.</description>
-      <jtf:source name="France 24" url="" accuracy="4.6" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 00:01:36 +0000</pubDate>
-      <guid isPermaLink="false">0aa81f8c9985</guid>
-    </item>
-    <item>
-      <title>Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan...</title>
-      <description>Pakistan's Defense Minister stated that Pakistan is in open war with Afghanistan following recent strikes.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:07:01 +0000</pubDate>
-      <guid isPermaLink="false">cfe8ed949e8a</guid>
-    </item>
-    <item>
-      <title>President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'</title>
-      <description>President Trump suggested the U.S. could have a 'friendly takeover of Cuba.'</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="The Guardian" url="" accuracy="3.5" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:06:40 +0000</pubDate>
-      <guid isPermaLink="false">3c8693e7008f</guid>
-    </item>
-    <item>
-      <title>A tram derailed in Milan, resulting in two deaths and dozens of injuries.</title>
-      <description>A tram derailed in Milan, resulting in two deaths and dozens of injuries.</description>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.5" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:06:10 +0000</pubDate>
-      <guid isPermaLink="false">5b046f467d8c</guid>
-    </item>
-    <item>
-      <title>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' re...</title>
-      <description>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Epstein.</description>
-      <jtf:source name="CBC News" url="" accuracy="2.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.5" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:05:46 +0000</pubDate>
-      <guid isPermaLink="false">994e5746b3ff</guid>
-    </item>
-    <item>
-      <title>Sweden states that a drone jammed near a French aircraft carrier was Russian.</title>
-      <description>Sweden states that a drone jammed near a French aircraft carrier was Russian.</description>
-      <jtf:source name="France 24" url="" accuracy="4.6" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.0" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:04:45 +0000</pubDate>
-      <guid isPermaLink="false">625ab11d3d88</guid>
-    </item>
-    <item>
-      <title>At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian gove...</title>
-      <description>At least 55 Ghanaians killed in Russia-Ukraine war, according to a Ghanaian government minister.</description>
-      <jtf:source name="The Guardian" url="" accuracy="3.3" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="4.9" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Fri, 27 Feb 2026 23:04:09 +0000</pubDate>
-      <guid isPermaLink="false">f0d47ef804ab</guid>
-    </item>
-    <item>
-      <title>A Kenyan individual is charged with luring young men to fight for Russia in Ukra...</title>
-      <description>A Kenyan individual is charged with luring young men to fight for Russia in Ukraine.</description>
-      <jtf:source name="BBC News" url="" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="5.0" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 21:00:37 +0000</pubDate>
-      <guid isPermaLink="false">2bf0c7a77000</guid>
-    </item>
-    <item>
-      <title>Hillary Clinton is scheduled to appear before a U.S. House panel investigating E...</title>
-      <description>Hillary Clinton is scheduled to appear before a U.S. House panel investigating Epstein.</description>
-      <jtf:source name="BBC News" url="" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 26 Feb 2026 15:00:43 +0000</pubDate>
-      <guid isPermaLink="false">31372ca1d9c1</guid>
     </item>
   </channel>
 </rss>
