@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 20:30:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 23:30:38 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canada commits nearly $1 billion to drone and airborne defence research.</title>
+      <description>Canada commits nearly $1 billion to drone and airborne defence research.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Government of Canada" url="https://www.canada.ca/en/news.html" accuracy="0.0" bias="10.0" speed="7.5" consensus="8.5" control_type="government">
+        <jtf:owner name="Government of Canada" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 09 Mar 2026 23:30:38 +0000</pubDate>
+      <guid isPermaLink="false">f7e61014d836</guid>
+    </item>
     <item>
       <title>President Trump called on Australia to provide asylum to Iranian women's soccer ...</title>
       <description>President Trump called on Australia to provide asylum to Iranian women's soccer players.</description>
@@ -1094,12 +1106,6 @@
       <description>Daily summary of 7 verified facts from 2026-02-16.</description>
       <pubDate>Sat, 28 Feb 2026 02:52:28 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-02-16</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-15 - 4 verified facts</title>
-      <description>Daily summary of 4 verified facts from 2026-02-15.</description>
-      <pubDate>Sat, 28 Feb 2026 02:49:14 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-15</guid>
     </item>
   </channel>
 </rss>
