@@ -371,5 +371,27 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>19</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 8, 2026</title>
+      <description>8 verified facts for March 8, 2026.</description>
+      <content:encoded><![CDATA[8 verified facts for March 8, 2026.
+
+- At least six people died after tornadoes in Michigan and Oklahoma, according to officials.
+- Russia conducted strikes on a Kharkiv apartment block in Ukraine.
+- President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.
+- A bombing at a nightclub in Peru injured 33 people, including minors.
+- An explosion was reported outside the U.S. embassy in Oslo.
+- Israel conducted strikes on oil storage sites near Tehran, Iran.
+- A search for missing Flight MH370 concluded without locating the aircraft 12 years after its disappearance.
+- Iranian state TV reports Mojtaba Khamenei named successor to the supreme leader.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-08/2026-03-08-daily-digest.mp3" type="audio/mpeg" length="4124358"/>
+      <guid isPermaLink="false">jtf-news-2026-03-08</guid>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:39</itunes:duration>
+      <itunes:episode>20</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
