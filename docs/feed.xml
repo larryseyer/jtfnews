@@ -5,8 +5,26 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 22:30:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 00:06:44 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An explosion occurred at the U.S. embassy in Oslo, and Norway police are investi...</title>
+      <description>An explosion occurred at the U.S. embassy in Oslo, and Norway police are investigating whether it was terrorism.</description>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 09 Mar 2026 00:06:44 +0000</pubDate>
+      <guid isPermaLink="false">57b92eaae566</guid>
+    </item>
+    <item>
+      <title>[DAILY DIGEST] 2026-03-08 - 8 verified facts</title>
+      <description>Daily summary of 8 verified facts from 2026-03-08.</description>
+      <pubDate>Mon, 09 Mar 2026 00:05:00 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-08</guid>
+    </item>
     <item>
       <title>Iranian state TV reports Mojtaba Khamenei named successor to the supreme leader.</title>
       <description>Iranian state TV reports Mojtaba Khamenei named successor to the supreme leader.</description>
@@ -1076,30 +1094,6 @@
       </jtf:source>
       <pubDate>Sat, 28 Feb 2026 00:03:11 +0000</pubDate>
       <guid isPermaLink="false">d6e477693231</guid>
-    </item>
-    <item>
-      <title>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' re...</title>
-      <description>former President Bill Clinton stated to lawmakers that he 'did nothing wrong' regarding Jeffrey Epstein.</description>
-      <jtf:source name="CBC News" url="" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.6" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 00:02:50 +0000</pubDate>
-      <guid isPermaLink="false">c48079039afb</guid>
-    </item>
-    <item>
-      <title>Sweden reported that a Russian drone flew near a French aircraft carrier.</title>
-      <description>Sweden reported that a Russian drone flew near a French aircraft carrier.</description>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.5" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 00:02:07 +0000</pubDate>
-      <guid isPermaLink="false">f32b817595f3</guid>
     </item>
   </channel>
 </rss>
