@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-09/d277a7cc0834.mp3",
       "published_at": "2026-03-09T13:00:51.172213+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-09-004",
+      "hash": "c4bc43d46a16",
+      "fact": "An attempted attack with explosives in New York City is under investigation.",
+      "source": "CBC News 2.7|9.0 \u00b7 NPR 4.3|8.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "NPR": "https://www.npr.org/sections/news/"
+      },
+      "audio": "../audio/archive/2026-03-09/e04f5ef37064.mp3",
+      "published_at": "2026-03-09T19:30:45.628284+00:00",
+      "status": "published"
     }
   ]
 }
