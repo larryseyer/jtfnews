@@ -1,5 +1,12 @@
 [
   {
+    "uid": "7ab074b0fae450d6f4df4d4215b8b751",
+    "updateDate": "2026-03-09T00:09:09.0Z",
+    "titleText": "JTF News: PBS NewsHour, BBC News",
+    "mainText": "A Russian missile struck an apartment building in Kharkiv, Ukraine, resulting in at least 10 deaths.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "17801b372714117cf7661e66c8992b83",
     "updateDate": "2026-03-09T00:06:46.0Z",
     "titleText": "JTF News: NPR, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-08T07:30:41.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Israel conducted strikes on oil storage sites near Tehran, Iran.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "42455e832bcf7382de7b6ad32b30a80c",
-    "updateDate": "2026-03-08T05:30:35.0Z",
-    "titleText": "JTF News: BBC News, Deutsche Welle",
-    "mainText": "An explosion was reported outside the U.S. embassy in Oslo.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
