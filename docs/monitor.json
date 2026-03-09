@@ -1,60 +1,55 @@
 {
-  "timestamp": "2026-03-09T23:25:55.722635+00:00",
+  "timestamp": "2026-03-09T23:30:47.659727+00:00",
+  "web_refresh_at": "2026-03-09T23:30:47.659727+00:00",
   "uptime_start": "2026-03-09T22:19:17.604872+00:00",
-  "uptime_seconds": 3998,
-  "availability_pct": 63.3,
+  "uptime_seconds": 4290,
+  "availability_pct": 63.4,
   "cycle": {
-    "number": 3,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
-    "stories_published": 0,
-    "stories_queued": 0
+    "number": 4,
+    "duration_seconds": 43.8,
+    "headlines_scraped": 174,
+    "headlines_processed": 5,
+    "stories_published": 1,
+    "stories_queued": 1
   },
   "api_costs": {
     "today": {
       "elevenlabs": {
-        "calls": 8,
-        "cost_usd": 0.023580000000000004,
+        "calls": 9,
+        "cost_usd": 0.025740000000000002,
         "details": {
-          "characters": 786
+          "characters": 858
         }
       },
       "claude": {
-        "calls": 673,
-        "cost_usd": 0.27321050000000013,
+        "calls": 681,
+        "cost_usd": 0.27590125000000015,
         "details": {
-          "input_tokens": 663862,
-          "output_tokens": 85796
+          "input_tokens": 670440,
+          "output_tokens": 86633
         }
       }
     },
-    "total_usd": 0.2968,
+    "total_usd": 0.3016,
     "month_estimate_usd": 9.49,
     "daily_budget": 1.61,
-    "budget_pct": 18.4
+    "budget_pct": 18.7
   },
   "queue": {
     "size": 62,
-    "oldest_item_age_hours": 23.9
+    "oldest_item_age_hours": 24.0
   },
-  "stories_today": 6,
+  "stories_today": 7,
   "sources": {
     "total": 20,
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-09T22:30:12.797857+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from White House: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/briefing-room/"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
@@ -73,5 +68,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-08/2026-03-08-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-08/2026-03-08-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
