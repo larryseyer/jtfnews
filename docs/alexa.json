@@ -1,5 +1,12 @@
 [
   {
+    "uid": "af0d1b33915807d671f37eb511598098",
+    "updateDate": "2026-03-09T23:30:40.0Z",
+    "titleText": "JTF News: CBC News, Government of Canada",
+    "mainText": "Canada commits nearly $1 billion to drone and airborne defence research.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "74d1a5c9588f1c784e4eb6e116570259",
     "updateDate": "2026-03-09T20:30:59.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-09T09:30:47.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
     "mainText": "An explosion occurred in front of a synagogue in Liege, Belgium.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "7ab074b0fae450d6f4df4d4215b8b751",
-    "updateDate": "2026-03-09T00:09:09.0Z",
-    "titleText": "JTF News: PBS NewsHour, BBC News",
-    "mainText": "A Russian missile struck an apartment building in Kharkiv, Ukraine, resulting in at least 10 deaths.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
