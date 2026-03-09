@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 00:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 09:30:45 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An explosion occurred in front of a synagogue in Liege, Belgium.</title>
+      <description>An explosion occurred in front of a synagogue in Liege, Belgium.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 09 Mar 2026 09:30:45 +0000</pubDate>
+      <guid isPermaLink="false">d3f64880ae56</guid>
+    </item>
     <item>
       <title>A Russian missile struck an apartment building in Kharkiv, Ukraine, resulting in...</title>
       <description>A Russian missile struck an apartment building in Kharkiv, Ukraine, resulting in at least 10 deaths.</description>
@@ -1082,18 +1094,6 @@
       <description>Daily summary of 8 verified facts from 2026-02-26.</description>
       <pubDate>Sat, 28 Feb 2026 01:59:40 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-02-26</guid>
-    </item>
-    <item>
-      <title>President Trump suggested the U.S. could have a 'friendly takeover of Cuba'.</title>
-      <description>President Trump suggested the U.S. could have a 'friendly takeover of Cuba'.</description>
-      <jtf:source name="PBS NewsHour" url="" accuracy="6.3" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="The Guardian" url="" accuracy="3.8" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
-        <jtf:owner name="Scott Trust Limited" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 00:03:40 +0000</pubDate>
-      <guid isPermaLink="false">8b44f17ec570</guid>
     </item>
   </channel>
 </rss>
