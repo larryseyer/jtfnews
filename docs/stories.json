@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-09/e04f5ef37064.mp3",
       "published_at": "2026-03-09T19:30:45.628284+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-09-005",
+      "hash": "9e46e75e7423",
+      "fact": "President Trump called on Australia to provide asylum to Iranian women's soccer players.",
+      "source": "ABC News Australia 1.8|9.0 \u00b7 France 24 4.4|9.0",
+      "source_urls": {
+        "ABC News Australia": "https://www.abc.net.au/news/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-09/c9b45c4ef3fc.mp3",
+      "published_at": "2026-03-09T20:30:57.555222+00:00",
+      "status": "published"
     }
   ]
 }
