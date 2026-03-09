@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-09/b44fae1ee764.mp3",
       "published_at": "2026-03-09T00:09:07.155482+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-09-002",
+      "hash": "62fafe77254e",
+      "fact": "An explosion occurred in front of a synagogue in Liege, Belgium.",
+      "source": "France 24 4.5|9.0 \u00b7 Deutsche Welle 5.7|9.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-09/de1ce7c9e845.mp3",
+      "published_at": "2026-03-09T09:30:45.736819+00:00",
+      "status": "published"
     }
   ]
 }
