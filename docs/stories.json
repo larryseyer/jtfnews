@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-09/de1ce7c9e845.mp3",
       "published_at": "2026-03-09T09:30:45.736819+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-09-003",
+      "hash": "082bd36345c0",
+      "fact": "Heavy rains and flooding killed at least 23 people in Nairobi.",
+      "source": "CBC News 2.7|9.0 \u00b7 BBC News 5.3|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-09/d277a7cc0834.mp3",
+      "published_at": "2026-03-09T13:00:51.172213+00:00",
+      "status": "published"
     }
   ]
 }
