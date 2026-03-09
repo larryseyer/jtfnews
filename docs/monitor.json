@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-03-09T01:00:44.464807+00:00",
-  "web_refresh_at": "2026-03-09T01:00:44.464807+00:00",
+  "timestamp": "2026-03-09T01:05:45.230760+00:00",
   "uptime_start": "2026-03-08T19:38:25.059431+00:00",
-  "uptime_seconds": 19339,
+  "uptime_seconds": 19640,
   "availability_pct": 60.6,
   "cycle": {
     "number": 12,
-    "duration_seconds": 40.4,
-    "headlines_scraped": 174,
-    "headlines_processed": 5,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 43,
-    "oldest_item_age_hours": 22.0
+    "oldest_item_age_hours": 22.1
   },
   "stories_today": 2,
   "sources": {
@@ -45,17 +44,11 @@
     "successful": 20,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-09T00:05:01.372472+00:00",
-      "level": "WARNING",
-      "message": "Could not push digest entry to GitHub: Command '['git', '-C', '/Users/larryseyer/JTFNews/docs', 'push']' returned non-zero exit status 1."
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
@@ -74,12 +67,5 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-08/2026-03-08-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-08/2026-03-08-daily-digest.mp4",
     "podcast_updated": true
-  },
-  "feedback": {
-    "today_submissions": 0,
-    "today_corrections": 0,
-    "total_submissions": 0,
-    "total_corrections": 0,
-    "total_spam_blocked": 0
   }
 }
