@@ -1,108 +1,17 @@
 {
-  "date": "2026-03-08",
+  "date": "2026-03-09",
   "stories": [
     {
-      "id": "2026-03-08-000",
-      "hash": "d9fe22483bc3",
-      "fact": "At least six people died after tornadoes in Michigan and Oklahoma, according to officials.",
-      "source": "NPR 4.3|8.5 \u00b7 BBC News 5.3|9.0",
+      "id": "2026-03-09-000",
+      "hash": "4eb0f4af8ba2",
+      "fact": "An explosion occurred at the U.S. embassy in Oslo, and Norway police are investigating whether it was terrorism.",
+      "source": "NPR 4.3|8.5 \u00b7 BBC News 5.2|9.0",
       "source_urls": {
         "NPR": "https://www.npr.org/sections/news/",
         "BBC News": "https://www.bbc.com/news/world"
       },
-      "audio": "../audio/archive/2026-03-08/063a61e64a97.mp3",
-      "published_at": "2026-03-08T00:05:34.016172+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-001",
-      "hash": "3f8f95fe6622",
-      "fact": "Russia conducted strikes on a Kharkiv apartment block in Ukraine.",
-      "source": "Deutsche Welle 5.8|9.5 \u00b7 BBC News 5.4|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-08/cf45ef1e2078.mp3",
-      "published_at": "2026-03-08T00:06:38.216318+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-002",
-      "hash": "8b018059843d",
-      "fact": "President Trump encouraged Latin American leaders to use military action to help the United States fight cartels.",
-      "source": "PBS NewsHour 5.9|9.0 \u00b7 The Guardian 2.9|2.5",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/archive/2026-03-08/7f27603b8a47.mp3",
-      "published_at": "2026-03-08T00:07:44.627396+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-003",
-      "hash": "70176cf33eb9",
-      "fact": "A bombing at a nightclub in Peru injured 33 people, including minors.",
-      "source": "PBS NewsHour 6.0|9.0 \u00b7 The Guardian 3.0|2.5",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/archive/2026-03-08/59bba1878328.mp3",
-      "published_at": "2026-03-08T00:07:57.834953+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-004",
-      "hash": "1fc343a38597",
-      "fact": "An explosion was reported outside the U.S. embassy in Oslo.",
-      "source": "BBC News 5.3|9.0 \u00b7 Deutsche Welle 5.7|9.5",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-08/629b4545b8d6.mp3",
-      "published_at": "2026-03-08T05:30:34.163063+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-005",
-      "hash": "09e7d972e9af",
-      "fact": "Israel conducted strikes on oil storage sites near Tehran, Iran.",
-      "source": "Deutsche Welle 5.8|9.5 \u00b7 France 24 4.5|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-08/e3a6ee501cad.mp3",
-      "published_at": "2026-03-08T07:30:39.362710+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-006",
-      "hash": "d03ebbe66c4e",
-      "fact": "A search for missing Flight MH370 concluded without locating the aircraft 12 years after its disappearance.",
-      "source": "PBS NewsHour 5.8|9.0 \u00b7 France 24 4.5|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-08/3bbca5874bed.mp3",
-      "published_at": "2026-03-08T17:00:45.101838+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-08-007",
-      "hash": "81fa3be2e0df",
-      "fact": "Iranian state TV reports Mojtaba Khamenei named successor to the supreme leader.",
-      "source": "PBS NewsHour 5.8|9.0 \u00b7 France 24 4.5|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-08/ea7e8132f978.mp3",
-      "published_at": "2026-03-08T22:30:46.945450+00:00",
+      "audio": "../audio/archive/2026-03-09/f60304a0f033.mp3",
+      "published_at": "2026-03-09T00:06:44.296047+00:00",
       "status": "published"
     }
   ]
