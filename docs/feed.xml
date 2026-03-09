@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 09:30:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 13:00:51 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Heavy rains and flooding killed at least 23 people in Nairobi.</title>
+      <description>Heavy rains and flooding killed at least 23 people in Nairobi.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Mon, 09 Mar 2026 13:00:51 +0000</pubDate>
+      <guid isPermaLink="false">712863ec7c80</guid>
+    </item>
     <item>
       <title>An explosion occurred in front of a synagogue in Liege, Belgium.</title>
       <description>An explosion occurred in front of a synagogue in Liege, Belgium.</description>
@@ -1088,12 +1100,6 @@
       </jtf:source>
       <pubDate>Sat, 28 Feb 2026 02:24:38 +0000</pubDate>
       <guid isPermaLink="false">a8c89f4e132a</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-26 - 8 verified facts</title>
-      <description>Daily summary of 8 verified facts from 2026-02-26.</description>
-      <pubDate>Sat, 28 Feb 2026 01:59:40 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-26</guid>
     </item>
   </channel>
 </rss>
