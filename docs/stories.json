@@ -78,6 +78,19 @@
       "audio": "../audio/archive/2026-03-09/c9b45c4ef3fc.mp3",
       "published_at": "2026-03-09T20:30:57.555222+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-09-006",
+      "hash": "a587fca82843",
+      "fact": "Canada commits nearly $1 billion to drone and airborne defence research.",
+      "source": "CBC News 2.7|9.0 \u00b7 Government of Canada 0.0|10.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Government of Canada": "https://www.canada.ca/en/news.html"
+      },
+      "audio": "../audio/archive/2026-03-09/d2df064fa561.mp3",
+      "published_at": "2026-03-09T23:30:38.385850+00:00",
+      "status": "published"
     }
   ]
 }
