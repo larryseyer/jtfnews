@@ -1,5 +1,12 @@
 [
   {
+    "uid": "f2fec6c706abf41508175fa8c456c298",
+    "updateDate": "2026-03-09T09:30:47.0Z",
+    "titleText": "JTF News: France 24, Deutsche Welle",
+    "mainText": "An explosion occurred in front of a synagogue in Liege, Belgium.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "7ab074b0fae450d6f4df4d4215b8b751",
     "updateDate": "2026-03-09T00:09:09.0Z",
     "titleText": "JTF News: PBS NewsHour, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-08T17:00:46.0Z",
     "titleText": "JTF News: PBS NewsHour, France 24",
     "mainText": "A search for missing Flight MH370 concluded without locating the aircraft 12 years after its disappearance.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "fcaf77cf663f9ff519d547b19ef7f207",
-    "updateDate": "2026-03-08T07:30:41.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Israel conducted strikes on oil storage sites near Tehran, Iran.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
