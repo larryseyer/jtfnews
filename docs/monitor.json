@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-10T13:55:50.999683+00:00",
+  "timestamp": "2026-03-10T14:00:49.024750+00:00",
+  "web_refresh_at": "2026-03-10T14:00:49.024750+00:00",
   "uptime_start": "2026-03-09T22:19:17.604872+00:00",
-  "uptime_seconds": 56193,
+  "uptime_seconds": 56491,
   "availability_pct": 65.0,
   "cycle": {
-    "number": 32,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 33,
+    "duration_seconds": 44.4,
+    "headlines_scraped": 173,
+    "headlines_processed": 7,
     "stories_published": 0,
     "stories_queued": 0
   },
@@ -21,30 +22,28 @@
         }
       },
       "claude": {
-        "calls": 483,
-        "cost_usd": 0.18974274999999993,
+        "calls": 490,
+        "cost_usd": 0.19322374999999997,
         "details": {
-          "input_tokens": 463286,
-          "output_tokens": 59137
+          "input_tokens": 471300,
+          "output_tokens": 60319
         }
       }
     },
-    "total_usd": 0.2232,
+    "total_usd": 0.2266,
     "month_estimate_usd": 9.49,
     "daily_budget": 1.61,
-    "budget_pct": 13.8
+    "budget_pct": 14.1
   },
   "queue": {
-    "size": 57,
-    "oldest_item_age_hours": 24.4
+    "size": 56,
+    "oldest_item_age_hours": 24.0
   },
   "stories_today": 8,
   "sources": {
     "total": 20,
-    "successful": 19,
-    "failed": [
-      "UK Parliament"
-    ]
+    "successful": 20,
+    "failed": []
   },
   "recent_errors": [
     {
@@ -56,7 +55,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 4,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
@@ -75,5 +74,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-09/2026-03-09-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-09/2026-03-09-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
