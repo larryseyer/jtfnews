@@ -393,5 +393,26 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>20</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 9, 2026</title>
+      <description>7 verified facts for March 9, 2026.</description>
+      <content:encoded><![CDATA[7 verified facts for March 9, 2026.
+
+- An explosion occurred at the U.S. embassy in Oslo, and Norway police are investigating whether it was terrorism.
+- A Russian missile struck an apartment building in Kharkiv, Ukraine, resulting in at least 10 deaths.
+- An explosion occurred in front of a synagogue in Liege, Belgium.
+- Heavy rains and flooding killed at least 23 people in Nairobi.
+- An attempted attack with explosives in New York City is under investigation.
+- President Trump called on Australia to provide asylum to Iranian women's soccer players.
+- Canada commits nearly $1 billion to drone and airborne defence research.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-09/2026-03-09-daily-digest.mp3" type="audio/mpeg" length="3705354"/>
+      <guid isPermaLink="false">jtf-news-2026-03-09</guid>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:28</itunes:duration>
+      <itunes:episode>21</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
