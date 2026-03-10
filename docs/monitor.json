@@ -1,15 +1,14 @@
 {
-  "timestamp": "2026-03-10T01:00:56.734984+00:00",
-  "web_refresh_at": "2026-03-10T01:00:56.734984+00:00",
+  "timestamp": "2026-03-10T01:05:57.515079+00:00",
   "uptime_start": "2026-03-09T22:19:17.604872+00:00",
-  "uptime_seconds": 9699,
+  "uptime_seconds": 10000,
   "availability_pct": 63.5,
   "cycle": {
     "number": 7,
-    "duration_seconds": 52.8,
-    "headlines_scraped": 174,
-    "headlines_processed": 7,
-    "stories_published": 1,
+    "duration_seconds": 0,
+    "headlines_scraped": 0,
+    "headlines_processed": 0,
+    "stories_published": 0,
     "stories_queued": 0
   },
   "api_costs": {
@@ -37,7 +36,7 @@
   },
   "queue": {
     "size": 49,
-    "oldest_item_age_hours": 23.5
+    "oldest_item_age_hours": 23.6
   },
   "stories_today": 3,
   "sources": {
@@ -47,11 +46,6 @@
   },
   "recent_errors": [
     {
-      "timestamp": "2026-03-10T00:04:07.059488+00:00",
-      "level": "WARNING",
-      "message": "Could not push digest entry to GitHub: Command '['git', '-C', '/Users/larryseyer/JTFNews/docs', 'push']' returned non-zero exit status 1."
-    },
-    {
       "timestamp": "2026-03-10T00:09:31.078282+00:00",
       "level": "ERROR",
       "message": "Claude API error: Request timed out or interrupted. This could be due to a network timeout, dropped connection, or request cancellation. See https://docs.anthropic.com/en/api/errors#long-requests for more details."
@@ -60,7 +54,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 29,
+    "next_cycle_minutes": 24,
     "degraded_services": []
   },
   "daily_digest": {
@@ -79,12 +73,5 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-09/2026-03-09-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-09/2026-03-09-daily-digest.mp4",
     "podcast_updated": true
-  },
-  "feedback": {
-    "today_submissions": 0,
-    "today_corrections": 0,
-    "total_submissions": 0,
-    "total_corrections": 0,
-    "total_spam_blocked": 0
   }
 }
