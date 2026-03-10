@@ -1,5 +1,12 @@
 [
   {
+    "uid": "45ab9b7f6ff8694bb053b449b31ee99a",
+    "updateDate": "2026-03-10T00:30:37.0Z",
+    "titleText": "JTF News: France 24, NPR",
+    "mainText": "Two men are charged in connection with a nail bomb thrown at a protest in New York.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "a2dbe26b400848e439a26db974a3ba73",
     "updateDate": "2026-03-10T00:06:50.0Z",
     "titleText": "JTF News: France 24, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-09T19:30:47.0Z",
     "titleText": "JTF News: CBC News, NPR",
     "mainText": "An attempted attack with explosives in New York City is under investigation.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "be69a397969b5081237f70c642d20954",
-    "updateDate": "2026-03-09T13:00:53.0Z",
-    "titleText": "JTF News: CBC News, BBC News",
-    "mainText": "Heavy rains and flooding killed at least 23 people in Nairobi.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
