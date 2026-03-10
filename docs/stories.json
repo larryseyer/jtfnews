@@ -78,6 +78,19 @@
       "audio": "../audio/archive/2026-03-10/c966518fb701.mp3",
       "published_at": "2026-03-10T12:00:49.700309+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-006",
+      "hash": "0a7b3e185b93",
+      "fact": "Volkswagen plans to reduce workforce by 50,000 positions by 2030.",
+      "source": "Deutsche Welle 5.7|9.5 \u00b7 BBC News 5.2|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-10/c21b07ec75ab.mp3",
+      "published_at": "2026-03-10T12:30:44.866288+00:00",
+      "status": "published"
     }
   ]
 }
