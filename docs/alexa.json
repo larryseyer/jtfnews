@@ -1,5 +1,12 @@
 [
   {
+    "uid": "c71b5e6d80a65c2cd22b4781ae9c86e1",
+    "updateDate": "2026-03-10T08:01:31.0Z",
+    "titleText": "JTF News: France 24, ABC News Australia",
+    "mainText": "Iran stated it will fight 'as long as needed' after President Trump stated the war will end 'soon'.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "4e5a823f72471d3c98237299fecd7590",
     "updateDate": "2026-03-10T01:00:42.0Z",
     "titleText": "JTF News: CBC News, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-09T23:30:40.0Z",
     "titleText": "JTF News: CBC News, Government of Canada",
     "mainText": "Canada commits nearly $1 billion to drone and airborne defence research.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "74d1a5c9588f1c784e4eb6e116570259",
-    "updateDate": "2026-03-09T20:30:59.0Z",
-    "titleText": "JTF News: ABC News Australia, France 24",
-    "mainText": "President Trump called on Australia to provide asylum to Iranian women's soccer players.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
