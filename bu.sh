@@ -23,10 +23,16 @@ RUNTIME_FILES=(
 
 # =============================================================================
 # PULL FIRST — remote is always ahead from main.py API pushes
+# Stash first because main.py may have modified runtime files locally
 # =============================================================================
 echo "Pulling latest from remote..."
+git stash --quiet 2>/dev/null
+STASHED=$?
 git pull --rebase origin main
 PULL_STATUS=$?
+if [ $STASHED -eq 0 ]; then
+    git stash pop --quiet 2>/dev/null
+fi
 
 # If rebase conflicts occur on runtime files, keep local (this IS the live server)
 if [ $PULL_STATUS -ne 0 ]; then
