@@ -104,6 +104,19 @@
       "audio": "../audio/archive/2026-03-10/deaf9b081189.mp3",
       "published_at": "2026-03-10T13:00:41.605108+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-008",
+      "hash": "10a0a9560bbf",
+      "fact": "Environment Canada warns of a freezing rain storm approaching southern Quebec.",
+      "source": "CBC News 2.7|9.0 \u00b7 Government of Canada 0.6|10.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Government of Canada": "https://www.canada.ca/en/news.html"
+      },
+      "audio": "../audio/archive/2026-03-10/fa606edb5bd3.mp3",
+      "published_at": "2026-03-10T17:01:02.137259+00:00",
+      "status": "published"
     }
   ]
 }
