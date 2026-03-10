@@ -1,5 +1,12 @@
 [
   {
+    "uid": "4e5a823f72471d3c98237299fecd7590",
+    "updateDate": "2026-03-10T01:00:42.0Z",
+    "titleText": "JTF News: CBC News, PBS NewsHour",
+    "mainText": "President Trump had a call with President Putin to discuss Iran, according to the Kremlin.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "45ab9b7f6ff8694bb053b449b31ee99a",
     "updateDate": "2026-03-10T00:30:37.0Z",
     "titleText": "JTF News: France 24, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-09T20:30:59.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
     "mainText": "President Trump called on Australia to provide asylum to Iranian women's soccer players.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "0f15f50f20dbe6d8a7fa075af6c5c337",
-    "updateDate": "2026-03-09T19:30:47.0Z",
-    "titleText": "JTF News: CBC News, NPR",
-    "mainText": "An attempted attack with explosives in New York City is under investigation.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
