@@ -117,6 +117,19 @@
       "audio": "../audio/archive/2026-03-10/fa606edb5bd3.mp3",
       "published_at": "2026-03-10T17:01:02.137259+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-009",
+      "hash": "7d29810d5464",
+      "fact": "The United Nations states that Russia's deportation of Ukrainian children constitutes a crime against humanity.",
+      "source": "BBC News 5.2|9.0 \u00b7 France 24 4.4|9.0",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-10/5a1e73034ae7.mp3",
+      "published_at": "2026-03-10T20:30:47.450485+00:00",
+      "status": "published"
     }
   ]
 }
