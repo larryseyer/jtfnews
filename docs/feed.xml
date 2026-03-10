@@ -5,8 +5,26 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 23:30:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 00:06:48 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>President Trump called on Australia to provide asylum to Iranian women's soccer ...</title>
+      <description>President Trump called on Australia to provide asylum to Iranian women's soccer players.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 00:06:48 +0000</pubDate>
+      <guid isPermaLink="false">dd5939fc23db</guid>
+    </item>
+    <item>
+      <title>[DAILY DIGEST] 2026-03-09 - 7 verified facts</title>
+      <description>Daily summary of 7 verified facts from 2026-03-09.</description>
+      <pubDate>Tue, 10 Mar 2026 00:04:06 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-09</guid>
+    </item>
     <item>
       <title>Canada commits nearly $1 billion to drone and airborne defence research.</title>
       <description>Canada commits nearly $1 billion to drone and airborne defence research.</description>
@@ -1094,18 +1112,6 @@
       <description>Daily summary of 10 verified facts from 2026-02-18.</description>
       <pubDate>Sat, 28 Feb 2026 03:01:21 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-02-18</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-17 - 20 verified facts</title>
-      <description>Daily summary of 20 verified facts from 2026-02-17.</description>
-      <pubDate>Sat, 28 Feb 2026 02:57:53 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-17</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-16 - 7 verified facts</title>
-      <description>Daily summary of 7 verified facts from 2026-02-16.</description>
-      <pubDate>Sat, 28 Feb 2026 02:52:28 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-16</guid>
     </item>
   </channel>
 </rss>
