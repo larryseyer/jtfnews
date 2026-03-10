@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-10/e2374627b80b.mp3",
       "published_at": "2026-03-10T00:30:35.933993+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-002",
+      "hash": "620611f6e5a6",
+      "fact": "President Trump had a call with President Putin to discuss Iran, according to the Kremlin.",
+      "source": "CBC News 2.7|9.0 \u00b7 PBS NewsHour 5.8|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-10/46ec6d9af39e.mp3",
+      "published_at": "2026-03-10T01:00:40.722680+00:00",
+      "status": "published"
     }
   ]
 }
