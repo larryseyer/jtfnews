@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b5122a6e7d85ff16c48132b5a6eae03f",
+    "updateDate": "2026-03-10T17:01:04.0Z",
+    "titleText": "JTF News: CBC News, Government of Canada",
+    "mainText": "Environment Canada warns of a freezing rain storm approaching southern Quebec.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "661b739c82f3b57ae94e4346172ca88b",
     "updateDate": "2026-03-10T13:00:43.0Z",
     "titleText": "JTF News: The Guardian, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-10T11:30:44.0Z",
     "titleText": "JTF News: Deutsche Welle, ABC News Australia",
     "mainText": "US authorities searched Jeffrey Epstein's former ranch.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "c71b5e6d80a65c2cd22b4781ae9c86e1",
-    "updateDate": "2026-03-10T08:01:31.0Z",
-    "titleText": "JTF News: France 24, ABC News Australia",
-    "mainText": "Iran stated it will fight 'as long as needed' after President Trump stated the war will end 'soon'.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
