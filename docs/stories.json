@@ -91,6 +91,19 @@
       "audio": "../audio/archive/2026-03-10/c21b07ec75ab.mp3",
       "published_at": "2026-03-10T12:30:44.866288+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-007",
+      "hash": "3d802a1781b0",
+      "fact": "Canadian police are investigating reports of shots fired at the U.S. consulate in Toronto.",
+      "source": "The Guardian 2.9|2.5 \u00b7 BBC News 5.2|9.0",
+      "source_urls": {
+        "The Guardian": "https://www.theguardian.com/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-10/deaf9b081189.mp3",
+      "published_at": "2026-03-10T13:00:41.605108+00:00",
+      "status": "published"
     }
   ]
 }
