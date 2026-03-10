@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-10/c9b45c4ef3fc.mp3",
       "published_at": "2026-03-10T00:06:48.491162+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-001",
+      "hash": "8836ae0ed8c4",
+      "fact": "Two men are charged in connection with a nail bomb thrown at a protest in New York.",
+      "source": "France 24 4.5|9.0 \u00b7 NPR 4.3|8.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "NPR": "https://www.npr.org/sections/news/"
+      },
+      "audio": "../audio/archive/2026-03-10/e2374627b80b.mp3",
+      "published_at": "2026-03-10T00:30:35.933993+00:00",
+      "status": "published"
     }
   ]
 }
