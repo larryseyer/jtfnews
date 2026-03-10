@@ -1,5 +1,12 @@
 [
   {
+    "uid": "67c4262ce348f6a670b06337e4868bd4",
+    "updateDate": "2026-03-10T20:30:49.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "The United Nations states that Russia's deportation of Ukrainian children constitutes a crime against humanity.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "b5122a6e7d85ff16c48132b5a6eae03f",
     "updateDate": "2026-03-10T17:01:04.0Z",
     "titleText": "JTF News: CBC News, Government of Canada",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-10T12:00:52.0Z",
     "titleText": "JTF News: France 24, Deutsche Welle",
     "mainText": "Five Iran national team players were granted asylum in Australia.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "dc829482365589b19902e2ed39953826",
-    "updateDate": "2026-03-10T11:30:44.0Z",
-    "titleText": "JTF News: Deutsche Welle, ABC News Australia",
-    "mainText": "US authorities searched Jeffrey Epstein's former ranch.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
