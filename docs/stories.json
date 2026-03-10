@@ -17,13 +17,13 @@
     {
       "id": "2026-03-10-001",
       "hash": "8836ae0ed8c4",
-      "fact": "Two men are charged in connection with a nail bomb thrown at a protest in New York.",
-      "source": "France 24 4.5|9.0 \u00b7 NPR 4.3|8.5",
+      "fact": "Two men are charged in connection with a nail bomb thrown at a protest in New York. The bomb was thrown outside the home of the Mayor of New York City, and they were charged with terror offences.",
+      "source": "France 24 4.5|9.0 \u00b7 NPR 4.3|8.5 \u00b7 BBC News 5.2|9.0",
       "source_urls": {
         "France 24": "https://www.france24.com/en/",
         "NPR": "https://www.npr.org/sections/news/"
       },
-      "audio": "../audio/archive/2026-03-10/e2374627b80b.mp3",
+      "audio": "../audio/archive/2026-03-10/086062330b12.mp3",
       "published_at": "2026-03-10T00:30:35.933993+00:00",
       "status": "published"
     },
@@ -38,6 +38,19 @@
       },
       "audio": "../audio/archive/2026-03-10/46ec6d9af39e.mp3",
       "published_at": "2026-03-10T01:00:40.722680+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-10-003",
+      "hash": "7da93342417a",
+      "fact": "Iran stated it will fight 'as long as needed' after President Trump stated the war will end 'soon'.",
+      "source": "France 24 4.5|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-10/8f9402c95944.mp3",
+      "published_at": "2026-03-10T08:01:28.976910+00:00",
       "status": "published"
     }
   ]
