@@ -5,13 +5,119 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 00:04:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 17:01:02 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
-    <item jtf:type="digest">
+    <item>
+      <title>Environment Canada warns of a freezing rain storm approaching southern Quebec.</title>
+      <description>Environment Canada warns of a freezing rain storm approaching southern Quebec.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Government of Canada" url="https://www.canada.ca/en/news.html" accuracy="0.6" bias="10.0" speed="7.5" consensus="8.5" control_type="government">
+        <jtf:owner name="Government of Canada" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 17:01:02 +0000</pubDate>
+      <guid isPermaLink="false">6cf0ac8f4810</guid>
+    </item>
+    <item>
+      <title>Canadian police are investigating reports of shots fired at the U.S. consulate i...</title>
+      <description>Canadian police are investigating reports of shots fired at the U.S. consulate in Toronto.</description>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="2.9" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 13:00:41 +0000</pubDate>
+      <guid isPermaLink="false">b82e51c92a6d</guid>
+    </item>
+    <item>
+      <title>Volkswagen plans to reduce workforce by 50,000 positions by 2030.</title>
+      <description>Volkswagen plans to reduce workforce by 50,000 positions by 2030.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 12:30:44 +0000</pubDate>
+      <guid isPermaLink="false">8aa86d73da38</guid>
+    </item>
+    <item>
+      <title>Five Iran national team players were granted asylum in Australia.</title>
+      <description>Five Iran national team players were granted asylum in Australia.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.6" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 12:00:49 +0000</pubDate>
+      <guid isPermaLink="false">c53571f3f235</guid>
+    </item>
+    <item>
+      <title>US authorities searched Jeffrey Epstein's former ranch.</title>
+      <description>US authorities searched Jeffrey Epstein's former ranch.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.6" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 11:30:42 +0000</pubDate>
+      <guid isPermaLink="false">9b4e2fd20d70</guid>
+    </item>
+    <item>
+      <title>Iran stated it will fight 'as long as needed' after President Trump stated the w...</title>
+      <description>Iran stated it will fight 'as long as needed' after President Trump stated the war will end 'soon'.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 08:01:28 +0000</pubDate>
+      <guid isPermaLink="false">af8115cfd832</guid>
+    </item>
+    <item>
+      <title>President Trump had a call with President Putin to discuss Iran, according to th...</title>
+      <description>President Trump had a call with President Putin to discuss Iran, according to the Kremlin.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.8" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 01:00:40 +0000</pubDate>
+      <guid isPermaLink="false">c72c274f71e8</guid>
+    </item>
+    <item>
+      <title>Two men are charged in connection with a nail bomb thrown at a protest in New Yo...</title>
+      <description>Two men are charged in connection with a nail bomb thrown at a protest in New York.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 00:30:35 +0000</pubDate>
+      <guid isPermaLink="false">3942a70e8b35</guid>
+    </item>
+    <item>
+      <title>President Trump called on Australia to provide asylum to Iranian women's soccer ...</title>
+      <description>President Trump called on Australia to provide asylum to Iranian women's soccer players.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.5" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 00:06:48 +0000</pubDate>
+      <guid isPermaLink="false">dd5939fc23db</guid>
+    </item>
+    <item>
       <title>[DAILY DIGEST] 2026-03-09 - 7 verified facts</title>
       <description>Daily summary of 7 verified facts from 2026-03-09.</description>
-      <link>https://youtube.com/watch?v=Gscm9Bp7uQs</link>
-      <jtf:archive>https://jtfnews.org/archive/2026-03-09.html</jtf:archive>
       <pubDate>Tue, 10 Mar 2026 00:04:06 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-03-09</guid>
     </item>
@@ -1024,96 +1130,6 @@
       </jtf:source>
       <pubDate>Sat, 28 Feb 2026 13:00:33 +0000</pubDate>
       <guid isPermaLink="false">d2d499d963db</guid>
-    </item>
-    <item>
-      <title>Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelt...</title>
-      <description>Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelter in place as the U.S. and Israel launched attacks.</description>
-      <jtf:source name="CBC News" url="" accuracy="3.1" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 12:30:50 +0000</pubDate>
-      <guid isPermaLink="false">9fc3386f7cf6</guid>
-    </item>
-    <item>
-      <title>President Trump stated the US began 'major combat operations' against Iran.</title>
-      <description>President Trump stated the US began 'major combat operations' against Iran.</description>
-      <jtf:source name="CBC News" url="" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 11:30:51 +0000</pubDate>
-      <guid isPermaLink="false">0720c00e4ca7</guid>
-    </item>
-    <item>
-      <title>Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix wi...</title>
-      <description>Paramount is set for a $111 billion acquisition by Warner Bros. after Netflix withdrew its bid.</description>
-      <jtf:source name="France 24" url="" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="" accuracy="5.3" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 08:30:32 +0000</pubDate>
-      <guid isPermaLink="false">889064c31b42</guid>
-    </item>
-    <item>
-      <title>Israel declared a state of emergency and stated it launched a strike against Ira...</title>
-      <description>Israel declared a state of emergency and stated it launched a strike against Iran.</description>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 07:30:53 +0000</pubDate>
-      <guid isPermaLink="false">de9a3c15c05d</guid>
-    </item>
-    <item>
-      <title>Israel announced it conducted a military strike against Iran.</title>
-      <description>Israel announced it conducted a military strike against Iran.</description>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="" accuracy="4.7" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 06:53:19 +0000</pubDate>
-      <guid isPermaLink="false">b6aa80757e40</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-20 - 11 verified facts</title>
-      <description>Daily summary of 11 verified facts from 2026-02-20.</description>
-      <pubDate>Sat, 28 Feb 2026 06:13:15 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-20</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-19 - 8 verified facts</title>
-      <description>Daily summary of 8 verified facts from 2026-02-19.</description>
-      <pubDate>Sat, 28 Feb 2026 03:04:37 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-19</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-18 - 10 verified facts</title>
-      <description>Daily summary of 10 verified facts from 2026-02-18.</description>
-      <pubDate>Sat, 28 Feb 2026 03:01:21 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-18</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-17 - 20 verified facts</title>
-      <description>Daily summary of 20 verified facts from 2026-02-17.</description>
-      <pubDate>Sat, 28 Feb 2026 02:57:53 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-17</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-02-16 - 7 verified facts</title>
-      <description>Daily summary of 7 verified facts from 2026-02-16.</description>
-      <pubDate>Sat, 28 Feb 2026 02:52:28 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-02-16</guid>
     </item>
   </channel>
 </rss>

@@ -5508,7 +5508,7 @@ def generate_and_upload_daily_summary(date: str):
     log.info(f"Starting daily digest for {date}")
 
     # Track digest status for dashboard
-    update_digest_status(date, status="in_progress", upload_status="pending", error_message=None)
+    update_digest_status(date, status="in_progress", upload_status="pending", error_message="")
 
     # Load stories for the date
     stories = load_stories_for_date(date)
@@ -5726,7 +5726,8 @@ def generate_and_upload_daily_summary(date: str):
             status="success",
             story_count=len(stories_data),
             duration_seconds=int(estimated_duration),
-            video_path=str(video_path)
+            video_path=str(video_path),
+            error_message=""
         )
 
         # Delete original OBS recording from Downloads to save space
@@ -6009,7 +6010,7 @@ def _upload_video_to_youtube(video_path: str, date: str):
             video_id = upload_to_youtube(video_path, date)
             if video_id:
                 log.info(f"Uploaded to YouTube: https://youtube.com/watch?v={video_id}")
-                update_digest_status(date, youtube_id=video_id, upload_status="success")
+                update_digest_status(date, youtube_id=video_id, upload_status="success", error_message="")
                 # Add digest entry to RSS feed
                 digest_status = load_digest_status()
                 story_count = digest_status.get("story_count", 0)
