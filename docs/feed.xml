@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 13:00:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 17:01:02 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Environment Canada warns of a freezing rain storm approaching southern Quebec.</title>
+      <description>Environment Canada warns of a freezing rain storm approaching southern Quebec.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Government of Canada" url="https://www.canada.ca/en/news.html" accuracy="0.6" bias="10.0" speed="7.5" consensus="8.5" control_type="government">
+        <jtf:owner name="Government of Canada" percent="100.0" />
+      </jtf:source>
+      <pubDate>Tue, 10 Mar 2026 17:01:02 +0000</pubDate>
+      <guid isPermaLink="false">6cf0ac8f4810</guid>
+    </item>
     <item>
       <title>Canadian police are investigating reports of shots fired at the U.S. consulate i...</title>
       <description>Canadian police are investigating reports of shots fired at the U.S. consulate in Toronto.</description>
@@ -1118,18 +1130,6 @@
       </jtf:source>
       <pubDate>Sat, 28 Feb 2026 13:00:33 +0000</pubDate>
       <guid isPermaLink="false">d2d499d963db</guid>
-    </item>
-    <item>
-      <title>Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelt...</title>
-      <description>Canadian Foreign Minister Chrystya Freeland urged all Canadians in Iran to shelter in place as the U.S. and Israel launched attacks.</description>
-      <jtf:source name="CBC News" url="" accuracy="3.1" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="" accuracy="1.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sat, 28 Feb 2026 12:30:50 +0000</pubDate>
-      <guid isPermaLink="false">9fc3386f7cf6</guid>
     </item>
   </channel>
 </rss>
