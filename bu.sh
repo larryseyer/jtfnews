@@ -6,9 +6,82 @@ if [ -z "$1" ]; then
 fi
 
 # =============================================================================
-# COMMIT MAIN BRANCH
+# RUNTIME FILES — main.py pushes these via GitHub API, never stage them
+# =============================================================================
+RUNTIME_FILES=(
+    "docs/feed.xml"
+    "docs/stories.json"
+    "docs/monitor.json"
+    "docs/podcast.xml"
+    "docs/archive/index.json"
+    "docs/corrections.json"
+    "docs/journalists.json"
+    "docs/alexa.json"
+    "data/"
+    "jtf.log"
+)
+
+# =============================================================================
+# PULL FIRST — remote is always ahead from main.py API pushes
+# =============================================================================
+echo "Pulling latest from remote..."
+git pull --rebase origin main
+PULL_STATUS=$?
+
+# If rebase conflicts occur on runtime files, keep local (this IS the live server)
+if [ $PULL_STATUS -ne 0 ]; then
+    echo ""
+    echo "Rebase conflict detected. Checking for runtime file conflicts..."
+    CONFLICT_FILES=$(git diff --name-only --diff-filter=U)
+    ALL_RUNTIME=true
+    for file in $CONFLICT_FILES; do
+        IS_RUNTIME=false
+        for rf in "${RUNTIME_FILES[@]}"; do
+            if [[ "$file" == "$rf" || "$file" == "$rf"* ]]; then
+                IS_RUNTIME=true
+                break
+            fi
+        done
+        if [ "$IS_RUNTIME" = true ]; then
+            echo "  Resolving runtime file (keeping local): $file"
+            git checkout --ours "$file"
+            git add "$file"
+        else
+            ALL_RUNTIME=false
+            echo "  NON-RUNTIME CONFLICT: $file — resolve manually"
+        fi
+    done
+    if [ "$ALL_RUNTIME" = false ]; then
+        echo ""
+        echo "Non-runtime conflicts need manual resolution. Run 'git rebase --continue' after fixing."
+        exit 1
+    fi
+    git rebase --continue --no-edit 2>/dev/null || git rebase --continue
+fi
+
+# =============================================================================
+# STAGE EVERYTHING EXCEPT RUNTIME FILES
 # =============================================================================
 git add .
+
+# Unstage runtime files
+for rf in "${RUNTIME_FILES[@]}"; do
+    git reset HEAD -- "$rf" 2>/dev/null
+done
+
+# Check if anything is staged
+if git diff --cached --quiet; then
+    echo "Nothing to commit (only runtime files changed)."
+    exit 0
+fi
+
+echo ""
+echo "Staged changes:"
+git diff --cached --stat
+
+# =============================================================================
+# COMMIT AND PUSH
+# =============================================================================
 git commit -m "$1"
 git push origin main
 
@@ -25,4 +98,4 @@ cd "$SOURCE" || exit 1
 zip -r "$ZIP_FILE" . -x "media/*" "media/" "video/*" "video/" "audio/*" "audio/" "data/*" "data/" "venv/*" "venv/" "__pycache__/*" "__pycache__/" ".git/*" ".git/" ".env"
 
 echo ""
-echo "Done! Website updates (feed.xml, stories.json, etc.) are pushed automatically by main.py"
+echo "Done!"
