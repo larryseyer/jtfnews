@@ -1,5 +1,12 @@
 [
   {
+    "uid": "c2a3c3c308f593af560a4129b73e1ca5",
+    "updateDate": "2026-03-10T12:00:52.0Z",
+    "titleText": "JTF News: France 24, Deutsche Welle",
+    "mainText": "Five Iran national team players were granted asylum in Australia.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "dc829482365589b19902e2ed39953826",
     "updateDate": "2026-03-10T11:30:44.0Z",
     "titleText": "JTF News: Deutsche Welle, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-10T00:30:37.0Z",
     "titleText": "JTF News: France 24, NPR",
     "mainText": "Two men are charged in connection with a nail bomb thrown at a protest in New York.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "a2dbe26b400848e439a26db974a3ba73",
-    "updateDate": "2026-03-10T00:06:50.0Z",
-    "titleText": "JTF News: France 24, ABC News Australia",
-    "mainText": "President Trump called on Australia to provide asylum to Iranian women's soccer players.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
