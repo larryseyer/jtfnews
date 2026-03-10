@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-10/861bb3b17072.mp3",
       "published_at": "2026-03-10T11:30:42.563402+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-10-005",
+      "hash": "491ec57e1fc9",
+      "fact": "Five Iran national team players were granted asylum in Australia.",
+      "source": "France 24 4.5|9.0 \u00b7 Deutsche Welle 5.6|9.5",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-10/c966518fb701.mp3",
+      "published_at": "2026-03-10T12:00:49.700309+00:00",
+      "status": "published"
     }
   ]
 }
