@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-11/bb442a91da18.mp3",
       "published_at": "2026-03-11T00:15:21.689144+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-11-003",
+      "hash": "f64d8e16d9e0",
+      "fact": "Los Angeles police arrested a woman in connection with a shooting at Rihanna's residence.",
+      "source": "CBC News 2.7|9.0 \u00b7 Deutsche Welle 5.7|9.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-11/2088ec68e22d.mp3",
+      "published_at": "2026-03-11T01:00:39.709898+00:00",
+      "status": "published"
     }
   ]
 }
