@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-03-11T19:46:08.463879+00:00",
-  "uptime_start": "2026-03-10T19:28:18.954744+00:00",
-  "uptime_seconds": 87470,
-  "availability_pct": 65.2,
+  "timestamp": "2026-03-11T19:51:52.585971+00:00",
+  "web_refresh_at": "2026-03-11T19:51:52.585971+00:00",
+  "uptime_start": "2026-03-11T19:50:50.042653+00:00",
+  "uptime_seconds": 63,
+  "availability_pct": 65.1,
   "cycle": {
-    "number": 50,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 1,
+    "duration_seconds": 61.7,
+    "headlines_scraped": 177,
+    "headlines_processed": 16,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 2
   },
   "api_costs": {
     "today": {
@@ -21,34 +22,34 @@
         }
       },
       "claude": {
-        "calls": 647,
-        "cost_usd": 0.2612969999999997,
+        "calls": 664,
+        "cost_usd": 0.2685202499999997,
         "details": {
-          "input_tokens": 633253,
-          "output_tokens": 82387
+          "input_tokens": 651486,
+          "output_tokens": 84519
         }
       }
     },
-    "total_usd": 0.2891,
-    "month_estimate_usd": 9.48,
+    "total_usd": 0.2963,
+    "month_estimate_usd": 9.51,
     "daily_budget": 1.61,
-    "budget_pct": 17.9
+    "budget_pct": 18.4
   },
   "queue": {
-    "size": 56,
-    "oldest_item_age_hours": 23.8
+    "size": 58,
+    "oldest_item_age_hours": 23.9
   },
   "stories_today": 7,
   "sources": {
-    "total": 20,
-    "successful": 20,
+    "total": 22,
+    "successful": 22,
     "failed": []
   },
   "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 13,
+    "next_cycle_minutes": 8,
     "degraded_services": []
   },
   "daily_digest": {
@@ -67,5 +68,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-10/2026-03-10-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-10/2026-03-10-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
