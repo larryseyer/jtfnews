@@ -1,5 +1,12 @@
 [
   {
+    "uid": "206a9ed0de45a242f199ce69af10c0a2",
+    "updateDate": "2026-03-11T00:15:23.0Z",
+    "titleText": "JTF News: UN News, France 24",
+    "mainText": "Approximately 700,000 people are displaced in Lebanon.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "3b8ed69a23e6c77646af0453401a1f1f",
     "updateDate": "2026-03-11T00:12:07.0Z",
     "titleText": "JTF News: PBS NewsHour, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-10T17:01:04.0Z",
     "titleText": "JTF News: CBC News, Government of Canada",
     "mainText": "Environment Canada warns of a freezing rain storm approaching southern Quebec.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "661b739c82f3b57ae94e4346172ca88b",
-    "updateDate": "2026-03-10T13:00:43.0Z",
-    "titleText": "JTF News: The Guardian, BBC News",
-    "mainText": "Canadian police are investigating reports of shots fired at the U.S. consulate in Toronto.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
