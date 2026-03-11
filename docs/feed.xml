@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 01:00:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 08:00:41 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Large parts of Dresden are being evacuated after a 250-kilogram World War II bom...</title>
+      <description>Large parts of Dresden are being evacuated after a 250-kilogram World War II bomb was found.</description>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.7" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 11 Mar 2026 08:00:41 +0000</pubDate>
+      <guid isPermaLink="false">a79312b85386</guid>
+    </item>
     <item>
       <title>A freezing rain storm is forecast for Ontario, Quebec, and Atlantic provinces.</title>
       <description>A freezing rain storm is forecast for Ontario, Quebec, and Atlantic provinces.</description>
@@ -1122,14 +1134,6 @@
       </jtf:source>
       <pubDate>Sun, 01 Mar 2026 17:00:36 +0000</pubDate>
       <guid isPermaLink="false">3e047d64bedb</guid>
-    </item>
-    <item>
-      <title>[CORRECTION] The United States reported no American casualties following ...</title>
-      <description>CORRECTION: Earlier we reported that The United States reported no American casualties following strikes by Iran.. CBC News, France 24 now report that The US military reports 3 service members killed and 5 seriously wounded in conflict with Iran..</description>
-      <jtf:source name="CBC News" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
-      <jtf:source name="France 24" url="" accuracy="—" bias="—" speed="—" consensus="—" control_type="correction" />
-      <pubDate>Sun, 01 Mar 2026 15:30:56 +0000</pubDate>
-      <guid isPermaLink="false">e031c57f3b22</guid>
     </item>
   </channel>
 </rss>
