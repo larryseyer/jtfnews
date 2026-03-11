@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-11/2088ec68e22d.mp3",
       "published_at": "2026-03-11T01:00:39.709898+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-11-004",
+      "hash": "20b10ffea294",
+      "fact": "A freezing rain storm is forecast for Ontario, Quebec, and Atlantic provinces.",
+      "source": "CBC News 2.8|9.0 \u00b7 Government of Canada 1.2|10.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Government of Canada": "https://www.canada.ca/en/news.html"
+      },
+      "audio": "../audio/archive/2026-03-11/7ff179f12353.mp3",
+      "published_at": "2026-03-11T01:00:54.029030+00:00",
+      "status": "published"
     }
   ]
 }
