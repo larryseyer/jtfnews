@@ -1,5 +1,12 @@
 [
   {
+    "uid": "b5ea8e97fb6b20d34cd8e1d52e2a3477",
+    "updateDate": "2026-03-11T21:00:50.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "af9002058d21fce47bbc42e3fbcd8d61",
     "updateDate": "2026-03-11T15:00:42.0Z",
     "titleText": "JTF News: BBC News, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-11T01:00:42.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
     "mainText": "Los Angeles police arrested a woman in connection with a shooting at Rihanna's residence.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "206a9ed0de45a242f199ce69af10c0a2",
-    "updateDate": "2026-03-11T00:15:23.0Z",
-    "titleText": "JTF News: UN News, France 24",
-    "mainText": "Approximately 700,000 people are displaced in Lebanon.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
