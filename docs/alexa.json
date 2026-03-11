@@ -1,5 +1,12 @@
 [
   {
+    "uid": "57da21dda58e90555152bbbfed4db4cc",
+    "updateDate": "2026-03-11T01:00:55.0Z",
+    "titleText": "JTF News: CBC News, Government of Canada",
+    "mainText": "A freezing rain storm is forecast for Ontario, Quebec, and Atlantic provinces.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "f7a808dc8dfca4d33364bc060c61608b",
     "updateDate": "2026-03-11T01:00:42.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-11T00:10:58.0Z",
     "titleText": "JTF News: CBC News, The Guardian",
     "mainText": "Shots were fired at the U.S. consulate in Canada; police characterized the incident as a national security matter.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "67c4262ce348f6a670b06337e4868bd4",
-    "updateDate": "2026-03-10T20:30:49.0Z",
-    "titleText": "JTF News: BBC News, France 24",
-    "mainText": "The United Nations states that Russia's deportation of Ukrainian children constitutes a crime against humanity.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
