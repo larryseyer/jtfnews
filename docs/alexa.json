@@ -1,5 +1,12 @@
 [
   {
+    "uid": "62de8427f3b05f6bb373814428486f36",
+    "updateDate": "2026-03-11T08:00:43.0Z",
+    "titleText": "JTF News: Deutsche Welle, BBC News",
+    "mainText": "Large parts of Dresden are being evacuated after a 250-kilogram World War II bomb was found.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "57da21dda58e90555152bbbfed4db4cc",
     "updateDate": "2026-03-11T01:00:55.0Z",
     "titleText": "JTF News: CBC News, Government of Canada",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-11T00:12:07.0Z",
     "titleText": "JTF News: PBS NewsHour, ABC News Australia",
     "mainText": "Five members of the Iranian women's soccer team were granted asylum in Australia.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "339ed4200c601e9868c88f33ace17515",
-    "updateDate": "2026-03-11T00:10:58.0Z",
-    "titleText": "JTF News: CBC News, The Guardian",
-    "mainText": "Shots were fired at the U.S. consulate in Canada; police characterized the incident as a national security matter.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
