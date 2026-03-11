@@ -414,5 +414,29 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>21</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 10, 2026</title>
+      <description>10 verified facts for March 10, 2026.</description>
+      <content:encoded><![CDATA[10 verified facts for March 10, 2026.
+
+- President Trump called on Australia to provide asylum to Iranian women's soccer players.
+- Two men are charged in connection with a nail bomb thrown at a protest in New York.
+- President Trump had a call with President Putin to discuss Iran, according to the Kremlin.
+- Iran stated it will fight 'as long as needed' after President Trump stated the war will end 'soon'.
+- US authorities searched Jeffrey Epstein's former ranch.
+- Five Iran national team players were granted asylum in Australia.
+- Volkswagen plans to reduce workforce by 50,000 positions by 2030.
+- Canadian police are investigating reports of shots fired at the U.S. consulate in Toronto.
+- Environment Canada warns of a freezing rain storm approaching southern Quebec.
+- The United Nations states that Russia's deportation of Ukrainian children constitutes a crime against humanity.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-10/2026-03-10-daily-digest.mp3" type="audio/mpeg" length="4836978"/>
+      <guid isPermaLink="false">jtf-news-2026-03-10</guid>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:56</itunes:duration>
+      <itunes:episode>22</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
