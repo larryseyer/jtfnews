@@ -353,6 +353,44 @@
       "notes": "Official Government of Canada news; Atom feed; public records"
     },
     {
+      "id": "who",
+      "name": "World Health Organization",
+      "url": "https://www.who.int/news-room/releases",
+      "rss": null,
+      "scrape_selector": "p.heading",
+      "tier": 1,
+      "control_type": "international_organization",
+      "owner": "World Health Organization",
+      "owner_display": "United Nations (194 member states)",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.5,
+        "bias": 0.1,
+        "speed": 7.0,
+        "consensus": 9.0
+      },
+      "notes": "Official WHO news releases; international health authority; no RSS available"
+    },
+    {
+      "id": "cdc",
+      "name": "CDC Newsroom",
+      "url": "https://www.cdc.gov/media/",
+      "rss": null,
+      "scrape_selector": "a",
+      "tier": 1,
+      "control_type": "government",
+      "owner": "US Government",
+      "owner_display": "US Executive Branch (HHS)",
+      "institutional_holders": [],
+      "ratings": {
+        "accuracy": 9.5,
+        "bias": 0.1,
+        "speed": 8.0,
+        "consensus": 9.0
+      },
+      "notes": "Official CDC newsroom; US federal health agency; scrape headlines from anchor tags"
+    },
+    {
       "id": "propublica",
       "name": "ProPublica",
       "url": "https://www.propublica.org/",
