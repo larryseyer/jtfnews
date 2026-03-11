@@ -266,7 +266,7 @@ Across all channels, always:
 ### Quarterly Ownership Audit
 On startup, main.py checks if the current quarter's ownership audit has been completed. If not:
 1. Blocks startup
-2. Uses Claude to research current ownership for all 20 sources
+2. Uses Claude to research current ownership for all 22 sources
 3. Presents any changes found
 4. Requires confirmation before applying changes
 5. Logs the audit to `data/ownership_audit.json`

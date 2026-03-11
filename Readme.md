@@ -41,7 +41,7 @@ Turn JTF News into your desktop screen saver.
 
 ## How It Works
 
-1. Headlines gathered from 20 sources worldwide
+1. Headlines gathered from 22 sources worldwide
 2. AI extracts only verifiable facts
 3. Facts wait until confirmed by 2+ unrelated sources
 4. Verified facts broadcast with full attribution

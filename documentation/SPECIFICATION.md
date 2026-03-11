@@ -312,7 +312,7 @@ Each source has:
 ]
 ```
 
-*Note: This shows 9 of 20 sources. Full source list with government/primary sources is in `config.json`.*
+*Note: This shows 9 of 22 sources. Full source list with government/primary sources is in `config.json`.*
 
 ### 5.2 Ownership Verification Rule
 
@@ -1752,7 +1752,7 @@ JTF News - Just The Facts
 Automated news system that reports only verified facts.
 
 This is THE ONLY SCRIPT. It does everything:
-- Scrapes headlines from 20 sources
+- Scrapes headlines from 22 sources
 - Processes with Claude AI to strip editorialization
 - Verifies 2+ unrelated sources
 - Writes output files for OBS
@@ -2245,7 +2245,7 @@ After implementation, verify each item:
 ### 21.1 Core Functionality
 
 - [ ] `python main.py` starts without errors
-- [ ] Scrapes at least 17/20 sources successfully
+- [ ] Scrapes at least 19/22 sources successfully
 - [ ] Claude API processes headlines correctly
 - [ ] Stories with <85% confidence are rejected
 - [ ] Single-source stories are queued, not published
