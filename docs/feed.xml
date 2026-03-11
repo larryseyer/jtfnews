@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 15:00:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 21:00:48 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.</title>
+      <description>Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.1" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 11 Mar 2026 21:00:48 +0000</pubDate>
+      <guid isPermaLink="false">de6d8052b89d</guid>
+    </item>
     <item>
       <title>Three people, including a French aid worker, were killed in drone strikes in a r...</title>
       <description>Three people, including a French aid worker, were killed in drone strikes in a rebel-held city in the Democratic Republic of Congo.</description>
@@ -1122,18 +1134,6 @@
       </jtf:source>
       <pubDate>Sun, 01 Mar 2026 19:00:41 +0000</pubDate>
       <guid isPermaLink="false">bc9ba98636c5</guid>
-    </item>
-    <item>
-      <title>Nine people died in a missile attack on Israel; Iran conducted a strike in the r...</title>
-      <description>Nine people died in a missile attack on Israel; Iran conducted a strike in the region.</description>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 01 Mar 2026 17:30:38 +0000</pubDate>
-      <guid isPermaLink="false">ed0846c35ff7</guid>
     </item>
   </channel>
 </rss>
