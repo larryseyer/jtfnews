@@ -5,8 +5,26 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 20:30:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:10:56 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shots were fired at the U.S. consulate in Canada; police characterized the incid...</title>
+      <description>Shots were fired at the U.S. consulate in Canada; police characterized the incident as a national security matter.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="3.0" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <pubDate>Wed, 11 Mar 2026 00:10:56 +0000</pubDate>
+      <guid isPermaLink="false">bb2ba8b1a37a</guid>
+    </item>
+    <item>
+      <title>[DAILY DIGEST] 2026-03-10 - 10 verified facts</title>
+      <description>Daily summary of 10 verified facts from 2026-03-10.</description>
+      <pubDate>Wed, 11 Mar 2026 00:05:24 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-10</guid>
+    </item>
     <item>
       <title>The United Nations states that Russia's deportation of Ukrainian children consti...</title>
       <description>The United Nations states that Russia's deportation of Ukrainian children constitutes a crime against humanity.</description>
@@ -1106,30 +1124,6 @@
       <description>Daily summary of 13 verified facts from 2026-02-28.</description>
       <pubDate>Sun, 01 Mar 2026 06:06:56 +0000</pubDate>
       <guid isPermaLink="false">digest-2026-02-28</guid>
-    </item>
-    <item>
-      <title>The United States reported no American casualties following strikes by Iran.</title>
-      <description>The United States reported no American casualties following strikes by Iran.</description>
-      <jtf:source name="France 24" url="" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 01 Mar 2026 00:02:05 +0000</pubDate>
-      <guid isPermaLink="false">90c10a27b37d</guid>
-    </item>
-    <item>
-      <title>A cargo plane crashed near La Paz, Bolivia, resulting in 15 deaths.</title>
-      <description>A cargo plane crashed near La Paz, Bolivia, resulting in 15 deaths.</description>
-      <jtf:source name="BBC News" url="" accuracy="5.4" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
-        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="Deutsche Welle" url="" accuracy="5.8" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <pubDate>Sun, 01 Mar 2026 00:00:39 +0000</pubDate>
-      <guid isPermaLink="false">7d5d0f5aaa6f</guid>
     </item>
   </channel>
 </rss>
