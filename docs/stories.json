@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-11/20a8b36a5214.mp3",
       "published_at": "2026-03-11T00:10:56.435300+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-11-001",
+      "hash": "071a5da94383",
+      "fact": "Five members of the Iranian women's soccer team were granted asylum in Australia.",
+      "source": "PBS NewsHour 5.6|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-11/b15985b9ae88.mp3",
+      "published_at": "2026-03-11T00:12:05.221531+00:00",
+      "status": "published"
     }
   ]
 }
