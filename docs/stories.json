@@ -1,134 +1,17 @@
 {
-  "date": "2026-03-10",
+  "date": "2026-03-11",
   "stories": [
     {
-      "id": "2026-03-10-000",
-      "hash": "9e46e75e7423",
-      "fact": "President Trump called on Australia to provide asylum to Iranian women's soccer players.",
-      "source": "France 24 4.5|9.0 \u00b7 ABC News Australia 1.8|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-10/c9b45c4ef3fc.mp3",
-      "published_at": "2026-03-10T00:06:48.491162+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-001",
-      "hash": "8836ae0ed8c4",
-      "fact": "Two men are charged in connection with a nail bomb thrown at a protest in New York. The bomb was thrown outside the home of the Mayor of New York City, and they were charged with terror offences.",
-      "source": "France 24 4.5|9.0 \u00b7 NPR 4.3|8.5 \u00b7 BBC News 5.2|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "NPR": "https://www.npr.org/sections/news/"
-      },
-      "audio": "../audio/archive/2026-03-10/086062330b12.mp3",
-      "published_at": "2026-03-10T00:30:35.933993+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-002",
-      "hash": "620611f6e5a6",
-      "fact": "President Trump had a call with President Putin to discuss Iran, according to the Kremlin.",
-      "source": "CBC News 2.7|9.0 \u00b7 PBS NewsHour 5.8|9.0",
+      "id": "2026-03-11-000",
+      "hash": "034bd55797f2",
+      "fact": "Shots were fired at the U.S. consulate in Canada; police characterized the incident as a national security matter.",
+      "source": "CBC News 2.7|9.0 \u00b7 The Guardian 3.0|2.5",
       "source_urls": {
         "CBC News": "https://www.cbc.ca/news/world",
-        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+        "The Guardian": "https://www.theguardian.com/world"
       },
-      "audio": "../audio/archive/2026-03-10/46ec6d9af39e.mp3",
-      "published_at": "2026-03-10T01:00:40.722680+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-003",
-      "hash": "7da93342417a",
-      "fact": "Iran stated it will fight 'as long as needed' after President Trump stated the war will end 'soon'.",
-      "source": "France 24 4.5|9.0 \u00b7 ABC News Australia 1.8|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-10/8f9402c95944.mp3",
-      "published_at": "2026-03-10T08:01:28.976910+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-004",
-      "hash": "2a6558c7644a",
-      "fact": "US authorities searched Jeffrey Epstein's former ranch.",
-      "source": "Deutsche Welle 5.6|9.5 \u00b7 ABC News Australia 1.8|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-10/861bb3b17072.mp3",
-      "published_at": "2026-03-10T11:30:42.563402+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-005",
-      "hash": "491ec57e1fc9",
-      "fact": "Five Iran national team players were granted asylum in Australia.",
-      "source": "France 24 4.5|9.0 \u00b7 Deutsche Welle 5.6|9.5",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-10/c966518fb701.mp3",
-      "published_at": "2026-03-10T12:00:49.700309+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-006",
-      "hash": "0a7b3e185b93",
-      "fact": "Volkswagen plans to reduce workforce by 50,000 positions by 2030.",
-      "source": "Deutsche Welle 5.7|9.5 \u00b7 BBC News 5.2|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-10/c21b07ec75ab.mp3",
-      "published_at": "2026-03-10T12:30:44.866288+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-007",
-      "hash": "3d802a1781b0",
-      "fact": "Canadian police are investigating reports of shots fired at the U.S. consulate in Toronto.",
-      "source": "The Guardian 2.9|2.5 \u00b7 BBC News 5.2|9.0",
-      "source_urls": {
-        "The Guardian": "https://www.theguardian.com/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-10/deaf9b081189.mp3",
-      "published_at": "2026-03-10T13:00:41.605108+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-008",
-      "hash": "10a0a9560bbf",
-      "fact": "Environment Canada warns of a freezing rain storm approaching southern Quebec.",
-      "source": "CBC News 2.7|9.0 \u00b7 Government of Canada 0.6|10.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "Government of Canada": "https://www.canada.ca/en/news.html"
-      },
-      "audio": "../audio/archive/2026-03-10/fa606edb5bd3.mp3",
-      "published_at": "2026-03-10T17:01:02.137259+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-10-009",
-      "hash": "7d29810d5464",
-      "fact": "The United Nations states that Russia's deportation of Ukrainian children constitutes a crime against humanity.",
-      "source": "BBC News 5.2|9.0 \u00b7 France 24 4.4|9.0",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-10/5a1e73034ae7.mp3",
-      "published_at": "2026-03-10T20:30:47.450485+00:00",
+      "audio": "../audio/archive/2026-03-11/20a8b36a5214.mp3",
+      "published_at": "2026-03-11T00:10:56.435300+00:00",
       "status": "published"
     }
   ]
