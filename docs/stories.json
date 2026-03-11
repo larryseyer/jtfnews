@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-11/b15985b9ae88.mp3",
       "published_at": "2026-03-11T00:12:05.221531+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-11-002",
+      "hash": "236689a6d399",
+      "fact": "Approximately 700,000 people are displaced in Lebanon.",
+      "source": "UN News 7.2*|9.5 \u00b7 France 24 4.4|9.0",
+      "source_urls": {
+        "UN News": "https://news.un.org/en/",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-11/bb442a91da18.mp3",
+      "published_at": "2026-03-11T00:15:21.689144+00:00",
+      "status": "published"
     }
   ]
 }
