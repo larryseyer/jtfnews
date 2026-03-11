@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-11/7ff179f12353.mp3",
       "published_at": "2026-03-11T01:00:54.029030+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-11-005",
+      "hash": "ba00a10cb5f9",
+      "fact": "Large parts of Dresden are being evacuated after a 250-kilogram World War II bomb was found.",
+      "source": "Deutsche Welle 5.7|9.5 \u00b7 BBC News 5.2|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-11/77b07a002f0e.mp3",
+      "published_at": "2026-03-11T08:00:41.201047+00:00",
+      "status": "published"
     }
   ]
 }
