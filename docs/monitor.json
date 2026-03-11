@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-03-11T23:26:06.809153+00:00",
+  "timestamp": "2026-03-11T23:31:06.354267+00:00",
+  "web_refresh_at": "2026-03-11T23:31:06.354267+00:00",
   "uptime_start": "2026-03-11T21:24:57.687459+00:00",
-  "uptime_seconds": 7269,
-  "availability_pct": 65.3,
+  "uptime_seconds": 7569,
+  "availability_pct": 65.4,
   "cycle": {
-    "number": 5,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 6,
+    "duration_seconds": 62.3,
+    "headlines_scraped": 177,
+    "headlines_processed": 14,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 3
   },
   "api_costs": {
     "today": {
@@ -21,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 757,
-        "cost_usd": 0.30449774999999984,
+        "calls": 773,
+        "cost_usd": 0.3112592499999998,
         "details": {
-          "input_tokens": 738956,
-          "output_tokens": 95807
+          "input_tokens": 755337,
+          "output_tokens": 97940
         }
       }
     },
-    "total_usd": 0.3395,
+    "total_usd": 0.3463,
     "month_estimate_usd": 9.51,
     "daily_budget": 1.61,
-    "budget_pct": 21.0
+    "budget_pct": 21.5
   },
   "queue": {
-    "size": 60,
-    "oldest_item_age_hours": 24.4
+    "size": 62,
+    "oldest_item_age_hours": 23.4
   },
   "stories_today": 8,
   "sources": {
@@ -48,7 +49,7 @@
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 28,
     "degraded_services": []
   },
   "daily_digest": {
@@ -67,5 +68,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-10/2026-03-10-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-10/2026-03-10-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
