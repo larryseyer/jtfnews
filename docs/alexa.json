@@ -1,5 +1,12 @@
 [
   {
+    "uid": "af9002058d21fce47bbc42e3fbcd8d61",
+    "updateDate": "2026-03-11T15:00:42.0Z",
+    "titleText": "JTF News: BBC News, The Guardian",
+    "mainText": "Three people, including a French aid worker, were killed in drone strikes in a rebel-held city in the Democratic Republic of Congo.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "62de8427f3b05f6bb373814428486f36",
     "updateDate": "2026-03-11T08:00:43.0Z",
     "titleText": "JTF News: Deutsche Welle, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-11T00:15:23.0Z",
     "titleText": "JTF News: UN News, France 24",
     "mainText": "Approximately 700,000 people are displaced in Lebanon.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "3b8ed69a23e6c77646af0453401a1f1f",
-    "updateDate": "2026-03-11T00:12:07.0Z",
-    "titleText": "JTF News: PBS NewsHour, ABC News Australia",
-    "mainText": "Five members of the Iranian women's soccer team were granted asylum in Australia.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
