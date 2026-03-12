@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 12:30:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 14:31:04 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Death toll from floods and landslides in Ethiopia reaches more than 60.</title>
+      <description>Death toll from floods and landslides in Ethiopia reaches more than 60.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.7" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 12 Mar 2026 14:31:04 +0000</pubDate>
+      <guid isPermaLink="false">f430199b42aa</guid>
+    </item>
     <item>
       <title>Russia sentenced 15 men to life imprisonment in connection with a concert hall a...</title>
       <description>Russia sentenced 15 men to life imprisonment in connection with a concert hall attack.</description>
@@ -1122,18 +1134,6 @@
       </jtf:source>
       <pubDate>Mon, 02 Mar 2026 19:45:25 +0000</pubDate>
       <guid isPermaLink="false">7460f94ae3f1</guid>
-    </item>
-    <item>
-      <title>President Trump stated the US acted on its 'last, best chance' to hit Iran.</title>
-      <description>President Trump stated the US acted on its 'last, best chance' to hit Iran.</description>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Mon, 02 Mar 2026 19:44:06 +0000</pubDate>
-      <guid isPermaLink="false">78f431921660</guid>
     </item>
   </channel>
 </rss>
