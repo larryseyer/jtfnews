@@ -1,5 +1,12 @@
 [
   {
+    "uid": "4d64d48eb1e9785f9c3a193cfcf41d46",
+    "updateDate": "2026-03-12T12:30:47.0Z",
+    "titleText": "JTF News: Deutsche Welle, CBC News",
+    "mainText": "Russia sentenced 15 men to life imprisonment in connection with a concert hall attack.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "0fadbaaa74a45cf2d827a52982a4c5d5",
     "updateDate": "2026-03-12T11:01:16.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T00:07:36.0Z",
     "titleText": "JTF News: France 24, BBC News",
     "mainText": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "5048b11e4b8f6107ac891ec41fae6e88",
-    "updateDate": "2026-03-12T00:06:51.0Z",
-    "titleText": "JTF News: The Guardian, CBC News",
-    "mainText": "At least 17 people were killed after drone strikes on a school in Sudan.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
