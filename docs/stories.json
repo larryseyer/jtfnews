@@ -1,108 +1,17 @@
 {
-  "date": "2026-03-11",
+  "date": "2026-03-12",
   "stories": [
     {
-      "id": "2026-03-11-000",
-      "hash": "034bd55797f2",
-      "fact": "Shots were fired at the U.S. consulate in Canada; police characterized the incident as a national security matter.",
-      "source": "CBC News 2.7|9.0 \u00b7 The Guardian 3.0|2.5",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "The Guardian": "https://www.theguardian.com/world"
-      },
-      "audio": "../audio/archive/2026-03-11/20a8b36a5214.mp3",
-      "published_at": "2026-03-11T00:10:56.435300+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-001",
-      "hash": "071a5da94383",
-      "fact": "Five members of the Iranian women's soccer team were granted asylum in Australia. and cannot participate in the FIFA World Cup, according to an Iranian minister",
-      "source": "PBS NewsHour 5.6|9.0 \u00b7 ABC News Australia 1.8|9.0 \u00b7 NPR 4.2|8.5",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "ABC News Australia": "https://www.abc.net.au/news/"
-      },
-      "audio": "../audio/archive/2026-03-11/1621c8b0e667.mp3",
-      "published_at": "2026-03-11T00:12:05.221531+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-002",
-      "hash": "236689a6d399",
-      "fact": "Approximately 700,000 people are displaced in Lebanon.",
-      "source": "UN News 7.2*|9.5 \u00b7 France 24 4.4|9.0",
-      "source_urls": {
-        "UN News": "https://news.un.org/en/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-11/bb442a91da18.mp3",
-      "published_at": "2026-03-11T00:15:21.689144+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-003",
-      "hash": "f64d8e16d9e0",
-      "fact": "Los Angeles police arrested a woman in connection with a shooting at Rihanna's residence.",
-      "source": "CBC News 2.7|9.0 \u00b7 Deutsche Welle 5.7|9.5",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-11/2088ec68e22d.mp3",
-      "published_at": "2026-03-11T01:00:39.709898+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-004",
-      "hash": "20b10ffea294",
-      "fact": "A freezing rain storm is forecast for Ontario, Quebec, and Atlantic provinces.",
-      "source": "CBC News 2.8|9.0 \u00b7 Government of Canada 1.2|10.0",
-      "source_urls": {
-        "CBC News": "https://www.cbc.ca/news/world",
-        "Government of Canada": "https://www.canada.ca/en/news.html"
-      },
-      "audio": "../audio/archive/2026-03-11/7ff179f12353.mp3",
-      "published_at": "2026-03-11T01:00:54.029030+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-005",
-      "hash": "ba00a10cb5f9",
-      "fact": "Large parts of Dresden are being evacuated after a 250-kilogram World War II bomb was found.",
-      "source": "Deutsche Welle 5.7|9.5 \u00b7 BBC News 5.2|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-11/77b07a002f0e.mp3",
-      "published_at": "2026-03-11T08:00:41.201047+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-006",
+      "id": "2026-03-12-000",
       "hash": "13fff2d1bd1f",
       "fact": "Three people, including a French aid worker, were killed in drone strikes in a rebel-held city in the Democratic Republic of Congo.",
-      "source": "BBC News 5.1|9.0 \u00b7 The Guardian 3.1|2.5",
+      "source": "BBC News 5.1|9.0 \u00b7 France 24 4.4|9.0",
       "source_urls": {
         "BBC News": "https://www.bbc.com/news/world",
-        "The Guardian": "https://www.theguardian.com/world"
+        "France 24": "https://www.france24.com/en/"
       },
-      "audio": "../audio/archive/2026-03-11/8cada69c28c3.mp3",
-      "published_at": "2026-03-11T15:00:40.400242+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-11-007",
-      "hash": "34585b40d099",
-      "fact": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
-      "source": "France 24 4.4|9.0 \u00b7 BBC News 5.1|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-11/13dbdc61c9ab.mp3",
-      "published_at": "2026-03-11T21:00:48.312605+00:00",
+      "audio": "../audio/archive/2026-03-12/8cada69c28c3.mp3",
+      "published_at": "2026-03-12T00:06:11.122238+00:00",
       "status": "published"
     }
   ]
