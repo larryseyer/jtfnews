@@ -1,5 +1,12 @@
 [
   {
+    "uid": "deababeba490460df644af228524425d",
+    "updateDate": "2026-03-12T05:30:41.0Z",
+    "titleText": "JTF News: BBC News, ABC News Australia",
+    "mainText": "Bodies of two Chinese nationals were found in floodwaters in Australia.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "4c9c1edf2bcd51f77c6cc9adece414b9",
     "updateDate": "2026-03-12T05:00:47.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T00:06:13.0Z",
     "titleText": "JTF News: BBC News, France 24",
     "mainText": "Three people, including a French aid worker, were killed in drone strikes in a rebel-held city in the Democratic Republic of Congo.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "b5ea8e97fb6b20d34cd8e1d52e2a3477",
-    "updateDate": "2026-03-11T21:00:50.0Z",
-    "titleText": "JTF News: France 24, BBC News",
-    "mainText": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
