@@ -1,5 +1,12 @@
 [
   {
+    "uid": "42d22a999155ff7bfeef30ba7ca83588",
+    "updateDate": "2026-03-12T17:01:05.0Z",
+    "titleText": "JTF News: CBC News, Government of Canada",
+    "mainText": "The Canadian Radio-television and Telecommunications Commission (CRTC) eliminates fees for cancelling or switching cellphone and internet plans.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "2b123e7c73c1777811599c770adf55fc",
     "updateDate": "2026-03-12T15:30:40.0Z",
     "titleText": "JTF News: The Guardian, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T14:31:06.0Z",
     "titleText": "JTF News: CBC News, BBC News",
     "mainText": "Death toll from floods and landslides in Ethiopia reaches more than 60.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "4d64d48eb1e9785f9c3a193cfcf41d46",
-    "updateDate": "2026-03-12T12:30:47.0Z",
-    "titleText": "JTF News: Deutsche Welle, CBC News",
-    "mainText": "Russia sentenced 15 men to life imprisonment in connection with a concert hall attack.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
