@@ -1,5 +1,12 @@
 [
   {
+    "uid": "667f61390cc83c4e65376a57a8181286",
+    "updateDate": "2026-03-12T00:07:36.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "5048b11e4b8f6107ac891ec41fae6e88",
     "updateDate": "2026-03-12T00:06:51.0Z",
     "titleText": "JTF News: The Guardian, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-11T15:00:42.0Z",
     "titleText": "JTF News: BBC News, The Guardian",
     "mainText": "Three people, including a French aid worker, were killed in drone strikes in a rebel-held city in the Democratic Republic of Congo.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "62de8427f3b05f6bb373814428486f36",
-    "updateDate": "2026-03-11T08:00:43.0Z",
-    "titleText": "JTF News: Deutsche Welle, BBC News",
-    "mainText": "Large parts of Dresden are being evacuated after a 250-kilogram World War II bomb was found.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
