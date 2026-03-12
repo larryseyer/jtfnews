@@ -78,6 +78,19 @@
       "audio": "../audio/archive/2026-03-12/e5f74fdaa85e.mp3",
       "published_at": "2026-03-12T11:01:14.426993+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-006",
+      "hash": "33b6bbcdaf19",
+      "fact": "Russia sentenced 15 men to life imprisonment in connection with a concert hall attack.",
+      "source": "Deutsche Welle 5.6|9.5 \u00b7 CBC News 2.7|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-12/d5b7e05e950a.mp3",
+      "published_at": "2026-03-12T12:30:45.132887+00:00",
+      "status": "published"
     }
   ]
 }
