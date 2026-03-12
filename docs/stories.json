@@ -195,6 +195,19 @@
       "audio": "../audio/archive/2026-03-12/4f4a18ba4a54.mp3",
       "published_at": "2026-03-12T19:30:50.259961+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-015",
+      "hash": "9609b87873f8",
+      "fact": "NASA targets Artemis II crewed moon mission for April 1 launch.",
+      "source": "NPR 4.3|8.5 \u00b7 CBC News 2.9|9.0",
+      "source_urls": {
+        "NPR": "https://www.npr.org/sections/news/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-12/9dc18412cfde.mp3",
+      "published_at": "2026-03-12T22:00:45.281719+00:00",
+      "status": "published"
     }
   ]
 }
