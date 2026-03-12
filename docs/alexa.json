@@ -1,5 +1,12 @@
 [
   {
+    "uid": "0565f9822222e331483312cdf91f301f",
+    "updateDate": "2026-03-12T14:31:06.0Z",
+    "titleText": "JTF News: CBC News, BBC News",
+    "mainText": "Death toll from floods and landslides in Ethiopia reaches more than 60.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "4d64d48eb1e9785f9c3a193cfcf41d46",
     "updateDate": "2026-03-12T12:30:47.0Z",
     "titleText": "JTF News: Deutsche Welle, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T05:00:47.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "Senegal lawmakers passed legislation increasing penalties for same-sex conduct to up to 10 years imprisonment.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "667f61390cc83c4e65376a57a8181286",
-    "updateDate": "2026-03-12T00:07:36.0Z",
-    "titleText": "JTF News: France 24, BBC News",
-    "mainText": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
