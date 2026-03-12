@@ -156,6 +156,19 @@
       "audio": "../audio/archive/2026-03-12/44103d88f088.mp3",
       "published_at": "2026-03-12T17:01:02.797460+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-012",
+      "hash": "3c33dc4f5d39",
+      "fact": "Police respond to shooting reported at a Detroit-area synagogue.",
+      "source": "CBC News 2.9|9.0 \u00b7 Deutsche Welle 5.6|9.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-12/00beebe4641b.mp3",
+      "published_at": "2026-03-12T18:00:43.147689+00:00",
+      "status": "published"
     }
   ]
 }
