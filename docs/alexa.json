@@ -1,5 +1,12 @@
 [
   {
+    "uid": "37167ca5736009f23a6c4e226f5d2f84",
+    "updateDate": "2026-03-12T19:30:52.0Z",
+    "titleText": "JTF News: CBC News, ABC News Australia",
+    "mainText": "The Israeli military dropped charges against soldiers accused of sexual and physical abuse of a Palestinian detainee.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "971d73519ba26af14c195beea58892e0",
     "updateDate": "2026-03-12T19:00:48.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T15:30:40.0Z",
     "titleText": "JTF News: The Guardian, CBC News",
     "mainText": "Two plasma donors died at private Canadian clinics under federal investigation.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "3d3638d53dd5cfa3f7634e9cf2551db8",
-    "updateDate": "2026-03-12T15:01:12.0Z",
-    "titleText": "JTF News: PBS NewsHour, ABC News Australia",
-    "mainText": "Chef Ren\u00e9 Redzepi resigned from Noma restaurant amid abuse allegations.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
