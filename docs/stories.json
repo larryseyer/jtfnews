@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-12/bb7f50b08b1e.mp3",
       "published_at": "2026-03-12T00:06:49.644435+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-002",
+      "hash": "34585b40d099",
+      "fact": "Three brothers were arrested following an explosion at the U.S. Embassy in Oslo.",
+      "source": "France 24 4.4|9.0 \u00b7 BBC News 5.1|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-12/13dbdc61c9ab.mp3",
+      "published_at": "2026-03-12T00:07:34.530190+00:00",
+      "status": "published"
     }
   ]
 }
