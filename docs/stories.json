@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-12/8cada69c28c3.mp3",
       "published_at": "2026-03-12T00:06:11.122238+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-001",
+      "hash": "b0e0e5d44de8",
+      "fact": "At least 17 people were killed after drone strikes on a school in Sudan.",
+      "source": "The Guardian 3.2|2.5 \u00b7 CBC News 2.7|9.0",
+      "source_urls": {
+        "The Guardian": "https://www.theguardian.com/world",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-12/bb7f50b08b1e.mp3",
+      "published_at": "2026-03-12T00:06:49.644435+00:00",
+      "status": "published"
     }
   ]
 }
