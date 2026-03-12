@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 19:00:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 19:30:50 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Israeli military dropped charges against soldiers accused of sexual and phys...</title>
+      <description>The Israeli military dropped charges against soldiers accused of sexual and physical abuse of a Palestinian detainee.</description>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 12 Mar 2026 19:30:50 +0000</pubDate>
+      <guid isPermaLink="false">1bacde7d4eea</guid>
+    </item>
     <item>
       <title>A suspect was killed after an attack on a synagogue in the Detroit area.</title>
       <description>A suspect was killed after an attack on a synagogue in the Detroit area.</description>
@@ -1128,18 +1140,6 @@
       </jtf:source>
       <pubDate>Tue, 03 Mar 2026 15:30:53 +0000</pubDate>
       <guid isPermaLink="false">526a720d0bd6</guid>
-    </item>
-    <item>
-      <title>U.S. embassy in Saudi Arabia was hit by Iranian drones.</title>
-      <description>U.S. embassy in Saudi Arabia was hit by Iranian drones.</description>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.8" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="3.0" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 03 Mar 2026 12:30:36 +0000</pubDate>
-      <guid isPermaLink="false">dc5351790429</guid>
     </item>
   </channel>
 </rss>
