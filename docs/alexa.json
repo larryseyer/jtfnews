@@ -1,5 +1,12 @@
 [
   {
+    "uid": "097462c22b5d2149ad155e14e6917c66",
+    "updateDate": "2026-03-12T18:00:45.0Z",
+    "titleText": "JTF News: CBC News, Deutsche Welle",
+    "mainText": "Police respond to shooting reported at a Detroit-area synagogue.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "42d22a999155ff7bfeef30ba7ca83588",
     "updateDate": "2026-03-12T17:01:05.0Z",
     "titleText": "JTF News: CBC News, Government of Canada",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T14:31:20.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
     "mainText": "Iran's leader calls for closure of the Strait of Hormuz as oil prices increase.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "0565f9822222e331483312cdf91f301f",
-    "updateDate": "2026-03-12T14:31:06.0Z",
-    "titleText": "JTF News: CBC News, BBC News",
-    "mainText": "Death toll from floods and landslides in Ethiopia reaches more than 60.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
