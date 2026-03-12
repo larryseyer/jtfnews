@@ -1,5 +1,12 @@
 [
   {
+    "uid": "25e9b928fed847424a38ae522af8eb26",
+    "updateDate": "2026-03-12T14:31:20.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "Iran's leader calls for closure of the Strait of Hormuz as oil prices increase.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "0565f9822222e331483312cdf91f301f",
     "updateDate": "2026-03-12T14:31:06.0Z",
     "titleText": "JTF News: CBC News, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T05:30:41.0Z",
     "titleText": "JTF News: BBC News, ABC News Australia",
     "mainText": "Bodies of two Chinese nationals were found in floodwaters in Australia.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "4c9c1edf2bcd51f77c6cc9adece414b9",
-    "updateDate": "2026-03-12T05:00:47.0Z",
-    "titleText": "JTF News: Deutsche Welle, France 24",
-    "mainText": "Senegal lawmakers passed legislation increasing penalties for same-sex conduct to up to 10 years imprisonment.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
