@@ -117,6 +117,19 @@
       "audio": "../audio/archive/2026-03-12/758f403f6855.mp3",
       "published_at": "2026-03-12T14:31:17.704956+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-009",
+      "hash": "aa411f88ec0e",
+      "fact": "Chef Ren\u00e9 Redzepi resigned from Noma restaurant amid abuse allegations.",
+      "source": "PBS NewsHour 5.5|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-12/f2c871c5b66a.mp3",
+      "published_at": "2026-03-12T15:01:10.168126+00:00",
+      "status": "published"
     }
   ]
 }
