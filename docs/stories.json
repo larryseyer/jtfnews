@@ -82,14 +82,27 @@
     {
       "id": "2026-03-12-006",
       "hash": "33b6bbcdaf19",
-      "fact": "Russia sentenced 15 men to life imprisonment in connection with a concert hall attack.",
-      "source": "Deutsche Welle 5.6|9.5 \u00b7 CBC News 2.7|9.0",
+      "fact": "Russia sentenced 15 men to life imprisonment in connection with a concert hall attack. though the court convicted 19 people compared to the 15 sentenced to life imprisonment, and the incident involved a shooting rather than just an attack",
+      "source": "Deutsche Welle 5.6|9.5 \u00b7 CBC News 2.7|9.0 \u00b7 BBC News 5.1|9.0",
       "source_urls": {
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
         "CBC News": "https://www.cbc.ca/news/world"
       },
-      "audio": "../audio/archive/2026-03-12/d5b7e05e950a.mp3",
+      "audio": "../audio/archive/2026-03-12/1327ada292bb.mp3",
       "published_at": "2026-03-12T12:30:45.132887+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-12-007",
+      "hash": "c3deee9c34e3",
+      "fact": "Death toll from floods and landslides in Ethiopia reaches more than 60.",
+      "source": "CBC News 2.7|9.0 \u00b7 BBC News 5.2|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-12/c956f3d9d518.mp3",
+      "published_at": "2026-03-12T14:31:04.077499+00:00",
       "status": "published"
     }
   ]
