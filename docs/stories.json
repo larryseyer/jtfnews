@@ -130,6 +130,19 @@
       "audio": "../audio/archive/2026-03-12/f2c871c5b66a.mp3",
       "published_at": "2026-03-12T15:01:10.168126+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-010",
+      "hash": "e7e3cb9deadb",
+      "fact": "Two plasma donors died at private Canadian clinics under federal investigation.",
+      "source": "The Guardian 3.2|2.5 \u00b7 CBC News 2.8|9.0",
+      "source_urls": {
+        "The Guardian": "https://www.theguardian.com/world",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-12/0f3ad4421a98.mp3",
+      "published_at": "2026-03-12T15:30:38.172797+00:00",
+      "status": "published"
     }
   ]
 }
