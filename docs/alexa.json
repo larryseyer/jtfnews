@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2b123e7c73c1777811599c770adf55fc",
+    "updateDate": "2026-03-12T15:30:40.0Z",
+    "titleText": "JTF News: The Guardian, CBC News",
+    "mainText": "Two plasma donors died at private Canadian clinics under federal investigation.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "3d3638d53dd5cfa3f7634e9cf2551db8",
     "updateDate": "2026-03-12T15:01:12.0Z",
     "titleText": "JTF News: PBS NewsHour, ABC News Australia",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T12:30:47.0Z",
     "titleText": "JTF News: Deutsche Welle, CBC News",
     "mainText": "Russia sentenced 15 men to life imprisonment in connection with a concert hall attack.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "0fadbaaa74a45cf2d827a52982a4c5d5",
-    "updateDate": "2026-03-12T11:01:16.0Z",
-    "titleText": "JTF News: France 24, PBS NewsHour",
-    "mainText": "The International Energy Agency agreed to release a record volume of emergency oil reserves.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
