@@ -1,5 +1,12 @@
 [
   {
+    "uid": "971d73519ba26af14c195beea58892e0",
+    "updateDate": "2026-03-12T19:00:48.0Z",
+    "titleText": "JTF News: Deutsche Welle, NPR",
+    "mainText": "A suspect was killed after an attack on a synagogue in the Detroit area.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "097462c22b5d2149ad155e14e6917c66",
     "updateDate": "2026-03-12T18:00:45.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T15:01:12.0Z",
     "titleText": "JTF News: PBS NewsHour, ABC News Australia",
     "mainText": "Chef Ren\u00e9 Redzepi resigned from Noma restaurant amid abuse allegations.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "25e9b928fed847424a38ae522af8eb26",
-    "updateDate": "2026-03-12T14:31:20.0Z",
-    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
-    "mainText": "Iran's leader calls for closure of the Strait of Hormuz as oil prices increase.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
