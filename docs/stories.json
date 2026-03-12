@@ -182,6 +182,19 @@
       "audio": "../audio/archive/2026-03-12/646c95f74ddf.mp3",
       "published_at": "2026-03-12T19:00:46.468902+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-014",
+      "hash": "55ac62fb2650",
+      "fact": "The Israeli military dropped charges against soldiers accused of sexual and physical abuse of a Palestinian detainee.",
+      "source": "CBC News 2.9|9.0 \u00b7 ABC News Australia 1.8|9.0",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "ABC News Australia": "https://www.abc.net.au/news/"
+      },
+      "audio": "../audio/archive/2026-03-12/4f4a18ba4a54.mp3",
+      "published_at": "2026-03-12T19:30:50.259961+00:00",
+      "status": "published"
     }
   ]
 }
