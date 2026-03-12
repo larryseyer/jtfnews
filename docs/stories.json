@@ -104,6 +104,19 @@
       "audio": "../audio/archive/2026-03-12/c956f3d9d518.mp3",
       "published_at": "2026-03-12T14:31:04.077499+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-008",
+      "hash": "4e0be6851d8a",
+      "fact": "Iran's leader calls for closure of the Strait of Hormuz as oil prices increase.",
+      "source": "PBS NewsHour 5.4|9.0 \u00b7 Deutsche Welle 5.5|9.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-12/758f403f6855.mp3",
+      "published_at": "2026-03-12T14:31:17.704956+00:00",
+      "status": "published"
     }
   ]
 }
