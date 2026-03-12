@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 15:01:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 15:30:38 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two plasma donors died at private Canadian clinics under federal investigation.</title>
+      <description>Two plasma donors died at private Canadian clinics under federal investigation.</description>
+      <jtf:source name="The Guardian" url="https://www.theguardian.com/world" accuracy="3.2" bias="2.5" speed="8.5" consensus="8.5" control_type="trust">
+        <jtf:owner name="Scott Trust Limited" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 12 Mar 2026 15:30:38 +0000</pubDate>
+      <guid isPermaLink="false">0f0b95992145</guid>
+    </item>
     <item>
       <title>Chef René Redzepi resigned from Noma restaurant amid abuse allegations.</title>
       <description>Chef René Redzepi resigned from Noma restaurant amid abuse allegations.</description>
@@ -1128,12 +1140,6 @@
       </jtf:source>
       <pubDate>Tue, 03 Mar 2026 00:09:13 +0000</pubDate>
       <guid isPermaLink="false">e3f69683c887</guid>
-    </item>
-    <item>
-      <title>[DAILY DIGEST] 2026-03-02 - 9 verified facts</title>
-      <description>Daily summary of 9 verified facts from 2026-03-02.</description>
-      <pubDate>Tue, 03 Mar 2026 00:05:02 +0000</pubDate>
-      <guid isPermaLink="false">digest-2026-03-02</guid>
     </item>
   </channel>
 </rss>
