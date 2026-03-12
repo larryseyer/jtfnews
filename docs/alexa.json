@@ -1,5 +1,12 @@
 [
   {
+    "uid": "59e420de24248a081f2723376c2321ac",
+    "updateDate": "2026-03-12T00:06:13.0Z",
+    "titleText": "JTF News: BBC News, France 24",
+    "mainText": "Three people, including a French aid worker, were killed in drone strikes in a rebel-held city in the Democratic Republic of Congo.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "b5ea8e97fb6b20d34cd8e1d52e2a3477",
     "updateDate": "2026-03-11T21:00:50.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-11T01:00:55.0Z",
     "titleText": "JTF News: CBC News, Government of Canada",
     "mainText": "A freezing rain storm is forecast for Ontario, Quebec, and Atlantic provinces.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "f7a808dc8dfca4d33364bc060c61608b",
-    "updateDate": "2026-03-11T01:00:42.0Z",
-    "titleText": "JTF News: CBC News, Deutsche Welle",
-    "mainText": "Los Angeles police arrested a woman in connection with a shooting at Rihanna's residence.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
