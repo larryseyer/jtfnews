@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-12/13dbdc61c9ab.mp3",
       "published_at": "2026-03-12T00:07:34.530190+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-003",
+      "hash": "e6fc8a5ebf8e",
+      "fact": "Senegal lawmakers passed legislation increasing penalties for same-sex conduct to up to 10 years imprisonment.",
+      "source": "Deutsche Welle 5.6|9.5 \u00b7 France 24 4.4|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-12/82f19d252af2.mp3",
+      "published_at": "2026-03-12T05:00:45.088319+00:00",
+      "status": "published"
     }
   ]
 }
