@@ -65,6 +65,19 @@
       "audio": "../audio/archive/2026-03-12/406161268a8c.mp3",
       "published_at": "2026-03-12T05:30:39.451672+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-12-005",
+      "hash": "87a4c17d213a",
+      "fact": "The International Energy Agency agreed to release a record volume of emergency oil reserves.",
+      "source": "France 24 4.5|9.0 \u00b7 PBS NewsHour 5.4|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "PBS NewsHour": "https://www.pbs.org/newshour/world"
+      },
+      "audio": "../audio/archive/2026-03-12/e5f74fdaa85e.mp3",
+      "published_at": "2026-03-12T11:01:14.426993+00:00",
+      "status": "published"
     }
   ]
 }
