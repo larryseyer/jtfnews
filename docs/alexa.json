@@ -1,5 +1,12 @@
 [
   {
+    "uid": "3d3638d53dd5cfa3f7634e9cf2551db8",
+    "updateDate": "2026-03-12T15:01:12.0Z",
+    "titleText": "JTF News: PBS NewsHour, ABC News Australia",
+    "mainText": "Chef Ren\u00e9 Redzepi resigned from Noma restaurant amid abuse allegations.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "25e9b928fed847424a38ae522af8eb26",
     "updateDate": "2026-03-12T14:31:20.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T11:01:16.0Z",
     "titleText": "JTF News: France 24, PBS NewsHour",
     "mainText": "The International Energy Agency agreed to release a record volume of emergency oil reserves.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "deababeba490460df644af228524425d",
-    "updateDate": "2026-03-12T05:30:41.0Z",
-    "titleText": "JTF News: BBC News, ABC News Australia",
-    "mainText": "Bodies of two Chinese nationals were found in floodwaters in Australia.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
