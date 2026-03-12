@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-03-12T22:26:17.452266+00:00",
+  "timestamp": "2026-03-12T22:30:50.761800+00:00",
+  "web_refresh_at": "2026-03-12T22:30:50.761800+00:00",
   "uptime_start": "2026-03-11T21:24:57.687459+00:00",
-  "uptime_seconds": 90080,
+  "uptime_seconds": 90353,
   "availability_pct": 67.1,
   "cycle": {
-    "number": 51,
-    "duration_seconds": 0,
-    "headlines_scraped": 0,
-    "headlines_processed": 0,
+    "number": 52,
+    "duration_seconds": 46.7,
+    "headlines_scraped": 177,
+    "headlines_processed": 7,
     "stories_published": 0,
-    "stories_queued": 0
+    "stories_queued": 2
   },
   "api_costs": {
     "today": {
@@ -21,22 +22,22 @@
         }
       },
       "claude": {
-        "calls": 782,
-        "cost_usd": 0.3021157499999995,
+        "calls": 793,
+        "cost_usd": 0.3057332499999995,
         "details": {
-          "input_tokens": 736533,
-          "output_tokens": 94386
+          "input_tokens": 745368,
+          "output_tokens": 95513
         }
       }
     },
-    "total_usd": 0.3601,
+    "total_usd": 0.3637,
     "month_estimate_usd": 9.51,
     "daily_budget": 1.61,
-    "budget_pct": 22.3
+    "budget_pct": 22.5
   },
   "queue": {
-    "size": 47,
-    "oldest_item_age_hours": 24.4
+    "size": 48,
+    "oldest_item_age_hours": 23.0
   },
   "stories_today": 16,
   "sources": {
@@ -44,17 +45,11 @@
     "successful": 22,
     "failed": []
   },
-  "recent_errors": [
-    {
-      "timestamp": "2026-03-12T21:30:07.899222+00:00",
-      "level": "WARNING",
-      "message": "Failed to fetch from France 24: 403 Client Error: Forbidden for url: https://www.france24.com/en/"
-    }
-  ],
+  "recent_errors": [],
   "status": {
     "state": "running",
     "stream_health": "online",
-    "next_cycle_minutes": 3,
+    "next_cycle_minutes": 29,
     "degraded_services": []
   },
   "daily_digest": {
@@ -73,5 +68,12 @@
     "archive_audio_url": "https://archive.org/download/jtf-news-2026-03-11/2026-03-11-daily-digest.mp3",
     "archive_video_url": "https://archive.org/download/jtf-news-2026-03-11/2026-03-11-daily-digest.mp4",
     "podcast_updated": true
+  },
+  "feedback": {
+    "today_submissions": 0,
+    "today_corrections": 0,
+    "total_submissions": 0,
+    "total_corrections": 0,
+    "total_spam_blocked": 0
   }
 }
