@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 19:30:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 22:00:45 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NASA targets Artemis II crewed moon mission for April 1 launch.</title>
+      <description>NASA targets Artemis II crewed moon mission for April 1 launch.</description>
+      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.3" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
+        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Thu, 12 Mar 2026 22:00:45 +0000</pubDate>
+      <guid isPermaLink="false">352108387a68</guid>
+    </item>
     <item>
       <title>The Israeli military dropped charges against soldiers accused of sexual and phys...</title>
       <description>The Israeli military dropped charges against soldiers accused of sexual and physical abuse of a Palestinian detainee.</description>
@@ -1128,18 +1140,6 @@
       </jtf:source>
       <pubDate>Tue, 03 Mar 2026 17:30:53 +0000</pubDate>
       <guid isPermaLink="false">0b2aebba8632</guid>
-    </item>
-    <item>
-      <title>The State Department urged U.S. citizens to leave more than a dozen Middle Easte...</title>
-      <description>The State Department urged U.S. citizens to leave more than a dozen Middle Eastern countries.</description>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.1" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 03 Mar 2026 15:30:53 +0000</pubDate>
-      <guid isPermaLink="false">526a720d0bd6</guid>
     </item>
   </channel>
 </rss>
