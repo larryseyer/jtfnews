@@ -78,6 +78,19 @@
       "audio": "../audio/archive/2026-03-13/1d3257b7eadb.mp3",
       "published_at": "2026-03-13T14:01:01.372287+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-13-006",
+      "hash": "5be515239d1f",
+      "fact": "President Volodymyr Zelenskyy of Ukraine met with President Emmanuel Macron of France.",
+      "source": "Deutsche Welle 5.5|9.5 \u00b7 France 24 4.4|9.0",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "France 24": "https://www.france24.com/en/"
+      },
+      "audio": "../audio/archive/2026-03-13/64706afa01ca.mp3",
+      "published_at": "2026-03-13T14:30:49.435568+00:00",
+      "status": "published"
     }
   ]
 }
