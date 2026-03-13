@@ -1,5 +1,12 @@
 [
   {
+    "uid": "9f4bcb6ace61c2cf7fae3df0111cad18",
+    "updateDate": "2026-03-13T02:30:59.0Z",
+    "titleText": "JTF News: PBS NewsHour, CBC News",
+    "mainText": "A U.S. military refueling plane crashed in Iraq.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "d042bd2ed1783e609ecd2c6914621763",
     "updateDate": "2026-03-13T00:10:23.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T19:30:52.0Z",
     "titleText": "JTF News: CBC News, ABC News Australia",
     "mainText": "The Israeli military dropped charges against soldiers accused of sexual and physical abuse of a Palestinian detainee.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "971d73519ba26af14c195beea58892e0",
-    "updateDate": "2026-03-12T19:00:48.0Z",
-    "titleText": "JTF News: Deutsche Welle, NPR",
-    "mainText": "A suspect was killed after an attack on a synagogue in the Detroit area.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
