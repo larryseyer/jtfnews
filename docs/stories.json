@@ -52,6 +52,19 @@
       "audio": "../audio/archive/2026-03-13/c354fdf4cf1a.mp3",
       "published_at": "2026-03-13T07:00:41.026312+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-13-004",
+      "hash": "12162ab6b0c6",
+      "fact": "France returned a sacred drum to Ivory Coast that was looted during colonial rule.",
+      "source": "The Guardian 3.3|2.5 \u00b7 BBC News 5.3|9.0",
+      "source_urls": {
+        "The Guardian": "https://www.theguardian.com/world",
+        "BBC News": "https://www.bbc.com/news/world"
+      },
+      "audio": "../audio/archive/2026-03-13/3d1c4d91e678.mp3",
+      "published_at": "2026-03-13T13:30:43.576405+00:00",
+      "status": "published"
     }
   ]
 }
