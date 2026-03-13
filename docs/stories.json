@@ -91,6 +91,19 @@
       "audio": "../audio/archive/2026-03-13/64706afa01ca.mp3",
       "published_at": "2026-03-13T14:30:49.435568+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-13-007",
+      "hash": "9a64b29f1f4e",
+      "fact": "Two people died after donating plasma at Canadian clinics under federal investigation.",
+      "source": "CBC News 2.9|9.0 \u00b7 The Guardian 3.4|2.5",
+      "source_urls": {
+        "CBC News": "https://www.cbc.ca/news/world",
+        "The Guardian": "https://www.theguardian.com/world"
+      },
+      "audio": "../audio/archive/2026-03-13/1abb18883f16.mp3",
+      "published_at": "2026-03-13T22:00:47.199241+00:00",
+      "status": "published"
     }
   ]
 }
