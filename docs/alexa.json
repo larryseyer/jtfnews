@@ -1,5 +1,12 @@
 [
   {
+    "uid": "aff0f5bc83f1cfb27dd14e2710bbae9c",
+    "updateDate": "2026-03-13T14:30:51.0Z",
+    "titleText": "JTF News: Deutsche Welle, France 24",
+    "mainText": "President Volodymyr Zelenskyy of Ukraine met with President Emmanuel Macron of France.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "00d9037eaf77d5a1447b12dbb35acaca",
     "updateDate": "2026-03-13T14:01:03.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-13T02:30:59.0Z",
     "titleText": "JTF News: PBS NewsHour, CBC News",
     "mainText": "A U.S. military refueling plane crashed in Iraq.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "d042bd2ed1783e609ecd2c6914621763",
-    "updateDate": "2026-03-13T00:10:23.0Z",
-    "titleText": "JTF News: Deutsche Welle, NPR",
-    "mainText": "NASA states the Artemis II launch is scheduled for April or later.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
