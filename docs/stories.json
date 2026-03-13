@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-13/24f9137117d4.mp3",
       "published_at": "2026-03-13T00:10:21.347383+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-13-002",
+      "hash": "c0c92c753b98",
+      "fact": "A U.S. military refueling plane crashed in Iraq.",
+      "source": "PBS NewsHour 5.3|9.0 \u00b7 CBC News 2.9|9.0",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-13/e9e1baa452cf.mp3",
+      "published_at": "2026-03-13T02:30:55.317083+00:00",
+      "status": "published"
     }
   ]
 }
