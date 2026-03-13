@@ -1,5 +1,12 @@
 [
   {
+    "uid": "38f8e9c5db323340ccfc20b4e19215e0",
+    "updateDate": "2026-03-13T00:10:15.0Z",
+    "titleText": "JTF News: France 24, BBC News",
+    "mainText": "Nineteen individuals were jailed in connection with a shooting at a concert venue in Moscow that resulted in deaths.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "99e61237e3f7891a75da62b438c02cd6",
     "updateDate": "2026-03-12T22:00:47.0Z",
     "titleText": "JTF News: NPR, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T18:00:45.0Z",
     "titleText": "JTF News: CBC News, Deutsche Welle",
     "mainText": "Police respond to shooting reported at a Detroit-area synagogue.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "42d22a999155ff7bfeef30ba7ca83588",
-    "updateDate": "2026-03-12T17:01:05.0Z",
-    "titleText": "JTF News: CBC News, Government of Canada",
-    "mainText": "The Canadian Radio-television and Telecommunications Commission (CRTC) eliminates fees for cancelling or switching cellphone and internet plans.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
