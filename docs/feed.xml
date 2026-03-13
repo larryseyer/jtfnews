@@ -5,8 +5,26 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 22:00:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:10:13 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nineteen individuals were jailed in connection with a shooting at a concert venu...</title>
+      <description>Nineteen individuals were jailed in connection with a shooting at a concert venue in Moscow that resulted in deaths.</description>
+      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.4" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="France Médias Monde" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="BBC News" url="https://www.bbc.com/news/world" accuracy="5.2" bias="9.0" speed="9.0" consensus="9.2" control_type="public_broadcaster">
+        <jtf:owner name="British Broadcasting Corporation" percent="100.0" />
+      </jtf:source>
+      <pubDate>Fri, 13 Mar 2026 00:10:13 +0000</pubDate>
+      <guid isPermaLink="false">946ec6f00a86</guid>
+    </item>
+    <item>
+      <title>[DAILY DIGEST] 2026-03-12 - 16 verified facts</title>
+      <description>Daily summary of 16 verified facts from 2026-03-12.</description>
+      <pubDate>Fri, 13 Mar 2026 00:07:07 +0000</pubDate>
+      <guid isPermaLink="false">digest-2026-03-12</guid>
+    </item>
     <item>
       <title>NASA targets Artemis II crewed moon mission for April 1 launch.</title>
       <description>NASA targets Artemis II crewed moon mission for April 1 launch.</description>
@@ -1116,30 +1134,6 @@
       </jtf:source>
       <pubDate>Tue, 03 Mar 2026 23:01:41 +0000</pubDate>
       <guid isPermaLink="false">ec9be9dd404e</guid>
-    </item>
-    <item>
-      <title>President Trump stated Iran is 'in for a lot of hurt' during an Oval Office addr...</title>
-      <description>President Trump stated Iran is 'in for a lot of hurt' during an Oval Office address.</description>
-      <jtf:source name="ABC News Australia" url="https://www.abc.net.au/news/" accuracy="1.8" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Australian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="France 24" url="https://www.france24.com/en/" accuracy="4.9" bias="9.0" speed="8.5" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="France Médias Monde" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 03 Mar 2026 18:00:48 +0000</pubDate>
-      <guid isPermaLink="false">3aa3f89ef2e6</guid>
-    </item>
-    <item>
-      <title>President Trump meets with Friedrich Merz, Chancellor of Germany.</title>
-      <description>President Trump meets with Friedrich Merz, Chancellor of Germany.</description>
-      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.9" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
-        <jtf:owner name="German Federal Government" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="6.2" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
-      </jtf:source>
-      <pubDate>Tue, 03 Mar 2026 17:30:53 +0000</pubDate>
-      <guid isPermaLink="false">0b2aebba8632</guid>
     </item>
   </channel>
 </rss>
