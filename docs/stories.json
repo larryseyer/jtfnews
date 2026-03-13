@@ -13,6 +13,19 @@
       "audio": "../audio/archive/2026-03-13/67981b99e5bd.mp3",
       "published_at": "2026-03-13T00:10:13.590712+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-13-001",
+      "hash": "7d5658381fbc",
+      "fact": "NASA states the Artemis II launch is scheduled for April or later.",
+      "source": "Deutsche Welle 5.5|9.5 \u00b7 NPR 4.4|8.5",
+      "source_urls": {
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
+        "NPR": "https://www.npr.org/sections/news/"
+      },
+      "audio": "../audio/archive/2026-03-13/24f9137117d4.mp3",
+      "published_at": "2026-03-13T00:10:21.347383+00:00",
+      "status": "published"
     }
   ]
 }
