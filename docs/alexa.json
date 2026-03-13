@@ -1,5 +1,12 @@
 [
   {
+    "uid": "c1a45398ee895d3a0ada4b9c81d8c5b4",
+    "updateDate": "2026-03-13T22:00:49.0Z",
+    "titleText": "JTF News: CBC News, The Guardian",
+    "mainText": "Two people died after donating plasma at Canadian clinics under federal investigation.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "aff0f5bc83f1cfb27dd14e2710bbae9c",
     "updateDate": "2026-03-13T14:30:51.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-13T07:00:43.0Z",
     "titleText": "JTF News: BBC News, Deutsche Welle",
     "mainText": "A suspect was killed following an attack on a synagogue in the Detroit area.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "9f4bcb6ace61c2cf7fae3df0111cad18",
-    "updateDate": "2026-03-13T02:30:59.0Z",
-    "titleText": "JTF News: PBS NewsHour, CBC News",
-    "mainText": "A U.S. military refueling plane crashed in Iraq.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
