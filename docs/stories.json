@@ -39,6 +39,19 @@
       "audio": "../audio/archive/2026-03-13/e9e1baa452cf.mp3",
       "published_at": "2026-03-13T02:30:55.317083+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-13-003",
+      "hash": "be85ef13eaa9",
+      "fact": "A suspect was killed following an attack on a synagogue in the Detroit area.",
+      "source": "BBC News 5.2|9.0 \u00b7 Deutsche Welle 5.5|9.5",
+      "source_urls": {
+        "BBC News": "https://www.bbc.com/news/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-13/c354fdf4cf1a.mp3",
+      "published_at": "2026-03-13T07:00:41.026312+00:00",
+      "status": "published"
     }
   ]
 }
