@@ -1,5 +1,12 @@
 [
   {
+    "uid": "d042bd2ed1783e609ecd2c6914621763",
+    "updateDate": "2026-03-13T00:10:23.0Z",
+    "titleText": "JTF News: Deutsche Welle, NPR",
+    "mainText": "NASA states the Artemis II launch is scheduled for April or later.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "38f8e9c5db323340ccfc20b4e19215e0",
     "updateDate": "2026-03-13T00:10:15.0Z",
     "titleText": "JTF News: France 24, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T19:00:48.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
     "mainText": "A suspect was killed after an attack on a synagogue in the Detroit area.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "097462c22b5d2149ad155e14e6917c66",
-    "updateDate": "2026-03-12T18:00:45.0Z",
-    "titleText": "JTF News: CBC News, Deutsche Welle",
-    "mainText": "Police respond to shooting reported at a Detroit-area synagogue.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
