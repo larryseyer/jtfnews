@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ccc4bbc27edec2d76d5d194b69139fd8",
+    "updateDate": "2026-03-13T07:00:43.0Z",
+    "titleText": "JTF News: BBC News, Deutsche Welle",
+    "mainText": "A suspect was killed following an attack on a synagogue in the Detroit area.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "9f4bcb6ace61c2cf7fae3df0111cad18",
     "updateDate": "2026-03-13T02:30:59.0Z",
     "titleText": "JTF News: PBS NewsHour, CBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-12T22:00:47.0Z",
     "titleText": "JTF News: NPR, CBC News",
     "mainText": "NASA targets Artemis II crewed moon mission for April 1 launch.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "37167ca5736009f23a6c4e226f5d2f84",
-    "updateDate": "2026-03-12T19:30:52.0Z",
-    "titleText": "JTF News: CBC News, ABC News Australia",
-    "mainText": "The Israeli military dropped charges against soldiers accused of sexual and physical abuse of a Palestinian detainee.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
