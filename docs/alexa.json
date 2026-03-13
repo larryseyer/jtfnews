@@ -1,5 +1,12 @@
 [
   {
+    "uid": "00d9037eaf77d5a1447b12dbb35acaca",
+    "updateDate": "2026-03-13T14:01:03.0Z",
+    "titleText": "JTF News: ABC News Australia, France 24",
+    "mainText": "Cuba states it held recent talks with the United States aimed at resolving differences.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "d62c6466828b06f4a73c5bd88e7cddd3",
     "updateDate": "2026-03-13T13:30:45.0Z",
     "titleText": "JTF News: The Guardian, BBC News",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-13T00:10:23.0Z",
     "titleText": "JTF News: Deutsche Welle, NPR",
     "mainText": "NASA states the Artemis II launch is scheduled for April or later.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "38f8e9c5db323340ccfc20b4e19215e0",
-    "updateDate": "2026-03-13T00:10:15.0Z",
-    "titleText": "JTF News: France 24, BBC News",
-    "mainText": "Nineteen individuals were jailed in connection with a shooting at a concert venue in Moscow that resulted in deaths.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
