@@ -1,5 +1,12 @@
 [
   {
+    "uid": "ddfd3f3499806222744ad2bda47fc365",
+    "updateDate": "2026-03-14T00:09:07.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "Cuba releases 51 prisoners following talks with Vatican.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "2d959aaa38acefde4d75409450c7309c",
     "updateDate": "2026-03-14T00:08:18.0Z",
     "titleText": "JTF News: CBC News, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-13T14:01:03.0Z",
     "titleText": "JTF News: ABC News Australia, France 24",
     "mainText": "Cuba states it held recent talks with the United States aimed at resolving differences.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "d62c6466828b06f4a73c5bd88e7cddd3",
-    "updateDate": "2026-03-13T13:30:45.0Z",
-    "titleText": "JTF News: The Guardian, BBC News",
-    "mainText": "France returned a sacred drum to Ivory Coast that was looted during colonial rule.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
