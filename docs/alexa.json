@@ -1,5 +1,12 @@
 [
   {
+    "uid": "2d959aaa38acefde4d75409450c7309c",
+    "updateDate": "2026-03-14T00:08:18.0Z",
+    "titleText": "JTF News: CBC News, The Guardian",
+    "mainText": "Two people died after donating plasma at Canadian clinics under federal investigation.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "c1a45398ee895d3a0ada4b9c81d8c5b4",
     "updateDate": "2026-03-13T22:00:49.0Z",
     "titleText": "JTF News: CBC News, The Guardian",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-13T13:30:45.0Z",
     "titleText": "JTF News: The Guardian, BBC News",
     "mainText": "France returned a sacred drum to Ivory Coast that was looted during colonial rule.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "ccc4bbc27edec2d76d5d194b69139fd8",
-    "updateDate": "2026-03-13T07:00:43.0Z",
-    "titleText": "JTF News: BBC News, Deutsche Welle",
-    "mainText": "A suspect was killed following an attack on a synagogue in the Detroit area.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
