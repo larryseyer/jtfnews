@@ -490,5 +490,27 @@ JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
       <itunes:episode>24</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
+    <item>
+      <title>JTF News - March 13, 2026</title>
+      <description>8 verified facts for March 13, 2026.</description>
+      <content:encoded><![CDATA[8 verified facts for March 13, 2026.
+
+- Nineteen individuals were jailed in connection with a shooting at a concert venue in Moscow that resulted in deaths.
+- NASA states the Artemis II launch is scheduled for April or later.
+- A U.S. military refueling plane crashed in Iraq.
+- A suspect was killed following an attack on a synagogue in the Detroit area.
+- France returned a sacred drum to Ivory Coast that was looted during colonial rule.
+- Cuba states it held recent talks with the United States aimed at resolving differences.
+- President Volodymyr Zelenskyy of Ukraine met with President Emmanuel Macron of France.
+- Two people died after donating plasma at Canadian clinics under federal investigation.
+
+JTF News: Two sources. No adjectives. Just facts.]]></content:encoded>
+      <enclosure url="https://archive.org/download/jtf-news-2026-03-13/2026-03-13-daily-digest.mp3" type="audio/mpeg" length="4064799"/>
+      <guid isPermaLink="false">jtf-news-2026-03-13</guid>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>01:37</itunes:duration>
+      <itunes:episode>25</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
