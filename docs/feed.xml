@@ -5,8 +5,20 @@
     <link>https://jtfnews.org/</link>
     <description>Verified facts from multiple sources. No opinions. No adjectives. No interpretation. Viewer-supported at github.com/sponsors/larryseyer</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2026 10:30:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 17:30:41 +0000</lastBuildDate>
     <atom:link href="https://jtfnews.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>North Korea fired approximately 10 ballistic missiles toward the sea, according ...</title>
+      <description>North Korea fired approximately 10 ballistic missiles toward the sea, according to South Korea.</description>
+      <jtf:source name="PBS NewsHour" url="https://www.pbs.org/newshour/world" accuracy="5.4" bias="9.0" speed="7.5" consensus="9.0" control_type="nonprofit">
+        <jtf:owner name="Public Broadcasting Service" percent="100.0" />
+      </jtf:source>
+      <jtf:source name="Deutsche Welle" url="https://www.dw.com/en/top-stories/s-9097" accuracy="5.5" bias="9.5" speed="8.0" consensus="8.5" control_type="public_broadcaster">
+        <jtf:owner name="German Federal Government" percent="100.0" />
+      </jtf:source>
+      <pubDate>Sat, 14 Mar 2026 17:30:41 +0000</pubDate>
+      <guid isPermaLink="false">e9eda42fc9b4</guid>
+    </item>
     <item>
       <title>The United States deployed USS Tripoli, an amphibious assault ship, to the Middl...</title>
       <description>The United States deployed USS Tripoli, an amphibious assault ship, to the Middle East.</description>
@@ -1122,18 +1134,6 @@
       </jtf:source>
       <pubDate>Wed, 04 Mar 2026 22:30:35 +0000</pubDate>
       <guid isPermaLink="false">8dd154b63131</guid>
-    </item>
-    <item>
-      <title>The Senate voted against a measure to constrain President Trump's authorities in...</title>
-      <description>The Senate voted against a measure to constrain President Trump's authorities in Iran.</description>
-      <jtf:source name="CBC News" url="https://www.cbc.ca/news/world" accuracy="2.9" bias="9.0" speed="8.5" consensus="9.0" control_type="public_broadcaster">
-        <jtf:owner name="Canadian Broadcasting Corporation" percent="100.0" />
-      </jtf:source>
-      <jtf:source name="NPR" url="https://www.npr.org/sections/news/" accuracy="4.7" bias="8.5" speed="8.5" consensus="9.0" control_type="nonprofit">
-        <jtf:owner name="National Public Radio (nonprofit)" percent="100.0" />
-      </jtf:source>
-      <pubDate>Thu, 05 Mar 2026 00:10:01 +0000</pubDate>
-      <guid isPermaLink="false">4072f6380e2b</guid>
     </item>
   </channel>
 </rss>
