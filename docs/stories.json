@@ -17,13 +17,13 @@
     {
       "id": "2026-03-14-001",
       "hash": "b99b8cc9a08f",
-      "fact": "Cuba releases 51 prisoners following talks with Vatican.",
-      "source": "PBS NewsHour 5.4|9.0 \u00b7 Deutsche Welle 5.5|9.5",
+      "fact": "Cuba releases 51 prisoners following talks with Vatican. and confirms talks with the United States as the island experiences an energy crisis.",
+      "source": "PBS NewsHour 5.4|9.0 \u00b7 Deutsche Welle 5.5|9.5 \u00b7 France 24 4.2|9.0",
       "source_urls": {
         "PBS NewsHour": "https://www.pbs.org/newshour/world",
         "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
       },
-      "audio": "../audio/archive/2026-03-14/f376dc05fefa.mp3",
+      "audio": "../audio/archive/2026-03-14/747ae02a15b2.mp3",
       "published_at": "2026-03-14T00:09:04.704897+00:00",
       "status": "published"
     },
@@ -38,6 +38,19 @@
       },
       "audio": "../audio/archive/2026-03-14/2769c25d7f9e.mp3",
       "published_at": "2026-03-14T10:30:39.368647+00:00",
+      "status": "published"
+    },
+    {
+      "id": "2026-03-14-003",
+      "hash": "862a76d6ec97",
+      "fact": "North Korea fired approximately 10 ballistic missiles toward the sea, according to South Korea.",
+      "source": "PBS NewsHour 5.4|9.0 \u00b7 Deutsche Welle 5.5|9.5",
+      "source_urls": {
+        "PBS NewsHour": "https://www.pbs.org/newshour/world",
+        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
+      },
+      "audio": "../audio/archive/2026-03-14/301291e9ad4d.mp3",
+      "published_at": "2026-03-14T17:30:41.256972+00:00",
       "status": "published"
     }
   ]
