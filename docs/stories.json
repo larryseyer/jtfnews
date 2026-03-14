@@ -26,6 +26,19 @@
       "audio": "../audio/archive/2026-03-14/f376dc05fefa.mp3",
       "published_at": "2026-03-14T00:09:04.704897+00:00",
       "status": "published"
+    },
+    {
+      "id": "2026-03-14-002",
+      "hash": "05ee173e5335",
+      "fact": "The United States deployed USS Tripoli, an amphibious assault ship, to the Middle East.",
+      "source": "France 24 4.2|9.0 \u00b7 CBC News 2.9|9.0",
+      "source_urls": {
+        "France 24": "https://www.france24.com/en/",
+        "CBC News": "https://www.cbc.ca/news/world"
+      },
+      "audio": "../audio/archive/2026-03-14/2769c25d7f9e.mp3",
+      "published_at": "2026-03-14T10:30:39.368647+00:00",
+      "status": "published"
     }
   ]
 }
