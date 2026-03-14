@@ -1,5 +1,12 @@
 [
   {
+    "uid": "7d203b1bb8e760bbd51c5e61be59ce44",
+    "updateDate": "2026-03-14T19:00:58.0Z",
+    "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
+    "mainText": "The American flag was raised at the U.S. Embassy in Venezuela for the first time since 2019.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "8d9b1ac1d6a3579a6670613e3724fbcf",
     "updateDate": "2026-03-14T17:30:43.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
@@ -23,13 +30,6 @@
   {
     "uid": "2d959aaa38acefde4d75409450c7309c",
     "updateDate": "2026-03-14T00:08:18.0Z",
-    "titleText": "JTF News: CBC News, The Guardian",
-    "mainText": "Two people died after donating plasma at Canadian clinics under federal investigation.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "c1a45398ee895d3a0ada4b9c81d8c5b4",
-    "updateDate": "2026-03-13T22:00:49.0Z",
     "titleText": "JTF News: CBC News, The Guardian",
     "mainText": "Two people died after donating plasma at Canadian clinics under federal investigation.",
     "redirectionUrl": "https://jtfnews.org/"
