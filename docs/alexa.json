@@ -1,5 +1,12 @@
 [
   {
+    "uid": "1ca2e4dfd408f1ba49c04e71d877c2fa",
+    "updateDate": "2026-03-14T10:30:41.0Z",
+    "titleText": "JTF News: France 24, CBC News",
+    "mainText": "The United States deployed USS Tripoli, an amphibious assault ship, to the Middle East.",
+    "redirectionUrl": "https://jtfnews.org/"
+  },
+  {
     "uid": "ddfd3f3499806222744ad2bda47fc365",
     "updateDate": "2026-03-14T00:09:07.0Z",
     "titleText": "JTF News: PBS NewsHour, Deutsche Welle",
@@ -25,13 +32,6 @@
     "updateDate": "2026-03-13T14:30:51.0Z",
     "titleText": "JTF News: Deutsche Welle, France 24",
     "mainText": "President Volodymyr Zelenskyy of Ukraine met with President Emmanuel Macron of France.",
-    "redirectionUrl": "https://jtfnews.org/"
-  },
-  {
-    "uid": "00d9037eaf77d5a1447b12dbb35acaca",
-    "updateDate": "2026-03-13T14:01:03.0Z",
-    "titleText": "JTF News: ABC News Australia, France 24",
-    "mainText": "Cuba states it held recent talks with the United States aimed at resolving differences.",
     "redirectionUrl": "https://jtfnews.org/"
   }
 ]
