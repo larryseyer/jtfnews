@@ -1,108 +1,17 @@
 {
-  "date": "2026-03-13",
+  "date": "2026-03-14",
   "stories": [
     {
-      "id": "2026-03-13-000",
-      "hash": "e4618dde203f",
-      "fact": "Nineteen individuals were jailed in connection with a shooting at a concert venue in Moscow that resulted in deaths.",
-      "source": "France 24 4.4|9.0 \u00b7 BBC News 5.2|9.0",
-      "source_urls": {
-        "France 24": "https://www.france24.com/en/",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-13/67981b99e5bd.mp3",
-      "published_at": "2026-03-13T00:10:13.590712+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-001",
-      "hash": "7d5658381fbc",
-      "fact": "NASA states the Artemis II launch is scheduled for April or later.",
-      "source": "Deutsche Welle 5.5|9.5 \u00b7 NPR 4.4|8.5",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "NPR": "https://www.npr.org/sections/news/"
-      },
-      "audio": "../audio/archive/2026-03-13/24f9137117d4.mp3",
-      "published_at": "2026-03-13T00:10:21.347383+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-002",
-      "hash": "c0c92c753b98",
-      "fact": "A U.S. military refueling plane crashed in Iraq.",
-      "source": "PBS NewsHour 5.3|9.0 \u00b7 CBC News 2.9|9.0",
-      "source_urls": {
-        "PBS NewsHour": "https://www.pbs.org/newshour/world",
-        "CBC News": "https://www.cbc.ca/news/world"
-      },
-      "audio": "../audio/archive/2026-03-13/e9e1baa452cf.mp3",
-      "published_at": "2026-03-13T02:30:55.317083+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-003",
-      "hash": "be85ef13eaa9",
-      "fact": "A suspect was killed following an attack on a synagogue in the Detroit area.",
-      "source": "BBC News 5.2|9.0 \u00b7 Deutsche Welle 5.5|9.5",
-      "source_urls": {
-        "BBC News": "https://www.bbc.com/news/world",
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097"
-      },
-      "audio": "../audio/archive/2026-03-13/c354fdf4cf1a.mp3",
-      "published_at": "2026-03-13T07:00:41.026312+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-004",
-      "hash": "12162ab6b0c6",
-      "fact": "France returned a sacred drum to Ivory Coast that was looted during colonial rule.",
-      "source": "The Guardian 3.3|2.5 \u00b7 BBC News 5.3|9.0",
-      "source_urls": {
-        "The Guardian": "https://www.theguardian.com/world",
-        "BBC News": "https://www.bbc.com/news/world"
-      },
-      "audio": "../audio/archive/2026-03-13/3d1c4d91e678.mp3",
-      "published_at": "2026-03-13T13:30:43.576405+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-005",
-      "hash": "ef6b840ef3d4",
-      "fact": "Cuba states it held recent talks with the United States aimed at resolving differences.",
-      "source": "ABC News Australia 1.7|9.0 \u00b7 France 24 4.4|9.0",
-      "source_urls": {
-        "ABC News Australia": "https://www.abc.net.au/news/",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-13/1d3257b7eadb.mp3",
-      "published_at": "2026-03-13T14:01:01.372287+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-006",
-      "hash": "5be515239d1f",
-      "fact": "President Volodymyr Zelenskyy of Ukraine met with President Emmanuel Macron of France.",
-      "source": "Deutsche Welle 5.5|9.5 \u00b7 France 24 4.4|9.0",
-      "source_urls": {
-        "Deutsche Welle": "https://www.dw.com/en/top-stories/s-9097",
-        "France 24": "https://www.france24.com/en/"
-      },
-      "audio": "../audio/archive/2026-03-13/64706afa01ca.mp3",
-      "published_at": "2026-03-13T14:30:49.435568+00:00",
-      "status": "published"
-    },
-    {
-      "id": "2026-03-13-007",
+      "id": "2026-03-14-000",
       "hash": "9a64b29f1f4e",
       "fact": "Two people died after donating plasma at Canadian clinics under federal investigation.",
-      "source": "CBC News 2.9|9.0 \u00b7 The Guardian 3.4|2.5",
+      "source": "CBC News 2.9|9.0 \u00b7 The Guardian 3.5|2.5",
       "source_urls": {
         "CBC News": "https://www.cbc.ca/news/world",
         "The Guardian": "https://www.theguardian.com/world"
       },
-      "audio": "../audio/archive/2026-03-13/1abb18883f16.mp3",
-      "published_at": "2026-03-13T22:00:47.199241+00:00",
+      "audio": "../audio/archive/2026-03-14/1abb18883f16.mp3",
+      "published_at": "2026-03-14T00:08:15.734659+00:00",
       "status": "published"
     }
   ]
